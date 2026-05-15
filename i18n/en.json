@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "allPages",
+  "lang": "en",
+  "dictionary": {
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "plans": "Plans",
+      "platform": "Platform",
+      "contact": "Contact",
+      "faq": "FAQ"
+    },
+    "ui": {
+      "controls": {
+        "themeToggle": "Theme",
+        "languageToggle": "Language"
+      },
+      "accessibility": {
+        "skipToContent": "Skip to main content",
+        "primaryNavigation": "Primary navigation",
+        "mobileMenuAriaLabel": "Navigation menu",
+        "openMenu": "Open menu",
+        "dialog": "Dialog"
+      },
+      "common": {
+        "verified": "Verified"
+      },
+      "contact": {
+        "headerLabel": "I want my website",
+        "headerUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20professional%20website.",
+        "footerLabel": "Talk on WhatsApp",
+        "footerUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20discuss%20a%20website%20for%20my%20business."
+      }
+    },
+    "footer": {
+      "title": "Zoolandingpage",
+      "summary": "Zoosite is part of Zoolandingpage: an ecosystem for creating websites, landing pages, and business-oriented digital experiences.",
+      "linksTitle": "Main routes",
+      "sectorsTitle": "Initial sectors",
+      "legal": "We work with approved commercial information and public messages suited to each business.",
+      "copyright": "Zoosite / Zoo Website",
+      "faqLabel": "FAQ"
+    },
+    "sectorLabels": {
+      "clinics": "Clinics",
+      "law": "Law firms",
+      "realEstate": "Real estate",
+      "localServices": "Local services",
+      "construction": "Construction companies",
+      "agencies": "Agencies"
+    }
+  }
+}

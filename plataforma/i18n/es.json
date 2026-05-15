@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "plataforma",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "La base que hace crecer tu sitio",
+      "title": "Un sitio preparado para publicar, medir y crecer.",
+      "lead": "Tu sitio se construye con una base flexible para revisar contenido, ampliar páginas y leer señales de interés desde el inicio.",
+      "primaryLabel": "Quiero entender la base",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20entender%20c%C3%B3mo%20la%20plataforma%20de%20Zoosite%20ayuda%20a%20mi%20sitio%20web.",
+      "secondaryLabel": "Ver servicios",
+      "panel": {
+        "kicker": "Para tu negocio",
+        "title": "La base tecnológica trabaja para tus objetivos.",
+        "lead": "Te orientamos para que el sitio pueda crecer por contenido, sectores, campañas y lectura comercial.",
+        "items": [
+          {
+            "title": "Publicación ágil",
+            "content": "Una primera versión puede salir con la estructura necesaria para recibir visitas y contactos."
+          },
+          {
+            "title": "Crecimiento gradual",
+            "content": "La estructura permite agregar páginas, idiomas o sectores conforme el negocio lo necesite."
+          },
+          {
+            "title": "Datos desde el inicio",
+            "content": "Las interacciones importantes ayudan a orientar próximos ajustes con más contexto."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "Nube",
+        "label": "Base flexible",
+        "detail": "Preparada para sitios que crecen por páginas, idiomas y contenido."
+      },
+      {
+        "value": "Datos",
+        "label": "Medición desde día 1",
+        "detail": "Eventos para entender interés real."
+      },
+      {
+        "value": "IA",
+        "label": "Contenido estructurado",
+        "detail": "Información organizada para aprovechar nuevas capacidades cuando tenga sentido comercial."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Beneficios",
+        "title": "La tecnología debe ayudar a vender y aprender.",
+        "lead": "La base se diseña para operar con orden, medir interacciones importantes y acompañar el crecimiento del sitio.",
+        "cards": [
+          {
+            "icon": "speed",
+            "title": "Velocidad de lanzamiento",
+            "description": "La estructura flexible permite avanzar con contenido y rutas de forma ordenada desde la primera versión.",
+            "benefits": [
+              "Inicio ágil",
+              "Revisión clara",
+              "Publicación ordenada"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "trending_up",
+            "title": "Escalabilidad gradual",
+            "description": "El sitio puede crecer con nuevas páginas, sectores y recursos según demanda real.",
+            "benefits": [
+              "Más rutas",
+              "Más idiomas si se requiere",
+              "Ajustes por evidencia"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "analytics",
+            "title": "Medición útil",
+            "description": "La analítica inicial se enfoca en páginas, secciones y clicks que muestran interés comercial.",
+            "benefits": [
+              "Página",
+              "Plan o sector",
+              "Idioma"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      },
+      {
+        "eyebrow": "Alcance responsable",
+        "title": "Los detalles de operación se definen con números reales.",
+        "lead": "Cuando un proyecto requiera límites por plan, se calculan costos de nube, renderizado, analítica, red y operación antes de publicarlos.",
+        "cards": [
+          {
+            "icon": "trending_up",
+            "title": "Costos reales",
+            "description": "Antes de publicar límites de vistas o recursos, modelamos uso, proveedores y operación.",
+            "benefits": [
+              "Almacenamiento",
+              "Renderizado",
+              "Red y caché"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "security",
+            "title": "Información cuidada",
+            "description": "Trabajamos con información comercial aprobada y mensajes públicos adecuados para tu negocio.",
+            "benefits": [
+              "Contexto comercial",
+              "Materiales aprobados",
+              "Mensajes claros"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "security",
+            "title": "Evolución con control",
+            "description": "La estructura ayuda a mover contenido, revisar costos y mejorar la operación conforme el sitio crece.",
+            "benefits": [
+              "Config revisable",
+              "Rutas claras",
+              "Documentación útil"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Preguntas de plataforma",
+      "title": "Cómo ayuda la base tecnológica",
+      "lead": "Respuestas enfocadas en operación, crecimiento y lectura comercial.",
+      "items": [
+        {
+          "title": "¿Por qué importa la base del sitio?",
+          "content": "Porque facilita publicar una primera versión, ampliar contenido y entender qué páginas reciben más interés."
+        },
+        {
+          "title": "¿Esto cambia el precio del plan?",
+          "content": "Los planes parten de un alcance comercial. Los costos operativos especiales se revisan cuando el proyecto requiere más capacidad."
+        },
+        {
+          "title": "¿Puedo crecer por sectores o campañas?",
+          "content": "Sí. La estructura permite crear rutas específicas para públicos, servicios o campañas conforme avance el negocio."
+        },
+        {
+          "title": "¿Qué datos se revisan primero?",
+          "content": "Clicks en botones, páginas consultadas, idioma elegido y señales básicas de interés comercial."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Plataforma",
+      "title": "Hablemos de la base que necesita tu sitio.",
+      "lead": "Si tu negocio crecerá por páginas, sectores o campañas, conviene planearlo desde el inicio.",
+      "primaryLabel": "Quiero hablar de plataforma",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20hablar%20sobre%20la%20plataforma%20y%20crecimiento%20de%20mi%20sitio%20web.",
+      "secondaryLabel": "Ir a contacto"
+    }
+  }
+}

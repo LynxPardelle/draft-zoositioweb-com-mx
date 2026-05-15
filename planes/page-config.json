@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "pageId": "planes",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "planesPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "pricing-and-plan-comparison"
+  },
+  "seo": {
+    "title": {
+      "es": "Planes de sitios web profesionales | Zoosite",
+      "en": "Professional website plans | Zoosite"
+    },
+    "description": {
+      "es": "Compara planes por resultado: presencia profesional, generación de clientes o crecimiento con más páginas y medición.",
+      "en": "Compare plans by outcome: professional presence, customer generation, or growth with more pages and measurement."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Planes de sitios web profesionales | Zoosite",
+        "en": "Professional website plans | Zoosite"
+      },
+      "description": {
+        "es": "Compara planes por resultado: presencia profesional, generación de clientes o crecimiento con más páginas y medición.",
+        "en": "Compare plans by outcome: professional presence, customer generation, or growth with more pages and measurement."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/planes",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Planes de sitios web profesionales | Zoosite",
+        "en": "Professional website plans | Zoosite"
+      },
+      "description": {
+        "es": "Compara planes por resultado: presencia profesional, generación de clientes o crecimiento con más páginas y medición.",
+        "en": "Compare plans by outcome: professional presence, customer generation, or growth with more pages and measurement."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/planes",
+    "keywords": {
+      "es": [
+        "precio pagina web",
+        "planes sitios web",
+        "sitio web para negocio"
+      ],
+      "en": [
+        "website pricing",
+        "website plans",
+        "business website plan"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Planes de sitios web profesionales | Zoosite",
+        "description": "Compara planes por resultado: presencia profesional, generación de clientes o crecimiento con más páginas y medición.",
+        "url": "https://zoositioweb.com.mx/planes",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "evidencia",
+      "como-elegir",
+      "comparar-planes",
+      "zoolandingpage",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "planes",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Planes por resultado",
+      "title": "Elige el alcance que tu negocio necesita hoy.",
+      "lead": "Compara cada plan por el resultado que aporta: presencia profesional, más claridad comercial o una base ampliable para crecer.",
+      "primaryLabel": "Cotizar mi sitio",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20cotizar%20un%20sitio%20web%20para%20mi%20negocio.%20Me%20interesa%20conocer%20qu%C3%A9%20plan%20puede%20servirme.",
+      "secondaryLabel": "Ir a contacto",
+      "panel": {
+        "kicker": "Comparación clara",
+        "title": "Presencia, Clientes o Crecimiento.",
+        "lead": "Presencia te ayuda a publicar una base profesional. Clientes agrega más explicación comercial. Crecimiento prepara rutas por sectores, campañas o líneas de servicio.",
+        "items": [
+          {
+            "title": "Presencia",
+            "content": "Para publicar una base profesional."
+          },
+          {
+            "title": "Clientes",
+            "content": "Para explicar más y recibir contactos más claros."
+          },
+          {
+            "title": "Crecimiento",
+            "content": "Para ampliar contenido por sectores, campañas o líneas de servicio."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "$3,000",
+        "label": "Presencia",
+        "detail": "Publica una primera versión profesional con oferta, servicios y contacto claro."
+      },
+      {
+        "value": "$6,000",
+        "label": "Clientes",
+        "detail": "Agrega más páginas o secciones para explicar servicios, resolver preguntas y orientar contactos."
+      },
+      {
+        "value": "$10,000+",
+        "label": "Crecimiento",
+        "detail": "Prepara una base ampliable para sectores, campañas, líneas de servicio y seguimiento comercial."
+      }
+    ],
+    "plansSection": {
+      "eyebrow": "Comparar",
+      "title": "Planes claros por objetivo.",
+      "lead": "La tabla se centra en el valor comercial de cada plan y en el tipo de negocio al que puede servir."
+    },
+    "plans": [
+      {
+        "id": "presencia",
+        "name": "Presencia",
+        "price": "$3,000 MXN",
+        "fit": "Para negocios que quieren una presencia profesional, clara y lista para recibir primeros contactos.",
+        "result": "Resultado esperado: una base comercial para explicar qué haces, a quién atiendes y cómo iniciar contacto.",
+        "benefits": [
+          "Presentación del negocio y servicios principales.",
+          "Contacto por WhatsApp con mensaje inicial.",
+          "Contenido claro para publicar una primera versión profesional."
+        ],
+        "cta": "Me interesa Presencia",
+        "url": "https://wa.me/525522699563?text=Hola%2C%20me%20interesa%20el%20plan%20Presencia%20de%20%243%2C000%20MXN%20para%20un%20sitio%20web."
+      },
+      {
+        "id": "clientes",
+        "name": "Clientes",
+        "price": "$6,000 MXN",
+        "fit": "Para negocios que quieren explicar su oferta con más profundidad y recibir conversaciones más calificadas.",
+        "result": "Resultado esperado: más claridad por servicio, plan o perfil de cliente.",
+        "benefits": [
+          "Más secciones o páginas para explicar la oferta.",
+          "Mensajes directos a WhatsApp con más contexto comercial.",
+          "Medición de interacciones comerciales clave."
+        ],
+        "cta": "Me interesa Clientes",
+        "url": "https://wa.me/525522699563?text=Hola%2C%20me%20interesa%20el%20plan%20Clientes%20de%20%246%2C000%20MXN%20para%20un%20sitio%20web."
+      },
+      {
+        "id": "crecimiento",
+        "name": "Crecimiento",
+        "price": "desde $10,000 MXN",
+        "fit": "Para negocios con más oferta, varias audiencias o necesidad de crecer por sectores.",
+        "result": "Resultado esperado: una base ampliable para páginas, campañas y aprendizaje continuo.",
+        "benefits": [
+          "Arquitectura de contenido para crecer por tema o sector.",
+          "Mayor profundidad comercial y elementos de respaldo para decidir.",
+          "Preparación para optimización y futuras mejoras."
+        ],
+        "cta": "Me interesa Crecimiento",
+        "url": "https://wa.me/525522699563?text=Hola%2C%20me%20interesa%20el%20plan%20Crecimiento%20desde%20%2410%2C000%20MXN%20para%20un%20sitio%20web."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Cómo decidir",
+        "title": "Elige el plan por etapa y objetivo comercial.",
+        "lead": "La recomendación depende de qué tan desarrollada está tu oferta, cuántos servicios necesitas explicar y cuánta información quieres obtener de los contactos.",
+        "cards": [
+          {
+            "icon": "star",
+            "title": "Empieza por tu etapa",
+            "description": "Presencia funciona cuando necesitas publicar una base profesional y abrir contacto de forma ordenada.",
+            "benefits": [
+              "Una oferta principal",
+              "Contacto directo",
+              "Primera versión publicable"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "groups",
+            "title": "Piensa en tus clientes",
+            "description": "Clientes ayuda cuando atiendes varios perfiles o necesitas explicar servicios con más detalle.",
+            "benefits": [
+              "Preguntas respondidas",
+              "Mensajes más claros",
+              "Base para pauta"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "trending_up",
+            "title": "Planea crecimiento",
+            "description": "Crecimiento sirve cuando quieres ampliar páginas por sectores, campañas o líneas de servicio.",
+            "benefits": [
+              "Más profundidad",
+              "Nuevas rutas",
+              "Medición continua"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Dudas sobre planes",
+      "title": "Precios y alcance inicial",
+      "lead": "La conversación por WhatsApp ayuda a aterrizar el alcance adecuado.",
+      "items": [
+        {
+          "title": "¿Cómo sé qué plan elegir?",
+          "content": "Te orientamos con base en tu oferta, cantidad de servicios, materiales disponibles y objetivo comercial."
+        },
+        {
+          "title": "¿Puedo iniciar con Presencia y ampliar después?",
+          "content": "Sí. Podemos plantear una primera versión profesional y después agregar páginas por servicio, sector o campaña."
+        },
+        {
+          "title": "¿El precio cambia según el proyecto?",
+          "content": "Los planes dan una referencia inicial. La conversación ayuda a confirmar alcance, materiales, tiempos y prioridades."
+        },
+        {
+          "title": "¿Qué plan conviene para campañas?",
+          "content": "Clientes o Crecimiento suelen dar más espacio para mensajes por audiencia, páginas específicas y lectura de interés."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Elegir",
+      "title": "Pide una recomendación de plan.",
+      "lead": "Te responderemos con una ruta clara según tu negocio, tus materiales y el resultado que buscas.",
+      "primaryLabel": "Ayúdame a elegir",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20que%20me%20ayuden%20a%20elegir%20un%20plan%20para%20mi%20sitio%20web.",
+      "secondaryLabel": "Ir a contacto"
+    },
+    "zoolandingpageSection": {
+      "eyebrow": "También disponible",
+      "title": "Para campañas puntuales, conoce Zoolandingpage.",
+      "lead": "Si buscas una landing page para pauta, lanzamiento o una oferta específica, Zoolandingpage es la línea enfocada en páginas de campaña.",
+      "linkLabel": "Conocer Zoolandingpage"
+    }
+  }
+}

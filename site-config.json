@@ -1,0 +1,268 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "aliases": [
+    "zoosite.zoolandingpage.com.mx",
+    "sitiosweb.zoolandingpage.com.mx",
+    "quierounsitioweb.zoolandingpage.com.mx",
+    "crearpaginaweb.zoolandingpage.com.mx"
+  ],
+  "defaultPageId": "default",
+  "routes": [
+    {
+      "path": "/",
+      "pageId": "default",
+      "label": "Inicio"
+    },
+    {
+      "path": "/servicios",
+      "pageId": "servicios",
+      "label": "Servicios"
+    },
+    {
+      "path": "/planes",
+      "pageId": "planes",
+      "label": "Planes"
+    },
+    {
+      "path": "/sitios-web-para-pymes",
+      "pageId": "sitios-web-para-pymes",
+      "label": "Sitios Web para PyMEs"
+    },
+    {
+      "path": "/plataforma",
+      "pageId": "plataforma",
+      "label": "Plataforma"
+    },
+    {
+      "path": "/nosotros",
+      "pageId": "nosotros",
+      "label": "Nosotros"
+    },
+    {
+      "path": "/preguntas-frecuentes",
+      "pageId": "preguntas-frecuentes",
+      "label": "Preguntas frecuentes"
+    },
+    {
+      "path": "/contacto",
+      "pageId": "contacto",
+      "label": "Contacto"
+    },
+    {
+      "path": "/sectores/consultorios",
+      "pageId": "sector-consultorios",
+      "label": "Consultorios"
+    },
+    {
+      "path": "/sectores/despachos",
+      "pageId": "sector-despachos",
+      "label": "Despachos"
+    },
+    {
+      "path": "/sectores/inmobiliarias",
+      "pageId": "sector-inmobiliarias",
+      "label": "Inmobiliarias"
+    },
+    {
+      "path": "/sectores/servicios-locales",
+      "pageId": "sector-servicios-locales",
+      "label": "Servicios locales"
+    },
+    {
+      "path": "/sectores/constructoras",
+      "pageId": "sector-constructoras",
+      "label": "Constructoras"
+    },
+    {
+      "path": "/sectores/agencias",
+      "pageId": "sector-agencias",
+      "label": "Agencias"
+    }
+  ],
+  "site": {
+    "theme": {
+      "defaultMode": "light",
+      "palettes": {
+        "light": {
+          "bgColor": "#ece7df",
+          "textColor": "#17202a",
+          "titleColor": "#0d141c",
+          "linkColor": "#1463ff",
+          "accentColor": "#128c7e",
+          "secondaryBgColor": "#dce5ec",
+          "secondaryTextColor": "#415160",
+          "secondaryTitleColor": "#111827",
+          "secondaryLinkColor": "#1463ff",
+          "secondaryAccentColor": "#ff6b57",
+          "successColor": "#128c7e",
+          "onSuccessColor": "#ffffff",
+          "errorColor": "#dc3545",
+          "onErrorColor": "#3b0a10",
+          "warningColor": "#f59e0b",
+          "onWarningColor": "#3a2400",
+          "infoColor": "#1463ff",
+          "onInfoColor": "#041b44"
+        },
+        "dark": {
+          "bgColor": "#11161d",
+          "textColor": "#edf3f8",
+          "titleColor": "#ffffff",
+          "linkColor": "#74a8ff",
+          "accentColor": "#25d366",
+          "secondaryBgColor": "#1d2630",
+          "secondaryTextColor": "#c2ccd6",
+          "secondaryTitleColor": "#f7fbff",
+          "secondaryLinkColor": "#8fb8ff",
+          "secondaryAccentColor": "#ff8c7a",
+          "successColor": "#128c7e",
+          "onSuccessColor": "#ffffff",
+          "errorColor": "#ff7b89",
+          "onErrorColor": "#31070c",
+          "warningColor": "#f7c948",
+          "onWarningColor": "#2a1f00",
+          "infoColor": "#8fb8ff",
+          "onInfoColor": "#071b33"
+        }
+      }
+    },
+    "appIdentity": {
+      "identifier": "zoositiowebcommx",
+      "name": "Zoosite",
+      "version": "1.0.0",
+      "description": "Complete websites for businesses, with guided WhatsApp contact and initial measurement."
+    },
+    "seo": {
+      "siteName": "Zoosite",
+      "title": "Zoosite | Sitios web profesionales para negocios",
+      "description": "Sitios web completos para negocios que quieren verse profesionales, explicar su oferta y recibir contactos por WhatsApp.",
+      "canonicalOrigin": "https://zoositioweb.com.mx",
+      "defaultImage": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "openGraph": {
+        "type": "website",
+        "site_name": "Zoosite"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      },
+      "keywords": {
+        "es": [
+          "sitios web profesionales",
+          "paginas web para pymes",
+          "sitios web para negocios",
+          "Zoosite"
+        ],
+        "en": [
+          "professional websites",
+          "websites for small business",
+          "business websites",
+          "Zoosite"
+        ]
+      },
+      "robots": "index,follow,max-image-preview:large"
+    },
+    "i18n": {
+      "defaultLanguage": "es",
+      "supportedLanguages": [
+        {
+          "code": "es",
+          "label": "ES"
+        },
+        {
+          "code": "en",
+          "label": "EN"
+        }
+      ]
+    }
+  },
+  "defaults": {
+    "brand": {
+      "displayName": "Zoosite"
+    },
+    "ui": {
+      "contact": {
+        "whatsappPhone": "+525522699563",
+        "whatsappMessageKey": "ui.contact.headerLabel"
+      },
+      "loadingCurtain": {
+        "title": "Zoosite",
+        "subtitle": "zoositioweb.com.mx",
+        "background": "#ece7df",
+        "foreground": "#17202a",
+        "accent": "#128c7e",
+        "exitDurationMs": 360
+      }
+    }
+  },
+  "runtime": {
+    "localStorage": {
+      "theme": "zoosite-theme",
+      "language": "zoosite-language",
+      "userPreferences": "zoosite-preferences",
+      "id": "zoosite-id",
+      "sessionId": "zoosite-session-id",
+      "allowAnalytics": "zoosite-allow-analytics",
+      "analyticsConsentSnooze": "zoosite-allow-analytics-snooze",
+      "pageViewCount": "zoosite-page-view-count"
+    },
+    "features": {
+      "debugMode": false
+    },
+    "navigation": {
+      "scrollRestoration": {
+        "mode": "top",
+        "behavior": "auto"
+      }
+    },
+    "analytics": {
+      "enabled": true,
+      "consentUI": "none",
+      "consentSnoozeSeconds": 30,
+      "track": [
+        "language",
+        "platform",
+        "screenWidth",
+        "screenHeight",
+        "timezone"
+      ],
+      "events": {
+        "page_view": "page_view",
+        "nav_click": "nav_click",
+        "cta_click": "cta_click",
+        "whatsapp_click": "whatsapp_click",
+        "faq_open": "faq_open",
+        "section_view": "section_view",
+        "scroll_depth": "scroll_depth",
+        "theme_toggle": "theme_toggle",
+        "language_toggle": "language_toggle"
+      },
+      "categories": {
+        "navigation": "navigation",
+        "cta": "cta",
+        "faq": "faq",
+        "engagement": "engagement",
+        "theme": "theme",
+        "i18n": "i18n"
+      },
+      "quickStats": {
+        "pageView": {
+          "event": "page_view",
+          "path": "metrics.pageViews",
+          "by": 1
+        },
+        "events": [
+          {
+            "name": "whatsapp_click",
+            "path": "metrics.whatsappClicks",
+            "by": 1
+          },
+          {
+            "name": "cta_click",
+            "path": "metrics.ctaClicks",
+            "by": 1
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "preguntas-frecuentes",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Todo lo básico antes de pedir tu sitio.",
+      "lead": "Reunimos las dudas principales sobre planes, proceso, materiales, WhatsApp y crecimiento para que decidas con más claridad.",
+      "primaryLabel": "Quiero orientación",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20orientaci%C3%B3n%20para%20mi%20sitio%20web.",
+      "secondaryLabel": "Ir a contacto"
+    },
+    "faq": {
+      "eyebrow": "Respuestas",
+      "title": "Preguntas frecuentes",
+      "lead": "Una sola página para consultar lo esencial del servicio.",
+      "items": [
+        {
+          "title": "¿Cómo sé qué plan elegir?",
+          "content": "Te orientamos con base en tu oferta, cantidad de servicios, materiales disponibles y objetivo comercial."
+        },
+        {
+          "title": "¿Puedo empezar con pocos textos o fotos?",
+          "content": "Sí. Convertimos lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+        },
+        {
+          "title": "¿El contacto inicial es por WhatsApp?",
+          "content": "Sí. WhatsApp abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+        },
+        {
+          "title": "¿Qué información conviene preparar?",
+          "content": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+        },
+        {
+          "title": "¿Cómo ayudan a mi negocio?",
+          "content": "Ordenamos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+        },
+        {
+          "title": "¿Puedo crecer por sectores o campañas?",
+          "content": "Sí. La estructura puede ampliarse con páginas para públicos, servicios o campañas conforme avance el negocio."
+        },
+        {
+          "title": "¿Qué se revisa antes de recomendar?",
+          "content": "Oferta, mercado, materiales, prioridad de contacto y el momento comercial del negocio."
+        },
+        {
+          "title": "¿El sitio queda preparado para móvil?",
+          "content": "Sí. La experiencia se revisa para que clientes puedan leer, comparar y escribirte con fluidez desde el teléfono."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Siguiente paso",
+      "title": "Conversemos sobre tu caso específico.",
+      "lead": "Si ya tienes una idea del sitio, podemos ayudarte a ordenar alcance, plan y materiales.",
+      "primaryLabel": "Abrir WhatsApp",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20empezar%20mi%20sitio%20web%20con%20Zoosite.",
+      "secondaryLabel": "Ver planes"
+    }
+  }
+}

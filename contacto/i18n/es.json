@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "contacto",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "WhatsApp guiado",
+      "title": "Cuéntanos qué sitio necesita tu negocio.",
+      "lead": "El primer mensaje puede incluir giro, ciudad, objetivo, plan de interés y materiales disponibles.",
+      "primaryLabel": "Abrir WhatsApp",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20crear%20un%20sitio%20web.%20Mi%20negocio%20es%20de%3A",
+      "secondaryLabel": "Ver planes",
+      "panel": {
+        "kicker": "Información útil",
+        "title": "Con buen contexto, la recomendación llega más enfocada.",
+        "lead": "Para iniciar basta compartir información comercial general: qué vendes, a quién atiendes y qué buscas lograr.",
+        "items": [
+          {
+            "title": "Giro",
+            "content": "Qué vendes y a quién atiendes."
+          },
+          {
+            "title": "Objetivo",
+            "content": "Presencia, más clientes o crecimiento."
+          },
+          {
+            "title": "Materiales",
+            "content": "Logo, fotos, textos o referencias si ya existen."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "1 mensaje",
+        "label": "Inicio directo",
+        "detail": "WhatsApp abre una conversación ágil para orientar el proyecto."
+      },
+      {
+        "value": "Plan",
+        "label": "Recomendación",
+        "detail": "Orientamos Presencia, Clientes o Crecimiento."
+      },
+      {
+        "value": "Siguiente paso",
+        "label": "Ruta clara",
+        "detail": "Te compartimos qué preparar y cómo avanzar con el alcance adecuado."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Opciones de inicio",
+        "title": "Elige el mensaje más cercano a tu caso.",
+        "lead": "Cada opción abre WhatsApp con un mensaje inicial útil para orientar la conversación.",
+        "cards": [
+          {
+            "icon": "preview",
+            "title": "Quiero un sitio nuevo",
+            "description": "Para negocios que quieren publicar una presencia profesional y empezar a recibir contactos.",
+            "benefits": [
+              "Giro del negocio",
+              "Objetivo principal",
+              "Tiempo deseado"
+            ],
+            "href": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20nuevo%20para%20mi%20negocio.",
+            "linkLabel": "Abrir WhatsApp"
+          },
+          {
+            "icon": "assignment",
+            "title": "Quiero revisar mi proyecto",
+            "description": "Para quienes ya tienen una idea, sitio anterior o materiales listos.",
+            "benefits": [
+              "Sitio actual si existe",
+              "Qué ajustar",
+              "Plan probable"
+            ],
+            "href": "https://wa.me/525522699563?text=Hola%2C%20quiero%20revisar%20mi%20proyecto%20de%20sitio%20web.%20Ya%20tengo%3A",
+            "linkLabel": "Abrir WhatsApp"
+          },
+          {
+            "icon": "home",
+            "title": "Quiero vender con más claridad",
+            "description": "Para negocios que necesitan explicar servicios, planes o sectores con más claridad.",
+            "benefits": [
+              "Servicios clave",
+              "Cliente ideal",
+              "Preguntas frecuentes"
+            ],
+            "href": "https://wa.me/525522699563?text=Hola%2C%20quiero%20que%20mi%20sitio%20ayude%20a%20vender%20con%20m%C3%A1s%20claridad.%20Mi%20oferta%20es%3A",
+            "linkLabel": "Abrir WhatsApp"
+          }
+        ]
+      },
+      {
+        "eyebrow": "Orientación inicial",
+        "title": "Lo que vamos a revisar antes de recomendar.",
+        "lead": "La revisión inicial se enfoca en información comercial: oferta, mercado, materiales y prioridad de contacto.",
+        "cards": [
+          {
+            "icon": "filter_alt",
+            "title": "Oferta",
+            "description": "Qué vendes, cómo lo explicas y qué preguntas aparecen antes del contacto.",
+            "benefits": [
+              "Servicios",
+              "Diferenciadores",
+              "Preguntas"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "cloud",
+            "title": "Mercado",
+            "description": "A quién atiendes, en qué zona y qué necesita comparar.",
+            "benefits": [
+              "Cliente ideal",
+              "Ubicación",
+              "Competencia visible"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "assignment",
+            "title": "Materiales",
+            "description": "Qué fotos, logos, textos o ejemplos ya existen.",
+            "benefits": [
+              "Logo",
+              "Fotos",
+              "Referencias"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Contacto",
+      "title": "Antes de escribir",
+      "lead": "Qué esperar del primer intercambio.",
+      "items": [
+        {
+          "title": "¿Puedo empezar con pocos textos o fotos?",
+          "content": "Sí. Te guiamos para convertir lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+        },
+        {
+          "title": "¿El contacto inicial es por WhatsApp?",
+          "content": "Sí. El primer mensaje abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+        },
+        {
+          "title": "¿Cómo ayudan a mi negocio?",
+          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+        },
+        {
+          "title": "¿Qué información conviene preparar?",
+          "content": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+        },
+        {
+          "title": "¿Pueden orientarme si todavía estoy definiendo mi sitio?",
+          "content": "Sí. Te ayudamos a elegir estructura, plan y mensajes para que la primera versión tenga una dirección comercial clara."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "WhatsApp",
+      "title": "Inicia con el contexto que ya tengas.",
+      "lead": "Si falta información, la ordenamos en la conversación.",
+      "primaryLabel": "Abrir WhatsApp",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20empezar%20mi%20sitio%20web%20con%20Zoosite.",
+      "secondaryLabel": "Ver planes"
+    }
+  }
+}

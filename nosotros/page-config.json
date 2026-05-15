@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "pageId": "nosotros",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "nosotrosPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "team-and-trust"
+  },
+  "seo": {
+    "title": {
+      "es": "Equipo de Zoosite | Sitios web, nube y marketing",
+      "en": "Zoosite team | Websites, cloud, and marketing"
+    },
+    "description": {
+      "es": "Conoce al equipo detrás de Zoosite: desarrollo web, nube, IA, diseño, marketing y análisis para sitios profesionales.",
+      "en": "Meet the team behind Zoosite: web development, cloud, AI, design, marketing, and analysis for professional websites."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Equipo de Zoosite | Sitios web, nube y marketing",
+        "en": "Zoosite team | Websites, cloud, and marketing"
+      },
+      "description": {
+        "es": "Conoce al equipo detrás de Zoosite: desarrollo web, nube, IA, diseño, marketing y análisis para sitios profesionales.",
+        "en": "Meet the team behind Zoosite: web development, cloud, AI, design, marketing, and analysis for professional websites."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/nosotros",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Equipo de Zoosite | Sitios web, nube y marketing",
+        "en": "Zoosite team | Websites, cloud, and marketing"
+      },
+      "description": {
+        "es": "Conoce al equipo detrás de Zoosite: desarrollo web, nube, IA, diseño, marketing y análisis para sitios profesionales.",
+        "en": "Meet the team behind Zoosite: web development, cloud, AI, design, marketing, and analysis for professional websites."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/nosotros",
+    "keywords": {
+      "es": [
+        "equipo zoosite",
+        "desarrollo web nube marketing",
+        "sitios web profesionales equipo"
+      ],
+      "en": [
+        "zoosite team",
+        "web development cloud marketing",
+        "professional website team"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Equipo de Zoosite | Sitios web, nube y marketing",
+        "description": "Conoce al equipo detrás de Zoosite: desarrollo web, nube, IA, diseño, marketing y análisis para sitios profesionales.",
+        "url": "https://zoositioweb.com.mx/nosotros",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "evidencia",
+      "forma-de-trabajo",
+      "equipo",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

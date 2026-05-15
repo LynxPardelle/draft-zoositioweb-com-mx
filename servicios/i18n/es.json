@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "servicios",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Servicio completo",
+      "title": "Convierte tu oferta en un sitio claro para vender.",
+      "lead": "Te acompañamos desde la idea hasta la publicación: estructura, textos, diseño, revisión en móvil y señales iniciales de interés.",
+      "primaryLabel": "Quiero revisar mi proyecto",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20revisar%20mi%20proyecto%20de%20sitio%20web.%20Mi%20negocio%20es%3A",
+      "secondaryLabel": "Comparar planes",
+      "panel": {
+        "kicker": "Entrega orientada a negocio",
+        "title": "Cada página ayuda a que el cliente avance.",
+        "lead": "Cada bloque tiene una intención clara: explicar tu oferta, resolver preguntas habituales y abrir una conversación comercial.",
+        "items": [
+          {
+            "title": "Estructura",
+            "content": "Ordenamos la oferta en páginas y secciones fáciles de recorrer."
+          },
+          {
+            "title": "Contenido",
+            "content": "Escribimos textos comerciales en lenguaje directo para que el cliente entienda rápido tu valor."
+          },
+          {
+            "title": "Medición",
+            "content": "Registramos interacciones importantes para saber qué páginas y botones reciben más atención."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "4 pasos",
+        "label": "De idea a publicación",
+        "detail": "Entender, estructurar, producir y ajustar tu sitio."
+      },
+      {
+        "value": "Móvil",
+        "label": "Experiencia lista para celular",
+        "detail": "Tus clientes pueden leer, comparar y escribirte con fluidez desde el teléfono."
+      },
+      {
+        "value": "Datos",
+        "label": "Aprendizaje inicial",
+        "detail": "Lectura básica de páginas, secciones y clicks importantes."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Qué incluye",
+        "title": "Una base lista para vender tu oferta.",
+        "lead": "Reunimos estrategia comercial, contenido, diseño y publicación para que tu sitio ayude a explicar tu negocio y abrir conversaciones.",
+        "cards": [
+          {
+            "icon": "account_tree",
+            "title": "Mapa de páginas",
+            "description": "Definimos qué necesita cada ruta: inicio, servicios, planes, contacto, sectores o páginas de respaldo comercial.",
+            "benefits": [
+              "Intención por página",
+              "Enlaces internos",
+              "Contenido escalable"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "assignment",
+            "title": "Texto comercial",
+            "description": "Redacción clara para explicar lo que vendes y por qué vale la pena escribirte.",
+            "benefits": [
+              "Lenguaje directo",
+              "Preguntas frecuentes",
+              "Mensajes directos a WhatsApp"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "analytics",
+            "title": "Lectura de interés",
+            "description": "Se registra qué páginas, planes o sectores reciben más atención para orientar próximos ajustes.",
+            "benefits": [
+              "Clicks importantes",
+              "Secciones vistas",
+              "Idioma y experiencia"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      },
+      {
+        "eyebrow": "Cómo trabajamos",
+        "title": "Cuatro pasos para avanzar con dirección.",
+        "lead": "El proyecto avanza con decisiones concretas sobre oferta, estructura, contenido, publicación y seguimiento inicial.",
+        "cards": [
+          {
+            "icon": "search",
+            "title": "1. Entender el negocio",
+            "description": "Revisamos qué vendes, a quién atiendes, qué preguntas recibe tu cliente y cómo te contactan hoy.",
+            "benefits": [
+              "Giro y zona",
+              "Oferta principal",
+              "Prioridad comercial"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "account_tree",
+            "title": "2. Definir la estructura",
+            "description": "Ordenamos páginas, secciones y mensajes para que cada visitante encuentre lo que necesita.",
+            "benefits": [
+              "Rutas iniciales",
+              "Jerarquía de contenido",
+              "Recorrido de contacto"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "account_tree",
+            "title": "3. Producir el sitio",
+            "description": "Creamos páginas y componentes con contenido claro para revisar y ajustar contigo.",
+            "benefits": [
+              "Diseño claro",
+              "Contenido útil",
+              "WhatsApp directo"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "rocket_launch",
+            "title": "4. Publicar y ajustar",
+            "description": "Revisamos móvil y escritorio, afinamos detalles y dejamos la base lista para lectura inicial de interés.",
+            "benefits": [
+              "Revisión visual",
+              "Ajustes finales",
+              "Aprendizaje inicial"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Servicio",
+      "title": "Cómo se trabaja el proyecto",
+      "lead": "Respuestas enfocadas en el proceso de creación y acompañamiento.",
+      "items": [
+        {
+          "title": "¿Qué entregan en el servicio?",
+          "content": "Un sitio con estructura, textos comerciales, diseño adaptable, contacto por WhatsApp y lectura inicial de interacciones."
+        },
+        {
+          "title": "¿Me ayudan a ordenar mis ideas?",
+          "content": "Sí. Partimos de tu oferta y la convertimos en páginas, secciones y mensajes que una persona pueda entender rápido."
+        },
+        {
+          "title": "¿Puedo avanzar por etapas?",
+          "content": "Sí. Definimos una primera versión útil y dejamos una ruta clara para ampliar contenido, sectores o campañas después."
+        },
+        {
+          "title": "¿Qué necesito preparar?",
+          "content": "Servicios, zona de atención, diferenciales, fotos disponibles, referencias visuales y forma ideal de recibir contactos."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Empezar",
+      "title": "Cuéntanos qué vendes y qué quieres lograr con tu sitio.",
+      "lead": "Te orientamos para elegir alcance, páginas y contenido según el momento de tu negocio.",
+      "primaryLabel": "Revisar mi proyecto",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20revisar%20mi%20proyecto%20de%20sitio%20web%20y%20elegir%20el%20plan%20adecuado.",
+      "secondaryLabel": "Ir a contacto"
+    }
+  }
+}

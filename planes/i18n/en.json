@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "planes",
+  "lang": "en",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Plans by outcome",
+      "title": "Choose the scope your business needs today.",
+      "lead": "Compare each plan by the result it provides: professional presence, more commercial clarity, or an expandable base for growth.",
+      "primaryLabel": "Quote my website",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20quote%20a%20website%20for%20my%20business.%20I%20would%20like%20to%20know%20which%20plan%20can%20serve%20me.",
+      "secondaryLabel": "Go to contact",
+      "panel": {
+        "kicker": "Clear comparison",
+        "title": "Presence, Customers, or Growth.",
+        "lead": "Presence helps publish a professional base. Customers adds more commercial explanation. Growth prepares routes by sectors, campaigns, or service lines.",
+        "items": [
+          {
+            "title": "Presence",
+            "content": "To publish a professional base."
+          },
+          {
+            "title": "Customers",
+            "content": "To explain more and receive clearer inquiries."
+          },
+          {
+            "title": "Growth",
+            "content": "To expand content by sectors, campaigns, or service lines."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "$3,000",
+        "label": "Presence",
+        "detail": "Publish a professional first version with offer, services, and clear contact."
+      },
+      {
+        "value": "$6,000",
+        "label": "Customers",
+        "detail": "Add more pages or sections to explain services, answer questions, and guide inquiries."
+      },
+      {
+        "value": "$10,000+",
+        "label": "Growth",
+        "detail": "Prepare an expandable base for sectors, campaigns, service lines, and commercial follow-up."
+      }
+    ],
+    "plansSection": {
+      "eyebrow": "Compare",
+      "title": "Clear plans by objective.",
+      "lead": "The table focuses on the commercial value of each plan and the kind of business it can serve."
+    },
+    "plans": [
+      {
+        "id": "presencia",
+        "name": "Presence",
+        "price": "MXN $3,000",
+        "fit": "For businesses that want a professional, clear presence ready to receive first inquiries.",
+        "result": "Expected result: a commercial base to explain what you do, who you serve, and how to start contact.",
+        "benefits": [
+          "Business presentation and main services.",
+          "WhatsApp contact with an initial message.",
+          "Clear content to publish a professional first version."
+        ],
+        "cta": "I am interested in Presence",
+        "url": "https://wa.me/525522699563?text=Hi%2C%20I%20am%20interested%20in%20the%20Presence%20plan%20for%20MXN%20%243%2C000%20for%20a%20website."
+      },
+      {
+        "id": "clientes",
+        "name": "Customers",
+        "price": "MXN $6,000",
+        "fit": "For businesses that want to explain their offer with more depth and receive more qualified conversations.",
+        "result": "Expected result: more clarity by service, plan, or customer profile.",
+        "benefits": [
+          "More sections or pages to explain the offer.",
+          "Direct WhatsApp messages with more commercial context.",
+          "Measurement of key commercial interactions."
+        ],
+        "cta": "I am interested in Customers",
+        "url": "https://wa.me/525522699563?text=Hi%2C%20I%20am%20interested%20in%20the%20Customers%20plan%20for%20MXN%20%246%2C000%20for%20a%20website."
+      },
+      {
+        "id": "crecimiento",
+        "name": "Growth",
+        "price": "from MXN $10,000",
+        "fit": "For businesses with more offer depth, multiple audiences, or sector growth needs.",
+        "result": "Expected result: an expandable base for pages, campaigns, and continuous learning.",
+        "benefits": [
+          "Content architecture to grow by topic or sector.",
+          "More commercial depth and decision-support elements.",
+          "Preparation for optimization and future improvements."
+        ],
+        "cta": "I am interested in Growth",
+        "url": "https://wa.me/525522699563?text=Hi%2C%20I%20am%20interested%20in%20the%20Growth%20plan%20from%20MXN%20%2410%2C000%20for%20a%20website."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "How to decide",
+        "title": "Choose the plan by stage and commercial objective.",
+        "lead": "The recommendation depends on how developed your offer is, how many services you need to explain, and how much information you want to learn from inquiries.",
+        "cards": [
+          {
+            "icon": "star",
+            "title": "Start with your stage",
+            "description": "Presence works when you need to publish a professional base and open contact in an organized way.",
+            "benefits": [
+              "One main offer",
+              "Direct contact",
+              "Publishable first version"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "groups",
+            "title": "Think about your customers",
+            "description": "Customers helps when you serve multiple profiles or need to explain services with more detail.",
+            "benefits": [
+              "Questions answered",
+              "Clearer messages",
+              "Ads base"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "trending_up",
+            "title": "Plan growth",
+            "description": "Growth is useful when you want to expand pages by sectors, campaigns, or service lines.",
+            "benefits": [
+              "More depth",
+              "New routes",
+              "Continuous measurement"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Plan questions",
+      "title": "Pricing and initial scope",
+      "lead": "The WhatsApp conversation helps land the right scope.",
+      "items": [
+        {
+          "title": "How do I know which plan to choose?",
+          "content": "We guide you based on your offer, number of services, available materials, and commercial objective."
+        },
+        {
+          "title": "Can I start with Presence and expand later?",
+          "content": "Yes. We can plan a professional first version and later add pages by service, sector, or campaign."
+        },
+        {
+          "title": "Can pricing change by project?",
+          "content": "Plans provide an initial reference. The conversation helps confirm scope, materials, timing, and priorities."
+        },
+        {
+          "title": "Which plan fits campaigns?",
+          "content": "Customers or Growth usually provide more room for audience messaging, specific pages, and interest reading."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Choose",
+      "title": "Ask for a plan recommendation.",
+      "lead": "We will reply with a clear route based on your business, materials, and desired result.",
+      "primaryLabel": "Help me choose",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20help%20choosing%20a%20plan%20for%20my%20website.",
+      "secondaryLabel": "Go to contact"
+    },
+    "zoolandingpageSection": {
+      "eyebrow": "Also available",
+      "title": "For focused campaigns, explore Zoolandingpage.",
+      "lead": "If you need a landing page for ads, launches, or a specific offer, Zoolandingpage is the line focused on campaign pages.",
+      "linkLabel": "Explore Zoolandingpage"
+    }
+  }
+}

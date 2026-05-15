@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "sector-servicios-locales",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Sector",
+      "title": "Sitios web para servicios locales que quieren recibir solicitudes por zona.",
+      "lead": "Presenta qué haces, dónde atiendes, horarios, disponibilidad y contacto por WhatsApp para clientes que buscan resolver algo cerca.",
+      "primaryLabel": "Quiero un sitio para mi servicio local",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20para%20mi%20servicio%20local.",
+      "secondaryLabel": "Ver planes",
+      "panel": {
+        "kicker": "Página por intención",
+        "title": "Negocios de atención cercana que necesitan explicar servicio, zona y contacto.",
+        "lead": "La página ayuda a que el cliente entienda rápido si atiendes su zona y cómo iniciar conversación.",
+        "items": [
+          {
+            "title": "Qué debe quedar claro",
+            "content": "Servicios, zonas, proceso y forma de contacto."
+          },
+          {
+            "title": "Cómo orientamos el contenido",
+            "content": "Trabajamos con información comercial aprobada y mensajes adecuados para el sector."
+          },
+          {
+            "title": "Cómo se mide",
+            "content": "Clicks por sector, página e idioma para entender interés."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "Zona",
+        "label": "Cobertura clara",
+        "detail": "El visitante entiende dónde atiendes y qué puede pedir."
+      },
+      {
+        "value": "Servicio",
+        "label": "Oferta directa",
+        "detail": "Los servicios se explican con lenguaje sencillo y comercial."
+      },
+      {
+        "value": "WhatsApp",
+        "label": "Contacto ágil",
+        "detail": "El mensaje inicial llega con contexto para responder mejor."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Necesidades",
+        "title": "Tu cliente quiere saber si puedes atenderlo y cómo pedirte una cotización.",
+        "lead": "La página ordena servicio, zona, horarios y formas de contacto para abrir conversación con más claridad.",
+        "cards": [
+          {
+            "icon": "assignment",
+            "title": "Servicios por zona",
+            "description": "Explica qué ofreces y en qué ciudades, colonias o áreas puedes atender.",
+            "benefits": [
+              "Servicios principales",
+              "Zonas de atención",
+              "Disponibilidad clara"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "phone_android",
+            "title": "Solicitud rápida",
+            "description": "El contacto por WhatsApp puede iniciar con el servicio de interés y la zona del cliente.",
+            "benefits": [
+              "Servicio solicitado",
+              "Ubicación del cliente",
+              "Primer contexto"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "verified",
+            "title": "Presentación profesional",
+            "description": "Organiza fotos, proceso, referencias públicas y detalles que ayudan a elegirte.",
+            "benefits": [
+              "Proceso visible",
+              "Materiales públicos",
+              "Información ordenada"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      },
+      {
+        "eyebrow": "Contenido recomendado",
+        "title": "Secciones útiles para negocios de atención cercana.",
+        "lead": "El sitio debe ayudar a entender servicio, cobertura y siguiente paso sin rodeos.",
+        "cards": [
+          {
+            "icon": "home",
+            "title": "Cobertura y horarios",
+            "description": "Muestra zonas, horarios y condiciones de atención con una estructura fácil de revisar.",
+            "benefits": [
+              "Zonas",
+              "Horarios",
+              "Modalidad"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "saved_search",
+            "title": "Servicios principales",
+            "description": "Cada servicio puede tener una explicación breve orientada a la solicitud comercial.",
+            "benefits": [
+              "Qué incluye",
+              "Para quién es",
+              "Cómo pedirlo"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "analytics",
+            "title": "Interés por servicio",
+            "description": "Los clicks ayudan a ver qué servicios o rutas reciben más atención.",
+            "benefits": [
+              "Servicio consultado",
+              "Página vista",
+              "Contacto iniciado"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Preguntas del sector",
+      "title": "Lo que conviene aclarar",
+      "lead": "Estas respuestas se ajustan con información real del negocio.",
+      "items": [
+        {
+          "title": "¿Puedo empezar con pocos textos o fotos?",
+          "content": "Sí. Te guiamos para convertir lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+        },
+        {
+          "title": "¿El contacto inicial es por WhatsApp?",
+          "content": "Sí. El primer mensaje abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+        },
+        {
+          "title": "¿Cómo ayudan a mi negocio?",
+          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+        },
+        {
+          "title": "¿Qué información conviene preparar?",
+          "content": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+        },
+        {
+          "title": "¿Pueden orientarme si todavía estoy definiendo mi sitio?",
+          "content": "Sí. Te ayudamos a elegir estructura, plan y mensajes para que la primera versión tenga una dirección comercial clara."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Sector",
+      "title": "Crea una página clara para tu servicio local.",
+      "lead": "El mensaje de WhatsApp puede iniciar con tu giro y zona para orientar mejor la conversación.",
+      "primaryLabel": "Quiero mi página de servicio local",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20para%20mi%20servicio%20local%20dentro%20de%20mi%20sitio%20web.",
+      "secondaryLabel": "Ir a contacto"
+    }
+  }
+}

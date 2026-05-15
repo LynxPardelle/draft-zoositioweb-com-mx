@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "sitios-web-para-pymes",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Para PyMEs y negocios en crecimiento",
+      "title": "Tu negocio necesita una página que sí explique por qué elegirte.",
+      "lead": "Zoosite ordena tu oferta en un sitio profesional, bilingüe y listo para recibir contactos por WhatsApp.",
+      "primaryLabel": "Quiero un sitio para mi PyME",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20para%20mi%20PyME.%20Mi%20negocio%20vende%3A",
+      "secondaryLabel": "Ver planes",
+      "panel": {
+        "kicker": "Para decidir rápido",
+        "title": "Tu cliente compara antes de escribirte.",
+        "lead": "Un sitio claro reduce dudas básicas y ayuda a que el primer mensaje llegue con más contexto.",
+        "items": [
+          {
+            "title": "Qué vendes",
+            "content": "Servicios o productos explicados con orden."
+          },
+          {
+            "title": "Por qué elegirte",
+            "content": "Experiencia, proceso, equipo o elementos reales de respaldo."
+          },
+          {
+            "title": "Cómo contactarte",
+            "content": "WhatsApp con un mensaje inicial orientado al objetivo del visitante."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "PyME",
+        "label": "Enfoque comercial",
+        "detail": "Lenguaje claro para compradores reales."
+      },
+      {
+        "value": "Móvil",
+        "label": "Consulta desde celular",
+        "detail": "Diseño pensado para revisar y escribir rápido."
+      },
+      {
+        "value": "Pauta",
+        "label": "Base para campañas",
+        "detail": "Página útil para tráfico pagado y búsqueda orgánica."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Problemas comunes",
+        "title": "Muchos negocios tienen presencia y necesitan más claridad.",
+        "lead": "El cliente quiere entender rápido qué haces, cómo lo ayudas y cuál es el siguiente paso.",
+        "cards": [
+          {
+            "icon": "help_outline",
+            "title": "La oferta necesita claridad",
+            "description": "Cuando tu valor se explica con orden, el cliente entiende servicios, beneficios y siguiente paso.",
+            "benefits": [
+              "Servicios con contexto",
+              "Beneficios claros",
+              "Contacto con intención"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "phone_android",
+            "title": "El sitio debe funcionar muy bien en móvil",
+            "description": "Una experiencia ligera y clara ayuda a leer, comparar y escribir desde el celular.",
+            "benefits": [
+              "Lectura rápida",
+              "Botones visibles",
+              "Orden claro"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "analytics",
+            "title": "Entiende qué genera interés",
+            "description": "La lectura básica de interacciones ayuda a orientar ajustes con contexto comercial.",
+            "benefits": [
+              "Clicks por página",
+              "Interés por plan",
+              "Sectores con demanda"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      },
+      {
+        "eyebrow": "Solución",
+        "title": "Un sitio que convierte dudas en conversaciones.",
+        "lead": "La primera versión debe presentar tu oferta con claridad y quedar ordenada para crecer después.",
+        "cards": [
+          {
+            "icon": "fact_check",
+            "title": "Contenido completo",
+            "description": "Páginas para explicar lo que haces, cómo trabajas, precios base y próximos pasos.",
+            "benefits": [
+              "Inicio",
+              "Servicios y planes",
+              "Contacto"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "flash_on",
+            "title": "Mensajes por intención",
+            "description": "Cada botón puede iniciar WhatsApp con contexto útil para mejorar la conversación.",
+            "benefits": [
+              "Menos pasos",
+              "Primer mensaje con contexto",
+              "Seguimiento más claro"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "account_tree",
+            "title": "Crecimiento por rutas",
+            "description": "El sitio puede crecer con páginas por sector, campaña o línea de servicio.",
+            "benefits": [
+              "SEO por intención",
+              "Pauta más relevante",
+              "Base para guías"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Preguntas PyME",
+      "title": "Antes de invertir",
+      "lead": "Puntos clave para decidir con claridad.",
+      "items": [
+        {
+          "title": "¿Puedo empezar con pocos textos o fotos?",
+          "content": "Sí. Te guiamos para convertir lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+        },
+        {
+          "title": "¿El contacto inicial es por WhatsApp?",
+          "content": "Sí. El primer mensaje abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+        },
+        {
+          "title": "¿Cómo ayudan a mi negocio?",
+          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+        },
+        {
+          "title": "¿Qué información conviene preparar?",
+          "content": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+        },
+        {
+          "title": "¿Pueden orientarme si todavía estoy definiendo mi sitio?",
+          "content": "Sí. Te ayudamos a elegir estructura, plan y mensajes para que la primera versión tenga una dirección comercial clara."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Cotizar",
+      "title": "Pide una recomendación para tu PyME.",
+      "lead": "Cuéntanos giro, ciudad y qué vendes para orientar el plan.",
+      "primaryLabel": "Quiero un sitio para mi PyME",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20para%20mi%20PyME.%20Mi%20giro%20es%3A",
+      "secondaryLabel": "Ir a contacto"
+    }
+  }
+}

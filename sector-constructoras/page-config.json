@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "pageId": "sector-constructoras",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "sector-constructorasPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "sector-constructoras"
+  },
+  "seo": {
+    "title": {
+      "es": "Sitios web para constructoras | Zoosite",
+      "en": "Websites for construction companies | Zoosite"
+    },
+    "description": {
+      "es": "Presenta proyectos, tipos de obra, proceso de trabajo y contacto comercial para constructoras.",
+      "en": "Present projects, work types, process, and commercial contact for construction companies."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Sitios web para constructoras | Zoosite",
+        "en": "Websites for construction companies | Zoosite"
+      },
+      "description": {
+        "es": "Presenta proyectos, tipos de obra, proceso de trabajo y contacto comercial para constructoras.",
+        "en": "Present projects, work types, process, and commercial contact for construction companies."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/sectores/constructoras",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Sitios web para constructoras | Zoosite",
+        "en": "Websites for construction companies | Zoosite"
+      },
+      "description": {
+        "es": "Presenta proyectos, tipos de obra, proceso de trabajo y contacto comercial para constructoras.",
+        "en": "Present projects, work types, process, and commercial contact for construction companies."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/sectores/constructoras",
+    "keywords": {
+      "es": [
+        "pagina web para constructoras",
+        "sitio web constructora",
+        "web para proyectos de construccion"
+      ],
+      "en": [
+        "construction company website",
+        "builder website",
+        "construction project website"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Sitios web para constructoras | Zoosite",
+        "description": "Presenta proyectos, tipos de obra, proceso de trabajo y contacto comercial para constructoras.",
+        "url": "https://zoositioweb.com.mx/sectores/constructoras",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "evidencia",
+      "necesidades",
+      "contenido",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "sector-agencias",
+  "lang": "en",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Sector",
+      "title": "Websites for agencies that need to present services, cases, and campaigns.",
+      "lead": "Organize services, cases, team, differentiators, and contact paths for clients comparing capabilities.",
+      "primaryLabel": "I want a website for my agency",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20website%20for%20my%20agency.",
+      "secondaryLabel": "View plans",
+      "panel": {
+        "kicker": "Intent-based page",
+        "title": "Agencies that sell services, campaigns, or solutions by customer type.",
+        "lead": "The page helps explain capabilities and guide contact toward the right service.",
+        "items": [
+          {
+            "title": "What must be clear",
+            "content": "Services, areas, process, and contact method."
+          },
+          {
+            "title": "How we guide content",
+            "content": "We work with approved commercial information and messages suited to the sector."
+          },
+          {
+            "title": "How it is measured",
+            "content": "Clicks by sector, page, and language to understand interest."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "Services",
+        "label": "Modular offer",
+        "detail": "Each service line can be explained clearly."
+      },
+      {
+        "value": "Cases",
+        "label": "Public proof",
+        "detail": "Available examples help explain your approach."
+      },
+      {
+        "value": "Campaigns",
+        "label": "Specific routes",
+        "detail": "The website can grow by audience or campaign."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Needs",
+        "title": "Your clients need to understand what you do and how you can support them.",
+        "lead": "The page organizes services, cases, team, and contact to open commercial conversations with better context.",
+        "cards": [
+          {
+            "icon": "assignment",
+            "title": "Modular services",
+            "description": "Present each service with scope, value, and next step.",
+            "benefits": [
+              "Main services",
+              "Packages or lines",
+              "Contact by interest"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "groups",
+            "title": "Team and approach",
+            "description": "Show team capabilities and how you support clients.",
+            "benefits": [
+              "Visible team",
+              "Methodology",
+              "Specialties"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "saved_search",
+            "title": "Cases and campaigns",
+            "description": "Organize examples, served sectors, or specific acquisition pages.",
+            "benefits": [
+              "Public cases",
+              "Sectors",
+              "Campaign pages"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      },
+      {
+        "eyebrow": "Recommended content",
+        "title": "Sections to sell services with more clarity.",
+        "lead": "The website can separate information by service, industry, or customer type.",
+        "cards": [
+          {
+            "icon": "analytics",
+            "title": "Commercial reading",
+            "description": "Clicks help show which service or campaign creates more interest.",
+            "benefits": [
+              "Consulted service",
+              "Viewed campaign",
+              "Started contact"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "phone_android",
+            "title": "Guided contact",
+            "description": "WhatsApp can start with the service or campaign the client wants to review.",
+            "benefits": [
+              "Selected service",
+              "Initial goal",
+              "Commercial context"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "verified",
+            "title": "Clear differentiators",
+            "description": "Proposal, experience, and process are organized to make comparison easier.",
+            "benefits": [
+              "Proposal",
+              "Experience",
+              "Process"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Sector questions",
+      "title": "What should be clarified",
+      "lead": "These answers are adjusted with real business information.",
+      "items": [
+        {
+          "title": "Can I start with limited copy or photos?",
+          "content": "Yes. We guide you to turn what you already know about your business into clear copy, useful sections, and well-presented starter materials."
+        },
+        {
+          "title": "Is the first contact through WhatsApp?",
+          "content": "Yes. The first message opens a quick conversation to understand your business, your goal, and the kind of website that can serve you."
+        },
+        {
+          "title": "How do you help my business?",
+          "content": "We turn your offer into a clear digital presence, with visible contact paths and initial data to make commercial decisions with more context."
+        },
+        {
+          "title": "What information should I prepare?",
+          "content": "Services, service areas, differentiators, available photos, visual references, and how you prefer to receive customers."
+        },
+        {
+          "title": "Can you guide me if I am still defining my website?",
+          "content": "Yes. We help you choose structure, plan, and messages so the first version has a clear commercial direction."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Sector",
+      "title": "Create a page designed to sell agency services.",
+      "lead": "We can help you organize offer, cases, and first contact with a commercial focus.",
+      "primaryLabel": "I want a page for my agency",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20page%20for%20my%20agency%20within%20my%20website.",
+      "secondaryLabel": "Go to contact"
+    }
+  }
+}

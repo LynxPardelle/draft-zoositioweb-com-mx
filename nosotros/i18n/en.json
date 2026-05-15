@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "nosotros",
+  "lang": "en",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Team",
+      "title": "Technology, design, and marketing working for the website.",
+      "lead": "Zoosite combines web development, cloud, AI, design, ads, and analysis to build websites that explain a business with more clarity.",
+      "primaryLabel": "I want to talk to the team",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20talk%20with%20the%20Zoosite%20team%20about%20a%20website.",
+      "secondaryLabel": "Go to contact",
+      "panel": {
+        "kicker": "Relevant experience",
+        "title": "We show what each profile contributes to the project.",
+        "lead": "The page brings together useful professional experience to show how technology, design, and marketing combine.",
+        "items": [
+          {
+            "title": "Cloud and AI",
+            "content": "Experience in architecture, integration, and digital products."
+          },
+          {
+            "title": "Design and marketing",
+            "content": "Visual judgment, ads, and market reading so the website connects with real customers."
+          },
+          {
+            "title": "Complete web",
+            "content": "Development, content, publishing, and initial improvement."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "Cloud",
+        "label": "Technology base",
+        "detail": "Experience in cloud, AI, and full-stack development."
+      },
+      {
+        "value": "Marketing",
+        "label": "Commercial judgment",
+        "detail": "Ads, design, and market analysis to guide messages."
+      },
+      {
+        "value": "Web",
+        "label": "Complete product",
+        "detail": "Websites with content, design, and initial measurement."
+      }
+    ],
+    "teamSection": {
+      "eyebrow": "People",
+      "title": "Initial team",
+      "lead": "Public and useful information to understand what each profile contributes."
+    },
+    "team": [
+      {
+        "name": "Alec Montaño",
+        "role": "Cloud, AI, and full-stack development",
+        "proof": [
+          "Experience with Bimbo, McGraw Hill, and Audio Enhancement.",
+          "Architecture, integration, and digital product.",
+          "Focus on measurable and maintainable systems."
+        ],
+        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/alec.jpg",
+        "imageAlt": "Photo of Alec Montaño"
+      },
+      {
+        "name": "Héctor Coronado",
+        "role": "Cloud, AI, and full-stack development",
+        "proof": [
+          "Experience with Coppel.",
+          "Backend and full-stack development.",
+          "Technology judgment for operation and scalability."
+        ],
+        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/hector.jpg",
+        "imageAlt": "Photo of Héctor Coronado"
+      },
+      {
+        "name": "Oswaldo",
+        "role": "Web development and digital marketing",
+        "proof": [
+          "Web development.",
+          "Google Ads and marketing with Pamela.",
+          "Final photo pending."
+        ],
+        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/oswaldo-placeholder.svg",
+        "imageAlt": "Oswaldo placeholder"
+      },
+      {
+        "name": "Pamela Betancourt",
+        "role": "Design, marketing, and market analysis",
+        "proof": [
+          "Visual judgment and digital communication.",
+          "Marketing and market data analysis.",
+          "Focus on clarity for the end customer."
+        ],
+        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/pamelaBetancourt.webp",
+        "imageAlt": "Photo of Pamela Betancourt"
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "How we collaborate",
+        "title": "The website is decided through business, design, and operation.",
+        "lead": "This mix helps the project connect the offer, the visual experience, and digital operation.",
+        "cards": [
+          {
+            "icon": "home",
+            "title": "Business",
+            "description": "First we understand offer, customer, frequent questions, and contact priority.",
+            "benefits": [
+              "Clear offer",
+              "Intent by page",
+              "Useful messages"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "auto_awesome",
+            "title": "Design",
+            "description": "The experience should look professional and be easy to scan.",
+            "benefits": [
+              "Visual hierarchy",
+              "Responsive",
+              "Visual proof"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "cloud",
+            "title": "Operation",
+            "description": "The technology base should be reviewable, measurable, and ready to grow.",
+            "benefits": [
+              "Local review",
+              "Measurement",
+              "Organized publishing"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Team",
+      "title": "Questions about us",
+      "lead": "How we present professional experience with public and useful information.",
+      "items": [
+        {
+          "title": "Can I start with limited copy or photos?",
+          "content": "Yes. We guide you to turn what you already know about your business into clear copy, useful sections, and well-presented starter materials."
+        },
+        {
+          "title": "Is the first contact through WhatsApp?",
+          "content": "Yes. The first message opens a quick conversation to understand your business, your goal, and the kind of website that can serve you."
+        },
+        {
+          "title": "How do you help my business?",
+          "content": "We turn your offer into a clear digital presence, with visible contact paths and initial data to make commercial decisions with more context."
+        },
+        {
+          "title": "What information should I prepare?",
+          "content": "Services, service areas, differentiators, available photos, visual references, and how you prefer to receive customers."
+        },
+        {
+          "title": "Can you guide me if I am still defining my website?",
+          "content": "Yes. We help you choose structure, plan, and messages so the first version has a clear commercial direction."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Contact",
+      "title": "Let us discuss the website your business needs.",
+      "lead": "The team can guide structure, plan, and first scope.",
+      "primaryLabel": "Talk to the team",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20talk%20with%20the%20Zoosite%20team%20about%20my%20website.",
+      "secondaryLabel": "Go to contact"
+    }
+  }
+}

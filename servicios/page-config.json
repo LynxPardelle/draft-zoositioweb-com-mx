@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "pageId": "servicios",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "serviciosPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "professional-website-service-intent"
+  },
+  "seo": {
+    "title": {
+      "es": "Desarrollo de sitios web profesionales | Zoosite",
+      "en": "Professional website development | Zoosite"
+    },
+    "description": {
+      "es": "Diseño, contenido, medición y publicación de sitios web completos para negocios que quieren recibir más contactos.",
+      "en": "Design, content, measurement, and publishing for complete websites built to receive more business inquiries."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Desarrollo de sitios web profesionales | Zoosite",
+        "en": "Professional website development | Zoosite"
+      },
+      "description": {
+        "es": "Diseño, contenido, medición y publicación de sitios web completos para negocios que quieren recibir más contactos.",
+        "en": "Design, content, measurement, and publishing for complete websites built to receive more business inquiries."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/servicios",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Desarrollo de sitios web profesionales | Zoosite",
+        "en": "Professional website development | Zoosite"
+      },
+      "description": {
+        "es": "Diseño, contenido, medición y publicación de sitios web completos para negocios que quieren recibir más contactos.",
+        "en": "Design, content, measurement, and publishing for complete websites built to receive more business inquiries."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/servicios",
+    "keywords": {
+      "es": [
+        "desarrollo de sitios web profesionales",
+        "diseno web mexico",
+        "sitios web para negocios"
+      ],
+      "en": [
+        "professional website development",
+        "business web design",
+        "websites for companies"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Desarrollo de sitios web profesionales | Zoosite",
+        "description": "Diseño, contenido, medición y publicación de sitios web completos para negocios que quieren recibir más contactos.",
+        "url": "https://zoositioweb.com.mx/servicios",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "evidencia",
+      "incluye",
+      "proceso",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

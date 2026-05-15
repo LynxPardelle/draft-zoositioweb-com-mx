@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "pageId": "sector-agencias",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "sector-agenciasPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "sector-agencias"
+  },
+  "seo": {
+    "title": {
+      "es": "Sitios web para agencias | Zoosite",
+      "en": "Websites for agencies | Zoosite"
+    },
+    "description": {
+      "es": "Presenta servicios, casos, equipo y páginas para campañas de captación para agencias.",
+      "en": "Present services, cases, team, and campaign pages for agencies."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Sitios web para agencias | Zoosite",
+        "en": "Websites for agencies | Zoosite"
+      },
+      "description": {
+        "es": "Presenta servicios, casos, equipo y páginas para campañas de captación para agencias.",
+        "en": "Present services, cases, team, and campaign pages for agencies."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/sectores/agencias",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Sitios web para agencias | Zoosite",
+        "en": "Websites for agencies | Zoosite"
+      },
+      "description": {
+        "es": "Presenta servicios, casos, equipo y páginas para campañas de captación para agencias.",
+        "en": "Present services, cases, team, and campaign pages for agencies."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/sectores/agencias",
+    "keywords": {
+      "es": [
+        "pagina web para agencias",
+        "sitio web agencia marketing",
+        "web para agencia de servicios"
+      ],
+      "en": [
+        "agency website",
+        "marketing agency website",
+        "service agency website"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Sitios web para agencias | Zoosite",
+        "description": "Presenta servicios, casos, equipo y páginas para campañas de captación para agencias.",
+        "url": "https://zoositioweb.com.mx/sectores/agencias",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "evidencia",
+      "necesidades",
+      "contenido",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

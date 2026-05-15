@@ -1,0 +1,853 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "sector-inmobiliarias",
+  "components": [
+    {
+      "id": "contentCardTemplate",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "icon": "",
+        "title": "",
+        "description": "",
+        "benefits": [],
+        "href": "",
+        "linkLabel": "",
+        "imageSrc": "",
+        "imageAlt": "",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-overflow-hidden",
+        "imageContainerClasses": "ank-width-100per ank-height-210px ank-overflow-hidden ank-borderRadius-8px ank-bg-secondaryBgColor",
+        "imageClasses": "ank-width-100per ank-height-100per ank-display-block ank-objectFit-cover",
+        "featureIconContainerClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-width-42px ank-height-42px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-accentColor ank-flexShrink-0 ank-border-1px__solid__accentColor",
+        "featureIconClasses": "ank-display-block ank-width-1_35rem ank-height-1_35rem ank-fontSize-1_35rem ank-color-accentColor",
+        "featureTitleClasses": "ank-m-0 ank-color-titleColor ank-fontSize-1_18rem ank-fontWeight-800 ank-lineHeight-1_2",
+        "featureDescriptionClasses": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_98rem ank-lineHeight-1_55",
+        "benefitsListClasses": "ank-listStyle-none ank-padding-0 ank-margin-0 ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "benefitItemClasses": "ank-display-flex ank-alignItems-start ank-gap-8px ank-color-secondaryTextColor ank-fontSize-0_95rem ank-lineHeight-1_45",
+        "benefitIconClasses": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-successColor ank-flexShrink-0 ank-marginTop-2px",
+        "benefitTextClasses": "ank-color-secondaryTextColor",
+        "linkClasses": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-whiteSpace-nowrap"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasPage",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "ank-display-flex ank-flexDirection-column ank-outline-none ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "sector-inmobiliariasHeroSection",
+          "sector-inmobiliariasStatsSection",
+          "sector-inmobiliariasSection0Root",
+          "sector-inmobiliariasSection1Root",
+          "sector-inmobiliariasFinalSection"
+        ],
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-bgColor ank-paddingBlock-64px",
+        "components": [
+          "sector-inmobiliariasHeroInner"
+        ],
+        "id": "home",
+        "styles": {
+          "paddingBlock": "72px",
+          "borderBottom": "1px solid var(--ank-secondaryBgColor)",
+          "backgroundColor": "var(--ank-secondaryBgColor)",
+          "background": "linear-gradient(135deg, rgba(79, 141, 255, 0.16), transparent 36%), linear-gradient(180deg, var(--ank-bgColor), var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gridTemplateColumns-1fr ank-gap-28px ank-alignItems-center",
+        "components": [
+          "sector-inmobiliariasHeroPanel",
+          "sector-inmobiliariasHeroCopy"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 330px), 1fr))",
+          "gap": "32px",
+          "alignItems": "stretch",
+          "width": "100%"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "sector-inmobiliariasHeroEyebrow",
+          "sector-inmobiliariasHeroTitle",
+          "sector-inmobiliariasHeroLead",
+          "sector-inmobiliariasHeroActions"
+        ],
+        "styles": {
+          "justifyContent": "center",
+          "padding": "26px",
+          "backgroundColor": "var(--ank-bgColor)",
+          "borderRadius": "8px",
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "borderBottom": "6px solid #4f8dff"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_6rem ank-fontSize-md-4_3rem ank-lineHeight-1_02 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "sector-inmobiliariasHeroPrimary",
+          "sector-inmobiliariasHeroSecondary"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "12px",
+          "alignItems": "stretch",
+          "rowGap": "28px",
+          "columnGap": "12px"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroPrimary",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,sector-inmobiliarias-hero,page,sector-inmobiliarias,location,hero",
+      "valueInstructions": "set:config.text,i18n,hero.primaryLabel;set:config.href,i18n,hero.primaryUrl;set:config.ariaLabel,i18n,hero.primaryLabel",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroSecondary",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,sector-inmobiliarias-hero-secondary,page,sector-inmobiliarias,location,hero",
+      "valueInstructions": "set:config.text,i18n,hero.secondaryLabel;set:config.ariaLabel,i18n,hero.secondaryLabel",
+      "config": {
+        "href": "/planes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "target": "_self",
+        "rel": "nofollow noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroPanel",
+      "type": "container",
+      "config": {
+        "tag": "aside",
+        "classes": "ank-bg-secondaryBgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-gap-16px",
+        "components": [
+          "sector-inmobiliariasHeroPanelKicker",
+          "sector-inmobiliariasHeroPanelTitle",
+          "sector-inmobiliariasHeroPanelLead",
+          "sector-inmobiliariasHeroPanelList"
+        ],
+        "styles": {
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "borderTop": "6px solid #4f8dff",
+          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.13)",
+          "backgroundColor": "var(--ank-bgColor)",
+          "minHeight": "390px",
+          "borderBottom": "1px solid #4f8dff"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroPanelKicker",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.panel.kicker",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroPanelTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.panel.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_4rem ank-fontWeight-900 ank-lineHeight-1_15"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroPanelLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.panel.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasHeroPanelList",
+      "type": "accordion",
+      "config": {
+        "itemsSource": {
+          "source": "i18n",
+          "path": "hero.panel.items"
+        },
+        "mode": "single",
+        "allowToggle": true,
+        "containerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "defaultItemContainerClasses": "ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-bg-secondaryBgColor",
+        "defaultItemButtonConfig": {
+          "classes": "ank-width-100per ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-900 ank-cursor-pointer"
+        },
+        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "components": [
+          "sector-inmobiliariasStatsInner"
+        ],
+        "id": "evidencia",
+        "styles": {
+          "paddingBlock": "28px",
+          "backgroundColor": "var(--ank-bgColor)"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "sector-inmobiliariasStatsGrid"
+        ]
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px",
+        "components": [
+          "sector-inmobiliariasStatsCard1",
+          "sector-inmobiliariasStatsCard2",
+          "sector-inmobiliariasStatsCard3"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 230px), 1fr))",
+          "gap": "20px"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-bg-bgColor",
+        "components": [
+          "sector-inmobiliariasStatsValue1",
+          "sector-inmobiliariasStatsLabel1",
+          "sector-inmobiliariasStatsDetail1"
+        ],
+        "styles": {
+          "borderLeft": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 14px 34px rgba(0, 0, 0, 0.1)",
+          "borderTop": "5px solid #4f8dff"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsValue1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.0.value",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsLabel1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.0.label",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_05rem ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsDetail1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.0.detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-bg-bgColor",
+        "components": [
+          "sector-inmobiliariasStatsValue2",
+          "sector-inmobiliariasStatsLabel2",
+          "sector-inmobiliariasStatsDetail2"
+        ],
+        "styles": {
+          "borderLeft": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 14px 34px rgba(0, 0, 0, 0.1)",
+          "borderTop": "1px solid var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsValue2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.1.value",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsLabel2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.1.label",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_05rem ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsDetail2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.1.detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-bg-bgColor",
+        "components": [
+          "sector-inmobiliariasStatsValue3",
+          "sector-inmobiliariasStatsLabel3",
+          "sector-inmobiliariasStatsDetail3"
+        ],
+        "styles": {
+          "borderLeft": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 14px 34px rgba(0, 0, 0, 0.1)",
+          "borderTop": "1px solid var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsValue3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.2.value",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsLabel3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.2.label",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_05rem ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasStatsDetail3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.2.detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection0Root",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-bgColor",
+        "components": [
+          "sector-inmobiliariasSection0Inner"
+        ],
+        "id": "necesidades",
+        "styles": {
+          "backgroundColor": "var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection0Inner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "sector-inmobiliariasSection0Eyebrow",
+          "sector-inmobiliariasSection0Title",
+          "sector-inmobiliariasSection0Lead",
+          "sector-inmobiliariasSection0Cards"
+        ]
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection0Eyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.0.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection0Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.0.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection0Lead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.0.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection0Cards",
+      "type": "container",
+      "loopConfig": {
+        "source": "i18n",
+        "path": "sections.0.cards",
+        "templateId": "contentCardTemplate",
+        "idPrefix": "sector-inmobiliariasSection0Card",
+        "bindings": [
+          {
+            "to": "config.icon",
+            "sources": [
+              "icon"
+            ]
+          },
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "description"
+            ]
+          },
+          {
+            "to": "config.benefits",
+            "sources": [
+              "benefits"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              "linkLabel"
+            ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "imageSrc"
+            ]
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px",
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 290px), 1fr))",
+          "gap": "18px"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection1Root",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "components": [
+          "sector-inmobiliariasSection1Inner"
+        ],
+        "id": "contenido",
+        "styles": {
+          "backgroundColor": "var(--ank-bgColor)"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection1Inner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "sector-inmobiliariasSection1Eyebrow",
+          "sector-inmobiliariasSection1Title",
+          "sector-inmobiliariasSection1Lead",
+          "sector-inmobiliariasSection1Cards"
+        ]
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection1Eyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.1.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.1.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection1Lead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.1.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasSection1Cards",
+      "type": "container",
+      "loopConfig": {
+        "source": "i18n",
+        "path": "sections.1.cards",
+        "templateId": "contentCardTemplate",
+        "idPrefix": "sector-inmobiliariasSection1Card",
+        "bindings": [
+          {
+            "to": "config.icon",
+            "sources": [
+              "icon"
+            ]
+          },
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "description"
+            ]
+          },
+          {
+            "to": "config.benefits",
+            "sources": [
+              "benefits"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              "linkLabel"
+            ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "imageSrc"
+            ]
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px",
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 290px), 1fr))",
+          "gap": "18px"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "sector-inmobiliariasFinalSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "components": [
+          "sector-inmobiliariasFinalInner"
+        ],
+        "id": "contacto",
+        "styles": {
+          "backgroundColor": "var(--ank-bgColor)"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasFinalInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px ank-alignItems-start",
+        "components": [
+          "sector-inmobiliariasFinalEyebrow",
+          "sector-inmobiliariasFinalTitle",
+          "sector-inmobiliariasFinalLead",
+          "sector-inmobiliariasFinalActions"
+        ],
+        "styles": {
+          "borderTop": "5px solid #4f8dff",
+          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.11)",
+          "backgroundColor": "var(--ank-secondaryBgColor)",
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "borderRadius": "8px",
+          "padding": "26px"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasFinalEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasFinalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasFinalLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "sector-inmobiliariasFinalActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "sector-inmobiliariasFinalPrimary",
+          "sector-inmobiliariasFinalSecondary"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "12px",
+          "alignItems": "stretch",
+          "rowGap": "28px",
+          "columnGap": "12px"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasFinalPrimary",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,sector-inmobiliarias-final,page,sector-inmobiliarias,location,final_cta",
+      "valueInstructions": "set:config.text,i18n,final.primaryLabel;set:config.href,i18n,final.primaryUrl;set:config.ariaLabel,i18n,final.primaryLabel",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "sector-inmobiliariasFinalSecondary",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,sector-inmobiliarias-contact,page,sector-inmobiliarias,location,final_cta",
+      "valueInstructions": "set:config.text,i18n,final.secondaryLabel;set:config.ariaLabel,i18n,final.secondaryLabel",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "target": "_self",
+        "rel": "nofollow noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    }
+  ]
+}

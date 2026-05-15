@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "sector-inmobiliarias",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Sector inicial",
+      "title": "Sitios web para inmobiliarias que quieren mostrar zonas, propiedades y proceso.",
+      "lead": "Presenta propiedades destacadas, zonas de trabajo, equipo y contacto por WhatsApp para iniciar conversaciones comerciales.",
+      "primaryLabel": "Quiero un sitio para mi inmobiliaria",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20para%20mi%20inmobiliaria.",
+      "secondaryLabel": "Ver planes",
+      "panel": {
+        "kicker": "Página por intención",
+        "title": "Asesores e inmobiliarias que necesitan contacto rápido y una oferta visible.",
+        "lead": "El contenido se adapta al tipo de cliente y a las dudas que suelen aparecer antes del contacto.",
+        "items": [
+          {
+            "title": "Qué debe quedar claro",
+            "content": "Servicios, zonas, proceso y forma de contacto."
+          },
+          {
+            "title": "Cómo orientamos el contenido",
+            "content": "Trabajamos con información comercial aprobada y mensajes adecuados para el sector."
+          },
+          {
+            "title": "Cómo se mide",
+            "content": "Clicks por sector, página e idioma para entender interés."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "Sector",
+        "label": "Mensaje específico",
+        "detail": "La página habla con el contexto del giro."
+      },
+      {
+        "value": "Respaldo",
+        "label": "Señales claras",
+        "detail": "Experiencia, proceso y contacto presentados con orden."
+      },
+      {
+        "value": "WhatsApp",
+        "label": "Interés etiquetado",
+        "detail": "El mensaje inicial indica el sector."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Necesidades",
+        "title": "El cliente necesita entender rápido si eres opción.",
+        "lead": "La página se enfoca en claridad, respaldo y contacto directo.",
+        "cards": [
+          {
+            "icon": "home",
+            "title": "Oferta clara",
+            "description": "Servicios y beneficios explicados con lenguaje comercial directo.",
+            "benefits": [
+              "Qué haces",
+              "A quién ayudas",
+              "Por qué elegirte"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "phone_android",
+            "title": "Contacto ágil",
+            "description": "Botones de WhatsApp con un mensaje inicial orientado al sector.",
+            "benefits": [
+              "Menos pasos",
+              "Más contexto",
+              "Seguimiento claro"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "verified",
+            "title": "Respaldo visible",
+            "description": "Experiencia, equipo, proceso o zonas de atención se muestran con orden.",
+            "benefits": [
+              "Equipo",
+              "Proceso",
+              "Pruebas públicas"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      },
+      {
+        "eyebrow": "Contenido recomendado",
+        "title": "Secciones que ayudan a decidir.",
+        "lead": "Cada sector necesita sus propios matices, pero la base comercial es parecida.",
+        "cards": [
+          {
+            "icon": "assignment",
+            "title": "Servicios o especialidades",
+            "description": "Separar lo que ofreces evita que el visitante tenga que adivinar.",
+            "benefits": [
+              "Servicios principales",
+              "Casos frecuentes",
+              "Alcance claro"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "home",
+            "title": "Zona o modalidad",
+            "description": "La ubicación, cobertura o modalidad de atención debe ser fácil de encontrar.",
+            "benefits": [
+              "Ciudad o zona",
+              "Presencial o remoto",
+              "Horarios si aplican"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "help_outline",
+            "title": "Preguntas frecuentes",
+            "description": "Responder dudas antes del contacto mejora la calidad del primer mensaje.",
+            "benefits": [
+              "Requisitos",
+              "Proceso",
+              "Siguientes pasos"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Preguntas del sector",
+      "title": "Lo que conviene aclarar",
+      "lead": "Estas respuestas se ajustan con información real del negocio.",
+      "items": [
+        {
+          "title": "¿Puedo empezar con pocos textos o fotos?",
+          "content": "Sí. Te guiamos para convertir lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+        },
+        {
+          "title": "¿El contacto inicial es por WhatsApp?",
+          "content": "Sí. El primer mensaje abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+        },
+        {
+          "title": "¿Cómo ayudan a mi negocio?",
+          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+        },
+        {
+          "title": "¿Qué información conviene preparar?",
+          "content": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+        },
+        {
+          "title": "¿Pueden orientarme si todavía estoy definiendo mi sitio?",
+          "content": "Sí. Te ayudamos a elegir estructura, plan y mensajes para que la primera versión tenga una dirección comercial clara."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Sector",
+      "title": "Crea una página pensada para tu inmobiliaria.",
+      "lead": "El mensaje de WhatsApp ya incluye el sector para orientar la conversación.",
+      "primaryLabel": "Quiero una página de sector",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20para%20mi%20inmobiliaria%20dentro%20de%20mi%20sitio%20web.",
+      "secondaryLabel": "Ir a contacto"
+    }
+  }
+}

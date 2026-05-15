@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "preguntas-frecuentes",
+  "lang": "en",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "FAQ",
+      "title": "The basics before requesting your website.",
+      "lead": "We gathered the main questions about plans, process, materials, WhatsApp, and growth so you can decide with more clarity.",
+      "primaryLabel": "I want guidance",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20guidance%20for%20my%20website.",
+      "secondaryLabel": "Go to contact"
+    },
+    "faq": {
+      "eyebrow": "Answers",
+      "title": "Frequently asked questions",
+      "lead": "One page to review the essentials of the service.",
+      "items": [
+        {
+          "title": "How do I know which plan to choose?",
+          "content": "We guide you based on your offer, number of services, available materials, and commercial objective."
+        },
+        {
+          "title": "Can I start with limited copy or photos?",
+          "content": "Yes. We turn what you already know about your business into clear copy, useful sections, and well-presented starter materials."
+        },
+        {
+          "title": "Is the first contact through WhatsApp?",
+          "content": "Yes. WhatsApp opens an agile conversation to understand your business, your goal, and the kind of website that can serve you."
+        },
+        {
+          "title": "What information should I prepare?",
+          "content": "Services, service areas, differentiators, available photos, visual references, and how you prefer to receive customers."
+        },
+        {
+          "title": "How do you help my business?",
+          "content": "We organize your offer into a clear digital presence, with visible contact paths and initial data for commercial decisions with more context."
+        },
+        {
+          "title": "Can I grow by sectors or campaigns?",
+          "content": "Yes. The structure can expand with pages for audiences, services, or campaigns as the business moves forward."
+        },
+        {
+          "title": "What do you review before recommending?",
+          "content": "Offer, market, materials, contact priority, and the business stage."
+        },
+        {
+          "title": "Is the website prepared for mobile?",
+          "content": "Yes. The experience is reviewed so customers can read, compare, and message you smoothly from their phones."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Next step",
+      "title": "Let us discuss your specific case.",
+      "lead": "If you already have an idea for the website, we can help organize scope, plan, and materials.",
+      "primaryLabel": "Open WhatsApp",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20start%20my%20website%20with%20Zoosite.",
+      "secondaryLabel": "View plans"
+    }
+  }
+}

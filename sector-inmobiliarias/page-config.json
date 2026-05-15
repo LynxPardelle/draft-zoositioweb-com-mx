@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "pageId": "sector-inmobiliarias",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "sector-inmobiliariasPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "sector-inmobiliarias"
+  },
+  "seo": {
+    "title": {
+      "es": "Sitios web para inmobiliarias | Zoosite",
+      "en": "Websites for real estate businesses | Zoosite"
+    },
+    "description": {
+      "es": "Presenta propiedades destacadas, zonas de trabajo, equipo y contacto por WhatsApp para iniciar conversaciones comerciales.",
+      "en": "Present featured properties, working areas, team, and WhatsApp contact to start commercial conversations."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Sitios web para inmobiliarias | Zoosite",
+        "en": "Websites for real estate businesses | Zoosite"
+      },
+      "description": {
+        "es": "Presenta propiedades destacadas, zonas de trabajo, equipo y contacto por WhatsApp para iniciar conversaciones comerciales.",
+        "en": "Present featured properties, working areas, team, and WhatsApp contact to start commercial conversations."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/sectores/inmobiliarias",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Sitios web para inmobiliarias | Zoosite",
+        "en": "Websites for real estate businesses | Zoosite"
+      },
+      "description": {
+        "es": "Presenta propiedades destacadas, zonas de trabajo, equipo y contacto por WhatsApp para iniciar conversaciones comerciales.",
+        "en": "Present featured properties, working areas, team, and WhatsApp contact to start commercial conversations."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/sectores/inmobiliarias",
+    "keywords": {
+      "es": [
+        "pagina web para inmobiliarias",
+        "sitio web inmobiliario",
+        "web para bienes raices"
+      ],
+      "en": [
+        "real estate website",
+        "website for realtors",
+        "property business website"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Sitios web para inmobiliarias | Zoosite",
+        "description": "Presenta propiedades destacadas, zonas de trabajo, equipo y contacto por WhatsApp para iniciar conversaciones comerciales.",
+        "url": "https://zoositioweb.com.mx/sectores/inmobiliarias",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "evidencia",
+      "necesidades",
+      "contenido",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

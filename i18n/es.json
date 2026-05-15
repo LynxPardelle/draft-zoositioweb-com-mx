@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "allPages",
+  "lang": "es",
+  "dictionary": {
+    "nav": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "plans": "Planes",
+      "platform": "Plataforma",
+      "contact": "Contacto",
+      "faq": "Preguntas frecuentes"
+    },
+    "ui": {
+      "controls": {
+        "themeToggle": "Tema",
+        "languageToggle": "Idioma"
+      },
+      "accessibility": {
+        "skipToContent": "Saltar al contenido principal",
+        "primaryNavigation": "Navegación principal",
+        "mobileMenuAriaLabel": "Menú de navegación",
+        "openMenu": "Abrir menú",
+        "dialog": "Diálogo"
+      },
+      "common": {
+        "verified": "Verificado"
+      },
+      "contact": {
+        "headerLabel": "Quiero mi sitio web",
+        "headerUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20profesional.",
+        "footerLabel": "Hablar por WhatsApp",
+        "footerUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20hablar%20sobre%20un%20sitio%20web%20para%20mi%20negocio."
+      }
+    },
+    "footer": {
+      "title": "Zoolandingpage",
+      "summary": "Zoosite forma parte de Zoolandingpage: un ecosistema para crear sitios, landing pages y experiencias digitales orientadas a negocio.",
+      "linksTitle": "Rutas principales",
+      "sectorsTitle": "Sectores iniciales",
+      "legal": "Trabajamos con información comercial aprobada y mensajes públicos adecuados para cada negocio.",
+      "copyright": "Zoosite / Zoo Sitio Web",
+      "faqLabel": "Preguntas frecuentes"
+    },
+    "sectorLabels": {
+      "clinics": "Consultorios",
+      "law": "Despachos",
+      "realEstate": "Inmobiliarias",
+      "localServices": "Servicios locales",
+      "construction": "Constructoras",
+      "agencies": "Agencias"
+    }
+  }
+}

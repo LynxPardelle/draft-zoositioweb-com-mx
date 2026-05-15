@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "pageId": "contacto",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "contactoPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "guided-whatsapp-contact"
+  },
+  "seo": {
+    "title": {
+      "es": "Contacto para crear tu sitio web | Zoosite",
+      "en": "Contact to create your website | Zoosite"
+    },
+    "description": {
+      "es": "Inicia por WhatsApp con un mensaje guiado para revisar tu negocio, elegir plan y entender el siguiente paso.",
+      "en": "Start on WhatsApp with a guided message to review your business, choose a plan, and understand the next step."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Contacto para crear tu sitio web | Zoosite",
+        "en": "Contact to create your website | Zoosite"
+      },
+      "description": {
+        "es": "Inicia por WhatsApp con un mensaje guiado para revisar tu negocio, elegir plan y entender el siguiente paso.",
+        "en": "Start on WhatsApp with a guided message to review your business, choose a plan, and understand the next step."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/contacto",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Contacto para crear tu sitio web | Zoosite",
+        "en": "Contact to create your website | Zoosite"
+      },
+      "description": {
+        "es": "Inicia por WhatsApp con un mensaje guiado para revisar tu negocio, elegir plan y entender el siguiente paso.",
+        "en": "Start on WhatsApp with a guided message to review your business, choose a plan, and understand the next step."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/contacto",
+    "keywords": {
+      "es": [
+        "contacto sitio web",
+        "cotizar pagina web",
+        "crear sitio web negocio"
+      ],
+      "en": [
+        "website contact",
+        "website quote",
+        "create business website"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Contacto para crear tu sitio web | Zoosite",
+        "description": "Inicia por WhatsApp con un mensaje guiado para revisar tu negocio, elegir plan y entender el siguiente paso.",
+        "url": "https://zoositioweb.com.mx/contacto",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "evidencia",
+      "opciones",
+      "diagnostico",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

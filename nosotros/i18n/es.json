@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "nosotros",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Equipo",
+      "title": "Tecnología, diseño y marketing trabajando para el sitio.",
+      "lead": "Zoosite combina desarrollo web, nube, IA, diseño, pauta y análisis para construir sitios que explican un negocio con más claridad.",
+      "primaryLabel": "Quiero hablar con el equipo",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20hablar%20con%20el%20equipo%20de%20Zoosite%20sobre%20un%20sitio%20web.",
+      "secondaryLabel": "Ir a contacto",
+      "panel": {
+        "kicker": "Experiencia relevante",
+        "title": "Mostramos lo que aporta cada perfil al proyecto.",
+        "lead": "La página reúne experiencia profesional útil para entender cómo se combinan tecnología, diseño y marketing.",
+        "items": [
+          {
+            "title": "Nube e IA",
+            "content": "Experiencia en arquitectura, integración y productos digitales."
+          },
+          {
+            "title": "Diseño y marketing",
+            "content": "Criterio visual, pauta y lectura de mercado para que el sitio conecte con clientes reales."
+          },
+          {
+            "title": "Web completa",
+            "content": "Desarrollo, contenido, publicación y mejora inicial."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "Cloud",
+        "label": "Base tecnológica",
+        "detail": "Experiencia en nube, IA y desarrollo fullstack."
+      },
+      {
+        "value": "Marketing",
+        "label": "Criterio comercial",
+        "detail": "Pauta, diseño y análisis de mercado para orientar mensajes."
+      },
+      {
+        "value": "Web",
+        "label": "Producto completo",
+        "detail": "Sitios con contenido, diseño y medición inicial."
+      }
+    ],
+    "teamSection": {
+      "eyebrow": "Personas",
+      "title": "Equipo inicial",
+      "lead": "Información pública y útil para entender qué aporta cada perfil."
+    },
+    "team": [
+      {
+        "name": "Alec Montaño",
+        "role": "Nube, IA y desarrollo fullstack",
+        "proof": [
+          "Experiencia con Bimbo, McGraw Hill y Audio Enhancement.",
+          "Arquitectura, integración y producto digital.",
+          "Enfoque en sistemas medibles y mantenibles."
+        ],
+        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/alec.jpg",
+        "imageAlt": "Foto de Alec Montaño"
+      },
+      {
+        "name": "Héctor Coronado",
+        "role": "Cloud, IA y desarrollo fullstack",
+        "proof": [
+          "Experiencia con Coppel.",
+          "Desarrollo backend y fullstack.",
+          "Criterio tecnológico para operación y escalabilidad."
+        ],
+        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/hector.jpg",
+        "imageAlt": "Foto de Héctor Coronado"
+      },
+      {
+        "name": "Oswaldo",
+        "role": "Desarrollo web y marketing digital",
+        "proof": [
+          "Desarrollo web.",
+          "Google Ads y marketing junto con Pamela.",
+          "Perfil pendiente de foto final."
+        ],
+        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/oswaldo-placeholder.svg",
+        "imageAlt": "Placeholder de Oswaldo"
+      },
+      {
+        "name": "Pamela Betancourt",
+        "role": "Diseño, marketing y análisis de mercado",
+        "proof": [
+          "Criterio visual y comunicación digital.",
+          "Marketing y análisis de datos de mercado.",
+          "Enfoque en claridad para el cliente final."
+        ],
+        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/pamelaBetancourt.webp",
+        "imageAlt": "Foto de Pamela Betancourt"
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Cómo colaboramos",
+        "title": "El sitio se decide desde negocio, diseño y operación.",
+        "lead": "Esta mezcla ayuda a que el proyecto conecte la oferta, la experiencia visual y la operación digital.",
+        "cards": [
+          {
+            "icon": "home",
+            "title": "Negocio",
+            "description": "Primero entendemos oferta, cliente, preguntas frecuentes y prioridad de contacto.",
+            "benefits": [
+              "Oferta clara",
+              "Intención por página",
+              "Mensajes útiles"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "auto_awesome",
+            "title": "Diseño",
+            "description": "La experiencia debe verse profesional y ser fácil de escanear.",
+            "benefits": [
+              "Jerarquía visual",
+              "Responsive",
+              "Respaldo visual"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "cloud",
+            "title": "Operación",
+            "description": "La base tecnológica debe ser revisable, medible y preparada para crecer.",
+            "benefits": [
+              "Revisión local",
+              "Medición",
+              "Publicación ordenada"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Equipo",
+      "title": "Preguntas sobre nosotros",
+      "lead": "Cómo presentamos experiencia profesional con información pública y útil.",
+      "items": [
+        {
+          "title": "¿Puedo empezar con pocos textos o fotos?",
+          "content": "Sí. Te guiamos para convertir lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+        },
+        {
+          "title": "¿El contacto inicial es por WhatsApp?",
+          "content": "Sí. El primer mensaje abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+        },
+        {
+          "title": "¿Cómo ayudan a mi negocio?",
+          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+        },
+        {
+          "title": "¿Qué información conviene preparar?",
+          "content": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+        },
+        {
+          "title": "¿Pueden orientarme si todavía estoy definiendo mi sitio?",
+          "content": "Sí. Te ayudamos a elegir estructura, plan y mensajes para que la primera versión tenga una dirección comercial clara."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Contacto",
+      "title": "Hablemos del sitio que necesita tu negocio.",
+      "lead": "El equipo puede orientar estructura, plan y primer alcance.",
+      "primaryLabel": "Hablar con el equipo",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20hablar%20con%20el%20equipo%20de%20Zoosite%20sobre%20mi%20sitio%20web.",
+      "secondaryLabel": "Ir a contacto"
+    }
+  }
+}

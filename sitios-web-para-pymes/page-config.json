@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "pageId": "sitios-web-para-pymes",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "sitios-web-para-pymesPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "commercial-and-ads-landing-page"
+  },
+  "seo": {
+    "title": {
+      "es": "Sitios web para PyMEs en México | Zoosite",
+      "en": "Websites for small businesses in Mexico | Zoosite"
+    },
+    "description": {
+      "es": "Sitios web para PyMEs que necesitan verse profesionales, explicar sus servicios y recibir mensajes de clientes potenciales.",
+      "en": "Websites for small businesses that need to look professional, explain services, and receive potential customer messages."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Sitios web para PyMEs en México | Zoosite",
+        "en": "Websites for small businesses in Mexico | Zoosite"
+      },
+      "description": {
+        "es": "Sitios web para PyMEs que necesitan verse profesionales, explicar sus servicios y recibir mensajes de clientes potenciales.",
+        "en": "Websites for small businesses that need to look professional, explain services, and receive potential customer messages."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/sitios-web-para-pymes",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Sitios web para PyMEs en México | Zoosite",
+        "en": "Websites for small businesses in Mexico | Zoosite"
+      },
+      "description": {
+        "es": "Sitios web para PyMEs que necesitan verse profesionales, explicar sus servicios y recibir mensajes de clientes potenciales.",
+        "en": "Websites for small businesses that need to look professional, explain services, and receive potential customer messages."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/sitios-web-para-pymes",
+    "keywords": {
+      "es": [
+        "sitios web para pymes",
+        "pagina web para negocio",
+        "crear pagina web pyme"
+      ],
+      "en": [
+        "websites for small businesses",
+        "small business website",
+        "business website Mexico"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Sitios web para PyMEs en México | Zoosite",
+        "description": "Sitios web para PyMEs que necesitan verse profesionales, explicar sus servicios y recibir mensajes de clientes potenciales.",
+        "url": "https://zoositioweb.com.mx/sitios-web-para-pymes",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "evidencia",
+      "problemas",
+      "solucion",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

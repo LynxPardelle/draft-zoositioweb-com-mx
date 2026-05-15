@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "preguntas-frecuentes",
+  "route": "/preguntas-frecuentes",
+  "status": "phase-1-local-draft",
+  "seo": {
+    "title": {
+      "es": "Preguntas frecuentes sobre sitios web | Zoosite",
+      "en": "Website FAQ | Zoosite"
+    },
+    "description": {
+      "es": "Respuestas sobre planes, proceso, WhatsApp, materiales y crecimiento de sitios web con Zoosite.",
+      "en": "Answers about plans, process, WhatsApp, materials, and website growth with Zoosite."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Preguntas frecuentes sobre sitios web | Zoosite",
+        "en": "Website FAQ | Zoosite"
+      },
+      "description": {
+        "es": "Respuestas sobre planes, proceso, WhatsApp, materiales y crecimiento de sitios web con Zoosite.",
+        "en": "Answers about plans, process, WhatsApp, materials, and website growth with Zoosite."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/preguntas-frecuentes",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Preguntas frecuentes sobre sitios web | Zoosite",
+        "en": "Website FAQ | Zoosite"
+      },
+      "description": {
+        "es": "Respuestas sobre planes, proceso, WhatsApp, materiales y crecimiento de sitios web con Zoosite.",
+        "en": "Answers about plans, process, WhatsApp, materials, and website growth with Zoosite."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/preguntas-frecuentes",
+    "keywords": {
+      "es": [
+        "preguntas frecuentes sitios web",
+        "dudas pagina web negocio",
+        "Zoosite"
+      ],
+      "en": [
+        "website faq",
+        "business website questions",
+        "Zoosite"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "name": "Preguntas frecuentes sobre sitios web | Zoosite",
+        "url": "https://zoositioweb.com.mx/preguntas-frecuentes",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "preguntas",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  },
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "faqPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "faq"
+  }
+}

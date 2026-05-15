@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "default",
+  "lang": "en",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Complete websites for businesses",
+      "title": "Get more customers with a professional website.",
+      "lead": "We build complete websites for small businesses, professionals, and teams that want to explain their offer, project credibility, and receive ready-to-answer messages.",
+      "primaryLabel": "I want my website",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20professional%20website%20for%20my%20business.%20I%20would%20like%20to%20know%20plans%2C%20timing%2C%20and%20what%20information%20you%20need%20to%20start.",
+      "secondaryLabel": "View plans",
+      "panel": {
+        "kicker": "Commercial base",
+        "title": "The important details are clear from the first look.",
+        "lead": "Your website should explain your offer, show the value of your work, and make the first contact easy.",
+        "items": [
+          {
+            "title": "Clear offer",
+            "content": "Pages and sections designed to answer real customer questions."
+          },
+          {
+            "title": "Direct contact",
+            "content": "WhatsApp buttons with clear messages to improve communication from the first hello."
+          },
+          {
+            "title": "Interest signals",
+            "content": "Tracking clicks and visited sections to understand what information people review most."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "MXN $3,000",
+        "label": "Professional presence",
+        "detail": "A clear first version to publish your business and open conversations."
+      },
+      {
+        "value": "ES / EN",
+        "label": "Bilingual reach",
+        "detail": "Content prepared in Spanish and English to serve markets and customers in both languages."
+      },
+      {
+        "value": "WhatsApp",
+        "label": "Immediate contact",
+        "detail": "Direct messages so customers arrive with more context from the first hello."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "What we sell",
+        "title": "A complete website to present your business clearly.",
+        "lead": "The goal is for your business to have a clear, organized presence ready to turn visits into commercial conversations.",
+        "cards": [
+          {
+            "icon": "home",
+            "title": "Professional presence",
+            "description": "Name, offer, services, and differentiators organized into a clear experience.",
+            "benefits": [
+              "Solid image",
+              "Easy-to-understand message",
+              "Mobile-ready design"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "saved_search",
+            "title": "Pages for each decision",
+            "description": "Services, plans, sectors, and platform are explained with messages suited to each buying stage.",
+            "benefits": [
+              "Well-explained offer",
+              "Context by customer type",
+              "Base for search and ads"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "analytics",
+            "title": "Commercial insight",
+            "description": "Clicks, viewed sections, and WhatsApp messages help identify what information creates more interest.",
+            "benefits": [
+              "Visited page",
+              "Visitor interest",
+              "Language and experience"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      },
+      {
+        "eyebrow": "Initial sectors",
+        "title": "Specific messages for businesses serving customers every day.",
+        "lead": "These pages speak directly to industries where decisions depend on clarity, agile attention, and professional presentation.",
+        "cards": [
+          {
+            "icon": "favorite",
+            "title": "Clinics",
+            "description": "Turn services, hours, location, and specialties into a clear page for potential patients.",
+            "benefits": [
+              "Visible specialties",
+              "Location and hours",
+              "Direct WhatsApp"
+            ],
+            "href": "/sectores/consultorios?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
+            "linkLabel": "View clinics"
+          },
+          {
+            "icon": "gavel",
+            "title": "Law firms",
+            "description": "Present practice areas, track record, and intake process with a professional commercial tone.",
+            "benefits": [
+              "Service areas",
+              "Team profile",
+              "Initial inquiry"
+            ],
+            "href": "/sectores/despachos?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
+            "linkLabel": "View law firms"
+          },
+          {
+            "icon": "home",
+            "title": "Real estate",
+            "description": "Show areas, featured properties, and service flow for buyers, sellers, or investors.",
+            "benefits": [
+              "Areas and properties",
+              "Sales process",
+              "Fast contact"
+            ],
+            "href": "/sectores/inmobiliarias?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
+            "linkLabel": "View real estate"
+          }
+        ]
+      },
+      {
+        "eyebrow": "More industries served",
+        "title": "We can also guide websites for other businesses.",
+        "lead": "The same commercial base adapts to local services, construction companies, and agencies when the business needs to explain offers, projects, or capabilities.",
+        "cards": [
+          {
+            "icon": "assignment",
+            "title": "Local services",
+            "description": "Ideal for nearby-service businesses selling by area, availability, and response speed.",
+            "benefits": [
+              "Services by area",
+              "Fast quote",
+              "Direct contact"
+            ],
+            "href": "/sectores/servicios-locales?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
+            "linkLabel": "View local services"
+          },
+          {
+            "icon": "assignment",
+            "title": "Construction companies",
+            "description": "Helps show projects, types of work, work process, and how to request a review.",
+            "benefits": [
+              "Featured projects",
+              "Explained process",
+              "Commercial request"
+            ],
+            "href": "/sectores/constructoras?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
+            "linkLabel": "View construction companies"
+          },
+          {
+            "icon": "volunteer_activism",
+            "title": "Agencies",
+            "description": "Allows agencies to present services, cases, team, and specific pages for acquisition campaigns.",
+            "benefits": [
+              "Modular services",
+              "Cases and team",
+              "Campaign pages"
+            ],
+            "href": "/sectores/agencias?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
+            "linkLabel": "View agencies"
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Common questions",
+      "title": "Before requesting your website",
+      "lead": "Short answers to understand how we can help organize your digital presence.",
+      "items": [
+        {
+          "title": "Can I start with limited copy or photos?",
+          "content": "Yes. We guide you to turn what you already know about your business into clear copy, useful sections, and well-presented starter materials."
+        },
+        {
+          "title": "Is the first contact through WhatsApp?",
+          "content": "Yes. The first message opens a quick conversation to understand your business, your goal, and the kind of website that can serve you."
+        },
+        {
+          "title": "How do you help my business?",
+          "content": "We turn your offer into a clear digital presence, with visible contact paths and initial data to make commercial decisions with more context."
+        },
+        {
+          "title": "What information should I prepare?",
+          "content": "Services, service areas, differentiators, available photos, visual references, and how you prefer to receive customers."
+        },
+        {
+          "title": "Can you guide me if I am still defining my website?",
+          "content": "Yes. We help you choose structure, plan, and messages so the first version has a clear commercial direction."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Next step",
+      "title": "Let us talk about how you want customers to find you.",
+      "lead": "The initial message opens a conversation to understand your business, guide the plan, and define a first version with commercial direction.",
+      "primaryLabel": "I want my website",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20quote%20a%20professional%20website%20for%20my%20business.",
+      "secondaryLabel": "Go to contact"
+    }
+  }
+}

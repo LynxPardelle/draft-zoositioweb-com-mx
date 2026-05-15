@@ -1,0 +1,853 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "sector-despachos",
+  "components": [
+    {
+      "id": "contentCardTemplate",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "icon": "",
+        "title": "",
+        "description": "",
+        "benefits": [],
+        "href": "",
+        "linkLabel": "",
+        "imageSrc": "",
+        "imageAlt": "",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-overflow-hidden",
+        "imageContainerClasses": "ank-width-100per ank-height-210px ank-overflow-hidden ank-borderRadius-8px ank-bg-secondaryBgColor",
+        "imageClasses": "ank-width-100per ank-height-100per ank-display-block ank-objectFit-cover",
+        "featureIconContainerClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-width-42px ank-height-42px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-accentColor ank-flexShrink-0 ank-border-1px__solid__accentColor",
+        "featureIconClasses": "ank-display-block ank-width-1_35rem ank-height-1_35rem ank-fontSize-1_35rem ank-color-accentColor",
+        "featureTitleClasses": "ank-m-0 ank-color-titleColor ank-fontSize-1_18rem ank-fontWeight-800 ank-lineHeight-1_2",
+        "featureDescriptionClasses": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_98rem ank-lineHeight-1_55",
+        "benefitsListClasses": "ank-listStyle-none ank-padding-0 ank-margin-0 ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "benefitItemClasses": "ank-display-flex ank-alignItems-start ank-gap-8px ank-color-secondaryTextColor ank-fontSize-0_95rem ank-lineHeight-1_45",
+        "benefitIconClasses": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-successColor ank-flexShrink-0 ank-marginTop-2px",
+        "benefitTextClasses": "ank-color-secondaryTextColor",
+        "linkClasses": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-whiteSpace-nowrap"
+      }
+    },
+    {
+      "id": "sector-despachosPage",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "ank-display-flex ank-flexDirection-column ank-outline-none ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "sector-despachosHeroSection",
+          "sector-despachosStatsSection",
+          "sector-despachosSection0Root",
+          "sector-despachosSection1Root",
+          "sector-despachosFinalSection"
+        ],
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "sector-despachosHeroSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-bgColor ank-paddingBlock-64px",
+        "components": [
+          "sector-despachosHeroInner"
+        ],
+        "id": "home",
+        "styles": {
+          "paddingBlock": "76px",
+          "borderBottom": "1px solid var(--ank-secondaryBgColor)",
+          "backgroundColor": "var(--ank-bgColor)",
+          "background": "linear-gradient(135deg, rgba(216, 180, 95, 0.14), transparent 34%), linear-gradient(180deg, var(--ank-secondaryBgColor), var(--ank-bgColor))"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosHeroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gridTemplateColumns-1fr ank-gap-28px ank-alignItems-center",
+        "components": [
+          "sector-despachosHeroPanel",
+          "sector-despachosHeroCopy"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 330px), 1fr))",
+          "gap": "32px",
+          "alignItems": "stretch",
+          "width": "100%"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "sector-despachosHeroEyebrow",
+          "sector-despachosHeroTitle",
+          "sector-despachosHeroLead",
+          "sector-despachosHeroActions"
+        ],
+        "styles": {
+          "justifyContent": "center",
+          "padding": "28px",
+          "backgroundColor": "var(--ank-bgColor)",
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "borderBottom": "6px solid #d8b45f",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosHeroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "sector-despachosHeroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_6rem ank-fontSize-md-4_3rem ank-lineHeight-1_02 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-despachosHeroLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "sector-despachosHeroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "sector-despachosHeroPrimary",
+          "sector-despachosHeroSecondary"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "12px",
+          "alignItems": "stretch",
+          "rowGap": "28px",
+          "columnGap": "12px"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosHeroPrimary",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,sector-despachos-hero,page,sector-despachos,location,hero",
+      "valueInstructions": "set:config.text,i18n,hero.primaryLabel;set:config.href,i18n,hero.primaryUrl;set:config.ariaLabel,i18n,hero.primaryLabel",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosHeroSecondary",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,sector-despachos-hero-secondary,page,sector-despachos,location,hero",
+      "valueInstructions": "set:config.text,i18n,hero.secondaryLabel;set:config.ariaLabel,i18n,hero.secondaryLabel",
+      "config": {
+        "href": "/planes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "target": "_self",
+        "rel": "nofollow noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosHeroPanel",
+      "type": "container",
+      "config": {
+        "tag": "aside",
+        "classes": "ank-bg-secondaryBgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-gap-16px",
+        "components": [
+          "sector-despachosHeroPanelKicker",
+          "sector-despachosHeroPanelTitle",
+          "sector-despachosHeroPanelLead",
+          "sector-despachosHeroPanelList"
+        ],
+        "styles": {
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "borderTop": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.13)",
+          "backgroundColor": "var(--ank-bgColor)",
+          "minHeight": "380px",
+          "borderLeft": "6px solid #d8b45f"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosHeroPanelKicker",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.panel.kicker",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "sector-despachosHeroPanelTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.panel.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_4rem ank-fontWeight-900 ank-lineHeight-1_15"
+      }
+    },
+    {
+      "id": "sector-despachosHeroPanelLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.panel.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "sector-despachosHeroPanelList",
+      "type": "accordion",
+      "config": {
+        "itemsSource": {
+          "source": "i18n",
+          "path": "hero.panel.items"
+        },
+        "mode": "single",
+        "allowToggle": true,
+        "containerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "defaultItemContainerClasses": "ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-bg-secondaryBgColor",
+        "defaultItemButtonConfig": {
+          "classes": "ank-width-100per ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-900 ank-cursor-pointer"
+        },
+        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5"
+      }
+    },
+    {
+      "id": "sector-despachosStatsSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "components": [
+          "sector-despachosStatsInner"
+        ],
+        "id": "evidencia",
+        "styles": {
+          "paddingBlock": "28px",
+          "backgroundColor": "var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosStatsInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "sector-despachosStatsGrid"
+        ]
+      }
+    },
+    {
+      "id": "sector-despachosStatsGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px",
+        "components": [
+          "sector-despachosStatsCard1",
+          "sector-despachosStatsCard2",
+          "sector-despachosStatsCard3"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 230px), 1fr))",
+          "gap": "16px"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosStatsCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-bg-bgColor",
+        "components": [
+          "sector-despachosStatsValue1",
+          "sector-despachosStatsLabel1",
+          "sector-despachosStatsDetail1"
+        ],
+        "styles": {
+          "borderLeft": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 12px 28px rgba(0, 0, 0, 0.09)",
+          "borderTop": "5px solid #d8b45f"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosStatsValue1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.0.value",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "sector-despachosStatsLabel1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.0.label",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_05rem ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-despachosStatsDetail1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.0.detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "sector-despachosStatsCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-bg-bgColor",
+        "components": [
+          "sector-despachosStatsValue2",
+          "sector-despachosStatsLabel2",
+          "sector-despachosStatsDetail2"
+        ],
+        "styles": {
+          "borderLeft": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 12px 28px rgba(0, 0, 0, 0.09)",
+          "borderTop": "5px solid #d8b45f"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosStatsValue2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.1.value",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "sector-despachosStatsLabel2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.1.label",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_05rem ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-despachosStatsDetail2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.1.detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "sector-despachosStatsCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-bg-bgColor",
+        "components": [
+          "sector-despachosStatsValue3",
+          "sector-despachosStatsLabel3",
+          "sector-despachosStatsDetail3"
+        ],
+        "styles": {
+          "borderLeft": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 12px 28px rgba(0, 0, 0, 0.09)",
+          "borderTop": "5px solid #d8b45f"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosStatsValue3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.2.value",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "sector-despachosStatsLabel3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.2.label",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_05rem ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-despachosStatsDetail3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.2.detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "sector-despachosSection0Root",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-bgColor",
+        "components": [
+          "sector-despachosSection0Inner"
+        ],
+        "id": "necesidades",
+        "styles": {
+          "backgroundColor": "var(--ank-bgColor)"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosSection0Inner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "sector-despachosSection0Eyebrow",
+          "sector-despachosSection0Title",
+          "sector-despachosSection0Lead",
+          "sector-despachosSection0Cards"
+        ]
+      }
+    },
+    {
+      "id": "sector-despachosSection0Eyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.0.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "sector-despachosSection0Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.0.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-despachosSection0Lead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.0.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "sector-despachosSection0Cards",
+      "type": "container",
+      "loopConfig": {
+        "source": "i18n",
+        "path": "sections.0.cards",
+        "templateId": "contentCardTemplate",
+        "idPrefix": "sector-despachosSection0Card",
+        "bindings": [
+          {
+            "to": "config.icon",
+            "sources": [
+              "icon"
+            ]
+          },
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "description"
+            ]
+          },
+          {
+            "to": "config.benefits",
+            "sources": [
+              "benefits"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              "linkLabel"
+            ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "imageSrc"
+            ]
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px",
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 230px), 1fr))",
+          "gap": "18px"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "sector-despachosSection1Root",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "components": [
+          "sector-despachosSection1Inner"
+        ],
+        "id": "contenido",
+        "styles": {
+          "backgroundColor": "var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosSection1Inner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "sector-despachosSection1Eyebrow",
+          "sector-despachosSection1Title",
+          "sector-despachosSection1Lead",
+          "sector-despachosSection1Cards"
+        ]
+      }
+    },
+    {
+      "id": "sector-despachosSection1Eyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.1.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "sector-despachosSection1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.1.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-despachosSection1Lead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.1.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "sector-despachosSection1Cards",
+      "type": "container",
+      "loopConfig": {
+        "source": "i18n",
+        "path": "sections.1.cards",
+        "templateId": "contentCardTemplate",
+        "idPrefix": "sector-despachosSection1Card",
+        "bindings": [
+          {
+            "to": "config.icon",
+            "sources": [
+              "icon"
+            ]
+          },
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "description"
+            ]
+          },
+          {
+            "to": "config.benefits",
+            "sources": [
+              "benefits"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              "linkLabel"
+            ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "imageSrc"
+            ]
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px",
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 230px), 1fr))",
+          "gap": "18px"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "sector-despachosFinalSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "components": [
+          "sector-despachosFinalInner"
+        ],
+        "id": "contacto",
+        "styles": {
+          "backgroundColor": "var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosFinalInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px ank-alignItems-start",
+        "components": [
+          "sector-despachosFinalEyebrow",
+          "sector-despachosFinalTitle",
+          "sector-despachosFinalLead",
+          "sector-despachosFinalActions"
+        ],
+        "styles": {
+          "borderTop": "5px solid #d8b45f",
+          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.11)",
+          "backgroundColor": "var(--ank-bgColor)",
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "borderRadius": "8px",
+          "padding": "26px"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosFinalEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "sector-despachosFinalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sector-despachosFinalLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "sector-despachosFinalActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "sector-despachosFinalPrimary",
+          "sector-despachosFinalSecondary"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "12px",
+          "alignItems": "stretch",
+          "rowGap": "28px",
+          "columnGap": "12px"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosFinalPrimary",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,sector-despachos-final,page,sector-despachos,location,final_cta",
+      "valueInstructions": "set:config.text,i18n,final.primaryLabel;set:config.href,i18n,final.primaryUrl;set:config.ariaLabel,i18n,final.primaryLabel",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "sector-despachosFinalSecondary",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,sector-despachos-contact,page,sector-despachos,location,final_cta",
+      "valueInstructions": "set:config.text,i18n,final.secondaryLabel;set:config.ariaLabel,i18n,final.secondaryLabel",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "target": "_self",
+        "rel": "nofollow noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    }
+  ]
+}

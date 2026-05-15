@@ -1,0 +1,1354 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "planes",
+  "components": [
+    {
+      "id": "contentCardTemplate",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "icon": "",
+        "title": "",
+        "description": "",
+        "benefits": [],
+        "href": "",
+        "linkLabel": "",
+        "imageSrc": "",
+        "imageAlt": "",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-overflow-hidden",
+        "imageContainerClasses": "ank-width-100per ank-height-210px ank-overflow-hidden ank-borderRadius-8px ank-bg-secondaryBgColor",
+        "imageClasses": "ank-width-100per ank-height-100per ank-display-block ank-objectFit-cover",
+        "featureIconContainerClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-width-42px ank-height-42px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-accentColor ank-flexShrink-0 ank-border-1px__solid__accentColor",
+        "featureIconClasses": "ank-display-block ank-width-1_35rem ank-height-1_35rem ank-fontSize-1_35rem ank-color-accentColor",
+        "featureTitleClasses": "ank-m-0 ank-color-titleColor ank-fontSize-1_18rem ank-fontWeight-800 ank-lineHeight-1_2",
+        "featureDescriptionClasses": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_98rem ank-lineHeight-1_55",
+        "benefitsListClasses": "ank-listStyle-none ank-padding-0 ank-margin-0 ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "benefitItemClasses": "ank-display-flex ank-alignItems-start ank-gap-8px ank-color-secondaryTextColor ank-fontSize-0_95rem ank-lineHeight-1_45",
+        "benefitIconClasses": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-successColor ank-flexShrink-0 ank-marginTop-2px",
+        "benefitTextClasses": "ank-color-secondaryTextColor",
+        "linkClasses": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-whiteSpace-nowrap"
+      }
+    },
+    {
+      "id": "planesPage",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "ank-display-flex ank-flexDirection-column ank-outline-none ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "planesHeroSection",
+          "planesStatsSection",
+          "planesSection0Root",
+          "planesPlansSection",
+          "planesZlpSection",
+          "planesFinalSection"
+        ],
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "planesHeroSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor ank-paddingBlock-72px",
+        "components": [
+          "planesHeroInner"
+        ],
+        "id": "home",
+        "styles": {
+          "paddingBlock": "62px",
+          "borderBottom": "1px solid var(--ank-secondaryBgColor)",
+          "backgroundColor": "var(--ank-bgColor)"
+        }
+      }
+    },
+    {
+      "id": "planesHeroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-900px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-textAlign-center ank-gap-22px",
+        "components": [
+          "planesHeroCopy"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "flex-start",
+          "textAlign": "left",
+          "gap": "22px",
+          "width": "100%",
+          "maxWidth": "1040px",
+          "borderLeft": "6px solid var(--ank-successColor)",
+          "paddingLeft": "24px"
+        }
+      }
+    },
+    {
+      "id": "planesHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px ank-alignItems-center",
+        "components": [
+          "planesHeroEyebrow",
+          "planesHeroTitle",
+          "planesHeroLead",
+          "planesHeroActions"
+        ],
+        "styles": {
+          "alignItems": "flex-start",
+          "maxWidth": "760px"
+        }
+      }
+    },
+    {
+      "id": "planesHeroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "planesHeroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_6rem ank-fontSize-md-4_3rem ank-lineHeight-1_02 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "planesHeroLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "planesHeroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "planesHeroPrimary",
+          "planesHeroSecondary"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "12px",
+          "alignItems": "stretch",
+          "justifyContent": "flex-start",
+          "rowGap": "28px",
+          "columnGap": "12px"
+        }
+      }
+    },
+    {
+      "id": "planesHeroPrimary",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,planes-hero,page,planes,location,hero",
+      "valueInstructions": "set:config.text,i18n,hero.primaryLabel;set:config.href,i18n,hero.primaryUrl;set:config.ariaLabel,i18n,hero.primaryLabel",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "planesHeroSecondary",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,planes-hero-secondary,page,planes,location,hero",
+      "valueInstructions": "set:config.text,i18n,hero.secondaryLabel;set:config.ariaLabel,i18n,hero.secondaryLabel",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "target": "_self",
+        "rel": "nofollow noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "planesHeroPanel",
+      "type": "container",
+      "config": {
+        "tag": "aside",
+        "classes": "ank-bg-secondaryBgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-gap-16px ank-borderTop-4px__solid__accentColor",
+        "components": [
+          "planesHeroPanelKicker",
+          "planesHeroPanelTitle",
+          "planesHeroPanelLead",
+          "planesHeroPanelList"
+        ],
+        "styles": {
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "borderTop": "4px solid var(--ank-successColor)",
+          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.13)"
+        }
+      }
+    },
+    {
+      "id": "planesHeroPanelKicker",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.panel.kicker",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "planesHeroPanelTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.panel.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_4rem ank-fontWeight-900 ank-lineHeight-1_15"
+      }
+    },
+    {
+      "id": "planesHeroPanelLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.panel.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesHeroPanelList",
+      "type": "accordion",
+      "config": {
+        "itemsSource": {
+          "source": "i18n",
+          "path": "hero.panel.items"
+        },
+        "mode": "single",
+        "allowToggle": true,
+        "containerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "defaultItemContainerClasses": "ank-border-1px__solid__bgColor ank-borderRadius-8px ank-bg-bgColor",
+        "defaultItemButtonConfig": {
+          "classes": "ank-width-100per ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-800 ank-cursor-pointer"
+        },
+        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5"
+      }
+    },
+    {
+      "id": "planesStatsSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "components": [
+          "planesStatsInner"
+        ],
+        "id": "evidencia",
+        "styles": {
+          "backgroundColor": "var(--ank-secondaryBgColor)",
+          "paddingBlock": "34px"
+        }
+      }
+    },
+    {
+      "id": "planesStatsInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "planesStatsGrid"
+        ]
+      }
+    },
+    {
+      "id": "planesStatsGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px",
+        "components": [
+          "planesStatsCard1",
+          "planesStatsCard2",
+          "planesStatsCard3"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 250px), 1fr))",
+          "gap": "18px"
+        }
+      }
+    },
+    {
+      "id": "planesStatsCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-bg-bgColor",
+        "components": [
+          "planesStatsValue1",
+          "planesStatsLabel1",
+          "planesStatsDetail1"
+        ],
+        "styles": {
+          "borderLeft": "4px solid var(--ank-successColor)",
+          "boxShadow": "0 10px 26px rgba(0, 0, 0, 0.08)"
+        }
+      }
+    },
+    {
+      "id": "planesStatsValue1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.0.value",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "planesStatsLabel1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.0.label",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_05rem ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "planesStatsDetail1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.0.detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesStatsCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-bg-bgColor",
+        "components": [
+          "planesStatsValue2",
+          "planesStatsLabel2",
+          "planesStatsDetail2"
+        ],
+        "styles": {
+          "borderLeft": "4px solid var(--ank-successColor)",
+          "boxShadow": "0 10px 26px rgba(0, 0, 0, 0.08)"
+        }
+      }
+    },
+    {
+      "id": "planesStatsValue2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.1.value",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "planesStatsLabel2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.1.label",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_05rem ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "planesStatsDetail2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.1.detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesStatsCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-bg-bgColor",
+        "components": [
+          "planesStatsValue3",
+          "planesStatsLabel3",
+          "planesStatsDetail3"
+        ],
+        "styles": {
+          "borderLeft": "4px solid var(--ank-successColor)",
+          "boxShadow": "0 10px 26px rgba(0, 0, 0, 0.08)"
+        }
+      }
+    },
+    {
+      "id": "planesStatsValue3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.2.value",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "planesStatsLabel3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.2.label",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_05rem ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "planesStatsDetail3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,stats.2.detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesSection0Root",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-bgColor",
+        "components": [
+          "planesSection0Inner"
+        ],
+        "id": "como-elegir"
+      }
+    },
+    {
+      "id": "planesSection0Inner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "planesSection0Eyebrow",
+          "planesSection0Title",
+          "planesSection0Lead",
+          "planesSection0Cards"
+        ]
+      }
+    },
+    {
+      "id": "planesSection0Eyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.0.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "planesSection0Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.0.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "planesSection0Lead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,sections.0.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "planesSection0Cards",
+      "type": "container",
+      "loopConfig": {
+        "source": "i18n",
+        "path": "sections.0.cards",
+        "templateId": "contentCardTemplate",
+        "idPrefix": "planesSection0Card",
+        "bindings": [
+          {
+            "to": "config.icon",
+            "sources": [
+              "icon"
+            ]
+          },
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "description"
+            ]
+          },
+          {
+            "to": "config.benefits",
+            "sources": [
+              "benefits"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              "linkLabel"
+            ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "imageSrc"
+            ]
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px",
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 260px), 1fr))",
+          "gap": "16px"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "planesPlansSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "components": [
+          "planesPlansInner"
+        ],
+        "id": "comparar-planes"
+      }
+    },
+    {
+      "id": "planesPlansInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "planesPlansEyebrow",
+          "planesPlansTitle",
+          "planesPlansLead",
+          "planesPlansGrid"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plansSection.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "planesPlansTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plansSection.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "planesPlansLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plansSection.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "planesPlansGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px",
+        "components": [
+          "planesPlansCard0",
+          "planesPlansCard1",
+          "planesPlansCard2"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(250px, 1fr))",
+          "gap": "16px"
+        }
+      }
+    },
+    {
+      "id": "planesPlansCard0",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ",
+        "components": [
+          "planesPlansName0",
+          "planesPlansPrice0",
+          "planesPlansFit0",
+          "planesPlansResult0",
+          "planesPlansBenefits0",
+          "planesPlansCta0"
+        ],
+        "styles": {
+          "borderTop": "5px solid var(--ank-linkColor)",
+          "boxShadow": "0 10px 26px rgba(0, 0, 0, 0.08)",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "id": "planesPlansName0",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.0.name",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_35rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "planesPlansPrice0",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.0.price",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "planesPlansFit0",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.0.fit",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansResult0",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.0.result",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontWeight-800 ank-lineHeight-1_5"
+      }
+    },
+    {
+      "id": "planesPlansBenefits0",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "ank-listStyle-none ank-margin-0 ank-padding-0 ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "components": [
+          "planesPlansBenefit0_0",
+          "planesPlansBenefit0_1",
+          "planesPlansBenefit0_2"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefit0_0",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-display-flex ank-gap-8px ank-alignItems-start",
+        "components": [
+          "planesPlansBenefitText0_0"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefitText0_0",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.0.benefits.0",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansBenefit0_1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-display-flex ank-gap-8px ank-alignItems-start",
+        "components": [
+          "planesPlansBenefitText0_1"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefitText0_1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.0.benefits.1",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansBenefit0_2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-display-flex ank-gap-8px ank-alignItems-start",
+        "components": [
+          "planesPlansBenefitText0_2"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefitText0_2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.0.benefits.2",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansCta0",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,plan-presencia,page,planes,plan,presencia,location,plan_card",
+      "valueInstructions": "set:config.text,i18n,plans.0.cta;set:config.href,i18n,plans.0.url;set:config.ariaLabel,i18n,plans.0.cta",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "styles": {
+          "whiteSpace": "nowrap"
+        }
+      }
+    },
+    {
+      "id": "planesPlansCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ank-borderColor-accentColor",
+        "components": [
+          "planesPlansName1",
+          "planesPlansPrice1",
+          "planesPlansFit1",
+          "planesPlansResult1",
+          "planesPlansBenefits1",
+          "planesPlansCta1"
+        ],
+        "styles": {
+          "borderTop": "5px solid var(--ank-successColor)",
+          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.14)",
+          "transform": "translateY(-4px)"
+        }
+      }
+    },
+    {
+      "id": "planesPlansName1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.1.name",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_35rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "planesPlansPrice1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.1.price",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "planesPlansFit1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.1.fit",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansResult1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.1.result",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontWeight-800 ank-lineHeight-1_5"
+      }
+    },
+    {
+      "id": "planesPlansBenefits1",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "ank-listStyle-none ank-margin-0 ank-padding-0 ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "components": [
+          "planesPlansBenefit1_0",
+          "planesPlansBenefit1_1",
+          "planesPlansBenefit1_2"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefit1_0",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-display-flex ank-gap-8px ank-alignItems-start",
+        "components": [
+          "planesPlansBenefitText1_0"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefitText1_0",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.1.benefits.0",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansBenefit1_1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-display-flex ank-gap-8px ank-alignItems-start",
+        "components": [
+          "planesPlansBenefitText1_1"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefitText1_1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.1.benefits.1",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansBenefit1_2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-display-flex ank-gap-8px ank-alignItems-start",
+        "components": [
+          "planesPlansBenefitText1_2"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefitText1_2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.1.benefits.2",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansCta1",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,plan-clientes,page,planes,plan,clientes,location,plan_card",
+      "valueInstructions": "set:config.text,i18n,plans.1.cta;set:config.href,i18n,plans.1.url;set:config.ariaLabel,i18n,plans.1.cta",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "styles": {
+          "whiteSpace": "nowrap"
+        }
+      }
+    },
+    {
+      "id": "planesPlansCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-20px ank-display-flex ank-flexDirection-column ank-gap-12px ank-height-100per ",
+        "components": [
+          "planesPlansName2",
+          "planesPlansPrice2",
+          "planesPlansFit2",
+          "planesPlansResult2",
+          "planesPlansBenefits2",
+          "planesPlansCta2"
+        ],
+        "styles": {
+          "borderTop": "5px solid var(--ank-secondaryAccentColor)",
+          "boxShadow": "0 10px 26px rgba(0, 0, 0, 0.08)",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "id": "planesPlansName2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.2.name",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_35rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "planesPlansPrice2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.2.price",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-1_6rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "planesPlansFit2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.2.fit",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansResult2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.2.result",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontWeight-800 ank-lineHeight-1_5"
+      }
+    },
+    {
+      "id": "planesPlansBenefits2",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "ank-listStyle-none ank-margin-0 ank-padding-0 ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "components": [
+          "planesPlansBenefit2_0",
+          "planesPlansBenefit2_1",
+          "planesPlansBenefit2_2"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefit2_0",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-display-flex ank-gap-8px ank-alignItems-start",
+        "components": [
+          "planesPlansBenefitText2_0"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefitText2_0",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.2.benefits.0",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansBenefit2_1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-display-flex ank-gap-8px ank-alignItems-start",
+        "components": [
+          "planesPlansBenefitText2_1"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefitText2_1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.2.benefits.1",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansBenefit2_2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-display-flex ank-gap-8px ank-alignItems-start",
+        "components": [
+          "planesPlansBenefitText2_2"
+        ]
+      }
+    },
+    {
+      "id": "planesPlansBenefitText2_2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,plans.2.benefits.2",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "planesPlansCta2",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,plan-crecimiento,page,planes,plan,crecimiento,location,plan_card",
+      "valueInstructions": "set:config.text,i18n,plans.2.cta;set:config.href,i18n,plans.2.url;set:config.ariaLabel,i18n,plans.2.cta",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "styles": {
+          "whiteSpace": "nowrap"
+        }
+      }
+    },
+    {
+      "id": "planesZlpSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "id": "zoolandingpage",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "planesZlpInner"
+        ],
+        "styles": {
+          "backgroundColor": "var(--ank-secondaryBgColor)",
+          "borderBlock": "1px solid var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "planesZlpInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gridTemplateColumns-1fr ank-gap-18px ank-alignItems-center ank-bg-secondaryBgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-24px",
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
+          "gap": "18px",
+          "alignItems": "center",
+          "backgroundColor": "var(--ank-bgColor)",
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "borderRadius": "8px",
+          "padding": "24px",
+          "boxShadow": "0 14px 36px rgba(0, 0, 0, 0.09)"
+        },
+        "components": [
+          "planesZlpCopy",
+          "planesZlpAction"
+        ]
+      }
+    },
+    {
+      "id": "planesZlpCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "planesZlpEyebrow",
+          "planesZlpTitle",
+          "planesZlpLead"
+        ]
+      }
+    },
+    {
+      "id": "planesZlpEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,zoolandingpageSection.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "planesZlpTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,zoolandingpageSection.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_9rem ank-fontSize-md-2_6rem ank-lineHeight-1_08 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "planesZlpLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,zoolandingpageSection.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-lineHeight-1_6 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "planesZlpAction",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-justifyContent-start ank-justifyContent-md-end",
+        "components": [
+          "planesZlpLink"
+        ]
+      }
+    },
+    {
+      "id": "planesZlpLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,zoolandingpage,page,planes,location,zoolandingpage_section",
+      "valueInstructions": "set:config.text,i18n,zoolandingpageSection.linkLabel;set:config.ariaLabel,i18n,zoolandingpageSection.linkLabel",
+      "config": {
+        "href": "https://zoolandingpage.com.mx/",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "styles": {
+          "whiteSpace": "nowrap"
+        }
+      }
+    },
+    {
+      "id": "planesFinalSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "components": [
+          "planesFinalInner"
+        ],
+        "id": "contacto"
+      }
+    },
+    {
+      "id": "planesFinalInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px ank-alignItems-start",
+        "components": [
+          "planesFinalEyebrow",
+          "planesFinalTitle",
+          "planesFinalLead",
+          "planesFinalActions"
+        ],
+        "styles": {
+          "borderTop": "4px solid var(--ank-successColor)",
+          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.11)"
+        }
+      }
+    },
+    {
+      "id": "planesFinalEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+      }
+    },
+    {
+      "id": "planesFinalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "planesFinalLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "planesFinalActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "planesFinalPrimary",
+          "planesFinalSecondary"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "12px",
+          "alignItems": "stretch",
+          "rowGap": "28px",
+          "columnGap": "12px"
+        }
+      }
+    },
+    {
+      "id": "planesFinalPrimary",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,planes-final,page,planes,location,final_cta",
+      "valueInstructions": "set:config.text,i18n,final.primaryLabel;set:config.href,i18n,final.primaryUrl;set:config.ariaLabel,i18n,final.primaryLabel",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "planesFinalSecondary",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,planes-contact,page,planes,location,final_cta",
+      "valueInstructions": "set:config.text,i18n,final.secondaryLabel;set:config.ariaLabel,i18n,final.secondaryLabel",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "target": "_self",
+        "rel": "nofollow noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "textAlign": "center",
+          "flexShrink": "0"
+        }
+      }
+    }
+  ]
+}

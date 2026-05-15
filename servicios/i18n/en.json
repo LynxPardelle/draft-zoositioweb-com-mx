@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "servicios",
+  "lang": "en",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Complete service",
+      "title": "Turn your offer into a clear website for selling.",
+      "lead": "We guide you from idea to launch: structure, copy, design, mobile review, and initial interest signals.",
+      "primaryLabel": "I want to review my project",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20review%20my%20website%20project.%20My%20business%20is%3A",
+      "secondaryLabel": "Compare plans",
+      "panel": {
+        "kicker": "Business-oriented delivery",
+        "title": "Every page helps the customer move forward.",
+        "lead": "Every block has a clear intent: explain your offer, answer common questions, and open a commercial conversation.",
+        "items": [
+          {
+            "title": "Structure",
+            "content": "We organize the offer into pages and sections that are easy to navigate."
+          },
+          {
+            "title": "Content",
+            "content": "We write commercial copy in direct language so customers quickly understand your value."
+          },
+          {
+            "title": "Measurement",
+            "content": "We register important interactions to know which pages and buttons receive more attention."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "4 steps",
+        "label": "From idea to launch",
+        "detail": "Understand, structure, produce, and adjust your website."
+      },
+      {
+        "value": "Mobile",
+        "label": "Phone-ready experience",
+        "detail": "Customers can read, compare, and message you smoothly from their phones."
+      },
+      {
+        "value": "Data",
+        "label": "Initial learning",
+        "detail": "Basic reading of pages, sections, and important clicks."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "What is included",
+        "title": "A base ready to sell your offer.",
+        "lead": "We bring together commercial strategy, content, design, and publishing so your website helps explain your business and open conversations.",
+        "cards": [
+          {
+            "icon": "account_tree",
+            "title": "Page map",
+            "description": "We define what each route needs: home, services, plans, contact, sectors, or commercial proof pages.",
+            "benefits": [
+              "Intent by page",
+              "Internal links",
+              "Scalable content"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "assignment",
+            "title": "Commercial copy",
+            "description": "Clear writing to explain what you sell and why it is worth messaging you.",
+            "benefits": [
+              "Direct language",
+              "Frequently asked questions",
+              "Direct WhatsApp messages"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "analytics",
+            "title": "Interest reading",
+            "description": "We register which pages, plans, or sectors receive more attention to guide future adjustments.",
+            "benefits": [
+              "Important clicks",
+              "Viewed sections",
+              "Language and experience"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      },
+      {
+        "eyebrow": "How we work",
+        "title": "Four steps to move forward with direction.",
+        "lead": "The project moves forward with concrete decisions about offer, structure, content, publishing, and initial follow-up.",
+        "cards": [
+          {
+            "icon": "search",
+            "title": "1. Understand the business",
+            "description": "We review what you sell, who you serve, what questions your customer has, and how people contact you today.",
+            "benefits": [
+              "Business type and area",
+              "Main offer",
+              "Commercial priority"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "account_tree",
+            "title": "2. Define the structure",
+            "description": "We organize pages, sections, and messages so each visitor finds what they need.",
+            "benefits": [
+              "Initial routes",
+              "Content hierarchy",
+              "Contact journey"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "account_tree",
+            "title": "3. Produce the site",
+            "description": "We create pages and components with clear content to review and adjust with you.",
+            "benefits": [
+              "Clear design",
+              "Useful content",
+              "Direct WhatsApp"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "rocket_launch",
+            "title": "4. Publish and adjust",
+            "description": "We review mobile and desktop, tune details, and leave the base ready for initial interest reading.",
+            "benefits": [
+              "Visual review",
+              "Final adjustments",
+              "Initial learning"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "Service",
+      "title": "How the project is handled",
+      "lead": "Answers focused on the creation process and guidance.",
+      "items": [
+        {
+          "title": "What do you deliver in the service?",
+          "content": "A website with structure, commercial copy, responsive design, WhatsApp contact, and initial interaction reading."
+        },
+        {
+          "title": "Do you help organize my ideas?",
+          "content": "Yes. We start from your offer and turn it into pages, sections, and messages that a person can understand quickly."
+        },
+        {
+          "title": "Can I move forward in stages?",
+          "content": "Yes. We define a useful first version and leave a clear route to expand content, sectors, or campaigns later."
+        },
+        {
+          "title": "What should I prepare?",
+          "content": "Services, service area, differentiators, available photos, visual references, and ideal way to receive inquiries."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Start",
+      "title": "Tell us what you sell and what you want to achieve with your website.",
+      "lead": "We guide you to choose scope, pages, and content based on your business stage.",
+      "primaryLabel": "Review my project",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20review%20my%20website%20project%20and%20choose%20the%20right%20plan.",
+      "secondaryLabel": "Go to contact"
+    }
+  }
+}

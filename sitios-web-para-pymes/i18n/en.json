@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "sitios-web-para-pymes",
+  "lang": "en",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "For small businesses and growing companies",
+      "title": "Your business needs a page that explains why people should choose you.",
+      "lead": "Zoosite organizes your offer into a professional bilingual website ready to receive WhatsApp inquiries.",
+      "primaryLabel": "I want a website for my business",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20website%20for%20my%20small%20business.%20My%20business%20sells%3A",
+      "secondaryLabel": "View plans",
+      "panel": {
+        "kicker": "For fast decisions",
+        "title": "Your customer compares before messaging you.",
+        "lead": "A clear website reduces basic doubts and helps the first message arrive with more context.",
+        "items": [
+          {
+            "title": "What you sell",
+            "content": "Services or products explained with order."
+          },
+          {
+            "title": "Why choose you",
+            "content": "Experience, process, team, or real proof elements."
+          },
+          {
+            "title": "How to contact you",
+            "content": "WhatsApp with an initial message oriented to the visitor goal."
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "value": "SMB",
+        "label": "Commercial focus",
+        "detail": "Clear language for real buyers."
+      },
+      {
+        "value": "Mobile",
+        "label": "Phone browsing",
+        "detail": "Design planned for quick review and messaging."
+      },
+      {
+        "value": "Ads",
+        "label": "Campaign base",
+        "detail": "Useful page for paid traffic and organic search."
+      }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Common problems",
+        "title": "Many businesses have presence and need more clarity.",
+        "lead": "Customers want to quickly understand what you do, how you help, and what the next step is.",
+        "cards": [
+          {
+            "icon": "help_outline",
+            "title": "The offer needs clarity",
+            "description": "When your value is explained with order, customers understand services, benefits, and next step.",
+            "benefits": [
+              "Services with context",
+              "Clear benefits",
+              "Intentional contact"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "phone_android",
+            "title": "The site should work very well on mobile",
+            "description": "A light and clear experience helps people read, compare, and message from their phones.",
+            "benefits": [
+              "Fast reading",
+              "Visible buttons",
+              "Clear order"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "analytics",
+            "title": "Understand what creates interest",
+            "description": "Basic interaction reading helps guide adjustments with commercial context.",
+            "benefits": [
+              "Clicks by page",
+              "Interest by plan",
+              "Sectors with demand"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      },
+      {
+        "eyebrow": "Solution",
+        "title": "A website that turns doubts into conversations.",
+        "lead": "The first version should present your offer clearly and stay organized to grow later.",
+        "cards": [
+          {
+            "icon": "fact_check",
+            "title": "Complete content",
+            "description": "Pages to explain what you do, how you work, base pricing, and next steps.",
+            "benefits": [
+              "Home",
+              "Services and plans",
+              "Contact"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "flash_on",
+            "title": "Messages by intent",
+            "description": "Each button can start WhatsApp with useful context to improve the conversation.",
+            "benefits": [
+              "Fewer steps",
+              "First message with context",
+              "Clearer follow-up"
+            ],
+            "href": "",
+            "linkLabel": ""
+          },
+          {
+            "icon": "account_tree",
+            "title": "Growth by routes",
+            "description": "The site can grow with pages by sector, campaign, or service line.",
+            "benefits": [
+              "SEO by intent",
+              "More relevant ads",
+              "Base for guides"
+            ],
+            "href": "",
+            "linkLabel": ""
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "eyebrow": "SMB questions",
+      "title": "Before investing",
+      "lead": "Key points to decide clearly.",
+      "items": [
+        {
+          "title": "Can I start with limited copy or photos?",
+          "content": "Yes. We guide you to turn what you already know about your business into clear copy, useful sections, and well-presented starter materials."
+        },
+        {
+          "title": "Is the first contact through WhatsApp?",
+          "content": "Yes. The first message opens a quick conversation to understand your business, your goal, and the kind of website that can serve you."
+        },
+        {
+          "title": "How do you help my business?",
+          "content": "We turn your offer into a clear digital presence, with visible contact paths and initial data to make commercial decisions with more context."
+        },
+        {
+          "title": "What information should I prepare?",
+          "content": "Services, service areas, differentiators, available photos, visual references, and how you prefer to receive customers."
+        },
+        {
+          "title": "Can you guide me if I am still defining my website?",
+          "content": "Yes. We help you choose structure, plan, and messages so the first version has a clear commercial direction."
+        }
+      ]
+    },
+    "final": {
+      "eyebrow": "Quote",
+      "title": "Ask for a recommendation for your business.",
+      "lead": "Tell us your business type, city, and what you sell so we can guide the plan.",
+      "primaryLabel": "I want a website for my business",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20website%20for%20my%20small%20business.%20My%20business%20type%20is%3A",
+      "secondaryLabel": "Go to contact"
+    }
+  }
+}

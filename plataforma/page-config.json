@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "pageId": "plataforma",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "plataformaPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "technical-trust-and-platform-benefits"
+  },
+  "seo": {
+    "title": {
+      "es": "Plataforma para sitios web medibles | Zoosite",
+      "en": "Platform for measurable websites | Zoosite"
+    },
+    "description": {
+      "es": "La base que hace crecer tu sitio: publicación ordenada, medición desde el inicio y arquitectura preparada para evolucionar.",
+      "en": "The base that helps your website grow: organized publishing, measurement from the start, and architecture ready to evolve."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Plataforma para sitios web medibles | Zoosite",
+        "en": "Platform for measurable websites | Zoosite"
+      },
+      "description": {
+        "es": "La base que hace crecer tu sitio: publicación ordenada, medición desde el inicio y arquitectura preparada para evolucionar.",
+        "en": "The base that helps your website grow: organized publishing, measurement from the start, and architecture ready to evolve."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/plataforma",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Plataforma para sitios web medibles | Zoosite",
+        "en": "Platform for measurable websites | Zoosite"
+      },
+      "description": {
+        "es": "La base que hace crecer tu sitio: publicación ordenada, medición desde el inicio y arquitectura preparada para evolucionar.",
+        "en": "The base that helps your website grow: organized publishing, measurement from the start, and architecture ready to evolve."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/plataforma",
+    "keywords": {
+      "es": [
+        "plataforma sitios web",
+        "sitios web medibles",
+        "sitios web en la nube"
+      ],
+      "en": [
+        "website platform",
+        "measurable websites",
+        "cloud website platform"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Plataforma para sitios web medibles | Zoosite",
+        "description": "La base que hace crecer tu sitio: publicación ordenada, medición desde el inicio y arquitectura preparada para evolucionar.",
+        "url": "https://zoositioweb.com.mx/plataforma",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "evidencia",
+      "beneficios",
+      "responsabilidad",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}
