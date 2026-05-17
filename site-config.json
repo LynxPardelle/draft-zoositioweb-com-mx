@@ -264,5 +264,17 @@
         ]
       }
     }
+  },
+  "environments": {
+    "test": {
+      "aliases": [
+        "test.crearpaginaweb.zoolandingpage.com.mx",
+        "test.quierounsitioweb.zoolandingpage.com.mx",
+        "test.sitiosweb.zoolandingpage.com.mx",
+        "test.zoosite.zoolandingpage.com.mx",
+        "test.zoositioweb.com.mx",
+        "test.zoositioweb.zoolandingpage.com.mx"
+      ]
+    }
   }
 }
