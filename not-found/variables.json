@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "not-found",
+  "variables": {
+    "i18n": {
+      "defaultLanguage": "es",
+      "supportedLanguages": [
+        {
+          "code": "es",
+          "label": "ES"
+        },
+        {
+          "code": "en",
+          "label": "EN"
+        }
+      ]
+    }
+  }
+}

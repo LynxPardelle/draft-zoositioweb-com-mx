@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "not-found",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Página no encontrada",
+      "title": "Esta ruta no nos llevó a un sitio activo.",
+      "lead": "Puede que el enlace haya cambiado o que la página ya no exista. Te dejamos rutas útiles para continuar sin perder tiempo.",
+      "primaryLabel": "Volver al inicio",
+      "secondaryLabel": "Pedir orientación",
+      "secondaryUrl": "https://wa.me/525522699563?text=Hola%2C%20llegu%C3%A9%20a%20una%20p%C3%A1gina%20no%20encontrada%20en%20zoositioweb%20y%20quiero%20orientaci%C3%B3n%20para%20mi%20sitio%20web."
+    },
+    "signal": {
+      "code": "404",
+      "title": "La página no está disponible.",
+      "lead": "El sitio sigue activo. Puedes volver a inicio, revisar planes o escribirnos para encontrar la ruta correcta."
+    },
+    "routes": {
+      "title": "Rutas útiles para continuar.",
+      "lead": "Si buscabas información para crear tu sitio web, estas páginas suelen resolver el siguiente paso.",
+      "items": [
+        {
+          "label": "Servicios para entender qué podemos construir"
+        },
+        {
+          "label": "Planes para comparar alcance y precio"
+        },
+        {
+          "label": "Plataforma para conocer la base tecnológica"
+        }
+      ]
+    }
+  }
+}
