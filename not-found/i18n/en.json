@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "not-found",
+  "lang": "en",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Page not found",
+      "title": "This route did not lead to an active page.",
+      "lead": "The link may have changed or the page may no longer exist. Here are useful paths so you can keep moving.",
+      "primaryLabel": "Back to home",
+      "secondaryLabel": "Ask for guidance",
+      "secondaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20reached%20a%20page%20not%20found%20on%20zoositioweb%20and%20I%20want%20guidance%20for%20my%20website."
+    },
+    "signal": {
+      "code": "404",
+      "title": "The page is not available.",
+      "lead": "The site is still active. You can return home, review plans, or message us to find the right path."
+    },
+    "routes": {
+      "title": "Useful paths to continue.",
+      "lead": "If you were looking for information to create your website, these pages usually solve the next step.",
+      "items": [
+        {
+          "label": "Services to understand what we can build"
+        },
+        {
+          "label": "Plans to compare scope and price"
+        },
+        {
+          "label": "Platform to understand the technical base"
+        }
+      ]
+    }
+  }
+}
