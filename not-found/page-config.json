@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "pageId": "not-found",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "notFoundPage",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "not-found-recovery"
+  },
+  "seo": {
+    "title": {
+      "es": "Página no encontrada | zoositioweb",
+      "en": "Page not found | zoositioweb"
+    },
+    "description": {
+      "es": "La página que buscabas no está disponible. Continúa hacia inicio, planes o contacto para crear tu sitio web.",
+      "en": "The page you were looking for is not available. Continue to home, plans, or contact to create your website."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Página no encontrada | zoositioweb",
+        "en": "Page not found | zoositioweb"
+      },
+      "description": {
+        "es": "La página que buscabas no está disponible. Continúa hacia inicio, planes o contacto para crear tu sitio web.",
+        "en": "The page you were looking for is not available. Continue to home, plans, or contact to create your website."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/404",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Página no encontrada | zoositioweb",
+        "en": "Page not found | zoositioweb"
+      },
+      "description": {
+        "es": "La página que buscabas no está disponible. Continúa hacia inicio, planes o contacto para crear tu sitio web.",
+        "en": "The page you were looking for is not available. Continue to home, plans, or contact to create your website."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/404",
+    "keywords": {
+      "es": [
+        "pagina no encontrada",
+        "zoositioweb",
+        "sitios web profesionales"
+      ],
+      "en": [
+        "page not found",
+        "zoositioweb",
+        "professional websites"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Página no encontrada | zoositioweb",
+        "description": "La página que buscabas no está disponible. Continúa hacia inicio, planes o contacto para crear tu sitio web.",
+        "url": "https://zoositioweb.com.mx/404",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "rutas"
+    ],
+    "scrollMilestones": [
+      50,
+      100
+    ]
+  }
+}

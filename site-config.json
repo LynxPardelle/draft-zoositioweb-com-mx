@@ -8,6 +8,7 @@
     "crearpaginaweb.zoolandingpage.com.mx"
   ],
   "defaultPageId": "default",
+  "notFoundPageId": "not-found",
   "routes": [
     {
       "path": "/",
@@ -50,6 +51,11 @@
       "label": "Contacto"
     },
     {
+      "path": "/404",
+      "pageId": "not-found",
+      "label": "Página no encontrada"
+    },
+    {
       "path": "/sectores/consultorios",
       "pageId": "sector-consultorios",
       "label": "Consultorios"
@@ -80,6 +86,11 @@
       "label": "Agencias"
     }
   ],
+  "sitemap": {
+    "excludePaths": [
+      "/404"
+    ]
+  },
   "site": {
     "theme": {
       "defaultMode": "light",
