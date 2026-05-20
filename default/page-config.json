@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "defaultPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Sitios web profesionales para negocios | Zoosite",
-      "en": "Professional websites for businesses | Zoosite"
+      "es": "Sitios web profesionales con datos propios | zoositioweb",
+      "en": "Professional websites with first-party data | zoositioweb"
     },
     "description": {
-      "es": "Sitios web completos para negocios que quieren verse profesionales, explicar su oferta y recibir contactos por WhatsApp.",
-      "en": "Complete websites for businesses that need a professional presence, clear offer pages, and WhatsApp contact."
+      "es": "Creamos sitios web completos para PyMEs y negocios que necesitan explicar su oferta, recibir contactos por WhatsApp y medir interés con datos propios.",
+      "en": "Complete websites for small businesses that need clear offer pages, WhatsApp contact, and first-party data to measure real interest."
     },
     "openGraph": {
       "title": {
-        "es": "Sitios web profesionales para negocios | Zoosite",
-        "en": "Professional websites for businesses | Zoosite"
+        "es": "Sitios web profesionales con datos propios | zoositioweb",
+        "en": "Professional websites with first-party data | zoositioweb"
       },
       "description": {
-        "es": "Sitios web completos para negocios que quieren verse profesionales, explicar su oferta y recibir contactos por WhatsApp.",
-        "en": "Complete websites for businesses that need a professional presence, clear offer pages, and WhatsApp contact."
+        "es": "Creamos sitios web completos para PyMEs y negocios que necesitan explicar su oferta, recibir contactos por WhatsApp y medir interés con datos propios.",
+        "en": "Complete websites for small businesses that need clear offer pages, WhatsApp contact, and first-party data to measure real interest."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Sitios web profesionales para negocios | Zoosite",
-        "en": "Professional websites for businesses | Zoosite"
+        "es": "Sitios web profesionales con datos propios | zoositioweb",
+        "en": "Professional websites with first-party data | zoositioweb"
       },
       "description": {
-        "es": "Sitios web completos para negocios que quieren verse profesionales, explicar su oferta y recibir contactos por WhatsApp.",
-        "en": "Complete websites for businesses that need a professional presence, clear offer pages, and WhatsApp contact."
+        "es": "Creamos sitios web completos para PyMEs y negocios que necesitan explicar su oferta, recibir contactos por WhatsApp y medir interés con datos propios.",
+        "en": "Complete websites for small businesses that need clear offer pages, WhatsApp contact, and first-party data to measure real interest."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -53,13 +54,29 @@
         "sitios web para negocios",
         "paginas web profesionales",
         "sitios web para pymes",
-        "Zoosite"
+        "zoositioweb",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "sitios web profesionales con datos propios",
+        "crear sitio web para negocio",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "business websites",
         "professional websites",
         "websites for small business",
-        "Zoosite"
+        "zoositioweb",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "professional websites with first-party data",
+        "business website development",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -67,10 +84,26 @@
     "entries": [
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Sitios web profesionales para negocios | Zoosite",
-        "description": "Sitios web completos para negocios que quieren verse profesionales, explicar su oferta y recibir contactos por WhatsApp.",
+        "@type": "WebSite",
+        "name": "zoositioweb",
         "url": "https://zoositioweb.com.mx/",
+        "inLanguage": [
+          "es",
+          "en"
+        ],
+        "description": "Sitios web profesionales para negocios con contacto por WhatsApp, medición desde el inicio y análisis de datos propios."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Sitios web profesionales con datos propios | zoositioweb",
+        "description": "Creamos sitios web completos para PyMEs y negocios que necesitan explicar su oferta, recibir contactos por WhatsApp y medir interés con datos propios.",
+        "url": "https://zoositioweb.com.mx/",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "zoositioweb",
+          "url": "https://zoositioweb.com.mx/"
+        },
         "inLanguage": "es"
       }
     ]
@@ -81,6 +114,7 @@
       "evidencia",
       "resultados",
       "sectores",
+      "equipo",
       "proximamente",
       "contacto"
     ],

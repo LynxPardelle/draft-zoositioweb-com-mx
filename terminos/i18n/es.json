@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "terminos",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Condiciones del servicio",
+      "title": "Términos y condiciones de zoositioweb.",
+      "lead": "Estas condiciones resumen cómo trabajamos los sitios web profesionales, qué incluyen los precios publicados, cómo manejamos pruebas, soporte humano, facturación y responsabilidades del proyecto.",
+      "primaryLabel": "Cotizar mi sitio",
+      "secondaryLabel": "Ver privacidad"
+    },
+    "content": {
+      "intro": "zoositioweb ofrece sitios web profesionales para negocios, PyMEs, freelancers y equipos que necesitan presencia clara, medición propia y una base preparada para crecer.",
+      "sections": [
+        {
+          "title": "Servicio ofrecido",
+          "body": "Diseñamos, estructuramos y publicamos sitios web profesionales con páginas o secciones según el plan contratado. El trabajo puede incluir orientación comercial, estructura de contenido, configuración de botones hacia WhatsApp, medición propia, soporte humano y consultoría de tecnología, datos e IA cuando aporte valor al proyecto."
+        },
+        {
+          "title": "Planes, precios e IVA",
+            "body": "Los precios publicados son referencias iniciales en MXN y son sin IVA: el plan llamado \"Presencia\" desde $3,000 MXN, el plan llamado \"Clientes\" desde $6,000 MXN y el plan llamado \"Crecimiento\" desde $10,000 MXN. El alcance final se confirma antes de iniciar, según páginas, materiales, complejidad y necesidades del negocio."
+        },
+        {
+          "title": "Primera ronda de pruebas",
+          "body": "Podemos tener una primera ronda de pruebas lista en 5 días cuando el alcance base, los materiales necesarios y la información comercial mínima estén disponibles a tiempo. Cambios de alcance, falta de materiales o aprobaciones pendientes pueden ajustar los tiempos."
+        },
+        {
+          "title": "Facturación y pagos",
+          "body": "El servicio es 100% facturable. Los datos fiscales del emisor y los requisitos específicos de facturación se proporcionan durante el proceso comercial. El inicio, entregables y publicación pueden depender de la confirmación de pago o acuerdo correspondiente."
+        },
+        {
+          "title": "Soporte humano y consultoría",
+          "body": "El acompañamiento es humano. Como desarrolladores ayudamos en cada etapa: alcance, estructura, publicación, medición y mejoras. También podemos orientar a negocios en decisiones de tecnología, datos, nube e IA relacionadas con su presencia digital."
+        },
+        {
+          "title": "Responsabilidades del cliente",
+          "body": "El cliente debe proporcionar información veraz, materiales que tenga derecho a usar, aprobaciones oportunas, datos de facturación correctos y retroalimentación clara. El cliente es responsable de que sus textos, imágenes, marcas y ofertas puedan publicarse legalmente."
+        },
+        {
+          "title": "Resultados comerciales y cambios",
+          "body": "Construimos una base profesional para explicar la oferta, medir interacción y abrir conversaciones, pero no garantizamos ventas, posicionamiento exacto, resultados de campañas o volumen de contactos. Los cambios fuera del alcance aprobado se cotizan o calendarizan por separado."
+        }
+      ]
+    },
+    "final": {
+      "title": "¿Quieres confirmar alcance y tiempos?",
+      "lead": "Cuéntanos tu caso por WhatsApp y te ayudamos a elegir un plan, revisar materiales y definir la primera ronda de pruebas.",
+      "primaryLabel": "Ir a contacto",
+      "secondaryLabel": "Ver privacidad"
+    }
+  }
+}

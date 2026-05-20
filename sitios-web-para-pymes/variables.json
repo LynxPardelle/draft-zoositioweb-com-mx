@@ -2,5 +2,38 @@
   "version": 1,
   "domain": "zoositioweb.com.mx",
   "pageId": "sitios-web-para-pymes",
-  "variables": {}
+  "variables": {
+    "navigation": [
+      {
+        "id": "home",
+        "value": "/",
+        "labelKey": "nav.home"
+      },
+      {
+        "id": "services",
+        "value": "/servicios",
+        "labelKey": "nav.services"
+      },
+      {
+        "id": "plans",
+        "value": "/planes",
+        "labelKey": "nav.plans"
+      },
+      {
+        "id": "platform",
+        "value": "/plataforma",
+        "labelKey": "nav.platform"
+      },
+      {
+        "id": "faq",
+        "value": "/preguntas-frecuentes",
+        "labelKey": "nav.faq"
+      },
+      {
+        "id": "contact",
+        "value": "/contacto",
+        "labelKey": "nav.contact"
+      }
+    ]
+  }
 }

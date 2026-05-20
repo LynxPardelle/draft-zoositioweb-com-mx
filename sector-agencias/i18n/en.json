@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "Sector",
       "title": "Websites for agencies that need to present services, cases, and campaigns.",
-      "lead": "Organize services, cases, team, differentiators, and contact paths for clients comparing capabilities.",
+      "lead": "Organize services, cases, team, differentiators, and contact paths for clients comparing capabilities. We also leave measurement in place to collect first-party data on sector interest.",
       "primaryLabel": "I want a website for my agency",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20website%20for%20my%20agency.",
       "secondaryLabel": "View plans",
@@ -26,7 +26,7 @@
           },
           {
             "title": "How it is measured",
-            "content": "Clicks by sector, page, and language to understand interest."
+            "content": "Our system records clicks by sector, page, language, and contact action to analyze interest."
           }
         ]
       }
@@ -43,9 +43,9 @@
         "detail": "Available examples help explain your approach."
       },
       {
-        "value": "Campaigns",
-        "label": "Specific routes",
-        "detail": "The website can grow by audience or campaign."
+        "value": "Data",
+        "label": "Measurable interest",
+        "detail": "Actions help understand what each customer type is looking for."
       }
     ],
     "sections": [
@@ -69,7 +69,7 @@
           {
             "icon": "groups",
             "title": "Team and approach",
-            "description": "Show team capabilities and how you support clients.",
+            "description": "WhatsApp buttons with a starter message oriented to the sector and measurable actions for follow-up.",
             "benefits": [
               "Visible team",
               "Methodology",
@@ -95,7 +95,7 @@
       {
         "eyebrow": "Recommended content",
         "title": "Sections to sell services with more clarity.",
-        "lead": "The website can separate information by service, industry, or customer type.",
+        "lead": "Each sector needs its own nuance, but the commercial base and interaction data help make better decisions.",
         "cards": [
           {
             "icon": "analytics",
@@ -151,7 +151,7 @@
         },
         {
           "title": "How do you help my business?",
-          "content": "We turn your offer into a clear digital presence, with visible contact paths and initial data to make commercial decisions with more context."
+          "content": "We turn your offer into a clear digital presence, with visible contact paths and first-party interaction data to make commercial decisions with more context."
         },
         {
           "title": "What information should I prepare?",
@@ -166,7 +166,7 @@
     "final": {
       "eyebrow": "Sector",
       "title": "Create a page designed to sell agency services.",
-      "lead": "We can help you organize offer, cases, and first contact with a commercial focus.",
+      "lead": "The WhatsApp message already includes the sector to guide the conversation and analyze interest better.",
       "primaryLabel": "I want a page for my agency",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20page%20for%20my%20agency%20within%20my%20website.",
       "secondaryLabel": "Go to contact"

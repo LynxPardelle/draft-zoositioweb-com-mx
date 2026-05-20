@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "Complete service",
       "title": "Turn your offer into a clear website for selling.",
-      "lead": "We guide you from idea to launch: structure, copy, design, mobile review, and initial interest signals.",
+      "lead": "We guide you from idea to publishing: structure, copy, design, mobile review, and first-party data collection to analyze real interest.",
       "primaryLabel": "I want to review my project",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20review%20my%20website%20project.%20My%20business%20is%3A",
       "secondaryLabel": "Compare plans",
@@ -25,8 +25,8 @@
             "content": "We write commercial copy in direct language so customers quickly understand your value."
           },
           {
-            "title": "Measurement",
-            "content": "We register important interactions to know which pages and buttons receive more attention."
+            "title": "First-party data",
+            "content": "Our system records important interactions to know which pages, sections, and buttons receive more attention."
           }
         ]
       }
@@ -44,15 +44,15 @@
       },
       {
         "value": "Data",
-        "label": "Initial learning",
-        "detail": "Basic reading of pages, sections, and important clicks."
+        "label": "Data and analysis",
+        "detail": "Reading pages, sections, clicks, and important actions from the start."
       }
     ],
     "sections": [
       {
         "eyebrow": "What is included",
         "title": "A base ready to sell your offer.",
-        "lead": "We bring together commercial strategy, content, design, and publishing so your website helps explain your business and open conversations.",
+        "lead": "We combine commercial strategy, content, design, publishing, and our own measurement so your website explains your business and opens conversations.",
         "cards": [
           {
             "icon": "account_tree",
@@ -68,11 +68,11 @@
           },
           {
             "icon": "assignment",
-            "title": "Commercial copy",
-            "description": "Clear writing to explain what you sell and why it is worth messaging you.",
+            "title": "Commercial copy with AI support",
+            "description": "We use AI as support to organize ideas, propose copy, and refine it with commercial judgment.",
             "benefits": [
               "Direct language",
-              "Frequently asked questions",
+              "Human review",
               "Direct WhatsApp messages"
             ],
             "href": "",
@@ -80,12 +80,12 @@
           },
           {
             "icon": "analytics",
-            "title": "Interest reading",
-            "description": "We register which pages, plans, or sectors receive more attention to guide future adjustments.",
+            "title": "First-party data and analysis",
+            "description": "We collect which pages, plans, sectors, and buttons receive more attention to guide future adjustments with evidence.",
             "benefits": [
               "Important clicks",
               "Viewed sections",
-              "Language and experience"
+              "WhatsApp actions"
             ],
             "href": "",
             "linkLabel": ""
@@ -122,7 +122,7 @@
             "linkLabel": ""
           },
           {
-            "icon": "account_tree",
+            "icon": "auto_awesome",
             "title": "3. Produce the site",
             "description": "We create pages and components with clear content to review and adjust with you.",
             "benefits": [
@@ -136,7 +136,7 @@
           {
             "icon": "rocket_launch",
             "title": "4. Publish and adjust",
-            "description": "We review mobile and desktop, tune details, and leave the base ready for initial interest reading.",
+            "description": "We review mobile and desktop, refine details, and leave the base ready to collect first-party interest data.",
             "benefits": [
               "Visual review",
               "Final adjustments",
@@ -155,7 +155,7 @@
       "items": [
         {
           "title": "What do you deliver in the service?",
-          "content": "A website with structure, commercial copy, responsive design, WhatsApp contact, and initial interaction reading."
+          "content": "A website with structure, commercial copy, responsive design, WhatsApp contact, and initial reading of first-party interaction data."
         },
         {
           "title": "Do you help organize my ideas?",
@@ -174,7 +174,7 @@
     "final": {
       "eyebrow": "Start",
       "title": "Tell us what you sell and what you want to achieve with your website.",
-      "lead": "We guide you to choose scope, pages, and content based on your business stage.",
+      "lead": "We help you choose scope, pages, content, and data signals worth measuring according to your business stage.",
       "primaryLabel": "Review my project",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20review%20my%20website%20project%20and%20choose%20the%20right%20plan.",
       "secondaryLabel": "Go to contact"

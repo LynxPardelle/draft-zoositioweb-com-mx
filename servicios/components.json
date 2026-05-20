@@ -27,7 +27,7 @@
         "benefitItemClasses": "ank-display-flex ank-alignItems-start ank-gap-8px ank-color-secondaryTextColor ank-fontSize-0_95rem ank-lineHeight-1_45",
         "benefitIconClasses": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-successColor ank-flexShrink-0 ank-marginTop-2px",
         "benefitTextClasses": "ank-color-secondaryTextColor",
-        "linkClasses": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-whiteSpace-nowrap"
+        "linkClasses": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-whiteSpace-nowrap ank-textAlign-center ank-width-100per"
       }
     },
     {
@@ -72,8 +72,8 @@
         "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gridTemplateColumns-1fr ank-gap-28px ank-alignItems-stretch",
         "components": [
-          "serviciosHeroPanel",
-          "serviciosHeroCopy"
+          "serviciosHeroCopy",
+          "serviciosHeroPanel"
         ],
         "styles": {
           "display": "grid",
@@ -109,7 +109,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -129,7 +132,10 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem",
+        "styles": {
+          "marginBottom": "8px"
+        }
       }
     },
     {
@@ -148,7 +154,8 @@
           "gap": "12px",
           "alignItems": "stretch",
           "rowGap": "28px",
-          "columnGap": "12px"
+          "columnGap": "12px",
+          "marginTop": "8px"
         }
       }
     },
@@ -161,7 +168,7 @@
         "href": "#",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
         "target": "_blank",
         "rel": "noopener noreferrer",
         "styles": {
@@ -170,7 +177,8 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "color": "var(--ank-onSuccessColor)"
         }
       }
     },
@@ -183,7 +191,7 @@
         "href": "/planes",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor ank-textAlign-center",
         "target": "_self",
         "rel": "nofollow noopener noreferrer",
         "styles": {
@@ -225,7 +233,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -261,10 +272,15 @@
         "containerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
         "defaultItemContainerClasses": "ank-border-1px__solid__bgColor ank-borderRadius-8px ank-bg-bgColor",
         "defaultItemButtonConfig": {
-          "classes": "ank-width-100per ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-800 ank-cursor-pointer"
+          "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-800 ank-cursor-pointer ank-justifyContent-spaceMINbetween ank-gap-10px",
+          "icon": "expand_more",
+          "iconPosition": "after",
+          "iconClasses": "ank-width-1_2rem ank-height-1_2rem ank-fontSize-1_2rem ank-color-linkColor"
         },
-        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5"
-      }
+        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5",
+        "defaultItemIconIsExpandedClasses": "ank-color-accentColor"
+      },
+      "eventInstructions": "trackEvent:accordion_toggle,accordion,servicios-serviciosHeroPanelList,page,servicios,location,accordion,item,event.eventData.id,expanded,event.eventData.expanded"
     },
     {
       "id": "serviciosStatsSection",
@@ -485,7 +501,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -611,7 +630,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -713,7 +735,10 @@
         "components": [
           "serviciosFinalInner"
         ],
-        "id": "contacto"
+        "id": "contacto",
+        "styles": {
+          "backgroundColor": "var(--ank-bgColor)"
+        }
       }
     },
     {
@@ -729,8 +754,13 @@
           "serviciosFinalActions"
         ],
         "styles": {
+          "backgroundColor": "var(--ank-secondaryBgColor)",
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "borderRadius": "8px",
           "borderTop": "4px solid var(--ank-successColor)",
-          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.11)"
+          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.11)",
+          "boxSizing": "border-box",
+          "padding": "clamp(28px, 4vw, 52px)"
         }
       }
     },
@@ -741,7 +771,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -793,7 +826,7 @@
         "href": "#",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
         "target": "_blank",
         "rel": "noopener noreferrer",
         "styles": {
@@ -802,7 +835,8 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "color": "var(--ank-onSuccessColor)"
         }
       }
     },
@@ -815,7 +849,7 @@
         "href": "/contacto",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor ank-textAlign-center",
         "target": "_self",
         "rel": "nofollow noopener noreferrer",
         "styles": {

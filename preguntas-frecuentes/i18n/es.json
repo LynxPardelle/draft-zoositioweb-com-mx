@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "Preguntas frecuentes",
       "title": "Todo lo básico antes de pedir tu sitio.",
-      "lead": "Reunimos las dudas principales sobre planes, proceso, materiales, WhatsApp y crecimiento para que decidas con más claridad.",
+      "lead": "Reunimos las dudas principales sobre planes, proceso, materiales, WhatsApp, datos propios y crecimiento para que decidas con más claridad.",
       "primaryLabel": "Quiero orientación",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20orientaci%C3%B3n%20para%20mi%20sitio%20web.",
       "secondaryLabel": "Ir a contacto"
@@ -15,7 +15,7 @@
     "faq": {
       "eyebrow": "Respuestas",
       "title": "Preguntas frecuentes",
-      "lead": "Una sola página para consultar lo esencial del servicio.",
+      "lead": "Una sola página para consultar lo esencial del servicio, incluyendo cómo recopilamos y analizamos datos de interacción.",
       "items": [
         {
           "title": "¿Cómo sé qué plan elegir?",
@@ -35,7 +35,11 @@
         },
         {
           "title": "¿Cómo ayudan a mi negocio?",
-          "content": "Ordenamos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+          "content": "Ordenamos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos propios de interacción para tomar decisiones comerciales con más contexto."
+        },
+        {
+          "title": "¿Qué datos recopila el sitio?",
+          "content": "Nuestro sistema puede registrar páginas consultadas, clicks importantes, secciones con más atención, idioma elegido y acciones hacia WhatsApp para analizar interés comercial."
         },
         {
           "title": "¿Puedo crecer por sectores o campañas?",
@@ -54,9 +58,9 @@
     "final": {
       "eyebrow": "Siguiente paso",
       "title": "Conversemos sobre tu caso específico.",
-      "lead": "Si ya tienes una idea del sitio, podemos ayudarte a ordenar alcance, plan y materiales.",
+      "lead": "Si ya tienes una idea del sitio, podemos ayudarte a ordenar alcance, plan, materiales y datos iniciales que conviene medir.",
       "primaryLabel": "Abrir WhatsApp",
-      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20empezar%20mi%20sitio%20web%20con%20Zoosite.",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20empezar%20mi%20sitio%20web%20con%20zoositioweb.",
       "secondaryLabel": "Ver planes"
     }
   }

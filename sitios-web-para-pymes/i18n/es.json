@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "Para PyMEs y negocios en crecimiento",
       "title": "Tu negocio necesita una página que sí explique por qué elegirte.",
-      "lead": "Zoosite ordena tu oferta en un sitio profesional, bilingüe y listo para recibir contactos por WhatsApp.",
+      "lead": "Desde $3,000 MXN sin IVA, zoositioweb ordena tu oferta en un sitio profesional, bilingüe, listo para recibir contactos por WhatsApp y preparado para recopilar datos propios desde el inicio.",
       "primaryLabel": "Quiero un sitio para mi PyME",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20para%20mi%20PyME.%20Mi%20negocio%20vende%3A",
       "secondaryLabel": "Ver planes",
@@ -17,35 +17,35 @@
         "lead": "Un sitio claro reduce dudas básicas y ayuda a que el primer mensaje llegue con más contexto.",
         "items": [
           {
-            "title": "Qué vendes",
-            "content": "Servicios o productos explicados con orden."
+            "title": "Precio claro",
+            "content": "Planes desde $3,000 MXN sin IVA para empezar con una base profesional."
           },
           {
-            "title": "Por qué elegirte",
-            "content": "Experiencia, proceso, equipo o elementos reales de respaldo."
+            "title": "Primera ronda en 5 días",
+            "content": "Con información base completa, preparamos una primera versión para pruebas en 5 días."
           },
           {
-            "title": "Cómo contactarte",
-            "content": "WhatsApp con un mensaje inicial orientado al objetivo del visitante."
+            "title": "Soporte humano",
+            "content": "Te acompañamos para ordenar oferta, tecnología, datos e IA sin dejarte solo con una plantilla."
           }
         ]
       }
     },
     "stats": [
       {
-        "value": "PyME",
-        "label": "Enfoque comercial",
-        "detail": "Lenguaje claro para compradores reales."
+        "value": "Desde $3,000 MXN",
+        "label": "Precio sin IVA",
+        "detail": "Una primera versión profesional para publicar, medir y abrir conversación."
       },
       {
-        "value": "Móvil",
-        "label": "Consulta desde celular",
-        "detail": "Diseño pensado para revisar y escribir rápido."
+        "value": "5 días",
+        "label": "Primera ronda",
+        "detail": "Con alcance, materiales e información comercial mínima disponibles a tiempo."
       },
       {
-        "value": "Pauta",
-        "label": "Base para campañas",
-        "detail": "Página útil para tráfico pagado y búsqueda orgánica."
+        "value": "Facturable",
+        "label": "Soporte humano",
+        "detail": "Servicio 100% facturable con orientación de desarrolladores durante el proceso."
       }
     ],
     "sections": [
@@ -81,7 +81,7 @@
           {
             "icon": "analytics",
             "title": "Entiende qué genera interés",
-            "description": "La lectura básica de interacciones ayuda a orientar ajustes con contexto comercial.",
+            "description": "Nuestro sistema registra interacciones del sitio para orientar ajustes con contexto comercial y datos propios.",
             "benefits": [
               "Clicks por página",
               "Interés por plan",
@@ -111,8 +111,8 @@
           },
           {
             "icon": "flash_on",
-            "title": "Mensajes por intención",
-            "description": "Cada botón puede iniciar WhatsApp con contexto útil para mejorar la conversación.",
+            "title": "Mensajes y datos por intención",
+            "description": "Cada botón puede iniciar WhatsApp con contexto útil y dejar señales medibles para mejorar la conversación.",
             "benefits": [
               "Menos pasos",
               "Primer mensaje con contexto",
@@ -128,7 +128,7 @@
             "benefits": [
               "SEO por intención",
               "Pauta más relevante",
-              "Base para guías"
+              "Datos por ruta"
             ],
             "href": "",
             "linkLabel": ""
@@ -151,7 +151,7 @@
         },
         {
           "title": "¿Cómo ayudan a mi negocio?",
-          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos propios de interacción para tomar decisiones comerciales con más contexto."
         },
         {
           "title": "¿Qué información conviene preparar?",
@@ -166,7 +166,7 @@
     "final": {
       "eyebrow": "Cotizar",
       "title": "Pide una recomendación para tu PyME.",
-      "lead": "Cuéntanos giro, ciudad y qué vendes para orientar el plan.",
+      "lead": "Cuéntanos giro, ciudad, qué vendes y qué quieres medir para orientar el plan.",
       "primaryLabel": "Quiero un sitio para mi PyME",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20para%20mi%20PyME.%20Mi%20giro%20es%3A",
       "secondaryLabel": "Ir a contacto"

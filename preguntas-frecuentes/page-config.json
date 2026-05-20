@@ -6,21 +6,21 @@
   "status": "phase-1-local-draft",
   "seo": {
     "title": {
-      "es": "Preguntas frecuentes sobre sitios web | Zoosite",
-      "en": "Website FAQ | Zoosite"
+      "es": "Preguntas frecuentes sobre sitios web medibles | zoositioweb",
+      "en": "Measurable website FAQ | zoositioweb"
     },
     "description": {
-      "es": "Respuestas sobre planes, proceso, WhatsApp, materiales y crecimiento de sitios web con Zoosite.",
-      "en": "Answers about plans, process, WhatsApp, materials, and website growth with Zoosite."
+      "es": "Aclara dudas sobre planes, proceso, WhatsApp, crecimiento, datos propios, analítica y publicación de sitios web profesionales.",
+      "en": "Answers about website plans, process, WhatsApp, growth, first-party data, analytics, and professional website publishing."
     },
     "openGraph": {
       "title": {
-        "es": "Preguntas frecuentes sobre sitios web | Zoosite",
-        "en": "Website FAQ | Zoosite"
+        "es": "Preguntas frecuentes sobre sitios web medibles | zoositioweb",
+        "en": "Measurable website FAQ | zoositioweb"
       },
       "description": {
-        "es": "Respuestas sobre planes, proceso, WhatsApp, materiales y crecimiento de sitios web con Zoosite.",
-        "en": "Answers about plans, process, WhatsApp, materials, and website growth with Zoosite."
+        "es": "Aclara dudas sobre planes, proceso, WhatsApp, crecimiento, datos propios, analítica y publicación de sitios web profesionales.",
+        "en": "Answers about website plans, process, WhatsApp, growth, first-party data, analytics, and professional website publishing."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/preguntas-frecuentes",
@@ -28,12 +28,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Preguntas frecuentes sobre sitios web | Zoosite",
-        "en": "Website FAQ | Zoosite"
+        "es": "Preguntas frecuentes sobre sitios web medibles | zoositioweb",
+        "en": "Measurable website FAQ | zoositioweb"
       },
       "description": {
-        "es": "Respuestas sobre planes, proceso, WhatsApp, materiales y crecimiento de sitios web con Zoosite.",
-        "en": "Answers about plans, process, WhatsApp, materials, and website growth with Zoosite."
+        "es": "Aclara dudas sobre planes, proceso, WhatsApp, crecimiento, datos propios, analítica y publicación de sitios web profesionales.",
+        "en": "Answers about website plans, process, WhatsApp, growth, first-party data, analytics, and professional website publishing."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -43,12 +43,27 @@
       "es": [
         "preguntas frecuentes sitios web",
         "dudas pagina web negocio",
-        "Zoosite"
+        "zoositioweb",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "preguntas frecuentes sitios web medibles",
+        "dudas sobre paginas web para negocios",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "website faq",
         "business website questions",
-        "Zoosite"
+        "zoositioweb",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "measurable website faq",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -57,9 +72,84 @@
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "name": "Preguntas frecuentes sobre sitios web | Zoosite",
+        "name": "Preguntas frecuentes sobre sitios web medibles | zoositioweb",
+        "description": "Aclara dudas sobre planes, proceso, WhatsApp, crecimiento, datos propios, analítica y publicación de sitios web profesionales.",
         "url": "https://zoositioweb.com.mx/preguntas-frecuentes",
-        "inLanguage": "es"
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo sé qué plan elegir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Te orientamos con base en tu oferta, cantidad de servicios, materiales disponibles y objetivo comercial."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo empezar con pocos textos o fotos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Convertimos lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El contacto inicial es por WhatsApp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. WhatsApp abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué información conviene preparar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo ayudan a mi negocio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ordenamos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos propios de interacción para tomar decisiones comerciales con más contexto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué datos recopila el sitio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nuestro sistema puede registrar páginas consultadas, clicks importantes, secciones con más atención, idioma elegido y acciones hacia WhatsApp para analizar interés comercial."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo crecer por sectores o campañas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. La estructura puede ampliarse con páginas para públicos, servicios o campañas conforme avance el negocio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué se revisa antes de recomendar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oferta, mercado, materiales, prioridad de contacto y el momento comercial del negocio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El sitio queda preparado para móvil?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. La experiencia se revisa para que clientes puedan leer, comparar y escribirte con fluidez desde el teléfono."
+            }
+          }
+        ]
       }
     ]
   },
@@ -80,6 +170,7 @@
     "skipToMainLink",
     "siteHeader",
     "faqPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],

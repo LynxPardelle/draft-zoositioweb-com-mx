@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "Initial sector",
       "title": "Websites for law firms that need to explain experience with seriousness.",
-      "lead": "Organize practice areas, team, contact process, and proof elements with professional commercial language.",
+      "lead": "Organize practice areas, team, contact process, and proof elements with professional commercial language. We also leave measurement in place to collect first-party data on sector interest.",
       "primaryLabel": "I want a website for my law firm",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20website%20for%20my%20law%20firm.",
       "secondaryLabel": "View plans",
@@ -26,7 +26,7 @@
           },
           {
             "title": "How it is measured",
-            "content": "Clicks by sector, page, and language to understand interest."
+            "content": "Our system records clicks by sector, page, language, and contact action to analyze interest."
           }
         ]
       }
@@ -43,9 +43,9 @@
         "detail": "Experience, process, and contact presented with order."
       },
       {
-        "value": "WhatsApp",
-        "label": "Tagged interest",
-        "detail": "The initial message indicates the sector."
+        "value": "Data",
+        "label": "Measurable interest",
+        "detail": "Actions help understand what each customer type is looking for."
       }
     ],
     "sections": [
@@ -69,7 +69,7 @@
           {
             "icon": "phone_android",
             "title": "Agile contact",
-            "description": "WhatsApp buttons with a starter message oriented to the sector.",
+            "description": "WhatsApp buttons with a starter message oriented to the sector and measurable actions for follow-up.",
             "benefits": [
               "Fewer steps",
               "More context",
@@ -95,7 +95,7 @@
       {
         "eyebrow": "Recommended content",
         "title": "Sections that help people decide.",
-        "lead": "Each sector needs its own nuance, but the commercial base is similar.",
+        "lead": "Each sector needs its own nuance, but the commercial base and interaction data help make better decisions.",
         "cards": [
           {
             "icon": "assignment",
@@ -151,7 +151,7 @@
         },
         {
           "title": "How do you help my business?",
-          "content": "We turn your offer into a clear digital presence, with visible contact paths and initial data to make commercial decisions with more context."
+          "content": "We turn your offer into a clear digital presence, with visible contact paths and first-party interaction data to make commercial decisions with more context."
         },
         {
           "title": "What information should I prepare?",
@@ -166,7 +166,7 @@
     "final": {
       "eyebrow": "Sector",
       "title": "Create a page designed for your law firm.",
-      "lead": "The WhatsApp message already includes the sector to guide the conversation.",
+      "lead": "The WhatsApp message already includes the sector to guide the conversation and analyze interest better.",
       "primaryLabel": "I want a sector page",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20page%20for%20my%20law%20firm%20within%20my%20website.",
       "secondaryLabel": "Go to contact"

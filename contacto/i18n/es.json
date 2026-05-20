@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "WhatsApp guiado",
       "title": "Cuéntanos qué sitio necesita tu negocio.",
-      "lead": "El primer mensaje puede incluir giro, ciudad, objetivo, plan de interés y materiales disponibles.",
+      "lead": "Desde $3,000 MXN sin IVA, el primer mensaje puede incluir giro, ciudad, objetivo, plan de interés, materiales disponibles y qué datos propios quieres medir en tu sitio.",
       "primaryLabel": "Abrir WhatsApp",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20crear%20un%20sitio%20web.%20Mi%20negocio%20es%20de%3A",
       "secondaryLabel": "Ver planes",
@@ -17,35 +17,35 @@
         "lead": "Para iniciar basta compartir información comercial general: qué vendes, a quién atiendes y qué buscas lograr.",
         "items": [
           {
-            "title": "Giro",
-            "content": "Qué vendes y a quién atiendes."
+            "title": "Primera ronda en 5 días",
+            "content": "Con alcance base y materiales completos, podemos preparar una primera versión para pruebas."
           },
           {
-            "title": "Objetivo",
-            "content": "Presencia, más clientes o crecimiento."
+            "title": "100% facturable",
+            "content": "Los precios publicados son sin IVA y podemos facturar el servicio completo."
           },
           {
-            "title": "Materiales",
-            "content": "Logo, fotos, textos o referencias si ya existen."
+            "title": "Soporte humano",
+            "content": "Desarrolladores te acompañan en sitio, tecnología, datos e IA cuando aporta valor."
           }
         ]
       }
     },
     "stats": [
       {
-        "value": "1 mensaje",
-        "label": "Inicio directo",
+        "value": "Desde $3,000 MXN",
+        "label": "Precio sin IVA",
         "detail": "WhatsApp abre una conversación ágil para orientar el proyecto."
       },
       {
-        "value": "Plan",
-        "label": "Recomendación",
-        "detail": "Orientamos Presencia, Clientes o Crecimiento."
+        "value": "5 días",
+        "label": "Primera ronda",
+        "detail": "Si el alcance base y materiales llegan completos, podemos preparar pruebas iniciales en 5 días."
       },
       {
-        "value": "Siguiente paso",
-        "label": "Ruta clara",
-        "detail": "Te compartimos qué preparar y cómo avanzar con el alcance adecuado."
+        "value": "Facturable",
+        "label": "Soporte humano",
+        "detail": "Te acompañamos con desarrollo, tecnología, datos e IA cuando aporte valor."
       }
     ],
     "sections": [
@@ -95,7 +95,7 @@
       {
         "eyebrow": "Orientación inicial",
         "title": "Lo que vamos a revisar antes de recomendar.",
-        "lead": "La revisión inicial se enfoca en información comercial: oferta, mercado, materiales y prioridad de contacto.",
+        "lead": "La revisión inicial se enfoca en información comercial: oferta, mercado, materiales, prioridad de contacto y datos que conviene medir.",
         "cards": [
           {
             "icon": "filter_alt",
@@ -111,8 +111,8 @@
           },
           {
             "icon": "cloud",
-            "title": "Mercado",
-            "description": "A quién atiendes, en qué zona y qué necesita comparar.",
+            "title": "Mercado y datos",
+            "description": "A quién atiendes, en qué zona, qué necesita comparar y qué señales del sitio pueden ayudar a decidir mejor.",
             "benefits": [
               "Cliente ideal",
               "Ubicación",
@@ -151,7 +151,7 @@
         },
         {
           "title": "¿Cómo ayudan a mi negocio?",
-          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos propios de interacción para tomar decisiones comerciales con más contexto."
         },
         {
           "title": "¿Qué información conviene preparar?",
@@ -166,9 +166,9 @@
     "final": {
       "eyebrow": "WhatsApp",
       "title": "Inicia con el contexto que ya tengas.",
-      "lead": "Si falta información, la ordenamos en la conversación.",
+      "lead": "Si falta información, la ordenamos en la conversación y definimos los primeros datos propios que conviene observar.",
       "primaryLabel": "Abrir WhatsApp",
-      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20empezar%20mi%20sitio%20web%20con%20Zoosite.",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20empezar%20mi%20sitio%20web%20con%20zoositioweb.",
       "secondaryLabel": "Ver planes"
     }
   }

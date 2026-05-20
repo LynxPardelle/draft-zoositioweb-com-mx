@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "pageId": "terminos",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "termsPage",
+    "floatingWhatsAppCta",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "terms-and-conditions"
+  },
+  "seo": {
+    "title": {
+      "es": "Términos y condiciones | zoositioweb",
+      "en": "Terms and conditions | zoositioweb"
+    },
+    "description": {
+      "es": "Revisa condiciones de planes, precios sin IVA, primera ronda de pruebas, soporte humano, facturación y alcance del servicio zoositioweb.",
+      "en": "Review plans, prices before VAT, first test round, human support, invoicing, and service scope for zoositioweb."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Términos y condiciones | zoositioweb",
+        "en": "Terms and conditions | zoositioweb"
+      },
+      "description": {
+        "es": "Revisa condiciones de planes, precios sin IVA, primera ronda de pruebas, soporte humano, facturación y alcance del servicio zoositioweb.",
+        "en": "Review plans, prices before VAT, first test round, human support, invoicing, and service scope for zoositioweb."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/terminos",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Términos y condiciones | zoositioweb",
+        "en": "Terms and conditions | zoositioweb"
+      },
+      "description": {
+        "es": "Revisa condiciones de planes, precios sin IVA, primera ronda de pruebas, soporte humano, facturación y alcance del servicio zoositioweb.",
+        "en": "Review plans, prices before VAT, first test round, human support, invoicing, and service scope for zoositioweb."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/terminos",
+    "keywords": {
+      "es": [
+        "terminos zoositioweb",
+        "condiciones sitio web profesional",
+        "precios sin iva sitio web",
+        "soporte humano sitio web"
+      ],
+      "en": [
+        "zoositioweb terms",
+        "professional website terms",
+        "website prices before VAT",
+        "human website support"
+      ]
+    },
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Términos y condiciones | zoositioweb",
+        "description": "Revisa condiciones de planes, precios sin IVA, primera ronda de pruebas, soporte humano, facturación y alcance del servicio zoositioweb.",
+        "url": "https://zoositioweb.com.mx/terminos",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "contenido",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

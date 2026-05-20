@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "FAQ",
       "title": "The basics before requesting your website.",
-      "lead": "We gathered the main questions about plans, process, materials, WhatsApp, and growth so you can decide with more clarity.",
+      "lead": "We collect the main questions about plans, process, materials, WhatsApp, first-party data, and growth so you can decide more clearly.",
       "primaryLabel": "I want guidance",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20guidance%20for%20my%20website.",
       "secondaryLabel": "Go to contact"
@@ -15,7 +15,7 @@
     "faq": {
       "eyebrow": "Answers",
       "title": "Frequently asked questions",
-      "lead": "One page to review the essentials of the service.",
+      "lead": "One page to review the essentials of the service, including how we collect and analyze interaction data.",
       "items": [
         {
           "title": "How do I know which plan to choose?",
@@ -35,7 +35,11 @@
         },
         {
           "title": "How do you help my business?",
-          "content": "We organize your offer into a clear digital presence, with visible contact paths and initial data for commercial decisions with more context."
+          "content": "We organize your offer into a clear digital presence, with visible contact paths and first-party interaction data to make commercial decisions with more context."
+        },
+        {
+          "title": "What data does the website collect?",
+          "content": "Our system can record consulted pages, important clicks, sections with more attention, selected language, and WhatsApp actions to analyze commercial interest."
         },
         {
           "title": "Can I grow by sectors or campaigns?",
@@ -54,9 +58,9 @@
     "final": {
       "eyebrow": "Next step",
       "title": "Let us discuss your specific case.",
-      "lead": "If you already have an idea for the website, we can help organize scope, plan, and materials.",
+      "lead": "If you already have a website idea, we can help organize scope, plan, materials, and initial data worth measuring.",
       "primaryLabel": "Open WhatsApp",
-      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20start%20my%20website%20with%20Zoosite.",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20start%20my%20website%20with%20zoositioweb.",
       "secondaryLabel": "View plans"
     }
   }

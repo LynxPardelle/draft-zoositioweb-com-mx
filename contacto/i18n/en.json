@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "Guided WhatsApp",
       "title": "Tell us what website your business needs.",
-      "lead": "The first message can include business type, city, goal, plan of interest, and available materials.",
+      "lead": "Starting at MXN $3,000 before VAT, the first message can include industry, city, goal, plan of interest, available materials, and what first-party data you want to measure on your site.",
       "primaryLabel": "Open WhatsApp",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20create%20a%20website.%20My%20business%20is%20about%3A",
       "secondaryLabel": "View plans",
@@ -17,35 +17,35 @@
         "lead": "To start, it is enough to share general commercial information: what you sell, who you serve, and what you want to achieve.",
         "items": [
           {
-            "title": "Business type",
-            "content": "What you sell and who you serve."
+            "title": "First round in 5 days",
+            "content": "With complete base scope and materials, we can prepare a first version for testing."
           },
           {
-            "title": "Goal",
-            "content": "Presence, more customers, or growth."
+            "title": "Fully invoiceable",
+            "content": "Published prices are before VAT and we can invoice the complete service."
           },
           {
-            "title": "Materials",
-            "content": "Logo, photos, copy, or references if they already exist."
+            "title": "Human support",
+            "content": "Developers help with the website, technology, data, and AI when it adds value."
           }
         ]
       }
     },
     "stats": [
       {
-        "value": "1 message",
-        "label": "Direct start",
-        "detail": "WhatsApp opens an agile conversation to guide the project."
+        "value": "From MXN $3,000",
+        "label": "Before VAT",
+        "detail": "WhatsApp opens a quick conversation to guide the project."
       },
       {
-        "value": "Plan",
-        "label": "Recommendation",
-        "detail": "We guide Presence, Customers, or Growth."
+        "value": "5 days",
+        "label": "First round",
+        "detail": "If base scope and materials arrive complete, we can prepare initial tests in 5 days."
       },
       {
-        "value": "Next step",
-        "label": "Clear route",
-        "detail": "We share what to prepare and how to move forward with the right scope."
+        "value": "Invoiceable",
+        "label": "Human support",
+        "detail": "We help with development, technology, data, and AI when it adds value."
       }
     ],
     "sections": [
@@ -95,7 +95,7 @@
       {
         "eyebrow": "Initial guidance",
         "title": "What we review before recommending.",
-        "lead": "The initial review focuses on commercial information: offer, market, materials, and contact priority.",
+        "lead": "The initial review focuses on commercial information: offer, market, materials, contact priority, and data worth measuring.",
         "cards": [
           {
             "icon": "filter_alt",
@@ -111,8 +111,8 @@
           },
           {
             "icon": "cloud",
-            "title": "Market",
-            "description": "Who you serve, in what area, and what they need to compare.",
+            "title": "Market and data",
+            "description": "Who you serve, where, what they need to compare, and which website signals can help you decide better.",
             "benefits": [
               "Ideal customer",
               "Location",
@@ -151,7 +151,7 @@
         },
         {
           "title": "How do you help my business?",
-          "content": "We turn your offer into a clear digital presence, with visible contact paths and initial data to make commercial decisions with more context."
+          "content": "We turn your offer into a clear digital presence, with visible contact paths and first-party interaction data to make commercial decisions with more context."
         },
         {
           "title": "What information should I prepare?",
@@ -166,9 +166,9 @@
     "final": {
       "eyebrow": "WhatsApp",
       "title": "Start with the context you already have.",
-      "lead": "If information is missing, we organize it in the conversation.",
+      "lead": "If information is missing, we organize it in the conversation and define the first-party data signals worth watching.",
       "primaryLabel": "Open WhatsApp",
-      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20start%20my%20website%20with%20Zoosite.",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20start%20my%20website%20with%20zoositioweb.",
       "secondaryLabel": "View plans"
     }
   }

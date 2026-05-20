@@ -27,7 +27,7 @@
         "benefitItemClasses": "ank-display-flex ank-alignItems-start ank-gap-8px ank-color-secondaryTextColor ank-fontSize-0_95rem ank-lineHeight-1_45",
         "benefitIconClasses": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-successColor ank-flexShrink-0 ank-marginTop-2px",
         "benefitTextClasses": "ank-color-secondaryTextColor",
-        "linkClasses": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-whiteSpace-nowrap"
+        "linkClasses": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-whiteSpace-nowrap ank-textAlign-center ank-width-100per"
       }
     },
     {
@@ -118,7 +118,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -158,7 +161,8 @@
           "alignItems": "stretch",
           "justifyContent": "flex-start",
           "rowGap": "28px",
-          "columnGap": "12px"
+          "columnGap": "12px",
+          "marginTop": "8px"
         }
       }
     },
@@ -171,7 +175,7 @@
         "href": "#",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
         "target": "_blank",
         "rel": "noopener noreferrer",
         "styles": {
@@ -180,7 +184,8 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "color": "var(--ank-onSuccessColor)"
         }
       }
     },
@@ -193,7 +198,7 @@
         "href": "/planes",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "classes": "ank-btnOutline-linkColor-bgColor ank-bgHover-bgColor ank-borderStyle-solid ank-borderWidth-1px ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-fontWeight-800 ank-textDecoration-none ank-textAlign-center",
         "target": "_self",
         "rel": "nofollow noopener noreferrer",
         "styles": {
@@ -202,7 +207,8 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "color": "var(--ank-linkColor)"
         }
       }
     },
@@ -234,7 +240,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -270,10 +279,15 @@
         "containerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
         "defaultItemContainerClasses": "ank-border-1px__solid__bgColor ank-borderRadius-8px ank-bg-bgColor",
         "defaultItemButtonConfig": {
-          "classes": "ank-width-100per ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-800 ank-cursor-pointer"
+          "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceMINbetween ank-gap-8px ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-800 ank-cursor-pointer ank-gap-10px",
+          "icon": "expand_more",
+          "iconPosition": "after",
+          "iconClasses": "ank-width-1_1rem ank-height-1_1rem ank-fontSize-1_1rem ank-color-linkColor ank-flexShrink-0"
         },
-        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5"
-      }
+        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5",
+        "defaultItemIconIsExpandedClasses": "ank-color-accentColor"
+      },
+      "eventInstructions": "trackEvent:accordion_toggle,accordion,contacto-contactoHeroPanelList,page,contacto,location,accordion,item,event.eventData.id,expanded,event.eventData.expanded"
     },
     {
       "id": "contactoStatsSection",
@@ -493,7 +507,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -619,7 +636,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -717,11 +737,14 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-bgColor",
         "components": [
           "contactoFinalInner"
         ],
-        "id": "contacto"
+        "id": "contacto",
+        "styles": {
+          "backgroundColor": "var(--ank-bgColor)"
+        }
       }
     },
     {
@@ -737,8 +760,12 @@
           "contactoFinalActions"
         ],
         "styles": {
-          "borderTop": "4px solid var(--ank-successColor)",
-          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.11)"
+          "backgroundColor": "transparent",
+          "border": "none",
+          "borderTop": "none",
+          "borderRadius": "0",
+          "boxShadow": "none",
+          "padding": "0"
         }
       }
     },
@@ -749,7 +776,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -801,7 +831,7 @@
         "href": "#",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
         "target": "_blank",
         "rel": "noopener noreferrer",
         "styles": {
@@ -810,7 +840,8 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "color": "var(--ank-onSuccessColor)"
         }
       }
     },
@@ -823,7 +854,7 @@
         "href": "/contacto",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "classes": "ank-btnOutline-successColor-bgColor ank-bgHover-secondaryBgColor ank-borderStyle-solid ank-borderWidth-1px ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-fontWeight-800 ank-textDecoration-none ank-textAlign-center",
         "target": "_self",
         "rel": "nofollow noopener noreferrer",
         "styles": {
@@ -832,7 +863,10 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "color": "var(--ank-titleColor)",
+          "borderColor": "var(--ank-successColor)",
+          "boxShadow": "inset 0 0 0 1px var(--ank-successColor)"
         }
       }
     }

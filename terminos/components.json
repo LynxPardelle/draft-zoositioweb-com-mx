@@ -1,0 +1,526 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "terminos",
+  "components": [
+    {
+      "id": "termsPage",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "ank-display-flex ank-flexDirection-column ank-outline-none ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "termsHeroSection",
+          "termsContentSection",
+          "termsFinalSection"
+        ],
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "termsHeroSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-72px ank-color-textColor ank-bg-bgColor",
+        "components": [
+          "termsHeroInner"
+        ],
+        "id": "home",
+        "styles": {
+          "borderBottom": "1px solid var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "termsHeroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-960px ank-display-flex ank-flexDirection-column ank-gap-18px ank-alignItems-start",
+        "components": [
+          "termsHeroEyebrow",
+          "termsHeroTitle",
+          "termsHeroLead",
+          "termsHeroActions"
+        ]
+      }
+    },
+    {
+      "id": "termsHeroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-accentColor ank-fontSize-0_92rem ank-fontWeight-900 ank-textTransform-uppercase ank-letterSpacing-0"
+      }
+    },
+    {
+      "id": "termsHeroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_4rem ank-fontSize-md-4rem ank-lineHeight-1_03 ank-fontWeight-900 ank-maxWidth-54rem"
+      }
+    },
+    {
+      "id": "termsHeroLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,hero.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_04rem ank-fontSize-md-1_16rem ank-lineHeight-1_6 ank-maxWidth-52rem"
+      }
+    },
+    {
+      "id": "termsHeroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px ank-marginTop-8px",
+        "components": [
+          "termsHeroPrimary",
+          "termsHeroSecondary"
+        ],
+        "styles": {
+          "rowGap": "28px"
+        }
+      }
+    },
+    {
+      "id": "termsHeroPrimary",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,terms-contact,page,terminos,location,hero",
+      "valueInstructions": "set:config.text,i18n,hero.primaryLabel;set:config.ariaLabel,i18n,hero.primaryLabel",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
+        "target": "_self",
+        "rel": "nofollow noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "color": "var(--ank-onSuccessColor)"
+        }
+      }
+    },
+    {
+      "id": "termsHeroSecondary",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/privacidad,href,/privacidad,location,hero",
+      "valueInstructions": "set:config.text,i18n,hero.secondaryLabel;set:config.ariaLabel,i18n,hero.secondaryLabel",
+      "config": {
+        "href": "/privacidad",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-btnOutline-linkColor-bgColor ank-bgHover-secondaryBgColor ank-borderStyle-solid ank-borderWidth-1px ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-fontWeight-800 ank-textDecoration-none ank-textAlign-center",
+        "target": "_self",
+        "rel": "nofollow noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "color": "var(--ank-linkColor)"
+        }
+      }
+    },
+    {
+      "id": "termsContentSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-64px ank-bg-secondaryBgColor ank-color-textColor",
+        "components": [
+          "termsContentInner"
+        ],
+        "id": "contenido"
+      }
+    },
+    {
+      "id": "termsContentInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-960px ank-display-flex ank-flexDirection-column ank-gap-28px",
+        "components": [
+          "termsIntro",
+          "termsSection0",
+          "termsSection1",
+          "termsSection2",
+          "termsSection3",
+          "termsSection4",
+          "termsSection5",
+          "termsSection6"
+        ]
+      }
+    },
+    {
+      "id": "termsIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.intro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-textColor ank-fontSize-1_08rem ank-lineHeight-1_65 ank-maxWidth-56rem ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "termsSection0",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px ank-paddingBlock-12px",
+        "components": [
+          "termsSection0Title",
+          "termsSection0Body"
+        ],
+        "styles": {
+          "borderTop": "0"
+        }
+      }
+    },
+    {
+      "id": "termsSection1",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px ank-paddingBlock-12px",
+        "components": [
+          "termsSection1Title",
+          "termsSection1Body"
+        ],
+        "styles": {
+          "borderTop": "1px solid color-mix(in srgb, var(--ank-textColor) 16%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "termsSection2",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px ank-paddingBlock-12px",
+        "components": [
+          "termsSection2Title",
+          "termsSection2Body"
+        ],
+        "styles": {
+          "borderTop": "1px solid color-mix(in srgb, var(--ank-textColor) 16%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "termsSection3",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px ank-paddingBlock-12px",
+        "components": [
+          "termsSection3Title",
+          "termsSection3Body"
+        ],
+        "styles": {
+          "borderTop": "1px solid color-mix(in srgb, var(--ank-textColor) 16%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "termsSection4",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px ank-paddingBlock-12px",
+        "components": [
+          "termsSection4Title",
+          "termsSection4Body"
+        ],
+        "styles": {
+          "borderTop": "1px solid color-mix(in srgb, var(--ank-textColor) 16%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "termsSection5",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px ank-paddingBlock-12px",
+        "components": [
+          "termsSection5Title",
+          "termsSection5Body"
+        ],
+        "styles": {
+          "borderTop": "1px solid color-mix(in srgb, var(--ank-textColor) 16%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "termsSection6",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px ank-paddingBlock-12px",
+        "components": [
+          "termsSection6Title",
+          "termsSection6Body"
+        ],
+        "styles": {
+          "borderTop": "1px solid color-mix(in srgb, var(--ank-textColor) 16%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "termsSection0Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.0.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_45rem ank-fontSize-md-1_8rem ank-lineHeight-1_15 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "termsSection0Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.0.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_7"
+      }
+    },
+    {
+      "id": "termsSection1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.1.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_45rem ank-fontSize-md-1_8rem ank-lineHeight-1_15 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "termsSection1Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.1.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_7"
+      }
+    },
+    {
+      "id": "termsSection2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.2.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_45rem ank-fontSize-md-1_8rem ank-lineHeight-1_15 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "termsSection2Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.2.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_7"
+      }
+    },
+    {
+      "id": "termsSection3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.3.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_45rem ank-fontSize-md-1_8rem ank-lineHeight-1_15 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "termsSection3Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.3.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_7"
+      }
+    },
+    {
+      "id": "termsSection4Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.4.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_45rem ank-fontSize-md-1_8rem ank-lineHeight-1_15 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "termsSection4Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.4.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_7"
+      }
+    },
+    {
+      "id": "termsSection5Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.5.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_45rem ank-fontSize-md-1_8rem ank-lineHeight-1_15 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "termsSection5Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.5.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_7"
+      }
+    },
+    {
+      "id": "termsSection6Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.6.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_45rem ank-fontSize-md-1_8rem ank-lineHeight-1_15 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "termsSection6Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,content.sections.6.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_7"
+      }
+    },
+    {
+      "id": "termsFinalSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "termsFinalInner"
+        ],
+        "id": "contacto"
+      }
+    },
+    {
+      "id": "termsFinalInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-960px ank-display-flex ank-flexDirection-column ank-gap-16px ank-alignItems-start",
+        "components": [
+          "termsFinalTitle",
+          "termsFinalLead",
+          "termsFinalActions"
+        ]
+      }
+    },
+    {
+      "id": "termsFinalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2rem ank-fontSize-md-3rem ank-lineHeight-1_05 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "termsFinalLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,final.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-lineHeight-1_6 ank-maxWidth-52rem"
+      }
+    },
+    {
+      "id": "termsFinalActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "termsFinalPrimary",
+          "termsFinalSecondary"
+        ],
+        "styles": {
+          "rowGap": "28px"
+        }
+      }
+    },
+    {
+      "id": "termsFinalPrimary",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,terms-final-contact,page,terminos,location,final",
+      "valueInstructions": "set:config.text,i18n,final.primaryLabel;set:config.ariaLabel,i18n,final.primaryLabel",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
+        "target": "_self",
+        "rel": "nofollow noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "color": "var(--ank-onSuccessColor)"
+        }
+      }
+    },
+    {
+      "id": "termsFinalSecondary",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/privacidad,href,/privacidad,location,final",
+      "valueInstructions": "set:config.text,i18n,final.secondaryLabel;set:config.ariaLabel,i18n,final.secondaryLabel",
+      "config": {
+        "href": "/privacidad",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-btnOutline-linkColor-bgColor ank-bgHover-secondaryBgColor ank-borderStyle-solid ank-borderWidth-1px ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-fontWeight-800 ank-textDecoration-none ank-textAlign-center",
+        "target": "_self",
+        "rel": "nofollow noopener noreferrer",
+        "styles": {
+          "whiteSpace": "normal",
+          "maxWidth": "100%",
+          "minWidth": "min(100%, 156px)",
+          "overflowWrap": "anywhere",
+          "color": "var(--ank-linkColor)"
+        }
+      }
+    }
+  ]
+}

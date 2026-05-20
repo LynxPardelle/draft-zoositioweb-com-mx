@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "privacidad",
+  "lang": "en",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Legal and data",
+      "title": "zoositioweb privacy notice.",
+      "lead": "This notice explains what information we may request, how we use it to guide and build websites, and how we handle contact data, invoicing data, first-party analytics, and measurement tools.",
+      "primaryLabel": "Talk to us",
+      "secondaryLabel": "See terms"
+    },
+    "content": {
+      "intro": "zoositioweb is a product from the team behind Zoolandingpage. This text is an operational version for the website; fiscal issuer details are provided during the invoicing process.",
+      "sections": [
+        {
+          "title": "Controller and contact",
+          "body": "The zoositioweb team is responsible for handling requests related to this site and the services offered. You can contact us on WhatsApp at +52 55 2269 9563 or through the contact page to ask about privacy, data, or invoicing."
+        },
+        {
+          "title": "Data we may process",
+          "body": "We may receive name, business, industry, city, contact details, commercial materials, logos, photos, references, invoicing information, and messages you share through WhatsApp or other agreed channels."
+        },
+        {
+          "title": "Purposes",
+          "body": "We use the information to answer requests, recommend a plan, prepare proposals, build and publish the website, provide human support, coordinate technology and data consulting, issue invoices, and improve the website experience."
+        },
+        {
+          "title": "Analytics, ads, and first-party data",
+          "body": "Our system may collect site interaction signals such as consulted pages, viewed sections, selected language, important clicks, and WhatsApp actions. This site uses Google Analytics for measurement, attribution, and experience improvement; if Google Ads or Search Console are enabled later, they will be used with the same care while avoiding sensitive personal data in URLs or events."
+        },
+        {
+          "title": "Providers and transfers",
+          "body": "We may rely on cloud, hosting, messaging, measurement, invoicing, and work-tool providers. We may also collaborate with recommended specialists when a project requires it. We only share information needed to operate, measure, invoice, or support the service."
+        },
+        {
+          "title": "ARCO rights and options",
+          "body": "You may request access, rectification, cancellation, or opposition regarding your personal data, and ask for clarification about how your information is used. To do so, write to us on WhatsApp or through the contact page with a clear description of the request."
+        },
+        {
+          "title": "Changes to this notice",
+          "body": "We may update this notice when services, tools, measurement processes, or legal requirements change. The version published on this page is the current reference for zoositioweb.com.mx."
+        }
+      ]
+    },
+    "final": {
+      "title": "Questions about data or privacy?",
+      "lead": "We can explain what information we need to start your website and how we avoid asking for unnecessary data in the first conversation.",
+      "primaryLabel": "Go to contact",
+      "secondaryLabel": "See terms"
+    }
+  }
+}

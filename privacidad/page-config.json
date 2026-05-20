@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "pageId": "privacidad",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "privacyPage",
+    "floatingWhatsAppCta",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "privacy-notice"
+  },
+  "seo": {
+    "title": {
+      "es": "Aviso de privacidad | zoositioweb",
+      "en": "Privacy notice | zoositioweb"
+    },
+    "description": {
+      "es": "Conoce cómo zoositioweb trata datos de contacto, facturación, analítica propia y herramientas de medición para sitios web profesionales.",
+      "en": "Learn how zoositioweb handles contact data, invoicing data, first-party analytics, and measurement tools for professional websites."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Aviso de privacidad | zoositioweb",
+        "en": "Privacy notice | zoositioweb"
+      },
+      "description": {
+        "es": "Conoce cómo zoositioweb trata datos de contacto, facturación, analítica propia y herramientas de medición para sitios web profesionales.",
+        "en": "Learn how zoositioweb handles contact data, invoicing data, first-party analytics, and measurement tools for professional websites."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "url": "https://zoositioweb.com.mx/privacidad",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Aviso de privacidad | zoositioweb",
+        "en": "Privacy notice | zoositioweb"
+      },
+      "description": {
+        "es": "Conoce cómo zoositioweb trata datos de contacto, facturación, analítica propia y herramientas de medición para sitios web profesionales.",
+        "en": "Learn how zoositioweb handles contact data, invoicing data, first-party analytics, and measurement tools for professional websites."
+      },
+      "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/privacidad",
+    "keywords": {
+      "es": [
+        "aviso de privacidad zoositioweb",
+        "privacidad sitio web",
+        "datos personales sitio web",
+        "analitica web propia"
+      ],
+      "en": [
+        "zoositioweb privacy notice",
+        "website privacy",
+        "personal data website",
+        "first-party website analytics"
+      ]
+    },
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Aviso de privacidad | zoositioweb",
+        "description": "Conoce cómo zoositioweb trata datos de contacto, facturación, analítica propia y herramientas de medición para sitios web profesionales.",
+        "url": "https://zoositioweb.com.mx/privacidad",
+        "inLanguage": "es"
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "home",
+      "contenido",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

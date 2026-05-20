@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "terminos",
+  "lang": "en",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Service terms",
+      "title": "zoositioweb terms and conditions.",
+      "lead": "These terms summarize how we work on professional websites, what the published prices include, and how we handle testing, human support, invoicing, and project responsibilities.",
+      "primaryLabel": "Quote my website",
+      "secondaryLabel": "See privacy"
+    },
+    "content": {
+      "intro": "zoositioweb offers professional websites for businesses, small companies, freelancers, and teams that need a clear presence, first-party measurement, and a foundation prepared to grow.",
+      "sections": [
+        {
+          "title": "Service offered",
+          "body": "We design, structure, and publish professional websites with pages or sections according to the selected plan. The work may include commercial guidance, content structure, WhatsApp buttons, first-party measurement, human support, and technology, data, and AI consulting when valuable for the project."
+        },
+        {
+          "title": "Plans, prices, and VAT",
+            "body": "Published prices are initial references in MXN and are before VAT: the plan called \"Presencia\" starting at MXN $3,000, the plan called \"Clientes\" starting at MXN $6,000, and the plan called \"Crecimiento\" starting at MXN $10,000. Final scope is confirmed before starting, based on pages, materials, complexity, and business needs."
+        },
+        {
+          "title": "First test round",
+          "body": "We can have a first test round ready in 5 days when the base scope, required materials, and minimum commercial information are available on time. Scope changes, missing materials, or pending approvals may adjust timelines."
+        },
+        {
+          "title": "Invoicing and payments",
+          "body": "The service is fully invoiceable. Fiscal issuer details and specific invoicing requirements are provided during the commercial process. Start, deliverables, and publication may depend on payment confirmation or the corresponding agreement."
+        },
+        {
+          "title": "Human support and consulting",
+          "body": "Support is human. As developers, we help at each stage: scope, structure, publication, measurement, and improvements. We can also guide businesses on technology, data, cloud, and AI decisions related to their digital presence."
+        },
+        {
+          "title": "Client responsibilities",
+          "body": "The client must provide accurate information, materials they have the right to use, timely approvals, correct invoicing data, and clear feedback. The client is responsible for ensuring their texts, images, brands, and offers can be published legally."
+        },
+        {
+          "title": "Commercial results and changes",
+          "body": "We build a professional foundation to explain the offer, measure interaction, and open conversations, but we do not guarantee sales, exact rankings, campaign results, or contact volume. Changes outside the approved scope are quoted or scheduled separately."
+        }
+      ]
+    },
+    "final": {
+      "title": "Want to confirm scope and timing?",
+      "lead": "Tell us your case on WhatsApp and we will help you choose a plan, review materials, and define the first test round.",
+      "primaryLabel": "Go to contact",
+      "secondaryLabel": "See privacy"
+    }
+  }
+}

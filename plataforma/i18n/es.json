@@ -7,14 +7,14 @@
     "hero": {
       "eyebrow": "La base que hace crecer tu sitio",
       "title": "Un sitio preparado para publicar, medir y crecer.",
-      "lead": "Tu sitio se construye con una base flexible para revisar contenido, ampliar páginas y leer señales de interés desde el inicio.",
+      "lead": "Tu sitio se construye con una base flexible para revisar contenido, ampliar páginas y recopilar datos propios de interacción desde el inicio.",
       "primaryLabel": "Quiero entender la base",
-      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20entender%20c%C3%B3mo%20la%20plataforma%20de%20Zoosite%20ayuda%20a%20mi%20sitio%20web.",
+      "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20entender%20c%C3%B3mo%20la%20plataforma%20de%20zoositioweb%20ayuda%20a%20mi%20sitio%20web.",
       "secondaryLabel": "Ver servicios",
       "panel": {
         "kicker": "Para tu negocio",
         "title": "La base tecnológica trabaja para tus objetivos.",
-        "lead": "Te orientamos para que el sitio pueda crecer por contenido, sectores, campañas y lectura comercial.",
+        "lead": "Te orientamos para que el sitio pueda crecer por contenido, sectores, campañas y análisis comercial basado en datos propios.",
         "items": [
           {
             "title": "Publicación ágil",
@@ -25,8 +25,8 @@
             "content": "La estructura permite agregar páginas, idiomas o sectores conforme el negocio lo necesite."
           },
           {
-            "title": "Datos desde el inicio",
-            "content": "Las interacciones importantes ayudan a orientar próximos ajustes con más contexto."
+            "title": "Datos propios desde el inicio",
+            "content": "Nuestro sistema recopila eventos importantes para analizar interés sin depender de suposiciones."
           }
         ]
       }
@@ -40,7 +40,7 @@
       {
         "value": "Datos",
         "label": "Medición desde día 1",
-        "detail": "Eventos para entender interés real."
+        "detail": "Eventos propios para entender interés real."
       },
       {
         "value": "IA",
@@ -51,8 +51,8 @@
     "sections": [
       {
         "eyebrow": "Beneficios",
-        "title": "La tecnología debe ayudar a vender y aprender.",
-        "lead": "La base se diseña para operar con orden, medir interacciones importantes y acompañar el crecimiento del sitio.",
+        "title": "La tecnología debe ayudar a vender, medir y aprender.",
+        "lead": "La base se diseña para operar con orden, recopilar datos de interacción, medir acciones importantes y acompañar el crecimiento del sitio.",
         "cards": [
           {
             "icon": "speed",
@@ -80,8 +80,8 @@
           },
           {
             "icon": "analytics",
-            "title": "Medición útil",
-            "description": "La analítica inicial se enfoca en páginas, secciones y clicks que muestran interés comercial.",
+            "title": "Analítica propia",
+            "description": "La medición se enfoca en páginas, secciones, clicks y acciones de contacto que muestran interés comercial real.",
             "benefits": [
               "Página",
               "Plan o sector",
@@ -95,7 +95,7 @@
       {
         "eyebrow": "Alcance responsable",
         "title": "Los detalles de operación se definen con números reales.",
-        "lead": "Cuando un proyecto requiera límites por plan, se calculan costos de nube, renderizado, analítica, red y operación antes de publicarlos.",
+        "lead": "Cuando un proyecto requiera límites por plan, se calculan costos de nube, renderizado, analítica, recopilación de datos, red y operación antes de publicarlos.",
         "cards": [
           {
             "icon": "trending_up",
@@ -104,7 +104,7 @@
             "benefits": [
               "Almacenamiento",
               "Renderizado",
-              "Red y caché"
+              "Analítica"
             ],
             "href": "",
             "linkLabel": ""
@@ -143,7 +143,7 @@
       "items": [
         {
           "title": "¿Por qué importa la base del sitio?",
-          "content": "Porque facilita publicar una primera versión, ampliar contenido y entender qué páginas reciben más interés."
+          "content": "Porque facilita publicar una primera versión, ampliar contenido y entender con datos propios qué páginas reciben más interés."
         },
         {
           "title": "¿Esto cambia el precio del plan?",
@@ -155,14 +155,14 @@
         },
         {
           "title": "¿Qué datos se revisan primero?",
-          "content": "Clicks en botones, páginas consultadas, idioma elegido y señales básicas de interés comercial."
+          "content": "Clicks en botones, páginas consultadas, secciones con más atención, idioma elegido y señales básicas de interés comercial."
         }
       ]
     },
     "final": {
       "eyebrow": "Plataforma",
       "title": "Hablemos de la base que necesita tu sitio.",
-      "lead": "Si tu negocio crecerá por páginas, sectores o campañas, conviene planearlo desde el inicio.",
+      "lead": "Si tu negocio crecerá por páginas, sectores, campañas o análisis de datos, conviene planearlo desde el inicio.",
       "primaryLabel": "Quiero hablar de plataforma",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20hablar%20sobre%20la%20plataforma%20y%20crecimiento%20de%20mi%20sitio%20web.",
       "secondaryLabel": "Ir a contacto"
