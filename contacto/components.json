@@ -579,6 +579,24 @@
             ]
           },
           {
+            "to": "config.linkEventInstructions",
+            "sources": [
+              "eventInstructions"
+            ]
+          },
+          {
+            "to": "config.target",
+            "sources": [
+              "target"
+            ]
+          },
+          {
+            "to": "config.rel",
+            "sources": [
+              "rel"
+            ]
+          },
+          {
             "to": "config.imageSrc",
             "sources": [
               "imageSrc"
@@ -705,6 +723,24 @@
             "to": "config.linkLabel",
             "sources": [
               "linkLabel"
+            ]
+          },
+          {
+            "to": "config.linkEventInstructions",
+            "sources": [
+              "eventInstructions"
+            ]
+          },
+          {
+            "to": "config.target",
+            "sources": [
+              "target"
+            ]
+          },
+          {
+            "to": "config.rel",
+            "sources": [
+              "rel"
             ]
           },
           {
