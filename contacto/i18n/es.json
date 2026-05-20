@@ -64,7 +64,10 @@
               "Tiempo deseado"
             ],
             "href": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20nuevo%20para%20mi%20negocio.",
-            "linkLabel": "Abrir WhatsApp"
+            "linkLabel": "Abrir WhatsApp",
+            "eventInstructions": "trackEvent:whatsapp_click,cta,contacto-opcion-sitio-nuevo,page,contacto,location,contact_option,channel,whatsapp",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
           },
           {
             "icon": "assignment",
@@ -76,7 +79,10 @@
               "Plan probable"
             ],
             "href": "https://wa.me/525522699563?text=Hola%2C%20quiero%20revisar%20mi%20proyecto%20de%20sitio%20web.%20Ya%20tengo%3A",
-            "linkLabel": "Abrir WhatsApp"
+            "linkLabel": "Abrir WhatsApp",
+            "eventInstructions": "trackEvent:whatsapp_click,cta,contacto-opcion-revisar-proyecto,page,contacto,location,contact_option,channel,whatsapp",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
           },
           {
             "icon": "home",
@@ -88,7 +94,10 @@
               "Preguntas frecuentes"
             ],
             "href": "https://wa.me/525522699563?text=Hola%2C%20quiero%20que%20mi%20sitio%20ayude%20a%20vender%20con%20m%C3%A1s%20claridad.%20Mi%20oferta%20es%3A",
-            "linkLabel": "Abrir WhatsApp"
+            "linkLabel": "Abrir WhatsApp",
+            "eventInstructions": "trackEvent:whatsapp_click,cta,contacto-opcion-vender-claridad,page,contacto,location,contact_option,channel,whatsapp",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
           }
         ]
       },
