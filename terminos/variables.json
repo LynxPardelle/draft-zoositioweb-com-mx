@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "terminos",
+  "variables": {
+    "navigation": [
+      {
+        "id": "home",
+        "value": "/",
+        "labelKey": "nav.home"
+      },
+      {
+        "id": "services",
+        "value": "/servicios",
+        "labelKey": "nav.services"
+      },
+      {
+        "id": "plans",
+        "value": "/planes",
+        "labelKey": "nav.plans"
+      },
+      {
+        "id": "platform",
+        "value": "/plataforma",
+        "labelKey": "nav.platform"
+      },
+      {
+        "id": "about",
+        "value": "/nosotros",
+        "labelKey": "nav.about"
+      },
+      {
+        "id": "faq",
+        "value": "/preguntas-frecuentes",
+        "labelKey": "nav.faq"
+      },
+      {
+        "id": "contact",
+        "value": "/contacto",
+        "labelKey": "nav.contact"
+      }
+    ]
+  }
+}

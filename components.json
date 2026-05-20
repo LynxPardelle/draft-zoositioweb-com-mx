@@ -12,7 +12,7 @@
         "id": "skip-to-main",
         "href": "#main-content",
         "text": "",
-        "classes": "ank-d-none ank-display-none"
+        "classes": "ank-d-none ank-d-none"
       }
     },
     {
@@ -21,6 +21,18 @@
       "config": {
         "tag": "header",
         "classes": "ank-position-sticky ank-top-0 ank-zIndex-1200 ank-width-100per ank-display-flex ank-flexDirection-column ank-alignItems-center ank-paddingInline-16px ank-paddingBlock-12px ank-bg-bgColorOPA__0_96 ank-borderBottom-1px ank-borderColor-secondaryBgColor ank-backdropFilter-blurSD8pxED",
+        "components": [
+          "headerNavScope"
+        ]
+      }
+    },
+    {
+      "id": "headerNavScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "mobileNavigation",
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-alignItems-center",
         "components": [
           "headerInner",
           "headerMobileMenuMount"
@@ -46,9 +58,9 @@
       "eventInstructions": "trackEvent:nav_click,navigation,brand,href,/",
       "config": {
         "href": "/",
-        "text": "Zoosite",
-        "ariaLabel": "Zoosite",
-        "classes": "ank-color-titleColor ank-fontSize-1_15rem ank-fontWeight-900 ank-textDecoration-none"
+        "text": "zoositioweb",
+        "ariaLabel": "zoositioweb",
+        "classes": "ank-d-block ank-color-titleColor ank-fontSize-1_15rem ank-fontWeight-900 ank-textDecoration-none"
       }
     },
     {
@@ -56,7 +68,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-none ank-display-md-flex ank-alignItems-center ank-gap-18px ank-marginInlineStart-auto",
+        "classes": "ank-d-none ank-d-md-flex ank-alignItems-center ank-gap-14px ank-gap-lg-18px ank-marginInlineStart-auto",
         "components": [
           "headerNav",
           "headerCtaLink",
@@ -72,7 +84,7 @@
       "config": {
         "tag": "nav",
         "ariaLabel": "",
-        "classes": "ank-display-none ank-display-md-flex ank-flexWrap-wrap ank-gap-14px ank-gap-md-18px ank-alignItems-center",
+        "classes": "ank-d-none ank-d-md-flex ank-flexWrap-wrap ank-gap-12px ank-gap-lg-16px ank-alignItems-center",
         "components": [
           "headerNavLinks"
         ]
@@ -85,66 +97,108 @@
       "config": {
         "href": "",
         "text": "",
-        "classes": "ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
       }
     },
     {
       "id": "headerNavLinks",
       "type": "container",
-      "condition": "all:navigation,exists",
-      "loopConfig": {
-        "source": "var",
-        "path": "navigation",
-        "templateId": "headerNavLinkTemplate",
-        "idPrefix": "headerNavLink",
-        "bindings": [
-          {
-            "to": "config.href",
-            "sources": [
-              "href",
-              "url",
-              {
-                "from": "value",
-                "transform": "navigationHref"
-              }
-            ]
-          },
-          {
-            "to": "config.text",
-            "sources": [
-              {
-                "from": "labelKey",
-                "transform": "i18nKey"
-              },
-              {
-                "from": "label",
-                "transform": "locale"
-              }
-            ]
-          },
-          {
-            "to": "config.ariaLabel",
-            "sources": [
-              {
-                "from": "ariaLabelKey",
-                "transform": "i18nKey"
-              },
-              {
-                "from": "labelKey",
-                "transform": "i18nKey"
-              },
-              {
-                "from": "label",
-                "transform": "locale"
-              }
-            ]
-          }
-        ]
-      },
       "config": {
         "tag": "div",
-        "classes": "ank-display-none ank-display-md-flex ank-flexWrap-wrap ank-gap-14px ank-gap-md-18px ank-alignItems-center",
-        "components": []
+        "classes": "ank-d-none ank-d-md-flex ank-flexWrap-wrap ank-gap-12px ank-gap-lg-16px ank-alignItems-center",
+        "components": [
+          "headerNavHome",
+          "headerNavServices",
+          "headerNavPlans",
+          "headerNavPlatform",
+          "headerNavAbout",
+          "headerNavFaq",
+          "headerNavContact"
+        ]
+      }
+    },
+    {
+      "id": "headerNavContact",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/contacto,href,/contacto,location,header",
+      "valueInstructions": "set:config.text,i18n,nav.contact;set:config.ariaLabel,i18n,nav.contact",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
+      }
+    },
+    {
+      "id": "headerNavFaq",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/preguntas-frecuentes,href,/preguntas-frecuentes,location,header",
+      "valueInstructions": "set:config.text,i18n,nav.faq;set:config.ariaLabel,i18n,nav.faq",
+      "config": {
+        "href": "/preguntas-frecuentes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
+      }
+    },
+    {
+      "id": "headerNavPlatform",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/plataforma,href,/plataforma,location,header",
+      "valueInstructions": "set:config.text,i18n,nav.platform;set:config.ariaLabel,i18n,nav.platform",
+      "config": {
+        "href": "/plataforma",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
+      }
+    },
+    {
+      "id": "headerNavAbout",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/nosotros,href,/nosotros,location,header",
+      "valueInstructions": "set:config.text,i18n,nav.about;set:config.ariaLabel,i18n,nav.about",
+      "config": {
+        "href": "/nosotros",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
+      }
+    },
+    {
+      "id": "headerNavPlans",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/planes,href,/planes,location,header",
+      "valueInstructions": "set:config.text,i18n,nav.plans;set:config.ariaLabel,i18n,nav.plans",
+      "config": {
+        "href": "/planes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
+      }
+    },
+    {
+      "id": "headerNavServices",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/servicios,href,/servicios,location,header",
+      "valueInstructions": "set:config.text,i18n,nav.services;set:config.ariaLabel,i18n,nav.services",
+      "config": {
+        "href": "/servicios",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
+      }
+    },
+    {
+      "id": "headerNavHome",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/,href,/,location,header",
+      "valueInstructions": "set:config.text,i18n,nav.home;set:config.ariaLabel,i18n,nav.home",
+      "config": {
+        "href": "/",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
       }
     },
     {
@@ -156,34 +210,60 @@
         "href": "#",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
         "target": "_blank",
         "rel": "noopener noreferrer",
         "styles": {
-          "whiteSpace": "nowrap"
+          "whiteSpace": "nowrap",
+          "color": "var(--ank-onSuccessColor)"
+        }
+      }
+    },
+    {
+      "id": "floatingWhatsAppCta",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,floating-whatsapp,location,floating,channel,whatsapp",
+      "valueInstructions": "set:config.text,i18n,ui.contact.floatingLabel;set:config.href,i18n,ui.contact.floatingUrl;set:config.ariaLabel,i18n,ui.contact.floatingAria",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "ank-display-flex ank-d-md-none ank-alignItems-center ank-justifyContent-center ank-paddingInline-18px ank-paddingBlock-14px ank-borderRadius-999px ank-bg-successColor ank-color-onSuccessColor ank-border-1px__solid__successColor ank-fontWeight-900 ank-textDecoration-none ank-textAlign-center pulseSoftAnimation ank-and-2s ank-antf-ease-in-out ank-anic-infinite",
+        "styles": {
+          "position": "fixed",
+          "right": "16px",
+          "bottom": "16px",
+          "zIndex": "1400",
+          "minHeight": "52px",
+          "minWidth": "52px",
+          "boxShadow": "0 14px 30px rgba(18, 140, 126, 0.34)",
+          "whiteSpace": "nowrap",
+          "color": "var(--ank-onSuccessColor)"
         }
       }
     },
     {
       "id": "toggleThemeDesktop",
       "type": "button",
-      "eventInstructions": "toggleTheme",
+      "eventInstructions": "toggleTheme;trackEvent:theme_toggle,ui,theme_toggle,location,header,device,desktop",
       "valueInstructions": "set:config.label,i18n,ui.controls.themeToggle;set:config.ariaLabel,i18n,ui.controls.themeToggle",
       "config": {
         "label": "",
         "ariaLabel": "",
-        "classes": "ank-paddingInline-12px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer"
+        "classes": "ank-d-block ank-paddingInline-12px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer ank-textAlign-center"
       }
     },
     {
       "id": "toggleLanguageDesktop",
       "type": "button",
-      "eventInstructions": "toggleLanguage",
-      "valueInstructions": "set:config.label,languageLabel;set:config.ariaLabel,i18n,ui.controls.languageToggle",
+      "eventInstructions": "toggleLanguage;trackEvent:language_toggle,ui,language_toggle,location,header,device,desktop",
+      "valueInstructions": "set:config.label,languageLabel;set:config.ariaLabel,languageLabel",
       "config": {
         "label": "",
         "ariaLabel": "",
-        "classes": "ank-paddingInline-12px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer"
+        "classes": "ank-d-block ank-paddingInline-12px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer ank-textAlign-center"
       }
     },
     {
@@ -191,12 +271,46 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-display-md-none ank-alignItems-center ank-gap-10px",
+        "classes": "ank-display-flex ank-d-md-none ank-alignItems-center ank-gap-10px",
         "components": [
-          "headerMobileNav",
+          "mobileMenuOpenButton",
+          "mobileMenuCloseButton",
           "toggleThemeMobile",
           "toggleLanguageMobile"
         ]
+      }
+    },
+    {
+      "id": "mobileMenuOpenButton",
+      "type": "button",
+      "condition": "all:scopeNeq,values.mobileMenuOpen,open",
+      "eventInstructions": "setScopeValue:mobileMenuOpen,open;trackEvent:nav_click,navigation,mobile_menu_open,location,header",
+      "valueInstructions": "set:config.label,i18n,ui.controls.menuToggle;set:config.ariaLabel,i18n,ui.accessibility.openMenu",
+      "config": {
+        "label": "",
+        "ariaLabel": "",
+        "icon": "menu",
+        "iconPosition": "before",
+        "iconClasses": "ank-width-1_2rem ank-height-1_2rem ank-fontSize-1_2rem",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-6px ank-paddingInline-10px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center"
+      }
+    },
+    {
+      "id": "mobileMenuCloseButton",
+      "type": "button",
+      "condition": "all:scopeEq,values.mobileMenuOpen,open",
+      "eventInstructions": "setScopeValue:mobileMenuOpen,closed;trackEvent:nav_click,navigation,mobile_menu_close,location,header",
+      "valueInstructions": "set:config.label,i18n,ui.controls.menuToggle;set:config.ariaLabel,i18n,ui.accessibility.closeMenu",
+      "config": {
+        "label": "",
+        "ariaLabel": "",
+        "icon": "menu",
+        "iconPosition": "before",
+        "iconClasses": "ank-width-1_2rem ank-height-1_2rem ank-fontSize-1_2rem",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-6px ank-paddingInline-10px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-border-1px__solid__successColor ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center",
+        "styles": {
+          "color": "var(--ank-onSuccessColor)"
+        }
       }
     },
     {
@@ -204,9 +318,124 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-md-none ank-width-100per ank-maxWidth-1180px",
-        "components": [],
+        "classes": "ank-d-md-none ank-width-100per ank-maxWidth-1180px",
+        "components": [
+          "mobileNavLinks"
+        ],
         "id": "mobile-menu-anchor"
+      },
+      "condition": "all:scopeEq,values.mobileMenuOpen,open"
+    },
+    {
+      "id": "mobileNavLinkTemplate",
+      "type": "link",
+      "eventInstructions": "setScopeValue:mobileMenuOpen,closed;trackEvent:nav_click,navigation,event.eventData,href,event.eventData,location,mobile_menu",
+      "config": {
+        "href": "",
+        "text": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "mobileNavLinks",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-d-md-none ank-flexDirection-column ank-gap-8px ank-marginTop-10px ank-paddingTop-10px ank-paddingBottom-2px ank-borderTop-1px ank-borderColor-secondaryBgColor",
+        "styles": {},
+        "components": [
+          "mobileNavHome",
+          "mobileNavServices",
+          "mobileNavPlans",
+          "mobileNavPlatform",
+          "mobileNavAbout",
+          "mobileNavFaq",
+          "mobileNavContact"
+        ]
+      }
+    },
+    {
+      "id": "mobileNavContact",
+      "type": "link",
+      "eventInstructions": "setScopeValue:mobileMenuOpen,closed;trackEvent:nav_click,navigation,/contacto,href,/contacto,location,mobile_menu",
+      "valueInstructions": "set:config.text,i18n,nav.contact;set:config.ariaLabel,i18n,nav.contact",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "mobileNavFaq",
+      "type": "link",
+      "eventInstructions": "setScopeValue:mobileMenuOpen,closed;trackEvent:nav_click,navigation,/preguntas-frecuentes,href,/preguntas-frecuentes,location,mobile_menu",
+      "valueInstructions": "set:config.text,i18n,nav.faq;set:config.ariaLabel,i18n,nav.faq",
+      "config": {
+        "href": "/preguntas-frecuentes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "mobileNavPlatform",
+      "type": "link",
+      "eventInstructions": "setScopeValue:mobileMenuOpen,closed;trackEvent:nav_click,navigation,/plataforma,href,/plataforma,location,mobile_menu",
+      "valueInstructions": "set:config.text,i18n,nav.platform;set:config.ariaLabel,i18n,nav.platform",
+      "config": {
+        "href": "/plataforma",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "mobileNavAbout",
+      "type": "link",
+      "eventInstructions": "setScopeValue:mobileMenuOpen,closed;trackEvent:nav_click,navigation,/nosotros,href,/nosotros,location,mobile_menu",
+      "valueInstructions": "set:config.text,i18n,nav.about;set:config.ariaLabel,i18n,nav.about",
+      "config": {
+        "href": "/nosotros",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "mobileNavPlans",
+      "type": "link",
+      "eventInstructions": "setScopeValue:mobileMenuOpen,closed;trackEvent:nav_click,navigation,/planes,href,/planes,location,mobile_menu",
+      "valueInstructions": "set:config.text,i18n,nav.plans;set:config.ariaLabel,i18n,nav.plans",
+      "config": {
+        "href": "/planes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "mobileNavServices",
+      "type": "link",
+      "eventInstructions": "setScopeValue:mobileMenuOpen,closed;trackEvent:nav_click,navigation,/servicios,href,/servicios,location,mobile_menu",
+      "valueInstructions": "set:config.text,i18n,nav.services;set:config.ariaLabel,i18n,nav.services",
+      "config": {
+        "href": "/servicios",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "mobileNavHome",
+      "type": "link",
+      "eventInstructions": "setScopeValue:mobileMenuOpen,closed;trackEvent:nav_click,navigation,/,href,/,location,mobile_menu",
+      "valueInstructions": "set:config.text,i18n,nav.home;set:config.ariaLabel,i18n,nav.home",
+      "config": {
+        "href": "/",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
       }
     },
     {
@@ -221,7 +450,7 @@
           "ariaLabel": "",
           "buttonClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-width-40px ank-height-40px ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-cursor-pointer ank-padding-0",
           "itemLinkClasses": "ank-display-block ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-textDecoration-none ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-800",
-          "menuContainerClasses": "ank-display-md-none ank-width-100per ank-marginTop-12px ank-paddingInline-16px ank-paddingTop-8px ank-paddingBottom-16px ank-bg-bgColor ank-borderTop-1px ank-borderColor-secondaryBgColor",
+          "menuContainerClasses": "ank-d-md-none ank-width-100per ank-marginTop-12px ank-paddingInline-16px ank-paddingTop-8px ank-paddingBottom-16px ank-bg-bgColor ank-borderTop-1px ank-borderColor-secondaryBgColor",
           "menuNavClasses": "ank-width-100per ank-maxWidth-1180px ank-marginInline-auto",
           "menuListClasses": "ank-listStyle-none ank-padding-0 ank-margin-0 ank-display-flex ank-flexDirection-column ank-gap-10px",
           "renderMode": "inline",
@@ -248,23 +477,23 @@
     {
       "id": "toggleThemeMobile",
       "type": "button",
-      "eventInstructions": "toggleTheme",
+      "eventInstructions": "toggleTheme;trackEvent:theme_toggle,ui,theme_toggle,location,header,device,mobile",
       "valueInstructions": "set:config.label,i18n,ui.controls.themeToggle;set:config.ariaLabel,i18n,ui.controls.themeToggle",
       "config": {
         "label": "",
         "ariaLabel": "",
-        "classes": "ank-paddingInline-10px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer"
+        "classes": "ank-d-block ank-paddingInline-10px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer ank-textAlign-center"
       }
     },
     {
       "id": "toggleLanguageMobile",
       "type": "button",
-      "eventInstructions": "toggleLanguage",
-      "valueInstructions": "set:config.label,languageLabel;set:config.ariaLabel,i18n,ui.controls.languageToggle",
+      "eventInstructions": "toggleLanguage;trackEvent:language_toggle,ui,language_toggle,location,header,device,mobile",
+      "valueInstructions": "set:config.label,languageLabel;set:config.ariaLabel,languageLabel",
       "config": {
         "label": "",
         "ariaLabel": "",
-        "classes": "ank-paddingInline-10px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer"
+        "classes": "ank-d-block ank-paddingInline-10px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer ank-textAlign-center"
       }
     },
     {
@@ -276,7 +505,11 @@
         "components": [
           "footerInner"
         ],
-        "id": "site-footer"
+        "id": "site-footer",
+        "styles": {
+          "position": "sticky",
+          "top": "100vh"
+        }
       }
     },
     {
@@ -284,17 +517,36 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gridTemplateColumns-1fr ank-gap-24px",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gap-32px",
         "components": [
           "footerLinks",
           "footerSectors",
-          "footerAction"
+          "footerLegalLinks"
         ],
         "styles": {
           "display": "grid",
-          "gridTemplateColumns": "repeat(auto-fit, minmax(180px, 1fr))",
-          "gap": "16px"
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
+          "gap": "clamp(32px, 7vw, 88px)",
+          "justifyContent": "center",
+          "alignItems": "start"
         }
+      }
+    },
+    {
+      "id": "footerMobileGroups",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "footerNavigation",
+        "tag": "div",
+        "classes": "ank-display-flex ank-d-md-none ank-flexDirection-column ank-gap-10px ank-width-100per",
+        "components": [
+          "footerMobileLinksOpen",
+          "footerMobileLinksClose",
+          "footerMobileLinksList",
+          "footerMobileSectorsOpen",
+          "footerMobileSectorsClose",
+          "footerMobileSectorsList"
+        ]
       }
     },
     {
@@ -356,15 +608,19 @@
       "type": "container",
       "config": {
         "tag": "nav",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px",
         "components": [
           "footerLinksTitle",
           "footerHome",
           "footerServices",
           "footerPlans",
           "footerPlatform",
+          "footerAbout",
           "footerFaq"
-        ]
+        ],
+        "styles": {
+          "maxWidth": "320px"
+        }
       }
     },
     {
@@ -385,8 +641,12 @@
         "href": "/",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
-      }
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/,href,/,location,footer"
     },
     {
       "id": "footerServices",
@@ -396,8 +656,12 @@
         "href": "/servicios",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
-      }
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/servicios,href,/servicios,location,footer"
     },
     {
       "id": "footerPlans",
@@ -407,8 +671,12 @@
         "href": "/planes",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
-      }
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/planes,href,/planes,location,footer"
     },
     {
       "id": "footerPlatform",
@@ -418,8 +686,27 @@
         "href": "/plataforma",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
-      }
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/plataforma,href,/plataforma,location,footer"
+    },
+    {
+      "id": "footerAbout",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.about;set:config.ariaLabel,i18n,nav.about",
+      "config": {
+        "href": "/nosotros",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/nosotros,href,/nosotros,location,footer"
     },
     {
       "id": "footerFaq",
@@ -429,15 +716,19 @@
         "href": "/preguntas-frecuentes",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
-      }
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/preguntas-frecuentes,href,/preguntas-frecuentes,location,footer"
     },
     {
       "id": "footerSectors",
       "type": "container",
       "config": {
         "tag": "nav",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "classes": "ank-display-grid ank-gap-10px",
         "components": [
           "footerSectorsTitle",
           "footerClinics",
@@ -446,7 +737,13 @@
           "footerLocalServices",
           "footerConstruction",
           "footerAgencies"
-        ]
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 240px), 1fr))",
+          "gap": "10px 22px",
+          "alignItems": "start"
+        }
       }
     },
     {
@@ -456,7 +753,10 @@
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1rem ank-fontWeight-900"
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1rem ank-fontWeight-900",
+        "styles": {
+          "gridColumn": "1 / -1"
+        }
       }
     },
     {
@@ -467,8 +767,12 @@
         "href": "/sectores/consultorios",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
-      }
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/sectores/consultorios,href,/sectores/consultorios,location,footer"
     },
     {
       "id": "footerLaw",
@@ -478,8 +782,12 @@
         "href": "/sectores/despachos",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
-      }
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/sectores/despachos,href,/sectores/despachos,location,footer"
     },
     {
       "id": "footerRealEstate",
@@ -489,8 +797,12 @@
         "href": "/sectores/inmobiliarias",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
-      }
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/sectores/inmobiliarias,href,/sectores/inmobiliarias,location,footer"
     },
     {
       "id": "footerLocalServices",
@@ -500,8 +812,12 @@
         "href": "/sectores/servicios-locales",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
-      }
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/sectores/servicios-locales,href,/sectores/servicios-locales,location,footer"
     },
     {
       "id": "footerConstruction",
@@ -511,8 +827,12 @@
         "href": "/sectores/constructoras",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
-      }
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/sectores/constructoras,href,/sectores/constructoras,location,footer"
     },
     {
       "id": "footerAgencies",
@@ -522,36 +842,306 @@
         "href": "/sectores/agencias",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none"
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/sectores/agencias,href,/sectores/agencias,location,footer"
+    },
+    {
+      "id": "footerMobileLinksOpen",
+      "type": "button",
+      "condition": "all:scopeNeq,values.footerGroup,links",
+      "eventInstructions": "setScopeValue:footerGroup,links;trackEvent:nav_click,navigation,footer_links_open,location,footer",
+      "valueInstructions": "set:config.label,i18n,footer.linksTitle;set:config.ariaLabel,i18n,footer.linksTitle",
+      "config": {
+        "label": "",
+        "ariaLabel": "",
+        "icon": "expand_more",
+        "iconPosition": "after",
+        "iconClasses": "ank-width-1_2rem ank-height-1_2rem ank-fontSize-1_2rem",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-900 ank-cursor-pointer"
       }
     },
     {
-      "id": "footerAction",
-      "type": "container",
+      "id": "footerMobileLinksClose",
+      "type": "button",
+      "condition": "all:scopeEq,values.footerGroup,links",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,footer_links_close,location,footer",
+      "valueInstructions": "set:config.label,i18n,footer.linksTitle;set:config.ariaLabel,i18n,footer.linksTitle",
       "config": {
-        "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-alignItems-start",
+        "label": "",
+        "ariaLabel": "",
+        "icon": "expand_more",
+        "iconPosition": "after",
+        "iconClasses": "ank-width-1_2rem ank-height-1_2rem ank-fontSize-1_2rem",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-900 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "footerMobileSectorsOpen",
+      "type": "button",
+      "condition": "all:scopeNeq,values.footerGroup,sectors",
+      "eventInstructions": "setScopeValue:footerGroup,sectors;trackEvent:nav_click,navigation,footer_sectors_open,location,footer",
+      "valueInstructions": "set:config.label,i18n,footer.sectorsTitle;set:config.ariaLabel,i18n,footer.sectorsTitle",
+      "config": {
+        "label": "",
+        "ariaLabel": "",
+        "icon": "expand_more",
+        "iconPosition": "after",
+        "iconClasses": "ank-width-1_2rem ank-height-1_2rem ank-fontSize-1_2rem",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-900 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "footerMobileSectorsClose",
+      "type": "button",
+      "condition": "all:scopeEq,values.footerGroup,sectors",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,footer_sectors_close,location,footer",
+      "valueInstructions": "set:config.label,i18n,footer.sectorsTitle;set:config.ariaLabel,i18n,footer.sectorsTitle",
+      "config": {
+        "label": "",
+        "ariaLabel": "",
+        "icon": "expand_more",
+        "iconPosition": "after",
+        "iconClasses": "ank-width-1_2rem ank-height-1_2rem ank-fontSize-1_2rem",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-900 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "footerMobileLinksList",
+      "type": "container",
+      "condition": "all:scopeEq,values.footerGroup,links",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-8px ank-paddingBottom-8px",
         "components": [
-          "footerCta"
+          "footerMobileHome",
+          "footerMobileServices",
+          "footerMobilePlans",
+          "footerMobilePlatform",
+          "footerMobileAbout",
+          "footerMobileFaq"
         ]
       }
     },
     {
-      "id": "footerCta",
-      "type": "link",
-      "eventInstructions": "trackEvent:whatsapp_click,cta,footer,location,footer",
-      "valueInstructions": "set:config.text,i18n,ui.contact.footerLabel;set:config.href,i18n,ui.contact.footerUrl;set:config.ariaLabel,i18n,ui.contact.footerLabel",
+      "id": "footerMobileSectorsList",
+      "type": "container",
+      "condition": "all:scopeEq,values.footerGroup,sectors",
       "config": {
-        "href": "#",
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-8px ank-paddingBottom-8px",
+        "components": [
+          "footerMobileClinics",
+          "footerMobileLaw",
+          "footerMobileRealEstate",
+          "footerMobileLocalServices",
+          "footerMobileConstruction",
+          "footerMobileAgencies"
+        ]
+      }
+    },
+    {
+      "id": "footerMobileHome",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/,href,/,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,nav.home;set:config.ariaLabel,i18n,nav.home",
+      "config": {
+        "href": "/",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
-        "target": "_blank",
-        "rel": "noopener noreferrer",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileServices",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/servicios,href,/servicios,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,nav.services;set:config.ariaLabel,i18n,nav.services",
+      "config": {
+        "href": "/servicios",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobilePlans",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/planes,href,/planes,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,nav.plans;set:config.ariaLabel,i18n,nav.plans",
+      "config": {
+        "href": "/planes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobilePlatform",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/plataforma,href,/plataforma,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,nav.platform;set:config.ariaLabel,i18n,nav.platform",
+      "config": {
+        "href": "/plataforma",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileAbout",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/nosotros,href,/nosotros,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,nav.about;set:config.ariaLabel,i18n,nav.about",
+      "config": {
+        "href": "/nosotros",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileFaq",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/preguntas-frecuentes,href,/preguntas-frecuentes,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,footer.faqLabel;set:config.ariaLabel,i18n,footer.faqLabel",
+      "config": {
+        "href": "/preguntas-frecuentes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileClinics",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/sectores/consultorios,href,/sectores/consultorios,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,sectorLabels.clinics;set:config.ariaLabel,i18n,sectorLabels.clinics",
+      "config": {
+        "href": "/sectores/consultorios",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileLaw",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/sectores/despachos,href,/sectores/despachos,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,sectorLabels.law;set:config.ariaLabel,i18n,sectorLabels.law",
+      "config": {
+        "href": "/sectores/despachos",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileRealEstate",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/sectores/inmobiliarias,href,/sectores/inmobiliarias,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,sectorLabels.realEstate;set:config.ariaLabel,i18n,sectorLabels.realEstate",
+      "config": {
+        "href": "/sectores/inmobiliarias",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileLocalServices",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/sectores/servicios-locales,href,/sectores/servicios-locales,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,sectorLabels.localServices;set:config.ariaLabel,i18n,sectorLabels.localServices",
+      "config": {
+        "href": "/sectores/servicios-locales",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileConstruction",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/sectores/constructoras,href,/sectores/constructoras,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,sectorLabels.construction;set:config.ariaLabel,i18n,sectorLabels.construction",
+      "config": {
+        "href": "/sectores/constructoras",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileAgencies",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:nav_click,navigation,/sectores/agencias,href,/sectores/agencias,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,sectorLabels.agencies;set:config.ariaLabel,i18n,sectorLabels.agencies",
+      "config": {
+        "href": "/sectores/agencias",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerLegalLinks",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "footerLegalLinksTitle",
+          "footerPrivacy",
+          "footerTerms"
+        ],
         "styles": {
-          "whiteSpace": "nowrap"
+          "maxWidth": "320px"
         }
       }
+    },
+    {
+      "id": "footerLegalLinksTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,footer.legalLinksTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "footerPrivacy",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,footer.privacyLabel;set:config.ariaLabel,i18n,footer.privacyLabel",
+      "config": {
+        "href": "/privacidad",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/privacidad,href,/privacidad,location,footer"
+    },
+    {
+      "id": "footerTerms",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,footer.termsLabel;set:config.ariaLabel,i18n,footer.termsLabel",
+      "config": {
+        "href": "/terminos",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/terminos,href,/terminos,location,footer"
     }
   ]
 }

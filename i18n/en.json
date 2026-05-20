@@ -10,19 +10,22 @@
       "plans": "Plans",
       "platform": "Platform",
       "contact": "Contact",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "about": "About us"
     },
     "ui": {
       "controls": {
         "themeToggle": "Theme",
-        "languageToggle": "Language"
+        "languageToggle": "Language",
+        "menuToggle": "Menu"
       },
       "accessibility": {
         "skipToContent": "Skip to main content",
         "primaryNavigation": "Primary navigation",
         "mobileMenuAriaLabel": "Navigation menu",
         "openMenu": "Open menu",
-        "dialog": "Dialog"
+        "dialog": "Dialog",
+        "closeMenu": "Close menu"
       },
       "common": {
         "verified": "Verified"
@@ -30,26 +33,32 @@
       "contact": {
         "headerLabel": "I want my website",
         "headerUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20professional%20website.",
+        "floatingLabel": "WhatsApp",
+        "floatingAria": "Open WhatsApp to quote my website",
+        "floatingUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20quote%20a%20professional%20website%20starting%20at%20%243%2C000%20MXN.",
         "footerLabel": "Talk on WhatsApp",
         "footerUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20discuss%20a%20website%20for%20my%20business."
       }
     },
     "footer": {
-      "title": "Zoolandingpage",
-      "summary": "Zoosite is part of Zoolandingpage: an ecosystem for creating websites, landing pages, and business-oriented digital experiences.",
+      "title": "zoositioweb",
+      "summary": "Complete websites for businesses that need to present their offer, guide customers, and open commercial conversations.",
       "linksTitle": "Main routes",
-      "sectorsTitle": "Initial sectors",
+      "sectorsTitle": "Sectors",
       "legal": "We work with approved commercial information and public messages suited to each business.",
-      "copyright": "Zoosite / Zoo Website",
-      "faqLabel": "FAQ"
+      "copyright": "zoositioweb.com.mx",
+      "faqLabel": "FAQ",
+      "legalLinksTitle": "Legal",
+      "privacyLabel": "Privacy notice",
+      "termsLabel": "Terms and conditions"
     },
     "sectorLabels": {
-      "clinics": "Clinics",
-      "law": "Law firms",
-      "realEstate": "Real estate",
-      "localServices": "Local services",
-      "construction": "Construction companies",
-      "agencies": "Agencies"
+      "clinics": "Website for medical clinics",
+      "law": "Website for law firms",
+      "realEstate": "Website for real estate agencies",
+      "localServices": "Website for local service businesses",
+      "construction": "Website for construction companies",
+      "agencies": "Website for digital marketing agencies"
     }
   }
 }

@@ -10,19 +10,22 @@
       "plans": "Planes",
       "platform": "Plataforma",
       "contact": "Contacto",
-      "faq": "Preguntas frecuentes"
+      "faq": "Preguntas frecuentes",
+      "about": "Nosotros"
     },
     "ui": {
       "controls": {
         "themeToggle": "Tema",
-        "languageToggle": "Idioma"
+        "languageToggle": "Idioma",
+        "menuToggle": "Menú"
       },
       "accessibility": {
         "skipToContent": "Saltar al contenido principal",
         "primaryNavigation": "Navegación principal",
         "mobileMenuAriaLabel": "Menú de navegación",
         "openMenu": "Abrir menú",
-        "dialog": "Diálogo"
+        "dialog": "Diálogo",
+        "closeMenu": "Cerrar menú"
       },
       "common": {
         "verified": "Verificado"
@@ -30,26 +33,32 @@
       "contact": {
         "headerLabel": "Quiero mi sitio web",
         "headerUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20profesional.",
+        "floatingLabel": "WhatsApp",
+        "floatingAria": "Abrir WhatsApp para cotizar mi sitio web",
+        "floatingUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20cotizar%20un%20sitio%20web%20profesional%20desde%20%243%2C000%20MXN.",
         "footerLabel": "Hablar por WhatsApp",
         "footerUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20hablar%20sobre%20un%20sitio%20web%20para%20mi%20negocio."
       }
     },
     "footer": {
-      "title": "Zoolandingpage",
-      "summary": "Zoosite forma parte de Zoolandingpage: un ecosistema para crear sitios, landing pages y experiencias digitales orientadas a negocio.",
+      "title": "zoositioweb",
+      "summary": "Sitios web completos para negocios que necesitan presentar su oferta, orientar al cliente y abrir conversaciones comerciales.",
       "linksTitle": "Rutas principales",
-      "sectorsTitle": "Sectores iniciales",
+      "sectorsTitle": "Sectores",
       "legal": "Trabajamos con información comercial aprobada y mensajes públicos adecuados para cada negocio.",
-      "copyright": "Zoosite / Zoo Sitio Web",
-      "faqLabel": "Preguntas frecuentes"
+      "copyright": "zoositioweb.com.mx",
+      "faqLabel": "Preguntas frecuentes",
+      "legalLinksTitle": "Legal",
+      "privacyLabel": "Aviso de privacidad",
+      "termsLabel": "Términos y condiciones"
     },
     "sectorLabels": {
-      "clinics": "Consultorios",
-      "law": "Despachos",
-      "realEstate": "Inmobiliarias",
-      "localServices": "Servicios locales",
-      "construction": "Constructoras",
-      "agencies": "Agencias"
+      "clinics": "Sitio web para consultorios médicos",
+      "law": "Sitio web para despachos de abogados",
+      "realEstate": "Sitio web para inmobiliarias",
+      "localServices": "Sitio web para servicios locales",
+      "construction": "Sitio web para empresas constructoras",
+      "agencies": "Sitio web para agencias de marketing digital"
     }
   }
 }

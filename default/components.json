@@ -27,7 +27,7 @@
         "benefitItemClasses": "ank-display-flex ank-alignItems-start ank-gap-8px ank-color-secondaryTextColor ank-fontSize-0_95rem ank-lineHeight-1_45",
         "benefitIconClasses": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-successColor ank-flexShrink-0 ank-marginTop-2px",
         "benefitTextClasses": "ank-color-secondaryTextColor",
-        "linkClasses": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-whiteSpace-nowrap"
+        "linkClasses": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-maxWidth-100per ank-textAlign-center ank-width-100per"
       }
     },
     {
@@ -41,7 +41,7 @@
           "defaultStatsSection",
           "defaultSection0Root",
           "defaultSection1Root",
-          "defaultSection2Root",
+          "defaultTeamSection",
           "defaultFinalSection"
         ],
         "id": "main-content",
@@ -109,7 +109,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -137,7 +140,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-alignItems-center ank-gap-12px",
         "components": [
           "defaultHeroPrimary",
           "defaultHeroSecondary"
@@ -146,9 +149,8 @@
           "display": "flex",
           "flexWrap": "wrap",
           "gap": "12px",
-          "alignItems": "stretch",
-          "rowGap": "28px",
-          "columnGap": "12px"
+          "alignItems": "center",
+          "marginTop": "8px"
         }
       }
     },
@@ -161,7 +163,7 @@
         "href": "#",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
         "target": "_blank",
         "rel": "noopener noreferrer",
         "styles": {
@@ -170,7 +172,14 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "display": "block",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "46px",
+          "boxSizing": "border-box",
+          "lineHeight": "1.2",
+          "color": "var(--ank-onSuccessColor)"
         }
       }
     },
@@ -183,7 +192,7 @@
         "href": "/planes",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "classes": "ank-btnOutline-linkColor-bgColor ank-bgHover-secondaryBgColor ank-borderStyle-solid ank-borderWidth-1px ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-fontWeight-800 ank-textDecoration-none ank-textAlign-center",
         "target": "_self",
         "rel": "nofollow noopener noreferrer",
         "styles": {
@@ -192,7 +201,14 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "display": "block",
+          "lineHeight": "1.2",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "46px",
+          "boxSizing": "border-box",
+          "color": "var(--ank-linkColor)"
         }
       }
     },
@@ -224,7 +240,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -260,10 +279,15 @@
         "containerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
         "defaultItemContainerClasses": "ank-border-1px__solid__bgColor ank-borderRadius-8px ank-bg-bgColor",
         "defaultItemButtonConfig": {
-          "classes": "ank-width-100per ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-800 ank-cursor-pointer"
+          "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-800 ank-cursor-pointer ank-justifyContent-spaceMINbetween ank-gap-10px",
+          "icon": "expand_more",
+          "iconPosition": "after",
+          "iconClasses": "ank-width-1_2rem ank-height-1_2rem ank-fontSize-1_2rem ank-color-linkColor"
         },
-        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5"
-      }
+        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5",
+        "defaultItemIconIsExpandedClasses": "ank-color-accentColor"
+      },
+      "eventInstructions": "trackEventWhen:event.eventData.expanded,true,hero_panel_open,engagement,event.eventData.id,page,default,location,hero_panel;trackEventWhen:event.eventData.expanded,false,hero_panel_close,engagement,event.eventData.id,page,default,location,hero_panel"
     },
     {
       "id": "defaultStatsSection",
@@ -484,7 +508,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -599,10 +626,10 @@
         "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
         "components": [
-          "defaultSection1Eyebrow",
           "defaultSection1Title",
           "defaultSection1Lead",
-          "defaultSection1Cards"
+          "defaultSection1Cards",
+          "defaultSectorCtaLinks"
         ]
       }
     },
@@ -613,7 +640,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -707,6 +737,62 @@
       }
     },
     {
+      "id": "defaultSectorCtaLinkTemplate",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,event.eventData,href,event.eventData,location,sector_links,page,default",
+      "config": {
+        "href": "",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-paddingInline-18px ank-paddingBlock-16px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor",
+        "styles": {
+          "minHeight": "72px",
+          "boxShadow": "0 10px 24px rgba(15, 23, 42, 0.06)",
+          "lineHeight": "1.25"
+        }
+      }
+    },
+    {
+      "id": "defaultSectorCtaLinks",
+      "type": "container",
+      "loopConfig": {
+        "source": "i18n",
+        "path": "sectorLinks",
+        "templateId": "defaultSectorCtaLinkTemplate",
+        "idPrefix": "defaultSectorCtaLink",
+        "bindings": [
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          },
+          {
+            "to": "config.text",
+            "sources": [
+              "label"
+            ]
+          },
+          {
+            "to": "config.ariaLabel",
+            "sources": [
+              "label"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gap-12px ank-paddingTop-4px",
+        "components": [],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 260px), 1fr))",
+          "gap": "12px"
+        }
+      }
+    },
+    {
       "id": "defaultSection2Root",
       "type": "container",
       "config": {
@@ -742,7 +828,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -836,15 +925,1060 @@
       }
     },
     {
+      "id": "defaultTeamSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-bgColor",
+        "components": [
+          "defaultTeamInner"
+        ],
+        "id": "equipo",
+        "styles": {
+          "backgroundColor": "var(--ank-bgColor)"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "defaultTeamHeader",
+          "defaultTeamGrid",
+          "defaultTeamActions"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamHeader",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-maxWidth-54rem",
+        "components": [
+          "defaultTeamEyebrow",
+          "defaultTeamTitle",
+          "defaultTeamLead"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamSection.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-d-block ank-color-accentColor ank-fontSize-0_9rem ank-fontWeight-900 ank-textTransform-uppercase ank-letterSpacing-0"
+      }
+    },
+    {
+      "id": "defaultTeamTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamSection.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "defaultTeamLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamSection.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+      }
+    },
+    {
+      "id": "defaultTeamGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gap-16px",
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 230px), 1fr))",
+          "gap": "16px"
+        },
+        "components": [
+          "defaultTeamMemberAlec",
+          "defaultTeamMemberHector",
+          "defaultTeamMemberOswaldo",
+          "defaultTeamMemberPamela"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlec",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-16px ank-display-flex ank-flexDirection-column ank-gap-14px ank-height-100per ank-overflow-hidden",
+        "components": [
+          "defaultTeamMemberAlecImage",
+          "defaultTeamMemberAlecBody"
+        ],
+        "styles": {
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 18px 36px color-mix(in srgb, var(--ank-titleColor) 8%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecImage",
+      "type": "media",
+      "valueInstructions": "set:config.src,i18n,teamPreview.0.imageSrc;set:config.alt,i18n,teamPreview.0.imageAlt",
+      "config": {
+        "tag": "image",
+        "src": "",
+        "alt": "",
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-width-100per ank-height-190px ank-display-block ank-objectFit-cover ank-borderRadius-8px ank-bg-secondaryBgColor",
+        "styles": {
+          "width": "100%",
+          "height": "190px",
+          "objectFit": "cover",
+          "display": "block",
+          "borderRadius": "8px",
+          "backgroundColor": "var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBody",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "defaultTeamMemberAlecName",
+          "defaultTeamMemberAlecRole",
+          "defaultTeamMemberAlecBadges",
+          "defaultTeamMemberAlecProofList"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecName",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.0.name",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_18rem ank-fontWeight-900 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecRole",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.0.role",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_98rem ank-lineHeight-1_45 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBadges",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-8px ank-paddingBlock-2px",
+        "components": [
+          "defaultTeamMemberAlecBadge1",
+          "defaultTeamMemberAlecBadge2",
+          "defaultTeamMemberAlecBadge3"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "8px"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBadge1",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberAlecBadge1Icon",
+          "defaultTeamMemberAlecBadge1Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBadge1Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "cloud",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBadge1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.0.badges.0.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBadge2",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberAlecBadge2Icon",
+          "defaultTeamMemberAlecBadge2Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBadge2Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "auto_awesome",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBadge2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.0.badges.1.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBadge3",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberAlecBadge3Icon",
+          "defaultTeamMemberAlecBadge3Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBadge3Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "account_tree",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecBadge3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.0.badges.2.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecProofList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px ank-marginTop-2px",
+        "components": [
+          "defaultTeamMemberAlecProof1",
+          "defaultTeamMemberAlecProof2"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecProof1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.0.proof.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_94rem ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "defaultTeamMemberAlecProof2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.0.proof.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_94rem ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "defaultTeamMemberHector",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-16px ank-display-flex ank-flexDirection-column ank-gap-14px ank-height-100per ank-overflow-hidden",
+        "components": [
+          "defaultTeamMemberHectorImage",
+          "defaultTeamMemberHectorBody"
+        ],
+        "styles": {
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 18px 36px color-mix(in srgb, var(--ank-titleColor) 8%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorImage",
+      "type": "media",
+      "valueInstructions": "set:config.src,i18n,teamPreview.1.imageSrc;set:config.alt,i18n,teamPreview.1.imageAlt",
+      "config": {
+        "tag": "image",
+        "src": "",
+        "alt": "",
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-width-100per ank-height-190px ank-display-block ank-objectFit-cover ank-borderRadius-8px ank-bg-secondaryBgColor",
+        "styles": {
+          "width": "100%",
+          "height": "190px",
+          "objectFit": "cover",
+          "display": "block",
+          "borderRadius": "8px",
+          "backgroundColor": "var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBody",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "defaultTeamMemberHectorName",
+          "defaultTeamMemberHectorRole",
+          "defaultTeamMemberHectorBadges",
+          "defaultTeamMemberHectorProofList"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorName",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.1.name",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_18rem ank-fontWeight-900 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorRole",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.1.role",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_98rem ank-lineHeight-1_45 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBadges",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-8px ank-paddingBlock-2px",
+        "components": [
+          "defaultTeamMemberHectorBadge1",
+          "defaultTeamMemberHectorBadge2",
+          "defaultTeamMemberHectorBadge3"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "8px"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBadge1",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberHectorBadge1Icon",
+          "defaultTeamMemberHectorBadge1Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBadge1Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "cloud",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBadge1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.1.badges.0.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBadge2",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberHectorBadge2Icon",
+          "defaultTeamMemberHectorBadge2Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBadge2Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "auto_awesome",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBadge2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.1.badges.1.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBadge3",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberHectorBadge3Icon",
+          "defaultTeamMemberHectorBadge3Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBadge3Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "analytics",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorBadge3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.1.badges.2.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorProofList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px ank-marginTop-2px",
+        "components": [
+          "defaultTeamMemberHectorProof1",
+          "defaultTeamMemberHectorProof2"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorProof1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.1.proof.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_94rem ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "defaultTeamMemberHectorProof2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.1.proof.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_94rem ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldo",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-16px ank-display-flex ank-flexDirection-column ank-gap-14px ank-height-100per ank-overflow-hidden",
+        "components": [
+          "defaultTeamMemberOswaldoImage",
+          "defaultTeamMemberOswaldoBody"
+        ],
+        "styles": {
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 18px 36px color-mix(in srgb, var(--ank-titleColor) 8%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoImage",
+      "type": "media",
+      "valueInstructions": "set:config.src,i18n,teamPreview.2.imageSrc;set:config.alt,i18n,teamPreview.2.imageAlt",
+      "config": {
+        "tag": "image",
+        "src": "",
+        "alt": "",
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-width-100per ank-height-190px ank-display-block ank-objectFit-cover ank-borderRadius-8px ank-bg-secondaryBgColor",
+        "styles": {
+          "width": "100%",
+          "height": "190px",
+          "objectFit": "cover",
+          "display": "block",
+          "borderRadius": "8px",
+          "backgroundColor": "var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBody",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "defaultTeamMemberOswaldoName",
+          "defaultTeamMemberOswaldoRole",
+          "defaultTeamMemberOswaldoBadges",
+          "defaultTeamMemberOswaldoProofList"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoName",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.2.name",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_18rem ank-fontWeight-900 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoRole",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.2.role",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_98rem ank-lineHeight-1_45 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBadges",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-8px ank-paddingBlock-2px",
+        "components": [
+          "defaultTeamMemberOswaldoBadge1",
+          "defaultTeamMemberOswaldoBadge2",
+          "defaultTeamMemberOswaldoBadge3"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "8px"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBadge1",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberOswaldoBadge1Icon",
+          "defaultTeamMemberOswaldoBadge1Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBadge1Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "account_tree",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBadge1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.2.badges.0.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBadge2",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberOswaldoBadge2Icon",
+          "defaultTeamMemberOswaldoBadge2Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBadge2Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "phone_android",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBadge2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.2.badges.1.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBadge3",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberOswaldoBadge3Icon",
+          "defaultTeamMemberOswaldoBadge3Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBadge3Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "saved_search",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoBadge3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.2.badges.2.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoProofList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px ank-marginTop-2px",
+        "components": [
+          "defaultTeamMemberOswaldoProof1",
+          "defaultTeamMemberOswaldoProof2"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoProof1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.2.proof.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_94rem ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "defaultTeamMemberOswaldoProof2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.2.proof.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_94rem ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamela",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-padding-16px ank-display-flex ank-flexDirection-column ank-gap-14px ank-height-100per ank-overflow-hidden",
+        "components": [
+          "defaultTeamMemberPamelaImage",
+          "defaultTeamMemberPamelaBody"
+        ],
+        "styles": {
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "0 18px 36px color-mix(in srgb, var(--ank-titleColor) 8%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaImage",
+      "type": "media",
+      "valueInstructions": "set:config.src,i18n,teamPreview.3.imageSrc;set:config.alt,i18n,teamPreview.3.imageAlt",
+      "config": {
+        "tag": "image",
+        "src": "",
+        "alt": "",
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-width-100per ank-height-190px ank-display-block ank-objectFit-cover ank-borderRadius-8px ank-bg-secondaryBgColor",
+        "styles": {
+          "width": "100%",
+          "height": "190px",
+          "objectFit": "cover",
+          "display": "block",
+          "borderRadius": "8px",
+          "backgroundColor": "var(--ank-secondaryBgColor)"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBody",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "defaultTeamMemberPamelaName",
+          "defaultTeamMemberPamelaRole",
+          "defaultTeamMemberPamelaBadges",
+          "defaultTeamMemberPamelaProofList"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaName",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.3.name",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_18rem ank-fontWeight-900 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaRole",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.3.role",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_98rem ank-lineHeight-1_45 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBadges",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-8px ank-paddingBlock-2px",
+        "components": [
+          "defaultTeamMemberPamelaBadge1",
+          "defaultTeamMemberPamelaBadge2",
+          "defaultTeamMemberPamelaBadge3"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "8px"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBadge1",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberPamelaBadge1Icon",
+          "defaultTeamMemberPamelaBadge1Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBadge1Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "preview",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBadge1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.3.badges.0.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBadge2",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberPamelaBadge2Icon",
+          "defaultTeamMemberPamelaBadge2Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBadge2Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "trending_up",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBadge2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.3.badges.1.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBadge3",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-display-inline-flex ank-alignItems-center ank-gap-6px ank-borderRadius-999px ank-paddingInline-10px ank-paddingBlock-6px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1",
+        "components": [
+          "defaultTeamMemberPamelaBadge3Icon",
+          "defaultTeamMemberPamelaBadge3Text"
+        ],
+        "styles": {
+          "border": "0",
+          "boxShadow": "none",
+          "whiteSpace": "nowrap",
+          "backgroundColor": "color-mix(in srgb, var(--ank-accentColor) 12%, var(--ank-secondaryBgColor))"
+        }
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBadge3Icon",
+      "type": "icon",
+      "config": {
+        "iconName": "analytics",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-accentColor ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaBadge3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.3.badges.2.label",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_82rem ank-fontWeight-900 ank-lineHeight-1"
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaProofList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px ank-marginTop-2px",
+        "components": [
+          "defaultTeamMemberPamelaProof1",
+          "defaultTeamMemberPamelaProof2"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaProof1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.3.proof.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_94rem ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "defaultTeamMemberPamelaProof2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,teamPreview.3.proof.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_94rem ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "defaultTeamActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-flexDirection-sm-row ank-gap-12px ank-alignItems-stretch ank-alignItems-sm-center ank-paddingTop-4px",
+        "components": [
+          "defaultTeamLink"
+        ]
+      }
+    },
+    {
+      "id": "defaultTeamLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/nosotros,href,/nosotros,location,home_team",
+      "valueInstructions": "set:config.text,i18n,teamSection.linkLabel;set:config.ariaLabel,i18n,teamSection.linkLabel",
+      "config": {
+        "href": "/nosotros",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-textAlign-center ank-maxWidth-100per"
+      }
+    },
+    {
       "id": "defaultFinalSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px ank-color-textColor ank-bg-secondaryBgColor",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-64px ank-color-textColor ank-bg-bgColor",
         "components": [
           "defaultFinalInner"
         ],
-        "id": "contacto"
+        "id": "contacto",
+        "styles": {
+          "backgroundColor": "var(--ank-bgColor)",
+          "paddingBlock": "72px"
+        }
       }
     },
     {
@@ -852,7 +1986,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-24px ank-alignItems-start",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px ank-alignItems-start ank-borderRadius-8px",
         "components": [
           "defaultFinalEyebrow",
           "defaultFinalTitle",
@@ -860,8 +1994,9 @@
           "defaultFinalActions"
         ],
         "styles": {
-          "borderTop": "4px solid var(--ank-accentColor)",
-          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.11)"
+          "padding": "clamp(28px, 5vw, 54px)",
+          "boxShadow": "none",
+          "backgroundColor": "var(--ank-secondaryBgColor)"
         }
       }
     },
@@ -872,7 +2007,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -882,7 +2020,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2rem ank-fontSize-md-2_8rem ank-lineHeight-1_08 ank-fontWeight-800 ank-maxWidth-54rem"
       }
     },
     {
@@ -892,7 +2030,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_18rem ank-lineHeight-1_55 ank-maxWidth-48rem"
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_05rem ank-fontSize-md-1_14rem ank-lineHeight-1_55 ank-maxWidth-48rem"
       }
     },
     {
@@ -902,16 +2040,42 @@
         "tag": "div",
         "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
         "components": [
-          "defaultFinalPrimary",
-          "defaultFinalSecondary"
+          "defaultFinalPrimaryWrap",
+          "defaultFinalSecondaryWrap"
         ],
         "styles": {
           "display": "flex",
           "flexWrap": "wrap",
-          "gap": "12px",
-          "alignItems": "stretch",
-          "rowGap": "28px",
-          "columnGap": "12px"
+          "gap": "16px",
+          "alignItems": "stretch"
+        }
+      }
+    },
+    {
+      "id": "defaultFinalPrimaryWrap",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex",
+        "components": [
+          "defaultFinalPrimary"
+        ],
+        "styles": {
+          "lineHeight": "0"
+        }
+      }
+    },
+    {
+      "id": "defaultFinalSecondaryWrap",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex",
+        "components": [
+          "defaultFinalSecondary"
+        ],
+        "styles": {
+          "lineHeight": "0"
         }
       }
     },
@@ -924,7 +2088,7 @@
         "href": "#",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
         "target": "_blank",
         "rel": "noopener noreferrer",
         "styles": {
@@ -933,7 +2097,14 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "display": "block",
+          "lineHeight": "1.2",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "46px",
+          "boxSizing": "border-box",
+          "color": "var(--ank-onSuccessColor)"
         }
       }
     },
@@ -946,7 +2117,7 @@
         "href": "/contacto",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "classes": "ank-btnOutline-linkColor-bgColor ank-bgHover-bgColor ank-borderStyle-solid ank-borderWidth-1px ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-fontWeight-800 ank-textDecoration-none ank-textAlign-center",
         "target": "_self",
         "rel": "nofollow noopener noreferrer",
         "styles": {
@@ -955,7 +2126,14 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "display": "block",
+          "lineHeight": "1.2",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "46px",
+          "boxSizing": "border-box",
+          "color": "var(--ank-linkColor)"
         }
       }
     }

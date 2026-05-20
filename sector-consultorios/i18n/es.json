@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "Sector inicial",
       "title": "Sitios web para consultorios que facilitan la primera cita.",
-      "lead": "Presenta servicios, ubicación, horarios, equipo y contacto por WhatsApp con información clara para pacientes potenciales.",
+      "lead": "Presenta servicios, ubicación, horarios, equipo y contacto por WhatsApp con información clara para pacientes potenciales. También dejamos medición para recopilar datos propios sobre interés por sector.",
       "primaryLabel": "Quiero un sitio para mi consultorio",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20para%20mi%20consultorio.",
       "secondaryLabel": "Ver planes",
@@ -26,7 +26,7 @@
           },
           {
             "title": "Cómo se mide",
-            "content": "Clicks por sector, página e idioma para entender interés."
+            "content": "Nuestro sistema registra clicks por sector, página, idioma y acción de contacto para analizar interés."
           }
         ]
       }
@@ -43,9 +43,9 @@
         "detail": "Experiencia, proceso y contacto presentados con orden."
       },
       {
-        "value": "WhatsApp",
-        "label": "Interés etiquetado",
-        "detail": "El mensaje inicial indica el sector."
+        "value": "Datos",
+        "label": "Interés medible",
+        "detail": "Las acciones ayudan a entender qué busca cada tipo de cliente."
       }
     ],
     "sections": [
@@ -69,7 +69,7 @@
           {
             "icon": "phone_android",
             "title": "Contacto ágil",
-            "description": "Botones de WhatsApp con un mensaje inicial orientado al sector.",
+            "description": "Botones de WhatsApp con un mensaje inicial orientado al sector y acciones medibles para seguimiento.",
             "benefits": [
               "Menos pasos",
               "Más contexto",
@@ -95,7 +95,7 @@
       {
         "eyebrow": "Contenido recomendado",
         "title": "Secciones que ayudan a decidir.",
-        "lead": "Cada sector necesita sus propios matices, pero la base comercial es parecida.",
+        "lead": "Cada sector necesita sus propios matices, pero la base comercial y los datos de interacción ayudan a decidir mejor.",
         "cards": [
           {
             "icon": "assignment",
@@ -151,7 +151,7 @@
         },
         {
           "title": "¿Cómo ayudan a mi negocio?",
-          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos propios de interacción para tomar decisiones comerciales con más contexto."
         },
         {
           "title": "¿Qué información conviene preparar?",
@@ -166,7 +166,7 @@
     "final": {
       "eyebrow": "Sector",
       "title": "Crea una página pensada para tu consultorio.",
-      "lead": "El mensaje de WhatsApp ya incluye el sector para orientar la conversación.",
+      "lead": "El mensaje de WhatsApp ya incluye el sector para orientar la conversación y analizar mejor el interés.",
       "primaryLabel": "Quiero una página de sector",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20para%20mi%20consultorio%20dentro%20de%20mi%20sitio%20web.",
       "secondaryLabel": "Ir a contacto"

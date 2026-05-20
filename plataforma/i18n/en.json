@@ -7,14 +7,14 @@
     "hero": {
       "eyebrow": "The base that helps your site grow",
       "title": "A website prepared to publish, measure, and grow.",
-      "lead": "Your website is built on a flexible base to review content, expand pages, and read interest signals from the start.",
+      "lead": "Your website is built on a flexible base to review content, expand pages, and collect first-party interaction data from the start.",
       "primaryLabel": "I want to understand the base",
-      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20understand%20how%20the%20Zoosite%20platform%20helps%20my%20website.",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20understand%20how%20the%20zoositioweb%20platform%20helps%20my%20website.",
       "secondaryLabel": "View services",
       "panel": {
         "kicker": "For your business",
         "title": "The technology base works for your goals.",
-        "lead": "We guide you so the website can grow by content, sectors, campaigns, and commercial reading.",
+        "lead": "We guide the website so it can grow through content, sectors, campaigns, and commercial analysis based on first-party data.",
         "items": [
           {
             "title": "Agile publishing",
@@ -25,8 +25,8 @@
             "content": "The structure allows adding pages, languages, or sectors as the business needs them."
           },
           {
-            "title": "Data from the start",
-            "content": "Important interactions help guide future adjustments with more context."
+            "title": "First-party data from the start",
+            "content": "Our system collects important events to analyze interest without depending on assumptions."
           }
         ]
       }
@@ -40,7 +40,7 @@
       {
         "value": "Data",
         "label": "Measurement from day 1",
-        "detail": "Events to understand real interest."
+        "detail": "Own events to understand real interest."
       },
       {
         "value": "AI",
@@ -51,8 +51,8 @@
     "sections": [
       {
         "eyebrow": "Benefits",
-        "title": "Technology should help sell and learn.",
-        "lead": "The base is designed to operate with order, measure important interactions, and support website growth.",
+        "title": "Technology should help sell, measure, and learn.",
+        "lead": "The base is designed to operate with order, collect interaction data, measure important actions, and support website growth.",
         "cards": [
           {
             "icon": "speed",
@@ -80,8 +80,8 @@
           },
           {
             "icon": "analytics",
-            "title": "Useful measurement",
-            "description": "Initial analytics focuses on pages, sections, and clicks that show commercial interest.",
+            "title": "Own analytics",
+            "description": "Measurement focuses on pages, sections, clicks, and contact actions that show real commercial interest.",
             "benefits": [
               "Page",
               "Plan or sector",
@@ -95,7 +95,7 @@
       {
         "eyebrow": "Responsible scope",
         "title": "Operational details are defined with real numbers.",
-        "lead": "When a project needs plan limits, cloud, rendering, analytics, network, and operation costs are calculated before publishing them.",
+        "lead": "When a project requires plan limits, cloud, rendering, analytics, data collection, network, and operation costs are calculated before publishing them.",
         "cards": [
           {
             "icon": "trending_up",
@@ -104,7 +104,7 @@
             "benefits": [
               "Storage",
               "Rendering",
-              "Network and cache"
+              "Analytics"
             ],
             "href": "",
             "linkLabel": ""
@@ -143,7 +143,7 @@
       "items": [
         {
           "title": "Why does the website base matter?",
-          "content": "Because it helps publish a first version, expand content, and understand which pages receive more interest."
+          "content": "Because it makes it easier to publish a first version, expand content, and understand with first-party data which pages receive more interest."
         },
         {
           "title": "Does this change the plan price?",
@@ -155,14 +155,14 @@
         },
         {
           "title": "What data is reviewed first?",
-          "content": "Button clicks, visited pages, selected language, and basic commercial interest signals."
+          "content": "Button clicks, consulted pages, sections with more attention, selected language, and basic commercial interest signals."
         }
       ]
     },
     "final": {
       "eyebrow": "Platform",
       "title": "Let us discuss the base your website needs.",
-      "lead": "If your business will grow by pages, sectors, or campaigns, it is better to plan it from the start.",
+      "lead": "If your business will grow through pages, sectors, campaigns, or data analysis, it is worth planning from the start.",
       "primaryLabel": "I want to discuss platform",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20discuss%20the%20platform%20and%20growth%20for%20my%20website.",
       "secondaryLabel": "Go to contact"

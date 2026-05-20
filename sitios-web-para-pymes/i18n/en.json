@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "For small businesses and growing companies",
       "title": "Your business needs a page that explains why people should choose you.",
-      "lead": "Zoosite organizes your offer into a professional bilingual website ready to receive WhatsApp inquiries.",
+      "lead": "Starting at MXN $3,000 before VAT, zoositioweb organizes your offer into a professional bilingual website ready for WhatsApp contacts and first-party data from the start.",
       "primaryLabel": "I want a website for my business",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20website%20for%20my%20small%20business.%20My%20business%20sells%3A",
       "secondaryLabel": "View plans",
@@ -17,35 +17,35 @@
         "lead": "A clear website reduces basic doubts and helps the first message arrive with more context.",
         "items": [
           {
-            "title": "What you sell",
-            "content": "Services or products explained with order."
+            "title": "Clear price",
+            "content": "Plans starting at MXN $3,000 before VAT to begin with a professional foundation."
           },
           {
-            "title": "Why choose you",
-            "content": "Experience, process, team, or real proof elements."
+            "title": "First round in 5 days",
+            "content": "With complete base information, we prepare a first test version in 5 days."
           },
           {
-            "title": "How to contact you",
-            "content": "WhatsApp with an initial message oriented to the visitor goal."
+            "title": "Human support",
+            "content": "We help organize your offer, technology, data, and AI instead of leaving you with only a template."
           }
         ]
       }
     },
     "stats": [
       {
-        "value": "SMB",
-        "label": "Commercial focus",
-        "detail": "Clear language for real buyers."
+        "value": "From MXN $3,000",
+        "label": "Before VAT",
+        "detail": "A professional first version to publish, measure, and open conversations."
       },
       {
-        "value": "Mobile",
-        "label": "Phone browsing",
-        "detail": "Design planned for quick review and messaging."
+        "value": "5 days",
+        "label": "First round",
+        "detail": "With scope, materials, and minimum commercial information available on time."
       },
       {
-        "value": "Ads",
-        "label": "Campaign base",
-        "detail": "Useful page for paid traffic and organic search."
+        "value": "Invoiceable",
+        "label": "Human support",
+        "detail": "Fully invoiceable service with developer guidance during the process."
       }
     ],
     "sections": [
@@ -81,7 +81,7 @@
           {
             "icon": "analytics",
             "title": "Understand what creates interest",
-            "description": "Basic interaction reading helps guide adjustments with commercial context.",
+            "description": "Our system records website interactions to guide adjustments with commercial context and first-party data.",
             "benefits": [
               "Clicks by page",
               "Interest by plan",
@@ -111,8 +111,8 @@
           },
           {
             "icon": "flash_on",
-            "title": "Messages by intent",
-            "description": "Each button can start WhatsApp with useful context to improve the conversation.",
+            "title": "Messages and data by intent",
+            "description": "Each button can start WhatsApp with useful context and leave measurable signals to improve the conversation.",
             "benefits": [
               "Fewer steps",
               "First message with context",
@@ -126,9 +126,9 @@
             "title": "Growth by routes",
             "description": "The site can grow with pages by sector, campaign, or service line.",
             "benefits": [
-              "SEO by intent",
+              "Intent SEO",
               "More relevant ads",
-              "Base for guides"
+              "Data by route"
             ],
             "href": "",
             "linkLabel": ""
@@ -151,7 +151,7 @@
         },
         {
           "title": "How do you help my business?",
-          "content": "We turn your offer into a clear digital presence, with visible contact paths and initial data to make commercial decisions with more context."
+          "content": "We turn your offer into a clear digital presence, with visible contact paths and first-party interaction data to make commercial decisions with more context."
         },
         {
           "title": "What information should I prepare?",
@@ -166,7 +166,7 @@
     "final": {
       "eyebrow": "Quote",
       "title": "Ask for a recommendation for your business.",
-      "lead": "Tell us your business type, city, and what you sell so we can guide the plan.",
+      "lead": "Tell us your industry, city, what you sell, and what you want to measure so we can guide the plan.",
       "primaryLabel": "I want a website for my business",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20website%20for%20my%20small%20business.%20My%20business%20type%20is%3A",
       "secondaryLabel": "Go to contact"

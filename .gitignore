@@ -10,6 +10,7 @@ Output/
 .superpowers/
 .codex/
 .agents/
+.agent-coordination/
 
 # Secrets and private local files
 .env

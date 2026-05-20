@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "sector-consultoriosPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Sitios web para consultorios | Zoosite",
-      "en": "Websites for clinics | Zoosite"
+      "es": "Sitios web para consultorios médicos | zoositioweb",
+      "en": "Websites for medical clinics | zoositioweb"
     },
     "description": {
-      "es": "Presenta servicios, ubicación, horarios, equipo y contacto por WhatsApp con información clara para pacientes potenciales.",
-      "en": "Present services, location, hours, team, and WhatsApp contact with clear information for potential patients."
+      "es": "Sitios web para consultorios con servicios, ubicación, horarios, WhatsApp y datos propios para entender qué buscan los pacientes.",
+      "en": "Websites for clinics with services, location, hours, WhatsApp contact, and first-party data to understand patient interest."
     },
     "openGraph": {
       "title": {
-        "es": "Sitios web para consultorios | Zoosite",
-        "en": "Websites for clinics | Zoosite"
+        "es": "Sitios web para consultorios médicos | zoositioweb",
+        "en": "Websites for medical clinics | zoositioweb"
       },
       "description": {
-        "es": "Presenta servicios, ubicación, horarios, equipo y contacto por WhatsApp con información clara para pacientes potenciales.",
-        "en": "Present services, location, hours, team, and WhatsApp contact with clear information for potential patients."
+        "es": "Sitios web para consultorios con servicios, ubicación, horarios, WhatsApp y datos propios para entender qué buscan los pacientes.",
+        "en": "Websites for clinics with services, location, hours, WhatsApp contact, and first-party data to understand patient interest."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/sectores/consultorios",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Sitios web para consultorios | Zoosite",
-        "en": "Websites for clinics | Zoosite"
+        "es": "Sitios web para consultorios médicos | zoositioweb",
+        "en": "Websites for medical clinics | zoositioweb"
       },
       "description": {
-        "es": "Presenta servicios, ubicación, horarios, equipo y contacto por WhatsApp con información clara para pacientes potenciales.",
-        "en": "Present services, location, hours, team, and WhatsApp contact with clear information for potential patients."
+        "es": "Sitios web para consultorios con servicios, ubicación, horarios, WhatsApp y datos propios para entender qué buscan los pacientes.",
+        "en": "Websites for clinics with services, location, hours, WhatsApp contact, and first-party data to understand patient interest."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -52,12 +53,28 @@
       "es": [
         "pagina web para consultorios",
         "sitio web para doctores",
-        "web para clinicas"
+        "web para clinicas",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "pagina web para consultorios medicos",
+        "web para clinicas con whatsapp",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "clinic website",
         "doctor website",
-        "healthcare website"
+        "healthcare website",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "medical clinic website",
+        "clinic website with WhatsApp",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -66,8 +83,8 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Sitios web para consultorios | Zoosite",
-        "description": "Presenta servicios, ubicación, horarios, equipo y contacto por WhatsApp con información clara para pacientes potenciales.",
+        "name": "Sitios web para consultorios médicos | zoositioweb",
+        "description": "Sitios web para consultorios con servicios, ubicación, horarios, WhatsApp y datos propios para entender qué buscan los pacientes.",
         "url": "https://zoositioweb.com.mx/sectores/consultorios",
         "inLanguage": "es"
       }

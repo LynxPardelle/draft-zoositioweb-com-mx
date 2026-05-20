@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "nosotrosPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Equipo de Zoosite | Sitios web, nube y marketing",
-      "en": "Zoosite team | Websites, cloud, and marketing"
+      "es": "Equipo de software, nube, datos e IA | zoositioweb",
+      "en": "Software, cloud, data, and AI team | zoositioweb"
     },
     "description": {
-      "es": "Conoce al equipo detrás de Zoosite: desarrollo web, nube, IA, diseño, marketing y análisis para sitios profesionales.",
-      "en": "Meet the team behind Zoosite: web development, cloud, AI, design, marketing, and analysis for professional websites."
+      "es": "Conoce al equipo de zoositioweb: desarrollo de software, arquitectura de nube, ingeniería de datos, IA y sitios web con medición propia.",
+      "en": "Meet the zoositioweb team: software development, cloud architecture, data engineering, AI, and websites with own measurement."
     },
     "openGraph": {
       "title": {
-        "es": "Equipo de Zoosite | Sitios web, nube y marketing",
-        "en": "Zoosite team | Websites, cloud, and marketing"
+        "es": "Equipo de software, nube, datos e IA | zoositioweb",
+        "en": "Software, cloud, data, and AI team | zoositioweb"
       },
       "description": {
-        "es": "Conoce al equipo detrás de Zoosite: desarrollo web, nube, IA, diseño, marketing y análisis para sitios profesionales.",
-        "en": "Meet the team behind Zoosite: web development, cloud, AI, design, marketing, and analysis for professional websites."
+        "es": "Conoce al equipo de zoositioweb: desarrollo de software, arquitectura de nube, ingeniería de datos, IA y sitios web con medición propia.",
+        "en": "Meet the zoositioweb team: software development, cloud architecture, data engineering, AI, and websites with own measurement."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/nosotros",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Equipo de Zoosite | Sitios web, nube y marketing",
-        "en": "Zoosite team | Websites, cloud, and marketing"
+        "es": "Equipo de software, nube, datos e IA | zoositioweb",
+        "en": "Software, cloud, data, and AI team | zoositioweb"
       },
       "description": {
-        "es": "Conoce al equipo detrás de Zoosite: desarrollo web, nube, IA, diseño, marketing y análisis para sitios profesionales.",
-        "en": "Meet the team behind Zoosite: web development, cloud, AI, design, marketing, and analysis for professional websites."
+        "es": "Conoce al equipo de zoositioweb: desarrollo de software, arquitectura de nube, ingeniería de datos, IA y sitios web con medición propia.",
+        "en": "Meet the zoositioweb team: software development, cloud architecture, data engineering, AI, and websites with own measurement."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -50,14 +51,30 @@
     "canonical": "https://zoositioweb.com.mx/nosotros",
     "keywords": {
       "es": [
-        "equipo zoosite",
-        "desarrollo web nube marketing",
-        "sitios web profesionales equipo"
+        "equipo zoositioweb",
+        "desarrollo de software para sitios web",
+        "arquitectura de nube e inteligencia artificial",
+        "ingenieria de datos para sitios web",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "equipo desarrollo web datos ia",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
-        "zoosite team",
-        "web development cloud marketing",
-        "professional website team"
+        "zoositioweb team",
+        "software development for websites",
+        "cloud architecture and AI",
+        "data engineering for websites",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "web development data AI team",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -65,9 +82,9 @@
     "entries": [
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Equipo de Zoosite | Sitios web, nube y marketing",
-        "description": "Conoce al equipo detrás de Zoosite: desarrollo web, nube, IA, diseño, marketing y análisis para sitios profesionales.",
+        "@type": "AboutPage",
+        "name": "Equipo de zoositioweb | Software, nube, datos e IA",
+        "description": "Conoce al equipo detrás de zoositioweb: software, nube, ingeniería de datos, IA y sitios web con medición propia.",
         "url": "https://zoositioweb.com.mx/nosotros",
         "inLanguage": "es"
       }
@@ -79,7 +96,8 @@
       "evidencia",
       "forma-de-trabajo",
       "equipo",
-      "contacto"
+      "contacto",
+      "pamelabetancourt"
     ],
     "scrollMilestones": [
       25,

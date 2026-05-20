@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "plataformaPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Plataforma para sitios web medibles | Zoosite",
-      "en": "Platform for measurable websites | Zoosite"
+      "es": "Plataforma cloud para sitios web medibles | zoositioweb",
+      "en": "Cloud platform for measurable websites | zoositioweb"
     },
     "description": {
-      "es": "La base que hace crecer tu sitio: publicación ordenada, medición desde el inicio y arquitectura preparada para evolucionar.",
-      "en": "The base that helps your website grow: organized publishing, measurement from the start, and architecture ready to evolve."
+      "es": "Base tecnológica en la nube para publicar sitios web, crecer por páginas o sectores y recopilar datos propios de interacción desde el día uno.",
+      "en": "Cloud technology base to publish websites, grow by pages or sectors, and collect first-party interaction data from day one."
     },
     "openGraph": {
       "title": {
-        "es": "Plataforma para sitios web medibles | Zoosite",
-        "en": "Platform for measurable websites | Zoosite"
+        "es": "Plataforma cloud para sitios web medibles | zoositioweb",
+        "en": "Cloud platform for measurable websites | zoositioweb"
       },
       "description": {
-        "es": "La base que hace crecer tu sitio: publicación ordenada, medición desde el inicio y arquitectura preparada para evolucionar.",
-        "en": "The base that helps your website grow: organized publishing, measurement from the start, and architecture ready to evolve."
+        "es": "Base tecnológica en la nube para publicar sitios web, crecer por páginas o sectores y recopilar datos propios de interacción desde el día uno.",
+        "en": "Cloud technology base to publish websites, grow by pages or sectors, and collect first-party interaction data from day one."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/plataforma",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Plataforma para sitios web medibles | Zoosite",
-        "en": "Platform for measurable websites | Zoosite"
+        "es": "Plataforma cloud para sitios web medibles | zoositioweb",
+        "en": "Cloud platform for measurable websites | zoositioweb"
       },
       "description": {
-        "es": "La base que hace crecer tu sitio: publicación ordenada, medición desde el inicio y arquitectura preparada para evolucionar.",
-        "en": "The base that helps your website grow: organized publishing, measurement from the start, and architecture ready to evolve."
+        "es": "Base tecnológica en la nube para publicar sitios web, crecer por páginas o sectores y recopilar datos propios de interacción desde el día uno.",
+        "en": "Cloud technology base to publish websites, grow by pages or sectors, and collect first-party interaction data from day one."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -52,12 +53,25 @@
       "es": [
         "plataforma sitios web",
         "sitios web medibles",
-        "sitios web en la nube"
+        "sitios web en la nube",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "plataforma para sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "website platform",
         "measurable websites",
-        "cloud website platform"
+        "cloud website platform",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "cloud websites",
+        "platform for measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -66,8 +80,8 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Plataforma para sitios web medibles | Zoosite",
-        "description": "La base que hace crecer tu sitio: publicación ordenada, medición desde el inicio y arquitectura preparada para evolucionar.",
+        "name": "Plataforma cloud para sitios web medibles | zoositioweb",
+        "description": "Base tecnológica en la nube para publicar sitios web, crecer por páginas o sectores y recopilar datos propios de interacción desde el día uno.",
         "url": "https://zoositioweb.com.mx/plataforma",
         "inLanguage": "es"
       }

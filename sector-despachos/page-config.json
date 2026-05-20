@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "sector-despachosPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Sitios web para despachos | Zoosite",
-      "en": "Websites for law firms | Zoosite"
+      "es": "Sitios web para despachos y abogados | zoositioweb",
+      "en": "Websites for law firms and offices | zoositioweb"
     },
     "description": {
-      "es": "Ordena áreas de práctica, equipo, proceso de contacto y elementos de respaldo con lenguaje profesional y comercial.",
-      "en": "Organize practice areas, team, contact process, and proof elements with professional commercial language."
+      "es": "Sitios web para despachos con áreas de práctica, experiencia, proceso de atención, WhatsApp y medición de interés por servicio.",
+      "en": "Websites for law firms with practice areas, experience, intake process, WhatsApp contact, and service-interest measurement."
     },
     "openGraph": {
       "title": {
-        "es": "Sitios web para despachos | Zoosite",
-        "en": "Websites for law firms | Zoosite"
+        "es": "Sitios web para despachos y abogados | zoositioweb",
+        "en": "Websites for law firms and offices | zoositioweb"
       },
       "description": {
-        "es": "Ordena áreas de práctica, equipo, proceso de contacto y elementos de respaldo con lenguaje profesional y comercial.",
-        "en": "Organize practice areas, team, contact process, and proof elements with professional commercial language."
+        "es": "Sitios web para despachos con áreas de práctica, experiencia, proceso de atención, WhatsApp y medición de interés por servicio.",
+        "en": "Websites for law firms with practice areas, experience, intake process, WhatsApp contact, and service-interest measurement."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/sectores/despachos",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Sitios web para despachos | Zoosite",
-        "en": "Websites for law firms | Zoosite"
+        "es": "Sitios web para despachos y abogados | zoositioweb",
+        "en": "Websites for law firms and offices | zoositioweb"
       },
       "description": {
-        "es": "Ordena áreas de práctica, equipo, proceso de contacto y elementos de respaldo con lenguaje profesional y comercial.",
-        "en": "Organize practice areas, team, contact process, and proof elements with professional commercial language."
+        "es": "Sitios web para despachos con áreas de práctica, experiencia, proceso de atención, WhatsApp y medición de interés por servicio.",
+        "en": "Websites for law firms with practice areas, experience, intake process, WhatsApp contact, and service-interest measurement."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -52,12 +53,29 @@
       "es": [
         "pagina web para abogados",
         "sitio web para despacho",
-        "web para firma legal"
+        "web para firma legal",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "sitio web para despacho de abogados",
+        "pagina web abogados mexico",
+        "web para despachos profesionales",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "law firm website",
         "website for attorneys",
-        "professional services website"
+        "professional services website",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "website for legal offices",
+        "professional office website",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -66,8 +84,8 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Sitios web para despachos | Zoosite",
-        "description": "Ordena áreas de práctica, equipo, proceso de contacto y elementos de respaldo con lenguaje profesional y comercial.",
+        "name": "Sitios web para despachos y abogados | zoositioweb",
+        "description": "Sitios web para despachos con áreas de práctica, experiencia, proceso de atención, WhatsApp y medición de interés por servicio.",
         "url": "https://zoositioweb.com.mx/sectores/despachos",
         "inLanguage": "es"
       }

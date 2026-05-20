@@ -2,7 +2,7 @@
   "version": 1,
   "domain": "zoositioweb.com.mx",
   "aliases": [
-    "zoosite.zoolandingpage.com.mx",
+    "zoositioweb.com",
     "sitiosweb.zoolandingpage.com.mx",
     "quierounsitioweb.zoolandingpage.com.mx",
     "crearpaginaweb.zoolandingpage.com.mx"
@@ -51,6 +51,16 @@
       "label": "Contacto"
     },
     {
+      "path": "/privacidad",
+      "pageId": "privacidad",
+      "label": "Aviso de privacidad"
+    },
+    {
+      "path": "/terminos",
+      "pageId": "terminos",
+      "label": "Términos y condiciones"
+    },
+    {
       "path": "/404",
       "pageId": "not-found",
       "label": "Página no encontrada"
@@ -58,12 +68,12 @@
     {
       "path": "/sectores/consultorios",
       "pageId": "sector-consultorios",
-      "label": "Consultorios"
+      "label": "Consultorios médicos"
     },
     {
       "path": "/sectores/despachos",
       "pageId": "sector-despachos",
-      "label": "Despachos"
+      "label": "Despachos de abogados"
     },
     {
       "path": "/sectores/inmobiliarias",
@@ -78,12 +88,12 @@
     {
       "path": "/sectores/constructoras",
       "pageId": "sector-constructoras",
-      "label": "Constructoras"
+      "label": "Empresas constructoras"
     },
     {
       "path": "/sectores/agencias",
       "pageId": "sector-agencias",
-      "label": "Agencias"
+      "label": "Agencias de marketing digital"
     }
   ],
   "sitemap": {
@@ -99,59 +109,61 @@
           "bgColor": "#ece7df",
           "textColor": "#17202a",
           "titleColor": "#0d141c",
-          "linkColor": "#1463ff",
+          "linkColor": "#214c72",
           "accentColor": "#128c7e",
-          "secondaryBgColor": "#dce5ec",
-          "secondaryTextColor": "#415160",
+          "secondaryBgColor": "#bcc1ba",
+          "secondaryTextColor": "#2f3b36",
           "secondaryTitleColor": "#111827",
-          "secondaryLinkColor": "#1463ff",
+          "secondaryLinkColor": "#214c72",
           "secondaryAccentColor": "#ff6b57",
           "successColor": "#128c7e",
-          "onSuccessColor": "#ffffff",
+          "onSuccessColor": "#06110f",
           "errorColor": "#dc3545",
           "onErrorColor": "#3b0a10",
           "warningColor": "#f59e0b",
           "onWarningColor": "#3a2400",
-          "infoColor": "#1463ff",
+          "infoColor": "#214c72",
           "onInfoColor": "#041b44"
         },
         "dark": {
           "bgColor": "#11161d",
           "textColor": "#edf3f8",
           "titleColor": "#ffffff",
-          "linkColor": "#74a8ff",
+          "linkColor": "#6097b5",
           "accentColor": "#25d366",
           "secondaryBgColor": "#1d2630",
           "secondaryTextColor": "#c2ccd6",
           "secondaryTitleColor": "#f7fbff",
-          "secondaryLinkColor": "#8fb8ff",
+          "secondaryLinkColor": "#6097b5",
           "secondaryAccentColor": "#ff8c7a",
           "successColor": "#128c7e",
-          "onSuccessColor": "#ffffff",
+          "onSuccessColor": "#06110f",
           "errorColor": "#ff7b89",
           "onErrorColor": "#31070c",
           "warningColor": "#f7c948",
           "onWarningColor": "#2a1f00",
-          "infoColor": "#8fb8ff",
+          "infoColor": "#6097b5",
           "onInfoColor": "#071b33"
         }
       }
     },
     "appIdentity": {
       "identifier": "zoositiowebcommx",
-      "name": "Zoosite",
+      "name": "zoositioweb",
       "version": "1.0.0",
-      "description": "Complete websites for businesses, with guided WhatsApp contact and initial measurement."
+      "description": "Complete websites for businesses with guided WhatsApp contact, cloud architecture, and first-party measurement from day one."
     },
     "seo": {
-      "siteName": "Zoosite",
-      "title": "Zoosite | Sitios web profesionales para negocios",
-      "description": "Sitios web completos para negocios que quieren verse profesionales, explicar su oferta y recibir contactos por WhatsApp.",
+      "siteName": "zoositioweb",
+      "title": "zoositioweb | Sitios web profesionales para negocios",
+      "description": "Sitios web profesionales para negocios con contacto por WhatsApp, arquitectura en la nube, medición desde el inicio y análisis de datos propios.",
       "canonicalOrigin": "https://zoositioweb.com.mx",
+      "enforceCanonicalHost": true,
+      "forceHttps": true,
       "defaultImage": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "openGraph": {
         "type": "website",
-        "site_name": "Zoosite"
+        "site_name": "zoositioweb"
       },
       "twitter": {
         "card": "summary_large_image"
@@ -161,16 +173,356 @@
           "sitios web profesionales",
           "paginas web para pymes",
           "sitios web para negocios",
-          "Zoosite"
+          "zoositioweb",
+          "sitios web medibles",
+          "sitios web con datos propios",
+          "analitica web para negocios"
         ],
         "en": [
           "professional websites",
           "websites for small business",
           "business websites",
-          "Zoosite"
+          "zoositioweb",
+          "measurable websites",
+          "websites with first-party data",
+          "website analytics for business"
         ]
       },
       "robots": "index,follow,max-image-preview:large"
+    },
+    "hostOverrides": {
+      "zoositioweb.com": {
+        "seo": {
+          "canonicalOrigin": "https://zoositioweb.com.mx",
+          "enforceCanonicalHost": false,
+          "forceHttps": true
+        },
+        "googleTag": {
+          "enabled": true,
+          "environments": {
+            "local": false,
+            "test": true,
+            "production": true
+          },
+          "measurementIds": [
+            "G-QRWR768FCM"
+          ],
+          "sendPageView": false,
+          "attribution": {
+            "storage": "session",
+            "ttlDays": 90
+          },
+          "events": {
+            "page_view": "page_view",
+            "whatsapp_click": {
+              "name": "lead_conversion_whatsapp",
+              "params": {
+                "pyme_id": "zoositiowebcommx"
+              }
+            },
+            "cta_click": "cta_click",
+            "nav_click": "nav_click",
+            "scroll_depth": "scroll_depth"
+          }
+        }
+      },
+      "sitiosweb.zoolandingpage.com.mx": {
+        "seo": {
+          "canonicalOrigin": "https://zoositioweb.com.mx",
+          "enforceCanonicalHost": false,
+          "forceHttps": true
+        },
+        "googleTag": {
+          "enabled": true,
+          "environments": {
+            "local": false,
+            "test": true,
+            "production": true
+          },
+          "measurementIds": [
+            "G-QRWR768FCM"
+          ],
+          "sendPageView": false,
+          "attribution": {
+            "storage": "session",
+            "ttlDays": 90
+          },
+          "events": {
+            "page_view": "page_view",
+            "whatsapp_click": {
+              "name": "lead_conversion_whatsapp",
+              "params": {
+                "pyme_id": "zoositiowebcommx"
+              }
+            },
+            "cta_click": "cta_click",
+            "nav_click": "nav_click",
+            "scroll_depth": "scroll_depth"
+          }
+        }
+      },
+      "quierounsitioweb.zoolandingpage.com.mx": {
+        "seo": {
+          "canonicalOrigin": "https://zoositioweb.com.mx",
+          "enforceCanonicalHost": false,
+          "forceHttps": true
+        },
+        "googleTag": {
+          "enabled": true,
+          "environments": {
+            "local": false,
+            "test": true,
+            "production": true
+          },
+          "measurementIds": [
+            "G-QRWR768FCM"
+          ],
+          "sendPageView": false,
+          "attribution": {
+            "storage": "session",
+            "ttlDays": 90
+          },
+          "events": {
+            "page_view": "page_view",
+            "whatsapp_click": {
+              "name": "lead_conversion_whatsapp",
+              "params": {
+                "pyme_id": "zoositiowebcommx"
+              }
+            },
+            "cta_click": "cta_click",
+            "nav_click": "nav_click",
+            "scroll_depth": "scroll_depth"
+          }
+        }
+      },
+      "crearpaginaweb.zoolandingpage.com.mx": {
+        "seo": {
+          "canonicalOrigin": "https://zoositioweb.com.mx",
+          "enforceCanonicalHost": false,
+          "forceHttps": true
+        },
+        "googleTag": {
+          "enabled": true,
+          "environments": {
+            "local": false,
+            "test": true,
+            "production": true
+          },
+          "measurementIds": [
+            "G-QRWR768FCM"
+          ],
+          "sendPageView": false,
+          "attribution": {
+            "storage": "session",
+            "ttlDays": 90
+          },
+          "events": {
+            "page_view": "page_view",
+            "whatsapp_click": {
+              "name": "lead_conversion_whatsapp",
+              "params": {
+                "pyme_id": "zoositiowebcommx"
+              }
+            },
+            "cta_click": "cta_click",
+            "nav_click": "nav_click",
+            "scroll_depth": "scroll_depth"
+          }
+        }
+      },
+      "test.crearpaginaweb.zoolandingpage.com.mx": {
+        "seo": {
+          "canonicalOrigin": "https://zoositioweb.com.mx",
+          "enforceCanonicalHost": false,
+          "forceHttps": true
+        },
+        "googleTag": {
+          "enabled": false,
+          "environments": {
+            "local": false,
+            "test": false,
+            "production": false
+          },
+          "sendPageView": false,
+          "attribution": {
+            "storage": "session",
+            "ttlDays": 90
+          },
+          "events": {
+            "page_view": "page_view",
+            "whatsapp_click": {
+              "name": "lead_conversion_whatsapp",
+              "params": {
+                "pyme_id": "zoositiowebcommx"
+              }
+            },
+            "cta_click": "cta_click",
+            "nav_click": "nav_click",
+            "scroll_depth": "scroll_depth"
+          }
+        }
+      },
+      "test.quierounsitioweb.zoolandingpage.com.mx": {
+        "seo": {
+          "canonicalOrigin": "https://zoositioweb.com.mx",
+          "enforceCanonicalHost": false,
+          "forceHttps": true
+        },
+        "googleTag": {
+          "enabled": false,
+          "environments": {
+            "local": false,
+            "test": false,
+            "production": false
+          },
+          "sendPageView": false,
+          "attribution": {
+            "storage": "session",
+            "ttlDays": 90
+          },
+          "events": {
+            "page_view": "page_view",
+            "whatsapp_click": {
+              "name": "lead_conversion_whatsapp",
+              "params": {
+                "pyme_id": "zoositiowebcommx"
+              }
+            },
+            "cta_click": "cta_click",
+            "nav_click": "nav_click",
+            "scroll_depth": "scroll_depth"
+          }
+        }
+      },
+      "test.sitiosweb.zoolandingpage.com.mx": {
+        "seo": {
+          "canonicalOrigin": "https://zoositioweb.com.mx",
+          "enforceCanonicalHost": false,
+          "forceHttps": true
+        },
+        "googleTag": {
+          "enabled": false,
+          "environments": {
+            "local": false,
+            "test": false,
+            "production": false
+          },
+          "sendPageView": false,
+          "attribution": {
+            "storage": "session",
+            "ttlDays": 90
+          },
+          "events": {
+            "page_view": "page_view",
+            "whatsapp_click": {
+              "name": "lead_conversion_whatsapp",
+              "params": {
+                "pyme_id": "zoositiowebcommx"
+              }
+            },
+            "cta_click": "cta_click",
+            "nav_click": "nav_click",
+            "scroll_depth": "scroll_depth"
+          }
+        }
+      },
+      "test.zoosite.zoolandingpage.com.mx": {
+        "seo": {
+          "canonicalOrigin": "https://zoositioweb.com.mx",
+          "enforceCanonicalHost": false,
+          "forceHttps": true
+        },
+        "googleTag": {
+          "enabled": false,
+          "environments": {
+            "local": false,
+            "test": false,
+            "production": false
+          },
+          "sendPageView": false,
+          "attribution": {
+            "storage": "session",
+            "ttlDays": 90
+          },
+          "events": {
+            "page_view": "page_view",
+            "whatsapp_click": {
+              "name": "lead_conversion_whatsapp",
+              "params": {
+                "pyme_id": "zoositiowebcommx"
+              }
+            },
+            "cta_click": "cta_click",
+            "nav_click": "nav_click",
+            "scroll_depth": "scroll_depth"
+          }
+        }
+      },
+      "test.zoositioweb.com.mx": {
+        "seo": {
+          "canonicalOrigin": "https://zoositioweb.com.mx",
+          "enforceCanonicalHost": false,
+          "forceHttps": true
+        },
+        "googleTag": {
+          "enabled": false,
+          "environments": {
+            "local": false,
+            "test": false,
+            "production": false
+          },
+          "sendPageView": false,
+          "attribution": {
+            "storage": "session",
+            "ttlDays": 90
+          },
+          "events": {
+            "page_view": "page_view",
+            "whatsapp_click": {
+              "name": "lead_conversion_whatsapp",
+              "params": {
+                "pyme_id": "zoositiowebcommx"
+              }
+            },
+            "cta_click": "cta_click",
+            "nav_click": "nav_click",
+            "scroll_depth": "scroll_depth"
+          }
+        }
+      },
+      "test.zoositioweb.zoolandingpage.com.mx": {
+        "seo": {
+          "canonicalOrigin": "https://zoositioweb.com.mx",
+          "enforceCanonicalHost": false,
+          "forceHttps": true
+        },
+        "googleTag": {
+          "enabled": false,
+          "environments": {
+            "local": false,
+            "test": false,
+            "production": false
+          },
+          "sendPageView": false,
+          "attribution": {
+            "storage": "session",
+            "ttlDays": 90
+          },
+          "events": {
+            "page_view": "page_view",
+            "whatsapp_click": {
+              "name": "lead_conversion_whatsapp",
+              "params": {
+                "pyme_id": "zoositiowebcommx"
+              }
+            },
+            "cta_click": "cta_click",
+            "nav_click": "nav_click",
+            "scroll_depth": "scroll_depth"
+          }
+        }
+      }
     },
     "i18n": {
       "defaultLanguage": "es",
@@ -188,7 +540,7 @@
   },
   "defaults": {
     "brand": {
-      "displayName": "Zoosite"
+      "displayName": "zoositioweb"
     },
     "ui": {
       "contact": {
@@ -196,7 +548,7 @@
         "whatsappMessageKey": "ui.contact.headerLabel"
       },
       "loadingCurtain": {
-        "title": "Zoosite",
+        "title": "zoositioweb",
         "subtitle": "zoositioweb.com.mx",
         "background": "#ece7df",
         "foreground": "#17202a",
@@ -207,14 +559,15 @@
   },
   "runtime": {
     "localStorage": {
-      "theme": "zoosite-theme",
-      "language": "zoosite-language",
-      "userPreferences": "zoosite-preferences",
-      "id": "zoosite-id",
-      "sessionId": "zoosite-session-id",
-      "allowAnalytics": "zoosite-allow-analytics",
-      "analyticsConsentSnooze": "zoosite-allow-analytics-snooze",
-      "pageViewCount": "zoosite-page-view-count"
+      "theme": "zoositioweb-theme",
+      "language": "zoositioweb-language",
+      "userPreferences": "zoositioweb-preferences",
+      "id": "zoositioweb-id",
+      "sessionId": "zoositioweb-session-id",
+      "allowAnalytics": "zoositioweb-allow-analytics",
+      "analyticsConsentSnooze": "zoositioweb-allow-analytics-snooze",
+      "adAttribution": "zoositioweb-ad-attribution",
+      "pageViewCount": "zoositioweb-page-view-count"
     },
     "features": {
       "debugMode": false
@@ -273,6 +626,34 @@
             "by": 1
           }
         ]
+      },
+      "googleTag": {
+        "enabled": true,
+        "environments": {
+          "local": false,
+          "test": true,
+          "production": true
+        },
+        "measurementIds": [
+          "G-QRWR768FCM"
+        ],
+        "sendPageView": false,
+        "attribution": {
+          "storage": "session",
+          "ttlDays": 90
+        },
+        "events": {
+          "page_view": "page_view",
+          "whatsapp_click": {
+            "name": "lead_conversion_whatsapp",
+            "params": {
+              "pyme_id": "zoositiowebcommx"
+            }
+          },
+          "cta_click": "cta_click",
+          "nav_click": "nav_click",
+          "scroll_depth": "scroll_depth"
+        }
       }
     }
   },
