@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "sitios-web-para-pymesPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Sitios web para PyMEs en México | Zoosite",
-      "en": "Websites for small businesses in Mexico | Zoosite"
+      "es": "Sitios web para PyMEs con datos propios | zoositioweb",
+      "en": "Websites for small businesses with data | zoositioweb"
     },
     "description": {
-      "es": "Sitios web para PyMEs que necesitan verse profesionales, explicar sus servicios y recibir mensajes de clientes potenciales.",
-      "en": "Websites for small businesses that need to look professional, explain services, and receive potential customer messages."
+      "es": "Sitios web para PyMEs con oferta clara, páginas listas para campañas, contacto por WhatsApp y datos propios para entender qué genera interés.",
+      "en": "Websites for small businesses with clear offers, campaign-ready pages, WhatsApp contact, and first-party data to understand interest."
     },
     "openGraph": {
       "title": {
-        "es": "Sitios web para PyMEs en México | Zoosite",
-        "en": "Websites for small businesses in Mexico | Zoosite"
+        "es": "Sitios web para PyMEs con datos propios | zoositioweb",
+        "en": "Websites for small businesses with data | zoositioweb"
       },
       "description": {
-        "es": "Sitios web para PyMEs que necesitan verse profesionales, explicar sus servicios y recibir mensajes de clientes potenciales.",
-        "en": "Websites for small businesses that need to look professional, explain services, and receive potential customer messages."
+        "es": "Sitios web para PyMEs con oferta clara, páginas listas para campañas, contacto por WhatsApp y datos propios para entender qué genera interés.",
+        "en": "Websites for small businesses with clear offers, campaign-ready pages, WhatsApp contact, and first-party data to understand interest."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/sitios-web-para-pymes",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Sitios web para PyMEs en México | Zoosite",
-        "en": "Websites for small businesses in Mexico | Zoosite"
+        "es": "Sitios web para PyMEs con datos propios | zoositioweb",
+        "en": "Websites for small businesses with data | zoositioweb"
       },
       "description": {
-        "es": "Sitios web para PyMEs que necesitan verse profesionales, explicar sus servicios y recibir mensajes de clientes potenciales.",
-        "en": "Websites for small businesses that need to look professional, explain services, and receive potential customer messages."
+        "es": "Sitios web para PyMEs con oferta clara, páginas listas para campañas, contacto por WhatsApp y datos propios para entender qué genera interés.",
+        "en": "Websites for small businesses with clear offers, campaign-ready pages, WhatsApp contact, and first-party data to understand interest."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -52,12 +53,28 @@
       "es": [
         "sitios web para pymes",
         "pagina web para negocio",
-        "crear pagina web pyme"
+        "crear pagina web pyme",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "sitios web para pymes con analitica",
+        "pagina web para negocio mexico",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "websites for small businesses",
         "small business website",
-        "business website Mexico"
+        "business website Mexico",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "websites for small businesses with analytics",
+        "small business website Mexico",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -66,8 +83,8 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Sitios web para PyMEs en México | Zoosite",
-        "description": "Sitios web para PyMEs que necesitan verse profesionales, explicar sus servicios y recibir mensajes de clientes potenciales.",
+        "name": "Sitios web para PyMEs con datos propios | zoositioweb",
+        "description": "Sitios web para PyMEs con oferta clara, páginas listas para campañas, contacto por WhatsApp y datos propios para entender qué genera interés.",
         "url": "https://zoositioweb.com.mx/sitios-web-para-pymes",
         "inLanguage": "es"
       }

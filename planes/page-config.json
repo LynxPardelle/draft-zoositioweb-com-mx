@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "planesPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Planes de sitios web profesionales | Zoosite",
-      "en": "Professional website plans | Zoosite"
+      "es": "Planes de sitios web medibles para negocios | zoositioweb",
+      "en": "Measurable website plans for businesses | zoositioweb"
     },
     "description": {
-      "es": "Compara planes por resultado: presencia profesional, generación de clientes o crecimiento con más páginas y medición.",
-      "en": "Compare plans by outcome: professional presence, customer generation, or growth with more pages and measurement."
+      "es": "Compara planes para publicar tu sitio web, explicar mejor tus servicios, recibir contactos por WhatsApp y analizar datos propios por página o sector.",
+      "en": "Compare website plans to publish your site, explain services clearly, receive WhatsApp contacts, and analyze first-party data by page or sector."
     },
     "openGraph": {
       "title": {
-        "es": "Planes de sitios web profesionales | Zoosite",
-        "en": "Professional website plans | Zoosite"
+        "es": "Planes de sitios web medibles para negocios | zoositioweb",
+        "en": "Measurable website plans for businesses | zoositioweb"
       },
       "description": {
-        "es": "Compara planes por resultado: presencia profesional, generación de clientes o crecimiento con más páginas y medición.",
-        "en": "Compare plans by outcome: professional presence, customer generation, or growth with more pages and measurement."
+        "es": "Compara planes para publicar tu sitio web, explicar mejor tus servicios, recibir contactos por WhatsApp y analizar datos propios por página o sector.",
+        "en": "Compare website plans to publish your site, explain services clearly, receive WhatsApp contacts, and analyze first-party data by page or sector."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/planes",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Planes de sitios web profesionales | Zoosite",
-        "en": "Professional website plans | Zoosite"
+        "es": "Planes de sitios web medibles para negocios | zoositioweb",
+        "en": "Measurable website plans for businesses | zoositioweb"
       },
       "description": {
-        "es": "Compara planes por resultado: presencia profesional, generación de clientes o crecimiento con más páginas y medición.",
-        "en": "Compare plans by outcome: professional presence, customer generation, or growth with more pages and measurement."
+        "es": "Compara planes para publicar tu sitio web, explicar mejor tus servicios, recibir contactos por WhatsApp y analizar datos propios por página o sector.",
+        "en": "Compare website plans to publish your site, explain services clearly, receive WhatsApp contacts, and analyze first-party data by page or sector."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -52,12 +53,28 @@
       "es": [
         "precio pagina web",
         "planes sitios web",
-        "sitio web para negocio"
+        "sitio web para negocio",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "planes de sitios web para negocios",
+        "precios de paginas web mexico",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "website pricing",
         "website plans",
-        "business website plan"
+        "business website plan",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "website plans for businesses",
+        "website pricing Mexico",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -66,10 +83,52 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Planes de sitios web profesionales | Zoosite",
-        "description": "Compara planes por resultado: presencia profesional, generación de clientes o crecimiento con más páginas y medición.",
+        "name": "Planes de sitios web profesionales | zoositioweb",
+        "description": "Compara planes por resultado: presencia profesional, generación de clientes, crecimiento y analítica propia para decidir mejor.",
         "url": "https://zoositioweb.com.mx/planes",
         "inLanguage": "es"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Planes de sitios web profesionales",
+        "serviceType": "Desarrollo de sitios web profesionales",
+        "provider": {
+          "@type": "Organization",
+          "name": "zoositioweb",
+          "url": "https://zoositioweb.com.mx/"
+        },
+        "offers": {
+          "@type": "OfferCatalog",
+          "name": "Planes zoositioweb",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Presencia",
+              "price": "3000",
+              "priceCurrency": "MXN",
+              "url": "https://zoositioweb.com.mx/planes"
+            },
+            {
+              "@type": "Offer",
+              "name": "Clientes",
+              "price": "6000",
+              "priceCurrency": "MXN",
+              "url": "https://zoositioweb.com.mx/planes"
+            },
+            {
+              "@type": "Offer",
+              "name": "Crecimiento",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "10000",
+                "priceCurrency": "MXN",
+                "valueAddedTaxIncluded": false
+              },
+              "url": "https://zoositioweb.com.mx/planes"
+            }
+          ]
+        }
       }
     ]
   },

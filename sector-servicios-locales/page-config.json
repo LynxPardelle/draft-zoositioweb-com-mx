@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "sector-servicios-localesPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Sitios web para servicios locales | Zoosite",
-      "en": "Websites for local services | Zoosite"
+      "es": "Sitios web para servicios locales | zoositioweb",
+      "en": "Websites for local service businesses | zoositioweb"
     },
     "description": {
-      "es": "Presenta servicios, zonas de atención, disponibilidad y contacto por WhatsApp para negocios locales.",
-      "en": "Present services, service areas, availability, and WhatsApp contact for local businesses."
+      "es": "Sitios web para servicios locales con zonas de atención, cotización por WhatsApp y datos propios para detectar servicios con más demanda.",
+      "en": "Websites for local service businesses with service areas, WhatsApp quotes, and first-party data to detect high-demand services."
     },
     "openGraph": {
       "title": {
-        "es": "Sitios web para servicios locales | Zoosite",
-        "en": "Websites for local services | Zoosite"
+        "es": "Sitios web para servicios locales | zoositioweb",
+        "en": "Websites for local service businesses | zoositioweb"
       },
       "description": {
-        "es": "Presenta servicios, zonas de atención, disponibilidad y contacto por WhatsApp para negocios locales.",
-        "en": "Present services, service areas, availability, and WhatsApp contact for local businesses."
+        "es": "Sitios web para servicios locales con zonas de atención, cotización por WhatsApp y datos propios para detectar servicios con más demanda.",
+        "en": "Websites for local service businesses with service areas, WhatsApp quotes, and first-party data to detect high-demand services."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/sectores/servicios-locales",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Sitios web para servicios locales | Zoosite",
-        "en": "Websites for local services | Zoosite"
+        "es": "Sitios web para servicios locales | zoositioweb",
+        "en": "Websites for local service businesses | zoositioweb"
       },
       "description": {
-        "es": "Presenta servicios, zonas de atención, disponibilidad y contacto por WhatsApp para negocios locales.",
-        "en": "Present services, service areas, availability, and WhatsApp contact for local businesses."
+        "es": "Sitios web para servicios locales con zonas de atención, cotización por WhatsApp y datos propios para detectar servicios con más demanda.",
+        "en": "Websites for local service businesses with service areas, WhatsApp quotes, and first-party data to detect high-demand services."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -52,12 +53,29 @@
       "es": [
         "pagina web para servicios locales",
         "sitio web negocio local",
-        "web para servicios por zona"
+        "web para servicios por zona",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "sitio web para servicios locales",
+        "pagina web negocio local",
+        "web para cotizaciones por whatsapp",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "local service website",
         "website for local business",
-        "service area website"
+        "service area website",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "local business website",
+        "website for WhatsApp quotes",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -66,8 +84,8 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Sitios web para servicios locales | Zoosite",
-        "description": "Presenta servicios, zonas de atención, disponibilidad y contacto por WhatsApp para negocios locales.",
+        "name": "Sitios web para servicios locales | zoositioweb",
+        "description": "Sitios web para servicios locales con zonas de atención, cotización por WhatsApp y datos propios para detectar servicios con más demanda.",
         "url": "https://zoositioweb.com.mx/sectores/servicios-locales",
         "inLanguage": "es"
       }

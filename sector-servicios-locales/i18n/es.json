@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "Sector",
       "title": "Sitios web para servicios locales que quieren recibir solicitudes por zona.",
-      "lead": "Presenta qué haces, dónde atiendes, horarios, disponibilidad y contacto por WhatsApp para clientes que buscan resolver algo cerca.",
+      "lead": "Presenta qué haces, dónde atiendes, horarios, disponibilidad y contacto por WhatsApp para clientes que buscan resolver algo cerca. También dejamos medición para recopilar datos propios sobre interés por sector.",
       "primaryLabel": "Quiero un sitio para mi servicio local",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20un%20sitio%20web%20para%20mi%20servicio%20local.",
       "secondaryLabel": "Ver planes",
@@ -26,7 +26,7 @@
           },
           {
             "title": "Cómo se mide",
-            "content": "Clicks por sector, página e idioma para entender interés."
+            "content": "Nuestro sistema registra clicks por sector, página, idioma y acción de contacto para analizar interés."
           }
         ]
       }
@@ -43,9 +43,9 @@
         "detail": "Los servicios se explican con lenguaje sencillo y comercial."
       },
       {
-        "value": "WhatsApp",
-        "label": "Contacto ágil",
-        "detail": "El mensaje inicial llega con contexto para responder mejor."
+        "value": "Datos",
+        "label": "Interés medible",
+        "detail": "Las acciones ayudan a entender qué busca cada tipo de cliente."
       }
     ],
     "sections": [
@@ -69,7 +69,7 @@
           {
             "icon": "phone_android",
             "title": "Solicitud rápida",
-            "description": "El contacto por WhatsApp puede iniciar con el servicio de interés y la zona del cliente.",
+            "description": "Botones de WhatsApp con un mensaje inicial orientado al sector y acciones medibles para seguimiento.",
             "benefits": [
               "Servicio solicitado",
               "Ubicación del cliente",
@@ -95,7 +95,7 @@
       {
         "eyebrow": "Contenido recomendado",
         "title": "Secciones útiles para negocios de atención cercana.",
-        "lead": "El sitio debe ayudar a entender servicio, cobertura y siguiente paso sin rodeos.",
+        "lead": "Cada sector necesita sus propios matices, pero la base comercial y los datos de interacción ayudan a decidir mejor.",
         "cards": [
           {
             "icon": "home",
@@ -151,7 +151,7 @@
         },
         {
           "title": "¿Cómo ayudan a mi negocio?",
-          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos iniciales para tomar decisiones comerciales con más contexto."
+          "content": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos propios de interacción para tomar decisiones comerciales con más contexto."
         },
         {
           "title": "¿Qué información conviene preparar?",
@@ -166,7 +166,7 @@
     "final": {
       "eyebrow": "Sector",
       "title": "Crea una página clara para tu servicio local.",
-      "lead": "El mensaje de WhatsApp puede iniciar con tu giro y zona para orientar mejor la conversación.",
+      "lead": "El mensaje de WhatsApp ya incluye el sector para orientar la conversación y analizar mejor el interés.",
       "primaryLabel": "Quiero mi página de servicio local",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20para%20mi%20servicio%20local%20dentro%20de%20mi%20sitio%20web.",
       "secondaryLabel": "Ir a contacto"

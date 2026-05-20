@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "contactoPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Contacto para crear tu sitio web | Zoosite",
-      "en": "Contact to create your website | Zoosite"
+      "es": "Cotiza tu sitio web con medición propia | zoositioweb",
+      "en": "Quote your website with own measurement | zoositioweb"
     },
     "description": {
-      "es": "Inicia por WhatsApp con un mensaje guiado para revisar tu negocio, elegir plan y entender el siguiente paso.",
-      "en": "Start on WhatsApp with a guided message to review your business, choose a plan, and understand the next step."
+      "es": "Cuéntanos tu negocio por WhatsApp y recibe orientación sobre alcance, páginas, materiales y datos propios que conviene medir desde el inicio.",
+      "en": "Tell us about your business on WhatsApp and get guidance on scope, pages, materials, and first-party data worth measuring from the start."
     },
     "openGraph": {
       "title": {
-        "es": "Contacto para crear tu sitio web | Zoosite",
-        "en": "Contact to create your website | Zoosite"
+        "es": "Cotiza tu sitio web con medición propia | zoositioweb",
+        "en": "Quote your website with own measurement | zoositioweb"
       },
       "description": {
-        "es": "Inicia por WhatsApp con un mensaje guiado para revisar tu negocio, elegir plan y entender el siguiente paso.",
-        "en": "Start on WhatsApp with a guided message to review your business, choose a plan, and understand the next step."
+        "es": "Cuéntanos tu negocio por WhatsApp y recibe orientación sobre alcance, páginas, materiales y datos propios que conviene medir desde el inicio.",
+        "en": "Tell us about your business on WhatsApp and get guidance on scope, pages, materials, and first-party data worth measuring from the start."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/contacto",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Contacto para crear tu sitio web | Zoosite",
-        "en": "Contact to create your website | Zoosite"
+        "es": "Cotiza tu sitio web con medición propia | zoositioweb",
+        "en": "Quote your website with own measurement | zoositioweb"
       },
       "description": {
-        "es": "Inicia por WhatsApp con un mensaje guiado para revisar tu negocio, elegir plan y entender el siguiente paso.",
-        "en": "Start on WhatsApp with a guided message to review your business, choose a plan, and understand the next step."
+        "es": "Cuéntanos tu negocio por WhatsApp y recibe orientación sobre alcance, páginas, materiales y datos propios que conviene medir desde el inicio.",
+        "en": "Tell us about your business on WhatsApp and get guidance on scope, pages, materials, and first-party data worth measuring from the start."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -52,12 +53,28 @@
       "es": [
         "contacto sitio web",
         "cotizar pagina web",
-        "crear sitio web negocio"
+        "crear sitio web negocio",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "cotizar sitio web profesional",
+        "crear sitio web con whatsapp",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "website contact",
         "website quote",
-        "create business website"
+        "create business website",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "quote professional website",
+        "create website with WhatsApp contact",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -66,8 +83,8 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Contacto para crear tu sitio web | Zoosite",
-        "description": "Inicia por WhatsApp con un mensaje guiado para revisar tu negocio, elegir plan y entender el siguiente paso.",
+        "name": "Cotiza tu sitio web con medición propia | zoositioweb",
+        "description": "Cuéntanos tu negocio por WhatsApp y recibe orientación sobre alcance, páginas, materiales y datos propios que conviene medir desde el inicio.",
         "url": "https://zoositioweb.com.mx/contacto",
         "inLanguage": "es"
       }

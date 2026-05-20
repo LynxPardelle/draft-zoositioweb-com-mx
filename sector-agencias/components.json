@@ -27,7 +27,7 @@
         "benefitItemClasses": "ank-display-flex ank-alignItems-start ank-gap-8px ank-color-secondaryTextColor ank-fontSize-0_95rem ank-lineHeight-1_45",
         "benefitIconClasses": "ank-display-block ank-width-1rem ank-height-1rem ank-fontSize-1rem ank-color-successColor ank-flexShrink-0 ank-marginTop-2px",
         "benefitTextClasses": "ank-color-secondaryTextColor",
-        "linkClasses": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-whiteSpace-nowrap"
+        "linkClasses": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-alignSelf-start ank-gap-8px ank-marginTop-auto ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__linkColor ank-whiteSpace-nowrap ank-textAlign-center ank-width-100per"
       }
     },
     {
@@ -62,7 +62,7 @@
           "paddingBlock": "70px",
           "borderBottom": "1px solid var(--ank-secondaryBgColor)",
           "backgroundColor": "var(--ank-bgColor)",
-          "background": "radial-gradient(circle at 78% 20%, rgba(20, 184, 166, 0.18), transparent 34%), linear-gradient(180deg, var(--ank-secondaryBgColor), var(--ank-bgColor))"
+          "background": "radial-gradient(circle at 78% 20%, color-mix(in srgb, var(--ank-accentColor) 18%, transparent), transparent 34%), linear-gradient(180deg, var(--ank-secondaryBgColor), var(--ank-bgColor))"
         }
       }
     },
@@ -73,8 +73,8 @@
         "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-grid ank-gridTemplateColumns-1fr ank-gap-28px ank-alignItems-center",
         "components": [
-          "sector-agenciasHeroPanel",
-          "sector-agenciasHeroCopy"
+          "sector-agenciasHeroCopy",
+          "sector-agenciasHeroPanel"
         ],
         "styles": {
           "display": "grid",
@@ -103,7 +103,7 @@
           "backgroundColor": "var(--ank-bgColor)",
           "borderRadius": "8px",
           "border": "1px solid var(--ank-secondaryBgColor)",
-          "borderRight": "6px solid #14b8a6"
+          "borderRight": "6px solid var(--ank-accentColor)"
         }
       }
     },
@@ -114,7 +114,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -124,7 +127,7 @@
       "config": {
         "tag": "h1",
         "text": "",
-        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_6rem ank-fontSize-md-4_3rem ank-lineHeight-1_02 ank-fontWeight-800"
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_1rem ank-fontSize-md-3_2rem ank-lineHeight-1_05 ank-fontWeight-800"
       }
     },
     {
@@ -153,7 +156,8 @@
           "gap": "12px",
           "alignItems": "stretch",
           "rowGap": "28px",
-          "columnGap": "12px"
+          "columnGap": "12px",
+          "marginTop": "8px"
         }
       }
     },
@@ -166,7 +170,7 @@
         "href": "#",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
         "target": "_blank",
         "rel": "noopener noreferrer",
         "styles": {
@@ -175,7 +179,8 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "color": "var(--ank-onSuccessColor)"
         }
       }
     },
@@ -188,7 +193,7 @@
         "href": "/planes",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "classes": "ank-btnOutline-linkColor-bgColor ank-bgHover-secondaryBgColor ank-borderStyle-solid ank-borderWidth-1px ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-fontWeight-800 ank-textDecoration-none ank-textAlign-center",
         "target": "_self",
         "rel": "nofollow noopener noreferrer",
         "styles": {
@@ -215,7 +220,7 @@
         ],
         "styles": {
           "border": "1px solid var(--ank-secondaryBgColor)",
-          "borderTop": "6px solid #14b8a6",
+          "borderTop": "6px solid var(--ank-accentColor)",
           "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.13)",
           "backgroundColor": "var(--ank-secondaryBgColor)",
           "minHeight": "350px"
@@ -229,7 +234,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -265,10 +273,16 @@
         "containerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
         "defaultItemContainerClasses": "ank-border-1px__solid__secondaryBgColor ank-borderRadius-8px ank-bg-bgColor",
         "defaultItemButtonConfig": {
-          "classes": "ank-width-100per ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-900 ank-cursor-pointer"
+          "classes": "ank-width-100per ank-textAlign-left ank-padding-12px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontWeight-900 ank-cursor-pointer ank-display-flex ank-alignItems-center ank-justifyContent-spaceMINbetween ank-gap-10px",
+          "icon": "expand_more",
+          "iconPosition": "after",
+          "iconClasses": "ank-width-1_1rem ank-height-1_1rem ank-fontSize-1_1rem ank-flexShrink-0 ank-color-linkColor"
         },
-        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5"
-      }
+        "defaultItemPanelClasses": "ank-paddingInline-12px ank-paddingBottom-12px ank-color-secondaryTextColor ank-lineHeight-1_5",
+        "defaultItemButtonIsExpandedClasses": "ank-bg-secondaryBgColor",
+        "defaultItemIconIsExpandedClasses": "ank-color-accentColor"
+      },
+      "eventInstructions": "trackEvent:accordion_toggle,accordion,sector-agencias-hero-panel,page,sector-agencias,location,hero_panel,item,event.eventData.id,expanded,event.eventData.expanded"
     },
     {
       "id": "sector-agenciasStatsSection",
@@ -329,7 +343,7 @@
         "styles": {
           "borderLeft": "1px solid var(--ank-secondaryBgColor)",
           "boxShadow": "0 12px 28px rgba(0, 0, 0, 0.09)",
-          "borderTop": "5px solid #14b8a6"
+          "borderTop": "5px solid var(--ank-accentColor)"
         }
       }
     },
@@ -377,7 +391,7 @@
         "styles": {
           "borderLeft": "1px solid var(--ank-secondaryBgColor)",
           "boxShadow": "0 12px 28px rgba(0, 0, 0, 0.09)",
-          "borderTop": "5px solid #14b8a6"
+          "borderTop": "5px solid var(--ank-accentColor)"
         }
       }
     },
@@ -425,7 +439,7 @@
         "styles": {
           "borderLeft": "1px solid var(--ank-secondaryBgColor)",
           "boxShadow": "0 12px 28px rgba(0, 0, 0, 0.09)",
-          "borderTop": "5px solid #14b8a6"
+          "borderTop": "5px solid var(--ank-accentColor)"
         }
       }
     },
@@ -495,7 +509,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -624,7 +641,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -728,7 +748,7 @@
         ],
         "id": "contacto",
         "styles": {
-          "backgroundColor": "var(--ank-bgColor)"
+          "backgroundColor": "var(--ank-secondaryBgColor)"
         }
       }
     },
@@ -745,12 +765,11 @@
           "sector-agenciasFinalActions"
         ],
         "styles": {
-          "borderTop": "5px solid #14b8a6",
-          "boxShadow": "0 18px 44px rgba(0, 0, 0, 0.11)",
-          "backgroundColor": "var(--ank-secondaryBgColor)",
-          "border": "1px solid var(--ank-secondaryBgColor)",
-          "borderRadius": "8px",
-          "padding": "26px"
+          "display": "flex",
+          "flexDirection": "column",
+          "gap": "24px",
+          "alignItems": "flex-start",
+          "width": "100%"
         }
       }
     },
@@ -761,7 +780,10 @@
       "config": {
         "tag": "span",
         "text": "",
-        "classes": "ank-display-inline-flex ank-alignSelf-start ank-paddingInline-10px ank-paddingBlock-6px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-700 ank-fontSize-0_82rem"
+        "classes": "ank-d-none",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
@@ -799,8 +821,11 @@
           "flexWrap": "wrap",
           "gap": "12px",
           "alignItems": "stretch",
+          "justifyContent": "flex-end",
+          "alignSelf": "flex-end",
           "rowGap": "28px",
-          "columnGap": "12px"
+          "columnGap": "12px",
+          "maxWidth": "100%"
         }
       }
     },
@@ -813,7 +838,7 @@
         "href": "#",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
         "target": "_blank",
         "rel": "noopener noreferrer",
         "styles": {
@@ -822,7 +847,8 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "color": "var(--ank-onSuccessColor)"
         }
       }
     },
@@ -835,7 +861,7 @@
         "href": "/contacto",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-linkColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__linkColor",
+        "classes": "ank-btnOutline-linkColor-bgColor ank-bgHover-bgColor ank-borderStyle-solid ank-borderWidth-1px ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-fontWeight-800 ank-textDecoration-none ank-textAlign-center",
         "target": "_self",
         "rel": "nofollow noopener noreferrer",
         "styles": {

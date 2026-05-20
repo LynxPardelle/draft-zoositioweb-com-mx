@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "Plans by outcome",
       "title": "Choose the scope your business needs today.",
-      "lead": "Compare each plan by the result it provides: professional presence, more commercial clarity, or an expandable base for growth.",
+      "lead": "Compare each plan by the result it brings. Published prices are before VAT, the service is fully invoiceable, and support is human at each stage.",
       "primaryLabel": "Quote my website",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20quote%20a%20website%20for%20my%20business.%20I%20would%20like%20to%20know%20which%20plan%20can%20serve%20me.",
       "secondaryLabel": "Go to contact",
@@ -33,75 +33,111 @@
     },
     "stats": [
       {
-        "value": "$3,000",
+        "value": "MXN $3,000 before VAT",
         "label": "Presence",
-        "detail": "Publish a professional first version with offer, services, and clear contact."
+        "detail": "Publish a professional first version with offer, services, clear contact, and first test round in 5 days when the base is ready."
       },
       {
-        "value": "$6,000",
-        "label": "Customers",
-        "detail": "Add more pages or sections to explain services, answer questions, and guide inquiries."
+        "value": "MXN $6,000 before VAT",
+        "label": "Clients",
+        "detail": "Add more pages or sections to explain services, answer questions, and guide contacts with human support."
       },
       {
-        "value": "$10,000+",
+        "value": "MXN $10,000+ before VAT",
         "label": "Growth",
-        "detail": "Prepare an expandable base for sectors, campaigns, service lines, and commercial follow-up."
+        "detail": "Prepare an expandable foundation for sectors, campaigns, service lines, first-party data, and technology consulting."
       }
     ],
     "plansSection": {
       "eyebrow": "Compare",
       "title": "Clear plans by objective.",
-      "lead": "The table focuses on the commercial value of each plan and the kind of business it can serve."
+      "lead": "The table focuses on each plan's commercial value, the type of business it can serve, and the level of data worth collecting."
     },
     "plans": [
       {
         "id": "presencia",
         "name": "Presence",
-        "price": "MXN $3,000",
+        "price": "MXN $3,000 before VAT",
         "fit": "For businesses that want a professional, clear presence ready to receive first inquiries.",
         "result": "Expected result: a commercial base to explain what you do, who you serve, and how to start contact.",
         "benefits": [
-          "Business presentation and main services.",
+          "Presentation of the business and main services.",
           "WhatsApp contact with an initial message.",
-          "Clear content to publish a professional first version."
+          "Clear content, basic measurement, and a first test round in 5 days with complete base information."
+        ],
+        "technology": [
+          {
+            "id": "presencia-tech",
+            "title": "Technology details",
+            "content": "Lightweight base to publish a professional first version with basic own measurement.",
+            "detailItems": [
+              "Responsive website for mobile and desktop.",
+              "Delivery from cloud infrastructure.",
+              "Initial collection of visits, clicks, and contact actions."
+            ]
+          }
         ],
         "cta": "I am interested in Presence",
-        "url": "https://wa.me/525522699563?text=Hi%2C%20I%20am%20interested%20in%20the%20Presence%20plan%20for%20MXN%20%243%2C000%20for%20a%20website."
+        "url": "https://wa.me/525522699563?text=Hi%2C%20I%20am%20interested%20in%20the%20Presence%20plan%20at%20MXN%20%243%2C000%20before%20VAT%20for%20a%20website."
       },
       {
         "id": "clientes",
         "name": "Customers",
-        "price": "MXN $6,000",
+        "price": "MXN $6,000 before VAT",
         "fit": "For businesses that want to explain their offer with more depth and receive more qualified conversations.",
         "result": "Expected result: more clarity by service, plan, or customer profile.",
         "benefits": [
           "More sections or pages to explain the offer.",
           "Direct WhatsApp messages with more commercial context.",
-          "Measurement of key commercial interactions."
+          "Measurement of key commercial interactions with human support and technical guidance during the process."
+        ],
+        "technology": [
+          {
+            "id": "clientes-tech",
+            "title": "Technology details",
+            "content": "Structure designed to explain the offer better and analyze what creates more interest.",
+            "detailItems": [
+              "More public pages or sections organized by service or intent.",
+              "WhatsApp buttons with more specific messages.",
+              "Events by page, plan, or key commercial action inside our system."
+            ]
+          }
         ],
         "cta": "I am interested in Customers",
-        "url": "https://wa.me/525522699563?text=Hi%2C%20I%20am%20interested%20in%20the%20Customers%20plan%20for%20MXN%20%246%2C000%20for%20a%20website."
+        "url": "https://wa.me/525522699563?text=Hi%2C%20I%20am%20interested%20in%20the%20Clients%20plan%20at%20MXN%20%246%2C000%20before%20VAT%20for%20a%20website."
       },
       {
         "id": "crecimiento",
         "name": "Growth",
-        "price": "from MXN $10,000",
+        "price": "from MXN $10,000 before VAT",
         "fit": "For businesses with more offer depth, multiple audiences, or sector growth needs.",
         "result": "Expected result: an expandable base for pages, campaigns, and continuous learning.",
         "benefits": [
           "Content architecture to grow by topic or sector.",
-          "More commercial depth and decision-support elements.",
-          "Preparation for optimization and future improvements."
+          "Greater commercial depth and supporting elements for decisions.",
+          "Preparation for optimization, future improvements, and consulting in technology, data, and AI when it adds value."
+        ],
+        "technology": [
+          {
+            "id": "crecimiento-tech",
+            "title": "Technology details",
+            "content": "Base prepared to expand routes, content, measurement, and data analysis as the strategy grows.",
+            "detailItems": [
+              "Expandable architecture by sector, campaign, or service line.",
+              "Data by route, sector, plan, and call to action.",
+              "Preparation for continuous optimization and future integrations."
+            ]
+          }
         ],
         "cta": "I am interested in Growth",
-        "url": "https://wa.me/525522699563?text=Hi%2C%20I%20am%20interested%20in%20the%20Growth%20plan%20from%20MXN%20%2410%2C000%20for%20a%20website."
+        "url": "https://wa.me/525522699563?text=Hi%2C%20I%20am%20interested%20in%20the%20Growth%20plan%20from%20MXN%20%2410%2C000%20before%20VAT%20for%20a%20website."
       }
     ],
     "sections": [
       {
         "eyebrow": "How to decide",
         "title": "Choose the plan by stage and commercial objective.",
-        "lead": "The recommendation depends on how developed your offer is, how many services you need to explain, and how much information you want to learn from inquiries.",
+        "lead": "The recommendation depends on how developed your offer is, how many services you need to explain, and what data you want from interactions.",
         "cards": [
           {
             "icon": "star",
@@ -134,7 +170,7 @@
             "benefits": [
               "More depth",
               "New routes",
-              "Continuous measurement"
+              "Continuous data"
             ],
             "href": "",
             "linkLabel": ""
@@ -161,14 +197,14 @@
         },
         {
           "title": "Which plan fits campaigns?",
-          "content": "Customers or Growth usually provide more room for audience messaging, specific pages, and interest reading."
+          "content": "Clients or Growth usually give more space for audience messages, specific pages, and first-party data analysis by route."
         }
       ]
     },
     "final": {
       "eyebrow": "Choose",
       "title": "Ask for a plan recommendation.",
-      "lead": "We will reply with a clear route based on your business, materials, and desired result.",
+      "lead": "We will reply with a clear route based on your business, materials, desired result, and the signals worth measuring.",
       "primaryLabel": "Help me choose",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20help%20choosing%20a%20plan%20for%20my%20website.",
       "secondaryLabel": "Go to contact"

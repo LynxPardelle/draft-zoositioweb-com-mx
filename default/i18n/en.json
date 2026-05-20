@@ -7,52 +7,52 @@
     "hero": {
       "eyebrow": "Complete websites for businesses",
       "title": "Get more customers with a professional website.",
-      "lead": "We build complete websites for small businesses, professionals, and teams that want to explain their offer, project credibility, and receive ready-to-answer messages.",
+      "lead": "Starting at MXN $3,000 before VAT, we create complete websites for small businesses, professionals, and teams that need to explain their offer, receive WhatsApp contacts, and collect first-party data from day one.",
       "primaryLabel": "I want my website",
-      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20professional%20website%20for%20my%20business.%20I%20would%20like%20to%20know%20plans%2C%20timing%2C%20and%20what%20information%20you%20need%20to%20start.",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20quote%20a%20professional%20website%20for%20my%20business.",
       "secondaryLabel": "View plans",
       "panel": {
         "kicker": "Commercial base",
         "title": "The important details are clear from the first look.",
-        "lead": "Your website should explain your offer, show the value of your work, and make the first contact easy.",
+        "lead": "Your website should explain your offer, show the value of your work, make first contact easy, and create useful data for improvement.",
         "items": [
           {
-            "title": "Clear offer",
-            "content": "Pages and sections designed to answer real customer questions."
+            "title": "First round in 5 days",
+            "content": "With the base scope and materials ready, we can prepare a first test round in 5 days."
           },
           {
-            "title": "Direct contact",
-            "content": "WhatsApp buttons with clear messages to improve communication from the first hello."
+            "title": "Fully invoiceable",
+            "content": "Published prices are before VAT and the service can be fully invoiced."
           },
           {
-            "title": "Interest signals",
-            "content": "Tracking clicks and visited sections to understand what information people review most."
+            "title": "Human support",
+            "content": "Developers help with structure, publication, data, technology, and AI when it adds value."
           }
         ]
       }
     },
     "stats": [
       {
-        "value": "MXN $3,000",
-        "label": "Professional presence",
-        "detail": "A clear first version to publish your business and open conversations."
+        "value": "From MXN $3,000",
+        "label": "Before VAT",
+        "detail": "A clear first version to publish your business, measure interest, and open conversations."
       },
       {
-        "value": "ES / EN",
-        "label": "Bilingual reach",
-        "detail": "Content prepared in Spanish and English to serve markets and customers in both languages."
+        "value": "5 days",
+        "label": "First test round",
+        "detail": "When the base scope, materials, and minimum information arrive on time."
       },
       {
-        "value": "WhatsApp",
-        "label": "Immediate contact",
-        "detail": "Direct messages so customers arrive with more context from the first hello."
+        "value": "Human support",
+        "label": "Developers with you",
+        "detail": "We guide your website, data, cloud, technology, and AI decisions during the process."
       }
     ],
     "sections": [
       {
         "eyebrow": "What we sell",
         "title": "A complete website to present your business clearly.",
-        "lead": "The goal is for your business to have a clear, organized presence ready to turn visits into commercial conversations.",
+        "lead": "The goal is for your business to have a clear, organized presence ready to turn visits into commercial conversations and learn from first-party data.",
         "cards": [
           {
             "icon": "home",
@@ -80,12 +80,12 @@
           },
           {
             "icon": "analytics",
-            "title": "Commercial insight",
-            "description": "Clicks, viewed sections, and WhatsApp messages help identify what information creates more interest.",
+            "title": "First-party data and analysis",
+            "description": "Our system records clicks, viewed sections, and WhatsApp actions to analyze what information creates more interest.",
             "benefits": [
-              "Visited page",
-              "Visitor interest",
-              "Language and experience"
+              "Important clicks",
+              "Viewed sections",
+              "Interest by language or experience"
             ],
             "href": "",
             "linkLabel": ""
@@ -93,21 +93,21 @@
         ]
       },
       {
-        "eyebrow": "Initial sectors",
-        "title": "Specific messages for businesses serving customers every day.",
-        "lead": "These pages speak directly to industries where decisions depend on clarity, agile attention, and professional presentation.",
+        "eyebrow": "",
+        "title": "Websites for sectors where customers decide with clear information.",
+        "lead": "A well-oriented website helps present services, areas, service process, and next step according to the business type.",
         "cards": [
           {
             "icon": "favorite",
-            "title": "Clinics",
+            "title": "Medical clinics",
             "description": "Turn services, hours, location, and specialties into a clear page for potential patients.",
             "benefits": [
               "Visible specialties",
               "Location and hours",
               "Direct WhatsApp"
             ],
-            "href": "/sectores/consultorios?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
-            "linkLabel": "View clinics"
+            "href": "",
+            "linkLabel": ""
           },
           {
             "icon": "gavel",
@@ -118,42 +118,35 @@
               "Team profile",
               "Initial inquiry"
             ],
-            "href": "/sectores/despachos?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
-            "linkLabel": "View law firms"
+            "href": "",
+            "linkLabel": ""
           },
           {
             "icon": "home",
-            "title": "Real estate",
+            "title": "Real estate agencies",
             "description": "Show areas, featured properties, and service flow for buyers, sellers, or investors.",
             "benefits": [
               "Areas and properties",
-              "Sales process",
+              "Service process",
               "Fast contact"
             ],
-            "href": "/sectores/inmobiliarias?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
-            "linkLabel": "View real estate"
-          }
-        ]
-      },
-      {
-        "eyebrow": "More industries served",
-        "title": "We can also guide websites for other businesses.",
-        "lead": "The same commercial base adapts to local services, construction companies, and agencies when the business needs to explain offers, projects, or capabilities.",
-        "cards": [
+            "href": "",
+            "linkLabel": ""
+          },
           {
             "icon": "assignment",
-            "title": "Local services",
-            "description": "Ideal for nearby-service businesses selling by area, availability, and response speed.",
+            "title": "Local service businesses",
+            "description": "Organize services by area, availability, and quote path for nearby-service businesses.",
             "benefits": [
               "Services by area",
               "Fast quote",
               "Direct contact"
             ],
-            "href": "/sectores/servicios-locales?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
-            "linkLabel": "View local services"
+            "href": "",
+            "linkLabel": ""
           },
           {
-            "icon": "assignment",
+            "icon": "home",
             "title": "Construction companies",
             "description": "Helps show projects, types of work, work process, and how to request a review.",
             "benefits": [
@@ -161,20 +154,20 @@
               "Explained process",
               "Commercial request"
             ],
-            "href": "/sectores/constructoras?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
-            "linkLabel": "View construction companies"
+            "href": "",
+            "linkLabel": ""
           },
           {
-            "icon": "volunteer_activism",
-            "title": "Agencies",
+            "icon": "groups",
+            "title": "Digital marketing agencies",
             "description": "Allows agencies to present services, cases, team, and specific pages for acquisition campaigns.",
             "benefits": [
               "Modular services",
               "Cases and team",
               "Campaign pages"
             ],
-            "href": "/sectores/agencias?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en",
-            "linkLabel": "View agencies"
+            "href": "",
+            "linkLabel": ""
           }
         ]
       }
@@ -194,7 +187,7 @@
         },
         {
           "title": "How do you help my business?",
-          "content": "We turn your offer into a clear digital presence, with visible contact paths and initial data to make commercial decisions with more context."
+          "content": "We turn your offer into a clear digital presence, with visible contact paths and first-party interaction data to make commercial decisions with more context."
         },
         {
           "title": "What information should I prepare?",
@@ -208,11 +201,141 @@
     },
     "final": {
       "eyebrow": "Next step",
-      "title": "Let us talk about how you want customers to find you.",
-      "lead": "The initial message opens a conversation to understand your business, guide the plan, and define a first version with commercial direction.",
+      "title": "Let us talk about the website your business needs.",
+      "lead": "We help you organize the idea, choose the initial scope, and turn it into a first version ready to receive customers and collect useful data from the start.",
       "primaryLabel": "I want my website",
-      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20quote%20a%20professional%20website%20for%20my%20business.",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20a%20professional%20website%20for%20my%20business.%20I%20would%20like%20to%20know%20plans%2C%20timing%2C%20and%20what%20information%20you%20need%20to%20start.",
       "secondaryLabel": "Go to contact"
-    }
+    },
+    "sectorLinks": [
+      {
+        "label": "Websites for medical clinics",
+        "href": "/sectores/consultorios?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en"
+      },
+      {
+        "label": "Websites for law firms",
+        "href": "/sectores/despachos?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en"
+      },
+      {
+        "label": "Websites for real estate agencies",
+        "href": "/sectores/inmobiliarias?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en"
+      },
+      {
+        "label": "Websites for local service businesses",
+        "href": "/sectores/servicios-locales?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en"
+      },
+      {
+        "label": "Websites for construction companies",
+        "href": "/sectores/constructoras?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en"
+      },
+      {
+        "label": "Websites for digital marketing agencies",
+        "href": "/sectores/agencias?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=en"
+      }
+    ],
+    "teamSection": {
+      "eyebrow": "Expert team",
+      "title": "Your website is backed by software, cloud, data, and AI.",
+      "lead": "Our value is not only publishing pages. We combine software development, cloud architecture, data engineering, and AI so the site explains your offer better, measures interest with first-party data, and can grow with order.",
+      "linkLabel": "Meet the team"
+    },
+    "teamPreview": [
+      {
+        "name": "Alec Montaño",
+        "role": "Software development, cloud architecture, data engineering, and AI",
+        "proof": [
+          "Experience with large and international companies like Bimbo, McGraw Hill, and Audio Enhancement.",
+          "Cloud architecture, data engineering, AI, and measurable digital products."
+        ],
+        "imageSrc": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/team-photos/alec-montano.jpg",
+        "imageAlt": "Photo of Alec Montaño",
+        "badges": [
+          {
+            "icon": "cloud",
+            "label": "Cloud"
+          },
+          {
+            "icon": "auto_awesome",
+            "label": "AI"
+          },
+          {
+            "icon": "account_tree",
+            "label": "Architecture"
+          }
+        ]
+      },
+      {
+        "name": "Héctor Coronado",
+        "role": "Software development, cloud architecture, data engineering, and AI",
+        "proof": [
+          "Experience with Coppel.",
+          "Cloud architecture, AI, data, and software development for professional websites."
+        ],
+        "imageSrc": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/team-photos/hector-coronado.jpg",
+        "imageAlt": "Photo of Héctor Coronado",
+        "badges": [
+          {
+            "icon": "cloud",
+            "label": "Cloud"
+          },
+          {
+            "icon": "auto_awesome",
+            "label": "AI"
+          },
+          {
+            "icon": "analytics",
+            "label": "Data"
+          }
+        ]
+      },
+      {
+        "name": "Oswaldo García",
+        "role": "Web development and Google Ads",
+        "proof": [
+          "Key support in web development and Google Ads.",
+          "Building pages, components, and website adjustments."
+        ],
+        "imageSrc": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/team-photos/oswaldo-garcia.jpeg",
+        "imageAlt": "Photo of Oswaldo García",
+        "badges": [
+          {
+            "icon": "account_tree",
+            "label": "Web development"
+          },
+          {
+            "icon": "phone_android",
+            "label": "Responsive"
+          },
+          {
+            "icon": "saved_search",
+            "label": "Google Ads"
+          }
+        ]
+      },
+      {
+        "name": "Pamela Betancourt",
+        "role": "Design, marketing, and market analysis",
+        "proof": [
+          "Visual judgment and digital communication.",
+          "Marketing, data, and market analysis."
+        ],
+        "imageSrc": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/team-photos/pamela-betancourt.webp",
+        "imageAlt": "Photo of Pamela Betancourt",
+        "badges": [
+          {
+            "icon": "preview",
+            "label": "Design"
+          },
+          {
+            "icon": "trending_up",
+            "label": "Marketing"
+          },
+          {
+            "icon": "analytics",
+            "label": "Analysis"
+          }
+        ]
+      }
+    ]
   }
 }

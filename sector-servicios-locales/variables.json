@@ -2,5 +2,83 @@
   "version": 1,
   "domain": "zoositioweb.com.mx",
   "pageId": "sector-servicios-locales",
-  "variables": {}
+  "variables": {
+    "navigation": [
+      {
+        "id": "home",
+        "value": "/",
+        "labelKey": "nav.home"
+      },
+      {
+        "id": "services",
+        "value": "/servicios",
+        "labelKey": "nav.services"
+      },
+      {
+        "id": "plans",
+        "value": "/planes",
+        "labelKey": "nav.plans"
+      },
+      {
+        "id": "platform",
+        "value": "/plataforma",
+        "labelKey": "nav.platform"
+      },
+      {
+        "id": "faq",
+        "value": "/preguntas-frecuentes",
+        "labelKey": "nav.faq"
+      },
+      {
+        "id": "contact",
+        "value": "/contacto",
+        "labelKey": "nav.contact"
+      }
+    ],
+    "theme": {
+      "defaultMode": "light",
+      "palettes": {
+        "light": {
+          "bgColor": "#f0f4f2",
+          "textColor": "#17232f",
+          "titleColor": "#0c1722",
+          "linkColor": "#1f5f8b",
+          "accentColor": "#1f7a8c",
+          "secondaryBgColor": "#d3dde1",
+          "secondaryTextColor": "#2e3d45",
+          "secondaryTitleColor": "#0e1c26",
+          "secondaryLinkColor": "#1f5f8b",
+          "secondaryAccentColor": "#ff6b57",
+          "successColor": "#1f7a8c",
+          "onSuccessColor": "#ffffff",
+          "errorColor": "#dc3545",
+          "onErrorColor": "#3b0a10",
+          "warningColor": "#f97316",
+          "onWarningColor": "#2d1600",
+          "infoColor": "#1f5f8b",
+          "onInfoColor": "#041a2a"
+        },
+        "dark": {
+          "bgColor": "#0f171d",
+          "textColor": "#edf4f7",
+          "titleColor": "#ffffff",
+          "linkColor": "#80c5ee",
+          "accentColor": "#38bdf8",
+          "secondaryBgColor": "#1b2931",
+          "secondaryTextColor": "#c5d2d9",
+          "secondaryTitleColor": "#f7fbff",
+          "secondaryLinkColor": "#80c5ee",
+          "secondaryAccentColor": "#ff8a73",
+          "successColor": "#38bdf8",
+          "onSuccessColor": "#06110f",
+          "errorColor": "#ff8a93",
+          "onErrorColor": "#31070c",
+          "warningColor": "#fb923c",
+          "onWarningColor": "#2d1600",
+          "infoColor": "#80c5ee",
+          "onInfoColor": "#041a2a"
+        }
+      }
+    }
+  }
 }

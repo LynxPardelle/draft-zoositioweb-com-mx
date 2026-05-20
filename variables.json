@@ -25,6 +25,11 @@
         "labelKey": "nav.platform"
       },
       {
+        "id": "about",
+        "value": "/nosotros",
+        "labelKey": "nav.about"
+      },
+      {
         "id": "faq",
         "value": "/preguntas-frecuentes",
         "labelKey": "nav.faq"
@@ -36,7 +41,7 @@
       }
     ],
     "brand": {
-      "displayName": "Zoosite"
+      "displayName": "zoositioweb"
     },
     "ui": {
       "contact": {

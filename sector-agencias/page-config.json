@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "sector-agenciasPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Sitios web para agencias | Zoosite",
-      "en": "Websites for agencies | Zoosite"
+      "es": "Sitios web para agencias digitales | zoositioweb",
+      "en": "Websites for digital agencies | zoositioweb"
     },
     "description": {
-      "es": "Presenta servicios, casos, equipo y páginas para campañas de captación para agencias.",
-      "en": "Present services, cases, team, and campaign pages for agencies."
+      "es": "Sitios web para agencias digitales con servicios, casos, páginas por campaña, WhatsApp y datos propios para analizar captación.",
+      "en": "Websites for digital agencies with services, case pages, campaign pages, WhatsApp contact, and first-party acquisition data."
     },
     "openGraph": {
       "title": {
-        "es": "Sitios web para agencias | Zoosite",
-        "en": "Websites for agencies | Zoosite"
+        "es": "Sitios web para agencias digitales | zoositioweb",
+        "en": "Websites for digital agencies | zoositioweb"
       },
       "description": {
-        "es": "Presenta servicios, casos, equipo y páginas para campañas de captación para agencias.",
-        "en": "Present services, cases, team, and campaign pages for agencies."
+        "es": "Sitios web para agencias digitales con servicios, casos, páginas por campaña, WhatsApp y datos propios para analizar captación.",
+        "en": "Websites for digital agencies with services, case pages, campaign pages, WhatsApp contact, and first-party acquisition data."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/sectores/agencias",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Sitios web para agencias | Zoosite",
-        "en": "Websites for agencies | Zoosite"
+        "es": "Sitios web para agencias digitales | zoositioweb",
+        "en": "Websites for digital agencies | zoositioweb"
       },
       "description": {
-        "es": "Presenta servicios, casos, equipo y páginas para campañas de captación para agencias.",
-        "en": "Present services, cases, team, and campaign pages for agencies."
+        "es": "Sitios web para agencias digitales con servicios, casos, páginas por campaña, WhatsApp y datos propios para analizar captación.",
+        "en": "Websites for digital agencies with services, case pages, campaign pages, WhatsApp contact, and first-party acquisition data."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -52,12 +53,29 @@
       "es": [
         "pagina web para agencias",
         "sitio web agencia marketing",
-        "web para agencia de servicios"
+        "web para agencia de servicios",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "sitio web para agencia digital",
+        "pagina web agencia marketing",
+        "web para agencias con medicion",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "agency website",
         "marketing agency website",
-        "service agency website"
+        "service agency website",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "digital agency website",
+        "agency website with analytics",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -66,8 +84,8 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Sitios web para agencias | Zoosite",
-        "description": "Presenta servicios, casos, equipo y páginas para campañas de captación para agencias.",
+        "name": "Sitios web para agencias digitales | zoositioweb",
+        "description": "Sitios web para agencias digitales con servicios, casos, páginas por campaña, WhatsApp y datos propios para analizar captación.",
         "url": "https://zoositioweb.com.mx/sectores/agencias",
         "inLanguage": "es"
       }

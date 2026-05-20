@@ -7,7 +7,7 @@
     "hero": {
       "eyebrow": "Servicio completo",
       "title": "Convierte tu oferta en un sitio claro para vender.",
-      "lead": "Te acompañamos desde la idea hasta la publicación: estructura, textos, diseño, revisión en móvil y señales iniciales de interés.",
+      "lead": "Te acompañamos desde la idea hasta la publicación: estructura, textos, diseño, revisión en móvil y recopilación de datos propios para analizar interés real.",
       "primaryLabel": "Quiero revisar mi proyecto",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20revisar%20mi%20proyecto%20de%20sitio%20web.%20Mi%20negocio%20es%3A",
       "secondaryLabel": "Comparar planes",
@@ -25,8 +25,8 @@
             "content": "Escribimos textos comerciales en lenguaje directo para que el cliente entienda rápido tu valor."
           },
           {
-            "title": "Medición",
-            "content": "Registramos interacciones importantes para saber qué páginas y botones reciben más atención."
+            "title": "Datos propios",
+            "content": "Nuestro sistema registra interacciones importantes para saber qué páginas, secciones y botones reciben más atención."
           }
         ]
       }
@@ -44,15 +44,15 @@
       },
       {
         "value": "Datos",
-        "label": "Aprendizaje inicial",
-        "detail": "Lectura básica de páginas, secciones y clicks importantes."
+        "label": "Datos y análisis",
+        "detail": "Lectura de páginas, secciones, clicks y acciones importantes desde el inicio."
       }
     ],
     "sections": [
       {
         "eyebrow": "Qué incluye",
         "title": "Una base lista para vender tu oferta.",
-        "lead": "Reunimos estrategia comercial, contenido, diseño y publicación para que tu sitio ayude a explicar tu negocio y abrir conversaciones.",
+        "lead": "Reunimos estrategia comercial, contenido, diseño, publicación y medición propia para que tu sitio ayude a explicar tu negocio y abrir conversaciones.",
         "cards": [
           {
             "icon": "account_tree",
@@ -68,11 +68,11 @@
           },
           {
             "icon": "assignment",
-            "title": "Texto comercial",
-            "description": "Redacción clara para explicar lo que vendes y por qué vale la pena escribirte.",
+            "title": "Texto comercial con apoyo de IA",
+            "description": "Usamos IA como apoyo para ordenar ideas, proponer textos y afinarlos con criterio comercial.",
             "benefits": [
               "Lenguaje directo",
-              "Preguntas frecuentes",
+              "Revisión humana",
               "Mensajes directos a WhatsApp"
             ],
             "href": "",
@@ -80,12 +80,12 @@
           },
           {
             "icon": "analytics",
-            "title": "Lectura de interés",
-            "description": "Se registra qué páginas, planes o sectores reciben más atención para orientar próximos ajustes.",
+            "title": "Datos propios y análisis",
+            "description": "Se recopila qué páginas, planes, sectores y botones reciben más atención para orientar próximos ajustes con evidencia.",
             "benefits": [
               "Clicks importantes",
-              "Secciones vistas",
-              "Idioma y experiencia"
+              "Secciones consultadas",
+              "Acciones hacia WhatsApp"
             ],
             "href": "",
             "linkLabel": ""
@@ -122,7 +122,7 @@
             "linkLabel": ""
           },
           {
-            "icon": "account_tree",
+            "icon": "auto_awesome",
             "title": "3. Producir el sitio",
             "description": "Creamos páginas y componentes con contenido claro para revisar y ajustar contigo.",
             "benefits": [
@@ -136,7 +136,7 @@
           {
             "icon": "rocket_launch",
             "title": "4. Publicar y ajustar",
-            "description": "Revisamos móvil y escritorio, afinamos detalles y dejamos la base lista para lectura inicial de interés.",
+            "description": "Revisamos móvil y escritorio, afinamos detalles y dejamos la base lista para recopilar datos propios de interés.",
             "benefits": [
               "Revisión visual",
               "Ajustes finales",
@@ -155,7 +155,7 @@
       "items": [
         {
           "title": "¿Qué entregan en el servicio?",
-          "content": "Un sitio con estructura, textos comerciales, diseño adaptable, contacto por WhatsApp y lectura inicial de interacciones."
+          "content": "Un sitio con estructura, textos comerciales, diseño adaptable, contacto por WhatsApp y lectura inicial de datos propios de interacción."
         },
         {
           "title": "¿Me ayudan a ordenar mis ideas?",
@@ -174,7 +174,7 @@
     "final": {
       "eyebrow": "Empezar",
       "title": "Cuéntanos qué vendes y qué quieres lograr con tu sitio.",
-      "lead": "Te orientamos para elegir alcance, páginas y contenido según el momento de tu negocio.",
+      "lead": "Te orientamos para elegir alcance, páginas, contenido y señales de datos que conviene medir según el momento de tu negocio.",
       "primaryLabel": "Revisar mi proyecto",
       "primaryUrl": "https://wa.me/525522699563?text=Hola%2C%20quiero%20revisar%20mi%20proyecto%20de%20sitio%20web%20y%20elegir%20el%20plan%20adecuado.",
       "secondaryLabel": "Ir a contacto"

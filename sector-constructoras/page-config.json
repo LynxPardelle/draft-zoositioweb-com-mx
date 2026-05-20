@@ -6,6 +6,7 @@
     "skipToMainLink",
     "siteHeader",
     "sector-constructorasPage",
+    "floatingWhatsAppCta",
     "siteFooter"
   ],
   "modalRootIds": [],
@@ -15,21 +16,21 @@
   },
   "seo": {
     "title": {
-      "es": "Sitios web para constructoras | Zoosite",
-      "en": "Websites for construction companies | Zoosite"
+      "es": "Sitios web para constructoras | zoositioweb",
+      "en": "Websites for construction companies | zoositioweb"
     },
     "description": {
-      "es": "Presenta proyectos, tipos de obra, proceso de trabajo y contacto comercial para constructoras.",
-      "en": "Present projects, work types, process, and commercial contact for construction companies."
+      "es": "Sitios web para constructoras con proyectos, tipos de obra, proceso de trabajo, WhatsApp y datos propios sobre interés comercial.",
+      "en": "Websites for construction companies with projects, work types, process, WhatsApp contact, and first-party commercial-interest data."
     },
     "openGraph": {
       "title": {
-        "es": "Sitios web para constructoras | Zoosite",
-        "en": "Websites for construction companies | Zoosite"
+        "es": "Sitios web para constructoras | zoositioweb",
+        "en": "Websites for construction companies | zoositioweb"
       },
       "description": {
-        "es": "Presenta proyectos, tipos de obra, proceso de trabajo y contacto comercial para constructoras.",
-        "en": "Present projects, work types, process, and commercial contact for construction companies."
+        "es": "Sitios web para constructoras con proyectos, tipos de obra, proceso de trabajo, WhatsApp y datos propios sobre interés comercial.",
+        "en": "Websites for construction companies with projects, work types, process, WhatsApp contact, and first-party commercial-interest data."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "url": "https://zoositioweb.com.mx/sectores/constructoras",
@@ -37,12 +38,12 @@
     },
     "twitter": {
       "title": {
-        "es": "Sitios web para constructoras | Zoosite",
-        "en": "Websites for construction companies | Zoosite"
+        "es": "Sitios web para constructoras | zoositioweb",
+        "en": "Websites for construction companies | zoositioweb"
       },
       "description": {
-        "es": "Presenta proyectos, tipos de obra, proceso de trabajo y contacto comercial para constructoras.",
-        "en": "Present projects, work types, process, and commercial contact for construction companies."
+        "es": "Sitios web para constructoras con proyectos, tipos de obra, proceso de trabajo, WhatsApp y datos propios sobre interés comercial.",
+        "en": "Websites for construction companies with projects, work types, process, WhatsApp contact, and first-party commercial-interest data."
       },
       "image": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
       "card": "summary_large_image"
@@ -52,12 +53,27 @@
       "es": [
         "pagina web para constructoras",
         "sitio web constructora",
-        "web para proyectos de construccion"
+        "web para proyectos de construccion",
+        "sitios web con analitica",
+        "analitica web propia",
+        "analisis de datos para sitios web",
+        "sitio web para constructora",
+        "pagina web empresa constructora",
+        "sitios web medibles",
+        "sitios web con datos propios",
+        "analitica web para negocios"
       ],
       "en": [
         "construction company website",
         "builder website",
-        "construction project website"
+        "construction project website",
+        "websites with analytics",
+        "first-party website data",
+        "website data analysis",
+        "construction projects website",
+        "measurable websites",
+        "websites with first-party data",
+        "website analytics for business"
       ]
     }
   },
@@ -66,8 +82,8 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Sitios web para constructoras | Zoosite",
-        "description": "Presenta proyectos, tipos de obra, proceso de trabajo y contacto comercial para constructoras.",
+        "name": "Sitios web para constructoras | zoositioweb",
+        "description": "Sitios web para constructoras con proyectos, tipos de obra, proceso de trabajo, WhatsApp y datos propios sobre interés comercial.",
         "url": "https://zoositioweb.com.mx/sectores/constructoras",
         "inLanguage": "es"
       }

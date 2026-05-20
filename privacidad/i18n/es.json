@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "privacidad",
+  "lang": "es",
+  "dictionary": {
+    "hero": {
+      "eyebrow": "Legal y datos",
+      "title": "Aviso de privacidad de zoositioweb.",
+      "lead": "Este aviso explica qué información podemos solicitar, cómo la usamos para orientar y construir sitios web, y cómo tratamos datos de contacto, facturación, analítica propia y herramientas de medición.",
+      "primaryLabel": "Hablar con nosotros",
+      "secondaryLabel": "Ver términos"
+    },
+    "content": {
+      "intro": "zoositioweb es un producto del equipo detrás de Zoolandingpage. Este texto es una versión operativa para el sitio; los datos fiscales del emisor se proporcionan durante el proceso de facturación.",
+      "sections": [
+        {
+          "title": "Responsable y contacto",
+          "body": "El equipo de zoositioweb es responsable de atender las solicitudes relacionadas con este sitio y los servicios ofrecidos. Puedes contactarnos por WhatsApp al +52 55 2269 9563 o desde la página de contacto para pedir aclaraciones sobre privacidad, datos o facturación."
+        },
+        {
+          "title": "Datos que podemos tratar",
+          "body": "Podemos recibir nombre, negocio, giro, ciudad, datos de contacto, materiales comerciales, logos, fotos, referencias, datos necesarios para facturación y mensajes que nos compartas por WhatsApp o por otros medios acordados."
+        },
+        {
+          "title": "Finalidades del tratamiento",
+          "body": "Usamos la información para responder solicitudes, recomendar un plan, preparar propuestas, construir y publicar el sitio, dar soporte humano, coordinar consultoría de tecnología y datos, emitir comprobantes fiscales y mejorar la experiencia del sitio."
+        },
+        {
+          "title": "Analítica, pauta y datos propios",
+          "body": "Nuestro sistema puede recopilar señales de interacción del sitio como páginas consultadas, secciones vistas, idioma elegido, clicks importantes y acciones hacia WhatsApp. Este sitio usa Google Analytics para medición, atribución y mejora de la experiencia; si después se activan Google Ads o Search Console, se usarán con el mismo cuidado, evitando enviar datos personales sensibles en URLs o eventos."
+        },
+        {
+          "title": "Proveedores y transferencias",
+          "body": "Podemos apoyarnos en proveedores de nube, hosting, mensajería, medición, facturación y herramientas de trabajo. También podemos colaborar con especialistas recomendados cuando el proyecto lo requiera. Sólo compartimos la información necesaria para operar, medir, facturar o dar soporte."
+        },
+        {
+          "title": "Derechos ARCO y opciones",
+          "body": "Puedes solicitar acceso, rectificación, cancelación u oposición sobre tus datos personales, así como pedir aclaraciones sobre el uso de tu información. Para hacerlo, escríbenos por WhatsApp o desde contacto con una descripción clara de la solicitud."
+        },
+        {
+          "title": "Cambios al aviso",
+          "body": "Podemos actualizar este aviso cuando cambien los servicios, herramientas, procesos de medición o requisitos legales. La versión publicada en esta página será la referencia vigente para zoositioweb.com.mx."
+        }
+      ]
+    },
+    "final": {
+      "title": "¿Tienes dudas sobre datos o privacidad?",
+      "lead": "Podemos explicarte qué información necesitamos para iniciar tu sitio y cómo evitamos pedir datos innecesarios en la primera conversación.",
+      "primaryLabel": "Ir a contacto",
+      "secondaryLabel": "Ver términos"
+    }
+  }
+}

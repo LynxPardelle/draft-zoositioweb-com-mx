@@ -6,23 +6,23 @@
   "dictionary": {
     "hero": {
       "eyebrow": "Team",
-      "title": "Technology, design, and marketing working for the website.",
-      "lead": "Zoosite combines web development, cloud, AI, design, ads, and analysis to build websites that explain a business with more clarity.",
+      "title": "Software, cloud, data, and AI for professional websites.",
+      "lead": "zoositioweb combines software development, cloud architecture, data engineering, AI, design, and web publishing to create clear, measurable sites prepared to collect first-party data from the start.",
       "primaryLabel": "I want to talk to the team",
-      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20talk%20with%20the%20Zoosite%20team%20about%20a%20website.",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20talk%20with%20the%20zoositioweb%20team%20about%20a%20website.",
       "secondaryLabel": "Go to contact",
       "panel": {
         "kicker": "Relevant experience",
         "title": "We show what each profile contributes to the project.",
-        "lead": "The page brings together useful professional experience to show how technology, design, and marketing combine.",
+        "lead": "The page brings together useful professional experience to show how software, cloud, data, AI, design, and web operation combine.",
         "items": [
           {
-            "title": "Cloud and AI",
-            "content": "Experience in architecture, integration, and digital products."
+            "title": "Software, cloud, and AI",
+            "content": "Architecture, integration, and digital products prepared to grow."
           },
           {
-            "title": "Design and marketing",
-            "content": "Visual judgment, ads, and market reading so the website connects with real customers."
+            "title": "Data and measurement",
+            "content": "Our system can collect interaction signals to improve website decisions."
           },
           {
             "title": "Complete web",
@@ -33,19 +33,19 @@
     },
     "stats": [
       {
-        "value": "Cloud",
+        "value": "Software",
+        "label": "Professional development",
+        "detail": "Experience in websites, web apps, and maintainable systems."
+      },
+      {
+        "value": "Cloud + AI",
         "label": "Technology base",
-        "detail": "Experience in cloud, AI, and full-stack development."
+        "detail": "Cloud architecture and AI to create, measure, and grow with order."
       },
       {
-        "value": "Marketing",
-        "label": "Commercial judgment",
-        "detail": "Ads, design, and market analysis to guide messages."
-      },
-      {
-        "value": "Web",
-        "label": "Complete product",
-        "detail": "Websites with content, design, and initial measurement."
+        "value": "Data",
+        "label": "Initial measurement",
+        "detail": "Collection and analysis of interactions to understand real interest."
       }
     ],
     "teamSection": {
@@ -56,36 +56,77 @@
     "team": [
       {
         "name": "Alec Montaño",
-        "role": "Cloud, AI, and full-stack development",
+        "role": "Software development, cloud architecture, data engineering, and AI",
         "proof": [
           "Experience with Bimbo, McGraw Hill, and Audio Enhancement.",
-          "Architecture, integration, and digital product.",
+          "Cloud architecture, data engineering, AI, and measurable digital products.",
           "Focus on measurable and maintainable systems."
         ],
-        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/alec.jpg",
-        "imageAlt": "Photo of Alec Montaño"
+        "imageSrc": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/team-photos/alec-montano.jpg",
+        "imageAlt": "Photo of Alec Montaño",
+        "badges": [
+          {
+            "icon": "cloud",
+            "label": "Cloud"
+          },
+          {
+            "icon": "auto_awesome",
+            "label": "AI"
+          },
+          {
+            "icon": "account_tree",
+            "label": "Architecture"
+          }
+        ]
       },
       {
         "name": "Héctor Coronado",
-        "role": "Cloud, AI, and full-stack development",
+        "role": "Software development, cloud architecture, data engineering, and AI",
         "proof": [
           "Experience with Coppel.",
-          "Backend and full-stack development.",
+          "Software development, cloud architecture, data engineering, and AI.",
           "Technology judgment for operation and scalability."
         ],
-        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/hector.jpg",
-        "imageAlt": "Photo of Héctor Coronado"
+        "imageSrc": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/team-photos/hector-coronado.jpg",
+        "imageAlt": "Photo of Héctor Coronado",
+        "badges": [
+          {
+            "icon": "cloud",
+            "label": "Cloud"
+          },
+          {
+            "icon": "auto_awesome",
+            "label": "AI"
+          },
+          {
+            "icon": "analytics",
+            "label": "Data"
+          }
+        ]
       },
       {
-        "name": "Oswaldo",
-        "role": "Web development and digital marketing",
+        "name": "Oswaldo García",
+        "role": "Web development and Google Ads",
         "proof": [
-          "Web development.",
-          "Google Ads and marketing with Pamela.",
-          "Final photo pending."
+          "Web development and Google Ads.",
+          "Building pages, components, and website adjustments."
         ],
-        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/oswaldo-placeholder.svg",
-        "imageAlt": "Oswaldo placeholder"
+        "imageSrc": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/team-photos/oswaldo-garcia.jpeg",
+        "imageAlt": "Photo of Oswaldo García",
+        "badges": [
+          {
+            "icon": "account_tree",
+            "label": "Web development"
+          },
+          {
+            "icon": "phone_android",
+            "label": "Responsive"
+          },
+          {
+            "icon": "saved_search",
+            "label": "Google Ads"
+          }
+        ]
       },
       {
         "name": "Pamela Betancourt",
@@ -95,19 +136,33 @@
           "Marketing and market data analysis.",
           "Focus on clarity for the end customer."
         ],
-        "imageSrc": "/drafts/zoositioweb.com.mx/CVs_N_photos/pamelaBetancourt.webp",
-        "imageAlt": "Photo of Pamela Betancourt"
+        "imageSrc": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/team-photos/pamela-betancourt.webp",
+        "imageAlt": "Photo of Pamela Betancourt",
+        "badges": [
+          {
+            "icon": "preview",
+            "label": "Design"
+          },
+          {
+            "icon": "trending_up",
+            "label": "Marketing"
+          },
+          {
+            "icon": "analytics",
+            "label": "Analysis"
+          }
+        ]
       }
     ],
     "sections": [
       {
         "eyebrow": "How we collaborate",
-        "title": "The website is decided through business, design, and operation.",
-        "lead": "This mix helps the project connect the offer, the visual experience, and digital operation.",
+        "title": "The website is decided through product, data, and operation.",
+        "lead": "This mix helps connect the offer, visual experience, applied AI, first-party data, and digital operation.",
         "cards": [
           {
             "icon": "home",
-            "title": "Business",
+            "title": "Product",
             "description": "First we understand offer, customer, frequent questions, and contact priority.",
             "benefits": [
               "Clear offer",
@@ -119,12 +174,12 @@
           },
           {
             "icon": "auto_awesome",
-            "title": "Design",
-            "description": "The experience should look professional and be easy to scan.",
+            "title": "Applied AI",
+            "description": "AI helps structure ideas, accelerate initial content, and organize information with human review.",
             "benefits": [
-              "Visual hierarchy",
-              "Responsive",
-              "Visual proof"
+              "Structured content",
+              "Better clarity",
+              "Team review"
             ],
             "href": "",
             "linkLabel": ""
@@ -132,7 +187,7 @@
           {
             "icon": "cloud",
             "title": "Operation",
-            "description": "The technology base should be reviewable, measurable, and ready to grow.",
+            "description": "The technology base should be reviewable, measurable, ready to grow, and able to collect useful data.",
             "benefits": [
               "Local review",
               "Measurement",
@@ -159,7 +214,7 @@
         },
         {
           "title": "How do you help my business?",
-          "content": "We turn your offer into a clear digital presence, with visible contact paths and initial data to make commercial decisions with more context."
+          "content": "We turn your offer into a clear digital presence, with visible contact paths and first-party interaction data to make commercial decisions with more context."
         },
         {
           "title": "What information should I prepare?",
@@ -174,10 +229,18 @@
     "final": {
       "eyebrow": "Contact",
       "title": "Let us discuss the website your business needs.",
-      "lead": "The team can guide structure, plan, and first scope.",
+      "lead": "The team can guide structure, plan, first scope, and the data signals worth collecting.",
       "primaryLabel": "Talk to the team",
-      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20talk%20with%20the%20Zoosite%20team%20about%20my%20website.",
+      "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20talk%20with%20the%20zoositioweb%20team%20about%20my%20website.",
       "secondaryLabel": "Go to contact"
+    },
+    "pamelaReferral": {
+      "eyebrow": "Recommended collaborator",
+      "title": "Pamela Betancourt for marketing, social media, and web communication.",
+      "lead": "When a project needs marketing strategy, social media, or messaging for web presence, we recommend working with Pamela Betancourt.",
+      "proof": "She is a close project collaborator and a useful reference for businesses that want to connect their message with real customers.",
+      "primaryLabel": "Visit Pamela Betancourt",
+      "primaryUrl": "https://pamelabetancourt.zoolandingpage.com.mx/"
     }
   }
 }

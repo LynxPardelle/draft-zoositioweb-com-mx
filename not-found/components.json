@@ -125,7 +125,7 @@
         "href": "/",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-white ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
+        "classes": "ank-d-block ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-18px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__successColor ank-textAlign-center",
         "target": "_self",
         "rel": "nofollow noopener noreferrer",
         "styles": {
@@ -134,7 +134,8 @@
           "minWidth": "min(100%, 156px)",
           "overflowWrap": "anywhere",
           "textAlign": "center",
-          "flexShrink": "0"
+          "flexShrink": "0",
+          "color": "var(--ank-onSuccessColor)"
         }
       }
     },
