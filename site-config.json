@@ -165,15 +165,20 @@
       "canonicalOrigin": "https://zoositioweb.com.mx",
       "enforceCanonicalHost": true,
       "forceHttps": true,
-      "defaultImage": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/seo-images/zoositioweb-share-card-wordmark.svg",
+      "defaultImage": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/seo-images/zoositioweb-share-card-wordmark.jpg",
       "openGraph": {
         "type": "website",
         "site_name": "zoositioweb",
-        "image": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/seo-images/zoositioweb-share-card-wordmark.svg"
+        "image": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/seo-images/zoositioweb-share-card-wordmark.jpg",
+        "image:type": "image/jpeg",
+        "image:width": "1200",
+        "image:height": "630",
+        "image:alt": "Zoo Sitio Web wordmark"
       },
       "twitter": {
         "card": "summary_large_image",
-        "image": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/seo-images/zoositioweb-share-card-wordmark.svg"
+        "image": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/seo-images/zoositioweb-share-card-wordmark.jpg",
+        "image:alt": "Zoo Sitio Web wordmark"
       },
       "keywords": {
         "es": [
@@ -555,9 +560,15 @@
         "whatsappMessageKey": "ui.contact.headerLabel"
       },
       "loadingCurtain": {
-        "title": "zoositioweb",
+        "title": "Zoo Sitio Web",
         "subtitle": "zoositioweb.com.mx",
-        "exitDurationMs": 360
+        "exitDurationMs": 420,
+        "enabled": true,
+        "logoUrl": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/brand/zoolandingpage-zoositioweb-default-favicon.svg",
+        "background": "#ece7df",
+        "foreground": "#0d141c",
+        "accent": "#128c7e",
+        "minVisibleMs": 0
       }
     }
   },
