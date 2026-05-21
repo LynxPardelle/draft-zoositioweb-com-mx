@@ -153,6 +153,11 @@
       "version": "1.0.0",
       "description": "Complete websites for businesses with guided WhatsApp contact, cloud architecture, and first-party measurement from day one."
     },
+    "icons": {
+      "favicon": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/brand/zoolandingpage-zoositioweb-default-favicon.svg",
+      "maskIcon": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/brand/zoolandingpage-zoositioweb-default-favicon.svg",
+      "themeColor": "#128c7e"
+    },
     "seo": {
       "siteName": "zoositioweb",
       "title": "zoositioweb | Sitios web profesionales para negocios",
@@ -160,13 +165,15 @@
       "canonicalOrigin": "https://zoositioweb.com.mx",
       "enforceCanonicalHost": true,
       "forceHttps": true,
-      "defaultImage": "https://zoositioweb.com.mx/assets/og-1200x630.svg",
+      "defaultImage": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/seo-images/zoositioweb-share-card-wordmark.svg",
       "openGraph": {
         "type": "website",
-        "site_name": "zoositioweb"
+        "site_name": "zoositioweb",
+        "image": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/seo-images/zoositioweb-share-card-wordmark.svg"
       },
       "twitter": {
-        "card": "summary_large_image"
+        "card": "summary_large_image",
+        "image": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/seo-images/zoositioweb-share-card-wordmark.svg"
       },
       "keywords": {
         "es": [
