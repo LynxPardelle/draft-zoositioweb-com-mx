@@ -47,6 +47,17 @@
       "contact": {
         "whatsappPhone": "+525522699563",
         "whatsappMessageKey": "ui.contact.headerLabel"
+      },
+      "loadingCurtain": {
+        "enabled": true,
+        "title": "Zoo Sitio Web",
+        "subtitle": "zoositioweb.com.mx",
+        "logoUrl": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/brand/zoolandingpage-zoositioweb-default-favicon.svg",
+        "background": "#ece7df",
+        "foreground": "#0d141c",
+        "accent": "#128c7e",
+        "minVisibleMs": 0,
+        "exitDurationMs": 420
       }
     }
   }
