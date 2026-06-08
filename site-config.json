@@ -2,10 +2,7 @@
   "version": 1,
   "domain": "zoositioweb.com.mx",
   "aliases": [
-    "zoositioweb.com",
-    "sitiosweb.zoolandingpage.com.mx",
-    "quierounsitioweb.zoolandingpage.com.mx",
-    "crearpaginaweb.zoolandingpage.com.mx"
+    "zoositioweb.com"
   ],
   "defaultPageId": "default",
   "notFoundPageId": "not-found",
@@ -204,111 +201,6 @@
     },
     "hostOverrides": {
       "zoositioweb.com": {
-        "seo": {
-          "canonicalOrigin": "https://zoositioweb.com.mx",
-          "enforceCanonicalHost": false,
-          "forceHttps": true
-        },
-        "googleTag": {
-          "enabled": true,
-          "environments": {
-            "local": false,
-            "test": true,
-            "production": true
-          },
-          "measurementIds": [
-            "G-QRWR768FCM"
-          ],
-          "sendPageView": false,
-          "attribution": {
-            "storage": "session",
-            "ttlDays": 90
-          },
-          "events": {
-            "page_view": "page_view",
-            "whatsapp_click": {
-              "name": "lead_conversion_whatsapp",
-              "params": {
-                "pyme_id": "zoositiowebcommx"
-              }
-            },
-            "cta_click": "cta_click",
-            "nav_click": "nav_click",
-            "scroll_depth": "scroll_depth"
-          }
-        }
-      },
-      "sitiosweb.zoolandingpage.com.mx": {
-        "seo": {
-          "canonicalOrigin": "https://zoositioweb.com.mx",
-          "enforceCanonicalHost": false,
-          "forceHttps": true
-        },
-        "googleTag": {
-          "enabled": true,
-          "environments": {
-            "local": false,
-            "test": true,
-            "production": true
-          },
-          "measurementIds": [
-            "G-QRWR768FCM"
-          ],
-          "sendPageView": false,
-          "attribution": {
-            "storage": "session",
-            "ttlDays": 90
-          },
-          "events": {
-            "page_view": "page_view",
-            "whatsapp_click": {
-              "name": "lead_conversion_whatsapp",
-              "params": {
-                "pyme_id": "zoositiowebcommx"
-              }
-            },
-            "cta_click": "cta_click",
-            "nav_click": "nav_click",
-            "scroll_depth": "scroll_depth"
-          }
-        }
-      },
-      "quierounsitioweb.zoolandingpage.com.mx": {
-        "seo": {
-          "canonicalOrigin": "https://zoositioweb.com.mx",
-          "enforceCanonicalHost": false,
-          "forceHttps": true
-        },
-        "googleTag": {
-          "enabled": true,
-          "environments": {
-            "local": false,
-            "test": true,
-            "production": true
-          },
-          "measurementIds": [
-            "G-QRWR768FCM"
-          ],
-          "sendPageView": false,
-          "attribution": {
-            "storage": "session",
-            "ttlDays": 90
-          },
-          "events": {
-            "page_view": "page_view",
-            "whatsapp_click": {
-              "name": "lead_conversion_whatsapp",
-              "params": {
-                "pyme_id": "zoositiowebcommx"
-              }
-            },
-            "cta_click": "cta_click",
-            "nav_click": "nav_click",
-            "scroll_depth": "scroll_depth"
-          }
-        }
-      },
-      "crearpaginaweb.zoolandingpage.com.mx": {
         "seo": {
           "canonicalOrigin": "https://zoositioweb.com.mx",
           "enforceCanonicalHost": false,
