@@ -13,6 +13,29 @@
       "label": "Inicio"
     },
     {
+      "path": "/acceso",
+      "pageId": "acceso",
+      "label": "Acceso"
+    },
+    {
+      "path": "/auth/callback",
+      "pageId": "auth-callback",
+      "label": "Auth callback"
+    },
+    {
+      "path": "/mi-cuenta",
+      "pageId": "mi-cuenta",
+      "label": "Mi cuenta",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-client",
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
       "path": "/servicios",
       "pageId": "servicios",
       "label": "Servicios"
@@ -402,6 +425,11 @@
           "scroll_depth": "scroll_depth"
         }
       }
+    },
+    "authRemote": {
+      "enabled": true,
+      "authProfileId": "staff",
+      "endpoint": "/auth/runtime-config"
     }
   },
   "environments": {
