@@ -28,11 +28,7 @@
       "allowedGroups": [
         "zoosite-client",
         "zoosite-admin"
-      ],
-      "socialIdpSecretRefs": {
-        "google": "/zoolanding/auth/zoosite/staff/google",
-        "facebook": "/zoolanding/auth/zoosite/staff/facebook"
-      }
+      ]
     }
   ]
 }
