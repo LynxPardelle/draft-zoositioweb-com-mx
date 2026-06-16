@@ -135,8 +135,8 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
         "fieldClasses": "ank-display-flex ank-alignItems-center ank-gap-8px",
         "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor",
-        "passwordToggleClasses": "ank-flexShrink-0 ank-width-46px ank-height-46px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-cursor-pointer",
-        "passwordToggleIconClasses": "ank-display-block ank-width-20px ank-height-20px ank-color-titleColor",
+        "passwordToggleClasses": "ank-flexShrink-0 ank-width-44px ank-height-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-border-1px__solid__secondaryAccentColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-cursor-pointer",
+        "passwordToggleIconClasses": "ank-display-block ank-width-24px ank-height-24px ank-fontSize-1_2rem ank-color-titleColor",
         "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
         "validation": [
           {
