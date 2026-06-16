@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "confirmar-cuenta",
+  "rootIds": [
+    "confirmarCuentaRoot"
+  ],
+  "seo": {
+    "title": "Confirmar cuenta | zoositioweb",
+    "description": "Confirmación de cuenta privada de zoositioweb.",
+    "canonical": "https://zoositioweb.com.mx/confirmar-cuenta",
+    "robots": {
+      "default": "noindex,nofollow"
+    }
+  }
+}

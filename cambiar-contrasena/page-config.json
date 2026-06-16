@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "cambiar-contrasena",
+  "rootIds": [
+    "cambiarContrasenaRoot"
+  ],
+  "seo": {
+    "title": "Cambiar contraseña | zoositioweb",
+    "description": "Cambio de contraseña privado de zoositioweb.",
+    "canonical": "https://zoositioweb.com.mx/cambiar-contrasena",
+    "robots": {
+      "default": "noindex,nofollow"
+    }
+  }
+}
