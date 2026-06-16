@@ -31,7 +31,22 @@
       "allowedGroups": [
         "zoosite-client",
         "zoosite-admin"
-      ]
+      ],
+      "customAuth": {
+        "signin": {
+          "enabled": true
+        },
+        "signup": {
+          "enabled": true,
+          "setTenantClaim": true,
+          "defaultGroups": [
+            "zoosite-client"
+          ]
+        },
+        "passwordRecovery": {
+          "enabled": true
+        }
+      }
     }
   ]
 }
