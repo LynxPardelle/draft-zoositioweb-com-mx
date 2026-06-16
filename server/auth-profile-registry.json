@@ -5,13 +5,14 @@
       "domain": "zoositioweb.com.mx",
       "authProfileId": "staff",
       "tenantId": "zoosite",
-      "status": "planned",
+      "status": "active",
       "provider": "cognito",
-      "issuer": "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_ZOOSITEPLANNED",
+      "issuer": "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_Pq5OCadbK",
+      "userPoolId": "us-east-1_Pq5OCadbK",
       "hostedUiDomain": "https://zoosite-staff-planned.auth.us-east-1.amazoncognito.com",
-      "clientId": "zoosite-staff-public-client-planned",
+      "clientId": "16jb6ml9q5jdh6blj7f668fajp",
       "audiences": [
-        "zoosite-staff-public-client-planned"
+        "16jb6ml9q5jdh6blj7f668fajp"
       ],
       "callbackUrls": [
         "https://zoositioweb.com.mx/auth/callback",
@@ -23,6 +24,8 @@
       ],
       "loginPath": "/acceso",
       "logoutPath": "/acceso",
+      "postLoginPath": "/mi-cuenta",
+      "postLogoutPath": "/acceso",
       "tenantClaim": "custom:tenant_id",
       "groupClaim": "cognito:groups",
       "allowedGroups": [
