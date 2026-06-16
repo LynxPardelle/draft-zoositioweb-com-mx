@@ -183,7 +183,7 @@
         "href": "/acceso",
         "text": "Volver a iniciar sesión",
         "ariaLabel": "Volver a iniciar sesión",
-        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-textAlign-center",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-textAlign-center",
         "scrollRestoration": {
           "mode": "top"
         }
