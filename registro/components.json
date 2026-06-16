@@ -1,48 +1,48 @@
 {
   "version": 1,
   "domain": "zoositioweb.com.mx",
-  "pageId": "acceso",
+  "pageId": "registro",
   "components": [
     {
-      "id": "accesoRoot",
+      "id": "registroRoot",
       "type": "container",
       "config": {
         "tag": "main",
         "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-24px ank-p-24px ank-bg-bgColor ank-color-textColor",
         "components": [
-          "accesoShell",
-          "accesoFooter"
+          "registroShell",
+          "registroFooter"
         ]
       }
     },
     {
-      "id": "accesoShell",
+      "id": "registroShell",
       "type": "container",
       "config": {
         "tag": "section",
         "classes": "ank-width-100per ank-maxWidth-720px ank-display-flex ank-flexDirection-column ank-gap-22px ank-textAlign-left",
         "components": [
-          "accesoHeader",
-          "loginForm",
-          "loginLinks"
+          "registroHeader",
+          "signupForm",
+          "registroLinks"
         ]
       }
     },
     {
-      "id": "accesoHeader",
+      "id": "registroHeader",
       "type": "container",
       "config": {
         "tag": "header",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
-          "accesoEyebrow",
-          "accesoTitle",
-          "accesoBody"
+          "registroEyebrow",
+          "registroTitle",
+          "registroBody"
         ]
       }
     },
     {
-      "id": "accesoEyebrow",
+      "id": "registroEyebrow",
       "type": "text",
       "config": {
         "tag": "p",
@@ -51,50 +51,52 @@
       }
     },
     {
-      "id": "accesoTitle",
+      "id": "registroTitle",
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Accede a tu cuenta",
+        "text": "Crea tu cuenta",
         "classes": "ank-m-0 ank-fontSize-32px ank-lineHeight-1_1 ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
-      "id": "accesoBody",
+      "id": "registroBody",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Inicia sesión con tu correo. Si necesitas crear cuenta o recuperar contraseña, usa las opciones debajo del formulario.",
+        "text": "Usa tu correo y una contraseña segura. Después confirma el código que llegará a tu correo.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "loginForm",
+      "id": "signupForm",
       "type": "interaction-scope",
       "config": {
-        "scopeId": "zoositeLogin",
+        "scopeId": "zoositeSignup",
         "tag": "form",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-14px ank-p-24px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_10ED",
         "components": [
-          "loginTitle",
-          "loginEmail",
-          "loginPassword",
-          "loginError",
-          "loginSubmit"
+          "signupTitle",
+          "signupEmail",
+          "signupPassword",
+          "signupConfirmPassword",
+          "signupSuccess",
+          "signupError",
+          "signupSubmit"
         ]
       }
     },
     {
-      "id": "loginTitle",
+      "id": "signupTitle",
       "type": "text",
       "config": {
         "tag": "h2",
-        "text": "Iniciar sesión",
+        "text": "Crear cuenta",
         "classes": "ank-m-0 ank-fontSize-22px ank-lineHeight-1_2 ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
-      "id": "loginEmail",
+      "id": "signupEmail",
       "type": "input",
       "config": {
         "fieldId": "email",
@@ -119,7 +121,7 @@
       }
     },
     {
-      "id": "loginPassword",
+      "id": "signupPassword",
       "type": "input",
       "config": {
         "fieldId": "password",
@@ -141,53 +143,100 @@
         "validation": [
           {
             "type": "required",
-            "message": "Escribe tu contraseña."
+            "message": "Escribe una contraseña."
+          },
+          {
+            "type": "minLength",
+            "value": 12,
+            "message": "Usa al menos 12 caracteres."
+          },
+          {
+            "type": "pattern",
+            "value": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$",
+            "message": "Usa mayúsculas, minúsculas y números."
           }
         ]
       }
     },
     {
-      "id": "loginError",
+      "id": "signupConfirmPassword",
+      "type": "input",
+      "config": {
+        "fieldId": "confirmPassword",
+        "controlType": "text",
+        "inputType": "password",
+        "label": "Repetir contraseña",
+        "showPasswordToggle": true,
+        "showPasswordLabel": "Mostrar contraseña",
+        "hidePasswordLabel": "Ocultar contraseña",
+        "passwordToggleShowIcon": "preview",
+        "passwordToggleHideIcon": "visibility_off",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
+        "fieldClasses": "ank-display-flex ank-alignItems-center ank-gap-8px",
+        "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor",
+        "passwordToggleClasses": "ank-flexShrink-0 ank-width-46px ank-height-46px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-cursor-pointer",
+        "passwordToggleIconClasses": "ank-display-block ank-width-20px ank-height-20px ank-color-titleColor",
+        "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Repite la contraseña."
+          }
+        ]
+      }
+    },
+    {
+      "id": "signupSuccess",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No pudimos iniciar sesión con esos datos. Revisa tu correo, contraseña o confirmación de cuenta.",
-        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor"
+        "text": "Te enviamos un código de confirmación. Abre la página de confirmación para activar la cuenta.",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor"
       },
-      "condition": "all:varEq,authForm.signin.state,error"
+      "condition": "all:varEq,authForm.signup.state,success"
     },
     {
-      "id": "loginSubmit",
+      "id": "signupError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos crear la cuenta. Revisa los datos o intenta con otro correo.",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor"
+      },
+      "condition": "all:varEq,authForm.signup.state,error"
+    },
+    {
+      "id": "signupSubmit",
       "type": "button",
-      "eventInstructions": "authFormAction:signin,authForm.signin;trackEvent:auth_signin_submit,auth,zoosite-signin,location,access_page",
+      "eventInstructions": "authFormAction:signup,authForm.signup;trackEvent:auth_signup_submit,auth,zoosite-signup,location,register_page",
       "config": {
         "type": "button",
-        "label": "Entrar",
-        "ariaLabel": "Entrar a mi cuenta",
+        "label": "Crear cuenta",
+        "ariaLabel": "Crear cuenta en zoositioweb",
         "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
       }
     },
     {
-      "id": "loginLinks",
+      "id": "registroLinks",
       "type": "container",
       "config": {
         "tag": "nav",
         "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
         "components": [
-          "loginRegisterLink",
-          "loginRecoverLink",
-          "loginConfirmLink"
+          "registroConfirmLink",
+          "registroLoginLink"
         ]
       }
     },
     {
-      "id": "loginRegisterLink",
+      "id": "registroConfirmLink",
       "type": "link",
-      "eventInstructions": "trackEvent:auth_register_link_click,auth,zoosite-register,location,access_page",
+      "eventInstructions": "trackEvent:auth_confirm_link_click,auth,zoosite-confirm,location,register_page",
       "config": {
-        "href": "/registro",
-        "text": "Crear cuenta",
-        "ariaLabel": "Crear cuenta en zoositioweb",
+        "href": "/confirmar-cuenta",
+        "text": "Confirmar cuenta",
+        "ariaLabel": "Confirmar cuenta con código",
         "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-40px ank-paddingInline-12px ank-borderRadius-8px ank-color-linkColor ank-fontSize-14px ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-bg-transparent",
         "scrollRestoration": {
           "mode": "top"
@@ -195,13 +244,13 @@
       }
     },
     {
-      "id": "loginRecoverLink",
+      "id": "registroLoginLink",
       "type": "link",
-      "eventInstructions": "trackEvent:auth_recover_link_click,auth,zoosite-recover,location,access_page",
+      "eventInstructions": "trackEvent:auth_login_link_click,auth,zoosite-login,location,register_page",
       "config": {
-        "href": "/recuperar-contrasena",
-        "text": "Recuperar contraseña",
-        "ariaLabel": "Recuperar contraseña de zoositioweb",
+        "href": "/acceso",
+        "text": "Ya tengo cuenta",
+        "ariaLabel": "Volver a iniciar sesión",
         "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-38px ank-paddingInline-10px ank-borderRadius-8px ank-color-linkColor ank-fontSize-14px ank-fontWeight-700 ank-textDecoration-none",
         "scrollRestoration": {
           "mode": "top"
@@ -209,21 +258,7 @@
       }
     },
     {
-      "id": "loginConfirmLink",
-      "type": "link",
-      "eventInstructions": "trackEvent:auth_confirm_link_click,auth,zoosite-confirm,location,access_page",
-      "config": {
-        "href": "/confirmar-cuenta",
-        "text": "Ya tengo código",
-        "ariaLabel": "Confirmar cuenta con código",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-38px ank-paddingInline-10px ank-borderRadius-8px ank-color-linkColor ank-fontSize-14px ank-fontWeight-700 ank-textDecoration-none",
-        "scrollRestoration": {
-          "mode": "top"
-        }
-      }
-    },
-    {
-      "id": "accesoFooter",
+      "id": "registroFooter",
       "type": "text",
       "config": {
         "tag": "p",

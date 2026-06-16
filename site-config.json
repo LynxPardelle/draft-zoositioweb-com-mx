@@ -18,6 +18,26 @@
       "label": "Acceso"
     },
     {
+      "path": "/registro",
+      "pageId": "registro",
+      "label": "Crear cuenta"
+    },
+    {
+      "path": "/confirmar-cuenta",
+      "pageId": "confirmar-cuenta",
+      "label": "Confirmar cuenta"
+    },
+    {
+      "path": "/recuperar-contrasena",
+      "pageId": "recuperar-contrasena",
+      "label": "Recuperar contraseña"
+    },
+    {
+      "path": "/cambiar-contrasena",
+      "pageId": "cambiar-contrasena",
+      "label": "Cambiar contraseña"
+    },
+    {
       "path": "/auth/callback",
       "pageId": "auth-callback",
       "label": "Auth callback"
@@ -118,7 +138,14 @@
   ],
   "sitemap": {
     "excludePaths": [
-      "/404"
+      "/404",
+      "/acceso",
+      "/registro",
+      "/confirmar-cuenta",
+      "/recuperar-contrasena",
+      "/cambiar-contrasena",
+      "/auth/callback",
+      "/mi-cuenta"
     ]
   },
   "site": {

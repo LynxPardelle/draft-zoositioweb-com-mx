@@ -1,48 +1,48 @@
 {
   "version": 1,
   "domain": "zoositioweb.com.mx",
-  "pageId": "acceso",
+  "pageId": "cambiar-contrasena",
   "components": [
     {
-      "id": "accesoRoot",
+      "id": "cambiarContrasenaRoot",
       "type": "container",
       "config": {
         "tag": "main",
         "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-24px ank-p-24px ank-bg-bgColor ank-color-textColor",
         "components": [
-          "accesoShell",
-          "accesoFooter"
+          "cambiarContrasenaShell",
+          "cambiar-contrasenaFooter"
         ]
       }
     },
     {
-      "id": "accesoShell",
+      "id": "cambiarContrasenaShell",
       "type": "container",
       "config": {
         "tag": "section",
         "classes": "ank-width-100per ank-maxWidth-720px ank-display-flex ank-flexDirection-column ank-gap-22px ank-textAlign-left",
         "components": [
-          "accesoHeader",
-          "loginForm",
-          "loginLinks"
+          "cambiar-contrasenaHeader",
+          "resetPasswordForm",
+          "resetLinks"
         ]
       }
     },
     {
-      "id": "accesoHeader",
+      "id": "cambiar-contrasenaHeader",
       "type": "container",
       "config": {
         "tag": "header",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
-          "accesoEyebrow",
-          "accesoTitle",
-          "accesoBody"
+          "cambiar-contrasenaEyebrow",
+          "cambiar-contrasenaTitle",
+          "cambiar-contrasenaBody"
         ]
       }
     },
     {
-      "id": "accesoEyebrow",
+      "id": "cambiar-contrasenaEyebrow",
       "type": "text",
       "config": {
         "tag": "p",
@@ -51,50 +51,53 @@
       }
     },
     {
-      "id": "accesoTitle",
+      "id": "cambiar-contrasenaTitle",
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Accede a tu cuenta",
+        "text": "Cambia tu contraseña",
         "classes": "ank-m-0 ank-fontSize-32px ank-lineHeight-1_1 ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
-      "id": "accesoBody",
+      "id": "cambiar-contrasenaBody",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Inicia sesión con tu correo. Si necesitas crear cuenta o recuperar contraseña, usa las opciones debajo del formulario.",
+        "text": "Usa el código de recuperación y define una nueva contraseña segura.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "loginForm",
+      "id": "resetPasswordForm",
       "type": "interaction-scope",
       "config": {
-        "scopeId": "zoositeLogin",
+        "scopeId": "zoositeResetPassword",
         "tag": "form",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-14px ank-p-24px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_10ED",
         "components": [
-          "loginTitle",
-          "loginEmail",
-          "loginPassword",
-          "loginError",
-          "loginSubmit"
+          "resetPasswordTitle",
+          "resetPasswordEmail",
+          "resetPasswordCode",
+          "resetPasswordNewPassword",
+          "resetPasswordConfirmPassword",
+          "resetPasswordSuccess",
+          "resetPasswordError",
+          "resetPasswordSubmit"
         ]
       }
     },
     {
-      "id": "loginTitle",
+      "id": "resetPasswordTitle",
       "type": "text",
       "config": {
         "tag": "h2",
-        "text": "Iniciar sesión",
+        "text": "Cambiar contraseña",
         "classes": "ank-m-0 ank-fontSize-22px ank-lineHeight-1_2 ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
-      "id": "loginEmail",
+      "id": "resetPasswordEmail",
       "type": "input",
       "config": {
         "fieldId": "email",
@@ -119,13 +122,34 @@
       }
     },
     {
-      "id": "loginPassword",
+      "id": "resetPasswordCode",
+      "type": "input",
+      "config": {
+        "fieldId": "code",
+        "controlType": "text",
+        "inputType": "text",
+        "label": "Código",
+        "placeholder": "000000",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor",
+        "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Escribe el código."
+          }
+        ]
+      }
+    },
+    {
+      "id": "resetPasswordNewPassword",
       "type": "input",
       "config": {
         "fieldId": "password",
         "controlType": "text",
         "inputType": "password",
-        "label": "Contraseña",
+        "label": "Nueva contraseña",
         "showPasswordToggle": true,
         "showPasswordLabel": "Mostrar contraseña",
         "hidePasswordLabel": "Ocultar contraseña",
@@ -141,53 +165,100 @@
         "validation": [
           {
             "type": "required",
-            "message": "Escribe tu contraseña."
+            "message": "Escribe una nueva contraseña."
+          },
+          {
+            "type": "minLength",
+            "value": 12,
+            "message": "Usa al menos 12 caracteres."
+          },
+          {
+            "type": "pattern",
+            "value": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$",
+            "message": "Usa mayúsculas, minúsculas y números."
           }
         ]
       }
     },
     {
-      "id": "loginError",
+      "id": "resetPasswordConfirmPassword",
+      "type": "input",
+      "config": {
+        "fieldId": "confirmPassword",
+        "controlType": "text",
+        "inputType": "password",
+        "label": "Repetir nueva contraseña",
+        "showPasswordToggle": true,
+        "showPasswordLabel": "Mostrar contraseña",
+        "hidePasswordLabel": "Ocultar contraseña",
+        "passwordToggleShowIcon": "preview",
+        "passwordToggleHideIcon": "visibility_off",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
+        "fieldClasses": "ank-display-flex ank-alignItems-center ank-gap-8px",
+        "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor",
+        "passwordToggleClasses": "ank-flexShrink-0 ank-width-46px ank-height-46px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-cursor-pointer",
+        "passwordToggleIconClasses": "ank-display-block ank-width-20px ank-height-20px ank-color-titleColor",
+        "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Repite la nueva contraseña."
+          }
+        ]
+      }
+    },
+    {
+      "id": "resetPasswordSuccess",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No pudimos iniciar sesión con esos datos. Revisa tu correo, contraseña o confirmación de cuenta.",
-        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor"
+        "text": "Contraseña actualizada. Ya puedes iniciar sesión.",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor"
       },
-      "condition": "all:varEq,authForm.signin.state,error"
+      "condition": "all:varEq,authForm.confirmForgotPassword.state,success"
     },
     {
-      "id": "loginSubmit",
+      "id": "resetPasswordError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos cambiar la contraseña. Revisa el código y vuelve a intentar.",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor"
+      },
+      "condition": "all:varEq,authForm.confirmForgotPassword.state,error"
+    },
+    {
+      "id": "resetPasswordSubmit",
       "type": "button",
-      "eventInstructions": "authFormAction:signin,authForm.signin;trackEvent:auth_signin_submit,auth,zoosite-signin,location,access_page",
+      "eventInstructions": "authFormAction:confirmForgotPassword,authForm.confirmForgotPassword;trackEvent:auth_confirm_forgot_password_submit,auth,zoosite-reset-password,location,reset_page",
       "config": {
         "type": "button",
-        "label": "Entrar",
-        "ariaLabel": "Entrar a mi cuenta",
+        "label": "Actualizar contraseña",
+        "ariaLabel": "Actualizar contraseña",
         "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
       }
     },
     {
-      "id": "loginLinks",
+      "id": "resetLinks",
       "type": "container",
       "config": {
         "tag": "nav",
         "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
         "components": [
-          "loginRegisterLink",
-          "loginRecoverLink",
-          "loginConfirmLink"
+          "resetLoginLink",
+          "resetRecoverLink"
         ]
       }
     },
     {
-      "id": "loginRegisterLink",
+      "id": "resetLoginLink",
       "type": "link",
-      "eventInstructions": "trackEvent:auth_register_link_click,auth,zoosite-register,location,access_page",
+      "eventInstructions": "trackEvent:auth_login_link_click,auth,zoosite-login,location,reset_page",
       "config": {
-        "href": "/registro",
-        "text": "Crear cuenta",
-        "ariaLabel": "Crear cuenta en zoositioweb",
+        "href": "/acceso",
+        "text": "Iniciar sesión",
+        "ariaLabel": "Volver a iniciar sesión",
         "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-40px ank-paddingInline-12px ank-borderRadius-8px ank-color-linkColor ank-fontSize-14px ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-bg-transparent",
         "scrollRestoration": {
           "mode": "top"
@@ -195,13 +266,13 @@
       }
     },
     {
-      "id": "loginRecoverLink",
+      "id": "resetRecoverLink",
       "type": "link",
-      "eventInstructions": "trackEvent:auth_recover_link_click,auth,zoosite-recover,location,access_page",
+      "eventInstructions": "trackEvent:auth_recover_link_click,auth,zoosite-recover,location,reset_page",
       "config": {
         "href": "/recuperar-contrasena",
-        "text": "Recuperar contraseña",
-        "ariaLabel": "Recuperar contraseña de zoositioweb",
+        "text": "Pedir otro código",
+        "ariaLabel": "Pedir otro código de recuperación",
         "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-38px ank-paddingInline-10px ank-borderRadius-8px ank-color-linkColor ank-fontSize-14px ank-fontWeight-700 ank-textDecoration-none",
         "scrollRestoration": {
           "mode": "top"
@@ -209,21 +280,7 @@
       }
     },
     {
-      "id": "loginConfirmLink",
-      "type": "link",
-      "eventInstructions": "trackEvent:auth_confirm_link_click,auth,zoosite-confirm,location,access_page",
-      "config": {
-        "href": "/confirmar-cuenta",
-        "text": "Ya tengo código",
-        "ariaLabel": "Confirmar cuenta con código",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-38px ank-paddingInline-10px ank-borderRadius-8px ank-color-linkColor ank-fontSize-14px ank-fontWeight-700 ank-textDecoration-none",
-        "scrollRestoration": {
-          "mode": "top"
-        }
-      }
-    },
-    {
-      "id": "accesoFooter",
+      "id": "cambiar-contrasenaFooter",
       "type": "text",
       "config": {
         "tag": "p",
