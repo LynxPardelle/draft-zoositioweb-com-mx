@@ -100,7 +100,7 @@
     {
       "id": "miCuentaLogoutButton",
       "type": "button",
-      "eventInstructions": "authAction:logout;trackEvent:auth_logout_click,auth,zoosite-logout,location,account_page",
+      "eventInstructions": "authFormAction:logout,authForm.logout;trackEvent:auth_logout_click,auth,zoosite-logout,location,account_page",
       "config": {
         "type": "button",
         "label": "Cerrar sesión",
