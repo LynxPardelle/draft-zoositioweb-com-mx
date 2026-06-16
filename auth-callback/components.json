@@ -8,10 +8,22 @@
       "type": "container",
       "config": {
         "tag": "main",
-        "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-16px ank-p-32px ank-textAlign-center",
+        "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-20px ank-p-24px ank-bg-bgColor ank-color-textColor ank-textAlign-center",
+        "components": [
+          "authCallbackPanel"
+        ]
+      }
+    },
+    {
+      "id": "authCallbackPanel",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-maxWidth-520px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-14px ank-p-32px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08",
         "components": [
           "authCallbackTitle",
-          "authCallbackBody"
+          "authCallbackBody",
+          "authCallbackRetryButton"
         ]
       }
     },
@@ -20,8 +32,8 @@
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Auth callback",
-        "classes": "ank-m-0 ank-fontSize-32px ank-fontWeight-800 ank-color-titleColor"
+        "text": "Validando acceso",
+        "classes": "ank-m-0 ank-fontSize-30px ank-lineHeight-1_1 ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
@@ -29,8 +41,19 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Estamos preparando la validación de acceso privado.",
-        "classes": "ank-m-0 ank-maxWidth-640px ank-fontSize-18px ank-lineHeight-1_6 ank-color-textColor"
+        "text": "Si esta pantalla no avanza, vuelve a iniciar sesión.",
+        "classes": "ank-m-0 ank-maxWidth-420px ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "authCallbackRetryButton",
+      "type": "button",
+      "eventInstructions": "authAction:login;trackEvent:auth_callback_retry_click,auth,zoosite-callback-retry,location,auth_callback",
+      "config": {
+        "type": "button",
+        "label": "Volver a iniciar sesión",
+        "ariaLabel": "Volver a iniciar sesión en zoositioweb",
+        "classes": "ank-minHeight-46px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-15px ank-fontWeight-800 ank-cursor-pointer"
       }
     }
   ]

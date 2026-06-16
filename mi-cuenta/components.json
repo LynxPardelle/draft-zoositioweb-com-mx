@@ -8,11 +8,34 @@
       "type": "container",
       "config": {
         "tag": "main",
-        "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-16px ank-p-32px ank-textAlign-center",
+        "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-24px ank-p-24px ank-bg-bgColor ank-color-textColor",
         "components": [
-          "miCuentaTitle",
-          "miCuentaBody"
+          "miCuentaPanel"
         ]
+      }
+    },
+    {
+      "id": "miCuentaPanel",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-maxWidth-640px ank-display-flex ank-flexDirection-column ank-gap-18px ank-p-32px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-textAlign-left",
+        "components": [
+          "miCuentaEyebrow",
+          "miCuentaTitle",
+          "miCuentaBody",
+          "miCuentaStatus",
+          "miCuentaActions"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Área privada",
+        "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-700 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
       }
     },
     {
@@ -21,7 +44,7 @@
       "config": {
         "tag": "h1",
         "text": "Mi cuenta",
-        "classes": "ank-m-0 ank-fontSize-32px ank-fontWeight-800 ank-color-titleColor"
+        "classes": "ank-m-0 ank-fontSize-32px ank-lineHeight-1_1 ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
@@ -29,8 +52,60 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "El panel privado de zoositioweb está en preparación.",
-        "classes": "ank-m-0 ank-maxWidth-640px ank-fontSize-18px ank-lineHeight-1_6 ank-color-textColor"
+        "text": "Tu sesión está activa.",
+        "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "miCuentaStatus",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__secondaryBgColor",
+        "components": [
+          "miCuentaStatusTitle",
+          "miCuentaStatusBody"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaStatusTitle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Acceso validado",
+        "classes": "ank-m-0 ank-fontSize-15px ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "miCuentaStatusBody",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Puedes cerrar sesión cuando termines.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_5 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "miCuentaActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-alignItems-flexStart ank-gap-12px",
+        "components": [
+          "miCuentaLogoutButton"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaLogoutButton",
+      "type": "button",
+      "eventInstructions": "authAction:logout;trackEvent:auth_logout_click,auth,zoosite-logout,location,account_page",
+      "config": {
+        "type": "button",
+        "label": "Cerrar sesión",
+        "ariaLabel": "Cerrar sesión en zoositioweb",
+        "classes": "ank-minHeight-46px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-12px ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-cursor-pointer"
       }
     }
   ]

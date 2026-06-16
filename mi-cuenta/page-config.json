@@ -6,8 +6,8 @@
     "miCuentaRoot"
   ],
   "seo": {
-    "title": "Mi cuenta",
-    "description": "Protected placeholder for the Zoosite optional auth pilot.",
+    "title": "Mi cuenta | zoositioweb",
+    "description": "Área privada de zoositioweb.",
     "canonical": "https://zoositioweb.com.mx/mi-cuenta",
     "robots": {
       "default": "noindex,nofollow"

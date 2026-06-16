@@ -6,8 +6,8 @@
     "authCallbackRoot"
   ],
   "seo": {
-    "title": "Auth callback",
-    "description": "Pilot callback placeholder for Zoosite optional auth.",
+    "title": "Validando acceso | zoositioweb",
+    "description": "Validación de acceso privado de zoositioweb.",
     "canonical": "https://zoositioweb.com.mx/auth/callback",
     "robots": {
       "default": "noindex,nofollow"
