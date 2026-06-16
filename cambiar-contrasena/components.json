@@ -244,7 +244,7 @@
       "type": "container",
       "config": {
         "tag": "nav",
-        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
           "resetLoginLink",
           "resetRecoverLink"
@@ -259,7 +259,7 @@
         "href": "/acceso",
         "text": "Iniciar sesión",
         "ariaLabel": "Volver a iniciar sesión",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-40px ank-paddingInline-12px ank-borderRadius-8px ank-color-linkColor ank-fontSize-14px ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-bg-transparent",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryAccentColor ank-textAlign-center",
         "scrollRestoration": {
           "mode": "top"
         }
@@ -273,7 +273,7 @@
         "href": "/recuperar-contrasena",
         "text": "Pedir otro código",
         "ariaLabel": "Pedir otro código de recuperación",
-        "classes": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-38px ank-paddingInline-10px ank-borderRadius-8px ank-color-linkColor ank-fontSize-14px ank-fontWeight-700 ank-textDecoration-none",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-textAlign-center",
         "scrollRestoration": {
           "mode": "top"
         }
