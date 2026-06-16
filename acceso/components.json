@@ -8,11 +8,46 @@
       "type": "container",
       "config": {
         "tag": "main",
-        "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-16px ank-p-32px ank-textAlign-center",
+        "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-24px ank-p-24px ank-bg-bgColor ank-color-textColor",
         "components": [
+          "accesoPanel",
+          "accesoFooter"
+        ]
+      }
+    },
+    {
+      "id": "accesoPanel",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-maxWidth-520px ank-display-flex ank-flexDirection-column ank-gap-20px ank-p-32px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_12ED ank-textAlign-left",
+        "components": [
+          "accesoHeader",
+          "accesoPrimaryActions",
+          "accesoSecondaryActions"
+        ]
+      }
+    },
+    {
+      "id": "accesoHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "accesoEyebrow",
           "accesoTitle",
           "accesoBody"
         ]
+      }
+    },
+    {
+      "id": "accesoEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "zoositioweb",
+        "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-700 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
       }
     },
     {
@@ -20,8 +55,8 @@
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Acceso",
-        "classes": "ank-m-0 ank-fontSize-32px ank-fontWeight-800 ank-color-titleColor"
+        "text": "Accede a tu cuenta",
+        "classes": "ank-m-0 ank-fontSize-32px ank-lineHeight-1_1 ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
@@ -29,8 +64,73 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "El acceso privado de zoositioweb está en preparación.",
-        "classes": "ank-m-0 ank-maxWidth-640px ank-fontSize-18px ank-lineHeight-1_6 ank-color-textColor"
+        "text": "Entra con el correo que usas para gestionar tu sitio.",
+        "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "accesoPrimaryActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "accesoLoginButton",
+          "accesoSignupButton"
+        ]
+      }
+    },
+    {
+      "id": "accesoLoginButton",
+      "type": "button",
+      "eventInstructions": "authAction:login;trackEvent:auth_login_click,auth,zoosite-login,location,access_page",
+      "config": {
+        "type": "button",
+        "label": "Iniciar sesión",
+        "ariaLabel": "Iniciar sesión en zoositioweb",
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "accesoSignupButton",
+      "type": "button",
+      "eventInstructions": "authAction:signup;trackEvent:auth_signup_click,auth,zoosite-signup,location,access_page",
+      "config": {
+        "type": "button",
+        "label": "Crear cuenta",
+        "ariaLabel": "Crear cuenta en zoositioweb",
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "accesoSecondaryActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-alignItems-flexStart ank-gap-10px ank-pt-4px",
+        "components": [
+          "accesoForgotButton"
+        ]
+      }
+    },
+    {
+      "id": "accesoForgotButton",
+      "type": "button",
+      "eventInstructions": "authAction:forgotPassword;trackEvent:auth_password_recovery_click,auth,zoosite-forgot-password,location,access_page",
+      "config": {
+        "type": "button",
+        "label": "Recuperar contraseña",
+        "ariaLabel": "Recuperar contraseña de zoositioweb",
+        "classes": "ank-minHeight-40px ank-paddingInline-0 ank-paddingBlock-8px ank-border-0 ank-bg-transparent ank-color-linkColor ank-fontSize-15px ank-fontWeight-700 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "accesoFooter",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Si acabas de crear tu usuario, tu acceso al panel depende de los permisos asignados a tu cuenta.",
+        "classes": "ank-m-0 ank-maxWidth-520px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
       }
     }
   ]
