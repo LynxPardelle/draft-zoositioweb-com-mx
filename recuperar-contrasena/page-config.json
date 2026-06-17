@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "recuperar-contrasena",
+  "rootIds": [
+    "recuperarContrasenaRoot"
+  ],
+  "seo": {
+    "title": "Recuperar contraseña | zoositioweb",
+    "description": "Recuperación de contraseña privada de zoositioweb.",
+    "canonical": "https://zoositioweb.com.mx/recuperar-contrasena",
+    "robots": {
+      "default": "noindex,nofollow"
+    }
+  }
+}

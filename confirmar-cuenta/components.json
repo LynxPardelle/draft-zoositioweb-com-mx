@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "confirmar-cuenta",
+  "components": [
+    {
+      "id": "confirmarCuentaRoot",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-24px ank-p-24px ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "confirmarCuentaShell",
+          "confirmar-cuentaFooter"
+        ]
+      }
+    },
+    {
+      "id": "confirmarCuentaShell",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-maxWidth-720px ank-display-flex ank-flexDirection-column ank-gap-22px ank-textAlign-left",
+        "components": [
+          "confirmar-cuentaHeader",
+          "confirmSignupForm",
+          "resendSignupForm",
+          "confirmarCuentaLinks"
+        ]
+      }
+    },
+    {
+      "id": "confirmar-cuentaHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "confirmar-cuentaEyebrow",
+          "confirmar-cuentaTitle",
+          "confirmar-cuentaBody"
+        ]
+      }
+    },
+    {
+      "id": "confirmar-cuentaEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "zoositioweb",
+        "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-700 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
+      }
+    },
+    {
+      "id": "confirmar-cuentaTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Confirma tu cuenta",
+        "classes": "ank-m-0 ank-fontSize-32px ank-lineHeight-1_1 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "confirmar-cuentaBody",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Escribe el código que Cognito envió a tu correo. Si no lo tienes, puedes pedir uno nuevo.",
+        "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "confirmSignupForm",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "zoositeConfirmSignup",
+        "tag": "form",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-14px ank-p-24px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_10ED",
+        "components": [
+          "confirmSignupTitle",
+          "confirmSignupEmail",
+          "confirmSignupCode",
+          "confirmSignupSuccess",
+          "confirmSignupError",
+          "confirmSignupSubmit"
+        ]
+      }
+    },
+    {
+      "id": "confirmSignupTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Confirmar cuenta",
+        "classes": "ank-m-0 ank-fontSize-22px ank-lineHeight-1_2 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "confirmSignupEmail",
+      "type": "input",
+      "config": {
+        "fieldId": "email",
+        "controlType": "text",
+        "inputType": "email",
+        "label": "Correo",
+        "placeholder": "tu@correo.com",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor",
+        "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Escribe tu correo."
+          },
+          {
+            "type": "email",
+            "message": "Escribe un correo válido."
+          }
+        ]
+      }
+    },
+    {
+      "id": "confirmSignupCode",
+      "type": "input",
+      "config": {
+        "fieldId": "code",
+        "controlType": "text",
+        "inputType": "text",
+        "label": "Código",
+        "placeholder": "000000",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor",
+        "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Escribe el código."
+          }
+        ]
+      }
+    },
+    {
+      "id": "confirmSignupSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cuenta confirmada. Ya puedes iniciar sesión.",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor"
+      },
+      "condition": "all:varEq,authForm.confirmSignup.state,success"
+    },
+    {
+      "id": "confirmSignupError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos confirmar la cuenta. Revisa el correo y el código.",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor"
+      },
+      "condition": "all:varEq,authForm.confirmSignup.state,error"
+    },
+    {
+      "id": "confirmSignupSubmit",
+      "type": "button",
+      "eventInstructions": "authFormAction:confirmSignup,authForm.confirmSignup;trackEvent:auth_confirm_signup_submit,auth,zoosite-confirm-signup,location,confirm_account_page",
+      "config": {
+        "type": "button",
+        "label": "Confirmar cuenta",
+        "ariaLabel": "Confirmar cuenta",
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "resendSignupForm",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "zoositeResendSignup",
+        "tag": "form",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-14px ank-p-22px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08",
+        "components": [
+          "resendSignupTitle",
+          "resendSignupEmail",
+          "resendSignupSuccess",
+          "resendSignupError",
+          "resendSignupCode"
+        ]
+      }
+    },
+    {
+      "id": "resendSignupTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Reenviar código",
+        "classes": "ank-m-0 ank-fontSize-20px ank-lineHeight-1_2 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "resendSignupEmail",
+      "type": "input",
+      "config": {
+        "fieldId": "email",
+        "controlType": "text",
+        "inputType": "email",
+        "label": "Correo",
+        "placeholder": "tu@correo.com",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor",
+        "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Escribe tu correo."
+          },
+          {
+            "type": "email",
+            "message": "Escribe un correo válido."
+          }
+        ]
+      }
+    },
+    {
+      "id": "resendSignupSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Código reenviado. Revisa tu correo.",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor"
+      },
+      "condition": "all:varEq,authForm.resendConfirmation.state,success"
+    },
+    {
+      "id": "resendSignupError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos reenviar el código. Revisa el correo.",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor"
+      },
+      "condition": "all:varEq,authForm.resendConfirmation.state,error"
+    },
+    {
+      "id": "resendSignupCode",
+      "type": "button",
+      "eventInstructions": "authFormAction:resendConfirmation,authForm.resendConfirmation;trackEvent:auth_resend_confirmation_submit,auth,zoosite-resend-confirmation,location,confirm_account_page",
+      "config": {
+        "type": "button",
+        "label": "Reenviar código",
+        "ariaLabel": "Reenviar código de confirmación",
+        "classes": "ank-width-100per ank-minHeight-46px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-10px ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "confirmarCuentaLinks",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "confirmLoginLink",
+          "confirmRegisterLink"
+        ]
+      }
+    },
+    {
+      "id": "confirmLoginLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:auth_login_link_click,auth,zoosite-login,location,confirm_account_page",
+      "config": {
+        "href": "/acceso",
+        "text": "Iniciar sesión",
+        "ariaLabel": "Volver a iniciar sesión",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryAccentColor ank-textAlign-center",
+        "scrollRestoration": {
+          "mode": "top"
+        }
+      }
+    },
+    {
+      "id": "confirmRegisterLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:auth_register_link_click,auth,zoosite-register,location,confirm_account_page",
+      "config": {
+        "href": "/registro",
+        "text": "Crear cuenta",
+        "ariaLabel": "Crear cuenta nueva",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-textAlign-center",
+        "scrollRestoration": {
+          "mode": "top"
+        }
+      }
+    },
+    {
+      "id": "confirmar-cuentaFooter",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Los permisos de panel se asignan desde la cuenta de cliente.",
+        "classes": "ank-m-0 ank-maxWidth-720px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
+      }
+    }
+  ]
+}

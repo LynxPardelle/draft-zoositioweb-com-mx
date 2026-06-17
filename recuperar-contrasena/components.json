@@ -1,48 +1,48 @@
 {
   "version": 1,
   "domain": "zoositioweb.com.mx",
-  "pageId": "acceso",
+  "pageId": "recuperar-contrasena",
   "components": [
     {
-      "id": "accesoRoot",
+      "id": "recuperarContrasenaRoot",
       "type": "container",
       "config": {
         "tag": "main",
         "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-24px ank-p-24px ank-bg-bgColor ank-color-textColor",
         "components": [
-          "accesoShell",
-          "accesoFooter"
+          "recuperarContrasenaShell",
+          "recuperar-contrasenaFooter"
         ]
       }
     },
     {
-      "id": "accesoShell",
+      "id": "recuperarContrasenaShell",
       "type": "container",
       "config": {
         "tag": "section",
         "classes": "ank-width-100per ank-maxWidth-720px ank-display-flex ank-flexDirection-column ank-gap-22px ank-textAlign-left",
         "components": [
-          "accesoHeader",
-          "loginForm",
-          "loginLinks"
+          "recuperar-contrasenaHeader",
+          "recoverForm",
+          "recoverLinks"
         ]
       }
     },
     {
-      "id": "accesoHeader",
+      "id": "recuperar-contrasenaHeader",
       "type": "container",
       "config": {
         "tag": "header",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
-          "accesoEyebrow",
-          "accesoTitle",
-          "accesoBody"
+          "recuperar-contrasenaEyebrow",
+          "recuperar-contrasenaTitle",
+          "recuperar-contrasenaBody"
         ]
       }
     },
     {
-      "id": "accesoEyebrow",
+      "id": "recuperar-contrasenaEyebrow",
       "type": "text",
       "config": {
         "tag": "p",
@@ -51,50 +51,50 @@
       }
     },
     {
-      "id": "accesoTitle",
+      "id": "recuperar-contrasenaTitle",
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Accede a tu cuenta",
+        "text": "Recupera tu contraseña",
         "classes": "ank-m-0 ank-fontSize-32px ank-lineHeight-1_1 ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
-      "id": "accesoBody",
+      "id": "recuperar-contrasenaBody",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Inicia sesión con tu correo. Si necesitas crear cuenta o recuperar contraseña, usa las opciones debajo del formulario.",
+        "text": "Pide un código para cambiar la contraseña de tu cuenta.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "loginForm",
+      "id": "recoverForm",
       "type": "interaction-scope",
       "config": {
-        "scopeId": "zoositeLogin",
+        "scopeId": "zoositeRecover",
         "tag": "form",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-14px ank-p-24px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_10ED",
         "components": [
-          "loginTitle",
-          "loginEmail",
-          "loginPassword",
-          "loginError",
-          "loginSubmit"
+          "recoverTitle",
+          "recoverEmail",
+          "recoverSuccess",
+          "recoverError",
+          "recoverSubmit"
         ]
       }
     },
     {
-      "id": "loginTitle",
+      "id": "recoverTitle",
       "type": "text",
       "config": {
         "tag": "h2",
-        "text": "Iniciar sesión",
+        "text": "Recuperar contraseña",
         "classes": "ank-m-0 ank-fontSize-22px ank-lineHeight-1_2 ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
-      "id": "loginEmail",
+      "id": "recoverEmail",
       "type": "input",
       "config": {
         "fieldId": "email",
@@ -119,75 +119,56 @@
       }
     },
     {
-      "id": "loginPassword",
-      "type": "input",
-      "config": {
-        "fieldId": "password",
-        "controlType": "text",
-        "inputType": "password",
-        "label": "Contraseña",
-        "showPasswordToggle": true,
-        "showPasswordLabel": "Mostrar contraseña",
-        "hidePasswordLabel": "Ocultar contraseña",
-        "passwordToggleShowIcon": "preview",
-        "passwordToggleHideIcon": "visibility_off",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px",
-        "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
-        "fieldClasses": "ank-display-flex ank-alignItems-center ank-gap-8px",
-        "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor",
-        "passwordToggleClasses": "ank-flexShrink-0 ank-width-44px ank-height-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-border-1px__solid__secondaryAccentColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-cursor-pointer",
-        "passwordToggleIconClasses": "ank-display-block ank-width-24px ank-height-24px ank-fontSize-1_2rem ank-color-titleColor",
-        "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
-        "validation": [
-          {
-            "type": "required",
-            "message": "Escribe tu contraseña."
-          }
-        ]
-      }
-    },
-    {
-      "id": "loginError",
+      "id": "recoverSuccess",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No pudimos iniciar sesión con esos datos. Revisa tu correo, contraseña o confirmación de cuenta.",
-        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor"
+        "text": "Te enviamos un código de recuperación. Úsalo para crear una nueva contraseña.",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor"
       },
-      "condition": "all:varEq,authForm.signin.state,error"
+      "condition": "all:varEq,authForm.forgotPassword.state,success"
     },
     {
-      "id": "loginSubmit",
+      "id": "recoverError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos enviar el código. Revisa el correo o intenta de nuevo.",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor"
+      },
+      "condition": "all:varEq,authForm.forgotPassword.state,error"
+    },
+    {
+      "id": "recoverSubmit",
       "type": "button",
-      "eventInstructions": "authFormAction:signin,authForm.signin;trackEvent:auth_signin_submit,auth,zoosite-signin,location,access_page",
+      "eventInstructions": "authFormAction:forgotPassword,authForm.forgotPassword;trackEvent:auth_forgot_password_submit,auth,zoosite-forgot-password,location,recover_page",
       "config": {
         "type": "button",
-        "label": "Entrar",
-        "ariaLabel": "Entrar a mi cuenta",
+        "label": "Enviar código",
+        "ariaLabel": "Enviar código de recuperación",
         "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
       }
     },
     {
-      "id": "loginLinks",
+      "id": "recoverLinks",
       "type": "container",
       "config": {
         "tag": "nav",
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
-          "loginRegisterLink",
-          "loginRecoverLink",
-          "loginConfirmLink"
+          "recoverResetLink",
+          "recoverLoginLink"
         ]
       }
     },
     {
-      "id": "loginRegisterLink",
+      "id": "recoverResetLink",
       "type": "link",
-      "eventInstructions": "trackEvent:auth_register_link_click,auth,zoosite-register,location,access_page",
+      "eventInstructions": "trackEvent:auth_reset_link_click,auth,zoosite-reset,location,recover_page",
       "config": {
-        "href": "/registro",
-        "text": "Crear cuenta",
-        "ariaLabel": "Crear cuenta en zoositioweb",
+        "href": "/cambiar-contrasena",
+        "text": "Cambiar contraseña con código",
+        "ariaLabel": "Cambiar contraseña con código",
         "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryAccentColor ank-textAlign-center",
         "scrollRestoration": {
           "mode": "top"
@@ -195,13 +176,13 @@
       }
     },
     {
-      "id": "loginRecoverLink",
+      "id": "recoverLoginLink",
       "type": "link",
-      "eventInstructions": "trackEvent:auth_recover_link_click,auth,zoosite-recover,location,access_page",
+      "eventInstructions": "trackEvent:auth_login_link_click,auth,zoosite-login,location,recover_page",
       "config": {
-        "href": "/recuperar-contrasena",
-        "text": "Recuperar contraseña",
-        "ariaLabel": "Recuperar contraseña de zoositioweb",
+        "href": "/acceso",
+        "text": "Volver a iniciar sesión",
+        "ariaLabel": "Volver a iniciar sesión",
         "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-textAlign-center",
         "scrollRestoration": {
           "mode": "top"
@@ -209,21 +190,7 @@
       }
     },
     {
-      "id": "loginConfirmLink",
-      "type": "link",
-      "eventInstructions": "trackEvent:auth_confirm_link_click,auth,zoosite-confirm,location,access_page",
-      "config": {
-        "href": "/confirmar-cuenta",
-        "text": "Confirmar cuenta",
-        "ariaLabel": "Confirmar cuenta con código",
-        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-textAlign-center",
-        "scrollRestoration": {
-          "mode": "top"
-        }
-      }
-    },
-    {
-      "id": "accesoFooter",
+      "id": "recuperar-contrasenaFooter",
       "type": "text",
       "config": {
         "tag": "p",
