@@ -52,7 +52,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Tu sesión está activa.",
+        "text": "Tu sesión está activa. Las cuentas nuevas inician como cliente y un administrador puede elevar permisos cuando corresponda.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
       }
     },
@@ -73,7 +73,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Acceso validado",
+        "text": "Acceso de cliente",
         "classes": "ank-m-0 ank-fontSize-15px ank-fontWeight-800 ank-color-titleColor"
       }
     },
@@ -82,7 +82,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Puedes cerrar sesión cuando termines.",
+        "text": "Si necesitas permisos de panel o administración, un administrador debe aprobar o elevar tu cuenta.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_5 ank-color-secondaryTextColor"
       }
     },

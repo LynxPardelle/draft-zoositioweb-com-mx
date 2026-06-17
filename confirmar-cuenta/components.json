@@ -23,6 +23,7 @@
         "classes": "ank-width-100per ank-maxWidth-720px ank-display-flex ank-flexDirection-column ank-gap-22px ank-textAlign-left",
         "components": [
           "confirmar-cuentaHeader",
+          "confirmSignupStartNotice",
           "confirmSignupForm",
           "resendSignupForm",
           "confirmarCuentaLinks"
@@ -65,9 +66,19 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Escribe el código que Cognito envió a tu correo. Si no lo tienes, puedes pedir uno nuevo.",
+        "text": "Revisa tu correo y escribe el código de confirmación. Si no lo encuentras, puedes pedir uno nuevo.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
       }
+    },
+    {
+      "id": "confirmSignupStartNotice",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cuenta creada. Ahora confirma el código que llegó a tu correo. Al confirmar, tu cuenta queda como cliente hasta que un administrador apruebe o eleve permisos.",
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
+      },
+      "condition": "all:queryEq,authStatus,account-created"
     },
     {
       "id": "confirmSignupForm",
@@ -169,7 +180,9 @@
         "type": "button",
         "label": "Confirmar cuenta",
         "ariaLabel": "Confirmar cuenta",
-        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
+        "disabledWhenInvalidScope": true,
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
       }
     },
     {
@@ -250,7 +263,9 @@
         "type": "button",
         "label": "Reenviar código",
         "ariaLabel": "Reenviar código de confirmación",
-        "classes": "ank-width-100per ank-minHeight-46px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-10px ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-cursor-pointer"
+        "disabledWhenInvalidScope": true,
+        "classes": "ank-width-100per ank-minHeight-46px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-10px ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-cursor-pointer",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
       }
     },
     {
@@ -298,7 +313,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Los permisos de panel se asignan desde la cuenta de cliente.",
+        "text": "Tu cuenta nueva inicia como cliente. Un administrador puede aprobar o elevar permisos cuando haga falta acceso de panel.",
         "classes": "ank-m-0 ank-maxWidth-720px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
       }
     }
