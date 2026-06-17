@@ -27,6 +27,7 @@
       "postLoginPath": "/mi-cuenta",
       "postLogoutPath": "/acceso",
       "tenantClaim": "custom:tenant_id",
+      "environmentClaim": "custom:zoolanding_env",
       "groupClaim": "cognito:groups",
       "allowedGroups": [
         "zoosite-client",
@@ -39,6 +40,7 @@
         "signup": {
           "enabled": true,
           "setTenantClaim": true,
+          "setEnvironmentClaim": true,
           "defaultGroups": [
             "zoosite-client"
           ]
