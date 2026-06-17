@@ -48,6 +48,8 @@
       "legal": "We work with approved commercial information and public messages suited to each business.",
       "copyright": "zoositioweb.com.mx",
       "faqLabel": "FAQ",
+      "loginLabel": "Sign in",
+      "registerLabel": "Create account",
       "legalLinksTitle": "Legal",
       "privacyLabel": "Privacy notice",
       "termsLabel": "Terms and conditions"
