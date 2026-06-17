@@ -23,6 +23,8 @@
         "classes": "ank-width-100per ank-maxWidth-720px ank-display-flex ank-flexDirection-column ank-gap-22px ank-textAlign-left",
         "components": [
           "accesoHeader",
+          "loginAccountConfirmedSuccess",
+          "loginPasswordResetSuccess",
           "loginForm",
           "loginLinks"
         ]
@@ -67,6 +69,26 @@
         "text": "Inicia sesión con tu correo. Si necesitas crear cuenta o recuperar contraseña, usa las opciones debajo del formulario.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
       }
+    },
+    {
+      "id": "loginAccountConfirmedSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cuenta confirmada. Ya puedes iniciar sesión. Tu cuenta inicia como cliente; un administrador podrá aprobar o elevar permisos si necesitas acceso de panel.",
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
+      },
+      "condition": "all:queryEq,authStatus,account-confirmed"
+    },
+    {
+      "id": "loginPasswordResetSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Contraseña actualizada. Inicia sesión con tu nueva contraseña.",
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
+      },
+      "condition": "all:queryEq,authStatus,password-reset"
     },
     {
       "id": "loginForm",
@@ -164,7 +186,9 @@
         "type": "button",
         "label": "Entrar",
         "ariaLabel": "Entrar a mi cuenta",
-        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
+        "disabledWhenInvalidScope": true,
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
       }
     },
     {
@@ -227,7 +251,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Los permisos de panel se asignan desde la cuenta de cliente.",
+        "text": "Las cuentas nuevas inician como cliente. Un administrador puede aprobar o elevar permisos cuando haga falta acceso de panel.",
         "classes": "ank-m-0 ank-maxWidth-720px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
       }
     }
