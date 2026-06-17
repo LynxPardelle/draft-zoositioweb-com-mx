@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-usuarios",
+  "components": [
+    {
+      "id": "adminUsuariosRoot",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-24px ank-p-24px ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "adminUsuariosShell",
+          "adminUsuariosFooter"
+        ]
+      }
+    },
+    {
+      "id": "adminUsuariosShell",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-maxWidth-1040px ank-display-flex ank-flexDirection-column ank-gap-22px ank-textAlign-left",
+        "components": [
+          "adminUsuariosHeader",
+          "adminUsuariosActionStatus",
+          "adminUsuariosLoading",
+          "adminUsuariosError",
+          "adminUsuariosEmpty",
+          "adminUsuariosList",
+          "adminUsuariosLinks"
+        ]
+      }
+    },
+    {
+      "id": "adminUsuariosHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "adminUsuariosEyebrow",
+          "adminUsuariosTitle",
+          "adminUsuariosBody"
+        ]
+      }
+    },
+    {
+      "id": "adminUsuariosEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Administración",
+        "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-700 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
+      }
+    },
+    {
+      "id": "adminUsuariosTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Usuarios",
+        "classes": "ank-m-0 ank-fontSize-32px ank-lineHeight-1_1 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminUsuariosBody",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Aprueba cuentas nuevas, eleva permisos cuando sea necesario y suspende accesos sin tocar secretos ni tokens desde el navegador.",
+        "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "adminUsuariosActionStatus",
+      "type": "text",
+      "condition": "any:varEq,remoteStatus.adminUsersAction.state,success,varEq,remoteStatus.adminUsersAction.state,error",
+      "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.adminUsersAction.state,success\",\"Acción aplicada. La lista se actualizó.\",\"No pudimos aplicar la acción. Revisa permisos o intenta de nuevo.\";set:config.classes,when,\"all:varEq,remoteStatus.adminUsersAction.state,success\",\"ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-800\",\"ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-800\"",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": ""
+      }
+    },
+    {
+      "id": "adminUsuariosLoading",
+      "type": "container",
+      "condition": "all:varEq,remoteStatus.adminUsers.state,loading",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-12px ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08",
+        "components": [
+          "adminUsuariosLoadingSpinner",
+          "adminUsuariosLoadingText"
+        ]
+      }
+    },
+    {
+      "id": "adminUsuariosLoadingSpinner",
+      "type": "loading-spinner",
+      "config": {
+        "classes": "ank-width-22px ank-height-22px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
+      }
+    },
+    {
+      "id": "adminUsuariosLoadingText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cargando usuarios...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminUsuariosError",
+      "type": "text",
+      "condition": "all:varEq,remoteStatus.adminUsers.state,error",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos cargar usuarios. Confirma que tu cuenta sigue aprobada como administrador.",
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminUsuariosEmpty",
+      "type": "text",
+      "condition": "all:varEq,remoteStatus.adminUsers.state,empty",
+      "config": {
+        "tag": "p",
+        "text": "Todavía no hay usuarios para administrar.",
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminUsuariosList",
+      "type": "container",
+      "condition": "all:varEq,remoteStatus.adminUsers.state,success",
+      "loopConfig": {
+        "source": "var",
+        "path": "remote.auth.adminUsers.items",
+        "templateId": "adminUsuarioCardTemplate",
+        "idPrefix": "adminUsuarioCard",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "email"
+            ],
+            "fallback": "Usuario sin correo"
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "statusLabel"
+            ],
+            "prefix": "Estado: "
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              "rolesText"
+            ],
+            "prefix": "Grupos: "
+          },
+          {
+            "to": "config.actions.0.eventInstructions",
+            "sources": [
+              "clientApproveInstructions"
+            ]
+          },
+          {
+            "to": "config.actions.1.eventInstructions",
+            "sources": [
+              "adminApproveInstructions"
+            ]
+          },
+          {
+            "to": "config.actions.2.eventInstructions",
+            "sources": [
+              "suspendInstructions"
+            ]
+          },
+          {
+            "to": "config.actions.3.eventInstructions",
+            "sources": [
+              "reactivateInstructions"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gap-14px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 300px), 1fr))"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "adminUsuarioCardTemplate",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "title": "Usuario",
+        "description": "Estado: Pendiente",
+        "linkLabel": "Grupos: zoosite-client",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_08ED",
+        "featureIconContainerClasses": "ank-display-none",
+        "featureTitleClasses": "ank-m-0 ank-fontSize-18px ank-lineHeight-1_25 ank-fontWeight-900 ank-color-titleColor ank-wordBreak-break-word",
+        "featureDescriptionClasses": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-fontWeight-800",
+        "linkClasses": "ank-fontSize-13px ank-lineHeight-1_4 ank-color-secondaryTextColor ank-textDecoration-none ank-pointerEvents-none",
+        "actionListClasses": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-8px ank-marginTop-4px",
+        "actionButtonClasses": "ank-width-100per ank-minHeight-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__textColorOPA__0_10 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer",
+        "actions": [
+          {
+            "label": "Aprobar como cliente",
+            "ariaLabel": "Aprobar usuario como cliente",
+            "classes": "ank-width-100per ank-minHeight-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer",
+            "icon": "check_circle",
+            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
+            "confirmMessage": "Confirma que quieres aprobar esta cuenta como cliente."
+          },
+          {
+            "label": "Elevar a admin",
+            "ariaLabel": "Aprobar usuario como administrador",
+            "icon": "admin_panel_settings",
+            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
+            "confirmMessage": "Esta acción dará permisos de administrador. Confirma que quieres continuar."
+          },
+          {
+            "label": "Suspender acceso",
+            "ariaLabel": "Suspender usuario",
+            "classes": "ank-width-100per ank-minHeight-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__errorColor ank-borderRadius-8px ank-bg-transparent ank-color-errorColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer",
+            "icon": "block",
+            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
+            "confirmMessage": "Confirma que quieres suspender el acceso de esta cuenta."
+          },
+          {
+            "label": "Reactivar acceso",
+            "ariaLabel": "Reactivar usuario",
+            "icon": "restart_alt",
+            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
+            "confirmMessage": "Confirma que quieres reactivar el acceso de esta cuenta."
+          }
+        ]
+      }
+    },
+    {
+      "id": "adminUsuariosLinks",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "adminUsuariosCuentaLink",
+          "adminUsuariosLogoutButton"
+        ]
+      }
+    },
+    {
+      "id": "adminUsuariosCuentaLink",
+      "type": "link",
+      "config": {
+        "href": "/mi-cuenta",
+        "text": "Volver a mi cuenta",
+        "ariaLabel": "Volver a mi cuenta",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-textAlign-center",
+        "scrollRestoration": {
+          "mode": "top"
+        }
+      }
+    },
+    {
+      "id": "adminUsuariosLogoutButton",
+      "type": "button",
+      "eventInstructions": "authFormAction:logout,authForm.logout;trackEvent:auth_logout_click,auth,zoosite-logout,location,admin_users_page",
+      "config": {
+        "type": "button",
+        "label": "Cerrar sesión",
+        "ariaLabel": "Cerrar sesión en zoositioweb",
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-12px ank-border-1px__solid__secondaryAccentColor ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "adminUsuariosFooter",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Los cambios se validan en backend con sesión HttpOnly, CSRF, tenant y ambiente.",
+        "classes": "ank-m-0 ank-maxWidth-1040px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
+      }
+    }
+  ]
+}

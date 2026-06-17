@@ -56,6 +56,18 @@
       }
     },
     {
+      "path": "/admin/usuarios",
+      "pageId": "admin-usuarios",
+      "label": "Administrar usuarios",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
       "path": "/servicios",
       "pageId": "servicios",
       "label": "Servicios"
@@ -145,7 +157,8 @@
       "/recuperar-contrasena",
       "/cambiar-contrasena",
       "/auth/callback",
-      "/mi-cuenta"
+      "/mi-cuenta",
+      "/admin/usuarios"
     ]
   },
   "site": {
@@ -457,7 +470,122 @@
       "enabled": true,
       "authProfileId": "staff",
       "endpoint": "/auth/runtime-config"
-    }
+    },
+    "dataSources": [
+      {
+        "id": "auth-account",
+        "kind": "auth-admin",
+        "authAdminSource": "account",
+        "target": "remote.auth.account",
+        "statusTarget": "remoteStatus.authAccount",
+        "clearTargetOnLoad": true,
+        "pageIds": [
+          "mi-cuenta"
+        ],
+        "mapper": {
+          "itemsPath": "account",
+          "singleItem": true,
+          "fields": {
+            "email": {
+              "path": "email",
+              "fallback": "Correo no disponible"
+            },
+            "rolesText": {
+              "path": "roles",
+              "fallback": "Sin grupos"
+            },
+            "approvalStatus": {
+              "path": "approvalStatus",
+              "lookup": {
+                "pending": "Pendiente de aprobación",
+                "approved": "Aprobada",
+                "rejected": "Rechazada",
+                "suspended": "Suspendida"
+              },
+              "fallback": "Pendiente de aprobación"
+            },
+            "environment": {
+              "path": "environment",
+              "fallback": "prod"
+            },
+            "isAdminText": {
+              "path": "isAdmin",
+              "lookup": {
+                "true": "Administrador",
+                "false": "Cliente"
+              },
+              "fallback": "Cliente"
+            }
+          }
+        }
+      },
+      {
+        "id": "auth-admin-users",
+        "kind": "auth-admin",
+        "authAdminSource": "adminUsers",
+        "target": "remote.auth.adminUsers",
+        "statusTarget": "remoteStatus.adminUsers",
+        "clearTargetOnLoad": true,
+        "pageIds": [
+          "admin-usuarios"
+        ],
+        "mapper": {
+          "itemsPath": "users",
+          "fields": {
+            "email": {
+              "path": "email",
+              "fallback": "Correo no disponible"
+            },
+            "subject": {
+              "path": "subject",
+              "fallback": "Sin identificador"
+            },
+            "rolesText": {
+              "path": "roles",
+              "fallback": "Sin grupos"
+            },
+            "statusLabel": {
+              "path": "approvalStatus",
+              "lookup": {
+                "pending": "Pendiente",
+                "approved": "Aprobado",
+                "rejected": "Rechazado",
+                "suspended": "Suspendido"
+              },
+              "fallback": "Pendiente"
+            },
+            "enabledLabel": {
+              "path": "enabled",
+              "lookup": {
+                "true": "Activo",
+                "false": "Deshabilitado"
+              },
+              "fallback": "Activo"
+            },
+            "clientApproveInstructions": {
+              "path": "subject",
+              "prefix": "authAdminAction:approveUser,",
+              "suffix": ",zoosite-client,remoteStatus.adminUsersAction"
+            },
+            "adminApproveInstructions": {
+              "path": "subject",
+              "prefix": "authAdminAction:approveUser,",
+              "suffix": ",zoosite-client|zoosite-admin,remoteStatus.adminUsersAction"
+            },
+            "suspendInstructions": {
+              "path": "subject",
+              "prefix": "authAdminAction:suspendUser,",
+              "suffix": ",,remoteStatus.adminUsersAction"
+            },
+            "reactivateInstructions": {
+              "path": "subject",
+              "prefix": "authAdminAction:reactivateUser,",
+              "suffix": ",,remoteStatus.adminUsersAction"
+            }
+          }
+        }
+      }
+    ]
   },
   "environments": {
     "test": {
