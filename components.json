@@ -616,7 +616,9 @@
           "footerPlans",
           "footerPlatform",
           "footerAbout",
-          "footerFaq"
+          "footerFaq",
+          "footerLogin",
+          "footerRegister"
         ],
         "styles": {
           "maxWidth": "320px"
@@ -722,6 +724,36 @@
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/preguntas-frecuentes,href,/preguntas-frecuentes,location,footer"
+    },
+    {
+      "id": "footerLogin",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,footer.loginLabel;set:config.ariaLabel,i18n,footer.loginLabel",
+      "config": {
+        "href": "/acceso",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-color-linkColor ank-fontWeight-900 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "44px"
+        }
+      },
+      "eventInstructions": "trackEvent:auth_login_link_click,auth,zoosite-login,location,footer"
+    },
+    {
+      "id": "footerRegister",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,footer.registerLabel;set:config.ariaLabel,i18n,footer.registerLabel",
+      "config": {
+        "href": "/registro",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-color-linkColor ank-fontWeight-900 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "44px"
+        }
+      },
+      "eventInstructions": "trackEvent:auth_register_link_click,auth,zoosite-register,location,footer"
     },
     {
       "id": "footerSectors",
@@ -922,7 +954,9 @@
           "footerMobilePlans",
           "footerMobilePlatform",
           "footerMobileAbout",
-          "footerMobileFaq"
+          "footerMobileFaq",
+          "footerMobileLogin",
+          "footerMobileRegister"
         ]
       }
     },
@@ -1010,6 +1044,30 @@
       "valueInstructions": "set:config.text,i18n,footer.faqLabel;set:config.ariaLabel,i18n,footer.faqLabel",
       "config": {
         "href": "/preguntas-frecuentes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileLogin",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:auth_login_link_click,auth,zoosite-login,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,footer.loginLabel;set:config.ariaLabel,i18n,footer.loginLabel",
+      "config": {
+        "href": "/acceso",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerMobileRegister",
+      "type": "link",
+      "eventInstructions": "setScopeValue:footerGroup,closed;trackEvent:auth_register_link_click,auth,zoosite-register,location,footer_mobile",
+      "valueInstructions": "set:config.text,i18n,footer.registerLabel;set:config.ariaLabel,i18n,footer.registerLabel",
+      "config": {
+        "href": "/registro",
         "text": "",
         "ariaLabel": "",
         "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"

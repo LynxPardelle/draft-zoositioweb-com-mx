@@ -139,6 +139,15 @@
         "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor",
         "passwordToggleClasses": "ank-flexShrink-0 ank-width-44px ank-height-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-border-1px__solid__secondaryAccentColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-cursor-pointer",
         "passwordToggleIconClasses": "ank-display-block ank-width-24px ank-height-24px ank-fontSize-1_2rem ank-color-titleColor",
+        "showValidationChecklist": true,
+        "validationChecklistLabel": "Requisitos de contraseña",
+        "validationChecklistClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-6px ank-fontSize-13px ank-lineHeight-1_4",
+        "validationChecklistItemClasses": "ank-display-flex ank-alignItems-flexStart ank-gap-8px",
+        "validationChecklistValidItemClasses": "ank-color-successColor",
+        "validationChecklistInvalidItemClasses": "ank-color-secondaryTextColor",
+        "validationChecklistIconClasses": "ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-width-18px ank-minWidth-18px ank-fontWeight-900",
+        "validationChecklistValidIcon": "✓",
+        "validationChecklistInvalidIcon": "•",
         "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
         "validation": [
           {
@@ -152,8 +161,23 @@
           },
           {
             "type": "pattern",
-            "value": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$",
-            "message": "Usa mayúsculas, minúsculas y números."
+            "value": "[a-z]",
+            "message": "Incluye una minúscula."
+          },
+          {
+            "type": "pattern",
+            "value": "[A-Z]",
+            "message": "Incluye una mayúscula."
+          },
+          {
+            "type": "pattern",
+            "value": "\\d",
+            "message": "Incluye un número."
+          },
+          {
+            "type": "pattern",
+            "value": "[^A-Za-z0-9\\s]",
+            "message": "Incluye un símbolo."
           }
         ]
       }
@@ -182,6 +206,11 @@
           {
             "type": "required",
             "message": "Repite la contraseña."
+          },
+          {
+            "type": "matchesField",
+            "fieldId": "password",
+            "message": "Las contraseñas deben coincidir."
           }
         ]
       }
@@ -214,6 +243,7 @@
         "type": "button",
         "label": "Crear cuenta",
         "ariaLabel": "Crear cuenta en zoositioweb",
+        "disabledWhenInvalidScope": true,
         "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
       }
     },
