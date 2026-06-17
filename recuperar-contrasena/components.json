@@ -146,7 +146,9 @@
         "type": "button",
         "label": "Enviar código",
         "ariaLabel": "Enviar código de recuperación",
-        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
+        "disabledWhenInvalidScope": true,
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
       }
     },
     {
@@ -194,7 +196,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Los permisos de panel se asignan desde la cuenta de cliente.",
+        "text": "Si recuperas el acceso, tus permisos se conservan. Un administrador puede aprobar o elevar permisos cuando haga falta acceso de panel.",
         "classes": "ank-m-0 ank-maxWidth-720px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
       }
     }

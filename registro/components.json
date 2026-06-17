@@ -64,7 +64,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Usa tu correo y una contraseña segura. Después confirma el código que llegará a tu correo.",
+        "text": "Usa tu correo y una contraseña segura. Después te llevaremos a confirmar el código que llegará a tu correo.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
       }
     },
@@ -220,7 +220,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Te enviamos un código de confirmación. Abre la página de confirmación para activar la cuenta.",
+        "text": "Te enviamos un código de confirmación. Revisa tu correo y confirma la cuenta.",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor"
       },
       "condition": "all:varEq,authForm.signup.state,success"
@@ -244,7 +244,8 @@
         "label": "Crear cuenta",
         "ariaLabel": "Crear cuenta en zoositioweb",
         "disabledWhenInvalidScope": true,
-        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer"
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
       }
     },
     {
@@ -292,7 +293,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Los permisos de panel se asignan desde la cuenta de cliente.",
+        "text": "Tu cuenta nueva inicia como cliente. Un administrador puede aprobar o elevar permisos cuando haga falta acceso de panel.",
         "classes": "ank-m-0 ank-maxWidth-720px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
       }
     }
