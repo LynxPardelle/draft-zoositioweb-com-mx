@@ -10,22 +10,36 @@
         "tag": "main",
         "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-24px ank-p-24px ank-bg-bgColor ank-color-textColor",
         "components": [
-          "miCuentaPanel"
+          "miCuentaShell",
+          "miCuentaFooter"
         ]
       }
     },
     {
-      "id": "miCuentaPanel",
+      "id": "miCuentaShell",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-maxWidth-640px ank-display-flex ank-flexDirection-column ank-gap-18px ank-p-32px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-textAlign-left",
+        "classes": "ank-width-100per ank-maxWidth-760px ank-display-flex ank-flexDirection-column ank-gap-22px ank-textAlign-left",
+        "components": [
+          "miCuentaHeader",
+          "miCuentaLoading",
+          "miCuentaError",
+          "miCuentaPanel",
+          "miCuentaActions"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
           "miCuentaEyebrow",
           "miCuentaTitle",
-          "miCuentaBody",
-          "miCuentaStatus",
-          "miCuentaActions"
+          "miCuentaBody"
         ]
       }
     },
@@ -52,38 +66,145 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Tu sesión está activa. Las cuentas nuevas inician como cliente y un administrador puede elevar permisos cuando corresponda.",
+        "text": "Consulta el estado de tu cuenta y tus permisos actuales. Las operaciones administrativas viven en un área separada.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "miCuentaStatus",
+      "id": "miCuentaLoading",
       "type": "container",
+      "condition": "all:varEq,remoteStatus.authAccount.state,loading",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__secondaryBgColor",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-12px ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08",
         "components": [
-          "miCuentaStatusTitle",
-          "miCuentaStatusBody"
+          "miCuentaLoadingSpinner",
+          "miCuentaLoadingText"
         ]
       }
     },
     {
-      "id": "miCuentaStatusTitle",
-      "type": "text",
+      "id": "miCuentaLoadingSpinner",
+      "type": "loading-spinner",
       "config": {
-        "tag": "p",
-        "text": "Acceso de cliente",
-        "classes": "ank-m-0 ank-fontSize-15px ank-fontWeight-800 ank-color-titleColor"
+        "classes": "ank-width-22px ank-height-22px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
       }
     },
     {
-      "id": "miCuentaStatusBody",
+      "id": "miCuentaLoadingText",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Si necesitas permisos de panel o administración, un administrador debe aprobar o elevar tu cuenta.",
-        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_5 ank-color-secondaryTextColor"
+        "text": "Cargando datos de cuenta...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "miCuentaError",
+      "type": "text",
+      "condition": "all:varEq,remoteStatus.authAccount.state,error",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos cargar los datos de tu cuenta. Cierra sesión e intenta entrar de nuevo.",
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "miCuentaPanel",
+      "type": "container",
+      "condition": "all:varEq,remoteStatus.authAccount.state,success",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px ank-p-24px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_10ED",
+        "components": [
+          "miCuentaEmailLabel",
+          "miCuentaEmail",
+          "miCuentaGrid",
+          "miCuentaAdminLink"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaEmailLabel",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Correo",
+        "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-800 ank-color-secondaryTextColor ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "miCuentaEmail",
+      "type": "text",
+      "valueInstructions": "set:config.text,var,remote.auth.account.items.0.email",
+      "config": {
+        "tag": "p",
+        "text": "Correo no disponible",
+        "classes": "ank-m-0 ank-fontSize-22px ank-lineHeight-1_25 ank-fontWeight-800 ank-color-titleColor ank-wordBreak-break-word"
+      }
+    },
+    {
+      "id": "miCuentaGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gap-12px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 210px), 1fr))"
+        },
+        "components": [
+          "miCuentaEstado",
+          "miCuentaRol",
+          "miCuentaAmbiente"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaEstado",
+      "type": "generic-card",
+      "valueInstructions": "set:config.description,var,remote.auth.account.items.0.approvalStatus",
+      "config": {
+        "variant": "feature",
+        "title": "Estado de cuenta",
+        "description": "Pendiente de aprobación",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_08",
+        "featureTitleClasses": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-secondaryTextColor",
+        "featureDescriptionClasses": "ank-m-0 ank-fontSize-16px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "miCuentaRol",
+      "type": "text",
+      "valueInstructions": "set:config.text,var,remote.auth.account.items.0.isAdminText",
+      "config": {
+        "tag": "p",
+        "text": "Cliente",
+        "classes": "ank-m-0 ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_08 ank-fontSize-16px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "miCuentaAmbiente",
+      "type": "text",
+      "valueInstructions": "set:config.text,var,remote.auth.account.items.0.environment",
+      "config": {
+        "tag": "p",
+        "text": "prod",
+        "classes": "ank-m-0 ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_08 ank-fontSize-16px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "miCuentaAdminLink",
+      "type": "link",
+      "condition": "all:varEq,remote.auth.account.items.0.isAdminText,Administrador",
+      "eventInstructions": "trackEvent:auth_admin_link_click,auth,zoosite-admin-users,location,account_page",
+      "config": {
+        "href": "/admin/usuarios",
+        "text": "Administrar usuarios",
+        "ariaLabel": "Administrar usuarios de zoositioweb",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-15px ank-fontWeight-900 ank-textDecoration-none ank-textAlign-center",
+        "scrollRestoration": {
+          "mode": "top"
+        }
       }
     },
     {
@@ -91,9 +212,10 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-alignItems-flexStart ank-gap-12px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
-          "miCuentaLogoutButton"
+          "miCuentaLogoutButton",
+          "miCuentaHomeLink"
         ]
       }
     },
@@ -105,7 +227,29 @@
         "type": "button",
         "label": "Cerrar sesión",
         "ariaLabel": "Cerrar sesión en zoositioweb",
-        "classes": "ank-minHeight-46px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-12px ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-cursor-pointer"
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-12px ank-border-1px__solid__secondaryAccentColor ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "miCuentaHomeLink",
+      "type": "link",
+      "config": {
+        "href": "/",
+        "text": "Volver al sitio",
+        "ariaLabel": "Volver al inicio de zoositioweb",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontSize-15px ank-fontWeight-800 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_10 ank-textAlign-center",
+        "scrollRestoration": {
+          "mode": "top"
+        }
+      }
+    },
+    {
+      "id": "miCuentaFooter",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Tu cuenta no almacena tokens en el navegador. Las acciones protegidas se validan en backend.",
+        "classes": "ank-m-0 ank-maxWidth-760px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
       }
     }
   ]

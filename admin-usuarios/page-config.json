@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-usuarios",
+  "rootIds": [
+    "adminUsuariosRoot"
+  ],
+  "seo": {
+    "title": "Administrar usuarios | zoositioweb",
+    "description": "Administración privada de usuarios de zoositioweb.",
+    "canonical": "https://zoositioweb.com.mx/admin/usuarios",
+    "robots": {
+      "default": "noindex,nofollow"
+    }
+  }
+}

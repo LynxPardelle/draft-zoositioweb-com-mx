@@ -33,6 +33,35 @@
         "zoosite-client",
         "zoosite-admin"
       ],
+      "allowedTokenUses": [
+        "id",
+        "access"
+      ],
+      "adminGroups": [
+        "zoosite-admin"
+      ],
+      "manageableGroups": [
+        "zoosite-client",
+        "zoosite-admin"
+      ],
+      "defaultUserStatus": "pending",
+      "adminGroupsAutoApproved": true,
+      "maxSessionSeconds": 43200,
+      "session": {
+        "mode": "server-cookie",
+        "signinPath": "/auth/session/signin",
+        "mePath": "/auth/session/me",
+        "logoutPath": "/auth/session/logout",
+        "csrfCookieName": "zlp_csrf",
+        "csrfHeaderName": "X-ZLP-CSRF"
+      },
+      "admin": {
+        "usersPath": "/auth/admin/users",
+        "approveUserPathTemplate": "/auth/admin/users/{subject}/approve",
+        "groupsPathTemplate": "/auth/admin/users/{subject}/groups",
+        "suspendUserPathTemplate": "/auth/admin/users/{subject}/suspend",
+        "reactivateUserPathTemplate": "/auth/admin/users/{subject}/reactivate"
+      },
       "customAuth": {
         "signin": {
           "enabled": true
