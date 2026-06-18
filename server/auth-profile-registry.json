@@ -47,12 +47,22 @@
       "defaultUserStatus": "pending",
       "adminGroupsAutoApproved": true,
       "maxSessionSeconds": 43200,
+      "mfa": {
+        "mode": "optional",
+        "totp": {
+          "enabled": true
+        }
+      },
       "session": {
         "mode": "server-cookie",
         "signinPath": "/auth/session/signin",
         "mePath": "/auth/session/me",
         "logoutPath": "/auth/session/logout",
+        "challengeRespondPath": "/auth/session/challenge/respond",
+        "mfaSetupPath": "/auth/session/mfa/setup",
+        "mfaVerifyPath": "/auth/session/mfa/verify",
         "csrfCookieName": "zlp_csrf",
+        "challengeCsrfCookieName": "zlp_challenge_csrf",
         "csrfHeaderName": "X-ZLP-CSRF"
       },
       "admin": {
