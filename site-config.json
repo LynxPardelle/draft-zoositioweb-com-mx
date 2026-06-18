@@ -38,6 +38,16 @@
       "label": "Cambiar contraseña"
     },
     {
+      "path": "/verificar-acceso",
+      "pageId": "verificar-acceso",
+      "label": "Verificar acceso"
+    },
+    {
+      "path": "/configurar-mfa",
+      "pageId": "configurar-mfa",
+      "label": "Configurar MFA"
+    },
+    {
       "path": "/auth/callback",
       "pageId": "auth-callback",
       "label": "Auth callback"
@@ -156,6 +166,8 @@
       "/confirmar-cuenta",
       "/recuperar-contrasena",
       "/cambiar-contrasena",
+      "/verificar-acceso",
+      "/configurar-mfa",
       "/auth/callback",
       "/mi-cuenta",
       "/admin/usuarios"
