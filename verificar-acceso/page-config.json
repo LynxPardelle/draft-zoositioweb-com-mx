@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "verificar-acceso",
+  "rootIds": [
+    "verificarAccesoRoot"
+  ],
+  "seo": {
+    "title": "Verificar acceso | zoositioweb",
+    "description": "Verificación privada de acceso de zoositioweb.",
+    "canonical": "https://zoositioweb.com.mx/verificar-acceso",
+    "robots": {
+      "default": "noindex,nofollow"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "configurar-mfa",
+  "rootIds": [
+    "configurarMfaRoot"
+  ],
+  "seo": {
+    "title": "Configurar MFA | zoositioweb",
+    "description": "Configuración privada de verificación en dos pasos de zoositioweb.",
+    "canonical": "https://zoositioweb.com.mx/configurar-mfa",
+    "robots": {
+      "default": "noindex,nofollow"
+    }
+  }
+}

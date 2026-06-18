@@ -1,0 +1,276 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "configurar-mfa",
+  "components": [
+    {
+      "id": "configurarMfaRoot",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-24px ank-p-24px ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "configurarMfaShell",
+          "configurarMfaFooter"
+        ]
+      }
+    },
+    {
+      "id": "configurarMfaShell",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-maxWidth-720px ank-display-flex ank-flexDirection-column ank-gap-22px ank-textAlign-left",
+        "components": [
+          "configurarMfaHeader",
+          "configurarMfaNotice",
+          "configurarMfaStart",
+          "configurarMfaStartError",
+          "configurarMfaSetupPanel",
+          "configurarMfaVerifyForm",
+          "configurarMfaLinks"
+        ]
+      }
+    },
+    {
+      "id": "configurarMfaHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "configurarMfaEyebrow",
+          "configurarMfaTitle",
+          "configurarMfaBody"
+        ]
+      }
+    },
+    {
+      "id": "configurarMfaEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "zoositioweb",
+        "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-700 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
+      }
+    },
+    {
+      "id": "configurarMfaTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Configura tu autenticador",
+        "classes": "ank-m-0 ank-fontSize-32px ank-lineHeight-1_1 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "configurarMfaBody",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Para proteger tu cuenta, agrega una app de autenticación y confirma el código que genere.",
+        "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "configurarMfaNotice",
+      "type": "text",
+      "condition": "all:queryEq,authStatus,mfa-setup-required",
+      "config": {
+        "tag": "p",
+        "text": "Tu cuenta necesita activar verificación en dos pasos antes de entrar.",
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "configurarMfaStart",
+      "type": "button",
+      "condition": "all:varNeq,authForm.startMfaSetup.state,success",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,authForm.startMfaSetup.state,loading\",true,false",
+      "eventInstructions": "authFormAction:startMfaSetup,authForm.startMfaSetup;trackEvent:auth_mfa_setup_start,auth,zoosite-mfa-setup,location,mfa_setup_page",
+      "config": {
+        "type": "button",
+        "label": "Preparar autenticador",
+        "loadingLabel": "Preparando...",
+        "ariaLabel": "Preparar autenticador",
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "spinnerClasses": "zlp-button-spinner"
+      }
+    },
+    {
+      "id": "configurarMfaStartError",
+      "type": "text",
+      "condition": "all:varEq,authForm.startMfaSetup.state,error",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos preparar el autenticador. Vuelve a iniciar sesión e intenta de nuevo.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor"
+      }
+    },
+    {
+      "id": "configurarMfaSetupPanel",
+      "type": "container",
+      "condition": "all:varEq,authForm.startMfaSetup.state,success",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-14px ank-p-24px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_10ED",
+        "components": [
+          "configurarMfaSetupTitle",
+          "configurarMfaSetupInstructions",
+          "configurarMfaSecretLabel",
+          "configurarMfaSecret"
+        ]
+      }
+    },
+    {
+      "id": "configurarMfaSetupTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Agrega la clave a tu app",
+        "classes": "ank-m-0 ank-fontSize-22px ank-lineHeight-1_2 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "configurarMfaSetupInstructions",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Abre tu app de autenticación, elige agregar cuenta manualmente y escribe esta clave. Después escribe el código de 6 dígitos que genere la app.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "configurarMfaSecretLabel",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Clave manual",
+        "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-800 ank-color-secondaryTextColor ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "configurarMfaSecret",
+      "type": "text",
+      "valueInstructions": "set:config.text,var,authForm.startMfaSetup.data.setup.sharedSecret",
+      "config": {
+        "tag": "p",
+        "text": "Clave no disponible",
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-titleColor ank-fontSize-18px ank-fontWeight-900 ank-wordBreak-break-word ank-letterSpacing-0"
+      }
+    },
+    {
+      "id": "configurarMfaVerifyForm",
+      "type": "interaction-scope",
+      "condition": "all:varEq,authForm.startMfaSetup.state,success",
+      "config": {
+        "scopeId": "zoositeMfaVerify",
+        "tag": "form",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-14px ank-p-24px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_10ED",
+        "components": [
+          "configurarMfaVerifyTitle",
+          "configurarMfaCode",
+          "configurarMfaVerifyError",
+          "configurarMfaVerifySubmit"
+        ]
+      }
+    },
+    {
+      "id": "configurarMfaVerifyTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Confirma el código",
+        "classes": "ank-m-0 ank-fontSize-22px ank-lineHeight-1_2 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "configurarMfaCode",
+      "type": "input",
+      "config": {
+        "fieldId": "code",
+        "controlType": "text",
+        "inputType": "tel",
+        "label": "Código",
+        "placeholder": "000000",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-letterSpacing-0",
+        "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Escribe el código."
+          },
+          {
+            "type": "pattern",
+            "value": "^\\d{6}$",
+            "message": "El código debe tener 6 números."
+          }
+        ]
+      }
+    },
+    {
+      "id": "configurarMfaVerifyError",
+      "type": "text",
+      "condition": "all:varEq,authForm.verifyMfaSetup.state,error",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos activar el autenticador. Revisa el código actual de la app e intenta de nuevo.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor"
+      }
+    },
+    {
+      "id": "configurarMfaVerifySubmit",
+      "type": "button",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,authForm.verifyMfaSetup.state,loading\",true,false",
+      "eventInstructions": "authFormAction:verifyMfaSetup,authForm.verifyMfaSetup;trackEvent:auth_mfa_setup_verify,auth,zoosite-mfa-verify,location,mfa_setup_page",
+      "config": {
+        "type": "button",
+        "label": "Activar y entrar",
+        "loadingLabel": "Verificando...",
+        "ariaLabel": "Activar autenticador y entrar",
+        "disabledWhenInvalidScope": true,
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "spinnerClasses": "zlp-button-spinner",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
+      }
+    },
+    {
+      "id": "configurarMfaLinks",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "configurarMfaLoginLink"
+        ]
+      }
+    },
+    {
+      "id": "configurarMfaLoginLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:auth_login_link_click,auth,zoosite-login,location,mfa_setup_page",
+      "config": {
+        "href": "/acceso",
+        "text": "Volver a iniciar sesión",
+        "ariaLabel": "Volver a iniciar sesión",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryAccentColor ank-textAlign-center",
+        "scrollRestoration": {
+          "mode": "top"
+        }
+      }
+    },
+    {
+      "id": "configurarMfaFooter",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "La clave aparece sólo durante esta configuración. Si se pierde, vuelve a iniciar sesión para generar una nueva.",
+        "classes": "ank-m-0 ank-maxWidth-720px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
+      }
+    }
+  ]
+}
