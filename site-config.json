@@ -600,6 +600,11 @@
               "path": "subject",
               "prefix": "authAdminAction:reactivateUser,",
               "suffix": ",,remoteStatus.adminUsersAction"
+            },
+            "resetMfaInstructions": {
+              "path": "subject",
+              "prefix": "authAdminAction:resetUserMfa,",
+              "suffix": ",,remoteStatus.adminUsersAction"
             }
           }
         }
