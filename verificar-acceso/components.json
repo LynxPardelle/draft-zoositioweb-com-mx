@@ -90,6 +90,7 @@
           "verificarAccesoFormTitle",
           "verificarAccesoCode",
           "verificarAccesoError",
+          "verificarAccesoLoading",
           "verificarAccesoSubmit"
         ]
       }
@@ -137,6 +138,16 @@
         "tag": "p",
         "text": "No pudimos verificar el código. Revisa que sea el código actual e intenta de nuevo.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor"
+      }
+    },
+    {
+      "id": "verificarAccesoLoading",
+      "type": "text",
+      "condition": "all:varEq,authForm.respondMfaChallenge.state,loading",
+      "config": {
+        "tag": "p",
+        "text": "Verificando el código y preparando tu sesión...",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-titleColor ank-fontWeight-800"
       }
     },
     {

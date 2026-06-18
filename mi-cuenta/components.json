@@ -98,10 +98,10 @@
       "condition": "all:varEq,remoteStatus.authAccount.state,loading",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-alignItems-center ank-gap-12px ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08",
+        "classes": "ank-display-flex ank-alignItems-start ank-gap-14px ank-p-20px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_08ED",
         "components": [
           "miCuentaLoadingSpinner",
-          "miCuentaLoadingText"
+          "miCuentaLoadingCopy"
         ]
       }
     },
@@ -113,12 +113,33 @@
       }
     },
     {
+      "id": "miCuentaLoadingCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "components": [
+          "miCuentaLoadingTitle",
+          "miCuentaLoadingText"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaLoadingTitle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Verificando tu sesión...",
+        "classes": "ank-m-0 ank-fontSize-15px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
       "id": "miCuentaLoadingText",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Cargando datos de cuenta...",
-        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor"
+        "text": "Después cargaremos los datos de tu cuenta y el estado de seguridad.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor"
       }
     },
     {
