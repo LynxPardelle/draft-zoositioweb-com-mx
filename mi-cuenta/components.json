@@ -260,7 +260,7 @@
     {
       "id": "miCuentaSecurityBody",
       "type": "text",
-      "condition": "all:varEq,remote.auth.account.items.0.mfa.softwareTokenEnabled,false",
+      "condition": "all:varEq,remote.auth.account.items.0.mfaSoftwareTokenEnabled,false",
       "config": {
         "tag": "p",
         "text": "Puedes activar verificación en dos pasos desde tu cuenta. Necesitamos tu contraseña actual para preparar una clave segura.",
@@ -270,7 +270,7 @@
     {
       "id": "miCuentaSecurityBodyEnabled",
       "type": "text",
-      "condition": "all:varEq,remote.auth.account.items.0.mfa.softwareTokenEnabled,true",
+      "condition": "all:varEq,remote.auth.account.items.0.mfaSoftwareTokenEnabled,true",
       "config": {
         "tag": "p",
         "text": "Tu cuenta ya tiene verificación en dos pasos. Si necesitas quitarla, confirma tu contraseña actual y el código vigente de la app.",
@@ -280,7 +280,7 @@
     {
       "id": "miCuentaSecurityBodyUnknown",
       "type": "text",
-      "condition": "all:varEq,remote.auth.account.items.0.mfa.status,unknown",
+      "condition": "all:varEq,remote.auth.account.items.0.mfaStatus,unknown",
       "config": {
         "tag": "p",
         "text": "No pudimos confirmar el estado de tu verificación en dos pasos. Actualiza la página o vuelve a iniciar sesión antes de cambiar esta configuración.",
@@ -290,7 +290,7 @@
     {
       "id": "miCuentaMfaStartForm",
       "type": "interaction-scope",
-      "condition": "all:varEq,remote.auth.account.items.0.mfa.softwareTokenEnabled,false;all:varNeq,authForm.startMfaEnrollment.state,success",
+      "condition": "all:varEq,remote.auth.account.items.0.mfaSoftwareTokenEnabled,false;all:varNeq,authForm.startMfaEnrollment.state,success",
       "config": {
         "scopeId": "zoositeMfaEnrollmentStart",
         "tag": "form",
@@ -539,7 +539,7 @@
     {
       "id": "miCuentaMfaDisableSection",
       "type": "container",
-      "condition": "all:varEq,remote.auth.account.items.0.mfa.softwareTokenEnabled,true;all:varNeq,authForm.startMfaEnrollment.state,success",
+      "condition": "all:varEq,remote.auth.account.items.0.mfaSoftwareTokenEnabled,true;all:varNeq,authForm.startMfaEnrollment.state,success",
       "config": {
         "tag": "section",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08",
