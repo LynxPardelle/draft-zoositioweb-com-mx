@@ -25,6 +25,7 @@
           "configurarMfaHeader",
           "configurarMfaNotice",
           "configurarMfaStart",
+          "configurarMfaStartLoading",
           "configurarMfaStartError",
           "configurarMfaSetupPanel",
           "configurarMfaVerifyForm",
@@ -99,6 +100,16 @@
       }
     },
     {
+      "id": "configurarMfaStartLoading",
+      "type": "text",
+      "condition": "all:varEq,authForm.startMfaSetup.state,loading",
+      "config": {
+        "tag": "p",
+        "text": "Preparando una clave segura para tu app de autenticación...",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-titleColor ank-fontWeight-800"
+      }
+    },
+    {
       "id": "configurarMfaStartError",
       "type": "text",
       "condition": "all:varEq,authForm.startMfaSetup.state,error",
@@ -118,6 +129,9 @@
         "components": [
           "configurarMfaSetupTitle",
           "configurarMfaSetupInstructions",
+          "configurarMfaQrIntro",
+          "configurarMfaQrCode",
+          "configurarMfaManualFallbackText",
           "configurarMfaSecretLabel",
           "configurarMfaSecret"
         ]
@@ -137,8 +151,48 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Abre tu app de autenticación, elige agregar cuenta manualmente y escribe esta clave. Después escribe el código de 6 dígitos que genere la app.",
+        "text": "Abre tu app de autenticación, escanea el QR y después escribe el código de 6 dígitos que genere la app.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "configurarMfaQrIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Escanea este código desde Google Authenticator, Microsoft Authenticator, 1Password u otra app compatible.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "configurarMfaQrCode",
+      "type": "qr-code",
+      "valueInstructions": "set:config.value,var,authForm.startMfaSetup.data.setup.otpauthUri",
+      "config": {
+        "id": "configurarMfaQrCode",
+        "value": "",
+        "ariaLabel": "Código QR para configurar verificación en dos pasos",
+        "classes": "ank-alignSelf-center ank-display-flex ank-alignItems-center ank-justifyContent-center ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18",
+        "gridClasses": "ank-borderRadius-4px",
+        "moduleClasses": "",
+        "emptyClasses": "ank-fontSize-13px ank-color-secondaryTextColor ank-textAlign-center",
+        "errorClasses": "ank-fontSize-13px ank-color-errorColor ank-fontWeight-700 ank-textAlign-center",
+        "emptyText": "QR no disponible. Usa la clave manual.",
+        "errorText": "No pudimos generar el QR. Usa la clave manual.",
+        "size": 220,
+        "margin": 2,
+        "errorCorrectionLevel": "M",
+        "darkColor": "#0d141c",
+        "lightColor": "#ffffff"
+      }
+    },
+    {
+      "id": "configurarMfaManualFallbackText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Si no puedes escanearlo, usa esta clave manual.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor"
       }
     },
     {
@@ -157,7 +211,13 @@
       "config": {
         "tag": "p",
         "text": "Clave no disponible",
-        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-titleColor ank-fontSize-18px ank-fontWeight-900 ank-wordBreak-break-word ank-letterSpacing-0"
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-titleColor ank-fontSize-16px ank-lineHeight-1_45 ank-fontWeight-900 ank-letterSpacing-0",
+        "styles": {
+          "overflowWrap": "anywhere",
+          "wordBreak": "break-all",
+          "whiteSpace": "normal",
+          "maxWidth": "100%"
+        }
       }
     },
     {
@@ -172,6 +232,7 @@
           "configurarMfaVerifyTitle",
           "configurarMfaCode",
           "configurarMfaVerifyError",
+          "configurarMfaVerifyLoading",
           "configurarMfaVerifySubmit"
         ]
       }
@@ -219,6 +280,16 @@
         "tag": "p",
         "text": "No pudimos activar el autenticador. Revisa el código actual de la app e intenta de nuevo.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor"
+      }
+    },
+    {
+      "id": "configurarMfaVerifyLoading",
+      "type": "text",
+      "condition": "all:varEq,authForm.verifyMfaSetup.state,loading",
+      "config": {
+        "tag": "p",
+        "text": "Activando el autenticador y cerrando el inicio de sesión...",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-titleColor ank-fontWeight-800"
       }
     },
     {
