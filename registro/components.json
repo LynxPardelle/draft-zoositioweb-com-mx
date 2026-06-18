@@ -238,13 +238,17 @@
     {
       "id": "signupSubmit",
       "type": "button",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,authForm.signup.state,loading\",true,false",
       "eventInstructions": "authFormAction:signup,authForm.signup;trackEvent:auth_signup_submit,auth,zoosite-signup,location,register_page",
       "config": {
         "type": "button",
         "label": "Crear cuenta",
+        "loadingLabel": "Creando cuenta...",
         "ariaLabel": "Crear cuenta en zoositioweb",
         "disabledWhenInvalidScope": true,
         "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "spinnerClasses": "zlp-button-spinner",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
       }
     },
