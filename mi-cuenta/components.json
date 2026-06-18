@@ -24,6 +24,7 @@
         "components": [
           "miCuentaHeader",
           "miCuentaMfaSuccess",
+          "miCuentaMfaDisabledSuccess",
           "miCuentaLoading",
           "miCuentaError",
           "miCuentaPanel",
@@ -78,6 +79,16 @@
       "config": {
         "tag": "p",
         "text": "La verificación en dos pasos quedó activada para tu cuenta.",
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "miCuentaMfaDisabledSuccess",
+      "type": "text",
+      "condition": "all:queryEq,authStatus,mfa-disabled",
+      "config": {
+        "tag": "p",
+        "text": "La verificación en dos pasos quedó desactivada para tu cuenta.",
         "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
       }
     },
@@ -230,7 +241,8 @@
           "miCuentaSecurityBody",
           "miCuentaMfaStartForm",
           "miCuentaMfaSetupPanel",
-          "miCuentaMfaVerifyForm"
+          "miCuentaMfaVerifyForm",
+          "miCuentaMfaDisableSection"
         ]
       }
     },
@@ -496,6 +508,134 @@
         "ariaLabel": "Confirmar verificación en dos pasos",
         "disabledWhenInvalidScope": true,
         "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-15px ank-fontWeight-900 ank-cursor-pointer",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "spinnerClasses": "zlp-button-spinner",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
+      }
+    },
+    {
+      "id": "miCuentaMfaDisableSection",
+      "type": "container",
+      "condition": "all:varNeq,authForm.startMfaEnrollment.state,success",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08",
+        "components": [
+          "miCuentaMfaDisableTitle",
+          "miCuentaMfaDisableBody",
+          "miCuentaMfaDisableForm"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaMfaDisableTitle",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Desactivar verificación en dos pasos",
+        "classes": "ank-m-0 ank-fontSize-18px ank-lineHeight-1_25 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "miCuentaMfaDisableBody",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Si ya no quieres usar la app de autenticación, confirma tu contraseña actual y el código vigente antes de desactivarla.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "miCuentaMfaDisableForm",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "zoositeMfaDisable",
+        "tag": "form",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "miCuentaMfaDisablePassword",
+          "miCuentaMfaDisableCode",
+          "miCuentaMfaDisableError",
+          "miCuentaMfaDisableButton"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaMfaDisablePassword",
+      "type": "input",
+      "config": {
+        "fieldId": "password",
+        "controlType": "text",
+        "inputType": "password",
+        "label": "Contraseña actual",
+        "showPasswordToggle": true,
+        "showPasswordLabel": "Mostrar contraseña",
+        "hidePasswordLabel": "Ocultar contraseña",
+        "passwordToggleShowIcon": "preview",
+        "passwordToggleHideIcon": "visibility_off",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
+        "fieldClasses": "ank-display-flex ank-alignItems-center ank-gap-8px",
+        "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor",
+        "passwordToggleClasses": "ank-flexShrink-0 ank-width-44px ank-height-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-border-1px__solid__secondaryAccentColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-cursor-pointer",
+        "passwordToggleIconClasses": "ank-display-block ank-width-24px ank-height-24px ank-fontSize-1_2rem ank-color-titleColor",
+        "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Escribe tu contraseña actual."
+          }
+        ]
+      }
+    },
+    {
+      "id": "miCuentaMfaDisableCode",
+      "type": "input",
+      "config": {
+        "fieldId": "code",
+        "controlType": "text",
+        "inputType": "tel",
+        "label": "Código actual de la app",
+        "placeholder": "000000",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-46px ank-paddingInline-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-letterSpacing-0",
+        "errorClasses": "ank-color-errorColor ank-fontSize-13px ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Escribe el código actual."
+          },
+          {
+            "type": "pattern",
+            "value": "^\\d{6}$",
+            "message": "El código debe tener 6 números."
+          }
+        ]
+      }
+    },
+    {
+      "id": "miCuentaMfaDisableError",
+      "type": "text",
+      "condition": "all:varEq,authForm.disableMfa.state,error",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos desactivar la verificación. Revisa tu contraseña y el código actual de la app.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "miCuentaMfaDisableButton",
+      "type": "button",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,authForm.disableMfa.state,loading\",true,false",
+      "eventInstructions": "authFormAction:disableMfa,authForm.disableMfa;trackEvent:auth_mfa_disable_submit,auth,zoosite-mfa-disable,location,account_page",
+      "config": {
+        "type": "button",
+        "label": "Desactivar verificación",
+        "loadingLabel": "Desactivando...",
+        "ariaLabel": "Desactivar verificación en dos pasos",
+        "disabledWhenInvalidScope": true,
+        "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-1px__solid__errorColor ank-borderRadius-8px ank-bg-transparent ank-color-errorColor ank-fontSize-15px ank-fontWeight-900 ank-cursor-pointer",
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "spinnerClasses": "zlp-button-spinner",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
