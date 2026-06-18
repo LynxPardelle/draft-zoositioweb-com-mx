@@ -89,7 +89,9 @@
         "components": [
           "verificarAccesoFormTitle",
           "verificarAccesoCode",
-          "verificarAccesoError",
+          "verificarAccesoEnvironmentError",
+          "verificarAccesoExpiredError",
+          "verificarAccesoCodeError",
           "verificarAccesoLoading",
           "verificarAccesoSubmit"
         ]
@@ -131,12 +133,32 @@
       }
     },
     {
-      "id": "verificarAccesoError",
+      "id": "verificarAccesoEnvironmentError",
       "type": "text",
-      "condition": "all:varEq,authForm.respondMfaChallenge.state,error",
+      "condition": "all:varEq,authForm.respondMfaChallenge.state,error;all:varEq,authForm.respondMfaChallenge.errorCode,auth_environment_mismatch",
       "config": {
         "tag": "p",
-        "text": "No pudimos verificar el código. Revisa que sea el código actual e intenta de nuevo.",
+        "text": "Esta cuenta no pertenece al ambiente de pruebas. Usa una cuenta creada en testing o vuelve a iniciar sesión en producción.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "verificarAccesoExpiredError",
+      "type": "text",
+      "condition": "all:varEq,authForm.respondMfaChallenge.state,error;all:varEq,authForm.respondMfaChallenge.errorCode,auth_challenge_expired",
+      "config": {
+        "tag": "p",
+        "text": "La verificación expiró. Vuelve a iniciar sesión para generar un nuevo código de acceso.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "verificarAccesoCodeError",
+      "type": "text",
+      "condition": "all:varEq,authForm.respondMfaChallenge.state,error;all:varNeq,authForm.respondMfaChallenge.errorCode,auth_environment_mismatch;all:varNeq,authForm.respondMfaChallenge.errorCode,auth_challenge_expired",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos verificar el código. Revisa que sea el código actual de tu app de autenticación e intenta de nuevo.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor"
       }
     },
