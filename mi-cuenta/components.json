@@ -332,6 +332,9 @@
         "components": [
           "miCuentaMfaSetupTitle",
           "miCuentaMfaSetupInstructions",
+          "miCuentaMfaQrIntro",
+          "miCuentaMfaQrCode",
+          "miCuentaMfaManualFallbackText",
           "miCuentaMfaSecretLabel",
           "miCuentaMfaSecret"
         ]
@@ -342,7 +345,7 @@
       "type": "text",
       "config": {
         "tag": "h3",
-        "text": "Agrega esta clave a tu app",
+        "text": "Agrega esta cuenta a tu app",
         "classes": "ank-m-0 ank-fontSize-18px ank-lineHeight-1_25 ank-fontWeight-800 ank-color-titleColor"
       }
     },
@@ -351,8 +354,48 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Abre tu app de autenticación, agrega una cuenta manualmente y escribe esta clave. Después captura el código de 6 números que genere.",
+        "text": "Abre tu app de autenticación, escanea el QR y después captura el código de 6 números que genere.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "miCuentaMfaQrIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Escanea este código desde Google Authenticator, Microsoft Authenticator, 1Password u otra app compatible.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "miCuentaMfaQrCode",
+      "type": "qr-code",
+      "valueInstructions": "set:config.value,var,authForm.startMfaEnrollment.data.setup.otpauthUri",
+      "config": {
+        "id": "miCuentaMfaQrCode",
+        "value": "",
+        "ariaLabel": "Código QR para configurar verificación en dos pasos",
+        "classes": "ank-alignSelf-center ank-display-flex ank-alignItems-center ank-justifyContent-center ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18",
+        "gridClasses": "ank-borderRadius-4px",
+        "moduleClasses": "",
+        "emptyClasses": "ank-fontSize-13px ank-color-secondaryTextColor ank-textAlign-center",
+        "errorClasses": "ank-fontSize-13px ank-color-errorColor ank-fontWeight-700 ank-textAlign-center",
+        "emptyText": "QR no disponible. Usa la clave manual.",
+        "errorText": "No pudimos generar el QR. Usa la clave manual.",
+        "size": 220,
+        "margin": 2,
+        "errorCorrectionLevel": "M",
+        "darkColor": "#0d141c",
+        "lightColor": "#ffffff"
+      }
+    },
+    {
+      "id": "miCuentaMfaManualFallbackText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Si no puedes escanearlo, usa esta clave manual.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor"
       }
     },
     {
@@ -371,7 +414,13 @@
       "config": {
         "tag": "p",
         "text": "Clave no disponible",
-        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-titleColor ank-fontSize-18px ank-fontWeight-900 ank-wordBreak-break-word ank-letterSpacing-0"
+        "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-titleColor ank-fontSize-16px ank-lineHeight-1_45 ank-fontWeight-900 ank-letterSpacing-0",
+        "styles": {
+          "overflowWrap": "anywhere",
+          "wordBreak": "break-all",
+          "whiteSpace": "normal",
+          "maxWidth": "100%"
+        }
       }
     },
     {
