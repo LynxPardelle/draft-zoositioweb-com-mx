@@ -255,38 +255,28 @@
             "label": "Aprobar como cliente",
             "ariaLabel": "Aprobar usuario como cliente",
             "classes": "ank-width-100per ank-minHeight-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer",
-            "icon": "check_circle",
-            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
             "confirmMessage": "Confirma que quieres aprobar esta cuenta como cliente."
           },
           {
             "label": "Elevar a admin",
             "ariaLabel": "Aprobar usuario como administrador",
-            "icon": "admin_panel_settings",
-            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
             "confirmMessage": "Esta acción dará permisos de administrador. Confirma que quieres continuar."
           },
           {
             "label": "Suspender acceso",
             "ariaLabel": "Suspender usuario",
             "classes": "ank-width-100per ank-minHeight-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__errorColor ank-borderRadius-8px ank-bg-transparent ank-color-errorColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer",
-            "icon": "block",
-            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
             "confirmMessage": "Confirma que quieres suspender el acceso de esta cuenta."
           },
           {
             "label": "Reactivar acceso",
             "ariaLabel": "Reactivar usuario",
-            "icon": "restart_alt",
-            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
             "confirmMessage": "Confirma que quieres reactivar el acceso de esta cuenta."
           },
           {
             "label": "Restablecer MFA",
             "ariaLabel": "Restablecer verificación en dos pasos de usuario",
             "classes": "ank-width-100per ank-minHeight-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__warningColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer",
-            "icon": "qr_code_2",
-            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
             "confirmMessage": "Esta acción desactiva la verificación en dos pasos de esta cuenta para que el usuario pueda configurarla de nuevo. Confirma que quieres continuar."
           }
         ]
