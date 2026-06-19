@@ -93,6 +93,7 @@
           "confirmSignupCode",
           "confirmSignupSuccess",
           "confirmSignupError",
+          "confirmSignupSubmitting",
           "confirmSignupSubmit"
         ]
       }
@@ -173,6 +174,35 @@
       "condition": "all:varEq,authForm.confirmSignup.state,error"
     },
     {
+      "id": "confirmSignupSubmitting",
+      "type": "container",
+      "condition": "all:varEq,authForm.confirmSignup.state,loading",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor",
+        "components": [
+          "confirmSignupSubmittingSpinner",
+          "confirmSignupSubmittingText"
+        ]
+      }
+    },
+    {
+      "id": "confirmSignupSubmittingSpinner",
+      "type": "loading-spinner",
+      "config": {
+        "classes": "ank-width-20px ank-height-20px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
+      }
+    },
+    {
+      "id": "confirmSignupSubmittingText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Confirmando tu cuenta...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
       "id": "confirmSignupSubmit",
       "type": "button",
       "valueInstructions": "set:config.loading,when,\"all:varEq,authForm.confirmSignup.state,loading\",true,false",
@@ -201,6 +231,7 @@
           "resendSignupEmail",
           "resendSignupSuccess",
           "resendSignupError",
+          "resendSignupSubmitting",
           "resendSignupCode"
         ]
       }
@@ -258,6 +289,35 @@
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor"
       },
       "condition": "all:varEq,authForm.resendConfirmation.state,error"
+    },
+    {
+      "id": "resendSignupSubmitting",
+      "type": "container",
+      "condition": "all:varEq,authForm.resendConfirmation.state,loading",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor",
+        "components": [
+          "resendSignupSubmittingSpinner",
+          "resendSignupSubmittingText"
+        ]
+      }
+    },
+    {
+      "id": "resendSignupSubmittingSpinner",
+      "type": "loading-spinner",
+      "config": {
+        "classes": "ank-width-20px ank-height-20px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
+      }
+    },
+    {
+      "id": "resendSignupSubmittingText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Reenviando el código...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-titleColor"
+      }
     },
     {
       "id": "resendSignupCode",

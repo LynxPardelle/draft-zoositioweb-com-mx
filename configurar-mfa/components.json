@@ -101,12 +101,31 @@
     },
     {
       "id": "configurarMfaStartLoading",
-      "type": "text",
+      "type": "container",
       "condition": "all:varEq,authForm.startMfaSetup.state,loading",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px ank-p-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor",
+        "components": [
+          "configurarMfaStartLoadingSpinner",
+          "configurarMfaStartLoadingText"
+        ]
+      }
+    },
+    {
+      "id": "configurarMfaStartLoadingSpinner",
+      "type": "loading-spinner",
+      "config": {
+        "classes": "ank-width-20px ank-height-20px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
+      }
+    },
+    {
+      "id": "configurarMfaStartLoadingText",
+      "type": "text",
       "config": {
         "tag": "p",
         "text": "Preparando una clave segura para tu app de autenticación...",
-        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-titleColor ank-fontWeight-800"
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
@@ -284,12 +303,31 @@
     },
     {
       "id": "configurarMfaVerifyLoading",
-      "type": "text",
+      "type": "container",
       "condition": "all:varEq,authForm.verifyMfaSetup.state,loading",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor",
+        "components": [
+          "configurarMfaVerifyLoadingSpinner",
+          "configurarMfaVerifyLoadingText"
+        ]
+      }
+    },
+    {
+      "id": "configurarMfaVerifyLoadingSpinner",
+      "type": "loading-spinner",
+      "config": {
+        "classes": "ank-width-20px ank-height-20px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
+      }
+    },
+    {
+      "id": "configurarMfaVerifyLoadingText",
+      "type": "text",
       "config": {
         "tag": "p",
         "text": "Activando el autenticador y cerrando el inicio de sesión...",
-        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-titleColor ank-fontWeight-800"
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
