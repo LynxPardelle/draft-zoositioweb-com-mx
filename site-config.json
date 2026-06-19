@@ -561,17 +561,17 @@
             },
             "rolesText": {
               "path": "roles",
-              "fallback": "Sin grupos"
+              "fallback": "Sin grupos asignados"
             },
             "statusLabel": {
               "path": "approvalStatus",
               "lookup": {
-                "pending": "Pendiente",
+                "pending": "Pendiente de aprobación",
                 "approved": "Aprobado",
                 "rejected": "Rechazado",
                 "suspended": "Suspendido"
               },
-              "fallback": "Pendiente"
+              "fallback": "Pendiente de aprobación"
             },
             "enabledLabel": {
               "path": "enabled",
@@ -580,6 +580,91 @@
                 "false": "Deshabilitado"
               },
               "fallback": "Activo"
+            },
+            "statusHelpItems": {
+              "path": "approvalStatus",
+              "lookup": {
+                "pending": [
+                  "Puede entrar a /mi-cuenta para ver su estado.",
+                  "No puede usar /admin/* hasta que un administrador apruebe grupos."
+                ],
+                "approved": [
+                  "La cuenta puede usar las rutas permitidas por sus grupos.",
+                  "zoosite-admin habilita /admin/*; zoosite-client mantiene acceso de cliente."
+                ],
+                "rejected": [
+                  "La cuenta no debe recibir permisos sin una nueva revisión.",
+                  "Si fue un error, documenta el caso antes de intentar otro cambio."
+                ],
+                "suspended": [
+                  "El acceso protegido se bloquea cuando el backend revalida la sesión.",
+                  "Reactiva sólo después de confirmar que la cuenta puede volver a operar."
+                ]
+              },
+              "fallback": [
+                "Revisa estado y grupos antes de cambiar permisos.",
+                "El backend vuelve a validar sesión, tenant, ambiente y CSRF en cada acción."
+              ]
+            },
+            "cardClasses": {
+              "path": "approvalStatus",
+              "lookup": {
+                "pending": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__warningColor ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_08ED",
+                "approved": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_08ED",
+                "rejected": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__errorColor ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_08ED",
+                "suspended": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__errorColor ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_08ED"
+              },
+              "fallback": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_08ED"
+            },
+            "approveClientDisabled": {
+              "path": "approvalStatus",
+              "lookup": {
+                "pending": false,
+                "approved": true,
+                "rejected": true,
+                "suspended": true
+              },
+              "fallback": false
+            },
+            "approveAdminDisabled": {
+              "path": "approvalStatus",
+              "lookup": {
+                "pending": false,
+                "approved": false,
+                "rejected": true,
+                "suspended": true
+              },
+              "fallback": false
+            },
+            "suspendDisabled": {
+              "path": "approvalStatus",
+              "lookup": {
+                "pending": false,
+                "approved": false,
+                "rejected": true,
+                "suspended": true
+              },
+              "fallback": false
+            },
+            "reactivateDisabled": {
+              "path": "approvalStatus",
+              "lookup": {
+                "pending": true,
+                "approved": true,
+                "rejected": true,
+                "suspended": false
+              },
+              "fallback": true
+            },
+            "resetMfaDisabled": {
+              "path": "approvalStatus",
+              "lookup": {
+                "pending": true,
+                "approved": false,
+                "rejected": true,
+                "suspended": true
+              },
+              "fallback": true
             },
             "clientApproveInstructions": {
               "path": "subject",

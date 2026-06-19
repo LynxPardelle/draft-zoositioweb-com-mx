@@ -23,6 +23,7 @@
         "classes": "ank-width-100per ank-maxWidth-1040px ank-display-flex ank-flexDirection-column ank-gap-22px ank-textAlign-left",
         "components": [
           "adminUsuariosHeader",
+          "adminUsuariosStatusGuide",
           "adminUsuariosActionStatus",
           "adminUsuariosActionLoading",
           "adminUsuariosLoading",
@@ -69,15 +70,89 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Aprueba cuentas nuevas, eleva permisos cuando sea necesario y suspende accesos sin tocar secretos ni tokens desde el navegador.",
+        "text": "Aprueba cuentas nuevas, asigna permisos mínimos y suspende accesos desde componentes genéricos. La autorización final siempre se revalida en backend.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "adminUsuariosStatusGuide",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08",
+        "components": [
+          "adminUsuariosStatusGuideTitle",
+          "adminUsuariosStatusGuideGrid"
+        ]
+      }
+    },
+    {
+      "id": "adminUsuariosStatusGuideTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Guía rápida de estados",
+        "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_3 ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminUsuariosStatusGuideGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gap-10px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 220px), 1fr))"
+        },
+        "components": [
+          "adminUsuariosPendingGuide",
+          "adminUsuariosClientGuide",
+          "adminUsuariosAdminGuide",
+          "adminUsuariosSuspendedGuide"
+        ]
+      }
+    },
+    {
+      "id": "adminUsuariosPendingGuide",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Pendiente: puede entrar a /mi-cuenta y ver su estado, pero no puede administrar ni usar permisos privados hasta aprobación.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-700 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminUsuariosClientGuide",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cliente: zoosite-client mantiene acceso autenticado de cliente y no habilita /admin/*.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_10 ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-700 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminUsuariosAdminGuide",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Admin: zoosite-admin puede entrar a /admin/*; úsalo sólo para cuentas que deben operar usuarios.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-700 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminUsuariosSuspendedGuide",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Suspendido: el backend debe bloquear sesión y acciones protegidas al revalidar el usuario.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-700 ank-color-titleColor"
       }
     },
     {
       "id": "adminUsuariosActionStatus",
       "type": "text",
       "condition": "any:varEq,remoteStatus.adminUsersAction.state,success;any:varEq,remoteStatus.adminUsersAction.state,error",
-      "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.adminUsersAction.state,success\",\"Acción aplicada. La lista se actualizó.\",\"No pudimos aplicar la acción. Revisa permisos o intenta de nuevo.\";set:config.classes,when,\"all:varEq,remoteStatus.adminUsersAction.state,success\",\"ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-800\",\"ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-800\"",
+      "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.adminUsersAction.state,success\",\"Acción aplicada. La lista fue revalidada desde el backend.\",\"No pudimos aplicar la acción. La sesión pudo expirar, el usuario pudo cambiar de estado o la política del backend rechazó la operación.\";set:config.classes,when,\"all:varEq,remoteStatus.adminUsersAction.state,success\",\"ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-800\",\"ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-800\"",
       "config": {
         "tag": "p",
         "text": "",
@@ -109,7 +184,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Aplicando acción y actualizando la lista...",
+        "text": "Aplicando acción en backend y revalidando la lista...",
         "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-titleColor"
       }
     },
@@ -138,7 +213,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Cargando usuarios...",
+        "text": "Cargando usuarios y verificando permisos de administrador...",
         "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-700 ank-color-titleColor"
       }
     },
@@ -148,7 +223,7 @@
       "condition": "all:varEq,remoteStatus.adminUsers.state,error",
       "config": {
         "tag": "p",
-        "text": "No pudimos cargar usuarios. Confirma que tu cuenta sigue aprobada como administrador.",
+        "text": "No pudimos cargar usuarios. Vuelve a iniciar sesión o pide a otro administrador revisar que tu cuenta siga aprobada como admin.",
         "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
       }
     },
@@ -158,7 +233,7 @@
       "condition": "all:varEq,remoteStatus.adminUsers.state,empty",
       "config": {
         "tag": "p",
-        "text": "Todavía no hay usuarios para administrar.",
+        "text": "Todavía no hay usuarios en este ambiente. Cuando alguien se registre, aparecerá aquí con estado pendiente.",
         "classes": "ank-m-0 ank-p-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-color-titleColor ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700"
       }
     },
@@ -184,14 +259,31 @@
             "sources": [
               "statusLabel"
             ],
-            "prefix": "Estado: "
+            "prefix": "Estado de aprobación: "
           },
           {
             "to": "config.linkLabel",
             "sources": [
               "rolesText"
             ],
-            "prefix": "Grupos: "
+            "prefix": "Grupos visibles: "
+          },
+          {
+            "to": "config.benefits",
+            "sources": [
+              "statusHelpItems"
+            ],
+            "fallback": [
+              "Revisa estado y grupos antes de cambiar permisos.",
+              "El backend vuelve a validar sesión, tenant, ambiente y CSRF en cada acción."
+            ]
+          },
+          {
+            "to": "config.classes",
+            "sources": [
+              "cardClasses"
+            ],
+            "fallback": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_08ED"
           },
           {
             "to": "config.actions.0.eventInstructions",
@@ -222,6 +314,41 @@
             "sources": [
               "resetMfaInstructions"
             ]
+          },
+          {
+            "to": "config.actions.0.disabled",
+            "sources": [
+              "approveClientDisabled"
+            ],
+            "fallback": false
+          },
+          {
+            "to": "config.actions.1.disabled",
+            "sources": [
+              "approveAdminDisabled"
+            ],
+            "fallback": false
+          },
+          {
+            "to": "config.actions.2.disabled",
+            "sources": [
+              "suspendDisabled"
+            ],
+            "fallback": false
+          },
+          {
+            "to": "config.actions.3.disabled",
+            "sources": [
+              "reactivateDisabled"
+            ],
+            "fallback": true
+          },
+          {
+            "to": "config.actions.4.disabled",
+            "sources": [
+              "resetMfaDisabled"
+            ],
+            "fallback": true
           }
         ]
       },
@@ -241,43 +368,59 @@
       "config": {
         "variant": "feature",
         "title": "Usuario",
-        "description": "Estado: Pendiente",
-        "linkLabel": "Grupos: zoosite-client",
+        "description": "Estado de aprobación: Pendiente",
+        "linkLabel": "Grupos visibles: zoosite-client",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_08 ank-boxShadow-0__12px__40px__rgbaSD0COM0COM0COM0_08ED",
         "featureIconContainerClasses": "ank-display-none",
         "featureTitleClasses": "ank-m-0 ank-fontSize-18px ank-lineHeight-1_25 ank-fontWeight-900 ank-color-titleColor ank-wordBreak-break-word",
         "featureDescriptionClasses": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-fontWeight-800",
         "linkClasses": "ank-fontSize-13px ank-lineHeight-1_4 ank-color-secondaryTextColor ank-textDecoration-none ank-pointerEvents-none",
-        "actionListClasses": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-8px ank-marginTop-4px",
-        "actionButtonClasses": "ank-width-100per ank-minHeight-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__textColorOPA__0_10 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer",
+        "benefitsListClasses": "ank-m-0 ank-p-0 ank-listStyle-none ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "benefitItemClasses": "ank-display-flex ank-alignItems-flex-start ank-gap-8px ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "benefitIconClasses": "ank-fontSize-18px ank-lineHeight-1 ank-color-accentColor ank-marginTop-1px",
+        "benefitTextClasses": "ank-display-block",
+        "actionListClasses": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-10px ank-marginTop-4px",
+        "actionButtonClasses": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__textColorOPA__0_10 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center",
         "actions": [
           {
-            "label": "Aprobar como cliente",
-            "ariaLabel": "Aprobar usuario como cliente",
-            "classes": "ank-width-100per ank-minHeight-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer",
-            "confirmMessage": "Confirma que quieres aprobar esta cuenta como cliente."
+            "label": "Dar acceso cliente",
+            "ariaLabel": "Aprobar usuario como cliente zoositioweb",
+            "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__accentColor ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center",
+            "icon": "check_circle",
+            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
+            "confirmMessage": "Confirma que quieres aprobar esta cuenta como cliente. Tendrá acceso autenticado de cliente, no de administrador."
           },
           {
-            "label": "Elevar a admin",
-            "ariaLabel": "Aprobar usuario como administrador",
-            "confirmMessage": "Esta acción dará permisos de administrador. Confirma que quieres continuar."
+            "label": "Dar acceso admin",
+            "ariaLabel": "Aprobar usuario como administrador zoositioweb",
+            "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__secondaryAccentColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center",
+            "icon": "groups",
+            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
+            "confirmMessage": "Esta acción agrega permiso zoosite-admin y habilita /admin/*. Confirma que esta cuenta debe administrar usuarios."
           },
           {
-            "label": "Suspender acceso",
+            "label": "Suspender",
             "ariaLabel": "Suspender usuario",
-            "classes": "ank-width-100per ank-minHeight-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__errorColor ank-borderRadius-8px ank-bg-transparent ank-color-errorColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer",
-            "confirmMessage": "Confirma que quieres suspender el acceso de esta cuenta."
+            "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__errorColor ank-borderRadius-8px ank-bg-transparent ank-color-errorColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center",
+            "icon": "gavel",
+            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
+            "confirmMessage": "Confirma que quieres suspender esta cuenta. El backend debe bloquear su sesión y rutas protegidas en la siguiente revalidación."
           },
           {
-            "label": "Reactivar acceso",
+            "label": "Reactivar",
             "ariaLabel": "Reactivar usuario",
-            "confirmMessage": "Confirma que quieres reactivar el acceso de esta cuenta."
+            "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__textColorOPA__0_12 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center",
+            "icon": "autorenew",
+            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
+            "confirmMessage": "Confirma que quieres reactivar esta cuenta. Revisa primero que la suspensión ya no aplique."
           },
           {
             "label": "Restablecer MFA",
             "ariaLabel": "Restablecer verificación en dos pasos de usuario",
-            "classes": "ank-width-100per ank-minHeight-44px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__warningColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer",
-            "confirmMessage": "Esta acción desactiva la verificación en dos pasos de esta cuenta para que el usuario pueda configurarla de nuevo. Confirma que quieres continuar."
+            "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-12px ank-paddingBlock-10px ank-border-1px__solid__warningColor ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontSize-14px ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center",
+            "icon": "security",
+            "iconClasses": "ank-fontSize-20px ank-lineHeight-1",
+            "confirmMessage": "Esta acción desactiva la verificación en dos pasos de otra cuenta para que pueda configurarla de nuevo. No debe usarse para tu propia cuenta. Confirma que quieres continuar."
           }
         ]
       }
@@ -327,7 +470,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Los cambios se validan en backend con sesión HttpOnly, CSRF, tenant y ambiente.",
+        "text": "No se muestran tokens, sesiones Cognito ni secretos. Las acciones viajan por BFF same-origin con cookie HttpOnly, CSRF, tenant y ambiente.",
         "classes": "ank-m-0 ank-maxWidth-1040px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
       }
     }
