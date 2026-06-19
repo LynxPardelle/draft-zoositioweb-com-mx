@@ -94,6 +94,7 @@
           "resetPasswordConfirmPassword",
           "resetPasswordSuccess",
           "resetPasswordError",
+          "resetPasswordSubmitting",
           "resetPasswordSubmit"
         ]
       }
@@ -267,6 +268,35 @@
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor"
       },
       "condition": "all:varEq,authForm.confirmForgotPassword.state,error"
+    },
+    {
+      "id": "resetPasswordSubmitting",
+      "type": "container",
+      "condition": "all:varEq,authForm.confirmForgotPassword.state,loading",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor",
+        "components": [
+          "resetPasswordSubmittingSpinner",
+          "resetPasswordSubmittingText"
+        ]
+      }
+    },
+    {
+      "id": "resetPasswordSubmittingSpinner",
+      "type": "loading-spinner",
+      "config": {
+        "classes": "ank-width-20px ank-height-20px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
+      }
+    },
+    {
+      "id": "resetPasswordSubmittingText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Actualizando tu contraseña...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-titleColor"
+      }
     },
     {
       "id": "resetPasswordSubmit",

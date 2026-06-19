@@ -319,6 +319,7 @@
         "components": [
           "miCuentaMfaPassword",
           "miCuentaMfaStartError",
+          "miCuentaMfaStartLoading",
           "miCuentaMfaStartButton"
         ]
       }
@@ -359,6 +360,35 @@
         "tag": "p",
         "text": "No pudimos preparar la verificación en dos pasos. Revisa tu contraseña e intenta de nuevo.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "miCuentaMfaStartLoading",
+      "type": "container",
+      "condition": "all:varEq,authForm.startMfaEnrollment.state,loading",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px ank-p-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor",
+        "components": [
+          "miCuentaMfaStartLoadingSpinner",
+          "miCuentaMfaStartLoadingText"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaMfaStartLoadingSpinner",
+      "type": "loading-spinner",
+      "config": {
+        "classes": "ank-width-20px ank-height-20px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
+      }
+    },
+    {
+      "id": "miCuentaMfaStartLoadingText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Preparando tu verificación en dos pasos...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
@@ -491,6 +521,7 @@
           "miCuentaMfaVerifyTitle",
           "miCuentaMfaCode",
           "miCuentaMfaVerifyError",
+          "miCuentaMfaVerifyLoading",
           "miCuentaMfaVerifyButton"
         ]
       }
@@ -538,6 +569,35 @@
         "tag": "p",
         "text": "No pudimos activar la verificación. Revisa el código actual de la app e intenta de nuevo.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "miCuentaMfaVerifyLoading",
+      "type": "container",
+      "condition": "all:varEq,authForm.verifyMfaEnrollment.state,loading",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px ank-p-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor",
+        "components": [
+          "miCuentaMfaVerifyLoadingSpinner",
+          "miCuentaMfaVerifyLoadingText"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaMfaVerifyLoadingSpinner",
+      "type": "loading-spinner",
+      "config": {
+        "classes": "ank-width-20px ank-height-20px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
+      }
+    },
+    {
+      "id": "miCuentaMfaVerifyLoadingText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Activando la verificación en dos pasos...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
@@ -600,6 +660,7 @@
           "miCuentaMfaDisablePassword",
           "miCuentaMfaDisableCode",
           "miCuentaMfaDisableError",
+          "miCuentaMfaDisableLoading",
           "miCuentaMfaDisableButton"
         ]
       }
@@ -666,6 +727,35 @@
         "tag": "p",
         "text": "No pudimos desactivar la verificación. Revisa tu contraseña y el código actual de la app.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-errorColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "miCuentaMfaDisableLoading",
+      "type": "container",
+      "condition": "all:varEq,authForm.disableMfa.state,loading",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px ank-p-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-color-titleColor",
+        "components": [
+          "miCuentaMfaDisableLoadingSpinner",
+          "miCuentaMfaDisableLoadingText"
+        ]
+      }
+    },
+    {
+      "id": "miCuentaMfaDisableLoadingSpinner",
+      "type": "loading-spinner",
+      "config": {
+        "classes": "ank-width-20px ank-height-20px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
+      }
+    },
+    {
+      "id": "miCuentaMfaDisableLoadingText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Desactivando la verificación en dos pasos...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
