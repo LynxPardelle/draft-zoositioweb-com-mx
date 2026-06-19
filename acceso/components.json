@@ -102,6 +102,7 @@
           "loginEmail",
           "loginPassword",
           "loginError",
+          "loginSubmitting",
           "loginSubmit"
         ]
       }
@@ -179,6 +180,35 @@
       "condition": "all:varEq,authForm.signin.state,error"
     },
     {
+      "id": "loginSubmitting",
+      "type": "container",
+      "condition": "all:varEq,authForm.signin.state,loading",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__accentColor ank-color-titleColor",
+        "components": [
+          "loginSubmittingSpinner",
+          "loginSubmittingText"
+        ]
+      }
+    },
+    {
+      "id": "loginSubmittingSpinner",
+      "type": "loading-spinner",
+      "config": {
+        "classes": "ank-width-20px ank-height-20px ank-border-3px__solid__textColorOPA__0_18 ank-borderTopColor-accentColor ank-borderRadius-50per"
+      }
+    },
+    {
+      "id": "loginSubmittingText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Entrando y verificando tu cuenta...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
       "id": "loginSubmit",
       "type": "button",
       "valueInstructions": "set:config.loading,when,\"all:varEq,authForm.signin.state,loading\",true,false",
@@ -186,7 +216,7 @@
       "config": {
         "type": "button",
         "label": "Entrar",
-        "loadingLabel": "Entrando...",
+        "loadingLabel": "Entrando y verificando...",
         "ariaLabel": "Entrar a mi cuenta",
         "disabledWhenInvalidScope": true,
         "classes": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-paddingInline-16px ank-paddingBlock-12px ank-border-0 ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontSize-16px ank-fontWeight-800 ank-cursor-pointer",
