@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog-configuracion",
+  "route": "/admin/blog/configuracion",
+  "title": "Configuración del blog",
+  "layout": "default",
+  "seo": {
+    "title": "Configuración del blog",
+    "description": "Configuración del blog para el hub de contenido de Zoosite.",
+    "robots": {
+      "default": "noindex,nofollow"
+    },
+    "canonical": "https://zoositioweb.com.mx/admin/blog/configuracion"
+  },
+  "updatedAt": "2026-06-20T12:00:00-06:00",
+  "rootIds": [
+    "admin-blog-configuracionRoot"
+  ]
+}

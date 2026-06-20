@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "blog-category",
+  "components": [
+    {
+      "id": "blogCategoryRoot",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-20px",
+        "components": [
+          "blogCategoryTitle",
+          "blogCategoryText",
+          "blogCategoryArticleLink"
+        ]
+      }
+    },
+    {
+      "id": "blogCategoryTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Categoría: Web",
+        "classes": "ank-width-100per ank-maxWidth-900px ank-m-0 ank-fontSize-36px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "blogCategoryText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Esta página valida que las categorías puedan renderizarse desde rutas limpias y después conectarse a búsquedas por tags o categorías.",
+        "classes": "ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-16px ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "blogCategoryArticleLink",
+      "type": "link",
+      "config": {
+        "href": "/blog/web/blog-builder-seo",
+        "text": "Blog builder visual con SEO desde el inicio",
+        "classes": "ank-display-inlineFlex ank-alignItems-center ank-minHeight-44px ank-color-linkColor ank-fontWeight-900"
+      }
+    }
+  ]
+}

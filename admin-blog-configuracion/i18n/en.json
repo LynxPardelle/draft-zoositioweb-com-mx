@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-configuracion",
+  "lang": "en",
+  "messages": {
+    "title": "Configuración del blog",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "blog-article",
+  "rootIds": [
+    "blogArticleRoot"
+  ],
+  "seo": {
+    "title": "Blog builder visual con SEO desde el inicio | zoositioweb",
+    "description": "Cómo Zoosite prepara un blog editable con componentes genéricos, rutas limpias, publicación programada y medición propia.",
+    "canonical": "https://zoositioweb.com.mx/blog/web/blog-builder-seo",
+    "robots": {
+      "default": "index,follow,max-image-preview:large"
+    }
+  }
+}

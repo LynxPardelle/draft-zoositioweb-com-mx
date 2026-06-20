@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-articulos-nuevo",
+  "lang": "en",
+  "messages": {
+    "title": "Crear artículo",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}

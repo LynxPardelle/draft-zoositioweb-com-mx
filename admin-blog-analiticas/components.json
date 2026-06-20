@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog-analiticas",
+  "components": [
+    {
+      "id": "admin-blog-analiticasRoot",
+      "type": "container",
+      "config": {
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "components": [
+          "admin-blog-analiticasShell"
+        ],
+        "tag": "main"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasShell",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-analiticasEyebrow",
+          "admin-blog-analiticasTitle",
+          "admin-blog-analiticasNav",
+          "analyticsCard"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-analiticasEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "ZOOSITIOWEB / BLOG ADMIN",
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Analíticas",
+        "classes": "ank-m-0 ank-fontSize-34px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasNav",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "components": [
+          "admin-blog-analiticasNavArticles",
+          "admin-blog-analiticasNavNew",
+          "admin-blog-analiticasNavMedia",
+          "admin-blog-analiticasNavModeration",
+          "admin-blog-analiticasNavAnalytics",
+          "admin-blog-analiticasNavCategories",
+          "admin-blog-analiticasNavTags",
+          "admin-blog-analiticasNavHub",
+          "admin-blog-analiticasNavConfig"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-analiticasNavArticles",
+      "type": "link",
+      "config": {
+        "text": "Artículos",
+        "href": "/admin/blog/articulos",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasNavNew",
+      "type": "link",
+      "config": {
+        "text": "Crear artículo",
+        "href": "/admin/blog/articulos/nuevo",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasNavMedia",
+      "type": "link",
+      "config": {
+        "text": "Medios",
+        "href": "/admin/blog/medios",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasNavModeration",
+      "type": "link",
+      "config": {
+        "text": "Moderación",
+        "href": "/admin/blog/moderacion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasNavAnalytics",
+      "type": "link",
+      "config": {
+        "text": "Analíticas",
+        "href": "/admin/blog/analiticas",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasNavCategories",
+      "type": "link",
+      "config": {
+        "text": "Categorías",
+        "href": "/admin/blog/categorias",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasNavTags",
+      "type": "link",
+      "config": {
+        "text": "Tags",
+        "href": "/admin/blog/tags",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasNavHub",
+      "type": "link",
+      "config": {
+        "text": "Hub",
+        "href": "/admin/blog/hub",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-analiticasNavConfig",
+      "type": "link",
+      "config": {
+        "text": "Configuración",
+        "href": "/admin/blog/configuracion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "analyticsCard",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "viewsMetric",
+          "readProgressMetric",
+          "ctaClicksMetric",
+          "reactionsMetric",
+          "commentsMetric",
+          "sharesMetric",
+          "assetDownloadsMetric",
+          "analyticsTable"
+        ]
+      }
+    },
+    {
+      "id": "viewsMetric",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "views: vistas por dominio, artículo e idioma.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "readProgressMetric",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "readProgress: profundidad de lectura.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "ctaClicksMetric",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "ctaClicks: clicks de CTA públicos.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "reactionsMetric",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "reactions: likes y reacciones públicas moderables.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "commentsMetric",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "comments: comentarios autenticados y moderados.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "sharesMetric",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "shares: eventos de compartir.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "assetDownloadsMetric",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "assetDownloads: descargas de archivos públicos.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "analyticsTable",
+      "type": "generic-table",
+      "config": {
+        "id": "analyticsTable",
+        "label": "Métricas del artículo",
+        "rowIdPath": "id",
+        "rowsSource": {
+          "source": "var",
+          "path": "remote.contentHub.analytics.items"
+        },
+        "rows": [],
+        "columns": [
+          {
+            "id": "metric",
+            "header": "Métrica",
+            "valuePath": "metric"
+          },
+          {
+            "id": "value",
+            "header": "Valor",
+            "valuePath": "value"
+          }
+        ],
+        "rowActions": [],
+        "classes": "ank-width-100per"
+      }
+    }
+  ]
+}

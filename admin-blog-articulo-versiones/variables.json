@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-articulo-versiones",
+  "variables": {
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx",
+    "adminOnly": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-medios",
+  "lang": "en",
+  "messages": {
+    "title": "Medios",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}

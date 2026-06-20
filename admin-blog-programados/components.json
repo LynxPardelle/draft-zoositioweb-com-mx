@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog-programados",
+  "components": [
+    {
+      "id": "admin-blog-programadosRoot",
+      "type": "container",
+      "config": {
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "components": [
+          "admin-blog-programadosShell"
+        ],
+        "tag": "main"
+      }
+    },
+    {
+      "id": "admin-blog-programadosShell",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-programadosEyebrow",
+          "admin-blog-programadosTitle",
+          "admin-blog-programadosNav",
+          "scheduleCard"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-programadosEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "ZOOSITIOWEB / BLOG ADMIN",
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "admin-blog-programadosTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Programación",
+        "classes": "ank-m-0 ank-fontSize-34px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "admin-blog-programadosNav",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "components": [
+          "admin-blog-programadosNavArticles",
+          "admin-blog-programadosNavNew",
+          "admin-blog-programadosNavMedia",
+          "admin-blog-programadosNavModeration",
+          "admin-blog-programadosNavAnalytics",
+          "admin-blog-programadosNavCategories",
+          "admin-blog-programadosNavTags",
+          "admin-blog-programadosNavHub",
+          "admin-blog-programadosNavConfig"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-programadosNavArticles",
+      "type": "link",
+      "config": {
+        "text": "Artículos",
+        "href": "/admin/blog/articulos",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-programadosNavNew",
+      "type": "link",
+      "config": {
+        "text": "Crear artículo",
+        "href": "/admin/blog/articulos/nuevo",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-programadosNavMedia",
+      "type": "link",
+      "config": {
+        "text": "Medios",
+        "href": "/admin/blog/medios",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-programadosNavModeration",
+      "type": "link",
+      "config": {
+        "text": "Moderación",
+        "href": "/admin/blog/moderacion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-programadosNavAnalytics",
+      "type": "link",
+      "config": {
+        "text": "Analíticas",
+        "href": "/admin/blog/analiticas",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-programadosNavCategories",
+      "type": "link",
+      "config": {
+        "text": "Categorías",
+        "href": "/admin/blog/categorias",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-programadosNavTags",
+      "type": "link",
+      "config": {
+        "text": "Tags",
+        "href": "/admin/blog/tags",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-programadosNavHub",
+      "type": "link",
+      "config": {
+        "text": "Hub",
+        "href": "/admin/blog/hub",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-programadosNavConfig",
+      "type": "link",
+      "config": {
+        "text": "Configuración",
+        "href": "/admin/blog/configuracion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "scheduleCard",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "publishAtInput",
+          "unpublishAtInput",
+          "timezoneInput",
+          "rescheduleButton",
+          "cancelScheduleButton",
+          "scheduleTable"
+        ]
+      }
+    },
+    {
+      "id": "publishAtInput",
+      "type": "input",
+      "config": {
+        "fieldId": "publishAt",
+        "label": "publishAt",
+        "value": "2026-07-01T09:00:00-06:00",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "unpublishAtInput",
+      "type": "input",
+      "config": {
+        "fieldId": "unpublishAt",
+        "label": "unpublishAt",
+        "value": "",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "timezoneInput",
+      "type": "input",
+      "config": {
+        "fieldId": "timezone",
+        "label": "timezone",
+        "value": "America/Mexico_City",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "rescheduleButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "label": "reschedule"
+      },
+      "eventInstructions": "proxyAction:content_hub_schedule_article"
+    },
+    {
+      "id": "cancelScheduleButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "label": "cancelSchedule"
+      },
+      "eventInstructions": "proxyAction:content_hub_schedule_article"
+    },
+    {
+      "id": "scheduleTable",
+      "type": "generic-table",
+      "config": {
+        "id": "scheduleTable",
+        "label": "Artículos programados",
+        "rowIdPath": "id",
+        "rowsSource": {
+          "source": "var",
+          "path": "remote.contentHub.articles.items"
+        },
+        "rows": [
+          {
+            "id": "art_20260620_blog_builder",
+            "title": "Blog builder visual con SEO desde el inicio",
+            "status": "Programado",
+            "language": "es-MX",
+            "category": "web",
+            "tags": "seo, builder, angora",
+            "schedule": "2026-07-01 09:00 America/Mexico_City",
+            "updatedAt": "2026-06-20"
+          }
+        ],
+        "columns": [
+          {
+            "id": "title",
+            "header": "Título",
+            "valuePath": "title"
+          },
+          {
+            "id": "status",
+            "header": "Estado",
+            "valuePath": "status"
+          },
+          {
+            "id": "language",
+            "header": "Idioma",
+            "valuePath": "language"
+          },
+          {
+            "id": "category",
+            "header": "Categoría",
+            "valuePath": "category"
+          },
+          {
+            "id": "tags",
+            "header": "Tags",
+            "valuePath": "tags"
+          },
+          {
+            "id": "schedule",
+            "header": "Programación",
+            "valuePath": "schedule"
+          },
+          {
+            "id": "updatedAt",
+            "header": "Actualizado",
+            "valuePath": "updatedAt"
+          }
+        ],
+        "rowActions": [
+          {
+            "id": "edit",
+            "label": "Editar",
+            "icon": "edit",
+            "eventInstructions": "navigate:/admin/blog/articulos/editor"
+          },
+          {
+            "id": "preview",
+            "label": "Preview",
+            "icon": "eye",
+            "eventInstructions": "navigate:/admin/blog/articulos/preview"
+          },
+          {
+            "id": "seo",
+            "label": "SEO",
+            "icon": "search",
+            "eventInstructions": "navigate:/admin/blog/articulos/seo"
+          },
+          {
+            "id": "versions",
+            "label": "Versiones",
+            "icon": "history",
+            "eventInstructions": "navigate:/admin/blog/articulos/versiones"
+          },
+          {
+            "id": "schedule",
+            "label": "Programar",
+            "icon": "calendar",
+            "eventInstructions": "navigate:/admin/blog/programados"
+          }
+        ],
+        "classes": "ank-width-100per"
+      }
+    }
+  ]
+}

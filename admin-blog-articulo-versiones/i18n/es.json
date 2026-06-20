@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-articulo-versiones",
+  "lang": "es",
+  "messages": {
+    "title": "Versiones",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}

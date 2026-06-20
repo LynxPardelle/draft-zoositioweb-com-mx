@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-moderacion",
+  "lang": "en",
+  "messages": {
+    "title": "Moderación",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}
