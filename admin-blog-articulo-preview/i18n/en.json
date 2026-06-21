@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-articulo-preview",
+  "lang": "en",
+  "messages": {
+    "title": "Vista previa",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}

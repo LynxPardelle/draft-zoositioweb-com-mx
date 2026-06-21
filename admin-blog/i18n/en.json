@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog",
+  "lang": "en",
+  "messages": {
+    "title": "Panel del blog",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}

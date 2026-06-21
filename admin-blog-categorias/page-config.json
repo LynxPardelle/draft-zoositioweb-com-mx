@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog-categorias",
+  "route": "/admin/blog/categorias",
+  "title": "Categorías",
+  "layout": "default",
+  "seo": {
+    "title": "Categorías",
+    "description": "Categorías para el hub de contenido de Zoosite.",
+    "robots": {
+      "default": "noindex,nofollow"
+    },
+    "canonical": "https://zoositioweb.com.mx/admin/blog/categorias"
+  },
+  "updatedAt": "2026-06-20T12:00:00-06:00",
+  "rootIds": [
+    "admin-blog-categoriasRoot"
+  ]
+}

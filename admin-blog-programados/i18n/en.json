@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-programados",
+  "lang": "en",
+  "messages": {
+    "title": "Programación",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}

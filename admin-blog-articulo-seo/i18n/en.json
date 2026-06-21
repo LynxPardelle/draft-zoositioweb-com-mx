@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-articulo-seo",
+  "lang": "en",
+  "messages": {
+    "title": "SEO del artículo",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}

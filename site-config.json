@@ -78,6 +78,206 @@
       }
     },
     {
+      "path": "/admin/blog",
+      "pageId": "admin-blog",
+      "label": "Blog",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/articulos",
+      "pageId": "admin-blog-articulos",
+      "label": "Artículos del blog",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/articulos/nuevo",
+      "pageId": "admin-blog-articulos-nuevo",
+      "label": "Nuevo artículo",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/articulos/:id/editor",
+      "pageId": "admin-blog-articulo-editor",
+      "label": "Editor de artículo",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/articulos/:id/preview",
+      "pageId": "admin-blog-articulo-preview",
+      "label": "Vista previa de artículo",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/articulos/:id/seo",
+      "pageId": "admin-blog-articulo-seo",
+      "label": "SEO del artículo",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/articulos/:id/versiones",
+      "pageId": "admin-blog-articulo-versiones",
+      "label": "Versiones del artículo",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/programados",
+      "pageId": "admin-blog-programados",
+      "label": "Artículos programados",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/moderacion",
+      "pageId": "admin-blog-moderacion",
+      "label": "Moderación del blog",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/medios",
+      "pageId": "admin-blog-medios",
+      "label": "Medios del blog",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/analiticas",
+      "pageId": "admin-blog-analiticas",
+      "label": "Analíticas del blog",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/categorias",
+      "pageId": "admin-blog-categorias",
+      "label": "Categorías del blog",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/tags",
+      "pageId": "admin-blog-tags",
+      "label": "Tags del blog",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/hub",
+      "pageId": "admin-blog-hub",
+      "label": "Hub del blog",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/admin/blog/configuracion",
+      "pageId": "admin-blog-configuracion",
+      "label": "Configuración del blog",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
+      "path": "/blog",
+      "pageId": "blog",
+      "label": "Blog"
+    },
+    {
+      "path": "/blog/web/blog-builder-seo",
+      "pageId": "blog-article",
+      "label": "Blog builder visual con SEO"
+    },
+    {
+      "path": "/blog/:categorySlug",
+      "pageId": "blog-category",
+      "label": "Categoría del blog"
+    },
+    {
+      "path": "/blog/:categorySlug/:articleSlug",
+      "pageId": "blog-article",
+      "label": "Artículo del blog"
+    },
+    {
       "path": "/servicios",
       "pageId": "servicios",
       "label": "Servicios"
@@ -170,7 +370,24 @@
       "/configurar-mfa",
       "/auth/callback",
       "/mi-cuenta",
-      "/admin/usuarios"
+      "/admin/usuarios",
+      "/admin/blog",
+      "/admin/blog/articulos",
+      "/admin/blog/articulos/nuevo",
+      "/admin/blog/articulos/:id/editor",
+      "/admin/blog/articulos/:id/preview",
+      "/admin/blog/articulos/:id/seo",
+      "/admin/blog/articulos/:id/versiones",
+      "/admin/blog/programados",
+      "/admin/blog/moderacion",
+      "/admin/blog/medios",
+      "/admin/blog/analiticas",
+      "/admin/blog/categorias",
+      "/admin/blog/tags",
+      "/admin/blog/hub",
+      "/admin/blog/configuracion",
+      "/blog/:categorySlug",
+      "/blog/:categorySlug/:articleSlug"
     ]
   },
   "site": {
@@ -483,6 +700,85 @@
       "authProfileId": "staff",
       "endpoint": "/auth/runtime-config"
     },
+    "contentHubs": [
+      {
+        "hubId": "zoosite-main",
+        "ownerDraftDomain": "zoositioweb.com.mx",
+        "source": "primary",
+        "routeBasePath": "/blog",
+        "listPath": "/blog",
+        "articlePathPattern": "/blog/:categorySlug/:articleSlug",
+        "defaultLocale": "es",
+        "locales": [
+          "es",
+          "en"
+        ],
+        "canonicalMode": "host-adaptive",
+        "runtimeSourceId": "contentHubArticles",
+        "publicApiBasePath": "/content-hub",
+        "analyticsContext": {
+          "contentGroup": "blog",
+          "eventPrefix": "blog",
+          "piiPolicy": "no-pii"
+        },
+        "publicArticles": [
+          {
+            "articleId": "art_20260620_blog_builder",
+            "locale": "es",
+            "status": "published",
+            "title": "Cómo crear blogs visuales con Zoolandingpage",
+            "summary": "Guía inicial del content hub de Zoosite para crear artículos visuales, SEO-ready y editables con componentes genéricos.",
+            "path": "/blog/web/blog-builder-seo",
+            "categorySlug": "web",
+            "tags": [
+              "seo",
+              "builder",
+              "angora"
+            ],
+            "publishedAt": "2026-06-21T15:00:00.000Z",
+            "updatedAt": "2026-06-21T15:00:00.000Z",
+            "authorLabel": "Equipo zoositioweb",
+            "canonicalPath": "/blog/web/blog-builder-seo",
+            "robots": "index,follow"
+          }
+        ],
+        "publicTaxonomy": [
+          {
+            "taxonomyId": "web",
+            "kind": "category",
+            "slug": "web",
+            "label": "Web",
+            "locale": "es",
+            "visible": true,
+            "path": "/blog/web"
+          },
+          {
+            "taxonomyId": "seo",
+            "kind": "tag",
+            "slug": "seo",
+            "label": "SEO",
+            "locale": "es",
+            "visible": true
+          },
+          {
+            "taxonomyId": "builder",
+            "kind": "tag",
+            "slug": "builder",
+            "label": "Builder",
+            "locale": "es",
+            "visible": true
+          },
+          {
+            "taxonomyId": "angora",
+            "kind": "tag",
+            "slug": "angora",
+            "label": "Angora",
+            "locale": "es",
+            "visible": true
+          }
+        ]
+      }
+    ],
     "dataSources": [
       {
         "id": "auth-account",
@@ -693,6 +989,279 @@
             }
           }
         }
+      },
+      {
+        "id": "content_hub_articles",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_article_list",
+        "contentHub": {
+          "read": "articleList",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.articles",
+        "statusTarget": "remoteStatus.contentHub.articles",
+        "pageIds": [
+          "admin-blog",
+          "admin-blog-articulos",
+          "admin-blog-programados"
+        ],
+        "mapper": {
+          "itemsPath": "items"
+        }
+      },
+      {
+        "id": "content_hub_taxonomy",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_taxonomy_list",
+        "contentHub": {
+          "read": "taxonomyList",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.taxonomy",
+        "statusTarget": "remoteStatus.contentHub.taxonomy",
+        "pageIds": [
+          "admin-blog-categorias",
+          "admin-blog-tags",
+          "admin-blog-configuracion"
+        ],
+        "mapper": {
+          "itemsPath": "items"
+        }
+      },
+      {
+        "id": "content_hub_revisions",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_revision_list",
+        "contentHub": {
+          "read": "revisionList",
+          "hubId": "zoosite-main",
+          "articleId": "art_20260620_blog_builder"
+        },
+        "target": "remote.contentHub.revisions",
+        "statusTarget": "remoteStatus.contentHub.revisions",
+        "pageIds": [
+          "admin-blog-articulo-versiones",
+          "admin-blog-articulo-editor"
+        ],
+        "mapper": {
+          "itemsPath": "items"
+        }
+      },
+      {
+        "id": "content_hub_assets",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_asset_list",
+        "contentHub": {
+          "read": "assetList",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.assets",
+        "statusTarget": "remoteStatus.contentHub.assets",
+        "pageIds": [
+          "admin-blog-medios",
+          "admin-blog-articulo-editor"
+        ],
+        "mapper": {
+          "itemsPath": "items"
+        }
+      },
+      {
+        "id": "content_hub_moderation",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_moderation_queue",
+        "contentHub": {
+          "read": "moderationQueue",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.moderation",
+        "statusTarget": "remoteStatus.contentHub.moderation",
+        "pageIds": [
+          "admin-blog-moderacion"
+        ],
+        "mapper": {
+          "itemsPath": "items"
+        }
+      },
+      {
+        "id": "content_hub_public_bundle_preview",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_public_bundle_preview",
+        "contentHub": {
+          "read": "publicBundlePreview",
+          "hubId": "zoosite-main",
+          "articleId": "art_20260620_blog_builder"
+        },
+        "target": "remote.contentHub.preview",
+        "statusTarget": "remoteStatus.contentHub.preview",
+        "pageIds": [
+          "admin-blog-articulo-preview",
+          "admin-blog-articulo-editor",
+          "admin-blog-articulo-seo"
+        ],
+        "mapper": {
+          "itemsPath": "item"
+        }
+      }
+    ],
+    "apiActions": [
+      {
+        "id": "content_hub_create_article",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_create_article",
+        "contentHub": {
+          "action": "createArticle",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleTitle",
+          "articleLanguage",
+          "articleCategory",
+          "articleTags",
+          "articleSummary",
+          "articleSeoTitle",
+          "articleSeoDescription",
+          "articleSlug",
+          "articleCanonicalPolicy",
+          "articleCommentPolicy",
+          "articleContentSafetyPolicy"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_create_article"
+      },
+      {
+        "id": "content_hub_update_package",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_update_package",
+        "contentHub": {
+          "action": "updatePackage",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "articleTitle",
+          "articleLanguage",
+          "articleCategory",
+          "articleTags",
+          "articleContent",
+          "advancedMode",
+          "allowedComponentPreset",
+          "metadata"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_update_package"
+      },
+      {
+        "id": "content_hub_upload_asset",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_upload_asset",
+        "contentHub": {
+          "action": "uploadAsset",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "upload",
+          "metadata",
+          "usageRefs",
+          "publicability"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_upload_asset"
+      },
+      {
+        "id": "content_hub_validate_article",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_validate_article",
+        "contentHub": {
+          "action": "validate",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "canonical",
+          "hreflang",
+          "socialPreview",
+          "structuredData",
+          "robots",
+          "sitemap"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_validate_article"
+      },
+      {
+        "id": "content_hub_publish_article",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_publish_article",
+        "contentHub": {
+          "action": "publish",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "publishAt",
+          "timezone",
+          "seoDefaults"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_publish_article"
+      },
+      {
+        "id": "content_hub_schedule_article",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_schedule_article",
+        "contentHub": {
+          "action": "schedule",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "publishAt",
+          "unpublishAt",
+          "timezone"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_schedule_article"
+      },
+      {
+        "id": "content_hub_moderate_comment",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_moderate_comment",
+        "contentHub": {
+          "action": "moderateComment",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "commentId",
+          "decision",
+          "reason"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_moderate_comment"
+      },
+      {
+        "id": "content_hub_restore_revision",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_restore_revision",
+        "contentHub": {
+          "action": "restoreRevision",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "revisionId",
+          "delta",
+          "snapshot"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_restore_revision"
       }
     ]
   },

@@ -1,0 +1,396 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog-articulo-editor",
+  "components": [
+    {
+      "id": "admin-blog-articulo-editorRoot",
+      "type": "container",
+      "config": {
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "components": [
+          "admin-blog-articulo-editorShell"
+        ],
+        "tag": "main"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorShell",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-articulo-editorEyebrow",
+          "admin-blog-articulo-editorTitle",
+          "admin-blog-articulo-editorNav",
+          "editorScope"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "ZOOSITIOWEB / BLOG ADMIN",
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Editor de artículo",
+        "classes": "ank-m-0 ank-fontSize-34px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorNav",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "components": [
+          "admin-blog-articulo-editorNavArticles",
+          "admin-blog-articulo-editorNavNew",
+          "admin-blog-articulo-editorNavMedia",
+          "admin-blog-articulo-editorNavModeration",
+          "admin-blog-articulo-editorNavAnalytics",
+          "admin-blog-articulo-editorNavCategories",
+          "admin-blog-articulo-editorNavTags",
+          "admin-blog-articulo-editorNavHub",
+          "admin-blog-articulo-editorNavConfig"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorNavArticles",
+      "type": "link",
+      "config": {
+        "text": "Artículos",
+        "href": "/admin/blog/articulos",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorNavNew",
+      "type": "link",
+      "config": {
+        "text": "Crear artículo",
+        "href": "/admin/blog/articulos/nuevo",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorNavMedia",
+      "type": "link",
+      "config": {
+        "text": "Medios",
+        "href": "/admin/blog/medios",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorNavModeration",
+      "type": "link",
+      "config": {
+        "text": "Moderación",
+        "href": "/admin/blog/moderacion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorNavAnalytics",
+      "type": "link",
+      "config": {
+        "text": "Analíticas",
+        "href": "/admin/blog/analiticas",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorNavCategories",
+      "type": "link",
+      "config": {
+        "text": "Categorías",
+        "href": "/admin/blog/categorias",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorNavTags",
+      "type": "link",
+      "config": {
+        "text": "Tags",
+        "href": "/admin/blog/tags",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorNavHub",
+      "type": "link",
+      "config": {
+        "text": "Hub",
+        "href": "/admin/blog/hub",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-editorNavConfig",
+      "type": "link",
+      "config": {
+        "text": "Configuración",
+        "href": "/admin/blog/configuracion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "editorScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "articleEditor",
+        "components": [
+          "editorCard",
+          "editorAssetsCard",
+          "componentInspector"
+        ],
+        "valueInstructions": "collectFields:articleTitle,articleLanguage,articleCategory,articleTags,articleContent,advancedMode,allowedComponentPreset"
+      }
+    },
+    {
+      "id": "editorCard",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "editorTitleInput",
+          "editorLanguageInput",
+          "editorCategoryInput",
+          "editorTagsInput",
+          "advancedModeToggle",
+          "allowedComponentPresetSelect",
+          "componentInspectorButton",
+          "articleRichText",
+          "editorSaveButton",
+          "editorPreviewLink",
+          "editorSeoLink",
+          "editorVersionsLink"
+        ]
+      }
+    },
+    {
+      "id": "editorTitleInput",
+      "type": "input",
+      "config": {
+        "fieldId": "articleTitle",
+        "label": "Título",
+        "value": "Blog builder visual con SEO desde el inicio",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "editorLanguageInput",
+      "type": "input",
+      "config": {
+        "fieldId": "articleLanguage",
+        "label": "Idioma",
+        "value": "es-MX",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "editorCategoryInput",
+      "type": "input",
+      "config": {
+        "fieldId": "articleCategory",
+        "label": "Categoría",
+        "value": "web",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "editorTagsInput",
+      "type": "input",
+      "config": {
+        "fieldId": "articleTags",
+        "label": "Tags",
+        "value": "seo,builder,angora",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "advancedModeToggle",
+      "type": "input",
+      "config": {
+        "fieldId": "advancedMode",
+        "label": "Modo avanzado",
+        "value": "false",
+        "classes": "ank-width-100per",
+        "fieldClasses": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-gap-12px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "inputClasses": "ank-width-44px ank-height-44px ank-cursor-pointer",
+        "controlType": "checkbox"
+      }
+    },
+    {
+      "id": "allowedComponentPresetSelect",
+      "type": "input",
+      "config": {
+        "fieldId": "allowedComponentPreset",
+        "label": "Preset de componentes permitido",
+        "value": "zoosite-blog-advanced",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "select",
+        "options": [
+          {
+            "value": "zoosite-blog-basic",
+            "label": "Básico"
+          },
+          {
+            "value": "zoosite-blog-advanced",
+            "label": "Avanzado"
+          },
+          {
+            "value": "trusted-author-html",
+            "label": "HTML de autor confiable"
+          }
+        ]
+      }
+    },
+    {
+      "id": "componentInspectorButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "label": "Configurar componente"
+      },
+      "eventInstructions": "proxyAction:content_hub_update_package"
+    },
+    {
+      "id": "articleRichText",
+      "type": "generic-rich-text",
+      "config": {
+        "fieldId": "articleContent",
+        "provider": "quill",
+        "label": "Contenido enriquecido",
+        "classes": "ank-width-100per ank-minHeight-280px",
+        "format": "quill-delta-json"
+      }
+    },
+    {
+      "id": "editorSaveButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "label": "Guardar cambios"
+      },
+      "eventInstructions": "proxyAction:content_hub_update_package"
+    },
+    {
+      "id": "editorPreviewLink",
+      "type": "link",
+      "config": {
+        "text": "Vista previa",
+        "href": "/admin/blog/articulos/preview",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "editorSeoLink",
+      "type": "link",
+      "config": {
+        "text": "SEO",
+        "href": "/admin/blog/articulos/seo",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "editorVersionsLink",
+      "type": "link",
+      "config": {
+        "text": "Versiones",
+        "href": "/admin/blog/articulos/versiones",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "editorAssetsCard",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "editorDropzone",
+          "editorAssetsTable"
+        ]
+      }
+    },
+    {
+      "id": "editorDropzone",
+      "type": "generic-file-dropzone",
+      "config": {
+        "fieldId": "articleAssets",
+        "accept": "image/*,video/*,application/pdf,text/markdown,text/html",
+        "label": "Subir archivos públicos del artículo",
+        "multiple": true,
+        "dropzoneClasses": "ank-width-100per ank-minHeight-160px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-bgColor ank-color-textColor ank-p-18px",
+        "browseButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "helperTextClasses": "ank-m-0 ank-fontSize-14px ank-color-textColor"
+      }
+    },
+    {
+      "id": "editorAssetsTable",
+      "type": "generic-table",
+      "config": {
+        "id": "editorAssetsTable",
+        "label": "Archivos vinculados",
+        "rowIdPath": "id",
+        "rowsSource": {
+          "source": "var",
+          "path": "remote.contentHub.assets.items"
+        },
+        "rows": [],
+        "columns": [
+          {
+            "id": "name",
+            "header": "Archivo",
+            "valuePath": "name"
+          },
+          {
+            "id": "type",
+            "header": "Tipo",
+            "valuePath": "type"
+          },
+          {
+            "id": "usageRefs",
+            "header": "Uso",
+            "valuePath": "usageRefs"
+          }
+        ],
+        "rowActions": [],
+        "classes": "ank-width-100per"
+      }
+    },
+    {
+      "id": "componentInspector",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-bg-bgColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-18px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "componentInspectorCopy"
+        ]
+      }
+    },
+    {
+      "id": "componentInspectorCopy",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Edita clases Angora, variantes, bindings seguros y metadata visual permitida por el preset del draft.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    }
+  ]
+}

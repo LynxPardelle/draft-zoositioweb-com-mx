@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog-moderacion",
+  "route": "/admin/blog/moderacion",
+  "title": "Moderación",
+  "layout": "default",
+  "seo": {
+    "title": "Moderación",
+    "description": "Moderación para el hub de contenido de Zoosite.",
+    "robots": {
+      "default": "noindex,nofollow"
+    },
+    "canonical": "https://zoositioweb.com.mx/admin/blog/moderacion"
+  },
+  "updatedAt": "2026-06-20T12:00:00-06:00",
+  "rootIds": [
+    "admin-blog-moderacionRoot"
+  ]
+}
