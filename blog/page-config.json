@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "blog",
+  "rootIds": [
+    "blogRoot"
+  ],
+  "seo": {
+    "title": "Blog | zoositioweb",
+    "description": "Artículos de zoositioweb sobre sitios web, SEO, analítica y crecimiento digital.",
+    "canonical": "https://zoositioweb.com.mx/blog",
+    "robots": {
+      "default": "index,follow,max-image-preview:large"
+    }
+  }
+}

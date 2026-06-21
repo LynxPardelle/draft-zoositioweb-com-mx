@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "blog",
+  "lang": "es",
+  "dictionary": {
+    "blog.title": "Ideas para construir sitios que sí se puedan medir"
+  }
+}

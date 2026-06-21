@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "blog",
+  "variables": {
+    "contentHub": {
+      "hubId": "zoosite-main",
+      "routeBasePath": "/blog",
+      "articleCount": 1
+    }
+  }
+}

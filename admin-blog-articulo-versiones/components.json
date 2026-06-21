@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog-articulo-versiones",
+  "components": [
+    {
+      "id": "admin-blog-articulo-versionesRoot",
+      "type": "container",
+      "config": {
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "components": [
+          "admin-blog-articulo-versionesShell"
+        ],
+        "tag": "main"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesShell",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-articulo-versionesEyebrow",
+          "admin-blog-articulo-versionesTitle",
+          "admin-blog-articulo-versionesNav",
+          "versionsCard"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "ZOOSITIOWEB / BLOG ADMIN",
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Versiones",
+        "classes": "ank-m-0 ank-fontSize-34px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesNav",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "components": [
+          "admin-blog-articulo-versionesNavArticles",
+          "admin-blog-articulo-versionesNavNew",
+          "admin-blog-articulo-versionesNavMedia",
+          "admin-blog-articulo-versionesNavModeration",
+          "admin-blog-articulo-versionesNavAnalytics",
+          "admin-blog-articulo-versionesNavCategories",
+          "admin-blog-articulo-versionesNavTags",
+          "admin-blog-articulo-versionesNavHub",
+          "admin-blog-articulo-versionesNavConfig"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesNavArticles",
+      "type": "link",
+      "config": {
+        "text": "Artículos",
+        "href": "/admin/blog/articulos",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesNavNew",
+      "type": "link",
+      "config": {
+        "text": "Crear artículo",
+        "href": "/admin/blog/articulos/nuevo",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesNavMedia",
+      "type": "link",
+      "config": {
+        "text": "Medios",
+        "href": "/admin/blog/medios",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesNavModeration",
+      "type": "link",
+      "config": {
+        "text": "Moderación",
+        "href": "/admin/blog/moderacion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesNavAnalytics",
+      "type": "link",
+      "config": {
+        "text": "Analíticas",
+        "href": "/admin/blog/analiticas",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesNavCategories",
+      "type": "link",
+      "config": {
+        "text": "Categorías",
+        "href": "/admin/blog/categorias",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesNavTags",
+      "type": "link",
+      "config": {
+        "text": "Tags",
+        "href": "/admin/blog/tags",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesNavHub",
+      "type": "link",
+      "config": {
+        "text": "Hub",
+        "href": "/admin/blog/hub",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesNavConfig",
+      "type": "link",
+      "config": {
+        "text": "Configuración",
+        "href": "/admin/blog/configuracion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "versionsCard",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "revisionIdInput",
+          "deltaInput",
+          "snapshotInput",
+          "compareButton",
+          "restoreButton",
+          "versionsTable"
+        ]
+      }
+    },
+    {
+      "id": "revisionIdInput",
+      "type": "input",
+      "config": {
+        "fieldId": "revisionId",
+        "label": "revisionId",
+        "value": "rev_20260620_001",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "deltaInput",
+      "type": "input",
+      "config": {
+        "fieldId": "delta",
+        "label": "delta",
+        "value": "json-patch",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "snapshotInput",
+      "type": "input",
+      "config": {
+        "fieldId": "snapshot",
+        "label": "snapshot",
+        "value": "s3-package-pointer",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "compareButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "label": "Comparar versiones"
+      },
+      "eventInstructions": "proxyAction:content_hub_validate_article"
+    },
+    {
+      "id": "restoreButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "label": "Restaurar versión"
+      },
+      "eventInstructions": "proxyAction:content_hub_restore_revision"
+    },
+    {
+      "id": "versionsTable",
+      "type": "generic-table",
+      "config": {
+        "id": "versionsTable",
+        "label": "Historial por deltas",
+        "rowIdPath": "id",
+        "rowsSource": {
+          "source": "var",
+          "path": "remote.contentHub.revisions.items"
+        },
+        "rows": [],
+        "columns": [
+          {
+            "id": "revisionId",
+            "header": "revisionId",
+            "valuePath": "revisionId"
+          },
+          {
+            "id": "delta",
+            "header": "delta",
+            "valuePath": "delta"
+          },
+          {
+            "id": "snapshot",
+            "header": "snapshot",
+            "valuePath": "snapshot"
+          }
+        ],
+        "rowActions": [],
+        "classes": "ank-width-100per"
+      }
+    }
+  ]
+}

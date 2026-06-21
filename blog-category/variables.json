@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "blog-category",
+  "variables": {
+    "taxonomy": {
+      "kind": "category",
+      "slug": "web",
+      "hubId": "zoosite-main"
+    }
+  }
+}

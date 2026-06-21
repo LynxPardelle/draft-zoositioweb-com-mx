@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "blog",
+  "components": [
+    {
+      "id": "blogRoot",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-26px",
+        "components": [
+          "blogHeader",
+          "blogFeaturedArticle",
+          "blogFooterLink"
+        ]
+      }
+    },
+    {
+      "id": "blogHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-width-100per ank-maxWidth-980px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "blogEyebrow",
+          "blogTitle",
+          "blogIntro"
+        ]
+      }
+    },
+    {
+      "id": "blogEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "ZOOSITIOWEB BLOG",
+        "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-800 ank-letterSpacing-0 ank-color-accentColor"
+      }
+    },
+    {
+      "id": "blogTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Ideas para construir sitios que sí se puedan medir",
+        "classes": "ank-m-0 ank-fontSize-40px ank-lineHeight-1_1 ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "blogIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Primer corte del content hub: artículos como paquetes visuales, categorías compartidas por hub y SEO adaptado al dominio que renderiza el contenido.",
+        "classes": "ank-m-0 ank-fontSize-17px ank-lineHeight-1_6 ank-color-secondaryTextColor ank-maxWidth-760px"
+      }
+    },
+    {
+      "id": "blogFeaturedArticle",
+      "type": "generic-card",
+      "eventInstructions": "trackEvent:blog_cta_click,blog,blog-list-featured,hubId,zoosite-main,articleId,art_20260620_blog_builder,ctaId,featured-read",
+      "config": {
+        "title": "Blog builder visual con SEO desde el inicio",
+        "description": "Cómo Zoosite prepara un blog editable con componentes genéricos, rutas limpias, publicación programada y medición propia.",
+        "linkHref": "/blog/web/blog-builder-seo",
+        "linkLabel": "Leer artículo",
+        "linkEventInstructions": "trackEvent:blog_cta_click,blog,blog-list-featured,hubId,zoosite-main,articleId,art_20260620_blog_builder,ctaId,featured-read",
+        "classes": "ank-width-100per ank-maxWidth-980px ank-p-24px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-boxShadow-0__14px__44px__rgbaSD0COM0COM0COM0_08ED",
+        "titleClasses": "ank-m-0 ank-fontSize-26px ank-lineHeight-1_2 ank-fontWeight-900 ank-color-titleColor",
+        "descriptionClasses": "ank-mt-10px ank-mb-18px ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor",
+        "linkClasses": "ank-display-inlineFlex ank-alignItems-center ank-minHeight-44px ank-px-16px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-textDecoration-none"
+      }
+    },
+    {
+      "id": "blogFooterLink",
+      "type": "link",
+      "config": {
+        "href": "/contacto",
+        "text": "Hablar sobre mi blog",
+        "classes": "ank-minHeight-44px ank-display-inlineFlex ank-alignItems-center ank-color-linkColor ank-fontWeight-800"
+      }
+    }
+  ]
+}

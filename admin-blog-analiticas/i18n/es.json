@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-analiticas",
+  "lang": "es",
+  "messages": {
+    "title": "Analíticas",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}

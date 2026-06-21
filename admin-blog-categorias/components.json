@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog-categorias",
+  "components": [
+    {
+      "id": "admin-blog-categoriasRoot",
+      "type": "container",
+      "config": {
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "components": [
+          "admin-blog-categoriasShell"
+        ],
+        "tag": "main"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasShell",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-categoriasEyebrow",
+          "admin-blog-categoriasTitle",
+          "admin-blog-categoriasNav",
+          "categoriesCard"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-categoriasEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "ZOOSITIOWEB / BLOG ADMIN",
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Categorías",
+        "classes": "ank-m-0 ank-fontSize-34px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasNav",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "components": [
+          "admin-blog-categoriasNavArticles",
+          "admin-blog-categoriasNavNew",
+          "admin-blog-categoriasNavMedia",
+          "admin-blog-categoriasNavModeration",
+          "admin-blog-categoriasNavAnalytics",
+          "admin-blog-categoriasNavCategories",
+          "admin-blog-categoriasNavTags",
+          "admin-blog-categoriasNavHub",
+          "admin-blog-categoriasNavConfig"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-categoriasNavArticles",
+      "type": "link",
+      "config": {
+        "text": "Artículos",
+        "href": "/admin/blog/articulos",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasNavNew",
+      "type": "link",
+      "config": {
+        "text": "Crear artículo",
+        "href": "/admin/blog/articulos/nuevo",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasNavMedia",
+      "type": "link",
+      "config": {
+        "text": "Medios",
+        "href": "/admin/blog/medios",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasNavModeration",
+      "type": "link",
+      "config": {
+        "text": "Moderación",
+        "href": "/admin/blog/moderacion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasNavAnalytics",
+      "type": "link",
+      "config": {
+        "text": "Analíticas",
+        "href": "/admin/blog/analiticas",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasNavCategories",
+      "type": "link",
+      "config": {
+        "text": "Categorías",
+        "href": "/admin/blog/categorias",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasNavTags",
+      "type": "link",
+      "config": {
+        "text": "Tags",
+        "href": "/admin/blog/tags",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasNavHub",
+      "type": "link",
+      "config": {
+        "text": "Hub",
+        "href": "/admin/blog/hub",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blog-categoriasNavConfig",
+      "type": "link",
+      "config": {
+        "text": "Configuración",
+        "href": "/admin/blog/configuracion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "categoriesCard",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "categoryTranslationInput",
+          "categorySlugInput",
+          "categorySeoDescriptionInput",
+          "categoryVisibleInput",
+          "categoryRedirectWarning",
+          "categoriesTable"
+        ]
+      }
+    },
+    {
+      "id": "categoryTranslationInput",
+      "type": "input",
+      "config": {
+        "fieldId": "translation",
+        "label": "translation",
+        "value": "Web",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "categorySlugInput",
+      "type": "input",
+      "config": {
+        "fieldId": "slug",
+        "label": "slug",
+        "value": "web",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "categorySeoDescriptionInput",
+      "type": "input",
+      "config": {
+        "fieldId": "seoDescription",
+        "label": "seoDescription",
+        "value": "Contenido sobre sitios web y landings.",
+        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "controlType": "text"
+      }
+    },
+    {
+      "id": "categoryVisibleInput",
+      "type": "input",
+      "config": {
+        "fieldId": "visible",
+        "label": "visible",
+        "value": "true",
+        "classes": "ank-width-100per",
+        "fieldClasses": "ank-width-100per ank-minHeight-48px ank-display-flex ank-alignItems-center ank-gap-12px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
+        "inputClasses": "ank-width-44px ank-height-44px ank-cursor-pointer",
+        "controlType": "checkbox"
+      }
+    },
+    {
+      "id": "categoryRedirectWarning",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "redirectWarning: cambiar slugs publicados requiere redirect por dominio.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "categoriesTable",
+      "type": "generic-table",
+      "config": {
+        "id": "categoriesTable",
+        "label": "Categorías por hub",
+        "rowIdPath": "id",
+        "rowsSource": {
+          "source": "var",
+          "path": "remote.contentHub.taxonomy.categories"
+        },
+        "rows": [],
+        "columns": [
+          {
+            "id": "translation",
+            "header": "translation",
+            "valuePath": "translation"
+          },
+          {
+            "id": "slug",
+            "header": "slug",
+            "valuePath": "slug"
+          },
+          {
+            "id": "visible",
+            "header": "visible",
+            "valuePath": "visible"
+          }
+        ],
+        "rowActions": [],
+        "classes": "ank-width-100per"
+      }
+    }
+  ]
+}

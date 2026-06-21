@@ -1,0 +1,361 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog",
+  "components": [
+    {
+      "id": "admin-blogRoot",
+      "type": "container",
+      "config": {
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "components": [
+          "admin-blogShell"
+        ],
+        "tag": "main"
+      }
+    },
+    {
+      "id": "admin-blogShell",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blogEyebrow",
+          "admin-blogTitle",
+          "admin-blogNav",
+          "admin-blogIntroCard",
+          "admin-blogArticlesTable"
+        ]
+      }
+    },
+    {
+      "id": "admin-blogEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "ZOOSITIOWEB / BLOG ADMIN",
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "admin-blogTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Panel del blog",
+        "classes": "ank-m-0 ank-fontSize-34px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "admin-blogNav",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "components": [
+          "admin-blogNavArticles",
+          "admin-blogNavNew",
+          "admin-blogNavMedia",
+          "admin-blogNavModeration",
+          "admin-blogNavAnalytics",
+          "admin-blogNavCategories",
+          "admin-blogNavTags",
+          "admin-blogNavHub",
+          "admin-blogNavConfig"
+        ]
+      }
+    },
+    {
+      "id": "admin-blogNavArticles",
+      "type": "link",
+      "config": {
+        "text": "Artículos",
+        "href": "/admin/blog/articulos",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blogNavNew",
+      "type": "link",
+      "config": {
+        "text": "Crear artículo",
+        "href": "/admin/blog/articulos/nuevo",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blogNavMedia",
+      "type": "link",
+      "config": {
+        "text": "Medios",
+        "href": "/admin/blog/medios",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blogNavModeration",
+      "type": "link",
+      "config": {
+        "text": "Moderación",
+        "href": "/admin/blog/moderacion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blogNavAnalytics",
+      "type": "link",
+      "config": {
+        "text": "Analíticas",
+        "href": "/admin/blog/analiticas",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blogNavCategories",
+      "type": "link",
+      "config": {
+        "text": "Categorías",
+        "href": "/admin/blog/categorias",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blogNavTags",
+      "type": "link",
+      "config": {
+        "text": "Tags",
+        "href": "/admin/blog/tags",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blogNavHub",
+      "type": "link",
+      "config": {
+        "text": "Hub",
+        "href": "/admin/blog/hub",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blogNavConfig",
+      "type": "link",
+      "config": {
+        "text": "Configuración",
+        "href": "/admin/blog/configuracion",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+      }
+    },
+    {
+      "id": "admin-blogIntroCard",
+      "type": "container",
+      "config": {
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "admin-blogIntroText",
+          "admin-blogMutationNotice",
+          "admin-blogValidateButton",
+          "admin-blogPublishButton"
+        ]
+      }
+    },
+    {
+      "id": "admin-blogIntroText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Administra artículos, taxonomía, medios, programación, moderación y analíticas del hub zoosite-main sin exponer configuración server-only.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "admin-blogMutationNotice",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Las lecturas del hub usan content-hub same-origin. Crear, publicar, programar y subir medios quedan bloqueados visualmente hasta validar el backend de mutaciones.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "admin-blogValidateButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "disabled": true,
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "label": "Validar hub"
+      },
+      "eventInstructions": "proxyAction:content_hub_validate_article"
+    },
+    {
+      "id": "admin-blogPublishButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "disabled": true,
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "label": "Publicar cambios"
+      },
+      "eventInstructions": "proxyAction:content_hub_publish_article"
+    },
+    {
+      "id": "admin-blogArticlesTable",
+      "type": "generic-table",
+      "config": {
+        "id": "admin-blogArticlesTable",
+        "label": "Últimos artículos",
+        "rowIdPath": "id",
+        "rowsSource": {
+          "source": "var",
+          "path": "remote.contentHub.articles.items",
+          "fallback": [
+            {
+              "id": "art_20260620_blog_builder",
+              "title": "Cómo crear blogs visuales con Zoolandingpage",
+              "status": "published",
+              "statusLabel": "Publicado",
+              "language": "es",
+              "category": "web",
+              "tags": "seo, builder, angora",
+              "scheduledAt": "Sin programar",
+              "publishedAt": "2026-06-21T15:00:00.000Z",
+              "updatedAt": "2026-06-21T15:00:00.000Z",
+              "assetCount": 1,
+              "primaryAsset": "seo-card"
+            },
+            {
+              "id": "art_zoosite_programado_demo",
+              "title": "Checklist SEO antes de publicar",
+              "status": "scheduled",
+              "statusLabel": "Programado",
+              "language": "es",
+              "category": "seo",
+              "tags": "seo, checklist",
+              "scheduledAt": "2026-07-01T15:00:00.000Z",
+              "publishedAt": "Sin publicar",
+              "updatedAt": "2026-06-21T10:00:00.000Z",
+              "assetCount": 0,
+              "primaryAsset": "Sin activo principal"
+            },
+            {
+              "id": "art_zoosite_borrador_demo",
+              "title": "Plantilla de caso de éxito",
+              "status": "draft",
+              "statusLabel": "Borrador",
+              "language": "es",
+              "category": "clientes",
+              "tags": "caso, pyme",
+              "scheduledAt": "Sin programar",
+              "publishedAt": "Sin publicar",
+              "updatedAt": "2026-06-21T09:30:00.000Z",
+              "assetCount": 0,
+              "primaryAsset": "Sin activo principal"
+            }
+          ]
+        },
+        "rows": [
+          {
+            "id": "art_20260620_blog_builder",
+            "title": "Blog builder visual con SEO desde el inicio",
+            "status": "Programado",
+            "language": "es-MX",
+            "category": "web",
+            "tags": "seo, builder, angora",
+            "schedule": "2026-07-01 09:00 America/Mexico_City",
+            "updatedAt": "2026-06-20"
+          }
+        ],
+        "columns": [
+          {
+            "id": "title",
+            "header": "Título",
+            "valuePath": "title"
+          },
+          {
+            "id": "status",
+            "header": "Estado",
+            "valuePath": "status"
+          },
+          {
+            "id": "statusLabel",
+            "header": "Lectura",
+            "valuePath": "statusLabel"
+          },
+          {
+            "id": "language",
+            "header": "Idioma",
+            "valuePath": "language"
+          },
+          {
+            "id": "category",
+            "header": "Categoría",
+            "valuePath": "category"
+          },
+          {
+            "id": "tags",
+            "header": "Tags",
+            "valuePath": "tags"
+          },
+          {
+            "id": "schedule",
+            "header": "Programado",
+            "valuePath": "scheduledAt"
+          },
+          {
+            "id": "publishedAt",
+            "header": "Publicado",
+            "valuePath": "publishedAt"
+          },
+          {
+            "id": "updatedAt",
+            "header": "Actualizado",
+            "valuePath": "updatedAt"
+          },
+          {
+            "id": "assetCount",
+            "header": "Assets",
+            "valuePath": "assetCount"
+          }
+        ],
+        "rowActions": [
+          {
+            "id": "edit",
+            "label": "Editar",
+            "icon": "edit",
+            "disabled": true,
+            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/editor"
+          },
+          {
+            "id": "preview",
+            "label": "Preview",
+            "icon": "eye",
+            "disabled": true,
+            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/preview"
+          },
+          {
+            "id": "seo",
+            "label": "SEO",
+            "icon": "search",
+            "disabled": true,
+            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/seo"
+          },
+          {
+            "id": "versions",
+            "label": "Versiones",
+            "icon": "history",
+            "disabled": true,
+            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/versiones"
+          },
+          {
+            "id": "schedule",
+            "label": "Programar",
+            "icon": "calendar",
+            "disabled": true,
+            "eventInstructions": "navigateToUrl:/admin/blog/programados"
+          }
+        ],
+        "classes": "ank-width-100per"
+      }
+    }
+  ]
+}

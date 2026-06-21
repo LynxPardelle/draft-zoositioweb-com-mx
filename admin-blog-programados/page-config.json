@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog-programados",
+  "route": "/admin/blog/programados",
+  "title": "Programación",
+  "layout": "default",
+  "seo": {
+    "title": "Programación",
+    "description": "Programación para el hub de contenido de Zoosite.",
+    "robots": {
+      "default": "noindex,nofollow"
+    },
+    "canonical": "https://zoositioweb.com.mx/admin/blog/programados"
+  },
+  "updatedAt": "2026-06-20T12:00:00-06:00",
+  "rootIds": [
+    "admin-blog-programadosRoot"
+  ]
+}

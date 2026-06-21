@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-categorias",
+  "combos": [
+    {
+      "id": "admin-blog-categoriasAdminSurface",
+      "description": "Zoosite blog admin surface",
+      "classes": [
+        "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "pageId": "admin-blog-articulos",
+  "lang": "en",
+  "messages": {
+    "title": "Artículos",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx"
+  }
+}

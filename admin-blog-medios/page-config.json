@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-blog-medios",
+  "route": "/admin/blog/medios",
+  "title": "Medios",
+  "layout": "default",
+  "seo": {
+    "title": "Medios",
+    "description": "Medios para el hub de contenido de Zoosite.",
+    "robots": {
+      "default": "noindex,nofollow"
+    },
+    "canonical": "https://zoositioweb.com.mx/admin/blog/medios"
+  },
+  "updatedAt": "2026-06-20T12:00:00-06:00",
+  "rootIds": [
+    "admin-blog-mediosRoot"
+  ]
+}
