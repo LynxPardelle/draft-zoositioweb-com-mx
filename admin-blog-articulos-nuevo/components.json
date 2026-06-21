@@ -162,6 +162,7 @@
         "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
           "newArticleHelp",
+          "newArticleMutationNotice",
           "newArticleTitle",
           "newArticleLanguage",
           "newArticleCategory",
@@ -184,6 +185,15 @@
         "tag": "p",
         "text": "Crea el paquete inicial del artículo. El contenido visual se edita después con el editor avanzado.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "newArticleMutationNotice",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "El formulario prepara el paquete inicial. La creación queda deshabilitada hasta validar el endpoint server-side con sesión, CSRF, tenant y ambiente.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-800 ank-color-titleColor"
       }
     },
     {
@@ -312,6 +322,8 @@
       "type": "button",
       "config": {
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "disabled": true,
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "label": "Crear paquete"
       },
       "eventInstructions": "proxyAction:content_hub_create_article"

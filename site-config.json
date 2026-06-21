@@ -1006,7 +1006,67 @@
           "admin-blog-programados"
         ],
         "mapper": {
-          "itemsPath": "items"
+          "itemsPath": "items",
+          "fields": {
+            "id": {
+              "path": "articleId",
+              "fallback": "art_20260620_blog_builder"
+            },
+            "title": {
+              "path": "title",
+              "fallback": "Sin título"
+            },
+            "status": {
+              "path": "status",
+              "lookup": {
+                "draft": "draft",
+                "scheduled": "scheduled",
+                "published": "published"
+              },
+              "fallback": "draft"
+            },
+            "statusLabel": {
+              "path": "status",
+              "lookup": {
+                "draft": "Borrador",
+                "scheduled": "Programado",
+                "published": "Publicado"
+              },
+              "fallback": "Borrador"
+            },
+            "language": {
+              "path": "locale",
+              "fallback": "es"
+            },
+            "category": {
+              "path": "categorySlug",
+              "fallback": "sin-categoria"
+            },
+            "tags": {
+              "path": "tags",
+              "fallback": []
+            },
+            "scheduledAt": {
+              "path": "scheduledAt",
+              "fallback": "Sin programar"
+            },
+            "publishedAt": {
+              "path": "publishedAt",
+              "fallback": "Sin publicar"
+            },
+            "updatedAt": {
+              "path": "updatedAt",
+              "fallback": "Sin fecha"
+            },
+            "assetCount": {
+              "path": "assetCount",
+              "fallback": 0
+            },
+            "primaryAsset": {
+              "path": "primaryAsset",
+              "fallback": "Sin activo principal"
+            }
+          }
         }
       },
       {
@@ -1062,7 +1122,33 @@
           "admin-blog-articulo-editor"
         ],
         "mapper": {
-          "itemsPath": "items"
+          "itemsPath": "items",
+          "fields": {
+            "id": {
+              "path": "assetId",
+              "fallback": "asset-pending"
+            },
+            "name": {
+              "path": "name",
+              "fallback": "Activo sin nombre"
+            },
+            "kind": {
+              "path": "kind",
+              "fallback": "image"
+            },
+            "metadata": {
+              "path": "metadata",
+              "fallback": "Sin metadata"
+            },
+            "usageRefs": {
+              "path": "usageRefs",
+              "fallback": "Sin referencias"
+            },
+            "publicability": {
+              "path": "publicability",
+              "fallback": "Pendiente de validación"
+            }
+          }
         }
       },
       {

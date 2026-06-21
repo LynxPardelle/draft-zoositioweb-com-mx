@@ -32,7 +32,10 @@
       "groupClaim": "cognito:groups",
       "allowedGroups": [
         "zoosite-client",
-        "zoosite-admin"
+        "zoosite-admin",
+        "zoosite-blog-editor",
+        "zoosite-blog-publisher",
+        "zoosite-blog-media"
       ],
       "allowedTokenUses": [
         "id",
@@ -43,7 +46,10 @@
       ],
       "manageableGroups": [
         "zoosite-client",
-        "zoosite-admin"
+        "zoosite-admin",
+        "zoosite-blog-editor",
+        "zoosite-blog-publisher",
+        "zoosite-blog-media"
       ],
       "defaultUserStatus": "pending",
       "adminGroupsAutoApproved": true,
