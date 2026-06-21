@@ -152,6 +152,7 @@
         "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
           "admin-blogIntroText",
+          "admin-blogMutationNotice",
           "admin-blogValidateButton",
           "admin-blogPublishButton"
         ]
@@ -167,10 +168,21 @@
       }
     },
     {
+      "id": "admin-blogMutationNotice",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Las lecturas del hub usan content-hub same-origin. Crear, publicar, programar y subir medios quedan bloqueados visualmente hasta validar el backend de mutaciones.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
       "id": "admin-blogValidateButton",
       "type": "button",
       "config": {
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "disabled": true,
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "label": "Validar hub"
       },
       "eventInstructions": "proxyAction:content_hub_validate_article"
@@ -180,6 +192,8 @@
       "type": "button",
       "config": {
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "disabled": true,
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "label": "Publicar cambios"
       },
       "eventInstructions": "proxyAction:content_hub_publish_article"
@@ -193,7 +207,51 @@
         "rowIdPath": "id",
         "rowsSource": {
           "source": "var",
-          "path": "remote.contentHub.articles.items"
+          "path": "remote.contentHub.articles.items",
+          "fallback": [
+            {
+              "id": "art_20260620_blog_builder",
+              "title": "Cómo crear blogs visuales con Zoolandingpage",
+              "status": "published",
+              "statusLabel": "Publicado",
+              "language": "es",
+              "category": "web",
+              "tags": "seo, builder, angora",
+              "scheduledAt": "Sin programar",
+              "publishedAt": "2026-06-21T15:00:00.000Z",
+              "updatedAt": "2026-06-21T15:00:00.000Z",
+              "assetCount": 1,
+              "primaryAsset": "seo-card"
+            },
+            {
+              "id": "art_zoosite_programado_demo",
+              "title": "Checklist SEO antes de publicar",
+              "status": "scheduled",
+              "statusLabel": "Programado",
+              "language": "es",
+              "category": "seo",
+              "tags": "seo, checklist",
+              "scheduledAt": "2026-07-01T15:00:00.000Z",
+              "publishedAt": "Sin publicar",
+              "updatedAt": "2026-06-21T10:00:00.000Z",
+              "assetCount": 0,
+              "primaryAsset": "Sin activo principal"
+            },
+            {
+              "id": "art_zoosite_borrador_demo",
+              "title": "Plantilla de caso de éxito",
+              "status": "draft",
+              "statusLabel": "Borrador",
+              "language": "es",
+              "category": "clientes",
+              "tags": "caso, pyme",
+              "scheduledAt": "Sin programar",
+              "publishedAt": "Sin publicar",
+              "updatedAt": "2026-06-21T09:30:00.000Z",
+              "assetCount": 0,
+              "primaryAsset": "Sin activo principal"
+            }
+          ]
         },
         "rows": [
           {
@@ -219,6 +277,11 @@
             "valuePath": "status"
           },
           {
+            "id": "statusLabel",
+            "header": "Lectura",
+            "valuePath": "statusLabel"
+          },
+          {
             "id": "language",
             "header": "Idioma",
             "valuePath": "language"
@@ -235,13 +298,23 @@
           },
           {
             "id": "schedule",
-            "header": "Programación",
-            "valuePath": "schedule"
+            "header": "Programado",
+            "valuePath": "scheduledAt"
+          },
+          {
+            "id": "publishedAt",
+            "header": "Publicado",
+            "valuePath": "publishedAt"
           },
           {
             "id": "updatedAt",
             "header": "Actualizado",
             "valuePath": "updatedAt"
+          },
+          {
+            "id": "assetCount",
+            "header": "Assets",
+            "valuePath": "assetCount"
           }
         ],
         "rowActions": [
@@ -249,31 +322,36 @@
             "id": "edit",
             "label": "Editar",
             "icon": "edit",
-            "eventInstructions": "navigate:/admin/blog/articulos/editor"
+            "disabled": true,
+            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/editor"
           },
           {
             "id": "preview",
             "label": "Preview",
             "icon": "eye",
-            "eventInstructions": "navigate:/admin/blog/articulos/preview"
+            "disabled": true,
+            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/preview"
           },
           {
             "id": "seo",
             "label": "SEO",
             "icon": "search",
-            "eventInstructions": "navigate:/admin/blog/articulos/seo"
+            "disabled": true,
+            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/seo"
           },
           {
             "id": "versions",
             "label": "Versiones",
             "icon": "history",
-            "eventInstructions": "navigate:/admin/blog/articulos/versiones"
+            "disabled": true,
+            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/versiones"
           },
           {
             "id": "schedule",
             "label": "Programar",
             "icon": "calendar",
-            "eventInstructions": "navigate:/admin/blog/programados"
+            "disabled": true,
+            "eventInstructions": "navigateToUrl:/admin/blog/programados"
           }
         ],
         "classes": "ank-width-100per"
