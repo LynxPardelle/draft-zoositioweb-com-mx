@@ -26,28 +26,7 @@
         "components": [
           "admin-blog-mediosHeader",
           "admin-blog-mediosNav",
-          "mediaScope",
-          "mediaWorkspace",
-          "mediaUploadPanel",
-          "mediaArticleId",
-          "mediaDropzone",
-          "mediaUploadButton",
-          "mediaStatus",
-          "mediaUploadLoading",
-          "mediaUploadError",
-          "mediaUploadSuccess",
-          "mediaUploadAssetId",
-          "mediaUploadFileName",
-          "mediaAssetsTable",
-          "mediaMetaPanel",
-          "mediaMetaTitle",
-          "mediaAltText",
-          "mediaCaption",
-          "mediaLicense",
-          "mediaFocalPoint",
-          "mediaUsageRefs",
-          "mediaPublicability",
-          "mediaArchiveNote"
+          "mediaScope"
         ]
       }
     },

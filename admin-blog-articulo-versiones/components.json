@@ -26,23 +26,7 @@
         "components": [
           "admin-blog-articulo-versionesHeader",
           "admin-blog-articulo-versionesNav",
-          "versionsScope",
-          "versionsWorkspace",
-          "versionsArticleId",
-          "versionsControls",
-          "versionsRevisionId",
-          "versionsDelta",
-          "versionsSnapshot",
-          "versionsRestoreReason",
-          "versionsTable",
-          "versionsActions",
-          "versionsRestoreButton",
-          "versionsStatus",
-          "versionsRestoreLoading",
-          "versionsRestoreError",
-          "versionsRestoreSuccess",
-          "versionsRestoreArticleId",
-          "versionsRestoreRevisionId"
+          "versionsScope"
         ]
       }
     },
