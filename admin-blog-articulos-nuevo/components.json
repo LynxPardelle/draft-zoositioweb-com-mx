@@ -101,7 +101,7 @@
       "config": {
         "text": "Artículos",
         "href": "/admin/blog/articulos",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -126,7 +126,7 @@
       "config": {
         "text": "Medios",
         "href": "/admin/blog/medios",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -138,7 +138,7 @@
       "config": {
         "text": "Moderación",
         "href": "/admin/blog/moderacion",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -150,7 +150,7 @@
       "config": {
         "text": "Analíticas",
         "href": "/admin/blog/analiticas",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -162,7 +162,7 @@
       "config": {
         "text": "Categorías",
         "href": "/admin/blog/categorias",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -174,7 +174,7 @@
       "config": {
         "text": "Tags",
         "href": "/admin/blog/tags",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -186,7 +186,7 @@
       "config": {
         "text": "Hub",
         "href": "/admin/blog/hub",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -198,7 +198,7 @@
       "config": {
         "text": "Configuración",
         "href": "/admin/blog/configuracion",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -249,7 +249,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
           "newArticleBaseTitle",
           "newArticleTitle",
@@ -275,7 +275,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
         "required": true,
         "validation": [
           {
@@ -319,7 +319,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
         "required": true,
         "validation": [
           {
@@ -332,10 +332,10 @@
         "dropdownTriggerTextConfig": {
           "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
         },
-        "dropdownIndicatorText": "expand_more",
-        "dropdownIndicatorClasses": "material-symbols-outlined ank-fontSize-20px",
+        "dropdownIndicatorText": "v",
+        "dropdownIndicatorClasses": "ank-fontSize-18px ank-fontWeight-900",
         "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
-        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
         "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
         "fieldId": "articleLanguage",
         "label": "Idioma",
@@ -361,7 +361,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
         "required": true,
         "validation": [
           {
@@ -389,7 +389,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
         "required": false,
         "validation": [],
         "fieldId": "articleTags",
@@ -407,7 +407,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-py-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-py-12px",
         "required": true,
         "validation": [
           {
@@ -433,7 +433,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
           "newArticleSeoTitleText",
           "newArticleSeoGrid",
@@ -473,7 +473,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
         "required": true,
         "validation": [
           {
@@ -501,7 +501,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
         "required": true,
         "validation": [
           {
@@ -534,7 +534,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-py-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-py-12px",
         "required": true,
         "validation": [
           {
@@ -565,7 +565,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
           "newArticlePoliciesTitle",
           "newArticlePoliciesGrid"
@@ -605,7 +605,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
         "required": true,
         "validation": [
           {
@@ -618,10 +618,10 @@
         "dropdownTriggerTextConfig": {
           "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
         },
-        "dropdownIndicatorText": "expand_more",
-        "dropdownIndicatorClasses": "material-symbols-outlined ank-fontSize-20px",
+        "dropdownIndicatorText": "v",
+        "dropdownIndicatorClasses": "ank-fontSize-18px ank-fontWeight-900",
         "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
-        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
         "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
         "fieldId": "articleCanonicalPolicy",
         "label": "Canonical",
@@ -647,7 +647,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
         "required": true,
         "validation": [
           {
@@ -660,10 +660,10 @@
         "dropdownTriggerTextConfig": {
           "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
         },
-        "dropdownIndicatorText": "expand_more",
-        "dropdownIndicatorClasses": "material-symbols-outlined ank-fontSize-20px",
+        "dropdownIndicatorText": "v",
+        "dropdownIndicatorClasses": "ank-fontSize-18px ank-fontWeight-900",
         "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
-        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
         "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
         "fieldId": "articleCommentPolicy",
         "label": "Comentarios",
@@ -693,7 +693,7 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
         "required": true,
         "validation": [
           {
@@ -706,10 +706,10 @@
         "dropdownTriggerTextConfig": {
           "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
         },
-        "dropdownIndicatorText": "expand_more",
-        "dropdownIndicatorClasses": "material-symbols-outlined ank-fontSize-20px",
+        "dropdownIndicatorText": "v",
+        "dropdownIndicatorClasses": "ank-fontSize-18px ank-fontWeight-900",
         "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
-        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
         "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
         "fieldId": "articleContentSafetyPolicy",
         "label": "Libertad HTML/Markdown",
@@ -736,12 +736,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexWrap-wrap ank-gap-12px ank-alignItems-center ank-justifyContent-spaceBetween",
-        "styles": {
-          "position": "sticky",
-          "bottom": "16px",
-          "zIndex": 2
-        },
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexWrap-wrap ank-gap-12px ank-alignItems-center",
         "components": [
           "newArticleCreateButton",
           "newArticleActionHint"
@@ -756,7 +751,7 @@
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "label": "Crear paquete",
         "icon": "add_circle",
-        "iconClasses": "material-symbols-outlined ank-fontSize-20px",
+        "iconClasses": "ank-fontSize-18px ank-fontWeight-900",
         "disabledWhenInvalidScope": true
       },
       "eventInstructions": "proxyAction:content_hub_create_article"
@@ -775,7 +770,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-18px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-18px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
           "newArticleChecklistTitle",
           "newArticleChecklistIntro",
