@@ -27,8 +27,7 @@
           "admin-blog-articulosHeader",
           "admin-blog-articulosNav",
           "adminBlogArticulosToolbar",
-          "adminBlogArticulosTable",
-          "adminBlogArticulosPagination"
+          "adminBlogArticulosTable"
         ]
       }
     },
@@ -211,13 +210,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-16px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_10ED",
         "components": [
           "adminBlogArticulosMutationNotice",
-          "adminBlogArticulosSearch",
-          "adminBlogArticulosFilterGrid",
-          "adminBlogArticulosNewLink",
-          "adminBlogArticulosValidateButton",
+          "adminBlogArticulosFiltersScope",
           "adminBlogArticulosActionStatus"
         ]
       }
@@ -228,15 +224,33 @@
       "config": {
         "tag": "p",
         "text": "Lista real por content-hub. Crear, validar, programar y publicar usan el BFF same-origin con sesión, CSRF, tenant y roles server-side.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
     {
       "id": "adminBlogArticulosSearch",
-      "type": "search-box",
+      "type": "input",
       "config": {
-        "placeholder": "Buscar por título, categoría, tag o estado",
-        "classes": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px"
+        "fieldId": "search",
+        "label": "Buscar artículos",
+        "controlType": "text",
+        "inputType": "search",
+        "value": {
+          "source": "queryParam",
+          "key": "q",
+          "fallback": ""
+        },
+        "placeholder": "Título, categoría, tag o estado",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "fieldClasses": "ank-width-100per",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-outline-none",
+        "helperText": "Presiona buscar para actualizar la lista.",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700",
+        "validation": []
       }
     },
     {
@@ -244,7 +258,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-display-grid ank-gap-12px",
+        "classes": "ank-width-100per ank-display-grid ank-gap-12px ank-alignItems-start",
         "styles": {
           "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 220px), 1fr))"
         },
@@ -261,7 +275,11 @@
         "fieldId": "status",
         "label": "Filtro de estado",
         "controlType": "select",
-        "value": "all",
+        "value": {
+          "source": "queryParam",
+          "key": "status",
+          "fallback": "all"
+        },
         "required": false,
         "readOnly": false,
         "disabled": false,
@@ -287,17 +305,29 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
-        "dropdownTriggerClasses": "ank-width-100per",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
         "dropdownTriggerTextConfig": {
-          "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap"
         },
-        "dropdownIndicatorText": "v",
-        "dropdownIndicatorClasses": "ank-fontSize-18px ank-fontWeight-900",
+        "dropdownIndicatorText": "⌄",
+        "dropdownIndicatorClasses": "ank-fontSize-22px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor",
         "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
         "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
         "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
-        "validation": []
+        "validation": [],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-px-12px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-800 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        },
+        "helperText": "Filtra sin perder tu sesión."
       }
     },
     {
@@ -307,7 +337,11 @@
         "fieldId": "pageSize",
         "label": "Tamaño de página",
         "controlType": "select",
-        "value": "20",
+        "value": {
+          "source": "queryParam",
+          "key": "pageSize",
+          "fallback": "20"
+        },
         "required": false,
         "readOnly": false,
         "disabled": false,
@@ -329,17 +363,29 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
-        "dropdownTriggerClasses": "ank-width-100per",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
         "dropdownTriggerTextConfig": {
-          "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap"
         },
-        "dropdownIndicatorText": "v",
-        "dropdownIndicatorClasses": "ank-fontSize-18px ank-fontWeight-900",
+        "dropdownIndicatorText": "⌄",
+        "dropdownIndicatorClasses": "ank-fontSize-22px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor",
         "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
         "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
         "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
-        "validation": []
+        "validation": [],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-px-12px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-800 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        },
+        "helperText": "Controla cuántos artículos pide el hub."
       }
     },
     {
@@ -348,14 +394,14 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none"
+        "classes": "ank-minHeight-52px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none ank-boxShadow-0_10px_24px_rgbaSD0C0C0C__0_14ED"
       }
     },
     {
       "id": "adminBlogArticulosValidateButton",
       "type": "button",
       "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "classes": "ank-minHeight-52px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_22 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Validar selección",
@@ -453,7 +499,7 @@
           "path"
         ],
         "emptyText": "No hay registros reales disponibles desde content-hub para este filtro.",
-        "loadingText": "Cargando datos de content-hub...",
+        "loadingText": "Estamos cargando artículos del content-hub. Si es la primera consulta del día puede tardar unos segundos.",
         "columns": [
           {
             "id": "title",
@@ -528,19 +574,19 @@
           }
         ],
         "pagination": {
-          "enabled": true,
-          "pageSize": 10,
-          "pageSizeOptions": [
-            10,
-            20,
-            50
-          ],
-          "showFirstLastButtons": true
+          "enabled": false
         },
-        "classes": "ank-width-100per",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-18px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_10ED",
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
-        "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
-        "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+        "stateClasses": "ank-p-18px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-lineHeight-1_55 ank-border-1px__solid__textColorOPA__0_14",
+        "actionButtonClasses": "ank-minHeight-44px ank-px-12px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-gap-6px",
+        "description": "Datos protegidos del hub. Usa filtros arriba para pedir otra vista al BFF.",
+        "descriptionClasses": "ank-mt-4px ank-mb-10px ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700",
+        "tableWrapperClasses": "ank-width-100per ank-overflow-auto ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_14",
+        "tableClasses": "ank-width-100per ank-bg-bgColor ank-color-textColor",
+        "headerCellClasses": "ank-fontWeight-900 ank-color-titleColor ank-bg-secondaryBgColor ank-whiteSpace-nowrap",
+        "rowClasses": "ank-bg-bgColor",
+        "actionCellClasses": "ank-whiteSpace-nowrap"
       },
       "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
     },
@@ -550,13 +596,84 @@
       "config": {
         "collectionPath": "remote.contentHub.articles.items",
         "defaultPageSize": 20,
-        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px ank-alignItems-center",
-        "listClasses": "ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
-        "linkClasses": "ank-minHeight-48px ank-minWidth-48px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-display-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-color-titleColor ank-fontWeight-900",
-        "activeLinkClasses": "ank-bg-accentColor ank-color-onSuccessColor",
-        "disabledLinkClasses": "ank-opacity-50 ank-cursor-notAllowed",
+        "pageParam": "page",
+        "pageSizeParam": "pageSize",
+        "hideWhenEmpty": true,
+        "hideWhenSinglePage": true,
+        "summaryTemplate": "Página {page} de {pageCount} · {totalItems} artículos cargados",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-14px ank-display-flex ank-flexWrap-wrap ank-gap-12px ank-alignItems-center ank-justifyContent-spaceBetween",
+        "summaryClasses": "ank-fontSize-13px ank-fontWeight-800 ank-color-secondaryTextColor",
+        "listClasses": "ank-display-flex ank-flexWrap-wrap ank-gap-8px ank-alignItems-center",
+        "linkClasses": "ank-minHeight-44px ank-minWidth-44px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-display-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-color-titleColor ank-fontWeight-900 ank-bg-bgColor",
+        "activeLinkClasses": "ank-bg-accentColor ank-color-onSuccessColor ank-border-1px__solid__accentColor",
+        "disabledLinkClasses": "ank-opacity-45 ank-cursor-notAllowed",
         "previousLabel": "Anterior",
         "nextLabel": "Siguiente"
+      }
+    },
+    {
+      "id": "adminBlogArticulosFiltersScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "adminBlogArticulosFilters",
+        "tag": "form",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "ariaLabel": "Filtros de artículos",
+        "components": [
+          "adminBlogArticulosSearchRow",
+          "adminBlogArticulosFilterGrid",
+          "adminBlogArticulosToolbarActions"
+        ],
+        "autoSubmit": {
+          "enabled": true,
+          "eventNames": [
+            "valueChanged"
+          ],
+          "fieldIds": [
+            "status",
+            "pageSize"
+          ]
+        },
+        "submitEventInstructions": "navigateWithScopeQuery:/admin/blog/articulos,,q=values.search,status=values.status,pageSize=values.pageSize,page=1"
+      }
+    },
+    {
+      "id": "adminBlogArticulosSearchRow",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-12px ank-alignItems-end",
+        "styles": {
+          "gridTemplateColumns": "minmax(0, 1fr) minmax(140px, max-content)"
+        },
+        "components": [
+          "adminBlogArticulosSearch",
+          "adminBlogArticulosSearchButton"
+        ]
+      }
+    },
+    {
+      "id": "adminBlogArticulosSearchButton",
+      "type": "button",
+      "config": {
+        "type": "submit",
+        "label": "Buscar",
+        "icon": "search",
+        "iconPosition": "before",
+        "classes": "ank-minHeight-52px ank-px-20px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none ank-boxShadow-0_10px_24px_rgbaSD0C0C0C__0_14ED",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
+      }
+    },
+    {
+      "id": "adminBlogArticulosToolbarActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center ank-justifyContent-spaceBetween",
+        "components": [
+          "adminBlogArticulosNewLink",
+          "adminBlogArticulosValidateButton"
+        ]
       }
     }
   ]
