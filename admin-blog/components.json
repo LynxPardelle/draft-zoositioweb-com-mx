@@ -7,24 +7,59 @@
       "id": "admin-blogRoot",
       "type": "container",
       "config": {
-        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-18px",
+        "styles": {
+          "padding": "clamp(16px, 2vw, 32px)"
+        },
         "components": [
           "admin-blogShell"
-        ],
-        "tag": "main"
+        ]
       }
     },
     {
       "id": "admin-blogShell",
       "type": "container",
       "config": {
+        "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blogHeader",
+          "admin-blogNav",
+          "adminBlogMvpStatus",
+          "adminBlogMvpStatusTitle",
+          "adminBlogMvpStatusCopy",
+          "adminBlogMvpStatusGrid",
+          "adminBlogMetricArticles",
+          "adminBlogMetricTaxonomy",
+          "adminBlogMetricBridge",
+          "adminBlogValidateButton",
+          "adminBlogPublishButton",
+          "adminBlogActionStatus",
+          "adminBlogValidateLoading",
+          "adminBlogValidateError",
+          "adminBlogValidateSuccess",
+          "adminBlogValidateArticleId",
+          "adminBlogValidateRevisionId",
+          "adminBlogPublishLoading",
+          "adminBlogPublishError",
+          "adminBlogPublishSuccess",
+          "adminBlogPublishArticleId",
+          "adminBlogPublishRevisionId",
+          "admin-blogArticlesTable"
+        ]
+      }
+    },
+    {
+      "id": "admin-blogHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
         "components": [
           "admin-blogEyebrow",
           "admin-blogTitle",
-          "admin-blogNav",
-          "admin-blogIntroCard",
-          "admin-blogArticlesTable"
+          "admin-blogIntro"
         ]
       }
     },
@@ -34,7 +69,7 @@
       "config": {
         "tag": "span",
         "text": "ZOOSITIOWEB / BLOG ADMIN",
-        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-fontSize-13px"
       }
     },
     {
@@ -47,10 +82,26 @@
       }
     },
     {
+      "id": "admin-blogIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Superficie operativa del hub zoosite-main: artículos, revisión, publicación, medios, taxonomía, moderación y analítica sin configuración server-only en el navegador.",
+        "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
       "id": "admin-blogNav",
       "type": "container",
       "config": {
+        "tag": "nav",
         "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "10px",
+          "alignItems": "center"
+        },
         "components": [
           "admin-blogNavArticles",
           "admin-blogNavNew",
@@ -61,13 +112,7 @@
           "admin-blogNavTags",
           "admin-blogNavHub",
           "admin-blogNavConfig"
-        ],
-        "styles": {
-          "display": "flex",
-          "flexWrap": "wrap",
-          "gap": "10px",
-          "alignItems": "center"
-        }
+        ]
       }
     },
     {
@@ -76,7 +121,7 @@
       "config": {
         "text": "Artículos",
         "href": "/admin/blog/articulos",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -88,7 +133,7 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -100,7 +145,7 @@
       "config": {
         "text": "Medios",
         "href": "/admin/blog/medios",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -112,7 +157,7 @@
       "config": {
         "text": "Moderación",
         "href": "/admin/blog/moderacion",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -124,7 +169,7 @@
       "config": {
         "text": "Analíticas",
         "href": "/admin/blog/analiticas",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -136,7 +181,7 @@
       "config": {
         "text": "Categorías",
         "href": "/admin/blog/categorias",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -148,7 +193,7 @@
       "config": {
         "text": "Tags",
         "href": "/admin/blog/tags",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -160,7 +205,7 @@
       "config": {
         "text": "Hub",
         "href": "/admin/blog/hub",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -172,62 +217,244 @@
       "config": {
         "text": "Configuración",
         "href": "/admin/blog/configuracion",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
       }
     },
     {
-      "id": "admin-blogIntroCard",
+      "id": "adminBlogMvpStatus",
       "type": "container",
       "config": {
+        "tag": "section",
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
-          "admin-blogIntroText",
-          "admin-blogMutationNotice",
-          "admin-blogValidateButton",
-          "admin-blogPublishButton"
+          "adminBlogMvpStatusTitle",
+          "adminBlogMvpStatusCopy",
+          "adminBlogMvpStatusGrid",
+          "adminBlogValidateButton",
+          "adminBlogPublishButton",
+          "adminBlogActionStatus"
         ]
       }
     },
     {
-      "id": "admin-blogIntroText",
+      "id": "adminBlogMvpStatusTitle",
       "type": "text",
       "config": {
-        "tag": "p",
-        "text": "Administra artículos, taxonomía, medios, programación, moderación y analíticas del hub zoosite-main sin exponer configuración server-only.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+        "tag": "h2",
+        "text": "Estado operativo",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
       }
     },
     {
-      "id": "admin-blogMutationNotice",
+      "id": "adminBlogMvpStatusCopy",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Las lecturas y acciones protegidas del hub usan content-hub same-origin con sesión, CSRF, tenant y roles server-side. La publicación pública del bundle se mantiene separada del runtime SEO hasta conectar el puente de índice público.",
-        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-800 ank-color-titleColor"
+        "text": "Los datos se leen desde content-hub con sesión y CSRF. Si el BFF responde vacío, la tabla muestra vacío real, no filas de demostración.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
     {
-      "id": "admin-blogValidateButton",
-      "type": "button",
+      "id": "adminBlogMvpStatusGrid",
+      "type": "container",
       "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
-        "label": "Validar hub"
-      },
-      "eventInstructions": "proxyAction:content_hub_validate_article"
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-12px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 220px), 1fr))"
+        },
+        "components": [
+          "adminBlogMetricArticles",
+          "adminBlogMetricTaxonomy",
+          "adminBlogMetricBridge"
+        ]
+      }
     },
     {
-      "id": "admin-blogPublishButton",
+      "id": "adminBlogMetricArticles",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículos: content_hub_articles",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
+      }
+    },
+    {
+      "id": "adminBlogMetricTaxonomy",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Taxonomía: categorías y tags desde content-hub",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
+      }
+    },
+    {
+      "id": "adminBlogMetricBridge",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "SEO público: runtime.contentHubs.publicArticles/publicTaxonomy",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
+      }
+    },
+    {
+      "id": "adminBlogValidateButton",
       "type": "button",
       "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
-        "label": "Publicar cambios"
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Validar hub",
+        "loadingLabel": "Validando...",
+        "disabledWhenInvalidScope": false,
+        "iconPosition": "before"
       },
-      "eventInstructions": "proxyAction:content_hub_publish_article"
+      "eventInstructions": "proxyAction:content_hub_validate_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,loading\",true,false"
+    },
+    {
+      "id": "adminBlogPublishButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Publicar artículo seleccionado",
+        "loadingLabel": "Publicando...",
+        "disabledWhenInvalidScope": false,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_publish_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading\",true,false"
+    },
+    {
+      "id": "adminBlogActionStatus",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "adminBlogValidateLoading",
+          "adminBlogValidateError",
+          "adminBlogValidateSuccess",
+          "adminBlogValidateArticleId",
+          "adminBlogValidateRevisionId",
+          "adminBlogPublishLoading",
+          "adminBlogPublishError",
+          "adminBlogPublishSuccess",
+          "adminBlogPublishArticleId",
+          "adminBlogPublishRevisionId"
+        ]
+      }
+    },
+    {
+      "id": "adminBlogValidateLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cargando...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,loading"
+    },
+    {
+      "id": "adminBlogValidateError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No se pudo completar la operación.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.error,No se pudo completar la operación."
+    },
+    {
+      "id": "adminBlogValidateSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Validación completada.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success"
+    },
+    {
+      "id": "adminBlogValidateArticleId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "articleId pendiente",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.articleId,La respuesta no incluyó articleId."
+    },
+    {
+      "id": "adminBlogValidateRevisionId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "revisionId pendiente",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.revisionId,La respuesta no incluyó revisionId."
+    },
+    {
+      "id": "adminBlogPublishLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cargando...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading"
+    },
+    {
+      "id": "adminBlogPublishError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No se pudo completar la operación.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.error,No se pudo completar la operación."
+    },
+    {
+      "id": "adminBlogPublishSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Solicitud de publicación completada.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success"
+    },
+    {
+      "id": "adminBlogPublishArticleId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "articleId pendiente",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.articleId,La respuesta no incluyó articleId."
+    },
+    {
+      "id": "adminBlogPublishRevisionId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "revisionId pendiente",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.revisionId,La respuesta no incluyó revisionId."
     },
     {
       "id": "admin-blogArticlesTable",
@@ -235,19 +462,21 @@
       "config": {
         "id": "admin-blogArticlesTable",
         "label": "Últimos artículos",
-        "rowIdPath": "articleId",
+        "rowsSource": {
+          "source": "var",
+          "path": "remote.contentHub.articles.items"
+        },
+        "rows": [],
+        "rowIdPath": "id",
         "eventPayloadFields": [
           "articleId",
           "status",
           "latestRevisionId",
           "path"
         ],
-        "rowsSource": {
-          "source": "var",
-          "path": "remote.contentHub.articles.items"
-        },
-        "rows": [],
-        "emptyText": "Aún no hay artículos disponibles desde content-hub.",
+        "emptyText": "No hay registros reales disponibles desde content-hub para este filtro.",
+        "loadingText": "Cargando datos de content-hub...",
+        "errorText": "No se pudieron cargar los datos protegidos. Revisa sesión, permisos o conectividad del BFF.",
         "columns": [
           {
             "id": "title",
@@ -258,11 +487,6 @@
             "id": "status",
             "header": "Estado",
             "valuePath": "status"
-          },
-          {
-            "id": "statusLabel",
-            "header": "Lectura",
-            "valuePath": "statusLabel"
           },
           {
             "id": "language",
@@ -281,23 +505,13 @@
           },
           {
             "id": "schedule",
-            "header": "Programado",
+            "header": "Programación",
             "valuePath": "scheduledAt"
-          },
-          {
-            "id": "publishedAt",
-            "header": "Publicado",
-            "valuePath": "publishedAt"
           },
           {
             "id": "updatedAt",
             "header": "Actualizado",
             "valuePath": "updatedAt"
-          },
-          {
-            "id": "assetCount",
-            "header": "Assets",
-            "valuePath": "assetCount"
           }
         ],
         "rowActions": [
@@ -305,25 +519,25 @@
             "id": "edit",
             "label": "Editar",
             "icon": "edit",
-            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/editor"
+            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/editor?articleId={articleId}"
           },
           {
             "id": "preview",
             "label": "Preview",
             "icon": "eye",
-            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/preview"
+            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/preview?articleId={articleId}"
           },
           {
             "id": "seo",
             "label": "SEO",
             "icon": "search",
-            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/seo"
+            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/seo?articleId={articleId}"
           },
           {
             "id": "versions",
             "label": "Versiones",
             "icon": "history",
-            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/versiones"
+            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/versiones?articleId={articleId}"
           },
           {
             "id": "schedule",
@@ -332,8 +546,22 @@
             "eventInstructions": "navigateWithEventData:/admin/blog/programados?articleId={articleId}"
           }
         ],
-        "classes": "ank-width-100per"
-      }
+        "pagination": {
+          "enabled": true,
+          "pageSize": 10,
+          "pageSizeOptions": [
+            10,
+            20,
+            50
+          ],
+          "showFirstLastButtons": true
+        },
+        "classes": "ank-width-100per",
+        "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
+        "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
+        "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.error,var,remoteStatus.contentHub.articles.error"
     }
   ]
 }
