@@ -358,7 +358,6 @@
         ],
         "emptyText": "No hay registros reales disponibles desde content-hub para este filtro.",
         "loadingText": "Cargando datos de content-hub...",
-        "errorText": "No se pudieron cargar los datos protegidos. Revisa sesión, permisos o conectividad del BFF.",
         "columns": [
           {
             "id": "title",
@@ -397,7 +396,7 @@
         "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
         "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       },
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.preview.state,loading\",true,false; set:config.error,var,remoteStatus.contentHub.preview.error"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.preview.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.preview.error,"
     },
     {
       "id": "previewActionsPanel",
