@@ -7,23 +7,39 @@
       "id": "admin-blog-articulos-nuevoRoot",
       "type": "container",
       "config": {
-        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-18px",
+        "styles": {
+          "padding": "clamp(16px, 2vw, 32px)"
+        },
         "components": [
           "admin-blog-articulos-nuevoShell"
-        ],
-        "tag": "main"
+        ]
       }
     },
     {
       "id": "admin-blog-articulos-nuevoShell",
       "type": "container",
       "config": {
+        "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-articulos-nuevoHeader",
+          "admin-blog-articulos-nuevoNav",
+          "newArticleScope"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-articulos-nuevoHeader",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
         "components": [
           "admin-blog-articulos-nuevoEyebrow",
           "admin-blog-articulos-nuevoTitle",
-          "admin-blog-articulos-nuevoNav",
-          "newArticleScope"
+          "admin-blog-articulos-nuevoIntro"
         ]
       }
     },
@@ -33,7 +49,7 @@
       "config": {
         "tag": "span",
         "text": "ZOOSITIOWEB / BLOG ADMIN",
-        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-fontSize-13px"
       }
     },
     {
@@ -46,10 +62,26 @@
       }
     },
     {
+      "id": "admin-blog-articulos-nuevoIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Crea el paquete inicial con metadata lista para SEO. Después podrás abrir el editor visual, subir assets, revisar versiones y publicar.",
+        "classes": "ank-m-0 ank-maxWidth-760px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
       "id": "admin-blog-articulos-nuevoNav",
       "type": "container",
       "config": {
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "tag": "nav",
+        "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "10px",
+          "alignItems": "center"
+        },
         "components": [
           "admin-blog-articulos-nuevoNavArticles",
           "admin-blog-articulos-nuevoNavNew",
@@ -69,7 +101,10 @@
       "config": {
         "text": "Artículos",
         "href": "/admin/blog/articulos",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -78,7 +113,11 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        },
+        "ariaCurrent": "page"
       }
     },
     {
@@ -87,7 +126,10 @@
       "config": {
         "text": "Medios",
         "href": "/admin/blog/medios",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -96,7 +138,10 @@
       "config": {
         "text": "Moderación",
         "href": "/admin/blog/moderacion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -105,7 +150,10 @@
       "config": {
         "text": "Analíticas",
         "href": "/admin/blog/analiticas",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -114,7 +162,10 @@
       "config": {
         "text": "Categorías",
         "href": "/admin/blog/categorias",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -123,7 +174,10 @@
       "config": {
         "text": "Tags",
         "href": "/admin/blog/tags",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -132,7 +186,10 @@
       "config": {
         "text": "Hub",
         "href": "/admin/blog/hub",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -141,7 +198,10 @@
       "config": {
         "text": "Configuración",
         "href": "/admin/blog/configuracion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-surfaceColor ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -150,182 +210,646 @@
       "config": {
         "scopeId": "newArticle",
         "components": [
-          "newArticleCard"
+          "newArticleWorkspace"
         ],
         "valueInstructions": "collectFields:articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSeoTitle,articleSeoDescription,articleSlug,articleCanonicalPolicy,articleCommentPolicy,articleContentSafetyPolicy"
       }
     },
     {
-      "id": "newArticleCard",
+      "id": "newArticleWorkspace",
       "type": "container",
       "config": {
-        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gap-18px ank-alignItems-start",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 360px), 1fr))"
+        },
         "components": [
-          "newArticleHelp",
-          "newArticleMutationNotice",
-          "newArticleTitle",
-          "newArticleLanguage",
-          "newArticleCategory",
-          "newArticleTags",
-          "newArticleSummary",
-          "newArticleSeoTitle",
-          "newArticleSeoDescription",
-          "newArticleSlug",
-          "newArticleCanonicalPolicy",
-          "newArticleCommentPolicy",
-          "newArticleContentSafetyPolicy",
-          "newArticleCreateButton"
+          "newArticleMainPanel",
+          "newArticleSidePanel"
         ]
       }
     },
     {
-      "id": "newArticleHelp",
-      "type": "text",
+      "id": "newArticleMainPanel",
+      "type": "container",
       "config": {
-        "tag": "p",
-        "text": "Crea el paquete inicial del artículo. El contenido visual se edita después con el editor avanzado.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-16px",
+        "components": [
+          "newArticleBaseSection",
+          "newArticleSeoSection",
+          "newArticlePoliciesSection",
+          "newArticleActionBar"
+        ]
       }
     },
     {
-      "id": "newArticleMutationNotice",
+      "id": "newArticleBaseSection",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "newArticleBaseTitle",
+          "newArticleTitle",
+          "newArticleMetaGrid",
+          "newArticleSummary"
+        ]
+      }
+    },
+    {
+      "id": "newArticleBaseTitle",
       "type": "text",
       "config": {
-        "tag": "p",
-        "text": "El formulario crea el paquete inicial mediante content-hub same-origin. La edición visual, assets, revisión SEO y publicación se hacen en los pasos posteriores del panel.",
-        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-800 ank-color-titleColor"
+        "tag": "h2",
+        "text": "Base del artículo",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
       }
     },
     {
       "id": "newArticleTitle",
       "type": "input",
       "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "required": true,
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          },
+          {
+            "type": "minLength",
+            "value": 8,
+            "message": "Usa al menos 8 caracteres."
+          }
+        ],
         "fieldId": "articleTitle",
+        "controlType": "text",
         "label": "Título",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "placeholder": "Ej. Guía para crear un blog SEO desde tu sitio",
+        "helperText": "Usa un título claro. Este valor también ayuda a generar el artículo inicial."
+      }
+    },
+    {
+      "id": "newArticleMetaGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gap-14px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 220px), 1fr))"
+        },
+        "components": [
+          "newArticleLanguage",
+          "newArticleCategory",
+          "newArticleTags"
+        ]
       }
     },
     {
       "id": "newArticleLanguage",
       "type": "input",
       "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "required": true,
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ],
+        "controlType": "select",
+        "dropdownTriggerClasses": "ank-width-100per",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
+        },
+        "dropdownIndicatorText": "expand_more",
+        "dropdownIndicatorClasses": "material-symbols-outlined ank-fontSize-20px",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
         "fieldId": "articleLanguage",
         "label": "Idioma",
-        "value": "es-MX",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "value": "es",
+        "helperText": "Idioma principal del paquete.",
+        "options": [
+          {
+            "value": "es",
+            "label": "Español"
+          },
+          {
+            "value": "en",
+            "label": "Inglés"
+          }
+        ]
       }
     },
     {
       "id": "newArticleCategory",
       "type": "input",
       "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "required": true,
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          },
+          {
+            "type": "pattern",
+            "value": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "message": "Usa sólo minúsculas, números y guiones."
+          }
+        ],
         "fieldId": "articleCategory",
+        "controlType": "text",
         "label": "Categoría",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "placeholder": "web",
+        "helperText": "Slug de categoría. Ej. web, seo, analiticas."
       }
     },
     {
       "id": "newArticleTags",
       "type": "input",
       "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "required": false,
+        "validation": [],
         "fieldId": "articleTags",
+        "controlType": "text",
         "label": "Tags",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "placeholder": "seo, blog-builder, sitios-web",
+        "helperText": "Separados por coma. Sirven para filtros y búsqueda."
       }
     },
     {
       "id": "newArticleSummary",
       "type": "input",
       "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-py-12px",
+        "required": true,
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          },
+          {
+            "type": "minLength",
+            "value": 32,
+            "message": "Escribe al menos 32 caracteres."
+          }
+        ],
         "fieldId": "articleSummary",
-        "label": "Resumen",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "controlType": "textarea",
+        "rows": 4,
+        "label": "Resumen editorial",
+        "placeholder": "Describe qué resuelve el artículo y para quién.",
+        "helperText": "Se usa como descripción base y ayuda para cards/listados."
       }
     },
     {
-      "id": "newArticleSeoTitle",
-      "type": "input",
+      "id": "newArticleSeoSection",
+      "type": "container",
       "config": {
-        "fieldId": "articleSeoTitle",
-        "label": "Título SEO",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "newArticleSeoTitleText",
+          "newArticleSeoGrid",
+          "newArticleSeoDescription"
+        ]
       }
     },
     {
-      "id": "newArticleSeoDescription",
-      "type": "input",
+      "id": "newArticleSeoTitleText",
+      "type": "text",
       "config": {
-        "fieldId": "articleSeoDescription",
-        "label": "Descripción SEO",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "tag": "h2",
+        "text": "SEO y URL",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "newArticleSeoGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gap-14px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 280px), 1fr))"
+        },
+        "components": [
+          "newArticleSlug",
+          "newArticleSeoTitle"
+        ]
       }
     },
     {
       "id": "newArticleSlug",
       "type": "input",
       "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "required": true,
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          },
+          {
+            "type": "pattern",
+            "value": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "message": "Usa formato de slug: minúsculas, números y guiones."
+          }
+        ],
         "fieldId": "articleSlug",
+        "controlType": "text",
         "label": "Slug",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "placeholder": "blog-builder-seo",
+        "helperText": "Parte final de la URL. Sin espacios."
+      }
+    },
+    {
+      "id": "newArticleSeoTitle",
+      "type": "input",
+      "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "required": true,
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          },
+          {
+            "type": "minLength",
+            "value": 20,
+            "message": "Usa al menos 20 caracteres."
+          },
+          {
+            "type": "maxLength",
+            "value": 70,
+            "message": "Evita pasar de 70 caracteres."
+          }
+        ],
+        "fieldId": "articleSeoTitle",
+        "controlType": "text",
+        "label": "Título SEO",
+        "placeholder": "Blog builder visual con SEO para sitios web",
+        "helperText": "Recomendado: 45 a 60 caracteres."
+      }
+    },
+    {
+      "id": "newArticleSeoDescription",
+      "type": "input",
+      "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-py-12px",
+        "required": true,
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          },
+          {
+            "type": "minLength",
+            "value": 60,
+            "message": "Usa al menos 60 caracteres."
+          },
+          {
+            "type": "maxLength",
+            "value": 170,
+            "message": "Evita pasar de 170 caracteres."
+          }
+        ],
+        "fieldId": "articleSeoDescription",
+        "controlType": "textarea",
+        "rows": 3,
+        "label": "Descripción SEO",
+        "placeholder": "Aprende cómo crear artículos visuales...",
+        "helperText": "Recomendado: 120 a 160 caracteres."
+      }
+    },
+    {
+      "id": "newArticlePoliciesSection",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "newArticlePoliciesTitle",
+          "newArticlePoliciesGrid"
+        ]
+      }
+    },
+    {
+      "id": "newArticlePoliciesTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Publicación y seguridad",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "newArticlePoliciesGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gap-14px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 240px), 1fr))"
+        },
+        "components": [
+          "newArticleCanonicalPolicy",
+          "newArticleCommentPolicy",
+          "newArticleContentSafetyPolicy"
+        ]
       }
     },
     {
       "id": "newArticleCanonicalPolicy",
       "type": "input",
       "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "required": true,
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ],
+        "controlType": "select",
+        "dropdownTriggerClasses": "ank-width-100per",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
+        },
+        "dropdownIndicatorText": "expand_more",
+        "dropdownIndicatorClasses": "material-symbols-outlined ank-fontSize-20px",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
         "fieldId": "articleCanonicalPolicy",
-        "label": "Política canonical",
+        "label": "Canonical",
         "value": "creator-domain",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "helperText": "Para SEO multi-dominio.",
+        "options": [
+          {
+            "value": "creator-domain",
+            "label": "Dominio creador"
+          },
+          {
+            "value": "host-adaptive",
+            "label": "Adaptable por host"
+          }
+        ]
       }
     },
     {
       "id": "newArticleCommentPolicy",
       "type": "input",
       "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "required": true,
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ],
+        "controlType": "select",
+        "dropdownTriggerClasses": "ank-width-100per",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
+        },
+        "dropdownIndicatorText": "expand_more",
+        "dropdownIndicatorClasses": "material-symbols-outlined ank-fontSize-20px",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
         "fieldId": "articleCommentPolicy",
-        "label": "Política de comentarios",
+        "label": "Comentarios",
         "value": "authenticated-moderated",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "helperText": "Por defecto requiere sesión y moderación.",
+        "options": [
+          {
+            "value": "authenticated-moderated",
+            "label": "Autenticados + moderación"
+          },
+          {
+            "value": "disabled",
+            "label": "Desactivados"
+          },
+          {
+            "value": "public-moderated",
+            "label": "Públicos + moderación"
+          }
+        ]
       }
     },
     {
       "id": "newArticleContentSafetyPolicy",
       "type": "input",
       "config": {
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "required": true,
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ],
+        "controlType": "select",
+        "dropdownTriggerClasses": "ank-width-100per",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
+        },
+        "dropdownIndicatorText": "expand_more",
+        "dropdownIndicatorClasses": "material-symbols-outlined ank-fontSize-20px",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
         "fieldId": "articleContentSafetyPolicy",
-        "label": "Nivel de libertad HTML/Markdown",
+        "label": "Libertad HTML/Markdown",
         "value": "trusted-authors",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "helperText": "Controla qué tan libre será el editor.",
+        "options": [
+          {
+            "value": "trusted-authors",
+            "label": "Autores confiables"
+          },
+          {
+            "value": "strict",
+            "label": "Estricto"
+          },
+          {
+            "value": "advanced-freeform",
+            "label": "Avanzado libre"
+          }
+        ]
+      }
+    },
+    {
+      "id": "newArticleActionBar",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexWrap-wrap ank-gap-12px ank-alignItems-center ank-justifyContent-spaceBetween",
+        "styles": {
+          "position": "sticky",
+          "bottom": "16px",
+          "zIndex": 2
+        },
+        "components": [
+          "newArticleCreateButton",
+          "newArticleActionHint"
+        ]
       }
     },
     {
       "id": "newArticleCreateButton",
       "type": "button",
       "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
+        "classes": "ank-minHeight-52px ank-px-22px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-gap-8px",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
-        "label": "Crear paquete"
+        "label": "Crear paquete",
+        "icon": "add_circle",
+        "iconClasses": "material-symbols-outlined ank-fontSize-20px",
+        "disabledWhenInvalidScope": true
       },
       "eventInstructions": "proxyAction:content_hub_create_article"
+    },
+    {
+      "id": "newArticleActionHint",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "El botón se activa cuando la metadata requerida es válida. La creación guarda el paquete inicial en content-hub.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "newArticleSidePanel",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-18px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "newArticleChecklistTitle",
+          "newArticleChecklistIntro",
+          "newArticleChecklistList",
+          "newArticleColdNotice"
+        ]
+      }
+    },
+    {
+      "id": "newArticleChecklistTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Antes de crear",
+        "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "newArticleChecklistIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Este paso no publica nada. Sólo crea el paquete editable que luego pasa por editor visual, SEO, assets, revisión y publicación.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-textColor"
+      }
+    },
+    {
+      "id": "newArticleChecklistList",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "newArticleChecklistOne",
+          "newArticleChecklistTwo",
+          "newArticleChecklistThree"
+        ]
+      }
+    },
+    {
+      "id": "newArticleChecklistOne",
+      "type": "text",
+      "config": {
+        "tag": "li",
+        "text": "Define categoría y tags pensando en búsquedas por URL.",
+        "classes": "ank-fontSize-14px ank-lineHeight-1_45 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "newArticleChecklistTwo",
+      "type": "text",
+      "config": {
+        "tag": "li",
+        "text": "Cuida el título SEO y la descripción antes de crear.",
+        "classes": "ank-fontSize-14px ank-lineHeight-1_45 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "newArticleChecklistThree",
+      "type": "text",
+      "config": {
+        "tag": "li",
+        "text": "Usa políticas conservadoras si más personas editarán contenido.",
+        "classes": "ank-fontSize-14px ank-lineHeight-1_45 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "newArticleColdNotice",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Si el panel tarda en cargar la primera vez, espera unos segundos: el content-hub prepara sesión, permisos y datos del hub de forma server-side.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_45 ank-fontWeight-800 ank-color-titleColor"
+      }
     }
   ]
 }
