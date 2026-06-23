@@ -26,18 +26,7 @@
         "components": [
           "admin-blog-tagsHeader",
           "admin-blog-tagsNav",
-          "tagsScope",
-          "tagsWorkspace",
-          "tagsGrid",
-          "tagsTaxonomyId",
-          "tagsKind",
-          "tagsSlug",
-          "tagsTranslation",
-          "tagsSeoDescription",
-          "tagsVisible",
-          "tagsRedirectWarning",
-          "tagsSaveNotice",
-          "tagsTable"
+          "tagsScope"
         ]
       }
     },

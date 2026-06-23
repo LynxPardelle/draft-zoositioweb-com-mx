@@ -26,16 +26,7 @@
         "components": [
           "admin-blog-configuracionHeader",
           "admin-blog-configuracionNav",
-          "configScope",
-          "configPanel",
-          "configGrid",
-          "configDefaultCommentPolicy",
-          "configContentSafetyPolicy",
-          "configComponentAllowlistPreset",
-          "configLanguageFallback",
-          "configSeoDefaults",
-          "configNotice",
-          "configTaxonomyTable"
+          "configScope"
         ]
       }
     },
