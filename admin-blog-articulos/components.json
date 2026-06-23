@@ -235,11 +235,7 @@
         "label": "Buscar artículos",
         "controlType": "text",
         "inputType": "search",
-        "value": {
-          "source": "queryParam",
-          "key": "q",
-          "fallback": ""
-        },
+        "value": "",
         "placeholder": "Título, categoría, tag o estado",
         "required": false,
         "readOnly": false,
@@ -251,7 +247,8 @@
         "helperText": "Presiona buscar para actualizar la lista.",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700",
         "validation": []
-      }
+      },
+      "valueInstructions": "set:config.value,queryParamOr,q,"
     },
     {
       "id": "adminBlogArticulosFilterGrid",
@@ -275,11 +272,7 @@
         "fieldId": "status",
         "label": "Filtro de estado",
         "controlType": "select",
-        "value": {
-          "source": "queryParam",
-          "key": "status",
-          "fallback": "all"
-        },
+        "value": "all",
         "required": false,
         "readOnly": false,
         "disabled": false,
@@ -328,7 +321,8 @@
           "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
         },
         "helperText": "Filtra sin perder tu sesión."
-      }
+      },
+      "valueInstructions": "set:config.value,queryParamOr,status,all"
     },
     {
       "id": "adminBlogArticulosPageSize",
@@ -337,11 +331,7 @@
         "fieldId": "pageSize",
         "label": "Tamaño de página",
         "controlType": "select",
-        "value": {
-          "source": "queryParam",
-          "key": "pageSize",
-          "fallback": "20"
-        },
+        "value": "20",
         "required": false,
         "readOnly": false,
         "disabled": false,
@@ -386,7 +376,8 @@
           "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
         },
         "helperText": "Controla cuántos artículos pide el hub."
-      }
+      },
+      "valueInstructions": "set:config.value,queryParamOr,pageSize,20"
     },
     {
       "id": "adminBlogArticulosNewLink",
