@@ -481,7 +481,8 @@
             "valuePath": "tags",
             "format": "list",
             "itemPath": "label",
-            "separator": ", "
+            "separator": ", ",
+            "emptyText": "Sin tags"
           },
           {
             "id": "schedule",
