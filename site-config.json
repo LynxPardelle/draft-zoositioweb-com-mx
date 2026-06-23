@@ -1414,6 +1414,31 @@
         "statusTarget": "remoteStatus.contentHub.content_hub_schedule_article"
       },
       {
+        "id": "content_hub_upsert_taxonomy",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_upsert_taxonomy",
+        "contentHub": {
+          "action": "upsertTaxonomy",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "taxonomyKind",
+          "taxonomyId",
+          "taxonomyLabel",
+          "translation",
+          "slug",
+          "taxonomyDescription",
+          "seoTitle",
+          "seoDescription",
+          "parentTaxonomyId",
+          "isVisible",
+          "visible"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_upsert_taxonomy"
+      },
+      {
         "id": "content_hub_moderate_comment",
         "kind": "content-hub",
         "proxyActionId": "content_hub_moderate_comment",
@@ -1429,6 +1454,43 @@
           "reason"
         ],
         "statusTarget": "remoteStatus.contentHub.content_hub_moderate_comment"
+      },
+      {
+        "id": "content_hub_queue_comment",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_queue_comment",
+        "contentHub": {
+          "action": "queueComment",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "commentBody",
+          "commentPolicy"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_queue_comment"
+      },
+      {
+        "id": "content_hub_record_interaction",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_record_interaction",
+        "contentHub": {
+          "action": "recordInteraction",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "eventType",
+          "targetId",
+          "value",
+          "path",
+          "metadata"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_record_interaction"
       },
       {
         "id": "content_hub_restore_revision",

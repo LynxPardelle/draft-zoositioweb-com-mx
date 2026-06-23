@@ -389,7 +389,7 @@
         "disabledWhenInvalidScope": false,
         "iconPosition": "before"
       },
-      "eventInstructions": "proxyAction:content_hub_moderate_comment",
+      "eventInstructions": "setScopeValue:decision,approve;proxyAction:content_hub_moderate_comment",
       "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_moderate_comment.state,loading\",true,false"
     },
     {
@@ -404,7 +404,7 @@
         "disabledWhenInvalidScope": false,
         "iconPosition": "before"
       },
-      "eventInstructions": "proxyAction:content_hub_moderate_comment",
+      "eventInstructions": "setScopeValue:decision,reject;proxyAction:content_hub_moderate_comment",
       "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_moderate_comment.state,loading\",true,false"
     },
     {
@@ -419,7 +419,7 @@
         "disabledWhenInvalidScope": false,
         "iconPosition": "before"
       },
-      "eventInstructions": "proxyAction:content_hub_moderate_comment",
+      "eventInstructions": "setScopeValue:decision,archive;proxyAction:content_hub_moderate_comment",
       "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_moderate_comment.state,loading\",true,false"
     },
     {

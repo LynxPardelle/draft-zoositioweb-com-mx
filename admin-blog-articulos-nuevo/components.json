@@ -584,18 +584,18 @@
         "fieldId": "articleCanonicalPolicy",
         "label": "Canonical",
         "controlType": "select",
-        "value": "creator-domain",
+        "value": "self",
         "required": true,
         "readOnly": false,
         "disabled": false,
         "options": [
           {
-            "value": "creator-domain",
-            "label": "Dominio creador"
+            "value": "self",
+            "label": "Adaptable al sitio actual"
           },
           {
-            "value": "host-adaptive",
-            "label": "Adaptable por host"
+            "value": "none",
+            "label": "Sin canonical"
           }
         ],
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
@@ -627,13 +627,13 @@
         "fieldId": "articleCommentPolicy",
         "label": "Comentarios",
         "controlType": "select",
-        "value": "authenticated-moderated",
+        "value": "authenticated",
         "required": true,
         "readOnly": false,
         "disabled": false,
         "options": [
           {
-            "value": "authenticated-moderated",
+            "value": "authenticated",
             "label": "Autenticados + moderación"
           },
           {
@@ -641,7 +641,7 @@
             "label": "Desactivados"
           },
           {
-            "value": "public-moderated",
+            "value": "moderated",
             "label": "Públicos + moderación"
           }
         ],
@@ -674,21 +674,21 @@
         "fieldId": "articleContentSafetyPolicy",
         "label": "Política de contenido",
         "controlType": "select",
-        "value": "trusted-authors",
+        "value": "general",
         "required": true,
         "readOnly": false,
         "disabled": false,
         "options": [
           {
-            "value": "trusted-authors",
+            "value": "general",
             "label": "Autores confiables"
           },
           {
-            "value": "strict",
+            "value": "restricted",
             "label": "Estricto"
           },
           {
-            "value": "advanced-freeform",
+            "value": "sensitive",
             "label": "Avanzado libre"
           }
         ],
@@ -721,17 +721,17 @@
         "fieldId": "articleVisibility",
         "label": "Visibilidad inicial",
         "controlType": "select",
-        "value": "private-draft",
+        "value": "private",
         "required": false,
         "readOnly": false,
         "disabled": false,
         "options": [
           {
-            "value": "private-draft",
+            "value": "private",
             "label": "Borrador privado"
           },
           {
-            "value": "review-ready",
+            "value": "unlisted",
             "label": "Listo para revisión"
           }
         ],

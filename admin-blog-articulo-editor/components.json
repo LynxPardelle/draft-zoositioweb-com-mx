@@ -60,8 +60,8 @@
           "editorUploadLoading",
           "editorUploadError",
           "editorUploadSuccess",
-          "editorUploadArticleId",
-          "editorUploadRevisionId",
+          "editorUploadAssetId",
+          "editorUploadFileName",
           "editorAssetsTable",
           "componentInspector",
           "componentInspectorCopy"
@@ -247,7 +247,7 @@
       "type": "interaction-scope",
       "config": {
         "scopeId": "articleEditor",
-        "valueInstructions": "collectFields:articleId,articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSlug,articleContent,advancedMode,allowedComponentPreset,metadata,editorNotes,articleAssets",
+        "valueInstructions": "collectFields:articleId,articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSlug,articleContent,advancedMode,allowedComponentPreset,metadata,editorNotes,articleAssets,upload",
         "components": [
           "editorWorkspace"
         ]
@@ -713,7 +713,7 @@
       "id": "editorDropzone",
       "type": "generic-file-dropzone",
       "config": {
-        "fieldId": "articleAssets",
+        "fieldId": "upload",
         "label": "Archivos públicos",
         "dropLabel": "Arrastra imágenes, video, PDF o Markdown",
         "browseLabel": "Elegir archivos",
@@ -721,7 +721,7 @@
         "acceptLabel": "Imagen, video, PDF, Markdown o HTML",
         "maxFileSizeBytes": 10485760,
         "maxSizeLabel": "Máximo 10 MB por archivo",
-        "multiple": true,
+        "multiple": false,
         "helperText": "La selección local no sube binarios por sí sola; uploadAsset autoriza y procesa server-side.",
         "dropzoneClasses": "ank-width-100per ank-minHeight-170px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-bgColor ank-color-textColor ank-p-18px",
         "browseButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
@@ -753,8 +753,8 @@
           "editorUploadLoading",
           "editorUploadError",
           "editorUploadSuccess",
-          "editorUploadArticleId",
-          "editorUploadRevisionId"
+          "editorUploadAssetId",
+          "editorUploadFileName"
         ]
       }
     },
@@ -790,26 +790,26 @@
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success"
     },
     {
-      "id": "editorUploadArticleId",
+      "id": "editorUploadAssetId",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "articleId pendiente",
+        "text": "assetId pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.articleId,La respuesta no incluyó articleId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.assetId,La respuesta no incluyó assetId."
     },
     {
-      "id": "editorUploadRevisionId",
+      "id": "editorUploadFileName",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "revisionId pendiente",
+        "text": "fileName pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.revisionId,La respuesta no incluyó revisionId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.fileName,La respuesta no incluyó fileName."
     },
     {
       "id": "editorAssetsTable",

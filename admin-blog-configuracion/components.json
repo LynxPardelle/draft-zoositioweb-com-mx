@@ -262,13 +262,13 @@
         "fieldId": "defaultCommentPolicy",
         "label": "defaultCommentPolicy",
         "controlType": "select",
-        "value": "authenticated-moderated",
+        "value": "authenticated",
         "required": false,
         "readOnly": false,
         "disabled": false,
         "options": [
           {
-            "value": "authenticated-moderated",
+            "value": "authenticated",
             "label": "Autenticados + moderación"
           },
           {
@@ -300,17 +300,17 @@
         "fieldId": "contentSafetyPolicy",
         "label": "contentSafetyPolicy",
         "controlType": "select",
-        "value": "trusted-authors",
+        "value": "general",
         "required": false,
         "readOnly": false,
         "disabled": false,
         "options": [
           {
-            "value": "strict",
+            "value": "restricted",
             "label": "Estricto"
           },
           {
-            "value": "trusted-authors",
+            "value": "general",
             "label": "Autores confiables"
           }
         ],
