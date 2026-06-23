@@ -7,23 +7,49 @@
       "id": "admin-blog-analiticasRoot",
       "type": "container",
       "config": {
-        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-18px",
+        "styles": {
+          "padding": "clamp(16px, 2vw, 32px)"
+        },
         "components": [
           "admin-blog-analiticasShell"
-        ],
-        "tag": "main"
+        ]
       }
     },
     {
       "id": "admin-blog-analiticasShell",
       "type": "container",
       "config": {
+        "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-analiticasHeader",
+          "admin-blog-analiticasNav",
+          "analyticsPanel",
+          "analyticsNotice",
+          "analyticsKpiGrid",
+          "analyticsViews",
+          "analyticsReadProgress",
+          "analyticsCtaClicks",
+          "analyticsReactions",
+          "analyticsComments",
+          "analyticsShares",
+          "analyticsAssetDownloads",
+          "analyticsTable"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-analiticasHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
         "components": [
           "admin-blog-analiticasEyebrow",
           "admin-blog-analiticasTitle",
-          "admin-blog-analiticasNav",
-          "analyticsCard"
+          "admin-blog-analiticasIntro"
         ]
       }
     },
@@ -33,7 +59,7 @@
       "config": {
         "tag": "span",
         "text": "ZOOSITIOWEB / BLOG ADMIN",
-        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-fontSize-13px"
       }
     },
     {
@@ -46,10 +72,26 @@
       }
     },
     {
+      "id": "admin-blog-analiticasIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Superficie de lectura para views, readProgress, ctaClicks, reactions, comments, shares y assetDownloads por artículo.",
+        "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
       "id": "admin-blog-analiticasNav",
       "type": "container",
       "config": {
+        "tag": "nav",
         "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "10px",
+          "alignItems": "center"
+        },
         "components": [
           "admin-blog-analiticasNavArticles",
           "admin-blog-analiticasNavNew",
@@ -60,13 +102,7 @@
           "admin-blog-analiticasNavTags",
           "admin-blog-analiticasNavHub",
           "admin-blog-analiticasNavConfig"
-        ],
-        "styles": {
-          "display": "flex",
-          "flexWrap": "wrap",
-          "gap": "10px",
-          "alignItems": "center"
-        }
+        ]
       }
     },
     {
@@ -75,7 +111,7 @@
       "config": {
         "text": "Artículos",
         "href": "/admin/blog/articulos",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -87,7 +123,7 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -99,7 +135,7 @@
       "config": {
         "text": "Medios",
         "href": "/admin/blog/medios",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -111,7 +147,7 @@
       "config": {
         "text": "Moderación",
         "href": "/admin/blog/moderacion",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -123,7 +159,7 @@
       "config": {
         "text": "Analíticas",
         "href": "/admin/blog/analiticas",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         },
@@ -136,7 +172,7 @@
       "config": {
         "text": "Categorías",
         "href": "/admin/blog/categorias",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -148,7 +184,7 @@
       "config": {
         "text": "Tags",
         "href": "/admin/blog/tags",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -160,7 +196,7 @@
       "config": {
         "text": "Hub",
         "href": "/admin/blog/hub",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -172,90 +208,115 @@
       "config": {
         "text": "Configuración",
         "href": "/admin/blog/configuracion",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
       }
     },
     {
-      "id": "analyticsCard",
+      "id": "analyticsPanel",
       "type": "container",
       "config": {
+        "tag": "section",
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
-          "viewsMetric",
-          "readProgressMetric",
-          "ctaClicksMetric",
-          "reactionsMetric",
-          "commentsMetric",
-          "sharesMetric",
-          "assetDownloadsMetric",
+          "analyticsNotice",
+          "analyticsKpiGrid",
           "analyticsTable"
         ]
       }
     },
     {
-      "id": "viewsMetric",
+      "id": "analyticsNotice",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "views: vistas por dominio, artículo e idioma.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+        "text": "Esta vista muestra métricas agregadas sin PII. Los eventos crudos no deben incluir comentarios, correos, nombres ni formularios.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
     {
-      "id": "readProgressMetric",
-      "type": "text",
+      "id": "analyticsKpiGrid",
+      "type": "container",
       "config": {
-        "tag": "p",
-        "text": "readProgress: profundidad de lectura.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-12px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 160px), 1fr))"
+        },
+        "components": [
+          "analyticsViews",
+          "analyticsReadProgress",
+          "analyticsCtaClicks",
+          "analyticsReactions",
+          "analyticsComments",
+          "analyticsShares",
+          "analyticsAssetDownloads"
+        ]
       }
     },
     {
-      "id": "ctaClicksMetric",
+      "id": "analyticsViews",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "ctaClicks: clicks de CTA públicos.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+        "text": "views",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
     {
-      "id": "reactionsMetric",
+      "id": "analyticsReadProgress",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "reactions: likes y reacciones públicas moderables.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+        "text": "readProgress",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
     {
-      "id": "commentsMetric",
+      "id": "analyticsCtaClicks",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "comments: comentarios autenticados y moderados.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+        "text": "ctaClicks",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
     {
-      "id": "sharesMetric",
+      "id": "analyticsReactions",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "shares: eventos de compartir.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+        "text": "reactions",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
     {
-      "id": "assetDownloadsMetric",
+      "id": "analyticsComments",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "assetDownloads: descargas de archivos públicos.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+        "text": "comments",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "analyticsShares",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "shares",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "analyticsAssetDownloads",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "assetDownloads",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
     {
@@ -263,28 +324,86 @@
       "type": "generic-table",
       "config": {
         "id": "analyticsTable",
-        "label": "Métricas del artículo",
-        "rowIdPath": "id",
+        "label": "Artículos con métricas",
         "rowsSource": {
           "source": "var",
-          "path": "remote.contentHub.analytics.items"
+          "path": "remote.contentHub.articles.items"
         },
         "rows": [],
+        "rowIdPath": "id",
+        "eventPayloadFields": [
+          "articleId",
+          "status",
+          "latestRevisionId",
+          "path"
+        ],
+        "emptyText": "No hay registros reales disponibles desde content-hub para este filtro.",
+        "loadingText": "Cargando datos de content-hub...",
+        "errorText": "No se pudieron cargar los datos protegidos. Revisa sesión, permisos o conectividad del BFF.",
         "columns": [
           {
-            "id": "metric",
-            "header": "Métrica",
-            "valuePath": "metric"
+            "id": "title",
+            "header": "Título",
+            "valuePath": "title"
           },
           {
-            "id": "value",
-            "header": "Valor",
-            "valuePath": "value"
+            "id": "status",
+            "header": "Estado",
+            "valuePath": "status"
+          },
+          {
+            "id": "language",
+            "header": "Idioma",
+            "valuePath": "language"
+          },
+          {
+            "id": "category",
+            "header": "Categoría",
+            "valuePath": "category"
+          },
+          {
+            "id": "tags",
+            "header": "Tags",
+            "valuePath": "tags"
+          },
+          {
+            "id": "schedule",
+            "header": "Programación",
+            "valuePath": "scheduledAt"
+          },
+          {
+            "id": "updatedAt",
+            "header": "Actualizado",
+            "valuePath": "updatedAt"
+          },
+          {
+            "id": "views",
+            "header": "views",
+            "valuePath": "views"
+          },
+          {
+            "id": "ctaClicks",
+            "header": "ctaClicks",
+            "valuePath": "ctaClicks"
           }
         ],
         "rowActions": [],
-        "classes": "ank-width-100per"
-      }
+        "pagination": {
+          "enabled": true,
+          "pageSize": 10,
+          "pageSizeOptions": [
+            10,
+            20,
+            50
+          ],
+          "showFirstLastButtons": true
+        },
+        "classes": "ank-width-100per",
+        "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
+        "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
+        "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.error,var,remoteStatus.contentHub.articles.error"
     }
   ]
 }

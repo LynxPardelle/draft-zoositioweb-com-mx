@@ -7,23 +7,60 @@
       "id": "admin-blog-mediosRoot",
       "type": "container",
       "config": {
-        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-18px",
+        "styles": {
+          "padding": "clamp(16px, 2vw, 32px)"
+        },
         "components": [
           "admin-blog-mediosShell"
-        ],
-        "tag": "main"
+        ]
       }
     },
     {
       "id": "admin-blog-mediosShell",
       "type": "container",
       "config": {
+        "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-mediosHeader",
+          "admin-blog-mediosNav",
+          "mediaScope",
+          "mediaWorkspace",
+          "mediaUploadPanel",
+          "mediaArticleId",
+          "mediaDropzone",
+          "mediaUploadButton",
+          "mediaStatus",
+          "mediaUploadLoading",
+          "mediaUploadError",
+          "mediaUploadSuccess",
+          "mediaUploadAssetId",
+          "mediaUploadFileName",
+          "mediaAssetsTable",
+          "mediaMetaPanel",
+          "mediaMetaTitle",
+          "mediaAltText",
+          "mediaCaption",
+          "mediaLicense",
+          "mediaFocalPoint",
+          "mediaUsageRefs",
+          "mediaPublicability",
+          "mediaArchiveNote"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-mediosHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
         "components": [
           "admin-blog-mediosEyebrow",
           "admin-blog-mediosTitle",
-          "admin-blog-mediosNav",
-          "mediaCard"
+          "admin-blog-mediosIntro"
         ]
       }
     },
@@ -33,7 +70,7 @@
       "config": {
         "tag": "span",
         "text": "ZOOSITIOWEB / BLOG ADMIN",
-        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-fontSize-13px"
       }
     },
     {
@@ -46,10 +83,26 @@
       }
     },
     {
+      "id": "admin-blog-mediosIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Selecciona archivos, captura metadata pública y registra assets; la autorización de upload y almacenamiento siguen siendo server-side.",
+        "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
       "id": "admin-blog-mediosNav",
       "type": "container",
       "config": {
+        "tag": "nav",
         "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "10px",
+          "alignItems": "center"
+        },
         "components": [
           "admin-blog-mediosNavArticles",
           "admin-blog-mediosNavNew",
@@ -60,13 +113,7 @@
           "admin-blog-mediosNavTags",
           "admin-blog-mediosNavHub",
           "admin-blog-mediosNavConfig"
-        ],
-        "styles": {
-          "display": "flex",
-          "flexWrap": "wrap",
-          "gap": "10px",
-          "alignItems": "center"
-        }
+        ]
       }
     },
     {
@@ -75,7 +122,7 @@
       "config": {
         "text": "Artículos",
         "href": "/admin/blog/articulos",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -87,7 +134,7 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -99,7 +146,7 @@
       "config": {
         "text": "Medios",
         "href": "/admin/blog/medios",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         },
@@ -112,7 +159,7 @@
       "config": {
         "text": "Moderación",
         "href": "/admin/blog/moderacion",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -124,7 +171,7 @@
       "config": {
         "text": "Analíticas",
         "href": "/admin/blog/analiticas",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -136,7 +183,7 @@
       "config": {
         "text": "Categorías",
         "href": "/admin/blog/categorias",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -148,7 +195,7 @@
       "config": {
         "text": "Tags",
         "href": "/admin/blog/tags",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -160,7 +207,7 @@
       "config": {
         "text": "Hub",
         "href": "/admin/blog/hub",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
@@ -172,114 +219,206 @@
       "config": {
         "text": "Configuración",
         "href": "/admin/blog/configuracion",
-        "classes": "ank-minHeight-44px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
           "minWidth": "max-content"
         }
       }
     },
     {
-      "id": "mediaCard",
-      "type": "container",
+      "id": "mediaScope",
+      "type": "interaction-scope",
       "config": {
-        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "scopeId": "mediaManager",
+        "valueInstructions": "collectFields:articleId,upload,metadata,usageRefs,publicability,altText,caption,license,focalPoint",
         "components": [
-          "mediaUpload",
-          "assetListText",
-          "metadataInput",
-          "usageRefsText",
-          "publicabilityText",
-          "archiveButtonMedia",
-          "mediaTable"
+          "mediaWorkspace"
         ]
       }
     },
     {
-      "id": "mediaUpload",
+      "id": "mediaWorkspace",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-18px",
+        "styles": {
+          "gridTemplateColumns": "minmax(0, 1fr) minmax(min(100%, 360px), 1fr)"
+        },
+        "components": [
+          "mediaUploadPanel",
+          "mediaMetaPanel"
+        ]
+      }
+    },
+    {
+      "id": "mediaUploadPanel",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "mediaArticleId",
+          "mediaDropzone",
+          "mediaUploadButton",
+          "mediaStatus",
+          "mediaAssetsTable"
+        ]
+      }
+    },
+    {
+      "id": "mediaArticleId",
+      "type": "input",
+      "config": {
+        "fieldId": "articleId",
+        "label": "Article ID",
+        "controlType": "text",
+        "helperText": "Se toma del query string articleId agregado al abrir desde la tabla.",
+        "required": false,
+        "readOnly": true,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": []
+      },
+      "valueInstructions": "set:config.value,queryParamOr,articleId,"
+    },
+    {
+      "id": "mediaDropzone",
       "type": "generic-file-dropzone",
       "config": {
         "fieldId": "upload",
-        "accept": "image/*,video/*,application/pdf,text/markdown,text/html,application/zip",
-        "label": "Seleccionar archivos",
-        "multiple": true,
-        "dropzoneClasses": "ank-width-100per ank-minHeight-160px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-bgColor ank-color-textColor ank-p-18px",
-        "disabledDropzoneClasses": "ank-width-100per ank-minHeight-160px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-p-18px ank-opacity-0_65",
-        "browseButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "helperTextClasses": "ank-m-0 ank-fontSize-14px ank-color-textColor"
+        "label": "Biblioteca de medios",
+        "dropLabel": "Arrastra archivos para registrar metadata",
+        "browseLabel": "Elegir archivos",
+        "accept": "image/*,video/*,application/pdf",
+        "acceptLabel": "Imágenes, video o PDF",
+        "maxFileSizeBytes": 10485760,
+        "maxSizeLabel": "Máximo 10 MB por archivo",
+        "multiple": false,
+        "helperText": "Dropzone local: muestra selección y metadatos; uploadAsset ejecuta el flujo protegido.",
+        "dropzoneClasses": "ank-width-100per ank-minHeight-190px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-bgColor ank-color-textColor ank-p-18px",
+        "browseButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "helperTextClasses": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
     {
-      "id": "assetListText",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "assetList: activos públicos del artículo o del hub. La selección local usa generic-file-dropzone; la carga binaria completa requiere serialización base64 o flujo presigned antes de conectarse a S3.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
-      }
-    },
-    {
-      "id": "metadataInput",
-      "type": "input",
-      "config": {
-        "fieldId": "metadata",
-        "label": "metadata",
-        "value": "alt,caption,license,credit",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
-      }
-    },
-    {
-      "id": "usageRefsText",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "usageRefs: páginas, artículos y componentes que usan el archivo.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
-      }
-    },
-    {
-      "id": "publicabilityText",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "publicability: sólo publicar activos sanitizados y referenciados. archive: retirar un activo debe conservar auditoría y referencias antes de ocultarlo.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
-      }
-    },
-    {
-      "id": "archiveButtonMedia",
+      "id": "mediaUploadButton",
       "type": "button",
       "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
-        "label": "Registrar medio"
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Registrar asset",
+        "loadingLabel": "Registrando...",
+        "disabledWhenInvalidScope": false,
+        "iconPosition": "before"
       },
-      "eventInstructions": "proxyAction:content_hub_upload_asset"
+      "eventInstructions": "proxyAction:content_hub_upload_asset",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,loading\",true,false"
     },
     {
-      "id": "mediaTable",
+      "id": "mediaStatus",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "mediaUploadLoading",
+          "mediaUploadError",
+          "mediaUploadSuccess",
+          "mediaUploadAssetId",
+          "mediaUploadFileName"
+        ]
+      }
+    },
+    {
+      "id": "mediaUploadLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cargando...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,loading"
+    },
+    {
+      "id": "mediaUploadError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No se pudo completar la operación.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.error,No se pudo completar la operación."
+    },
+    {
+      "id": "mediaUploadSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Asset registrado.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success"
+    },
+    {
+      "id": "mediaUploadAssetId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "assetId pendiente",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.assetId,La respuesta no incluyó assetId."
+    },
+    {
+      "id": "mediaUploadFileName",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "fileName pendiente",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.fileName,La respuesta no incluyó fileName."
+    },
+    {
+      "id": "mediaAssetsTable",
       "type": "generic-table",
       "config": {
-        "id": "mediaTable",
+        "id": "mediaAssetsTable",
         "label": "assetList",
-        "rowIdPath": "assetId",
-        "eventPayloadFields": [
-          "assetId",
-          "articleId",
-          "name",
-          "publicUrl"
-        ],
         "rowsSource": {
           "source": "var",
           "path": "remote.contentHub.assets.items"
         },
         "rows": [],
-        "emptyText": "Aún no hay medios disponibles desde content-hub.",
+        "rowIdPath": "id",
+        "eventPayloadFields": [
+          "articleId",
+          "status",
+          "latestRevisionId",
+          "path"
+        ],
+        "emptyText": "No hay registros reales disponibles desde content-hub para este filtro.",
+        "loadingText": "Cargando datos de content-hub...",
+        "errorText": "No se pudieron cargar los datos protegidos. Revisa sesión, permisos o conectividad del BFF.",
         "columns": [
           {
             "id": "name",
             "header": "Archivo",
             "valuePath": "name"
+          },
+          {
+            "id": "kind",
+            "header": "Tipo",
+            "valuePath": "kind"
           },
           {
             "id": "metadata",
@@ -298,7 +437,189 @@
           }
         ],
         "rowActions": [],
-        "classes": "ank-width-100per"
+        "pagination": {
+          "enabled": true,
+          "pageSize": 10,
+          "pageSizeOptions": [
+            10,
+            20,
+            50
+          ],
+          "showFirstLastButtons": true
+        },
+        "classes": "ank-width-100per",
+        "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
+        "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
+        "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.assets.state,loading\",true,false; set:config.error,var,remoteStatus.contentHub.assets.error"
+    },
+    {
+      "id": "mediaMetaPanel",
+      "type": "container",
+      "config": {
+        "tag": "aside",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "mediaMetaTitle",
+          "mediaAltText",
+          "mediaCaption",
+          "mediaLicense",
+          "mediaFocalPoint",
+          "mediaUsageRefs",
+          "mediaPublicability",
+          "mediaArchiveNote"
+        ]
+      }
+    },
+    {
+      "id": "mediaMetaTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Metadata del asset",
+        "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "mediaAltText",
+      "type": "input",
+      "config": {
+        "fieldId": "altText",
+        "label": "Alt text",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": []
+      }
+    },
+    {
+      "id": "mediaCaption",
+      "type": "input",
+      "config": {
+        "fieldId": "caption",
+        "label": "Caption",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": []
+      }
+    },
+    {
+      "id": "mediaLicense",
+      "type": "input",
+      "config": {
+        "fieldId": "license",
+        "label": "Licencia",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": []
+      }
+    },
+    {
+      "id": "mediaFocalPoint",
+      "type": "input",
+      "config": {
+        "fieldId": "focalPoint",
+        "label": "Focal point",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": []
+      }
+    },
+    {
+      "id": "mediaUsageRefs",
+      "type": "input",
+      "config": {
+        "fieldId": "usageRefs",
+        "label": "usageRefs",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": []
+      }
+    },
+    {
+      "id": "mediaPublicability",
+      "type": "input",
+      "config": {
+        "fieldId": "publicability",
+        "label": "publicability",
+        "controlType": "select",
+        "value": "public",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
+          {
+            "value": "public",
+            "label": "Público"
+          },
+          {
+            "value": "review",
+            "label": "Revisar"
+          },
+          {
+            "value": "archive",
+            "label": "archive"
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "dropdownTriggerClasses": "ank-width-100per",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-width-100per ank-display-flex ank-alignItems-center"
+        },
+        "dropdownIndicatorText": "v",
+        "dropdownIndicatorClasses": "ank-fontSize-18px ank-fontWeight-900",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": []
+      }
+    },
+    {
+      "id": "mediaArchiveNote",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "archive sólo marca intención en UI; eliminación y lifecycle son decisiones server-side.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     }
   ]
