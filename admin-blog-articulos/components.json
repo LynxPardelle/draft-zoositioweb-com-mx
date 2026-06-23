@@ -635,7 +635,7 @@
         "tag": "div",
         "classes": "ank-width-100per ank-display-grid ank-gap-12px ank-alignItems-end",
         "styles": {
-          "gridTemplateColumns": "minmax(0, 1fr) minmax(140px, max-content)"
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 260px), 1fr))"
         },
         "components": [
           "adminBlogArticulosSearch",
