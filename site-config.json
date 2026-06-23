@@ -1017,6 +1017,9 @@
             "id": {
               "path": "articleId"
             },
+            "articleId": {
+              "path": "articleId"
+            },
             "title": {
               "path": "title",
               "fallback": "Sin título"
@@ -1062,6 +1065,12 @@
             "updatedAt": {
               "path": "updatedAt",
               "fallback": "Sin fecha"
+            },
+            "latestRevisionId": {
+              "path": "latestRevisionId"
+            },
+            "path": {
+              "path": "path"
             },
             "assetCount": {
               "path": "assetCount",
