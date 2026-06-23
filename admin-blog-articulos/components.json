@@ -337,12 +337,12 @@
         "disabled": false,
         "options": [
           {
-            "value": "10",
-            "label": "10"
-          },
-          {
             "value": "20",
             "label": "20"
+          },
+          {
+            "value": "10",
+            "label": "10"
           },
           {
             "value": "50",
@@ -651,7 +651,11 @@
         "label": "Buscar",
         "icon": "search",
         "iconPosition": "before",
-        "classes": "ank-minHeight-52px ank-px-20px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none ank-boxShadow-0_10px_24px_rgbaSD0C0C0C__0_14ED",
+        "classes": "ank-height-52px ank-minHeight-52px ank-px-20px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none ank-boxShadow-0_10px_24px_rgbaSD0C0C0C__0_14ED",
+        "styles": {
+          "height": "52px",
+          "alignSelf": "center"
+        },
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
       }
     },
