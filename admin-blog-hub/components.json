@@ -26,13 +26,7 @@
         "components": [
           "admin-blog-hubHeader",
           "admin-blog-hubNav",
-          "hubPanel",
-          "hubNotice",
-          "hubGrid",
-          "hubConnectedDrafts",
-          "hubVisibility",
-          "hubAuthorizedHubs",
-          "hubTaxonomyTable"
+          "hubPanel"
         ]
       }
     },

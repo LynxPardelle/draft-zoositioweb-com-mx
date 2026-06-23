@@ -26,31 +26,7 @@
         "components": [
           "admin-blog-programadosHeader",
           "admin-blog-programadosNav",
-          "scheduledScope",
-          "scheduledWorkspace",
-          "scheduledArticleId",
-          "scheduledGrid",
-          "scheduledRevisionId",
-          "scheduledPublishAt",
-          "scheduledUnpublishAt",
-          "scheduledTimezone",
-          "scheduledAction",
-          "scheduledMessage",
-          "scheduledActions",
-          "scheduledScheduleButton",
-          "scheduledPublishButton",
-          "scheduledStatus",
-          "scheduledScheduleLoading",
-          "scheduledScheduleError",
-          "scheduledScheduleSuccess",
-          "scheduledScheduleArticleId",
-          "scheduledScheduleRevisionId",
-          "scheduledPublishLoading",
-          "scheduledPublishError",
-          "scheduledPublishSuccess",
-          "scheduledPublishArticleId",
-          "scheduledPublishRevisionId",
-          "scheduledTable"
+          "scheduledScope"
         ]
       }
     },

@@ -26,31 +26,7 @@
         "components": [
           "admin-blog-articulo-seoHeader",
           "admin-blog-articulo-seoNav",
-          "seoScope",
-          "seoWorkspace",
-          "seoArticleId",
-          "seoGrid",
-          "seoRevisionId",
-          "seoCanonical",
-          "seoHreflang",
-          "seoSocialPreview",
-          "seoRobots",
-          "seoSitemap",
-          "seoStructuredData",
-          "seoValidationActions",
-          "seoValidateButton",
-          "seoPublishButton",
-          "seoStatus",
-          "seoValidateLoading",
-          "seoValidateError",
-          "seoValidateSuccess",
-          "seoValidateArticleId",
-          "seoValidateRevisionId",
-          "seoPublishLoading",
-          "seoPublishError",
-          "seoPublishSuccess",
-          "seoPublishArticleId",
-          "seoPublishRevisionId"
+          "seoScope"
         ]
       }
     },

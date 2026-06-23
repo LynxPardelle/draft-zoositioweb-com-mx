@@ -26,18 +26,7 @@
         "components": [
           "admin-blog-categoriasHeader",
           "admin-blog-categoriasNav",
-          "categoriesScope",
-          "categoriesWorkspace",
-          "categoriesGrid",
-          "categoriesTaxonomyId",
-          "categoriesKind",
-          "categoriesSlug",
-          "categoriesTranslation",
-          "categoriesSeoDescription",
-          "categoriesVisible",
-          "categoriesRedirectWarning",
-          "categoriesSaveNotice",
-          "categoriesTable"
+          "categoriesScope"
         ]
       }
     },
