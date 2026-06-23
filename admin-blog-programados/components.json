@@ -615,7 +615,10 @@
           {
             "id": "tags",
             "header": "Tags",
-            "valuePath": "tags"
+            "valuePath": "tags",
+            "format": "list",
+            "itemPath": "label",
+            "separator": ", "
           },
           {
             "id": "schedule",
