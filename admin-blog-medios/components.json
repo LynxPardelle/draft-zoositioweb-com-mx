@@ -166,8 +166,7 @@
       "config": {
         "fieldId": "upload",
         "accept": "image/*,video/*,application/pdf,text/markdown,text/html,application/zip",
-        "label": "upload",
-        "disabled": true,
+        "label": "Seleccionar archivos",
         "multiple": true,
         "dropzoneClasses": "ank-width-100per ank-minHeight-160px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-bgColor ank-color-textColor ank-p-18px",
         "disabledDropzoneClasses": "ank-width-100per ank-minHeight-160px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-p-18px ank-opacity-0_65",
@@ -180,7 +179,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "assetList: activos públicos del artículo o del hub.",
+        "text": "assetList: activos públicos del artículo o del hub. La selección local usa generic-file-dropzone; la carga binaria completa requiere serialización base64 o flujo presigned antes de conectarse a S3.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
       }
     },
@@ -209,7 +208,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "publicability: sólo publicar activos sanitizados y referenciados.",
+        "text": "publicability: sólo publicar activos sanitizados y referenciados. archive: retirar un activo debe conservar auditoría y referencias antes de ocultarlo.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
       }
     },
@@ -218,11 +217,10 @@
       "type": "button",
       "config": {
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
-        "disabled": true,
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
-        "label": "archive"
+        "label": "Registrar medio"
       },
-      "eventInstructions": "proxyAction:content_hub_update_package"
+      "eventInstructions": "proxyAction:content_hub_upload_asset"
     },
     {
       "id": "mediaTable",
@@ -230,12 +228,19 @@
       "config": {
         "id": "mediaTable",
         "label": "assetList",
-        "rowIdPath": "id",
+        "rowIdPath": "assetId",
+        "eventPayloadFields": [
+          "assetId",
+          "articleId",
+          "name",
+          "publicUrl"
+        ],
         "rowsSource": {
           "source": "var",
           "path": "remote.contentHub.assets.items"
         },
         "rows": [],
+        "emptyText": "Aún no hay medios disponibles desde content-hub.",
         "columns": [
           {
             "id": "name",

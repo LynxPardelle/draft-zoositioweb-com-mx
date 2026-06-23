@@ -172,7 +172,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Las lecturas del hub usan content-hub same-origin. Crear, publicar, programar y subir medios quedan bloqueados visualmente hasta validar el backend de mutaciones.",
+        "text": "Las lecturas y acciones protegidas del hub usan content-hub same-origin con sesión, CSRF, tenant y roles server-side. La publicación pública del bundle se mantiene separada del runtime SEO hasta conectar el puente de índice público.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-800 ank-color-titleColor"
       }
     },
@@ -181,7 +181,6 @@
       "type": "button",
       "config": {
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "disabled": true,
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "label": "Validar hub"
       },
@@ -192,7 +191,6 @@
       "type": "button",
       "config": {
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "disabled": true,
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "label": "Publicar cambios"
       },
@@ -204,67 +202,19 @@
       "config": {
         "id": "admin-blogArticlesTable",
         "label": "Últimos artículos",
-        "rowIdPath": "id",
+        "rowIdPath": "articleId",
+        "eventPayloadFields": [
+          "articleId",
+          "status",
+          "latestRevisionId",
+          "path"
+        ],
         "rowsSource": {
           "source": "var",
-          "path": "remote.contentHub.articles.items",
-          "fallback": [
-            {
-              "id": "art_20260620_blog_builder",
-              "title": "Cómo crear blogs visuales con Zoolandingpage",
-              "status": "published",
-              "statusLabel": "Publicado",
-              "language": "es",
-              "category": "web",
-              "tags": "seo, builder, angora",
-              "scheduledAt": "Sin programar",
-              "publishedAt": "2026-06-21T15:00:00.000Z",
-              "updatedAt": "2026-06-21T15:00:00.000Z",
-              "assetCount": 1,
-              "primaryAsset": "seo-card"
-            },
-            {
-              "id": "art_zoosite_programado_demo",
-              "title": "Checklist SEO antes de publicar",
-              "status": "scheduled",
-              "statusLabel": "Programado",
-              "language": "es",
-              "category": "seo",
-              "tags": "seo, checklist",
-              "scheduledAt": "2026-07-01T15:00:00.000Z",
-              "publishedAt": "Sin publicar",
-              "updatedAt": "2026-06-21T10:00:00.000Z",
-              "assetCount": 0,
-              "primaryAsset": "Sin activo principal"
-            },
-            {
-              "id": "art_zoosite_borrador_demo",
-              "title": "Plantilla de caso de éxito",
-              "status": "draft",
-              "statusLabel": "Borrador",
-              "language": "es",
-              "category": "clientes",
-              "tags": "caso, pyme",
-              "scheduledAt": "Sin programar",
-              "publishedAt": "Sin publicar",
-              "updatedAt": "2026-06-21T09:30:00.000Z",
-              "assetCount": 0,
-              "primaryAsset": "Sin activo principal"
-            }
-          ]
+          "path": "remote.contentHub.articles.items"
         },
-        "rows": [
-          {
-            "id": "art_20260620_blog_builder",
-            "title": "Blog builder visual con SEO desde el inicio",
-            "status": "Programado",
-            "language": "es-MX",
-            "category": "web",
-            "tags": "seo, builder, angora",
-            "schedule": "2026-07-01 09:00 America/Mexico_City",
-            "updatedAt": "2026-06-20"
-          }
-        ],
+        "rows": [],
+        "emptyText": "Aún no hay artículos disponibles desde content-hub.",
         "columns": [
           {
             "id": "title",
@@ -322,36 +272,31 @@
             "id": "edit",
             "label": "Editar",
             "icon": "edit",
-            "disabled": true,
-            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/editor"
+            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/editor"
           },
           {
             "id": "preview",
             "label": "Preview",
             "icon": "eye",
-            "disabled": true,
-            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/preview"
+            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/preview"
           },
           {
             "id": "seo",
             "label": "SEO",
             "icon": "search",
-            "disabled": true,
-            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/seo"
+            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/seo"
           },
           {
             "id": "versions",
             "label": "Versiones",
             "icon": "history",
-            "disabled": true,
-            "eventInstructions": "navigateToUrl:/admin/blog/articulos/art_20260620_blog_builder/versiones"
+            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/versiones"
           },
           {
             "id": "schedule",
             "label": "Programar",
             "icon": "calendar",
-            "disabled": true,
-            "eventInstructions": "navigateToUrl:/admin/blog/programados"
+            "eventInstructions": "navigateWithEventData:/admin/blog/programados?articleId={articleId}"
           }
         ],
         "classes": "ank-width-100per"

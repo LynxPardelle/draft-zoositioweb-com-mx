@@ -192,7 +192,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "El formulario prepara el paquete inicial. La creación queda deshabilitada hasta validar el endpoint server-side con sesión, CSRF, tenant y ambiente.",
+        "text": "El formulario crea el paquete inicial mediante content-hub same-origin. La edición visual, assets, revisión SEO y publicación se hacen en los pasos posteriores del panel.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-800 ank-color-titleColor"
       }
     },
@@ -322,7 +322,6 @@
       "type": "button",
       "config": {
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "disabled": true,
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "label": "Crear paquete"
       },
