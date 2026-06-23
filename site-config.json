@@ -715,7 +715,7 @@
         ],
         "canonicalMode": "host-adaptive",
         "runtimeSourceId": "contentHubArticles",
-        "publicApiBasePath": "/content-hub",
+        "publicApiBasePath": "/features/content-hub",
         "analyticsContext": {
           "contentGroup": "blog",
           "eventPrefix": "blog",
