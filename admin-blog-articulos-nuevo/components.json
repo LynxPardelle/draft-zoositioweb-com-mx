@@ -750,8 +750,6 @@
         "classes": "ank-minHeight-52px ank-px-22px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-gap-8px",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "label": "Crear paquete",
-        "icon": "add_circle",
-        "iconClasses": "ank-fontSize-18px ank-fontWeight-900",
         "disabledWhenInvalidScope": true
       },
       "eventInstructions": "proxyAction:content_hub_create_article"
