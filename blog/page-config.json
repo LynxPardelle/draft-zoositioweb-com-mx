@@ -3,7 +3,10 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "blog",
   "rootIds": [
-    "blogRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "blogRoot",
+    "siteFooter"
   ],
   "seo": {
     "title": "Blog | zoositioweb",
@@ -12,5 +15,8 @@
     "robots": {
       "default": "index,follow,max-image-preview:large"
     }
-  }
+  },
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ]
 }

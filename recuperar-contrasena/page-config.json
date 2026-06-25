@@ -3,7 +3,10 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "recuperar-contrasena",
   "rootIds": [
-    "recuperarContrasenaRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "recuperarContrasenaRoot",
+    "siteFooter"
   ],
   "seo": {
     "title": "Recuperar contraseña | zoositioweb",
@@ -12,5 +15,8 @@
     "robots": {
       "default": "noindex,nofollow"
     }
-  }
+  },
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ]
 }

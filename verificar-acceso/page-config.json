@@ -3,7 +3,10 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "verificar-acceso",
   "rootIds": [
-    "verificarAccesoRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "verificarAccesoRoot",
+    "siteFooter"
   ],
   "seo": {
     "title": "Verificar acceso | zoositioweb",
@@ -12,5 +15,8 @@
     "robots": {
       "default": "noindex,nofollow"
     }
-  }
+  },
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ]
 }

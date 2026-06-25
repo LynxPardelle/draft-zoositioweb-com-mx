@@ -34,8 +34,7 @@
         "tag": "div",
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-alignItems-center",
         "components": [
-          "headerInner",
-          "headerMobileMenuMount"
+          "headerInner"
         ]
       }
     },
@@ -48,7 +47,7 @@
         "components": [
           "brandLink",
           "headerDesktopCluster",
-          "headerMobileActions"
+          "headerUtilityActions"
         ]
       }
     },
@@ -68,12 +67,10 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-d-none ank-d-md-flex ank-alignItems-center ank-gap-14px ank-gap-lg-18px ank-marginInlineStart-auto",
+        "classes": "ank-d-none ank-d-md-flex ank-alignItems-center ank-gap-12px ank-marginInlineStart-auto",
         "components": [
           "headerNav",
-          "headerCtaLink",
-          "toggleThemeDesktop",
-          "toggleLanguageDesktop"
+          "headerCtaLink"
         ]
       }
     },
@@ -108,11 +105,8 @@
         "classes": "ank-d-none ank-d-md-flex ank-flexWrap-wrap ank-gap-12px ank-gap-lg-16px ank-alignItems-center",
         "components": [
           "headerNavHome",
-          "headerNavServices",
-          "headerNavPlans",
-          "headerNavPlatform",
-          "headerNavAbout",
-          "headerNavFaq",
+          "headerNavBlog",
+          "headerNavAccount",
           "headerNavContact"
         ]
       }
@@ -126,7 +120,7 @@
         "href": "/contacto",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor"
       }
     },
     {
@@ -198,7 +192,7 @@
         "href": "/",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-700 ank-fontSize-0_94rem"
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor"
       }
     },
     {
@@ -617,6 +611,7 @@
           "footerPlatform",
           "footerAbout",
           "footerFaq",
+          "footerBlog",
           "footerLogin",
           "footerRegister"
         ],
@@ -738,7 +733,8 @@
           "minHeight": "44px"
         }
       },
-      "eventInstructions": "trackEvent:auth_login_link_click,auth,zoosite-login,location,footer"
+      "eventInstructions": "trackEvent:auth_login_link_click,auth,zoosite-login,location,footer",
+      "condition": "not:varEq,remoteStatus.authAccount.state,success"
     },
     {
       "id": "footerRegister",
@@ -753,7 +749,8 @@
           "minHeight": "44px"
         }
       },
-      "eventInstructions": "trackEvent:auth_register_link_click,auth,zoosite-register,location,footer"
+      "eventInstructions": "trackEvent:auth_register_link_click,auth,zoosite-register,location,footer",
+      "condition": "not:varEq,remoteStatus.authAccount.state,success"
     },
     {
       "id": "footerSectors",
@@ -955,6 +952,7 @@
           "footerMobilePlatform",
           "footerMobileAbout",
           "footerMobileFaq",
+          "footerMobileBlog",
           "footerMobileLogin",
           "footerMobileRegister"
         ]
@@ -1059,7 +1057,8 @@
         "text": "",
         "ariaLabel": "",
         "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
-      }
+      },
+      "condition": "not:varEq,remoteStatus.authAccount.state,success"
     },
     {
       "id": "footerMobileRegister",
@@ -1071,7 +1070,8 @@
         "text": "",
         "ariaLabel": "",
         "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-paddingInline-14px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__secondaryBgColor"
-      }
+      },
+      "condition": "not:varEq,remoteStatus.authAccount.state,success"
     },
     {
       "id": "footerMobileClinics",
@@ -1200,6 +1200,500 @@
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/terminos,href,/terminos,location,footer"
+    },
+    {
+      "id": "headerNavBlog",
+      "type": "link",
+      "eventInstructions": "trackEvent:nav_click,navigation,/blog,href,/blog,location,header",
+      "valueInstructions": "set:config.text,i18n,nav.blog;set:config.ariaLabel,i18n,nav.blog",
+      "config": {
+        "href": "/blog",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "headerNavAccount",
+      "type": "link",
+      "condition": "all:varEq,remoteStatus.authAccount.state,success",
+      "eventInstructions": "trackEvent:nav_click,navigation,/mi-cuenta,href,/mi-cuenta,location,header",
+      "valueInstructions": "set:config.text,i18n,nav.account;set:config.ariaLabel,i18n,nav.account",
+      "config": {
+        "href": "/mi-cuenta",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "headerUtilityActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px",
+        "components": [
+          "siteNavMenuButton",
+          "toggleThemeDesktop",
+          "toggleLanguageDesktop"
+        ]
+      }
+    },
+    {
+      "id": "siteNavMenuButton",
+      "type": "button",
+      "eventInstructions": "openModal:site-navigation,header:navigation,open_navigation_menu,header",
+      "valueInstructions": "set:config.label,i18n,ui.controls.menuToggle;set:config.ariaLabel,i18n,ui.accessibility.openMenu",
+      "config": {
+        "type": "button",
+        "label": "",
+        "ariaLabel": "",
+        "icon": "menu",
+        "iconPosition": "before",
+        "iconClasses": "ank-width-18px ank-height-18px ank-fontSize-18px",
+        "classes": "ank-display-inlineFlex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-minHeight-42px ank-px-14px ank-py-9px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED"
+      }
+    },
+    {
+      "id": "siteNavMenuModalRoot",
+      "type": "container",
+      "condition": "all:modalRefId,site-navigation",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "siteNavMenuHeader",
+          "siteNavMenuPrimarySection",
+          "siteNavMenuDividerAccount",
+          "siteNavMenuAccountSection",
+          "siteNavMenuDividerAdmin",
+          "siteNavMenuAdminSection",
+          "siteNavMenuDividerLegal",
+          "siteNavMenuLegalSection"
+        ]
+      }
+    },
+    {
+      "id": "siteNavMenuHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-8px ank-pr-36px",
+        "components": [
+          "siteNavMenuEyebrow",
+          "siteNavMenuTitle",
+          "siteNavMenuDescription"
+        ]
+      }
+    },
+    {
+      "id": "siteNavMenuEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "zoositioweb",
+        "classes": "ank-m-0 ank-fontSize-12px ank-fontWeight-900 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
+      }
+    },
+    {
+      "id": "siteNavMenuTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,nav.menuTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-fontSize-28px ank-lineHeight-1_1 ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "siteNavMenuDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,nav.menuDescription",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "siteNavMenuPrimarySection",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "components": [
+          "siteNavMenuPrimaryTitle",
+          "siteNavMenuHome",
+          "siteNavMenuServices",
+          "siteNavMenuPlans",
+          "siteNavMenuPlatform",
+          "siteNavMenuAbout",
+          "siteNavMenuFaq",
+          "siteNavMenuBlog",
+          "siteNavMenuContact"
+        ]
+      }
+    },
+    {
+      "id": "siteNavMenuPrimaryTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,nav.sections.site",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-fontSize-12px ank-fontWeight-900 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
+      }
+    },
+    {
+      "id": "siteNavMenuHome",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/,href,/,location,site_menu,event,home",
+      "valueInstructions": "set:config.text,i18n,nav.home;set:config.ariaLabel,i18n,nav.home",
+      "config": {
+        "href": "/",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuServices",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/servicios,href,/servicios,location,site_menu,event,services",
+      "valueInstructions": "set:config.text,i18n,nav.services;set:config.ariaLabel,i18n,nav.services",
+      "config": {
+        "href": "/servicios",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuPlans",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/planes,href,/planes,location,site_menu,event,plans",
+      "valueInstructions": "set:config.text,i18n,nav.plans;set:config.ariaLabel,i18n,nav.plans",
+      "config": {
+        "href": "/planes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuPlatform",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/plataforma,href,/plataforma,location,site_menu,event,platform",
+      "valueInstructions": "set:config.text,i18n,nav.platform;set:config.ariaLabel,i18n,nav.platform",
+      "config": {
+        "href": "/plataforma",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuAbout",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/nosotros,href,/nosotros,location,site_menu,event,about",
+      "valueInstructions": "set:config.text,i18n,nav.about;set:config.ariaLabel,i18n,nav.about",
+      "config": {
+        "href": "/nosotros",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuFaq",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/preguntas-frecuentes,href,/preguntas-frecuentes,location,site_menu,event,faq",
+      "valueInstructions": "set:config.text,i18n,nav.faq;set:config.ariaLabel,i18n,nav.faq",
+      "config": {
+        "href": "/preguntas-frecuentes",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuBlog",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/blog,href,/blog,location,site_menu,event,blog",
+      "valueInstructions": "set:config.text,i18n,nav.blog;set:config.ariaLabel,i18n,nav.blog",
+      "config": {
+        "href": "/blog",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuContact",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/contacto,href,/contacto,location,site_menu,event,contact",
+      "valueInstructions": "set:config.text,i18n,nav.contact;set:config.ariaLabel,i18n,nav.contact",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuDividerAccount",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-height-1px ank-bg-secondaryBgColor ank-my-4px",
+        "components": []
+      }
+    },
+    {
+      "id": "siteNavMenuAccountSection",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "components": [
+          "siteNavMenuAccountTitle",
+          "siteNavMenuLogin",
+          "siteNavMenuRegister",
+          "siteNavMenuAccount"
+        ]
+      }
+    },
+    {
+      "id": "siteNavMenuAccountTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,nav.sections.account",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-fontSize-12px ank-fontWeight-900 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
+      }
+    },
+    {
+      "id": "siteNavMenuLogin",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/acceso,href,/acceso,location,site_menu,event,login",
+      "valueInstructions": "set:config.text,i18n,nav.login;set:config.ariaLabel,i18n,nav.login",
+      "config": {
+        "href": "/acceso",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      },
+      "condition": "not:varEq,remoteStatus.authAccount.state,success"
+    },
+    {
+      "id": "siteNavMenuRegister",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/registro,href,/registro,location,site_menu,event,register",
+      "valueInstructions": "set:config.text,i18n,nav.register;set:config.ariaLabel,i18n,nav.register",
+      "config": {
+        "href": "/registro",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      },
+      "condition": "not:varEq,remoteStatus.authAccount.state,success"
+    },
+    {
+      "id": "siteNavMenuAccount",
+      "type": "link",
+      "condition": "all:varEq,remoteStatus.authAccount.state,success",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/mi-cuenta,href,/mi-cuenta,location,site_menu,event,account",
+      "valueInstructions": "set:config.text,i18n,nav.account;set:config.ariaLabel,i18n,nav.account",
+      "config": {
+        "href": "/mi-cuenta",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuDividerAdmin",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-height-1px ank-bg-secondaryBgColor ank-my-4px",
+        "components": []
+      },
+      "condition": "all:varEq,remote.auth.account.items.0.isAdminText,Administrador"
+    },
+    {
+      "id": "siteNavMenuAdminSection",
+      "type": "container",
+      "condition": "all:varEq,remote.auth.account.items.0.isAdminText,Administrador",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "components": [
+          "siteNavMenuAdminTitle",
+          "siteNavMenuAdminUsers",
+          "siteNavMenuAdminBlog",
+          "siteNavMenuAdminArticles",
+          "siteNavMenuAdminMedia",
+          "siteNavMenuAdminSettings"
+        ]
+      }
+    },
+    {
+      "id": "siteNavMenuAdminTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,nav.sections.admin",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-fontSize-12px ank-fontWeight-900 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
+      }
+    },
+    {
+      "id": "siteNavMenuAdminUsers",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/admin/usuarios,href,/admin/usuarios,location,site_menu,event,admin_users",
+      "valueInstructions": "set:config.text,i18n,nav.adminUsers;set:config.ariaLabel,i18n,nav.adminUsers",
+      "config": {
+        "href": "/admin/usuarios",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuAdminBlog",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/admin/blog,href,/admin/blog,location,site_menu,event,admin_blog",
+      "valueInstructions": "set:config.text,i18n,nav.adminBlog;set:config.ariaLabel,i18n,nav.adminBlog",
+      "config": {
+        "href": "/admin/blog",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuAdminArticles",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/admin/blog/articulos,href,/admin/blog/articulos,location,site_menu,event,admin_articles",
+      "valueInstructions": "set:config.text,i18n,nav.adminArticles;set:config.ariaLabel,i18n,nav.adminArticles",
+      "config": {
+        "href": "/admin/blog/articulos",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuAdminMedia",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/admin/blog/medios,href,/admin/blog/medios,location,site_menu,event,admin_media",
+      "valueInstructions": "set:config.text,i18n,nav.adminMedia;set:config.ariaLabel,i18n,nav.adminMedia",
+      "config": {
+        "href": "/admin/blog/medios",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuAdminSettings",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/admin/blog/configuracion,href,/admin/blog/configuracion,location,site_menu,event,admin_settings",
+      "valueInstructions": "set:config.text,i18n,nav.adminSettings;set:config.ariaLabel,i18n,nav.adminSettings",
+      "config": {
+        "href": "/admin/blog/configuracion",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuDividerLegal",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-height-1px ank-bg-secondaryBgColor ank-my-4px",
+        "components": []
+      }
+    },
+    {
+      "id": "siteNavMenuLegalSection",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "components": [
+          "siteNavMenuLegalTitle",
+          "siteNavMenuPrivacy",
+          "siteNavMenuTerms"
+        ]
+      }
+    },
+    {
+      "id": "siteNavMenuLegalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,nav.sections.legal",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-fontSize-12px ank-fontWeight-900 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
+      }
+    },
+    {
+      "id": "siteNavMenuPrivacy",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/privacidad,href,/privacidad,location,site_menu,event,privacy",
+      "valueInstructions": "set:config.text,i18n,nav.privacy;set:config.ariaLabel,i18n,nav.privacy",
+      "config": {
+        "href": "/privacidad",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "siteNavMenuTerms",
+      "type": "link",
+      "eventInstructions": "closeModal;trackEvent:nav_click,navigation,/terminos,href,/terminos,location,site_menu,event,terms",
+      "valueInstructions": "set:config.text,i18n,nav.terms;set:config.ariaLabel,i18n,nav.terms",
+      "config": {
+        "href": "/terminos",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "footerBlog",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.blog;set:config.ariaLabel,i18n,nav.blog",
+      "config": {
+        "href": "/blog",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "30px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/blog,href,/blog,location,footer"
+    },
+    {
+      "id": "footerMobileBlog",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.blog;set:config.ariaLabel,i18n,nav.blog",
+      "config": {
+        "href": "/blog",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "ank-display-flex ank-alignItems-center ank-color-linkColor ank-fontWeight-900 ank-lineHeight-1_35 ank-textDecoration-none",
+        "styles": {
+          "minHeight": "40px"
+        }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,/blog,href,/blog,location,footer_mobile"
     }
   ]
 }

@@ -13,9 +13,7 @@
           "padding": "clamp(16px, 2vw, 32px)"
         },
         "components": [
-          "zoositeSiteHeader",
-          "admin-blog-articulosShell",
-          "zoositeSiteFooter"
+          "admin-blog-articulosShell"
         ]
       }
     },
@@ -656,16 +654,17 @@
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-18px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_10ED",
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
         "stateClasses": "ank-p-18px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-lineHeight-1_55 ank-border-1px__solid__textColorOPA__0_14",
-        "actionButtonClasses": "ank-minHeight-48px ank-px-12px ank-borderRadius-999px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-gap-8px ank-mr-6px ank-mb-6px",
+        "actionButtonClasses": "ank-minWidth-74px ank-minHeight-62px ank-px-10px ank-py-8px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-gap-4px ank-mr-6px ank-mb-6px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
         "description": "Datos protegidos del hub. Usa filtros arriba para pedir otra vista al BFF.",
         "descriptionClasses": "ank-mt-4px ank-mb-10px ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700",
         "tableWrapperClasses": "ank-width-100per ank-overflow-auto ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_14",
         "tableClasses": "ank-width-100per ank-bg-bgColor ank-color-textColor",
         "headerCellClasses": "ank-fontWeight-900 ank-color-titleColor ank-bg-secondaryBgColor ank-whiteSpace-nowrap",
         "rowClasses": "ank-bg-bgColor",
-        "actionCellClasses": "ank-whiteSpace-nowrap ank-minWidth-420px"
+        "actionCellClasses": "ank-whiteSpace-nowrap ank-minWidth-440px ank-textAlign-center",
+        "actionColumnLabel": "Acciones"
       },
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
+      "valueInstructions": "set:config.actionColumnLabel,i18n,adminBlogArticulos.actionsColumn;set:config.rowActions.0.label,i18n,adminBlogArticulos.edit;set:config.rowActions.1.label,i18n,adminBlogArticulos.preview;set:config.rowActions.2.label,i18n,adminBlogArticulos.seo;set:config.rowActions.3.label,i18n,adminBlogArticulos.versions;set:config.rowActions.4.label,i18n,adminBlogArticulos.schedule;set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
     },
     {
       "id": "adminBlogArticulosPagination",
@@ -719,9 +718,9 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-display-grid ank-gap-0 ank-alignItems-end",
+        "classes": "ank-width-100per ank-display-grid ank-gap-0 ank-alignItems-start",
         "styles": {
-          "gridTemplateColumns": "minmax(0, 1fr) 64px",
+          "gridTemplateColumns": "minmax(0, 1fr) 52px",
           "maxWidth": "680px"
         },
         "components": [
@@ -739,15 +738,17 @@
         "ariaLabel": "Buscar",
         "icon": "search",
         "iconPosition": "before",
-        "classes": "ank-height-52px ank-minHeight-52px ank-width-64px ank-px-0 ank-borderRadius-8px ank-borderTopLeftRadius-0 ank-borderBottomLeftRadius-0 ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__accentColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none ank-boxShadow-0_10px_24px_rgbaSD0C0C0C__0_14ED",
+        "classes": "ank-height-52px ank-minHeight-52px ank-width-52px ank-px-0 ank-borderRadius-8px ank-borderTopLeftRadius-0 ank-borderBottomLeftRadius-0 ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__accentColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-0 ank-textDecoration-none ank-boxShadow-0_10px_24px_rgbaSD0C0C0C__0_14ED",
         "styles": {
           "height": "52px",
-          "width": "64px",
+          "width": "52px",
           "borderTopLeftRadius": "0",
           "borderBottomLeftRadius": "0",
-          "alignSelf": "center"
+          "alignSelf": "start",
+          "marginTop": "26px"
         },
-        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor"
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "iconClasses": "ank-width-17px ank-height-17px ank-fontSize-17px"
       }
     },
     {
@@ -775,167 +776,6 @@
           "adminBlogArticulosNewLink",
           "adminBlogArticulosValidateButton"
         ]
-      }
-    },
-    {
-      "id": "zoositeSiteHeader",
-      "type": "container",
-      "config": {
-        "tag": "header",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-bgColor ank-color-textColor ank-borderBottom-1px__solid__textColorOPA__0_08 ank-position-relative ank-zIndex-10",
-        "styles": {
-          "padding": "14px clamp(16px, 3vw, 40px)"
-        },
-        "components": [
-          "zoositeSiteHeaderInner"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderInner",
-      "type": "container",
-      "config": {
-        "tag": "nav",
-        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-alignItems-center ank-justifyContent-between ank-gap-14px ank-flexWrap-wrap",
-        "styles": {
-          "rowGap": "10px"
-        },
-        "components": [
-          "zoositeSiteHeaderBrand",
-          "zoositeSiteHeaderLinks"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderBrand",
-      "type": "link",
-      "eventInstructions": "trackEvent:nav_click,navigation,zoosite-header-home,href,/,location,site_header",
-      "config": {
-        "href": "/",
-        "text": "ZOOSITIOWEB",
-        "ariaLabel": "Ir al inicio de zoositioweb",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-color-accentColor ank-fontWeight-900 ank-fontSize-14px ank-letterSpacing-0 ank-textDecoration-none ank-textTransform-uppercase"
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderLinks",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-end ank-flexWrap-wrap ank-gap-8px",
-        "components": [
-          "zoositeSiteHeaderBlog",
-          "zoositeSiteHeaderAccount",
-          "zoositeSiteHeaderContact"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderBlog",
-      "type": "link",
-      "eventInstructions": "trackEvent:nav_click,navigation,zoosite-header-blog,href,/blog,location,site_header",
-      "config": {
-        "href": "/blog",
-        "text": "Blog",
-        "ariaLabel": "Ir al blog de zoositioweb",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-12px ank-borderRadius-8px ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-bg-transparent ank-border-1px__solid__textColorOPA__0_12"
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderAccount",
-      "type": "link",
-      "eventInstructions": "trackEvent:nav_click,navigation,zoosite-header-account,href,/mi-cuenta,location,site_header",
-      "config": {
-        "href": "/mi-cuenta",
-        "text": "Mi cuenta",
-        "ariaLabel": "Ir a mi cuenta",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-12px ank-borderRadius-8px ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-bg-transparent ank-border-1px__solid__textColorOPA__0_12"
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderContact",
-      "type": "link",
-      "eventInstructions": "trackEvent:nav_click,navigation,zoosite-header-contact,href,/contacto,location,site_header",
-      "config": {
-        "href": "/contacto",
-        "text": "Contacto",
-        "ariaLabel": "Contactar a zoositioweb",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-12px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-textDecoration-none"
-      }
-    },
-    {
-      "id": "zoositeSiteFooter",
-      "type": "container",
-      "config": {
-        "tag": "footer",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-borderTop-1px__solid__textColorOPA__0_08",
-        "styles": {
-          "padding": "22px clamp(16px, 3vw, 40px)"
-        },
-        "components": [
-          "zoositeSiteFooterInner"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteFooterInner",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-alignItems-center ank-justifyContent-between ank-gap-12px ank-flexWrap-wrap",
-        "components": [
-          "zoositeSiteFooterCopy",
-          "zoositeSiteFooterLinks"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteFooterCopy",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "zoositioweb.com.mx · Sitios web, contenido y herramientas para operar mejor tu presencia digital.",
-        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor"
-      }
-    },
-    {
-      "id": "zoositeSiteFooterLinks",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-flex ank-alignItems-center ank-flexWrap-wrap ank-gap-8px",
-        "components": [
-          "zoositeSiteFooterBlog",
-          "zoositeSiteFooterAccount",
-          "zoositeSiteFooterRegister"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteFooterBlog",
-      "type": "link",
-      "config": {
-        "href": "/blog",
-        "text": "Blog",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-10px ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none"
-      }
-    },
-    {
-      "id": "zoositeSiteFooterAccount",
-      "type": "link",
-      "config": {
-        "href": "/acceso",
-        "text": "Iniciar sesión",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-10px ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none"
-      }
-    },
-    {
-      "id": "zoositeSiteFooterRegister",
-      "type": "link",
-      "config": {
-        "href": "/registro",
-        "text": "Crear cuenta",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-10px ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none"
       }
     }
   ]

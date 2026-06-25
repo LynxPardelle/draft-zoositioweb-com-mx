@@ -13,13 +13,11 @@
           "padding": "clamp(18px, 3vw, 40px)"
         },
         "components": [
-          "zoositeSiteHeader",
           "blogHeader",
           "blogDiscovery",
           "blogArticleList",
           "blogEmptyState",
-          "blogFooterCta",
-          "zoositeSiteFooter"
+          "blogFooterCta"
         ]
       }
     },
@@ -341,167 +339,6 @@
         "href": "/contacto",
         "text": "Hablar sobre mi blog",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
-      }
-    },
-    {
-      "id": "zoositeSiteHeader",
-      "type": "container",
-      "config": {
-        "tag": "header",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-bgColor ank-color-textColor ank-borderBottom-1px__solid__textColorOPA__0_08 ank-position-relative ank-zIndex-10",
-        "styles": {
-          "padding": "14px clamp(16px, 3vw, 40px)"
-        },
-        "components": [
-          "zoositeSiteHeaderInner"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderInner",
-      "type": "container",
-      "config": {
-        "tag": "nav",
-        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-alignItems-center ank-justifyContent-between ank-gap-14px ank-flexWrap-wrap",
-        "styles": {
-          "rowGap": "10px"
-        },
-        "components": [
-          "zoositeSiteHeaderBrand",
-          "zoositeSiteHeaderLinks"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderBrand",
-      "type": "link",
-      "eventInstructions": "trackEvent:nav_click,navigation,zoosite-header-home,href,/,location,site_header",
-      "config": {
-        "href": "/",
-        "text": "ZOOSITIOWEB",
-        "ariaLabel": "Ir al inicio de zoositioweb",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-color-accentColor ank-fontWeight-900 ank-fontSize-14px ank-letterSpacing-0 ank-textDecoration-none ank-textTransform-uppercase"
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderLinks",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-end ank-flexWrap-wrap ank-gap-8px",
-        "components": [
-          "zoositeSiteHeaderBlog",
-          "zoositeSiteHeaderAccount",
-          "zoositeSiteHeaderContact"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderBlog",
-      "type": "link",
-      "eventInstructions": "trackEvent:nav_click,navigation,zoosite-header-blog,href,/blog,location,site_header",
-      "config": {
-        "href": "/blog",
-        "text": "Blog",
-        "ariaLabel": "Ir al blog de zoositioweb",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-12px ank-borderRadius-8px ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-bg-transparent ank-border-1px__solid__textColorOPA__0_12"
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderAccount",
-      "type": "link",
-      "eventInstructions": "trackEvent:nav_click,navigation,zoosite-header-account,href,/mi-cuenta,location,site_header",
-      "config": {
-        "href": "/mi-cuenta",
-        "text": "Mi cuenta",
-        "ariaLabel": "Ir a mi cuenta",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-12px ank-borderRadius-8px ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-bg-transparent ank-border-1px__solid__textColorOPA__0_12"
-      }
-    },
-    {
-      "id": "zoositeSiteHeaderContact",
-      "type": "link",
-      "eventInstructions": "trackEvent:nav_click,navigation,zoosite-header-contact,href,/contacto,location,site_header",
-      "config": {
-        "href": "/contacto",
-        "text": "Contacto",
-        "ariaLabel": "Contactar a zoositioweb",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-12px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-textDecoration-none"
-      }
-    },
-    {
-      "id": "zoositeSiteFooter",
-      "type": "container",
-      "config": {
-        "tag": "footer",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-borderTop-1px__solid__textColorOPA__0_08",
-        "styles": {
-          "padding": "22px clamp(16px, 3vw, 40px)"
-        },
-        "components": [
-          "zoositeSiteFooterInner"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteFooterInner",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-alignItems-center ank-justifyContent-between ank-gap-12px ank-flexWrap-wrap",
-        "components": [
-          "zoositeSiteFooterCopy",
-          "zoositeSiteFooterLinks"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteFooterCopy",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "zoositioweb.com.mx · Sitios web, contenido y herramientas para operar mejor tu presencia digital.",
-        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor"
-      }
-    },
-    {
-      "id": "zoositeSiteFooterLinks",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-flex ank-alignItems-center ank-flexWrap-wrap ank-gap-8px",
-        "components": [
-          "zoositeSiteFooterBlog",
-          "zoositeSiteFooterAccount",
-          "zoositeSiteFooterRegister"
-        ]
-      }
-    },
-    {
-      "id": "zoositeSiteFooterBlog",
-      "type": "link",
-      "config": {
-        "href": "/blog",
-        "text": "Blog",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-10px ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none"
-      }
-    },
-    {
-      "id": "zoositeSiteFooterAccount",
-      "type": "link",
-      "config": {
-        "href": "/acceso",
-        "text": "Iniciar sesión",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-10px ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none"
-      }
-    },
-    {
-      "id": "zoositeSiteFooterRegister",
-      "type": "link",
-      "config": {
-        "href": "/registro",
-        "text": "Crear cuenta",
-        "classes": "ank-minHeight-48px ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-px-10px ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none"
       }
     }
   ]
