@@ -792,9 +792,6 @@
         "target": "remote.auth.account",
         "statusTarget": "remoteStatus.authAccount",
         "clearTargetOnLoad": true,
-        "pageIds": [
-          "mi-cuenta"
-        ],
         "mapper": {
           "itemsPath": "account",
           "singleItem": true,

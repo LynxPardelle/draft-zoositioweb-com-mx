@@ -11,7 +11,26 @@
       "platform": "Plataforma",
       "contact": "Contacto",
       "faq": "Preguntas frecuentes",
-      "about": "Nosotros"
+      "about": "Nosotros",
+      "blog": "Blog",
+      "account": "Mi cuenta",
+      "login": "Iniciar sesión",
+      "register": "Crear cuenta",
+      "adminUsers": "Usuarios",
+      "adminBlog": "Administración del blog",
+      "adminArticles": "Artículos",
+      "adminMedia": "Medios",
+      "adminSettings": "Configuración",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "menuTitle": "Menú",
+      "menuDescription": "Rutas del sitio, cuenta y administración.",
+      "sections": {
+        "site": "Sitio",
+        "account": "Cuenta",
+        "admin": "Administración",
+        "legal": "Legal"
+      }
     },
     "ui": {
       "controls": {
@@ -25,7 +44,9 @@
         "mobileMenuAriaLabel": "Menú de navegación",
         "openMenu": "Abrir menú",
         "dialog": "Diálogo",
-        "closeMenu": "Cerrar menú"
+        "closeMenu": "Cerrar menú",
+        "navigationDialog": "Menú de navegación de zoositioweb",
+        "close": "Cerrar"
       },
       "common": {
         "verified": "Verificado"
@@ -52,7 +73,9 @@
       "registerLabel": "Crear cuenta",
       "legalLinksTitle": "Legal",
       "privacyLabel": "Aviso de privacidad",
-      "termsLabel": "Términos y condiciones"
+      "termsLabel": "Términos y condiciones",
+      "blogLabel": "Blog",
+      "accountLabel": "Mi cuenta"
     },
     "sectorLabels": {
       "clinics": "Sitio web para consultorios médicos",

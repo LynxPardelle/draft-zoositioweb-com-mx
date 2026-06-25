@@ -3,7 +3,10 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "blog-article",
   "rootIds": [
-    "blogArticleRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "blogArticleRoot",
+    "siteFooter"
   ],
   "seo": {
     "title": "Blog builder visual con SEO desde el inicio | zoositioweb",
@@ -12,5 +15,8 @@
     "robots": {
       "default": "index,follow,max-image-preview:large"
     }
-  }
+  },
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ]
 }

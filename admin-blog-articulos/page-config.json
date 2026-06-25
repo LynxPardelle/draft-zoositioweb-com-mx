@@ -15,6 +15,12 @@
   },
   "updatedAt": "2026-06-20T12:00:00-06:00",
   "rootIds": [
-    "admin-blog-articulosRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "admin-blog-articulosRoot",
+    "siteFooter"
+  ],
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
   ]
 }
