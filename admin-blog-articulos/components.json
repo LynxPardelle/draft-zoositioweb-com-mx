@@ -27,7 +27,8 @@
           "admin-blog-articulosHeader",
           "admin-blog-articulosNav",
           "adminBlogArticulosToolbar",
-          "adminBlogArticulosTable"
+          "adminBlogArticulosTable",
+          "adminBlogArticulosPagination"
         ]
       }
     },
@@ -590,7 +591,7 @@
         "pageParam": "page",
         "pageSizeParam": "pageSize",
         "hideWhenEmpty": true,
-        "hideWhenSinglePage": true,
+        "hideWhenSinglePage": false,
         "summaryTemplate": "Página {page} de {pageCount} · {totalItems} artículos cargados",
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-14px ank-display-flex ank-flexWrap-wrap ank-gap-12px ank-alignItems-center ank-justifyContent-spaceBetween",
         "summaryClasses": "ank-fontSize-13px ank-fontWeight-800 ank-color-secondaryTextColor",
