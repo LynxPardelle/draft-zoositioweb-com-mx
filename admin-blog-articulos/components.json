@@ -440,7 +440,16 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-52px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none ank-boxShadow-0_10px_24px_rgbaSD0C0C0C__0_14ED"
+        "classes": "ank-minHeight-52px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none ank-boxShadow-0_10px_24px_rgbaSD0C0C0C__0_14ED",
+        "styles": {
+          "minWidth": "max-content",
+          "minHeight": "52px",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingInline": "18px",
+          "paddingBlock": "10px"
+        }
       }
     },
     {
