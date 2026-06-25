@@ -3,7 +3,10 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "acceso",
   "rootIds": [
-    "accesoRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "accesoRoot",
+    "siteFooter"
   ],
   "seo": {
     "title": "Acceso | zoositioweb",
@@ -12,5 +15,8 @@
     "robots": {
       "default": "noindex,nofollow"
     }
-  }
+  },
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ]
 }

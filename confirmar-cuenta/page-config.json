@@ -3,7 +3,10 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "confirmar-cuenta",
   "rootIds": [
-    "confirmarCuentaRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "confirmarCuentaRoot",
+    "siteFooter"
   ],
   "seo": {
     "title": "Confirmar cuenta | zoositioweb",
@@ -12,5 +15,8 @@
     "robots": {
       "default": "noindex,nofollow"
     }
-  }
+  },
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ]
 }

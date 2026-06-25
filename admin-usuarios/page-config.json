@@ -3,7 +3,10 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "admin-usuarios",
   "rootIds": [
-    "adminUsuariosRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "adminUsuariosRoot",
+    "siteFooter"
   ],
   "seo": {
     "title": "Administrar usuarios | zoositioweb",
@@ -12,5 +15,8 @@
     "robots": {
       "default": "noindex,nofollow"
     }
-  }
+  },
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ]
 }

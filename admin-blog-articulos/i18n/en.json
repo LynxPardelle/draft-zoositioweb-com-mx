@@ -9,7 +9,13 @@
   },
   "dictionary": {
     "adminBlogArticulos": {
-      "searchTooltip": "Search"
+      "searchTooltip": "Search",
+      "actionsColumn": "Actions",
+      "edit": "Edit",
+      "preview": "Preview",
+      "seo": "SEO",
+      "versions": "Versions",
+      "schedule": "Schedule"
     }
   }
 }

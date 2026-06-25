@@ -173,7 +173,9 @@
     "floatingWhatsAppCta",
     "siteFooter"
   ],
-  "modalRootIds": [],
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ],
   "metadata": {
     "status": "phase-1-local-draft",
     "routePurpose": "faq"
