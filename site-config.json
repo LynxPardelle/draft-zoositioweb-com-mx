@@ -1096,7 +1096,7 @@
             "pageKey": "page",
             "pageSizeKey": "pageSize",
             "pageFallback": 1,
-            "pageSizeFallback": 20
+            "pageSizeFallback": 10
           },
           "status": {
             "source": "queryParam",
