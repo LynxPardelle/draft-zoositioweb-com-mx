@@ -105,7 +105,13 @@
         "href": "/admin/blog/articulos",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
-          "minWidth": "max-content"
+          "minWidth": "max-content",
+          "minHeight": "48px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingInline": "14px",
+          "paddingBlock": "8px"
         },
         "ariaCurrent": "page"
       }
@@ -118,7 +124,13 @@
         "href": "/admin/blog/articulos/nuevo",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
-          "minWidth": "max-content"
+          "minWidth": "max-content",
+          "minHeight": "48px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingInline": "14px",
+          "paddingBlock": "8px"
         }
       }
     },
@@ -130,7 +142,13 @@
         "href": "/admin/blog/medios",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
-          "minWidth": "max-content"
+          "minWidth": "max-content",
+          "minHeight": "48px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingInline": "14px",
+          "paddingBlock": "8px"
         }
       }
     },
@@ -142,7 +160,13 @@
         "href": "/admin/blog/moderacion",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
-          "minWidth": "max-content"
+          "minWidth": "max-content",
+          "minHeight": "48px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingInline": "14px",
+          "paddingBlock": "8px"
         }
       }
     },
@@ -154,7 +178,13 @@
         "href": "/admin/blog/analiticas",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
-          "minWidth": "max-content"
+          "minWidth": "max-content",
+          "minHeight": "48px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingInline": "14px",
+          "paddingBlock": "8px"
         }
       }
     },
@@ -166,7 +196,13 @@
         "href": "/admin/blog/categorias",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
-          "minWidth": "max-content"
+          "minWidth": "max-content",
+          "minHeight": "48px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingInline": "14px",
+          "paddingBlock": "8px"
         }
       }
     },
@@ -178,7 +214,13 @@
         "href": "/admin/blog/tags",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
-          "minWidth": "max-content"
+          "minWidth": "max-content",
+          "minHeight": "48px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingInline": "14px",
+          "paddingBlock": "8px"
         }
       }
     },
@@ -190,7 +232,13 @@
         "href": "/admin/blog/hub",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
-          "minWidth": "max-content"
+          "minWidth": "max-content",
+          "minHeight": "48px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingInline": "14px",
+          "paddingBlock": "8px"
         }
       }
     },
@@ -202,7 +250,13 @@
         "href": "/admin/blog/configuracion",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
-          "minWidth": "max-content"
+          "minWidth": "max-content",
+          "minHeight": "48px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingInline": "14px",
+          "paddingBlock": "8px"
         }
       }
     },
