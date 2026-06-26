@@ -504,31 +504,31 @@
             "id": "edit",
             "label": "Editar",
             "icon": "edit",
-            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/editor?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/editor?articleId={articleId}"
           },
           {
             "id": "preview",
             "label": "Preview",
             "icon": "eye",
-            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/preview?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/preview?articleId={articleId}"
           },
           {
             "id": "seo",
             "label": "SEO",
             "icon": "search",
-            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/seo?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/seo?articleId={articleId}"
           },
           {
             "id": "versions",
             "label": "Versiones",
             "icon": "history",
-            "eventInstructions": "navigateWithEventData:/admin/blog/articulos/{articleId}/versiones?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/versiones?articleId={articleId}"
           },
           {
             "id": "schedule",
             "label": "Programar",
             "icon": "calendar",
-            "eventInstructions": "navigateWithEventData:/admin/blog/programados?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/programados?articleId={articleId}"
           }
         ],
         "pagination": {

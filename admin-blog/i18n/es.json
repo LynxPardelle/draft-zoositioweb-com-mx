@@ -5,6 +5,14 @@
   "messages": {
     "title": "Panel del blog",
     "hubId": "zoosite-main",
-    "draftDomain": "zoositioweb.com.mx"
+    "draftDomain": "zoositioweb.com.mx",
+    "adminBlogArticulos": {
+      "actionsColumn": "Acciones",
+      "edit": "Editar",
+      "preview": "Preview",
+      "seo": "SEO",
+      "versions": "Versiones",
+      "schedule": "Programar"
+    }
   }
 }
