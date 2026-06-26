@@ -354,13 +354,13 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
-        "dropdownTriggerClasses": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-py-8px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
         "dropdownTriggerTextConfig": {
-          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap"
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap ank-textAlign-left"
         },
         "dropdownIndicatorText": "▼",
-        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
         "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
         "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
         "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
@@ -417,13 +417,13 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
-        "dropdownTriggerClasses": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-py-8px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
         "dropdownTriggerTextConfig": {
-          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap"
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap ank-textAlign-left"
         },
         "dropdownIndicatorText": "▼",
-        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
         "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
         "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
         "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
@@ -654,15 +654,17 @@
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-18px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_10ED",
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
         "stateClasses": "ank-p-18px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-lineHeight-1_55 ank-border-1px__solid__textColorOPA__0_14",
-        "actionButtonClasses": "ank-minWidth-74px ank-minHeight-62px ank-px-10px ank-py-8px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-gap-4px ank-mr-6px ank-mb-6px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
+        "actionButtonClasses": "ank-width-44px ank-height-44px ank-minWidth-44px ank-minHeight-44px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-6px ank-mb-6px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
         "description": "Datos protegidos del hub. Usa filtros arriba para pedir otra vista al BFF.",
         "descriptionClasses": "ank-mt-4px ank-mb-10px ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700",
         "tableWrapperClasses": "ank-width-100per ank-overflow-auto ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_14",
         "tableClasses": "ank-width-100per ank-bg-bgColor ank-color-textColor",
         "headerCellClasses": "ank-fontWeight-900 ank-color-titleColor ank-bg-secondaryBgColor ank-whiteSpace-nowrap",
         "rowClasses": "ank-bg-bgColor",
-        "actionCellClasses": "ank-whiteSpace-nowrap ank-minWidth-440px ank-textAlign-center",
-        "actionColumnLabel": "Acciones"
+        "actionCellClasses": "ank-whiteSpace-nowrap ank-minWidth-300px ank-textAlign-center",
+        "actionColumnLabel": "Acciones",
+        "actionLabelMode": "tooltip",
+        "actionIconClasses": "ank-width-14px ank-height-14px ank-display-inline-flex ank-flexShrink-0"
       },
       "valueInstructions": "set:config.actionColumnLabel,i18n,adminBlogArticulos.actionsColumn;set:config.rowActions.0.label,i18n,adminBlogArticulos.edit;set:config.rowActions.1.label,i18n,adminBlogArticulos.preview;set:config.rowActions.2.label,i18n,adminBlogArticulos.seo;set:config.rowActions.3.label,i18n,adminBlogArticulos.versions;set:config.rowActions.4.label,i18n,adminBlogArticulos.schedule;set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
     },
@@ -721,7 +723,8 @@
         "classes": "ank-width-100per ank-display-grid ank-gap-0 ank-alignItems-start",
         "styles": {
           "gridTemplateColumns": "minmax(0, 1fr) 52px",
-          "maxWidth": "680px"
+          "maxWidth": "680px",
+          "alignItems": "start"
         },
         "components": [
           "adminBlogArticulosSearch",
@@ -745,10 +748,10 @@
           "borderTopLeftRadius": "0",
           "borderBottomLeftRadius": "0",
           "alignSelf": "start",
-          "marginTop": "26px"
+          "marginTop": "25px"
         },
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
-        "iconClasses": "ank-width-17px ank-height-17px ank-fontSize-17px"
+        "iconClasses": "ank-width-15px ank-height-15px ank-fontSize-15px"
       }
     },
     {

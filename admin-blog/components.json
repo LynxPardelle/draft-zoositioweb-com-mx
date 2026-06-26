@@ -318,6 +318,7 @@
         "tag": "div",
         "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
+          "adminBlogActionIdle",
           "adminBlogValidateLoading",
           "adminBlogValidateError",
           "adminBlogValidateSuccess",
@@ -448,7 +449,7 @@
           "path": "remote.contentHub.articles.items"
         },
         "rows": [],
-        "rowIdPath": "id",
+        "rowIdPath": "articleId",
         "eventPayloadFields": [
           "articleId",
           "status",
@@ -543,9 +544,23 @@
         "classes": "ank-width-100per",
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
         "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
-        "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+        "actionButtonClasses": "ank-width-44px ank-height-44px ank-minWidth-44px ank-minHeight-44px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-6px ank-mb-6px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
+        "actionLabelMode": "tooltip",
+        "actionIconClasses": "ank-width-14px ank-height-14px ank-display-inline-flex ank-flexShrink-0",
+        "actionCellClasses": "ank-whiteSpace-nowrap ank-minWidth-300px ank-textAlign-center",
+        "actionColumnLabel": "Acciones"
       },
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
+      "valueInstructions": "set:config.actionColumnLabel,i18n,adminBlogArticulos.actionsColumn;set:config.rowActions.0.label,i18n,adminBlogArticulos.edit;set:config.rowActions.1.label,i18n,adminBlogArticulos.preview;set:config.rowActions.2.label,i18n,adminBlogArticulos.seo;set:config.rowActions.3.label,i18n,adminBlogArticulos.versions;set:config.rowActions.4.label,i18n,adminBlogArticulos.schedule;set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
+    },
+    {
+      "id": "adminBlogActionIdle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Estado de operaciones: sin acción reciente. Selecciona un artículo desde la lista o usa las acciones de fila para abrir edición, preview, SEO, versiones o programación.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "not:var,remoteStatus.contentHub.content_hub_validate_article.state;not:var,remoteStatus.contentHub.content_hub_publish_article.state"
     }
   ]
 }
