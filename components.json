@@ -1234,6 +1234,7 @@
         "classes": "ank-display-flex ank-alignItems-center ank-gap-10px",
         "components": [
           "siteNavMenuButton",
+          "siteNavMenuTooltip",
           "toggleThemeDesktop",
           "toggleLanguageDesktop"
         ]
@@ -1243,7 +1244,7 @@
       "id": "siteNavMenuButton",
       "type": "button",
       "eventInstructions": "openModal:site-navigation,header:navigation,open_navigation_menu,header",
-      "valueInstructions": "set:config.label,i18n,ui.controls.menuToggle;set:config.ariaLabel,i18n,ui.accessibility.openMenu",
+      "valueInstructions": "set:config.ariaLabel,i18n,ui.accessibility.openMenu",
       "config": {
         "type": "button",
         "label": "",
@@ -1251,7 +1252,7 @@
         "icon": "menu",
         "iconPosition": "before",
         "iconClasses": "ank-width-18px ank-height-18px ank-fontSize-18px",
-        "classes": "ank-display-inlineFlex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-minHeight-42px ank-px-14px ank-py-9px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED"
+        "classes": "ank-display-inlineFlex ank-alignItems-center ank-justifyContent-center ank-width-42px ank-minWidth-42px ank-height-42px ank-minHeight-42px ank-px-0 ank-py-0 ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED"
       }
     },
     {
@@ -1694,6 +1695,21 @@
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/blog,href,/blog,location,footer_mobile"
+    },
+    {
+      "id": "siteNavMenuTooltip",
+      "type": "tooltip",
+      "config": {
+        "for": "siteNavMenuButton-button",
+        "content": "Menú",
+        "position": "bottom",
+        "trigger": "both",
+        "showDelayMs": 120,
+        "hideDelayMs": 80,
+        "surfaceClasses": "tooltip-surface ank-bg-titleColor ank-color-bgColor ank-borderRadius-8px ank-px-10px ank-py-6px ank-fontSize-12px ank-fontWeight-900 ank-boxShadow-0_10px_24px_rgbaSD0C0C0C__0_22ED",
+        "arrowClasses": "ank-display-none"
+      },
+      "valueInstructions": "set:config.content,i18n,ui.controls.menuToggle,Menú"
     }
   ]
 }
