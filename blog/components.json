@@ -68,7 +68,8 @@
         "tag": "section",
         "classes": "ank-width-100per ank-maxWidth-1040px ank-display-grid ank-gap-16px",
         "styles": {
-          "gridTemplateColumns": "minmax(0, 1fr) minmax(min(100%, 300px), 0.45fr)"
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
+          "alignItems": "start"
         },
         "components": [
           "blogFilterPanel",
@@ -103,7 +104,10 @@
       "type": "search-box",
       "config": {
         "placeholder": "Buscar por tema, SEO, builder o categoría",
-        "classes": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px"
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-outline-none ank-boxSizing-borderBox",
+        "resultsClasses": "ank-listStyle-none ank-m-0 ank-p-6px ank-display-flex ank-flexDirection-column ank-gap-4px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_18ED",
+        "resultItemClasses": "ank-width-100per ank-bg-transparent ank-border-0 ank-cursor-pointer ank-color-titleColor ank-px-12px ank-py-10px ank-textAlign-left ank-borderRadius-8px ank-fontWeight-800 ank-bgHover-secondaryBgColor"
       }
     },
     {
