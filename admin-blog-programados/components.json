@@ -238,7 +238,7 @@
         "label": "Identificador del artículo",
         "controlType": "text",
         "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
-        "required": false,
+        "required": true,
         "readOnly": true,
         "disabled": false,
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
@@ -248,7 +248,7 @@
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-fontSize-13px ank-fontWeight-900 ank-fontFamily-monospace",
         "validation": []
       },
-      "valueInstructions": "set:config.value,routeParamOr,id,"
+      "valueInstructions": "set:config.value,queryParamOr,articleId,"
     },
     {
       "id": "scheduledGrid",
@@ -439,7 +439,7 @@
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Guardar programación",
         "loadingLabel": "Guardando...",
-        "disabledWhenInvalidScope": false,
+        "disabledWhenInvalidScope": true,
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_schedule_article",
@@ -454,7 +454,7 @@
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Publicar ahora",
         "loadingLabel": "Publicando...",
-        "disabledWhenInvalidScope": false,
+        "disabledWhenInvalidScope": true,
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_publish_article",
