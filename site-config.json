@@ -1217,8 +1217,8 @@
         },
         "input": {
           "articleId": {
-            "source": "queryParam",
-            "key": "articleId",
+            "source": "routeParam",
+            "key": "id",
             "transforms": [
               "trim"
             ]
