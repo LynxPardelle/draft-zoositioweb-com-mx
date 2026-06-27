@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Programa, reprograma o cancela publicaciones con publishAt, unpublishAt, timezone y revisionId explícitos.",
+        "text": "Programa, reprograma o cancela publicaciones indicando fecha de publicación, fecha opcional de retirada, zona horaria y versión del artículo.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
