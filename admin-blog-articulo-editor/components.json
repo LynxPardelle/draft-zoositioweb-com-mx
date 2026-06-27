@@ -288,7 +288,8 @@
             "message": "Este campo es obligatorio."
           }
         ]
-      }
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.title,"
     },
     {
       "id": "editorMetaGrid",
@@ -356,7 +357,8 @@
           "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
           "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
         }
-      }
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.language,es"
     },
     {
       "id": "editorCategoryInput",
@@ -374,7 +376,8 @@
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
         "validation": []
-      }
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.category,"
     },
     {
       "id": "editorTagsInput",
@@ -392,7 +395,8 @@
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
         "validation": []
-      }
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.tagsText,"
     },
     {
       "id": "editorSlugInput",
@@ -410,7 +414,8 @@
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
         "validation": []
-      }
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.slug,"
     },
     {
       "id": "advancedModeToggle",
@@ -501,7 +506,8 @@
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-py-12px",
         "validation": []
-      }
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.summary,"
     },
     {
       "id": "articleRichText",
