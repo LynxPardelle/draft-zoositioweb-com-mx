@@ -237,6 +237,7 @@
         "tag": "section",
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
+          "editorArticleIdReadout",
           "editorArticleId",
           "editorTitleInput",
           "editorMetaGrid",
@@ -246,6 +247,47 @@
           "editorActionRow",
           "editorSaveStatus"
         ]
+      }
+    },
+    {
+      "id": "editorArticleIdReadout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-14px ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "components": [
+          "editorArticleIdReadoutLabel",
+          "editorArticleIdReadoutValue",
+          "editorArticleIdReadoutHelp"
+        ]
+      }
+    },
+    {
+      "id": "editorArticleIdReadoutLabel",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Identificador del artículo",
+        "classes": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "editorArticleIdReadoutValue",
+      "type": "text",
+      "config": {
+        "tag": "code",
+        "text": "articleId pendiente",
+        "classes": "ank-display-block ank-width-100per ank-overflow-wrap-anywhere ank-fontFamily-monospace ank-fontSize-13px ank-fontWeight-900 ank-color-titleColor"
+      },
+      "valueInstructions": "set:config.text,routeParamOr,id,articleId pendiente"
+    },
+    {
+      "id": "editorArticleIdReadoutHelp",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Sólo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
+        "classes": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor"
       }
     },
     {
@@ -259,7 +301,10 @@
         "required": false,
         "readOnly": true,
         "disabled": false,
-        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "classes": "ank-display-none",
+        "styles": {
+          "display": "none"
+        },
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
