@@ -414,6 +414,7 @@
         "toolbar": [
           "bold",
           "italic",
+          "heading",
           "bulletList",
           "orderedList",
           "link",

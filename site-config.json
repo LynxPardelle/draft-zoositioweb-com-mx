@@ -1114,6 +1114,121 @@
         }
       },
       {
+        "id": "content_hub_article_detail",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_article_detail",
+        "contentHub": {
+          "read": "articleDetail",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.articleDetail",
+        "statusTarget": "remoteStatus.contentHub.articleDetail",
+        "clearTargetOnLoad": true,
+        "pageIds": [
+          "admin-blog-articulo-editor",
+          "admin-blog-articulo-preview",
+          "admin-blog-articulo-seo",
+          "admin-blog-articulo-versiones"
+        ],
+        "mapper": {
+          "itemsPath": "item",
+          "singleItem": true,
+          "fields": {
+            "id": {
+              "path": "articleId"
+            },
+            "articleId": {
+              "path": "articleId"
+            },
+            "title": {
+              "path": "title",
+              "fallback": ""
+            },
+            "summary": {
+              "path": "summary",
+              "fallback": ""
+            },
+            "slug": {
+              "path": "slug",
+              "fallback": ""
+            },
+            "status": {
+              "path": "status",
+              "fallback": "draft"
+            },
+            "visibility": {
+              "path": "visibility",
+              "fallback": "private"
+            },
+            "seoTitle": {
+              "path": "seoTitle",
+              "fallback": ""
+            },
+            "seoDescription": {
+              "path": "seoDescription",
+              "fallback": ""
+            },
+            "robots": {
+              "path": "robots",
+              "fallback": "noindex,nofollow"
+            },
+            "category": {
+              "path": "category.taxonomyId",
+              "fallback": ""
+            },
+            "tags": {
+              "path": "tags",
+              "fallback": []
+            },
+            "tagsText": {
+              "path": "tags",
+              "transform": "joinList",
+              "fallback": ""
+            },
+            "commentPolicy": {
+              "path": "commentPolicy",
+              "fallback": "authenticated"
+            },
+            "canonicalMode": {
+              "path": "canonicalMode",
+              "fallback": "host-adaptive"
+            },
+            "canonicalUrl": {
+              "path": "canonicalUrl",
+              "fallback": ""
+            },
+            "language": {
+              "path": "primaryLocale",
+              "fallback": "es"
+            },
+            "latestRevisionId": {
+              "path": "latestRevisionId",
+              "fallback": ""
+            },
+            "path": {
+              "path": "path",
+              "fallback": ""
+            },
+            "updatedAt": {
+              "path": "updatedAt",
+              "fallback": ""
+            }
+          }
+        },
+        "input": {
+          "articleId": {
+            "source": "queryParam",
+            "key": "articleId",
+            "transforms": [
+              "trim"
+            ]
+          }
+        },
+        "requiredInputKeys": [
+          "articleId"
+        ]
+      },
+      {
         "id": "content_hub_taxonomy",
         "kind": "content-hub",
         "proxySourceId": "content_hub_taxonomy_list",
