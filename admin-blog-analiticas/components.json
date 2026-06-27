@@ -327,8 +327,8 @@
           "latestRevisionId",
           "path"
         ],
-        "emptyText": "No hay registros reales disponibles desde content-hub para este filtro.",
-        "loadingText": "Cargando datos de content-hub...",
+        "emptyText": "No hay registros reales disponibles desde gestor de contenido para este filtro.",
+        "loadingText": "Cargando datos de gestor de contenido...",
         "columns": [
           {
             "id": "title",
@@ -371,12 +371,12 @@
           },
           {
             "id": "views",
-            "header": "views",
+            "header": "Vistas",
             "valuePath": "views"
           },
           {
             "id": "ctaClicks",
-            "header": "ctaClicks",
+            "header": "Clics en CTA",
             "valuePath": "ctaClicks"
           }
         ],
@@ -389,7 +389,8 @@
             20,
             50
           ],
-          "showFirstLastButtons": true
+          "showFirstLastButtons": true,
+          "hideWhenSinglePage": true
         },
         "classes": "ank-width-100per",
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",

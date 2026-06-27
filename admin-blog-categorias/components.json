@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Gestiona slug, translation, seoDescription, visible y redirectWarning para categorías.",
+        "text": "Crea categorías del blog con slug legible, nombre visible y descripción SEO. Las categorías ayudan a organizar artículos y pueden mostrarse u ocultarse por draft.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -253,7 +253,7 @@
       "type": "input",
       "config": {
         "fieldId": "taxonomyId",
-        "label": "taxonomyId",
+        "label": "Identificador",
         "controlType": "text",
         "required": false,
         "readOnly": false,
@@ -263,7 +263,8 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
-        "validation": []
+        "validation": [],
+        "helperText": "Clave única sin espacios. Ejemplo: web, seo o builder."
       }
     },
     {
@@ -271,7 +272,7 @@
       "type": "input",
       "config": {
         "fieldId": "taxonomyKind",
-        "label": "taxonomyKind",
+        "label": "Tipo",
         "controlType": "text",
         "value": "category",
         "required": false,
@@ -282,7 +283,8 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
-        "validation": []
+        "validation": [],
+        "helperText": "Categoría o tag. Esta página fija el tipo correcto."
       }
     },
     {
@@ -290,7 +292,7 @@
       "type": "input",
       "config": {
         "fieldId": "slug",
-        "label": "slug",
+        "label": "Slug",
         "controlType": "text",
         "required": false,
         "readOnly": false,
@@ -300,7 +302,8 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
-        "validation": []
+        "validation": [],
+        "helperText": "Texto para URL, en minúsculas y con guiones."
       }
     },
     {
@@ -308,7 +311,7 @@
       "type": "input",
       "config": {
         "fieldId": "translation",
-        "label": "translation",
+        "label": "Nombre visible",
         "controlType": "text",
         "required": false,
         "readOnly": false,
@@ -318,7 +321,8 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
-        "validation": []
+        "validation": [],
+        "helperText": "Nombre que verá el usuario en listados públicos."
       }
     },
     {
@@ -326,7 +330,7 @@
       "type": "input",
       "config": {
         "fieldId": "seoDescription",
-        "label": "seoDescription",
+        "label": "Descripción SEO",
         "controlType": "text",
         "required": false,
         "readOnly": false,
@@ -336,7 +340,8 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
-        "validation": []
+        "validation": [],
+        "helperText": "Resumen corto para buscadores y listados."
       }
     },
     {
@@ -344,7 +349,7 @@
       "type": "input",
       "config": {
         "fieldId": "visible",
-        "label": "visible",
+        "label": "Visibilidad",
         "controlType": "select",
         "value": "true",
         "required": false,
@@ -364,10 +369,10 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-height-52px ank-minHeight-52px ank-px-16px ank-py-0 ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
-        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
         "dropdownTriggerTextConfig": {
-          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap ank-textAlign-left"
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
         },
         "dropdownIndicatorText": "▼",
         "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
@@ -385,7 +390,8 @@
           "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
           "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
           "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
-        }
+        },
+        "helperText": "Define si se muestra en este draft."
       }
     },
     {
@@ -393,7 +399,7 @@
       "type": "input",
       "config": {
         "fieldId": "redirectWarning",
-        "label": "redirectWarning",
+        "label": "Aviso de redirección",
         "controlType": "text",
         "required": false,
         "readOnly": false,
@@ -403,7 +409,8 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
-        "validation": []
+        "validation": [],
+        "helperText": "Opcional. Úsalo si el cambio de slug necesita advertencia."
       }
     },
     {
@@ -439,12 +446,12 @@
           "latestRevisionId",
           "path"
         ],
-        "emptyText": "No hay registros reales disponibles desde content-hub para este filtro.",
-        "loadingText": "Cargando datos de content-hub...",
+        "emptyText": "Aún no hay categorías disponibles para este filtro. Guarda una nueva entrada desde el formulario superior para que aparezca aquí.",
+        "loadingText": "Cargando datos de gestor de contenido...",
         "columns": [
           {
             "id": "taxonomyId",
-            "header": "ID",
+            "header": "Identificador",
             "valuePath": "taxonomyId"
           },
           {
@@ -454,27 +461,27 @@
           },
           {
             "id": "slug",
-            "header": "slug",
+            "header": "Slug",
             "valuePath": "slug"
           },
           {
             "id": "translation",
-            "header": "translation",
+            "header": "Nombre visible",
             "valuePath": "label"
           },
           {
             "id": "seoDescription",
-            "header": "seoDescription",
+            "header": "Descripción SEO",
             "valuePath": "seoDescription"
           },
           {
             "id": "visible",
-            "header": "visible",
+            "header": "Visible",
             "valuePath": "visible"
           },
           {
             "id": "redirectWarning",
-            "header": "redirectWarning",
+            "header": "Aviso",
             "valuePath": "redirectWarning"
           }
         ],

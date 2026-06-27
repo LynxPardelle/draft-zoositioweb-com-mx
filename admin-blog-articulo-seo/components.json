@@ -235,9 +235,9 @@
       "type": "input",
       "config": {
         "fieldId": "articleId",
-        "label": "Article ID",
+        "label": "Identificador del artículo",
         "controlType": "text",
-        "helperText": "Se toma del query string articleId agregado al abrir desde la tabla.",
+        "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
         "required": false,
         "readOnly": true,
         "disabled": false,
@@ -245,10 +245,10 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-fontSize-13px ank-fontWeight-900 ank-fontFamily-monospace",
         "validation": []
       },
-      "valueInstructions": "set:config.value,queryParamOr,articleId,"
+      "valueInstructions": "set:config.value,routeParamOr,id,"
     },
     {
       "id": "seoGrid",

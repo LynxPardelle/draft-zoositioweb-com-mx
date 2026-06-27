@@ -9,7 +9,20 @@
     "adminBlogArticulos": {
       "actionsColumn": "Acciones",
       "edit": "Editar",
-      "preview": "Preview",
+      "preview": "Vista previa",
+      "seo": "SEO",
+      "versions": "Versiones",
+      "schedule": "Programar"
+    }
+  },
+  "dictionary": {
+    "title": "Panel del blog",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx",
+    "adminBlogArticulos": {
+      "actionsColumn": "Acciones",
+      "edit": "Editar",
+      "preview": "Vista previa",
       "seo": "SEO",
       "versions": "Versiones",
       "schedule": "Programar"

@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Revisa connectedDrafts, authorizedHubs, visibilidad y relación entre hub primario y drafts autorizados.",
+        "text": "Revisa qué dominios pueden leer contenido de este hub y cómo se presentará ese contenido en otros drafts autorizados.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -222,7 +222,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Hub público: zoosite-main. La visibilidad y authorizedHubs son referencias de runtime seguras; ownership, tenant y policy quedan server-side.",
+        "text": "Hub público: zoosite-main. La visibilidad, los dominios conectados y las conexiones compartidas se muestran aquí; la propiedad, el tenant y las políticas sensibles se validan en el servidor.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
@@ -247,7 +247,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "connectedDrafts: sólo mostrar dominios autorizados y públicos.",
+        "text": "Dominios conectados (connectedDrafts): sólo se muestran drafts autorizados y públicos.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
@@ -256,7 +256,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "visibility: primary para zoositioweb.com.mx.",
+        "text": "Visibilidad (visibility): este hub es principal para zoositioweb.com.mx.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
@@ -265,7 +265,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "authorizedHubs: futuras conexiones de lectura compartida.",
+        "text": "Hubs autorizados (authorizedHubs): futuras conexiones para lectura compartida entre productos.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
@@ -287,12 +287,12 @@
           "latestRevisionId",
           "path"
         ],
-        "emptyText": "Aún no hay hubs autorizados o conexiones compartidas para este filtro. Crea o autoriza relaciones de hub en content-hub para verlas aquí.",
-        "loadingText": "Cargando datos de content-hub...",
+        "emptyText": "Aún no hay hubs autorizados o conexiones compartidas para este filtro. Crea o autoriza relaciones de hub desde el backend para verlas aquí.",
+        "loadingText": "Cargando datos del gestor de contenido...",
         "columns": [
           {
             "id": "taxonomyId",
-            "header": "ID",
+            "header": "Identificador",
             "valuePath": "taxonomyId"
           },
           {
@@ -302,7 +302,7 @@
           },
           {
             "id": "slug",
-            "header": "slug",
+            "header": "Slug",
             "valuePath": "slug"
           },
           {
@@ -326,7 +326,7 @@
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
         "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
         "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
-        "description": "Taxonomía visible y relaciones del hub devueltas por content-hub."
+        "description": "Taxonomía visible y relaciones del hub devueltas por el gestor de contenido."
       },
       "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.taxonomy.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.taxonomy.error,"
     }

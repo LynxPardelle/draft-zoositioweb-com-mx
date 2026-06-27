@@ -251,7 +251,7 @@
       "type": "input",
       "config": {
         "fieldId": "defaultCommentPolicy",
-        "label": "defaultCommentPolicy",
+        "label": "Política de comentarios",
         "controlType": "select",
         "value": "authenticated",
         "required": false,
@@ -271,10 +271,10 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-py-8px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
-        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
         "dropdownTriggerTextConfig": {
-          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap ank-textAlign-left"
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
         },
         "dropdownIndicatorText": "▼",
         "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
@@ -300,7 +300,7 @@
       "type": "input",
       "config": {
         "fieldId": "contentSafetyPolicy",
-        "label": "contentSafetyPolicy",
+        "label": "Seguridad de contenido",
         "controlType": "select",
         "value": "general",
         "required": false,
@@ -320,10 +320,10 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-py-8px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
-        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
         "dropdownTriggerTextConfig": {
-          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap ank-textAlign-left"
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
         },
         "dropdownIndicatorText": "▼",
         "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
@@ -349,7 +349,7 @@
       "type": "input",
       "config": {
         "fieldId": "componentAllowlistPreset",
-        "label": "componentAllowlistPreset",
+        "label": "Preset de componentes",
         "controlType": "select",
         "value": "zoosite-blog-advanced",
         "required": false,
@@ -369,10 +369,10 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-py-8px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
-        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
         "dropdownTriggerTextConfig": {
-          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap ank-textAlign-left"
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
         },
         "dropdownIndicatorText": "▼",
         "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
@@ -398,7 +398,7 @@
       "type": "input",
       "config": {
         "fieldId": "languageFallback",
-        "label": "languageFallback",
+        "label": "Idioma base",
         "controlType": "text",
         "value": "es",
         "required": false,
@@ -417,7 +417,7 @@
       "type": "input",
       "config": {
         "fieldId": "seoDefaults",
-        "label": "seoDefaults",
+        "label": "Valores SEO por defecto",
         "controlType": "textarea",
         "rows": 5,
         "required": false,
@@ -458,8 +458,8 @@
           "latestRevisionId",
           "path"
         ],
-        "emptyText": "Aún no hay registros de configuración avanzada para este hub. Cuando content-hub guarde perfiles, políticas o overrides del hub, aparecerán aquí.",
-        "loadingText": "Cargando datos de content-hub...",
+        "emptyText": "Aún no hay configuración avanzada guardada para este hub. Cuando el gestor de contenido guarde perfiles, políticas u overrides, aparecerán aquí.",
+        "loadingText": "Cargando datos de gestor de contenido...",
         "columns": [
           {
             "id": "taxonomyId",
@@ -492,7 +492,7 @@
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
         "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
         "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
-        "description": "Vista protegida de configuración devuelta por content-hub."
+        "description": "Vista protegida de configuración devuelta por gestor de contenido."
       },
       "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.taxonomy.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.taxonomy.error,"
     }

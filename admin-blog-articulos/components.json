@@ -279,7 +279,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Lista real por content-hub. Crear, validar, programar y publicar usan el BFF same-origin con sesión, CSRF, tenant y roles server-side.",
+        "text": "Lista real del gestor seguro de contenido. Crear, validar, programar y publicar vuelven a verificar sesión, permisos, draft y protección contra envíos falsos en el servidor.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -497,7 +497,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Estado de validación: sin operación reciente. Usa Validar selección cuando necesites revisar el artículo seleccionado.",
+        "text": "Estado de validación: sin operación reciente. Abre un artículo desde las acciones de fila para validarlo o publicarlo con contexto claro.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       },
       "condition": "not:var,remoteStatus.contentHub.content_hub_validate_article.state"
@@ -573,8 +573,8 @@
           "latestRevisionId",
           "path"
         ],
-        "emptyText": "No hay registros reales disponibles desde content-hub para este filtro.",
-        "loadingText": "Estamos cargando artículos del content-hub. Si es la primera consulta del día puede tardar unos segundos.",
+        "emptyText": "No hay registros reales disponibles desde gestor de contenido para este filtro.",
+        "loadingText": "Estamos cargando artículos del gestor de contenido. Si es la primera consulta del día puede tardar unos segundos.",
         "columns": [
           {
             "id": "title",
@@ -649,35 +649,36 @@
           }
         ],
         "pagination": {
-          "enabled": false
+          "enabled": false,
+          "hideWhenSinglePage": true
         },
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-18px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_10ED",
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
         "stateClasses": "ank-p-18px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-lineHeight-1_55 ank-border-1px__solid__textColorOPA__0_14",
-        "actionButtonClasses": "ank-width-52px ank-height-52px ank-minWidth-52px ank-minHeight-52px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-8px ank-mb-8px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
+        "actionButtonClasses": "ank-width-54px ank-height-54px ank-minWidth-54px ank-minHeight-54px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-8px ank-mb-8px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
         "actionButtonStyles": {
           "alignItems": "center",
           "display": "inline-flex",
-          "height": "52px",
+          "height": "54px",
           "justifyContent": "center",
           "marginBottom": "8px",
           "marginRight": "8px",
-          "minHeight": "52px",
-          "minWidth": "52px",
+          "minHeight": "54px",
+          "minWidth": "54px",
           "padding": "0",
           "textDecoration": "none",
-          "width": "52px"
+          "width": "54px"
         },
-        "description": "Datos protegidos del hub. Usa filtros arriba para pedir otra vista al BFF.",
+        "description": "Datos protegidos del hub. Usa los filtros superiores para pedir otra vista al servicio seguro del sitio.",
         "descriptionClasses": "ank-mt-4px ank-mb-10px ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700",
         "tableWrapperClasses": "ank-width-100per ank-overflow-auto ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_14",
         "tableClasses": "ank-width-100per ank-bg-bgColor ank-color-textColor",
         "headerCellClasses": "ank-fontWeight-900 ank-color-titleColor ank-bg-secondaryBgColor ank-whiteSpace-nowrap",
         "rowClasses": "ank-bg-bgColor",
-        "actionCellClasses": "ank-whiteSpace-normal ank-minWidth-320px ank-textAlign-center",
+        "actionCellClasses": "ank-whiteSpace-normal ank-minWidth-330px ank-textAlign-center",
         "actionColumnLabel": "Acciones",
         "actionLabelMode": "tooltip",
-        "actionIconClasses": "ank-width-20px ank-height-20px ank-display-inline-flex ank-flexShrink-0"
+        "actionIconClasses": "ank-width-16px ank-height-16px ank-display-inline-flex ank-flexShrink-0"
       },
       "valueInstructions": "set:config.actionColumnLabel,i18n,adminBlogArticulos.actionsColumn;set:config.rowActions.0.label,i18n,adminBlogArticulos.edit;set:config.rowActions.1.label,i18n,adminBlogArticulos.preview;set:config.rowActions.2.label,i18n,adminBlogArticulos.seo;set:config.rowActions.3.label,i18n,adminBlogArticulos.versions;set:config.rowActions.4.label,i18n,adminBlogArticulos.schedule;set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
     },
@@ -789,8 +790,7 @@
         "tag": "div",
         "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center ank-justifyContent-spaceBetween",
         "components": [
-          "adminBlogArticulosNewLink",
-          "adminBlogArticulosValidateButton"
+          "adminBlogArticulosNewLink"
         ]
       }
     }

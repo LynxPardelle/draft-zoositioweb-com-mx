@@ -470,7 +470,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se muestran tokens, sesiones Cognito ni secretos. Las acciones viajan por BFF same-origin con cookie HttpOnly, CSRF, tenant y ambiente.",
+        "text": "No se muestran tokens, sesiones Cognito ni secretos. Las acciones viajan por servicio seguro del sitio same-origin con cookie HttpOnly, protección contra envíos falsos, tenant y ambiente.",
         "classes": "ank-m-0 ank-maxWidth-1040px ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor ank-textAlign-center"
       }
     }

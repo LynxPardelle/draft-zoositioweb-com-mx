@@ -214,8 +214,6 @@
           "adminBlogMvpStatusTitle",
           "adminBlogMvpStatusCopy",
           "adminBlogMvpStatusGrid",
-          "adminBlogValidateButton",
-          "adminBlogPublishButton",
           "adminBlogActionStatus"
         ]
       }
@@ -234,7 +232,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Los datos se leen desde content-hub con sesión y CSRF. Si el BFF responde vacío, la tabla muestra vacío real, no filas de demostración.",
+        "text": "Esta pantalla lee información real del gestor seguro de contenido. La sesión, el permiso de administrador y la protección contra envíos falsos se verifican antes de mostrar o cambiar datos.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
@@ -259,7 +257,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículos: content_hub_articles",
+        "text": "Artículos: lista protegida del hub zoosite-main.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
@@ -268,7 +266,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Taxonomía: categorías y tags desde content-hub",
+        "text": "Categorías y tags: se comparten dentro de este hub y pueden ocultarse o renombrarse por draft.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
@@ -277,7 +275,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "SEO público: runtime.contentHubs.publicArticles/publicTaxonomy",
+        "text": "Publicación SEO: los artículos aprobados alimentan el blog público del sitio.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
@@ -456,8 +454,8 @@
           "latestRevisionId",
           "path"
         ],
-        "emptyText": "No hay registros reales disponibles desde content-hub para este filtro.",
-        "loadingText": "Cargando datos de content-hub...",
+        "emptyText": "No hay registros reales disponibles desde gestor de contenido para este filtro.",
+        "loadingText": "Cargando datos de gestor de contenido...",
         "columns": [
           {
             "id": "title",
@@ -535,32 +533,35 @@
           "enabled": true,
           "pageSize": 10,
           "pageSizeOptions": [
+            3,
+            5,
             10,
             20,
             50
           ],
-          "showFirstLastButtons": true
+          "showFirstLastButtons": true,
+          "hideWhenSinglePage": true
         },
         "classes": "ank-width-100per",
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
         "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
-        "actionButtonClasses": "ank-width-52px ank-height-52px ank-minWidth-52px ank-minHeight-52px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-8px ank-mb-8px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
+        "actionButtonClasses": "ank-width-54px ank-height-54px ank-minWidth-54px ank-minHeight-54px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-8px ank-mb-8px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
         "actionButtonStyles": {
           "alignItems": "center",
           "display": "inline-flex",
-          "height": "52px",
+          "height": "54px",
           "justifyContent": "center",
           "marginBottom": "8px",
           "marginRight": "8px",
-          "minHeight": "52px",
-          "minWidth": "52px",
+          "minHeight": "54px",
+          "minWidth": "54px",
           "padding": "0",
           "textDecoration": "none",
-          "width": "52px"
+          "width": "54px"
         },
         "actionLabelMode": "tooltip",
-        "actionIconClasses": "ank-width-20px ank-height-20px ank-display-inline-flex ank-flexShrink-0",
-        "actionCellClasses": "ank-whiteSpace-normal ank-minWidth-320px ank-textAlign-center",
+        "actionIconClasses": "ank-width-16px ank-height-16px ank-display-inline-flex ank-flexShrink-0",
+        "actionCellClasses": "ank-whiteSpace-normal ank-minWidth-330px ank-textAlign-center",
         "actionColumnLabel": "Acciones"
       },
       "valueInstructions": "set:config.actionColumnLabel,i18n,adminBlogArticulos.actionsColumn;set:config.rowActions.0.label,i18n,adminBlogArticulos.edit;set:config.rowActions.1.label,i18n,adminBlogArticulos.preview;set:config.rowActions.2.label,i18n,adminBlogArticulos.seo;set:config.rowActions.3.label,i18n,adminBlogArticulos.versions;set:config.rowActions.4.label,i18n,adminBlogArticulos.schedule;set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
@@ -570,7 +571,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Estado de operaciones: sin acción reciente. Selecciona un artículo desde la lista o usa las acciones de fila para abrir edición, preview, SEO, versiones o programación.",
+        "text": "Usa las acciones de cada fila para editar, previsualizar, revisar SEO, ver versiones o programar un artículo. La publicación directa se hace desde las vistas del artículo para evitar operar sobre una selección ambigua.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       },
       "condition": "not:var,remoteStatus.contentHub.content_hub_validate_article.state;not:var,remoteStatus.contentHub.content_hub_publish_article.state"
