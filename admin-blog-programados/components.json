@@ -648,25 +648,25 @@
             "id": "edit",
             "label": "Editar",
             "icon": "edit",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/editor?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/editor"
           },
           {
             "id": "preview",
             "label": "Preview",
             "icon": "eye",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/preview?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/preview"
           },
           {
             "id": "seo",
             "label": "SEO",
             "icon": "search",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/seo?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/seo"
           },
           {
             "id": "versions",
             "label": "Versiones",
             "icon": "history",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/versiones?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/versiones"
           },
           {
             "id": "schedule",

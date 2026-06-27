@@ -621,25 +621,25 @@
             "id": "edit",
             "label": "Editar",
             "icon": "edit",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/editor?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/editor"
           },
           {
             "id": "preview",
             "label": "Preview",
             "icon": "eye",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/preview?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/preview"
           },
           {
             "id": "seo",
             "label": "SEO",
             "icon": "search",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/seo?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/seo"
           },
           {
             "id": "versions",
             "label": "Versiones",
             "icon": "history",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/versiones?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/articulos/{articleId}/versiones"
           },
           {
             "id": "schedule",
@@ -654,7 +654,7 @@
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-18px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_10ED",
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
         "stateClasses": "ank-p-18px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-lineHeight-1_55 ank-border-1px__solid__textColorOPA__0_14",
-        "actionButtonClasses": "ank-width-48px ank-height-48px ank-minWidth-48px ank-minHeight-48px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-8px ank-mb-8px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
+        "actionButtonClasses": "ank-width-52px ank-height-52px ank-minWidth-52px ank-minHeight-52px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-8px ank-mb-8px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
         "description": "Datos protegidos del hub. Usa filtros arriba para pedir otra vista al BFF.",
         "descriptionClasses": "ank-mt-4px ank-mb-10px ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700",
         "tableWrapperClasses": "ank-width-100per ank-overflow-auto ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_14",
@@ -664,7 +664,7 @@
         "actionCellClasses": "ank-whiteSpace-normal ank-minWidth-320px ank-textAlign-center",
         "actionColumnLabel": "Acciones",
         "actionLabelMode": "tooltip",
-        "actionIconClasses": "ank-width-18px ank-height-18px ank-display-inline-flex ank-flexShrink-0"
+        "actionIconClasses": "ank-width-20px ank-height-20px ank-display-inline-flex ank-flexShrink-0"
       },
       "valueInstructions": "set:config.actionColumnLabel,i18n,adminBlogArticulos.actionsColumn;set:config.rowActions.0.label,i18n,adminBlogArticulos.edit;set:config.rowActions.1.label,i18n,adminBlogArticulos.preview;set:config.rowActions.2.label,i18n,adminBlogArticulos.seo;set:config.rowActions.3.label,i18n,adminBlogArticulos.versions;set:config.rowActions.4.label,i18n,adminBlogArticulos.schedule;set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
     },
