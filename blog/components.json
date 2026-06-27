@@ -57,7 +57,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículos publicados desde runtime.contentHubs.publicArticles con categorías y tags seguros para descubrimiento SEO.",
+        "text": "Guías y recursos para crear sitios, contenido y herramientas digitales con mejor experiencia, medición y posicionamiento en buscadores.",
         "classes": "ank-m-0 ank-fontSize-17px ank-lineHeight-1_6 ank-color-secondaryTextColor ank-maxWidth-820px"
       }
     },
@@ -331,7 +331,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Si no aparecen artículos, el índice público runtime.contentHubs.publicArticles aún no tiene publicaciones para este filtro.",
+        "text": "Aún no hay artículos publicados para este filtro. Prueba otra búsqueda o vuelve más tarde para revisar nuevas guías.",
         "classes": "ank-width-100per ank-maxWidth-1040px ank-m-0 ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-800"
       },
       "condition": "all:varLenEq,contentHub.publicArticles.items,0"

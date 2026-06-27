@@ -57,7 +57,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Las categorías y tags públicos vienen de runtime.contentHubs.publicTaxonomy. Multi-tag o filtros no promovidos deben mantenerse noindex cuando el backend lo indique.",
+        "text": "Las categorías y tags públicos vienen de taxonomía pública. Multi-tag o filtros no promovidos deben mantenerse noindex cuando el backend lo indique.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
       }
     },
