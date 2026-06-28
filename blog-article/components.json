@@ -44,6 +44,7 @@
         "text": "Web / SEO / Builder",
         "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-900 ank-textTransform-uppercase ank-color-accentColor"
       },
+      "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.categorySlug,Web",
       "eventInstructions": "trackEvent:blog_view,blog,zoosite-blog-builder-view,hubId,zoosite-main,articleId,art_20260620_blog_builder,path,/blog/web/blog-builder-seo"
     },
     {
@@ -53,7 +54,8 @@
         "tag": "h1",
         "text": "Blog builder visual con SEO desde el inicio",
         "classes": "ank-m-0 ank-fontSize-42px ank-lineHeight-1_08 ank-fontWeight-900 ank-color-titleColor"
-      }
+      },
+      "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.title,Blog builder visual con SEO desde el inicio"
     },
     {
       "id": "blogArticleSummary",
@@ -62,7 +64,8 @@
         "tag": "p",
         "text": "El content hub organiza artículos como paquetes de componentes genéricos con SEO, taxonomía, programación y analítica desde la primera versión.",
         "classes": "ank-m-0 ank-fontSize-18px ank-lineHeight-1_6 ank-color-secondaryTextColor"
-      }
+      },
+      "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.summary,El content hub organiza artículos como paquetes de componentes genéricos con SEO y analítica."
     },
     {
       "id": "blogArticleCover",
@@ -86,8 +89,6 @@
         "classes": "ank-width-100per ank-maxWidth-920px ank-display-flex ank-flexWrap-wrap ank-gap-10px",
         "components": [
           "blogArticleCategoryLink",
-          "blogArticleTagSeo",
-          "blogArticleTagBuilder",
           "blogArticlePublished"
         ]
       }
@@ -99,7 +100,8 @@
         "href": "/blog/web",
         "text": "Categoría: Web",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
-      }
+      },
+      "valueInstructions": "set:config.categorySlug,varOr,contentHub.currentArticle.categorySlug,web;set:config.href,concat,/blog/,eval:config.categorySlug;set:config.text,concat,Categoría: ,eval:config.categorySlug"
     },
     {
       "id": "blogArticleTagSeo",
@@ -126,7 +128,8 @@
         "tag": "p",
         "text": "Publicado por Equipo zoositioweb",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700 ank-display-flex ank-alignItems-center"
-      }
+      },
+      "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.publishedAt,Publicado por Equipo zoositioweb"
     },
     {
       "id": "blogArticleIntro",
@@ -135,7 +138,8 @@
         "tag": "p",
         "text": "Este artículo muestra el flujo MVP: crear paquete, editar contenido, validar SEO, preparar medios, revisar versiones y publicar un bundle público legible por rutas SEO.",
         "classes": "ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7"
-      }
+      },
+      "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.summary,Este artículo muestra el flujo de publicación del content hub para rutas SEO."
     },
     {
       "id": "blogArticleBody",
@@ -144,7 +148,8 @@
         "tag": "p",
         "text": "La estructura mantiene el contenido pesado en archivos tipo draft y usa metadatos para slugs, taxonomía, programación, revisión, moderación y relaciones entre hubs autorizados. El navegador sólo recibe el índice público y el bundle publicado.",
         "classes": "ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7"
-      }
+      },
+      "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.summary,El navegador recibe sólo el índice público seguro y los datos necesarios para mostrar este artículo."
     },
     {
       "id": "blogArticleDiscovery",
@@ -173,7 +178,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "El artículo se enlaza desde /blog, /blog/web y tags públicos. El runtime todavía necesita el puente de índice público para que nuevos publishes aparezcan automáticamente.",
+        "text": "El artículo se enlaza desde el índice público del blog y se actualiza desde el content hub cuando se publica una versión pública.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
