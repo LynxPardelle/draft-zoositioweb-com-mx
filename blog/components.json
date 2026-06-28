@@ -165,34 +165,31 @@
     {
       "id": "blogTaxonomyGrid",
       "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "contentHub.categories.items",
+        "templateId": "blogTaxonomyLinkTemplate",
+        "idPrefix": "blogCategory",
+        "bindings": [
+          {
+            "to": "config.href",
+            "sources": [
+              "path"
+            ]
+          },
+          {
+            "to": "config.text",
+            "sources": [
+              "label",
+              "slug"
+            ]
+          }
+        ]
+      },
       "config": {
         "tag": "div",
         "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-8px",
-        "loopConfig": {
-          "source": "var",
-          "path": "contentHub.categories.items",
-          "templateId": "blogTaxonomyLinkTemplate",
-          "idPrefix": "blogCategory",
-          "bindings": [
-            {
-              "to": "config.href",
-              "sources": [
-                "path"
-              ]
-            },
-            {
-              "to": "config.text",
-              "sources": [
-                "label",
-                "slug"
-              ]
-            }
-          ]
-        },
-        "config": {
-          "tag": "div",
-          "components": []
-        }
+        "components": []
       }
     },
     {
@@ -207,38 +204,35 @@
     {
       "id": "blogTagGrid",
       "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "contentHub.tags.items",
+        "templateId": "blogTagLinkTemplate",
+        "idPrefix": "blogTag",
+        "bindings": [
+          {
+            "to": "config.href",
+            "sources": [
+              "path",
+              {
+                "from": "slug",
+                "prefix": "/blog/tag/"
+              }
+            ]
+          },
+          {
+            "to": "config.text",
+            "sources": [
+              "label",
+              "slug"
+            ]
+          }
+        ]
+      },
       "config": {
         "tag": "div",
         "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-8px",
-        "loopConfig": {
-          "source": "var",
-          "path": "contentHub.tags.items",
-          "templateId": "blogTagLinkTemplate",
-          "idPrefix": "blogTag",
-          "bindings": [
-            {
-              "to": "config.href",
-              "sources": [
-                "path",
-                {
-                  "from": "slug",
-                  "prefix": "/blog/tag/"
-                }
-              ]
-            },
-            {
-              "to": "config.text",
-              "sources": [
-                "label",
-                "slug"
-              ]
-            }
-          ]
-        },
-        "config": {
-          "tag": "div",
-          "components": []
-        }
+        "components": []
       }
     },
     {
@@ -253,61 +247,58 @@
     {
       "id": "blogArticleList",
       "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "contentHub.publicArticles.items",
+        "templateId": "blogArticleCardTemplate",
+        "idPrefix": "blogArticleCard",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "summary"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "path"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              {
+                "from": "readLabel",
+                "fallback": "Leer artículo"
+              }
+            ]
+          },
+          {
+            "to": "config.linkEventInstructions",
+            "sources": [
+              {
+                "from": "articleId",
+                "prefix": "trackEvent:blog_cta_click,blog,blog-list-card,hubId,zoosite-main,articleId,",
+                "suffix": ",ctaId,card-read"
+              }
+            ]
+          }
+        ]
+      },
       "config": {
         "tag": "section",
         "classes": "ank-width-100per ank-maxWidth-1040px ank-display-grid ank-gap-16px",
         "styles": {
           "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 300px), 1fr))"
         },
-        "loopConfig": {
-          "source": "var",
-          "path": "contentHub.publicArticles.items",
-          "templateId": "blogArticleCardTemplate",
-          "idPrefix": "blogArticleCard",
-          "bindings": [
-            {
-              "to": "config.title",
-              "sources": [
-                "title"
-              ]
-            },
-            {
-              "to": "config.description",
-              "sources": [
-                "summary"
-              ]
-            },
-            {
-              "to": "config.href",
-              "sources": [
-                "path"
-              ]
-            },
-            {
-              "to": "config.linkLabel",
-              "sources": [
-                {
-                  "from": "readLabel",
-                  "fallback": "Leer artículo"
-                }
-              ]
-            },
-            {
-              "to": "config.linkEventInstructions",
-              "sources": [
-                {
-                  "from": "articleId",
-                  "prefix": "trackEvent:blog_cta_click,blog,blog-list-card,hubId,zoosite-main,articleId,",
-                  "suffix": ",ctaId,card-read"
-                }
-              ]
-            }
-          ]
-        },
-        "config": {
-          "tag": "section",
-          "components": []
-        }
+        "components": []
       }
     },
     {

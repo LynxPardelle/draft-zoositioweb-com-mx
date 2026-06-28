@@ -114,48 +114,45 @@
     {
       "id": "blogCategoryList",
       "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "contentHub.publicArticles.items",
+        "templateId": "blogCategoryArticleTemplate",
+        "idPrefix": "blogCategoryArticle",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "summary"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "path"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              {
+                "from": "readLabel",
+                "fallback": "Leer artículo"
+              }
+            ]
+          }
+        ]
+      },
       "config": {
         "tag": "section",
         "classes": "ank-width-100per ank-maxWidth-980px ank-display-grid ank-gap-16px",
-        "loopConfig": {
-          "source": "var",
-          "path": "contentHub.publicArticles.items",
-          "templateId": "blogCategoryArticleTemplate",
-          "idPrefix": "blogCategoryArticle",
-          "bindings": [
-            {
-              "to": "config.title",
-              "sources": [
-                "title"
-              ]
-            },
-            {
-              "to": "config.description",
-              "sources": [
-                "summary"
-              ]
-            },
-            {
-              "to": "config.href",
-              "sources": [
-                "path"
-              ]
-            },
-            {
-              "to": "config.linkLabel",
-              "sources": [
-                {
-                  "from": "readLabel",
-                  "fallback": "Leer artículo"
-                }
-              ]
-            }
-          ]
-        },
-        "config": {
-          "tag": "section",
-          "components": []
-        }
+        "components": []
       }
     },
     {
