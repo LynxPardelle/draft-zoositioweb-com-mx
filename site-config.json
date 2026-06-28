@@ -1278,8 +1278,8 @@
         },
         "input": {
           "articleId": {
-            "source": "queryParam",
-            "key": "articleId",
+            "source": "routeParam",
+            "key": "id",
             "transforms": [
               "trim"
             ]
@@ -1300,8 +1300,61 @@
         "target": "remote.contentHub.assets",
         "statusTarget": "remoteStatus.contentHub.assets",
         "pageIds": [
-          "admin-blog-medios",
           "admin-blog-articulo-editor"
+        ],
+        "mapper": {
+          "itemsPath": "items",
+          "fields": {
+            "id": {
+              "path": "assetId"
+            },
+            "name": {
+              "path": "name",
+              "fallback": "Activo sin nombre"
+            },
+            "kind": {
+              "path": "kind",
+              "fallback": "image"
+            },
+            "metadata": {
+              "path": "metadata",
+              "fallback": "Sin metadata"
+            },
+            "usageRefs": {
+              "path": "usageRefs",
+              "fallback": "Sin referencias"
+            },
+            "publicability": {
+              "path": "publicability",
+              "fallback": "Pendiente de validación"
+            }
+          }
+        },
+        "input": {
+          "articleId": {
+            "source": "routeParam",
+            "key": "id",
+            "transforms": [
+              "trim"
+            ]
+          }
+        },
+        "requiredInputKeys": [
+          "articleId"
+        ]
+      },
+      {
+        "id": "content_hub_media_assets",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_asset_list",
+        "contentHub": {
+          "read": "assetList",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.assets",
+        "statusTarget": "remoteStatus.contentHub.assets",
+        "pageIds": [
+          "admin-blog-medios"
         ],
         "mapper": {
           "itemsPath": "items",
@@ -1378,8 +1431,8 @@
         },
         "input": {
           "articleId": {
-            "source": "queryParam",
-            "key": "articleId",
+            "source": "routeParam",
+            "key": "id",
             "transforms": [
               "trim"
             ]
