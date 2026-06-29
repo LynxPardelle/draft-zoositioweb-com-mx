@@ -442,24 +442,28 @@
           "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
         },
         "helperText": "Selecciona una categoría existente. Puedes crear nuevas categorías desde la página Categorías.",
-        "options": [
-          {
-            "value": "web",
-            "label": "Web"
-          },
-          {
-            "value": "seo",
-            "label": "SEO"
-          },
-          {
-            "value": "builder",
-            "label": "Builder visual"
-          },
-          {
-            "value": "angora",
-            "label": "Angora CSS"
-          }
-        ]
+        "options": {
+          "source": "var",
+          "path": "remote.contentHub.categories.items",
+          "fallback": [
+            {
+              "value": "web",
+              "label": "Web"
+            },
+            {
+              "value": "seo",
+              "label": "SEO"
+            },
+            {
+              "value": "builder",
+              "label": "Builder visual"
+            },
+            {
+              "value": "angora",
+              "label": "Angora CSS"
+            }
+          ]
+        }
       },
       "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.category,"
     },
@@ -483,40 +487,28 @@
         "autocompleteMinLength": 1,
         "autocompleteMaxOptions": 10,
         "autocompleteMatchMode": "contains",
-        "autocompleteOptions": [
-          {
-            "value": "seo",
-            "label": "seo"
-          },
-          {
-            "value": "blog-builder",
-            "label": "blog-builder"
-          },
-          {
-            "value": "sitios-web",
-            "label": "sitios-web"
-          },
-          {
-            "value": "qa",
-            "label": "qa"
-          },
-          {
-            "value": "testing",
-            "label": "testing"
-          },
-          {
-            "value": "content-hub",
-            "label": "content-hub"
-          },
-          {
-            "value": "angora",
-            "label": "angora"
-          },
-          {
-            "value": "web",
-            "label": "web"
-          }
-        ]
+        "autocompleteOptions": {
+          "source": "var",
+          "path": "remote.contentHub.tags.items",
+          "fallback": [
+            {
+              "value": "seo",
+              "label": "seo"
+            },
+            {
+              "value": "blog-builder",
+              "label": "blog-builder"
+            },
+            {
+              "value": "sitios-web",
+              "label": "sitios-web"
+            },
+            {
+              "value": "content-hub",
+              "label": "content-hub"
+            }
+          ]
+        }
       },
       "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.tagsText,"
     },

@@ -361,9 +361,8 @@
       "config": {
         "fieldId": "articleCategory",
         "label": "Categoría",
-        "controlType": "text",
-        "placeholder": "web",
-        "helperText": "Slug de categoría.",
+        "controlType": "select",
+        "helperText": "Selecciona una categoría existente. Puedes crear nuevas categorías desde la página Categorías.",
         "required": true,
         "readOnly": false,
         "disabled": false,
@@ -371,7 +370,48 @@
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
-        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        },
+        "options": {
+          "source": "var",
+          "path": "remote.contentHub.categories.items",
+          "fallback": [
+            {
+              "value": "web",
+              "label": "Web"
+            },
+            {
+              "value": "seo",
+              "label": "SEO"
+            },
+            {
+              "value": "builder",
+              "label": "Builder visual"
+            },
+            {
+              "value": "angora",
+              "label": "Angora CSS"
+            }
+          ]
+        },
         "validation": [
           {
             "type": "required",
@@ -397,6 +437,31 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "autocompleteMinLength": 1,
+        "autocompleteMaxOptions": 10,
+        "autocompleteMatchMode": "contains",
+        "autocompleteOptions": {
+          "source": "var",
+          "path": "remote.contentHub.tags.items",
+          "fallback": [
+            {
+              "value": "seo",
+              "label": "seo"
+            },
+            {
+              "value": "blog-builder",
+              "label": "blog-builder"
+            },
+            {
+              "value": "sitios-web",
+              "label": "sitios-web"
+            },
+            {
+              "value": "content-hub",
+              "label": "content-hub"
+            }
+          ]
+        },
         "validation": []
       }
     },

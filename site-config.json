@@ -1229,6 +1229,32 @@
         ]
       },
       {
+        "id": "content_hub_schedules",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_schedule_list",
+        "contentHub": {
+          "read": "scheduleList",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.schedules",
+        "statusTarget": "remoteStatus.contentHub.schedules",
+        "pageIds": [
+          "admin-blog-programados"
+        ],
+        "mapper": {
+          "itemsPath": "items"
+        },
+        "input": {
+          "articleId": {
+            "source": "queryParam",
+            "key": "articleId",
+            "transforms": [
+              "trim"
+            ]
+          }
+        }
+      },
+      {
         "id": "content_hub_taxonomy",
         "kind": "content-hub",
         "proxySourceId": "content_hub_taxonomy_list",
@@ -1256,6 +1282,93 @@
               "trim",
               "lowercase"
             ]
+          }
+        }
+      },
+      {
+        "id": "content_hub_categories",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_taxonomy_list",
+        "contentHub": {
+          "read": "taxonomyList",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.categories",
+        "statusTarget": "remoteStatus.contentHub.categories",
+        "pageIds": [
+          "admin-blog-articulos-nuevo",
+          "admin-blog-articulo-editor",
+          "admin-blog-categorias"
+        ],
+        "mapper": {
+          "itemsPath": "items",
+          "fields": {
+            "value": {
+              "path": "slug"
+            },
+            "label": {
+              "path": "label",
+              "transform": "titleCase",
+              "fallback": "Sin nombre"
+            },
+            "taxonomyId": {
+              "path": "taxonomyId"
+            },
+            "slug": {
+              "path": "slug"
+            },
+            "kind": {
+              "path": "kind"
+            }
+          }
+        },
+        "input": {
+          "taxonomyKind": {
+            "source": "literal",
+            "value": "category"
+          }
+        }
+      },
+      {
+        "id": "content_hub_tags",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_taxonomy_list",
+        "contentHub": {
+          "read": "taxonomyList",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.tags",
+        "statusTarget": "remoteStatus.contentHub.tags",
+        "pageIds": [
+          "admin-blog-articulos-nuevo",
+          "admin-blog-articulo-editor",
+          "admin-blog-tags"
+        ],
+        "mapper": {
+          "itemsPath": "items",
+          "fields": {
+            "value": {
+              "path": "slug"
+            },
+            "label": {
+              "path": "slug",
+              "fallback": "Sin tag"
+            },
+            "taxonomyId": {
+              "path": "taxonomyId"
+            },
+            "slug": {
+              "path": "slug"
+            },
+            "kind": {
+              "path": "kind"
+            }
+          }
+        },
+        "input": {
+          "taxonomyKind": {
+            "source": "literal",
+            "value": "tag"
           }
         }
       },
@@ -1658,6 +1771,21 @@
           "publishMessage"
         ],
         "statusTarget": "remoteStatus.contentHub.content_hub_schedule_article"
+      },
+      {
+        "id": "content_hub_cancel_schedule",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_cancel_schedule",
+        "contentHub": {
+          "action": "cancelSchedule",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "scheduleId"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_cancel_schedule"
       },
       {
         "id": "content_hub_upsert_taxonomy",
