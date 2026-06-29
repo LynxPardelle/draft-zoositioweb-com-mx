@@ -97,7 +97,9 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher"
         ]
       }
     },
@@ -109,7 +111,9 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher"
         ]
       }
     },
@@ -121,7 +125,9 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher"
         ]
       }
     },
@@ -133,7 +139,9 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher"
         ]
       }
     },
@@ -145,7 +153,9 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher"
         ]
       }
     },
@@ -157,7 +167,9 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher"
         ]
       }
     },
@@ -169,7 +181,9 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher"
         ]
       }
     },
@@ -193,7 +207,10 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-media",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher"
         ]
       }
     },
@@ -217,7 +234,9 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher"
         ]
       }
     },
@@ -229,7 +248,9 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher"
         ]
       }
     },
