@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Crea el paquete inicial con metadata lista para SEO. Después abre el artículo desde la tabla para trabajar editor, preview, SEO y versiones con articleId en query string.",
+        "text": "Crea el paquete inicial con metadata lista para SEO. Después vuelve a la lista para abrir el editor, preview, SEO, versiones o programación del artículo seleccionado.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -852,7 +852,7 @@
           "newArticleCreateArticleId",
           "newArticleCreateRevisionId",
           "newArticleCreateListLink",
-          "newArticleCreateGapNote"
+          "newArticleCreateEditorHint"
         ]
       }
     },
@@ -919,11 +919,11 @@
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success"
     },
     {
-      "id": "newArticleCreateGapNote",
+      "id": "newArticleCreateEditorHint",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Gap de app: la configuración puede mostrar articleId/revisionId devueltos, pero todavía no puede componer automáticamente enlaces admin con variables de remoteStatus después de la acción.",
+        "text": "Siguiente paso: vuelve a la lista, busca el artículo creado y abre la acción editorial que necesites.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success"

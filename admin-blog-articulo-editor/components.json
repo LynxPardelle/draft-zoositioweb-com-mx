@@ -279,7 +279,7 @@
         "text": "articleId pendiente",
         "classes": "ank-display-block ank-width-100per ank-overflow-wrap-anywhere ank-fontFamily-monospace ank-fontSize-13px ank-fontWeight-900 ank-color-titleColor"
       },
-      "valueInstructions": "set:config.text,routeParamOr,id,articleId pendiente"
+      "valueInstructions": "set:config.text,routeParamOr,id,Abre el editor desde la lista de artículos."
     },
     {
       "id": "editorArticleIdReadoutHelp",
@@ -739,12 +739,22 @@
         "tag": "div",
         "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
+          "editorSaveIdle",
           "editorSaveLoading",
           "editorSaveError",
           "editorSaveSuccess",
           "editorSaveArticleId",
           "editorSaveRevisionId"
         ]
+      }
+    },
+    {
+      "id": "editorSaveIdle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Estado de edición: sin guardado reciente. Revisa el identificador del artículo antes de guardar cambios.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       }
     },
     {
@@ -762,11 +772,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo completar la operación.",
+        "text": "No pudimos guardar el artículo. Recarga la página desde la lista y verifica tu sesión y permisos antes de intentarlo de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_update_package.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_update_package.error,No se pudo completar la operación."
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_update_package.state,error"
     },
     {
       "id": "editorSaveSuccess",
@@ -889,11 +898,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo completar la operación.",
+        "text": "No pudimos registrar el medio del artículo. Recarga la página desde la lista y verifica tu sesión y permisos antes de intentarlo de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.error,No se pudo completar la operación."
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error"
     },
     {
       "id": "editorUploadSuccess",

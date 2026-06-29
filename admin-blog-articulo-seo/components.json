@@ -223,6 +223,7 @@
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
           "seoArticleId",
+          "seoArticleIdGuidance",
           "seoGrid",
           "seoStructuredData",
           "seoValidationActions",
@@ -249,6 +250,15 @@
         "validation": []
       },
       "valueInstructions": "set:config.value,routeParamOr,id,"
+    },
+    {
+      "id": "seoArticleIdGuidance",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "El SEO se aplica al artículo seleccionado en la ruta. Si el identificador está vacío, vuelve a la lista de artículos y abre la acción SEO desde la fila correcta.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-secondaryTextColor ank-fontSize-13px ank-lineHeight-1_55 ank-fontWeight-800"
+      }
     },
     {
       "id": "seoGrid",
@@ -511,6 +521,7 @@
         "tag": "div",
         "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
+          "seoActionIdle",
           "seoValidateLoading",
           "seoValidateError",
           "seoValidateSuccess",
@@ -522,6 +533,15 @@
           "seoPublishArticleId",
           "seoPublishRevisionId"
         ]
+      }
+    },
+    {
+      "id": "seoActionIdle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Estado SEO: sin validación ni publicación reciente. Valida SEO antes de publicar el artículo.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       }
     },
     {
@@ -539,11 +559,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo completar la operación.",
+        "text": "No pudimos validar el SEO del artículo. Recarga la página desde la lista y verifica tu sesión y permisos antes de intentarlo de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.error,No se pudo completar la operación."
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error"
     },
     {
       "id": "seoValidateSuccess",
@@ -592,11 +611,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo completar la operación.",
+        "text": "No pudimos publicar el artículo con este SEO. Recarga la página desde la lista y verifica tu sesión y permisos antes de intentarlo de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.error,No se pudo completar la operación."
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error"
     },
     {
       "id": "seoPublishSuccess",

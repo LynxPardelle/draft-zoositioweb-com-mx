@@ -223,6 +223,7 @@
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
           "scheduledArticleId",
+          "scheduledArticleIdGuidance",
           "scheduledGrid",
           "scheduledActions",
           "scheduledStatus",
@@ -246,9 +247,23 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-fontSize-13px ank-fontWeight-900 ank-fontFamily-monospace",
-        "validation": []
+        "validation": [
+          {
+            "type": "required",
+            "message": "Abre Programar desde la lista de artículos para conservar el identificador del artículo."
+          }
+        ]
       },
       "valueInstructions": "set:config.value,queryParamOr,articleId,"
+    },
+    {
+      "id": "scheduledArticleIdGuidance",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "La programación usa el articleId de la URL. Si está vacío, vuelve a la lista de artículos y abre Programar desde la fila correcta.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-secondaryTextColor ank-fontSize-13px ank-lineHeight-1_55 ank-fontWeight-800"
+      }
     },
     {
       "id": "scheduledGrid",
@@ -467,6 +482,7 @@
         "tag": "div",
         "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
+          "scheduledActionIdle",
           "scheduledScheduleLoading",
           "scheduledScheduleError",
           "scheduledScheduleSuccess",
@@ -478,6 +494,15 @@
           "scheduledPublishArticleId",
           "scheduledPublishRevisionId"
         ]
+      }
+    },
+    {
+      "id": "scheduledActionIdle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Estado de programación: sin acción reciente. Confirma el artículo seleccionado, fecha, zona horaria y acción antes de guardar.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       }
     },
     {
@@ -495,11 +520,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo completar la operación.",
+        "text": "No pudimos guardar la programación del artículo. Recarga la página desde la lista y verifica que el articleId siga presente antes de intentarlo de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_schedule_article.error,No se pudo completar la operación."
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,error"
     },
     {
       "id": "scheduledScheduleSuccess",
@@ -548,11 +572,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo completar la operación.",
+        "text": "No pudimos publicar el artículo ahora. Recarga la página desde la lista y verifica tu sesión y permisos antes de intentarlo de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.error,No se pudo completar la operación."
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error"
     },
     {
       "id": "scheduledPublishSuccess",
