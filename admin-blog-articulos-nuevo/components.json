@@ -871,11 +871,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo completar la operación.",
+        "text": "No pudimos crear el paquete. Vuelve a cargar esta página e inténtalo de nuevo; si el problema continúa, el servicio de contenido de testing puede estar usando una versión desactualizada.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_create_article.error,No se pudo completar la operación."
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,error"
     },
     {
       "id": "newArticleCreateSuccess",
