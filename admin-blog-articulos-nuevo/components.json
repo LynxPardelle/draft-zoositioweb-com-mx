@@ -881,7 +881,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo creado. Usa el articleId devuelto para abrirlo desde la lista.",
+        "text": "Artículo creado. Abre el artículo desde la lista para continuar.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success"
@@ -891,22 +891,22 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "articleId pendiente",
+        "text": "Artículo pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,La respuesta no incluyó articleId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,La respuesta no incluyó el artículo."
     },
     {
       "id": "newArticleCreateRevisionId",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "revisionId pendiente",
+        "text": "Versión pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_create_article.revisionId,La respuesta no incluyó revisionId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_create_article.revisionId,La respuesta no incluyó la versión."
     },
     {
       "id": "newArticleCreateListLink",

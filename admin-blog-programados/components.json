@@ -261,7 +261,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "La programación usa el articleId de la URL. Si está vacío, vuelve a la lista de artículos y abre Programar desde la fila correcta.",
+        "text": "La programación usa el artículo y la versión que vienen desde la fila seleccionada. Si alguno falta, vuelve a la lista de artículos y abre Programar desde la fila correcta.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-secondaryTextColor ank-fontSize-13px ank-lineHeight-1_55 ank-fontWeight-800"
       }
     },
@@ -289,18 +289,25 @@
       "type": "input",
       "config": {
         "fieldId": "revisionId",
-        "label": "revisionId",
+        "label": "Versión a programar",
         "controlType": "text",
-        "required": false,
-        "readOnly": false,
+        "helperText": "Solo lectura. Se toma de la fila del artículo para programar una versión concreta.",
+        "required": true,
+        "readOnly": true,
         "disabled": false,
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
-        "validation": []
-      }
+        "validation": [
+          {
+            "type": "required",
+            "message": "Abre Programar desde la lista para conservar la versión del artículo."
+          }
+        ]
+      },
+      "valueInstructions": "set:config.value,queryParamOr,revisionId,"
     },
     {
       "id": "scheduledPublishAt",
@@ -348,9 +355,10 @@
       "type": "input",
       "config": {
         "fieldId": "timezone",
-        "label": "timezone",
+        "label": "Zona horaria",
         "controlType": "text",
         "value": "America/Mexico_City",
+        "helperText": "Usa una zona horaria IANA, por ejemplo America/Mexico_City.",
         "required": false,
         "readOnly": false,
         "disabled": false,
@@ -367,24 +375,21 @@
       "type": "input",
       "config": {
         "fieldId": "scheduleAction",
-        "label": "scheduleAction",
+        "label": "Acción de programación",
         "controlType": "select",
-        "value": "schedule",
+        "value": "publish",
+        "helperText": "Elige si vas a programar una publicación o una retirada del blog público.",
         "required": false,
         "readOnly": false,
         "disabled": false,
         "options": [
           {
-            "value": "schedule",
-            "label": "Programar"
+            "value": "publish",
+            "label": "Publicar en fecha"
           },
           {
-            "value": "reschedule",
-            "label": "Reprogramar"
-          },
-          {
-            "value": "cancelSchedule",
-            "label": "Cancelar"
+            "value": "unpublish",
+            "label": "Retirar en fecha"
           }
         ],
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
@@ -510,7 +515,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Cargando...",
+        "text": "Guardando programación del artículo...",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,loading"
@@ -520,7 +525,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No pudimos guardar la programación del artículo. Recarga la página desde la lista y verifica que el articleId siga presente antes de intentarlo de nuevo.",
+        "text": "No pudimos guardar la programación del artículo. Recarga la página desde la lista y verifica que el artículo siga presente antes de intentarlo de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,error"
@@ -540,29 +545,29 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "articleId pendiente",
+        "text": "Artículo pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_schedule_article.articleId,La respuesta no incluyó articleId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_schedule_article.articleId,La respuesta no incluyó el artículo."
     },
     {
       "id": "scheduledScheduleRevisionId",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "revisionId pendiente",
+        "text": "Versión pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_schedule_article.revisionId,La respuesta no incluyó revisionId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_schedule_article.revisionId,La respuesta no incluyó la versión."
     },
     {
       "id": "scheduledPublishLoading",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Cargando...",
+        "text": "Publicando el artículo ahora...",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading"
@@ -592,22 +597,22 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "articleId pendiente",
+        "text": "Artículo pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.articleId,La respuesta no incluyó articleId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.articleId,La respuesta no incluyó el artículo."
     },
     {
       "id": "scheduledPublishRevisionId",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "revisionId pendiente",
+        "text": "Versión pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.revisionId,La respuesta no incluyó revisionId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.revisionId,La respuesta no incluyó la versión."
     },
     {
       "id": "scheduledTable",
@@ -699,7 +704,7 @@
             "id": "schedule",
             "label": "Programar",
             "icon": "calendar",
-            "hrefTemplate": "/admin/blog/programados?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/programados?articleId={articleId}&revisionId={latestRevisionId}"
           }
         ],
         "pagination": {
