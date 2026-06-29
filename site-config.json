@@ -195,7 +195,8 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-moderator"
         ]
       }
     },
@@ -222,7 +223,8 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-analyst"
         ]
       }
     },
