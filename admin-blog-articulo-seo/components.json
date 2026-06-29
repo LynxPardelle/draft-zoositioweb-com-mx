@@ -480,7 +480,11 @@
         "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
         "components": [
           "seoValidateButton",
-          "seoPublishButton"
+          "seoSubmitReviewButton",
+          "seoApproveButton",
+          "seoPublishButton",
+          "seoUnpublishButton",
+          "seoArchiveButton"
         ]
       }
     },
@@ -500,6 +504,36 @@
       "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,loading\",true,false"
     },
     {
+      "id": "seoSubmitReviewButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Enviar a revisión",
+        "loadingLabel": "Enviando...",
+        "disabledWhenInvalidScope": false,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_submit_review_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,loading\",true,false"
+    },
+    {
+      "id": "seoApproveButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Aprobar",
+        "loadingLabel": "Aprobando...",
+        "disabledWhenInvalidScope": false,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_approve_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,loading\",true,false"
+    },
+    {
       "id": "seoPublishButton",
       "type": "button",
       "config": {
@@ -515,6 +549,36 @@
       "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading\",true,false"
     },
     {
+      "id": "seoUnpublishButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__warningColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Despublicar",
+        "loadingLabel": "Despublicando...",
+        "disabledWhenInvalidScope": false,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_unpublish_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,loading\",true,false"
+    },
+    {
+      "id": "seoArchiveButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-errorColor ank-fontWeight-900 ank-border-1px__solid__errorColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Archivar",
+        "loadingLabel": "Archivando...",
+        "disabledWhenInvalidScope": false,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_archive_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,loading\",true,false"
+    },
+    {
       "id": "seoStatus",
       "type": "container",
       "config": {
@@ -527,11 +591,23 @@
           "seoValidateSuccess",
           "seoValidateArticleId",
           "seoValidateRevisionId",
+          "seoSubmitReviewLoading",
+          "seoSubmitReviewError",
+          "seoSubmitReviewSuccess",
+          "seoApproveLoading",
+          "seoApproveError",
+          "seoApproveSuccess",
           "seoPublishLoading",
           "seoPublishError",
           "seoPublishSuccess",
           "seoPublishArticleId",
-          "seoPublishRevisionId"
+          "seoPublishRevisionId",
+          "seoUnpublishLoading",
+          "seoUnpublishError",
+          "seoUnpublishSuccess",
+          "seoArchiveLoading",
+          "seoArchiveError",
+          "seoArchiveSuccess"
         ]
       }
     },
@@ -597,6 +673,66 @@
       "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.revisionId,La respuesta no incluyó revisionId."
     },
     {
+      "id": "seoSubmitReviewLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Enviando el artículo a revisión...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,loading"
+    },
+    {
+      "id": "seoSubmitReviewError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos enviar el artículo a revisión. Revisa que el artículo exista, que tu sesión siga activa y que tengas permisos editoriales.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,error"
+    },
+    {
+      "id": "seoSubmitReviewSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo enviado a revisión.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,success"
+    },
+    {
+      "id": "seoApproveLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Aprobando el artículo...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,loading"
+    },
+    {
+      "id": "seoApproveError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos aprobar el artículo. Revisa que tengas permisos de publicación y que el artículo exista.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,error"
+    },
+    {
+      "id": "seoApproveSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo aprobado para publicación.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,success"
+    },
+    {
       "id": "seoPublishLoading",
       "type": "text",
       "config": {
@@ -647,6 +783,66 @@
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
       "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.revisionId,La respuesta no incluyó revisionId."
+    },
+    {
+      "id": "seoUnpublishLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Retirando el artículo del blog público...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,loading"
+    },
+    {
+      "id": "seoUnpublishError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos despublicar el artículo. Revisa que tengas permisos de publicación y que el artículo exista.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,error"
+    },
+    {
+      "id": "seoUnpublishSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo retirado del blog público. El historial editorial se conserva.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,success"
+    },
+    {
+      "id": "seoArchiveLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Archivando el artículo...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,loading"
+    },
+    {
+      "id": "seoArchiveError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos archivar el artículo. Revisa permisos, sesión y que el artículo exista antes de intentarlo otra vez.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,error"
+    },
+    {
+      "id": "seoArchiveSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo archivado. Ya no debe mostrarse como contenido público.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,success"
     }
   ]
 }

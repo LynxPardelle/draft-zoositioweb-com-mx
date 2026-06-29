@@ -1546,6 +1546,42 @@
         "statusTarget": "remoteStatus.contentHub.content_hub_validate_article"
       },
       {
+        "id": "content_hub_submit_review_article",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_submit_review_article",
+        "contentHub": {
+          "action": "submitReview",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "revisionId",
+          "reviewMessage",
+          "validationState"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_submit_review_article"
+      },
+      {
+        "id": "content_hub_approve_article",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_approve_article",
+        "contentHub": {
+          "action": "approveArticle",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "revisionId",
+          "approvalMessage",
+          "validationState"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_approve_article"
+      },
+      {
         "id": "content_hub_publish_article",
         "kind": "content-hub",
         "proxyActionId": "content_hub_publish_article",
@@ -1565,6 +1601,42 @@
           "validationState"
         ],
         "statusTarget": "remoteStatus.contentHub.content_hub_publish_article"
+      },
+      {
+        "id": "content_hub_unpublish_article",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_unpublish_article",
+        "contentHub": {
+          "action": "unpublishArticle",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "revisionId",
+          "unpublishMessage",
+          "path"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_unpublish_article"
+      },
+      {
+        "id": "content_hub_archive_article",
+        "kind": "content-hub",
+        "proxyActionId": "content_hub_archive_article",
+        "contentHub": {
+          "action": "archiveArticle",
+          "hubId": "zoosite-main"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "articleId",
+          "revisionId",
+          "archiveReason",
+          "path"
+        ],
+        "statusTarget": "remoteStatus.contentHub.content_hub_archive_article"
       },
       {
         "id": "content_hub_schedule_article",
