@@ -222,7 +222,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Hub público: zoosite-main. La visibilidad, los dominios conectados y las conexiones compartidas se muestran aquí; la propiedad, el tenant y las políticas sensibles se validan en el servidor.",
+        "text": "Hub público: zoosite-main. La visibilidad, los dominios conectados y las conexiones compartidas se muestran aquí; las reglas sensibles se validan en el servidor.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
@@ -287,7 +287,7 @@
           "latestRevisionId",
           "path"
         ],
-        "emptyText": "Aún no hay hubs autorizados o conexiones compartidas para este filtro. Crea o autoriza relaciones de hub desde el backend para verlas aquí.",
+        "emptyText": "Aún no hay hubs autorizados o conexiones compartidas para este filtro. Crea o autoriza relaciones desde el servicio de contenido para verlas aquí.",
         "loadingText": "Cargando datos del gestor de contenido...",
         "columns": [
           {

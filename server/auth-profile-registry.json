@@ -35,7 +35,9 @@
         "zoosite-admin",
         "zoosite-blog-editor",
         "zoosite-blog-publisher",
-        "zoosite-blog-media"
+        "zoosite-blog-media",
+        "zoosite-blog-moderator",
+        "zoosite-blog-analyst"
       ],
       "allowedTokenUses": [
         "id",
@@ -49,7 +51,9 @@
         "zoosite-admin",
         "zoosite-blog-editor",
         "zoosite-blog-publisher",
-        "zoosite-blog-media"
+        "zoosite-blog-media",
+        "zoosite-blog-moderator",
+        "zoosite-blog-analyst"
       ],
       "defaultUserStatus": "pending",
       "adminGroupsAutoApproved": true,

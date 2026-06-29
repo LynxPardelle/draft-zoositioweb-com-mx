@@ -454,7 +454,7 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_moderate_comment.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_moderate_comment.error,No se pudo completar la operación."
+      "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.contentHub.content_hub_moderate_comment.state,error\",No pudimos guardar la decisión de moderación. Recarga la página y verifica tu sesión antes de intentarlo de nuevo.,No pudimos guardar la decisión de moderación. Recarga la página y verifica tu sesión antes de intentarlo de nuevo."
     },
     {
       "id": "moderationModerateSuccess",
@@ -471,22 +471,22 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "articleId pendiente",
+        "text": "Artículo pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_moderate_comment.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_moderate_comment.articleId,La respuesta no incluyó articleId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_moderate_comment.articleId,La respuesta no incluyó el artículo."
     },
     {
       "id": "moderationModerateRevisionId",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "revisionId pendiente",
+        "text": "Versión pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_moderate_comment.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_moderate_comment.revisionId,La respuesta no incluyó revisionId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_moderate_comment.revisionId,La respuesta no incluyó la versión."
     },
     {
       "id": "moderationTable",

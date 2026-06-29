@@ -276,10 +276,10 @@
       "type": "text",
       "config": {
         "tag": "code",
-        "text": "articleId pendiente",
+        "text": "Artículo pendiente",
         "classes": "ank-display-block ank-width-100per ank-overflow-wrap-anywhere ank-fontFamily-monospace ank-fontSize-13px ank-fontWeight-900 ank-color-titleColor"
       },
-      "valueInstructions": "set:config.text,routeParamOr,id,articleId pendiente"
+      "valueInstructions": "set:config.text,routeParamOr,id,Abre el editor desde la lista de artículos."
     },
     {
       "id": "editorArticleIdReadoutHelp",
@@ -442,24 +442,28 @@
           "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
         },
         "helperText": "Selecciona una categoría existente. Puedes crear nuevas categorías desde la página Categorías.",
-        "options": [
-          {
-            "value": "web",
-            "label": "Web"
-          },
-          {
-            "value": "seo",
-            "label": "SEO"
-          },
-          {
-            "value": "builder",
-            "label": "Builder visual"
-          },
-          {
-            "value": "angora",
-            "label": "Angora CSS"
-          }
-        ]
+        "options": {
+          "source": "var",
+          "path": "remote.contentHub.categories.items",
+          "fallback": [
+            {
+              "value": "web",
+              "label": "Web"
+            },
+            {
+              "value": "seo",
+              "label": "SEO"
+            },
+            {
+              "value": "builder",
+              "label": "Builder visual"
+            },
+            {
+              "value": "angora",
+              "label": "Angora CSS"
+            }
+          ]
+        }
       },
       "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.category,"
     },
@@ -483,40 +487,28 @@
         "autocompleteMinLength": 1,
         "autocompleteMaxOptions": 10,
         "autocompleteMatchMode": "contains",
-        "autocompleteOptions": [
-          {
-            "value": "seo",
-            "label": "seo"
-          },
-          {
-            "value": "blog-builder",
-            "label": "blog-builder"
-          },
-          {
-            "value": "sitios-web",
-            "label": "sitios-web"
-          },
-          {
-            "value": "qa",
-            "label": "qa"
-          },
-          {
-            "value": "testing",
-            "label": "testing"
-          },
-          {
-            "value": "content-hub",
-            "label": "content-hub"
-          },
-          {
-            "value": "angora",
-            "label": "angora"
-          },
-          {
-            "value": "web",
-            "label": "web"
-          }
-        ]
+        "autocompleteOptions": {
+          "source": "var",
+          "path": "remote.contentHub.tags.items",
+          "fallback": [
+            {
+              "value": "seo",
+              "label": "seo"
+            },
+            {
+              "value": "blog-builder",
+              "label": "blog-builder"
+            },
+            {
+              "value": "sitios-web",
+              "label": "sitios-web"
+            },
+            {
+              "value": "content-hub",
+              "label": "content-hub"
+            }
+          ]
+        }
       },
       "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.tagsText,"
     },
@@ -655,7 +647,8 @@
         "classes": "ank-width-100per",
         "editorClasses": "ank-minHeight-360px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-color-textColor",
         "helperText": "Usa encabezados, listas y enlaces limpios. El servidor vuelve a sanitizar antes de publicar."
-      }
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.articleContent,"
     },
     {
       "id": "editorActionRow",
@@ -739,12 +732,22 @@
         "tag": "div",
         "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
+          "editorSaveIdle",
           "editorSaveLoading",
           "editorSaveError",
           "editorSaveSuccess",
           "editorSaveArticleId",
           "editorSaveRevisionId"
         ]
+      }
+    },
+    {
+      "id": "editorSaveIdle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Estado de edición: sin guardado reciente. Revisa el identificador del artículo antes de guardar cambios.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       }
     },
     {
@@ -762,11 +765,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo completar la operación.",
+        "text": "No pudimos guardar el artículo. Recarga la página desde la lista y verifica tu sesión y permisos antes de intentarlo de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_update_package.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_update_package.error,No se pudo completar la operación."
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_update_package.state,error"
     },
     {
       "id": "editorSaveSuccess",
@@ -783,22 +785,22 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "articleId pendiente",
+        "text": "Artículo pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_update_package.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_update_package.articleId,La respuesta no incluyó articleId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_update_package.articleId,La respuesta no incluyó el artículo."
     },
     {
       "id": "editorSaveRevisionId",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "revisionId pendiente",
+        "text": "Versión pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_update_package.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_update_package.revisionId,La respuesta no incluyó revisionId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_update_package.revisionId,La respuesta no incluyó la versión."
     },
     {
       "id": "editorSideRail",
@@ -889,11 +891,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo completar la operación.",
+        "text": "No pudimos registrar el medio del artículo. Recarga la página desde la lista y verifica tu sesión y permisos antes de intentarlo de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.error,No se pudo completar la operación."
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error"
     },
     {
       "id": "editorUploadSuccess",

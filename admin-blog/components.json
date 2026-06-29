@@ -526,7 +526,7 @@
             "id": "schedule",
             "label": "Programar",
             "icon": "calendar",
-            "hrefTemplate": "/admin/blog/programados?articleId={articleId}"
+            "hrefTemplate": "/admin/blog/programados?articleId={articleId}&revisionId={latestRevisionId}"
           }
         ],
         "pagination": {

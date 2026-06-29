@@ -263,7 +263,7 @@
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-fontSize-13px ank-fontWeight-900 ank-fontFamily-monospace",
         "validation": []
       },
-      "valueInstructions": "set:config.value,routeParamOr,id,"
+      "valueInstructions": "set:config.value,queryParamOr,articleId,"
     },
     {
       "id": "mediaDropzone",
@@ -333,7 +333,7 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.error,No se pudo completar la operación."
+      "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error\",No pudimos cargar el archivo. Recarga la página desde la lista y verifica tu sesión antes de intentarlo de nuevo.,No pudimos cargar el archivo. Recarga la página desde la lista y verifica tu sesión antes de intentarlo de nuevo."
     },
     {
       "id": "mediaUploadSuccess",

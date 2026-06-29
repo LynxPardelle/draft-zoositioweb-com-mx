@@ -436,7 +436,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Estos controles son draft UI; guardar políticas reales requiere acción backend específica. No se exponen grupos, tenant, buckets ni authorizer policy.",
+        "text": "Estos controles preparan la interfaz del borrador. Las políticas reales se guardarán desde el servicio de contenido; no se muestran reglas internas ni almacenamiento.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },

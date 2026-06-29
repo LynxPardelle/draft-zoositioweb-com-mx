@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Consulta snapshots/deltas, compara versiones y restaura una revisión mediante gestor de contenido_restore_revision.",
+        "text": "Consulta el historial del artículo, revisa versiones guardadas y restaura una revisión cuando necesites volver a un punto anterior.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -238,7 +238,7 @@
         "label": "Identificador del artículo",
         "controlType": "text",
         "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
-        "required": false,
+        "required": true,
         "readOnly": true,
         "disabled": false,
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
@@ -246,7 +246,12 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-fontSize-13px ank-fontWeight-900 ank-fontFamily-monospace",
-        "validation": []
+        "validation": [
+          {
+            "type": "required",
+            "message": "Abre Versiones desde la lista de artículos para conservar el identificador del artículo."
+          }
+        ]
       },
       "valueInstructions": "set:config.value,routeParamOr,id,"
     },
@@ -275,7 +280,7 @@
         "label": "Versión",
         "controlType": "text",
         "helperText": "Identificador de la versión que quieres comparar o restaurar.",
-        "required": false,
+        "required": true,
         "readOnly": false,
         "disabled": false,
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
@@ -283,7 +288,12 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
-        "validation": []
+        "validation": [
+          {
+            "type": "required",
+            "message": "Selecciona o escribe la versión que quieres restaurar."
+          }
+        ]
       }
     },
     {
@@ -356,9 +366,10 @@
         "rowIdPath": "id",
         "eventPayloadFields": [
           "articleId",
-          "status",
-          "latestRevisionId",
-          "path"
+          "revisionId",
+          "delta",
+          "snapshot",
+          "status"
         ],
         "emptyText": "Aún no hay versiones disponibles para este artículo. Cuando guardes cambios, las revisiones aparecerán aquí.",
         "loadingText": "Cargando datos de gestor de contenido...",
@@ -385,12 +396,12 @@
           },
           {
             "id": "compare",
-            "header": "compare",
+            "header": "Comparar",
             "valuePath": "compare"
           },
           {
             "id": "restore",
-            "header": "restore",
+            "header": "Restaurar",
             "valuePath": "restore"
           }
         ],
@@ -435,7 +446,7 @@
           "width": "54px"
         }
       },
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.revisions.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.revisions.error,"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.revisions.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.revisions.state,error\",No pudimos cargar el historial de versiones. Revisa tu sesión y permisos.,"
     },
     {
       "id": "versionsActions",
@@ -457,7 +468,7 @@
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Restaurar revisión",
         "loadingLabel": "Restaurando...",
-        "disabledWhenInvalidScope": false,
+        "disabledWhenInvalidScope": true,
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_restore_revision",
@@ -470,6 +481,7 @@
         "tag": "div",
         "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
+          "versionsRestoreIdle",
           "versionsRestoreLoading",
           "versionsRestoreError",
           "versionsRestoreSuccess",
@@ -479,11 +491,20 @@
       }
     },
     {
+      "id": "versionsRestoreIdle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Elige una revisión de la tabla o escribe su identificador antes de restaurar. La restauración crea una nueva versión y conserva el historial.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      }
+    },
+    {
       "id": "versionsRestoreLoading",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Cargando...",
+        "text": "Restaurando la versión seleccionada...",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,loading"
@@ -493,11 +514,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo completar la operación.",
+        "text": "No pudimos restaurar la versión. Revisa que el artículo y la versión existan, que tu sesión siga activa y que tengas permisos editoriales.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_restore_revision.error,No se pudo completar la operación."
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,error"
     },
     {
       "id": "versionsRestoreSuccess",
@@ -514,22 +534,22 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "articleId pendiente",
+        "text": "Artículo pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_restore_revision.articleId,La respuesta no incluyó articleId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_restore_revision.articleId,La respuesta no incluyó el artículo."
     },
     {
       "id": "versionsRestoreRevisionId",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "revisionId pendiente",
+        "text": "Versión pendiente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_restore_revision.revisionId,La respuesta no incluyó revisionId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_restore_revision.revisionId,La respuesta no incluyó la versión."
     }
   ]
 }
