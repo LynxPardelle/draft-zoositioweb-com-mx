@@ -4,6 +4,33 @@ Fecha base: 2026-06-29 CT
 
 Usa esta matriz para revisar el blog administrativo, blog publico y autenticacion relacionada de Zoositioweb. Cada bloque debe validarse en testing antes de promover a produccion. Para rutas visuales, revisa desktop y mobile. Para rutas protegidas, usa al menos un usuario administrador y un usuario cliente sin permisos admin.
 
+## E2E route order for testing
+
+1. Inicia sesion en `https://test.zoolandingpage.com.mx/acceso?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=es` con un usuario que tenga permisos de blog.
+2. Abre `/admin/blog/articulos?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=es`; debe cargar tabla real, filtros, paginacion y acciones sin pantalla blanca.
+3. Abre `/admin/blog/articulos/nuevo?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=es`; crea un articulo con titulo unico, categoria, tags, resumen, SEO, slug y politicas.
+4. Al crear, confirma que aparece `articleId`, `revisionId`, path o link de siguiente paso; no debe aparecer `Invalid id`.
+5. Abre `/admin/blog/articulos/{articleId}/editor?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=es`; edita titulo, categoria, tags, resumen y contenido enriquecido, guarda y recarga.
+6. Abre `/admin/blog/articulos/{articleId}/preview?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=es`; debe mostrar el articulo seleccionado, no la lista.
+7. Abre `/admin/blog/articulos/{articleId}/seo?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=es`; valida metadata y publica o prepara publicacion.
+8. Abre `/admin/blog/articulos/{articleId}/versiones?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=es`; debe listar versiones reales del articulo.
+9. Abre `/admin/blog/programados?articleId={articleId}&draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=es`; programa, lista y cancela una publicacion futura.
+10. Abre `/blog/{categorySlug}/{articleSlug}?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=es`; debe renderizar el articulo publicado y conservar SEO.
+11. Abre `/content-hub-search.json?draftDomain=zoositioweb.com.mx&lang=es&q={articleSlug}`; debe incluir el articulo publicado.
+12. Abre `/sitemap.xml?draftDomain=zoositioweb.com.mx` y `/feed.xml?draftDomain=zoositioweb.com.mx&lang=es`; deben incluir solo articulos publicos indexables.
+
+## Redacted live smoke
+
+- [ ] Con sesion real de testing, ejecutar desde el repo app sin guardar cookies en archivos versionados:
+
+```powershell
+$env:ZLP_CONTENT_HUB_SMOKE_COOKIE = "<cookie header temporal de testing>"
+npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --runtime-base-url=https://jaay9p8gv5.execute-api.us-east-1.amazonaws.com/Prod --environment=test --domain=zoositioweb.com.mx
+```
+
+- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `publish`, `runtimeBundle`, `publicSearch`, `scheduleList`, `cancelSchedule`.
+- [ ] No pegar cookies, CSRF, passwords, tokens ni headers completos en chats, notas, commits o PRs.
+
 ## Editorial lifecycle
 
 - [ ] `/admin/blog/articulos/nuevo` crea un paquete editable con titulo, idioma, categoria, tags, resumen, SEO, slug, politica de comentarios, politica de contenido y visibilidad.
