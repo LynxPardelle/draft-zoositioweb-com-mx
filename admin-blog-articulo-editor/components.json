@@ -647,7 +647,8 @@
         "classes": "ank-width-100per",
         "editorClasses": "ank-minHeight-360px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-color-textColor",
         "helperText": "Usa encabezados, listas y enlaces limpios. El servidor vuelve a sanitizar antes de publicar."
-      }
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.articleContent,"
     },
     {
       "id": "editorActionRow",

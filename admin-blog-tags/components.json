@@ -239,7 +239,6 @@
         },
         "components": [
           "tagsTaxonomyId",
-          "tagsKind",
           "tagsSlug",
           "tagsTranslation",
           "tagsSeoDescription",
@@ -436,7 +435,7 @@
         "label": "Tags",
         "rowsSource": {
           "source": "var",
-          "path": "remote.contentHub.taxonomy.items"
+          "path": "remote.contentHub.tags.items"
         },
         "rows": [],
         "rowIdPath": "taxonomyId",
@@ -453,11 +452,6 @@
             "id": "taxonomyId",
             "header": "Identificador",
             "valuePath": "taxonomyId"
-          },
-          {
-            "id": "kind",
-            "header": "Tipo",
-            "valuePath": "kind"
           },
           {
             "id": "slug",
