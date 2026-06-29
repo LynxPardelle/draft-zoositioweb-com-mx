@@ -18,7 +18,7 @@ Usa esta matriz para revisar el blog administrativo, blog publico y autenticacio
 
 - [ ] `/admin/blog*` requiere sesion y rol administrativo.
 - [ ] Un usuario `zoosite-client` no puede abrir rutas admin ni ejecutar mutaciones del content-hub.
-- [ ] Roles esperados: `hub-admin`, `blog-admin`, `blog-editor`, `blog-publisher`, `blog-reviewer`, `blog-moderator`, `blog-analyst`.
+- [ ] Roles esperados: `hub-admin`, `blog-admin`, `blog-editor`, `blog-publisher`, `blog-reviewer`, `blog-moderator`, `blog-media-manager`, `blog-analyst`.
 - [ ] Controles visibles coinciden con el rol, pero la autorizacion real se verifica en backend.
 - [ ] Errores de permisos muestran mensaje entendible sin filtrar grupos internos, claims, tokens ni politica server-only.
 
