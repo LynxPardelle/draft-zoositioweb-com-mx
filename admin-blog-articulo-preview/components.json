@@ -269,11 +269,11 @@
       "type": "input",
       "config": {
         "fieldId": "revisionId",
-        "label": "Versión opcional",
+        "label": "Versión actual",
         "controlType": "text",
-        "helperText": "Si lo dejas vacío, el servicio seguro elegirá la versión disponible para vista previa.",
+        "helperText": "Se toma de la última versión guardada del artículo.",
         "required": false,
-        "readOnly": false,
+        "readOnly": true,
         "disabled": false,
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
@@ -281,7 +281,8 @@
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
         "validation": []
-      }
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.latestRevisionId,"
     },
     {
       "id": "previewReadStatus",

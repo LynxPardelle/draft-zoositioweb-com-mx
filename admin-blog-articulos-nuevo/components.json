@@ -916,6 +916,11 @@
           "newArticleCreateSuccess",
           "newArticleCreateArticleId",
           "newArticleCreateRevisionId",
+          "newArticleCreateEditorLink",
+          "newArticleCreatePreviewLink",
+          "newArticleCreateSeoLink",
+          "newArticleCreateVersionsLink",
+          "newArticleCreateScheduleLink",
           "newArticleCreateListLink",
           "newArticleCreateEditorHint"
         ]
@@ -946,7 +951,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo creado. Abre el artículo desde la lista para continuar.",
+        "text": "Artículo creado. Usa estos accesos para continuar.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success"
@@ -974,6 +979,61 @@
       "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_create_article.revisionId,La respuesta no incluyó la versión."
     },
     {
+      "id": "newArticleCreateEditorLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/articulos",
+        "text": "Abrir editor",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/editor"
+    },
+    {
+      "id": "newArticleCreatePreviewLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/articulos",
+        "text": "Abrir preview",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/preview"
+    },
+    {
+      "id": "newArticleCreateSeoLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/articulos",
+        "text": "Abrir SEO",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/seo"
+    },
+    {
+      "id": "newArticleCreateVersionsLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/articulos",
+        "text": "Ver versiones",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/versiones"
+    },
+    {
+      "id": "newArticleCreateScheduleLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/programados",
+        "text": "Programar",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.revisionId,varOr,remoteStatus.contentHub.content_hub_create_article.revisionId,;set:config.href,concat,/admin/blog/programados?articleId=,eval:config.articleId,&revisionId=,eval:config.revisionId"
+    },
+    {
       "id": "newArticleCreateListLink",
       "type": "link",
       "config": {
@@ -988,7 +1048,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Siguiente paso: vuelve a la lista, busca el artículo creado y abre la acción editorial que necesites.",
+        "text": "También puedes volver a la lista para revisar el artículo dentro del flujo editorial completo.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success"
