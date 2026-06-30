@@ -238,6 +238,7 @@
           "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 220px), 1fr))"
         },
         "components": [
+          "categoriesKind",
           "categoriesTaxonomyId",
           "categoriesSlug",
           "categoriesTranslation",
@@ -277,7 +278,7 @@
         "required": false,
         "readOnly": true,
         "disabled": false,
-        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "classes": "ank-display-none",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
