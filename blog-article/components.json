@@ -280,7 +280,7 @@
         "loadingLabel": "Guardando...",
         "disabledWhenInvalidScope": false
       },
-      "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,share;setScopeValue:targetId,native-share;setScopeValue:value,share;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
+      "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"shareCurrentPage;setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,share;setScopeValue:targetId,native-share;setScopeValue:value,share;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
     },
     {
       "id": "blogArticleInteractionStatus",
