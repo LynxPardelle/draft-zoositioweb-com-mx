@@ -7,7 +7,7 @@
   "layout": "default",
   "seo": {
     "title": "Programación",
-    "description": "Programación para el hub de contenido de Zoosite.",
+    "description": "Programación para el blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },

@@ -7,7 +7,7 @@
   "layout": "default",
   "seo": {
     "title": "Editor de artículo",
-    "description": "Editor de artículo para el hub de contenido de Zoosite.",
+    "description": "Editor de artículo para el blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },

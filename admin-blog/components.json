@@ -286,7 +286,7 @@
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
-        "label": "Validar hub",
+        "label": "Validar blog",
         "loadingLabel": "Validando...",
         "disabledWhenInvalidScope": false,
         "iconPosition": "before"
@@ -349,7 +349,7 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.error,No se pudo completar la operación."
+      "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error\",No se pudo validar el artículo. Revisa la selección, tu sesión y los permisos."
     },
     {
       "id": "adminBlogValidateSuccess",
@@ -366,22 +366,22 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "articleId pendiente",
+        "text": "Selecciona un artículo desde la tabla para mostrar su identificador.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.articleId,La respuesta no incluyó articleId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.articleId,Selecciona un artículo desde la lista antes de continuar."
     },
     {
       "id": "adminBlogValidateRevisionId",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "revisionId pendiente",
+        "text": "Selecciona un artículo validado para mostrar su versión.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.revisionId,La respuesta no incluyó revisionId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.revisionId,Selecciona una versión del artículo antes de continuar."
     },
     {
       "id": "adminBlogPublishLoading",
@@ -402,7 +402,7 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.error,No se pudo completar la operación."
+      "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error\",No se pudo publicar el artículo. Revisa la selección, tu sesión y los permisos."
     },
     {
       "id": "adminBlogPublishSuccess",
@@ -419,22 +419,22 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "articleId pendiente",
+        "text": "Selecciona un artículo desde la tabla para mostrar su identificador.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.articleId,La respuesta no incluyó articleId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.articleId,Selecciona un artículo desde la lista antes de continuar."
     },
     {
       "id": "adminBlogPublishRevisionId",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "revisionId pendiente",
+        "text": "Selecciona un artículo aprobado para mostrar su versión.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.revisionId,La respuesta no incluyó revisionId."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.revisionId,Selecciona una versión del artículo antes de continuar."
     },
     {
       "id": "admin-blogArticlesTable",
@@ -564,7 +564,7 @@
         "actionCellClasses": "ank-whiteSpace-normal ank-minWidth-330px ank-textAlign-center",
         "actionColumnLabel": "Acciones"
       },
-      "valueInstructions": "set:config.actionColumnLabel,i18n,adminBlogArticulos.actionsColumn;set:config.rowActions.0.label,i18n,adminBlogArticulos.edit;set:config.rowActions.1.label,i18n,adminBlogArticulos.preview;set:config.rowActions.2.label,i18n,adminBlogArticulos.seo;set:config.rowActions.3.label,i18n,adminBlogArticulos.versions;set:config.rowActions.4.label,i18n,adminBlogArticulos.schedule;set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
+      "valueInstructions": "set:config.actionColumnLabel,i18n,adminBlogArticulos.actionsColumn;set:config.rowActions.0.label,i18n,adminBlogArticulos.edit;set:config.rowActions.1.label,i18n,adminBlogArticulos.preview;set:config.rowActions.2.label,i18n,adminBlogArticulos.seo;set:config.rowActions.3.label,i18n,adminBlogArticulos.versions;set:config.rowActions.4.label,i18n,adminBlogArticulos.schedule;set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.articles.state,error\",No se pudo cargar la lista. Recarga la página o vuelve a iniciar sesión."
     },
     {
       "id": "adminBlogActionIdle",
