@@ -619,92 +619,58 @@
       "type": "generic-table",
       "config": {
         "id": "scheduledTable",
-        "label": "Artículos y programación",
+        "label": "Programaciones activas",
+        "description": "Publicaciones y retiros pendientes devueltos por el gestor de contenido.",
         "rowsSource": {
           "source": "var",
-          "path": "remote.contentHub.articles.items"
+          "path": "remote.contentHub.schedules.items"
         },
         "rows": [],
-        "rowIdPath": "id",
+        "rowIdPath": "scheduleId",
         "eventPayloadFields": [
+          "scheduleId",
           "articleId",
-          "status",
-          "latestRevisionId",
-          "path"
+          "revisionId",
+          "action",
+          "scheduledAt"
         ],
-        "emptyText": "No hay registros reales disponibles desde gestor de contenido para este filtro.",
-        "loadingText": "Cargando datos de gestor de contenido...",
+        "emptyText": "No hay programaciones pendientes para este artículo.",
+        "loadingText": "Cargando programaciones pendientes...",
         "columns": [
           {
-            "id": "title",
-            "header": "Título",
-            "valuePath": "title"
+            "id": "action",
+            "header": "Acción",
+            "valuePath": "action"
           },
           {
-            "id": "status",
-            "header": "Estado",
-            "valuePath": "status"
-          },
-          {
-            "id": "language",
-            "header": "Idioma",
-            "valuePath": "language"
-          },
-          {
-            "id": "category",
-            "header": "Categoría",
-            "valuePath": "category"
-          },
-          {
-            "id": "tags",
-            "header": "Tags",
-            "valuePath": "tags",
-            "format": "list",
-            "itemPath": "label",
-            "separator": ", ",
-            "emptyText": "Sin tags"
-          },
-          {
-            "id": "schedule",
-            "header": "Programación",
+            "id": "scheduledAt",
+            "header": "Fecha programada",
             "valuePath": "scheduledAt"
           },
           {
-            "id": "updatedAt",
-            "header": "Actualizado",
-            "valuePath": "updatedAt"
+            "id": "timezone",
+            "header": "Zona horaria",
+            "valuePath": "timezone"
+          },
+          {
+            "id": "articleId",
+            "header": "Artículo",
+            "valuePath": "articleId"
+          },
+          {
+            "id": "revisionId",
+            "header": "Versión",
+            "valuePath": "revisionId",
+            "emptyText": "Sin versión"
           }
         ],
         "rowActions": [
           {
-            "id": "edit",
-            "label": "Editar",
-            "icon": "edit",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/editor"
-          },
-          {
-            "id": "preview",
-            "label": "Preview",
-            "icon": "eye",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/preview"
-          },
-          {
-            "id": "seo",
-            "label": "SEO",
-            "icon": "search",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/seo"
-          },
-          {
-            "id": "versions",
-            "label": "Versiones",
-            "icon": "history",
-            "hrefTemplate": "/admin/blog/articulos/{articleId}/versiones"
-          },
-          {
-            "id": "schedule",
-            "label": "Programar",
-            "icon": "calendar",
-            "hrefTemplate": "/admin/blog/programados?articleId={articleId}&revisionId={latestRevisionId}"
+            "id": "cancelSchedule",
+            "label": "Cancelar",
+            "ariaLabel": "Cancelar programación",
+            "icon": "x",
+            "eventInstructions": "proxyAction:content_hub_cancel_schedule"
           }
         ],
         "pagination": {
@@ -740,7 +706,7 @@
           "width": "54px"
         }
       },
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.schedules.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.schedules.error,"
     }
   ]
 }
