@@ -279,7 +279,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Lista real del gestor seguro de contenido. Crear, abrir, programar y publicar artículos vuelve a verificar sesión, permisos, draft y protección contra envíos falsos en el servidor.",
+        "text": "Lista real de artículos del blog. Crear, abrir, programar y publicar vuelve a verificar sesión, permisos y protección contra envíos falsos.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -559,7 +559,7 @@
           "path"
         ],
         "emptyText": "No encontramos registros con estos filtros. Ajusta la búsqueda o crea una nueva entrada.",
-        "loadingText": "Estamos cargando artículos del gestor de contenido. Si es la primera consulta del día puede tardar unos segundos.",
+        "loadingText": "Estamos cargando artículos del blog. Si es la primera consulta del día puede tardar unos segundos.",
         "columns": [
           {
             "id": "title",

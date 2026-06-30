@@ -232,7 +232,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Esta pantalla lee información real del gestor seguro de contenido. La sesión, el permiso de administrador y la protección contra envíos falsos se verifican antes de mostrar o cambiar datos.",
+        "text": "Esta pantalla muestra la operación real del blog. La sesión, los permisos y la protección contra envíos falsos se verifican antes de mostrar o cambiar datos.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },

@@ -253,7 +253,7 @@
       "type": "input",
       "config": {
         "fieldId": "taxonomyId",
-        "label": "Identificador",
+        "label": "Código",
         "controlType": "text",
         "required": false,
         "readOnly": false,
@@ -451,7 +451,7 @@
         "columns": [
           {
             "id": "taxonomyId",
-            "header": "Identificador",
+            "header": "Código",
             "valuePath": "taxonomyId"
           },
           {

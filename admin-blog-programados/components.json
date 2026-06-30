@@ -250,7 +250,7 @@
         "validation": [
           {
             "type": "required",
-            "message": "Abre Programar desde la lista de artículos para conservar el identificador del artículo."
+            "message": "Abre Programar desde la lista de artículos para conservar el artículo correcto."
           }
         ]
       },
@@ -653,7 +653,7 @@
       "config": {
         "id": "scheduledTable",
         "label": "Programaciones activas",
-        "description": "Publicaciones y retiros pendientes devueltos por el gestor de contenido.",
+        "description": "Publicaciones y retiros pendientes del blog.",
         "rowsSource": {
           "source": "var",
           "path": "remote.contentHub.schedules.items"
