@@ -4,6 +4,13 @@ Fecha base: 2026-06-29 CT
 
 Usa esta matriz para revisar el blog administrativo, blog publico y autenticacion relacionada de Zoositioweb. Cada bloque debe validarse en testing antes de promover a produccion. Para rutas visuales, revisa desktop y mobile. Para rutas protegidas, usa al menos un usuario administrador y un usuario cliente sin permisos admin.
 
+## Estado local mas reciente
+
+- 2026-06-29 18:45 CT: se reforzaron los guards de preview/SEO para que `articleId` y `revisionId` sean requeridos antes de ejecutar acciones de ciclo editorial. App commit `4bb03e8`; draft commit `00c065e`.
+- Verificacion local: content-hub admin/schema/contract Node tests pasaron 54; focused `proxy-action.handlers.spec.ts` paso `TOTAL: 9 SUCCESS`; `npm run build` paso con el warning existente de `quill-delta`; `npm audit --omit=dev` retorno `found 0 vulnerabilities`; SSR rerun paso 23/23; public-safety audit retorno `ok:true`.
+- Backend BFF: `origin/dev` de `zoolanding-content-hub` en `f9523ed` ya incluye `scheduleList`, `cancelSchedule` y auditoria persistida segura; validacion en worktree temporal paso 57 unittests, `sam validate` y `pip-audit`.
+- Pendiente para cerrar producto: smoke autenticado real en testing y QA de navegador con usuario de blog.
+
 ## E2E route order for testing
 
 1. Inicia sesion en `https://test.zoolandingpage.com.mx/acceso?draftDomain=zoositioweb.com.mx&debugWorkspace=false&lang=es` con un usuario que tenga permisos de blog.
