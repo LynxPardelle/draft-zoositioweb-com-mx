@@ -1033,8 +1033,7 @@
         "pageIds": [
           "admin-blog",
           "admin-blog-articulos",
-          "admin-blog-programados",
-          "admin-blog-analiticas"
+          "admin-blog-programados"
         ],
         "mapper": {
           "itemsPath": "items",
@@ -1138,6 +1137,87 @@
             "transforms": [
               "trim"
             ]
+          }
+        }
+      },
+      {
+        "id": "content_hub_analytics_summary",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_analytics_summary",
+        "contentHub": {
+          "read": "analyticsSummary",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.analytics",
+        "statusTarget": "remoteStatus.contentHub.analytics",
+        "pageIds": [
+          "admin-blog-analiticas"
+        ],
+        "mapper": {
+          "itemsPath": "items",
+          "fields": {
+            "id": {
+              "path": "articleId"
+            },
+            "articleId": {
+              "path": "articleId"
+            },
+            "title": {
+              "path": "title",
+              "fallback": "Sin título"
+            },
+            "status": {
+              "path": "status",
+              "fallback": "draft"
+            },
+            "language": {
+              "path": "language",
+              "fallback": "es"
+            },
+            "category": {
+              "path": "category",
+              "fallback": "sin-categoria"
+            },
+            "tags": {
+              "path": "tags",
+              "fallback": []
+            },
+            "scheduledAt": {
+              "path": "scheduledAt",
+              "fallback": "Sin programar"
+            },
+            "updatedAt": {
+              "path": "updatedAt",
+              "fallback": "Sin fecha"
+            },
+            "views": {
+              "path": "views",
+              "fallback": 0
+            },
+            "readProgress": {
+              "path": "readProgress",
+              "fallback": 0
+            },
+            "ctaClicks": {
+              "path": "ctaClicks",
+              "fallback": 0
+            },
+            "reactions": {
+              "path": "reactions",
+              "fallback": 0
+            },
+            "comments": {
+              "path": "comments",
+              "fallback": 0
+            },
+            "shares": {
+              "path": "shares",
+              "fallback": 0
+            },
+            "assetDownloads": {
+              "path": "assetDownloads",
+              "fallback": 0
+            }
           }
         }
       },

@@ -317,7 +317,7 @@
         "label": "Artículos con métricas",
         "rowsSource": {
           "source": "var",
-          "path": "remote.contentHub.articles.items"
+          "path": "remote.contentHub.analytics.items"
         },
         "rows": [],
         "rowIdPath": "id",
@@ -397,7 +397,7 @@
         "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
         "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       },
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.articles.state,error\",No se pudieron cargar las analíticas. Recarga la página o vuelve a iniciar sesión."
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.analytics.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.analytics.state,error\",No se pudieron cargar las analíticas. Recarga la página o vuelve a iniciar sesión."
     }
   ]
 }
