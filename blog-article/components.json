@@ -148,7 +148,7 @@
         "text": "La estructura mantiene el contenido pesado en archivos tipo draft y usa metadatos para slugs, taxonomía, programación, revisión, moderación y relaciones entre hubs autorizados. El navegador sólo recibe el índice público y el bundle publicado.",
         "classes": "ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7"
       },
-      "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.summary,El navegador recibe sólo el índice público seguro y los datos necesarios para mostrar este artículo."
+      "valueInstructions": "set:config.text,varOr,articleContent,El navegador recibe sólo el índice público seguro y el contenido publicado de este artículo."
     },
     {
       "id": "blogArticleDiscovery",
