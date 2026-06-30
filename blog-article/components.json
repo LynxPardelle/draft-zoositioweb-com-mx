@@ -146,9 +146,10 @@
       "config": {
         "tag": "p",
         "text": "La estructura mantiene el contenido pesado en archivos de publicación y usa metadatos para rutas, categorías, etiquetas, programación, revisión y moderación. El navegador sólo recibe el índice público y el artículo publicado.",
+        "html": "",
         "classes": "ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7"
       },
-      "valueInstructions": "set:config.text,varOr,articleContent,El navegador recibe sólo el índice público seguro y el contenido publicado de este artículo."
+      "valueInstructions": "set:config.html,richTextHtmlOr,articleContent,El navegador recibe sólo el índice público seguro y el contenido publicado de este artículo."
     },
     {
       "id": "blogArticleDiscovery",

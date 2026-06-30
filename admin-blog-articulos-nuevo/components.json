@@ -458,7 +458,7 @@
             },
             {
               "value": "content-hub",
-              "label": "gestor de contenido"
+              "label": "herramientas del blog"
             }
           ]
         },
@@ -1139,7 +1139,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Estado de creación: sin operación reciente. Completa los campos obligatorios y usa Crear artículo cuando quieras enviarlo al gestor de contenido.",
+        "text": "Estado de creación: sin operación reciente. Completa los campos obligatorios y usa Crear artículo cuando quieras guardar la nueva entrada.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       },
       "condition": "not:var,remoteStatus.contentHub.content_hub_create_article.state"
