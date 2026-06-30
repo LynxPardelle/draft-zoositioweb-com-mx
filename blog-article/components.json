@@ -44,8 +44,7 @@
         "text": "Web / SEO / Builder",
         "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-900 ank-textTransform-uppercase ank-color-accentColor"
       },
-      "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.categorySlug,Web",
-      "eventInstructions": "trackEvent:blog_view,blog,zoosite-blog-builder-view,hubId,zoosite-main,articleId,art_20260620_blog_builder,path,/blog/web/blog-builder-seo"
+      "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.categorySlug,Web"
     },
     {
       "id": "blogArticleTitle",
@@ -199,7 +198,7 @@
         "text": "Planear mi blog",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none"
       },
-      "eventInstructions": "trackEvent:blog_cta_click,blog,zoosite-blog-builder-cta,hubId,zoosite-main,articleId,art_20260620_blog_builder,ctaId,primary-consultation"
+      "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"trackEvent:blog_cta_click,blog,zoosite-blog-article-cta,hubId,zoosite-main,articleId,\",eval:config.articleId,\",path,\",eval:config.articlePath,\",ctaId,primary-consultation\""
     }
   ]
 }
