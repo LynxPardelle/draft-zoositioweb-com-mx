@@ -264,7 +264,7 @@
     {
       "path": "/admin/blog/hub",
       "pageId": "admin-blog-hub",
-      "label": "Hub del blog",
+      "label": "Centro del blog",
       "auth": {
         "required": true,
         "redirectTo": "/acceso",
@@ -923,13 +923,13 @@
                   "Si fue un error, documenta el caso antes de intentar otro cambio."
                 ],
                 "suspended": [
-                  "El acceso protegido se bloquea cuando el backend revalida la sesión.",
+                  "El acceso protegido se bloquea cuando la sesión no se puede validar.",
                   "Reactiva sólo después de confirmar que la cuenta puede volver a operar."
                 ]
               },
               "fallback": [
                 "Revisa estado y grupos antes de cambiar permisos.",
-                "El backend vuelve a validar sesión, tenant, ambiente y CSRF en cada acción."
+                "El servicio seguro vuelve a validar sesión, sitio, ambiente y permisos en cada acción."
               ]
             },
             "cardClasses": {
@@ -1033,8 +1033,7 @@
         "pageIds": [
           "admin-blog",
           "admin-blog-articulos",
-          "admin-blog-programados",
-          "admin-blog-analiticas"
+          "admin-blog-programados"
         ],
         "mapper": {
           "itemsPath": "items",
@@ -1138,6 +1137,87 @@
             "transforms": [
               "trim"
             ]
+          }
+        }
+      },
+      {
+        "id": "content_hub_analytics_summary",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_analytics_summary",
+        "contentHub": {
+          "read": "analyticsSummary",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.analytics",
+        "statusTarget": "remoteStatus.contentHub.analytics",
+        "pageIds": [
+          "admin-blog-analiticas"
+        ],
+        "mapper": {
+          "itemsPath": "items",
+          "fields": {
+            "id": {
+              "path": "articleId"
+            },
+            "articleId": {
+              "path": "articleId"
+            },
+            "title": {
+              "path": "title",
+              "fallback": "Sin título"
+            },
+            "status": {
+              "path": "status",
+              "fallback": "draft"
+            },
+            "language": {
+              "path": "language",
+              "fallback": "es"
+            },
+            "category": {
+              "path": "category",
+              "fallback": "sin-categoria"
+            },
+            "tags": {
+              "path": "tags",
+              "fallback": []
+            },
+            "scheduledAt": {
+              "path": "scheduledAt",
+              "fallback": "Sin programar"
+            },
+            "updatedAt": {
+              "path": "updatedAt",
+              "fallback": "Sin fecha"
+            },
+            "views": {
+              "path": "views",
+              "fallback": 0
+            },
+            "readProgress": {
+              "path": "readProgress",
+              "fallback": 0
+            },
+            "ctaClicks": {
+              "path": "ctaClicks",
+              "fallback": 0
+            },
+            "reactions": {
+              "path": "reactions",
+              "fallback": 0
+            },
+            "comments": {
+              "path": "comments",
+              "fallback": 0
+            },
+            "shares": {
+              "path": "shares",
+              "fallback": 0
+            },
+            "assetDownloads": {
+              "path": "assetDownloads",
+              "fallback": 0
+            }
           }
         }
       },
@@ -1893,8 +1973,7 @@
           "eventType",
           "targetId",
           "value",
-          "path",
-          "metadata"
+          "path"
         ],
         "statusTarget": "remoteStatus.contentHub.content_hub_record_interaction"
       },

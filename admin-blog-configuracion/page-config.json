@@ -7,7 +7,7 @@
   "layout": "default",
   "seo": {
     "title": "Configuración del blog",
-    "description": "Configuración del blog para el hub de contenido de Zoosite.",
+    "description": "Configuración del blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },

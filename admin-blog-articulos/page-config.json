@@ -7,7 +7,7 @@
   "layout": "default",
   "seo": {
     "title": "Artículos",
-    "description": "Artículos para el hub de contenido de Zoosite.",
+    "description": "Artículos del blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },

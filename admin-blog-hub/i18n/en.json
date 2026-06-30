@@ -3,7 +3,7 @@
   "pageId": "admin-blog-hub",
   "lang": "en",
   "messages": {
-    "title": "Hub de contenido",
+      "title": "Content center",
     "hubId": "zoosite-main",
     "draftDomain": "zoositioweb.com.mx"
   }

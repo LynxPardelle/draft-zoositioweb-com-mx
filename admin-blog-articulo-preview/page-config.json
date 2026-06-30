@@ -7,7 +7,7 @@
   "layout": "default",
   "seo": {
     "title": "Vista previa",
-    "description": "Vista previa para el hub de contenido de Zoosite.",
+    "description": "Vista previa para el blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },

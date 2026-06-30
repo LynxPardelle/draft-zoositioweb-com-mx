@@ -322,7 +322,7 @@
         "fieldId": "snapshot",
         "label": "Copia guardada",
         "controlType": "text",
-        "helperText": "Referencia segura del paquete completo de esa versión.",
+        "helperText": "Referencia segura del contenido completo de esa versión.",
         "required": false,
         "readOnly": false,
         "disabled": false,

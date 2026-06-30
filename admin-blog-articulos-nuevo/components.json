@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Crea el paquete inicial con metadatos listos para SEO. Después vuelve a la lista para abrir el editor, vista previa, SEO, versiones o programación del artículo seleccionado.",
+        "text": "Crea el borrador inicial con metadatos listos para SEO. Después vuelve a la lista para abrir el editor, vista previa, SEO, versiones o programación del artículo seleccionado.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -268,7 +268,7 @@
         "label": "Título",
         "controlType": "text",
         "placeholder": "Guía para crear un blog SEO desde tu sitio",
-        "helperText": "Título visible y base del paquete.",
+        "helperText": "Título visible y base del borrador.",
         "required": true,
         "readOnly": false,
         "disabled": false,
@@ -458,7 +458,7 @@
             },
             {
               "value": "content-hub",
-              "label": "content-hub"
+              "label": "gestor de contenido"
             }
           ]
         },
@@ -895,7 +895,7 @@
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
-        "label": "Crear paquete",
+        "label": "Crear artículo",
         "loadingLabel": "Creando...",
         "disabledWhenInvalidScope": true,
         "iconPosition": "before"
@@ -941,7 +941,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No pudimos crear el paquete. Vuelve a cargar esta página e inténtalo de nuevo; si el problema continúa, el servicio de contenido de testing puede estar usando una versión desactualizada.",
+        "text": "No pudimos crear el artículo. Vuelve a cargar esta página e inténtalo de nuevo; si el problema continúa, el servicio de contenido puede estar temporalmente fuera de sincronía.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,error"
@@ -1081,7 +1081,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Este paso no publica. Sólo crea el paquete editable.",
+        "text": "Este paso no publica. Sólo crea el borrador editable.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
@@ -1139,7 +1139,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Estado de creación: sin operación reciente. Completa los campos obligatorios y usa Crear paquete cuando quieras enviarlo al gestor de contenido.",
+        "text": "Estado de creación: sin operación reciente. Completa los campos obligatorios y usa Crear artículo cuando quieras enviarlo al gestor de contenido.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       },
       "condition": "not:var,remoteStatus.contentHub.content_hub_create_article.state"
