@@ -366,7 +366,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo seleccionado pendiente",
+        "text": "Selecciona un artículo desde la tabla para mostrar su identificador.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
@@ -377,7 +377,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Versión seleccionada pendiente",
+        "text": "Selecciona un artículo validado para mostrar su versión.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
@@ -419,7 +419,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo seleccionado pendiente",
+        "text": "Selecciona un artículo desde la tabla para mostrar su identificador.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
@@ -430,7 +430,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Versión seleccionada pendiente",
+        "text": "Selecciona un artículo aprobado para mostrar su versión.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
