@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Superficie de lectura para views, readProgress, ctaClicks, reactions, comments, shares y assetDownloads por artículo.",
+        "text": "Consulta métricas agregadas por artículo: visitas, avance de lectura, clics en llamados a la acción, reacciones, comentarios, compartidos y descargas.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -251,7 +251,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "views",
+        "text": "Visitas",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
@@ -260,7 +260,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "readProgress",
+        "text": "Avance de lectura",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
@@ -269,7 +269,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "ctaClicks",
+        "text": "Clics en llamados",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
@@ -278,7 +278,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "reactions",
+        "text": "Reacciones",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
@@ -287,7 +287,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "comments",
+        "text": "Comentarios",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
@@ -296,7 +296,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "shares",
+        "text": "Compartidos",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },
@@ -305,7 +305,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "assetDownloads",
+        "text": "Descargas",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-fontWeight-900"
       }
     },

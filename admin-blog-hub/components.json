@@ -222,7 +222,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Centro de contenido público: zoosite-main. La visibilidad, los dominios conectados y las conexiones compartidas se muestran aquí; las reglas sensibles se validan en el servidor.",
+        "text": "Centro de contenido público del sitio. La visibilidad, los dominios conectados y las conexiones compartidas se muestran aquí; las reglas sensibles se validan antes de aplicar cambios.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
@@ -288,11 +288,11 @@
           "path"
         ],
         "emptyText": "Aún no hay conexiones compartidas para este filtro. Crea o autoriza relaciones desde el servicio de contenido para verlas aquí.",
-        "loadingText": "Cargando datos del gestor de contenido...",
+        "loadingText": "Cargando datos del blog...",
         "columns": [
           {
             "id": "taxonomyId",
-            "header": "Identificador",
+            "header": "Código",
             "valuePath": "taxonomyId"
           },
           {
@@ -326,7 +326,7 @@
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
         "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
         "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
-        "description": "Taxonomía visible y relaciones devueltas por el gestor de contenido."
+        "description": "Categorías, etiquetas y relaciones visibles para este blog."
       },
       "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.taxonomy.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.taxonomy.state,error\",No se pudo cargar la taxonomía. Recarga la página o vuelve a iniciar sesión."
     }

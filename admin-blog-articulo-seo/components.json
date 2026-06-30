@@ -256,7 +256,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "El SEO se aplica al artículo seleccionado en la ruta. Si el identificador está vacío, vuelve a la lista de artículos y abre la acción SEO desde la fila correcta.",
+        "text": "El SEO se aplica al artículo abierto desde la lista. Si los datos no cargan, vuelve a Artículos y usa la acción SEO de la fila correcta.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-secondaryTextColor ank-fontSize-13px ank-lineHeight-1_55 ank-fontWeight-800"
       }
     },

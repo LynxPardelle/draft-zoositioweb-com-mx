@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Edita contenido enriquecido, metadatos y medios. El identificador del artículo se toma de la ruta y el guardado viaja al servicio seguro de contenido.",
+        "text": "Edita contenido enriquecido, metadatos y medios del artículo seleccionado. Los cambios se guardan con validación de sesión y permisos.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -510,7 +510,7 @@
             },
             {
               "value": "content-hub",
-              "label": "gestor de contenido"
+              "label": "herramientas del blog"
             }
           ]
         }
@@ -751,7 +751,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Estado de edición: sin guardado reciente. Revisa el identificador del artículo antes de guardar cambios.",
+        "text": "Estado de edición: sin guardado reciente. Abre un artículo desde la lista antes de guardar cambios.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       }
     },

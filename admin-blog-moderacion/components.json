@@ -262,7 +262,7 @@
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
         "validation": [],
-        "helperText": "Identificador del comentario a moderar."
+        "helperText": "Comentario que quieres moderar."
       }
     },
     {

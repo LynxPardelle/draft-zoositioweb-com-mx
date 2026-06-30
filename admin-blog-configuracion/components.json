@@ -458,7 +458,7 @@
           "latestRevisionId",
           "path"
         ],
-        "emptyText": "Aún no hay configuración avanzada guardada para este blog. Cuando el gestor de contenido guarde perfiles, políticas u opciones, aparecerán aquí.",
+        "emptyText": "Aún no hay configuración avanzada guardada para este blog. Cuando existan perfiles, políticas u opciones, aparecerán aquí.",
         "loadingText": "Cargando datos del blog...",
         "columns": [
           {
@@ -492,7 +492,7 @@
         "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
         "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
         "actionButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
-        "description": "Vista protegida de configuración devuelta por gestor de contenido."
+        "description": "Vista protegida de configuración del blog."
       },
       "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.taxonomy.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.taxonomy.state,error\",No se pudo cargar la configuración. Recarga la página o vuelve a iniciar sesión."
     }

@@ -249,7 +249,7 @@
         "validation": [
           {
             "type": "required",
-            "message": "Abre Versiones desde la lista de artículos para conservar el identificador del artículo."
+            "message": "Abre Versiones desde la lista de artículos para conservar el artículo correcto."
           }
         ]
       },
@@ -279,7 +279,7 @@
         "fieldId": "revisionId",
         "label": "Versión",
         "controlType": "text",
-        "helperText": "Identificador de la versión que quieres comparar o restaurar.",
+        "helperText": "Versión que quieres comparar o restaurar.",
         "required": true,
         "readOnly": false,
         "disabled": false,
@@ -495,7 +495,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Elige una revisión de la tabla o escribe su identificador antes de restaurar. La restauración crea una nueva versión y conserva el historial.",
+        "text": "Elige una revisión de la tabla antes de restaurar. La restauración crea una nueva versión y conserva el historial.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       }
     },
