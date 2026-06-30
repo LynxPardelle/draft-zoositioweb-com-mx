@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Previsualiza el bundle público y confirma ruta, canonical, contenido renderizable y estado de validación antes de publicar.",
+        "text": "Previsualiza el publicación y confirma ruta, canonical, contenido renderizable y estado de validación antes de publicar.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -172,7 +172,7 @@
       "id": "admin-blog-articulo-previewNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -184,7 +184,7 @@
       "id": "admin-blog-articulo-previewNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -249,7 +249,7 @@
       "type": "input",
       "config": {
         "fieldId": "articleId",
-        "label": "Identificador del artículo",
+        "label": "Artículo seleccionado",
         "controlType": "text",
         "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
         "required": true,
@@ -334,7 +334,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Preview cargado desde publicBundlePreview.",
+        "text": "Vista previa cargada desde la versión pública preparada para revisión.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.preview.state,success"
@@ -344,7 +344,7 @@
       "type": "generic-table",
       "config": {
         "id": "previewBundleTable",
-        "label": "Resumen del bundle",
+        "label": "Resumen del publicación",
         "rowsSource": {
           "source": "var",
           "path": "remote.contentHub.preview.items"
@@ -358,7 +358,7 @@
           "path"
         ],
         "emptyText": "No hay paquete público de vista previa para este artículo todavía. Guarda o publica una versión para poder revisarla aquí.",
-        "loadingText": "Cargando datos de gestor de contenido...",
+        "loadingText": "Cargando datos del blog...",
         "columns": [
           {
             "id": "title",
@@ -372,12 +372,12 @@
           },
           {
             "id": "canonical",
-            "header": "Canonical",
+            "header": "URL canónica",
             "valuePath": "canonical"
           },
           {
             "id": "robots",
-            "header": "Robots",
+            "header": "Visibilidad en buscadores",
             "valuePath": "robots"
           }
         ],
@@ -528,7 +528,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo pendiente",
+        "text": "Artículo no confirmado",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
@@ -539,7 +539,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Versión pendiente",
+        "text": "Versión no confirmada",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
@@ -581,7 +581,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo pendiente",
+        "text": "Artículo no confirmado",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
@@ -592,7 +592,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Versión pendiente",
+        "text": "Versión no confirmada",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",

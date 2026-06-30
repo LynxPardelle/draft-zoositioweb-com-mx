@@ -3,11 +3,11 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "admin-blog-tags",
   "route": "/admin/blog/tags",
-  "title": "Tags",
+  "title": "Etiquetas",
   "layout": "default",
   "seo": {
-    "title": "Tags",
-    "description": "Tags para el hub de contenido de Zoosite.",
+    "title": "Etiquetas",
+    "description": "Etiquetas para el hub de contenido de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },

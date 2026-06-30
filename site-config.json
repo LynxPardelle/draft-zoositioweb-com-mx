@@ -250,7 +250,7 @@
     {
       "path": "/admin/blog/tags",
       "pageId": "admin-blog-tags",
-      "label": "Tags del blog",
+      "label": "Etiquetas del blog",
       "auth": {
         "required": true,
         "redirectTo": "/acceso",
@@ -293,12 +293,12 @@
     {
       "path": "/blog/web/blog-builder-seo",
       "pageId": "blog-article",
-      "label": "Blog builder visual con SEO"
+      "label": "Editor visual de blog con SEO"
     },
     {
       "path": "/blog/tag/:tagSlug",
       "pageId": "blog-category",
-      "label": "Tag del blog"
+      "label": "Etiqueta del blog"
     },
     {
       "path": "/blog/:categorySlug",
@@ -760,7 +760,7 @@
             "locale": "es",
             "status": "published",
             "title": "Cómo crear blogs visuales con Zoolandingpage",
-            "summary": "Guía inicial del content hub de Zoosite para crear artículos visuales, SEO-ready y editables con componentes genéricos.",
+            "summary": "Guía inicial de Zoosite para crear artículos visuales, listos para SEO y editables con componentes genéricos.",
             "path": "/blog/web/blog-builder-seo",
             "categorySlug": "web",
             "tags": [
@@ -797,7 +797,7 @@
             "taxonomyId": "builder",
             "kind": "tag",
             "slug": "builder",
-            "label": "Builder",
+            "label": "Editor visual",
             "locale": "es",
             "visible": true
           },
@@ -805,7 +805,7 @@
             "taxonomyId": "angora",
             "kind": "tag",
             "slug": "angora",
-            "label": "Angora",
+            "label": "Diseño del sitio",
             "locale": "es",
             "visible": true
           }

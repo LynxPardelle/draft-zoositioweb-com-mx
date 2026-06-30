@@ -172,7 +172,7 @@
       "id": "admin-blog-articulo-versionesNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -184,7 +184,7 @@
       "id": "admin-blog-articulo-versionesNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -235,7 +235,7 @@
       "type": "input",
       "config": {
         "fieldId": "articleId",
-        "label": "Identificador del artículo",
+        "label": "Artículo seleccionado",
         "controlType": "text",
         "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
         "required": true,
@@ -320,7 +320,7 @@
       "type": "input",
       "config": {
         "fieldId": "snapshot",
-        "label": "Snapshot",
+        "label": "Copia guardada",
         "controlType": "text",
         "helperText": "Referencia segura del paquete completo de esa versión.",
         "required": false,
@@ -372,7 +372,7 @@
           "status"
         ],
         "emptyText": "Aún no hay versiones disponibles para este artículo. Cuando guardes cambios, las revisiones aparecerán aquí.",
-        "loadingText": "Cargando datos de gestor de contenido...",
+        "loadingText": "Cargando datos del blog...",
         "columns": [
           {
             "id": "revisionId",
@@ -534,7 +534,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo pendiente",
+        "text": "Artículo no confirmado",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,success",
@@ -545,7 +545,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Versión pendiente",
+        "text": "Versión no confirmada",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,success",

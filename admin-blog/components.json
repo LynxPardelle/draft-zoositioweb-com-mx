@@ -67,7 +67,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Superficie operativa del hub zoosite-main: artículos, revisión, publicación, medios, taxonomía, moderación y analítica sin configuración server-only en el navegador.",
+        "text": "Superficie operativa del blog: artículos, revisión, publicación, medios, taxonomía, moderación y analítica sin exponer configuración privada en el navegador.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -172,7 +172,7 @@
       "id": "admin-blogNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -184,7 +184,7 @@
       "id": "admin-blogNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -257,7 +257,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículos: lista protegida del hub zoosite-main.",
+        "text": "Artículos: lista protegida del blog.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
@@ -266,7 +266,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Categorías y tags: se comparten dentro de este hub y pueden ocultarse o renombrarse por draft.",
+        "text": "Categorías y etiquetas: se comparten dentro de este centro de contenido y pueden ocultarse o renombrarse por sitio.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
@@ -454,8 +454,8 @@
           "latestRevisionId",
           "path"
         ],
-        "emptyText": "No hay registros reales disponibles desde gestor de contenido para este filtro.",
-        "loadingText": "Cargando datos de gestor de contenido...",
+        "emptyText": "No encontramos registros con estos filtros. Ajusta la búsqueda o crea una nueva entrada.",
+        "loadingText": "Cargando datos del blog...",
         "columns": [
           {
             "id": "title",
@@ -479,12 +479,12 @@
           },
           {
             "id": "tags",
-            "header": "Tags",
+            "header": "Etiquetas",
             "valuePath": "tags",
             "format": "list",
             "itemPath": "label",
             "separator": ", ",
-            "emptyText": "Sin tags"
+            "emptyText": "Sin etiquetas"
           },
           {
             "id": "schedule",

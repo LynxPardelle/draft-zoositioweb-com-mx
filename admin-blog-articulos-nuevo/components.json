@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Crea el paquete inicial con metadata lista para SEO. Después vuelve a la lista para abrir el editor, preview, SEO, versiones o programación del artículo seleccionado.",
+        "text": "Crea el paquete inicial con metadatos listos para SEO. Después vuelve a la lista para abrir el editor, vista previa, SEO, versiones o programación del artículo seleccionado.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -172,7 +172,7 @@
       "id": "admin-blog-articulos-nuevoNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -184,7 +184,7 @@
       "id": "admin-blog-articulos-nuevoNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -404,11 +404,11 @@
             },
             {
               "value": "builder",
-              "label": "Builder visual"
+              "label": "Editor visual"
             },
             {
               "value": "angora",
-              "label": "Angora CSS"
+              "label": "Diseño del sitio CSS"
             }
           ]
         },
@@ -425,7 +425,7 @@
       "type": "input",
       "config": {
         "fieldId": "articleTags",
-        "label": "Tags",
+        "label": "Etiquetas",
         "controlType": "text",
         "placeholder": "seo, blog-builder, sitios-web",
         "helperText": "Separados por coma.",
@@ -550,7 +550,7 @@
         "fieldId": "articleSeoTitle",
         "label": "Título SEO",
         "controlType": "text",
-        "placeholder": "Blog builder visual con SEO para sitios web",
+        "placeholder": "Editor visual de blog con SEO para sitios web",
         "required": true,
         "readOnly": false,
         "disabled": false,
@@ -625,7 +625,7 @@
       "type": "input",
       "config": {
         "fieldId": "articleCanonicalPolicy",
-        "label": "Canonical",
+        "label": "URL canónica",
         "controlType": "select",
         "value": "self",
         "required": true,
@@ -961,7 +961,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo pendiente",
+        "text": "Artículo no confirmado",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
@@ -972,7 +972,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Versión pendiente",
+        "text": "Versión no confirmada",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
@@ -1072,7 +1072,7 @@
       "type": "text",
       "config": {
         "tag": "h2",
-        "text": "Checklist MVP",
+        "text": "Checklist inicial",
         "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
       }
     },
@@ -1103,7 +1103,7 @@
       "type": "text",
       "config": {
         "tag": "li",
-        "text": "Define categoría y tags pensando en URLs indexables.",
+        "text": "Define categoría y etiquetas pensando en URLs indexables.",
         "classes": "ank-fontSize-14px ank-lineHeight-1_45 ank-fontWeight-700"
       }
     },

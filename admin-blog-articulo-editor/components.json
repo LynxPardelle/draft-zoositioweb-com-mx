@@ -172,7 +172,7 @@
       "id": "admin-blog-articulo-editorNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -184,7 +184,7 @@
       "id": "admin-blog-articulo-editorNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -267,7 +267,7 @@
       "type": "text",
       "config": {
         "tag": "span",
-        "text": "Identificador del artículo",
+        "text": "Artículo seleccionado",
         "classes": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor"
       }
     },
@@ -276,7 +276,7 @@
       "type": "text",
       "config": {
         "tag": "code",
-        "text": "Artículo pendiente",
+        "text": "Artículo no confirmado",
         "classes": "ank-display-block ank-width-100per ank-overflow-wrap-anywhere ank-fontFamily-monospace ank-fontSize-13px ank-fontWeight-900 ank-color-titleColor"
       },
       "valueInstructions": "set:config.text,routeParamOr,id,Abre el editor desde la lista de artículos."
@@ -295,7 +295,7 @@
       "type": "input",
       "config": {
         "fieldId": "articleId",
-        "label": "Identificador del artículo",
+        "label": "Artículo seleccionado",
         "controlType": "text",
         "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
         "required": true,
@@ -461,11 +461,11 @@
             },
             {
               "value": "builder",
-              "label": "Builder visual"
+              "label": "Editor visual"
             },
             {
               "value": "angora",
-              "label": "Angora CSS"
+              "label": "Diseño del sitio CSS"
             }
           ]
         }
@@ -477,7 +477,7 @@
       "type": "input",
       "config": {
         "fieldId": "articleTags",
-        "label": "Tags",
+        "label": "Etiquetas",
         "controlType": "text",
         "required": false,
         "readOnly": false,
@@ -488,7 +488,7 @@
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
         "validation": [],
-        "helperText": "Separa cada tag con coma. El sistema recorta espacios al inicio y final; evita duplicados.",
+        "helperText": "Separa cada etiqueta con coma. El sistema recorta espacios al inicio y final; evita duplicados.",
         "autocompleteMinLength": 1,
         "autocompleteMaxOptions": 10,
         "autocompleteMatchMode": "contains",
@@ -790,7 +790,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo pendiente",
+        "text": "Artículo no confirmado",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_update_package.state,success",
@@ -801,7 +801,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Versión pendiente",
+        "text": "Versión no confirmada",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_update_package.state,success",
@@ -916,7 +916,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "assetId pendiente",
+        "text": "Archivo no confirmado",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success",
@@ -927,7 +927,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "fileName pendiente",
+        "text": "Nombre de archivo no confirmado",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success",
@@ -952,7 +952,7 @@
           "path"
         ],
         "emptyText": "Aún no hay medios registrados para este artículo. Usa la carga de archivos para registrar metadatos públicos.",
-        "loadingText": "Cargando datos de gestor de contenido...",
+        "loadingText": "Cargando datos del blog...",
         "columns": [
           {
             "id": "name",
@@ -971,7 +971,7 @@
           },
           {
             "id": "publicability",
-            "header": "Publicabilidad",
+            "header": "Estado de publicación",
             "valuePath": "publicability"
           }
         ],
@@ -1009,7 +1009,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Edita clases Angora, variantes, bindings seguros y metadata visual permitida por el preset del draft.",
+        "text": "Edita clases del diseño del sitio, variantes, bindings seguros y metadatos visuales permitidos por el preset del draft.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
