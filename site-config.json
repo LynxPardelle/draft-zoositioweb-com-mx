@@ -1893,8 +1893,7 @@
           "eventType",
           "targetId",
           "value",
-          "path",
-          "metadata"
+          "path"
         ],
         "statusTarget": "remoteStatus.contentHub.content_hub_record_interaction"
       },
