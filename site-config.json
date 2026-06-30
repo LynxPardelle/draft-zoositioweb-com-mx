@@ -1364,7 +1364,10 @@
               "trim"
             ]
           }
-        }
+        },
+        "requiredInputKeys": [
+          "articleId"
+        ]
       },
       {
         "id": "content_hub_taxonomy",
@@ -1617,7 +1620,10 @@
               "trim"
             ]
           }
-        }
+        },
+        "requiredInputKeys": [
+          "articleId"
+        ]
       },
       {
         "id": "content_hub_moderation",

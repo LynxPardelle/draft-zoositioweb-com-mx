@@ -226,6 +226,17 @@
         },
         "components": [
           "editorCard",
+          "editorMediaScope"
+        ]
+      }
+    },
+    {
+      "id": "editorMediaScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "articleEditorMedia",
+        "valueInstructions": "collectFields:articleId,upload",
+        "components": [
           "editorSideRail"
         ]
       }
@@ -815,6 +826,7 @@
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
           "editorAssetsTitle",
+          "editorMediaArticleId",
           "editorDropzone",
           "editorUploadButton",
           "editorUploadStatus",
@@ -822,6 +834,31 @@
           "componentInspector"
         ]
       }
+    },
+    {
+      "id": "editorMediaArticleId",
+      "type": "input",
+      "config": {
+        "fieldId": "articleId",
+        "label": "Artículo seleccionado",
+        "controlType": "text",
+        "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
+        "required": true,
+        "readOnly": true,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-fontSize-13px ank-fontWeight-900 ank-fontFamily-monospace",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Abre el editor desde la fila del artículo para cargar archivos con contexto seguro."
+          }
+        ]
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.articleId,"
     },
     {
       "id": "editorAssetsTitle",
@@ -845,7 +882,8 @@
         "maxFileSizeBytes": 5242880,
         "maxSizeLabel": "Máximo 5 MB por archivo",
         "multiple": false,
-        "helperText": "La selección local no sube binarios por sí sola; uploadAsset autoriza y procesa en el servidor.",
+        "required": true,
+        "helperText": "Selecciona un archivo para registrarlo en el artículo. La autorización y el procesamiento se validan en el servidor.",
         "dropzoneClasses": "ank-width-100per ank-minHeight-170px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-bgColor ank-color-textColor ank-p-18px",
         "browseButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "helperTextClasses": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
@@ -860,7 +898,7 @@
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Registrar media",
         "loadingLabel": "Registrando...",
-        "disabledWhenInvalidScope": false,
+        "disabledWhenInvalidScope": true,
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_upload_asset",
