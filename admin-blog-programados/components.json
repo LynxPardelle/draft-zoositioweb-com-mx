@@ -739,7 +739,7 @@
           "width": "54px"
         }
       },
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.schedules.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.schedules.error,"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.schedules.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.schedules.state,error\",No se pudo cargar la programación. Recarga la página o vuelve a iniciar sesión."
     }
   ]
 }

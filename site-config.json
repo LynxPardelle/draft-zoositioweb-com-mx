@@ -264,7 +264,7 @@
     {
       "path": "/admin/blog/hub",
       "pageId": "admin-blog-hub",
-      "label": "Hub del blog",
+      "label": "Centro del blog",
       "auth": {
         "required": true,
         "redirectTo": "/acceso",
@@ -923,13 +923,13 @@
                   "Si fue un error, documenta el caso antes de intentar otro cambio."
                 ],
                 "suspended": [
-                  "El acceso protegido se bloquea cuando el backend revalida la sesión.",
+                  "El acceso protegido se bloquea cuando la sesión no se puede validar.",
                   "Reactiva sólo después de confirmar que la cuenta puede volver a operar."
                 ]
               },
               "fallback": [
                 "Revisa estado y grupos antes de cambiar permisos.",
-                "El backend vuelve a validar sesión, tenant, ambiente y CSRF en cada acción."
+                "El servicio seguro vuelve a validar sesión, sitio, ambiente y permisos en cada acción."
               ]
             },
             "cardClasses": {

@@ -68,7 +68,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Busca, abre y opera artículos reales del hub. Las acciones de fila abren el artículo seleccionado y conservan la versión al programar.",
+        "text": "Busca, abre y opera artículos reales del blog. Las acciones de fila abren el artículo seleccionado y conservan la versión al programar.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -439,7 +439,7 @@
           "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
           "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
         },
-        "helperText": "Controla cuántos artículos pide el hub."
+        "helperText": "Controla cuántos artículos se cargan."
       },
       "valueInstructions": "set:config.value,queryParamOr,pageSize,10"
     },
@@ -560,7 +560,7 @@
       "type": "generic-table",
       "config": {
         "id": "adminBlogArticulosTable",
-        "label": "Artículos del hub zoosite-main",
+        "label": "Artículos del blog",
         "rowsSource": {
           "source": "var",
           "path": "remote.contentHub.articles.items"
@@ -669,7 +669,7 @@
           "textDecoration": "none",
           "width": "54px"
         },
-        "description": "Datos protegidos del hub. Usa los filtros superiores para pedir otra vista al servicio seguro del sitio.",
+        "description": "Datos protegidos del blog. Usa los filtros superiores para pedir otra vista al servicio seguro del sitio.",
         "descriptionClasses": "ank-mt-4px ank-mb-10px ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700",
         "tableWrapperClasses": "ank-width-100per ank-overflow-auto ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_14",
         "tableClasses": "ank-width-100per ank-bg-bgColor ank-color-textColor",
@@ -680,7 +680,7 @@
         "actionLabelMode": "tooltip",
         "actionIconClasses": "ank-width-16px ank-height-16px ank-display-inline-flex ank-flexShrink-0"
       },
-      "valueInstructions": "set:config.actionColumnLabel,i18n,adminBlogArticulos.actionsColumn;set:config.rowActions.0.label,i18n,adminBlogArticulos.edit;set:config.rowActions.1.label,i18n,adminBlogArticulos.preview;set:config.rowActions.2.label,i18n,adminBlogArticulos.seo;set:config.rowActions.3.label,i18n,adminBlogArticulos.versions;set:config.rowActions.4.label,i18n,adminBlogArticulos.schedule;set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,varOr,remoteStatus.contentHub.articles.error,"
+      "valueInstructions": "set:config.actionColumnLabel,i18n,adminBlogArticulos.actionsColumn;set:config.rowActions.0.label,i18n,adminBlogArticulos.edit;set:config.rowActions.1.label,i18n,adminBlogArticulos.preview;set:config.rowActions.2.label,i18n,adminBlogArticulos.seo;set:config.rowActions.3.label,i18n,adminBlogArticulos.versions;set:config.rowActions.4.label,i18n,adminBlogArticulos.schedule;set:config.loading,when,\"all:varEq,remoteStatus.contentHub.articles.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.articles.state,error\",No se pudo cargar la lista. Recarga la página o vuelve a iniciar sesión."
     },
     {
       "id": "adminBlogArticulosPagination",

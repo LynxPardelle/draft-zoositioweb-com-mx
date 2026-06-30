@@ -135,7 +135,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Este artículo muestra el flujo editorial: crear paquete, editar contenido, validar SEO, preparar medios, revisar versiones y publicar una versión legible por rutas SEO.",
+        "text": "Este artículo muestra el flujo editorial: crear borrador, editar contenido, validar SEO, preparar medios, revisar versiones y publicar una versión legible por rutas SEO.",
         "classes": "ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7"
       },
       "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.summary,Este artículo muestra un flujo de publicación preparado para rutas SEO."
