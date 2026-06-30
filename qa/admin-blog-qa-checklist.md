@@ -6,6 +6,8 @@ Usa esta matriz para revisar el blog administrativo, blog publico y autenticacio
 
 ## Estado local mas reciente
 
+- 2026-06-30 15:43 CT: se agrego cobertura directa de CLI para que el smoke de producto distinga errores locales de setup: falta `--runtime-base-url`, falta cookie autenticada o falta CSRF. Esto prepara la prueba manual sin imprimir cookies, tokens ni payloads sensibles.
+- Verificacion local: `node --test tools/tests/content-hub-product-readiness-smoke.spec.mjs` retorno 21 pass; gates combinados de content-hub/admin/SSR retornaron 71 pass; `npm audit --omit=dev` retorno `found 0 vulnerabilities`; health de testing retorno PASS con bundle `main-XG4UPJHH.js` y content-hub sin sesion en `401`.
 - 2026-06-29 18:45 CT: se reforzaron los guards de preview/SEO para que `articleId` y `revisionId` sean requeridos antes de ejecutar acciones de ciclo editorial. App commit `4bb03e8`; draft commit `00c065e`.
 - Verificacion local: content-hub admin/schema/contract Node tests pasaron 54; focused `proxy-action.handlers.spec.ts` paso `TOTAL: 9 SUCCESS`; `npm run build` paso con el warning existente de `quill-delta`; `npm audit --omit=dev` retorno `found 0 vulnerabilities`; SSR rerun paso 23/23; public-safety audit retorno `ok:true`.
 - Backend BFF: `origin/dev` de `zoolanding-content-hub` en `f9523ed` ya incluye `scheduleList`, `cancelSchedule` y auditoria persistida segura; validacion en worktree temporal paso 57 unittests, `sam validate` y `pip-audit`.
