@@ -103,7 +103,7 @@
       "id": "blogSearch",
       "type": "search-box",
       "config": {
-        "placeholder": "Buscar por tema, SEO, builder o categoría",
+        "placeholder": "Buscar por tema, posicionamiento o categoría",
         "classes": "ank-width-100per ank-display-flex ank-alignItems-center",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-outline-none ank-boxSizing-borderBox",
         "resultsClasses": "ank-listStyle-none ank-m-0 ank-p-6px ank-display-flex ank-flexDirection-column ank-gap-4px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_18ED",
@@ -158,7 +158,7 @@
       "type": "text",
       "config": {
         "tag": "h2",
-        "text": "Taxonomía pública",
+        "text": "Explorar por tema",
         "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
       }
     },
@@ -240,7 +240,7 @@
       "type": "link",
       "config": {
         "href": "/blog",
-        "text": "Tag",
+        "text": "Etiqueta",
         "classes": "ank-minHeight-48px ank-px-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_18"
       }
     },

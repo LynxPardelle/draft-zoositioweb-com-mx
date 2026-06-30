@@ -66,7 +66,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Configura canonical, hreflang, social preview, structuredData, robots y sitemap con validación visible antes de publicar.",
+        "text": "Configura canonical, hreflang, social preview, Datos estructurados, robots y sitemap con validación visible antes de publicar.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -172,7 +172,7 @@
       "id": "admin-blog-articulo-seoNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -184,7 +184,7 @@
       "id": "admin-blog-articulo-seoNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -236,7 +236,7 @@
       "type": "input",
       "config": {
         "fieldId": "articleId",
-        "label": "Identificador del artículo",
+        "label": "Artículo seleccionado",
         "controlType": "text",
         "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
         "required": true,
@@ -304,7 +304,7 @@
       "type": "input",
       "config": {
         "fieldId": "canonical",
-        "label": "Canonical",
+        "label": "URL canónica",
         "controlType": "text",
         "placeholder": "https://zoositioweb.com.mx/blog/web/slug",
         "required": false,
@@ -342,7 +342,7 @@
       "type": "input",
       "config": {
         "fieldId": "socialPreview",
-        "label": "Social preview",
+        "label": "Vista previa para redes",
         "controlType": "text",
         "placeholder": "Título y descripción para redes",
         "required": false,
@@ -361,7 +361,7 @@
       "type": "input",
       "config": {
         "fieldId": "robots",
-        "label": "Robots",
+        "label": "Visibilidad en buscadores",
         "controlType": "select",
         "value": "index,follow",
         "required": false,
@@ -374,7 +374,7 @@
           },
           {
             "value": "noindex,follow",
-            "label": "noindex,follow"
+            "label": "sin indexación,follow"
           }
         ],
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
@@ -410,7 +410,7 @@
       "type": "input",
       "config": {
         "fieldId": "sitemap",
-        "label": "Sitemap",
+        "label": "Mapa del sitio",
         "controlType": "select",
         "value": "include",
         "required": false,
@@ -459,7 +459,7 @@
       "type": "input",
       "config": {
         "fieldId": "structuredData",
-        "label": "structuredData",
+        "label": "Datos estructurados",
         "controlType": "textarea",
         "helperText": "JSON-LD seguro; el servicio de contenido lo valida antes de publicar.",
         "rows": 8,
@@ -657,7 +657,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo pendiente",
+        "text": "Artículo no confirmado",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
@@ -668,7 +668,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Versión pendiente",
+        "text": "Versión no confirmada",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
@@ -769,7 +769,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículo pendiente",
+        "text": "Artículo no confirmado",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
@@ -780,7 +780,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Versión pendiente",
+        "text": "Versión no confirmada",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",

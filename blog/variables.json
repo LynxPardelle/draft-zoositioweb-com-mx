@@ -13,7 +13,7 @@
             "locale": "es",
             "status": "published",
             "title": "Cómo crear blogs visuales con Zoolandingpage",
-            "summary": "Guía inicial del content hub de Zoosite para crear artículos visuales, SEO-ready y editables con componentes genéricos.",
+            "summary": "Guía inicial de Zoosite para crear artículos visuales, listos para SEO y editables con componentes genéricos.",
             "path": "/blog/web/blog-builder-seo",
             "categorySlug": "web",
             "tags": [
@@ -52,7 +52,7 @@
             "taxonomyId": "builder",
             "kind": "tag",
             "slug": "builder",
-            "label": "Builder",
+            "label": "Editor visual",
             "locale": "es",
             "visible": true
           },
@@ -60,7 +60,7 @@
             "taxonomyId": "angora",
             "kind": "tag",
             "slug": "angora",
-            "label": "Angora",
+            "label": "Diseño del sitio",
             "locale": "es",
             "visible": true
           }
@@ -93,7 +93,7 @@
             "taxonomyId": "builder",
             "kind": "tag",
             "slug": "builder",
-            "label": "Builder",
+            "label": "Editor visual",
             "locale": "es",
             "visible": true
           },
@@ -101,7 +101,7 @@
             "taxonomyId": "angora",
             "kind": "tag",
             "slug": "angora",
-            "label": "Angora",
+            "label": "Diseño del sitio",
             "locale": "es",
             "visible": true
           }

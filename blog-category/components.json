@@ -39,7 +39,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "CATEGORÍA / TAG",
+        "text": "CATEGORÍA / ETIQUETA",
         "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-900 ank-color-accentColor"
       }
     },
@@ -48,7 +48,7 @@
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Contenido publicado del hub",
+        "text": "Contenido publicado",
         "classes": "ank-m-0 ank-fontSize-38px ank-fontWeight-900 ank-color-titleColor"
       }
     },
@@ -57,7 +57,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Las categorías y tags públicos vienen de taxonomía pública. Multi-tag o filtros no promovidos deben mantenerse noindex cuando el backend lo indique.",
+        "text": "Las categorías y etiquetas públicas organizan los artículos por tema. Los filtros con múltiples etiquetas sólo deben indexarse cuando el sitio lo permita.",
         "classes": "ank-m-0 ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor"
       }
     },
@@ -98,7 +98,7 @@
       "type": "link",
       "config": {
         "href": "/blog/tag/builder",
-        "text": "Builder",
+        "text": "Editor visual",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       }
     },
@@ -107,7 +107,7 @@
       "type": "link",
       "config": {
         "href": "/blog/tag/angora",
-        "text": "Angora",
+        "text": "Diseño del sitio",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       }
     },
@@ -176,7 +176,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No hay artículos publicados para este filtro en el índice público actual.",
+        "text": "Aún no hay artículos publicados para este tema. Prueba otra categoría o vuelve más tarde.",
         "classes": "ank-width-100per ank-maxWidth-980px ank-m-0 ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-800"
       },
       "condition": "all:varLenEq,contentHub.publicArticles.items,0"

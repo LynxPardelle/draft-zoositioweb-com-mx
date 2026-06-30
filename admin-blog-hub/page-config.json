@@ -3,11 +3,11 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "admin-blog-hub",
   "route": "/admin/blog/hub",
-  "title": "Hub de contenido",
+  "title": "Centro de contenido de contenido",
   "layout": "default",
   "seo": {
-    "title": "Hub de contenido",
-    "description": "Hub de contenido para el hub de contenido de Zoosite.",
+    "title": "Centro de contenido de contenido",
+    "description": "Centro de contenido de contenido para el hub de contenido de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },
