@@ -104,6 +104,11 @@ npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --run
 
 ## Public interactions and moderation
 
+Current evidence:
+- Public article page has draft-configured CTA, reaction, share, and comment-intent wiring to content-hub actions.
+- Comment UI includes a sign-in link and moderation copy.
+- Still requires live authenticated/API proof for queueing comments, moderation decisions, and backend spam/rate-limit behavior.
+
 - [ ] Comentarios requieren login cuando el articulo lo configura.
 - [ ] Comentarios nuevos entran a cola de moderacion por defecto cuando el draft lo define.
 - [ ] Likes, reacciones, CTAs, shares y formularios publicos tienen proteccion anti-spam/rate-limit.

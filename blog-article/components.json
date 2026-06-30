@@ -334,6 +334,7 @@
         "components": [
           "blogArticleCommentTitle",
           "blogArticleCommentCopy",
+          "blogArticleCommentLoginLink",
           "blogArticleCommentBody",
           "blogArticleCommentButton",
           "blogArticleCommentStatus"
@@ -356,6 +357,15 @@
         "tag": "p",
         "text": "Para comentar necesitas iniciar sesión. Los comentarios se revisan antes de aparecer publicados.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
+      }
+    },
+    {
+      "id": "blogArticleCommentLoginLink",
+      "type": "link",
+      "config": {
+        "href": "/acceso",
+        "text": "Iniciar sesión para comentar",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       }
     },
     {
