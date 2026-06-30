@@ -85,7 +85,12 @@
         "required": true,
         "redirectTo": "/acceso",
         "allowedGroups": [
-          "zoosite-admin"
+          "zoosite-admin",
+          "zoosite-blog-editor",
+          "zoosite-blog-publisher",
+          "zoosite-blog-media",
+          "zoosite-blog-moderator",
+          "zoosite-blog-analyst"
         ]
       }
     },
