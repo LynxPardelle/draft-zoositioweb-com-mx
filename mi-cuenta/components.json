@@ -255,10 +255,10 @@
     {
       "id": "miCuentaAdminBlogLink",
       "type": "link",
-      "condition": "all:varEq,remote.auth.account.items.0.isAdminText,Administrador",
+      "condition": "any:varEq,remote.auth.account.items.0.isAdminText,Administrador;any:varIncludes,remote.auth.account.items.0.rolesText,zoosite-admin;any:varIncludes,remote.auth.account.items.0.rolesText,zoosite-blog-editor;any:varIncludes,remote.auth.account.items.0.rolesText,zoosite-blog-publisher;any:varIncludes,remote.auth.account.items.0.rolesText,zoosite-blog-media;any:varIncludes,remote.auth.account.items.0.rolesText,zoosite-blog-moderator;any:varIncludes,remote.auth.account.items.0.rolesText,zoosite-blog-analyst",
       "eventInstructions": "trackEvent:auth_admin_blog_link_click,auth,zoosite-admin-blog,location,account_page",
       "config": {
-        "href": "/admin/blog/articulos",
+        "href": "/admin/blog",
         "text": "Administrar blog",
         "ariaLabel": "Administrar artículos del blog de zoositioweb",
         "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__accentColor ank-fontSize-15px ank-fontWeight-900 ank-textDecoration-none ank-textAlign-center",
