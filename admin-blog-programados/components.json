@@ -497,7 +497,10 @@
           "scheduledPublishError",
           "scheduledPublishSuccess",
           "scheduledPublishArticleId",
-          "scheduledPublishRevisionId"
+          "scheduledPublishRevisionId",
+          "scheduledCancelLoading",
+          "scheduledCancelError",
+          "scheduledCancelSuccess"
         ]
       }
     },
@@ -613,6 +616,36 @@
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
       "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.revisionId,La respuesta no incluyó la versión."
+    },
+    {
+      "id": "scheduledCancelLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cancelando programación...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_cancel_schedule.state,loading"
+    },
+    {
+      "id": "scheduledCancelError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos cancelar la programación. Recarga las programaciones del artículo y verifica tu sesión y permisos antes de intentarlo de nuevo.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_cancel_schedule.state,error"
+    },
+    {
+      "id": "scheduledCancelSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Programación cancelada.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_cancel_schedule.state,success"
     },
     {
       "id": "scheduledTable",
