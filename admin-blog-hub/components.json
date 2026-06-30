@@ -256,7 +256,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Visibilidad: este centro de contenido es principal para zoositioweb.com.mx.",
+        "text": "Visibilidad: este blog es principal para zoositioweb.com.mx.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },

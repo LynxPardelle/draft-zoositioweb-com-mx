@@ -67,7 +67,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Superficie operativa del hub zoosite-main: artículos, revisión, publicación, medios, taxonomía, moderación y analítica sin configuración server-only en el navegador.",
+        "text": "Superficie operativa del blog: artículos, revisión, publicación, medios, taxonomía, moderación y analítica sin exponer configuración privada en el navegador.",
         "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -257,7 +257,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Artículos: lista protegida del hub zoosite-main.",
+        "text": "Artículos: lista protegida del blog.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
