@@ -279,7 +279,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Lista real del gestor seguro de contenido. Crear, validar, programar y publicar vuelven a verificar sesión, permisos, draft y protección contra envíos falsos en el servidor.",
+        "text": "Lista real del gestor seguro de contenido. Crear, abrir, programar y publicar artículos vuelve a verificar sesión, permisos, draft y protección contra envíos falsos en el servidor.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
@@ -462,21 +462,6 @@
       }
     },
     {
-      "id": "adminBlogArticulosValidateButton",
-      "type": "button",
-      "config": {
-        "classes": "ank-minHeight-52px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_22 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
-        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
-        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
-        "label": "Validar selección",
-        "loadingLabel": "Validando...",
-        "disabledWhenInvalidScope": false,
-        "iconPosition": "before"
-      },
-      "eventInstructions": "proxyAction:content_hub_validate_article",
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,loading\",true,false"
-    },
-    {
       "id": "adminBlogArticulosActionStatus",
       "type": "container",
       "config": {
@@ -497,7 +482,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Estado de validación: sin operación reciente. Abre un artículo desde las acciones de fila para validarlo o publicarlo con contexto claro.",
+        "text": "Estado de artículo: abre un artículo desde las acciones de fila para editar, revisar SEO, ver versiones o programar con contexto claro.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       },
       "condition": "not:var,remoteStatus.contentHub.content_hub_validate_article.state"
