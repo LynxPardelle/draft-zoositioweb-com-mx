@@ -57,7 +57,7 @@
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Hub",
+        "text": "Centro de contenido",
         "classes": "ank-m-0 ank-fontSize-34px ank-fontWeight-900 ank-color-titleColor"
       }
     },
@@ -171,7 +171,7 @@
       "id": "admin-blog-hubNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -183,7 +183,7 @@
       "id": "admin-blog-hubNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
         "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
         "styles": {
@@ -222,7 +222,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Hub público: zoosite-main. La visibilidad, los dominios conectados y las conexiones compartidas se muestran aquí; las reglas sensibles se validan en el servidor.",
+        "text": "Centro de contenido público: zoosite-main. La visibilidad, los dominios conectados y las conexiones compartidas se muestran aquí; las reglas sensibles se validan en el servidor.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
@@ -247,7 +247,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Dominios conectados (connectedDrafts): sólo se muestran drafts autorizados y públicos.",
+        "text": "Sitios conectados: sólo se muestran dominios autorizados y públicos.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
@@ -256,7 +256,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Visibilidad (visibility): este hub es principal para zoositioweb.com.mx.",
+        "text": "Visibilidad: este centro de contenido es principal para zoositioweb.com.mx.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
@@ -265,7 +265,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Hubs autorizados (authorizedHubs): futuras conexiones para lectura compartida entre productos.",
+        "text": "Conexiones autorizadas: futuras relaciones para lectura compartida entre productos.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor ank-p-12px ank-borderRadius-8px ank-bg-bgColor"
       }
     },
