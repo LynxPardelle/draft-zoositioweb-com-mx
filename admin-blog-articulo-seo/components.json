@@ -239,7 +239,7 @@
         "label": "Identificador del artículo",
         "controlType": "text",
         "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
-        "required": false,
+        "required": true,
         "readOnly": true,
         "disabled": false,
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
@@ -287,7 +287,7 @@
         "label": "Versión actual",
         "controlType": "text",
         "helperText": "Se toma de la última versión guardada del artículo.",
-        "required": false,
+        "required": true,
         "readOnly": true,
         "disabled": false,
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
@@ -499,7 +499,7 @@
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Validar SEO",
         "loadingLabel": "Validando...",
-        "disabledWhenInvalidScope": false,
+        "disabledWhenInvalidScope": true,
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_validate_article",
@@ -514,7 +514,7 @@
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Enviar a revisión",
         "loadingLabel": "Enviando...",
-        "disabledWhenInvalidScope": false,
+        "disabledWhenInvalidScope": true,
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_submit_review_article",
@@ -529,7 +529,7 @@
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Aprobar",
         "loadingLabel": "Aprobando...",
-        "disabledWhenInvalidScope": false,
+        "disabledWhenInvalidScope": true,
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_approve_article",
@@ -544,7 +544,7 @@
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Publicar con SEO actual",
         "loadingLabel": "Publicando...",
-        "disabledWhenInvalidScope": false,
+        "disabledWhenInvalidScope": true,
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_publish_article",
@@ -559,7 +559,7 @@
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Despublicar",
         "loadingLabel": "Despublicando...",
-        "disabledWhenInvalidScope": false,
+        "disabledWhenInvalidScope": true,
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_unpublish_article",
@@ -574,7 +574,7 @@
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "label": "Archivar",
         "loadingLabel": "Archivando...",
-        "disabledWhenInvalidScope": false,
+        "disabledWhenInvalidScope": true,
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_archive_article",
