@@ -6,5 +6,10 @@
     "title": "Crear artículo",
     "hubId": "zoosite-main",
     "draftDomain": "zoositioweb.com.mx"
+  },
+  "dictionary": {
+    "adminBlog": {
+      "supportId": "Support ID: {{ id }}"
+    }
   }
 }

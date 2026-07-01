@@ -590,25 +590,31 @@
           "seoActionIdle",
           "seoValidateLoading",
           "seoValidateError",
+          "seoValidateErrorSupportId",
           "seoValidateSuccess",
           "seoValidateArticleId",
           "seoValidateRevisionId",
           "seoSubmitReviewLoading",
           "seoSubmitReviewError",
+          "seoSubmitReviewErrorSupportId",
           "seoSubmitReviewSuccess",
           "seoApproveLoading",
           "seoApproveError",
+          "seoApproveErrorSupportId",
           "seoApproveSuccess",
           "seoPublishLoading",
           "seoPublishError",
+          "seoPublishErrorSupportId",
           "seoPublishSuccess",
           "seoPublishArticleId",
           "seoPublishRevisionId",
           "seoUnpublishLoading",
           "seoUnpublishError",
+          "seoUnpublishErrorSupportId",
           "seoUnpublishSuccess",
           "seoArchiveLoading",
           "seoArchiveError",
+          "seoArchiveErrorSupportId",
           "seoArchiveSuccess"
         ]
       }
@@ -641,6 +647,17 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error"
+    },
+    {
+      "id": "seoValidateErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error;all:var,remoteStatus.contentHub.content_hub_validate_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_validate_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "seoValidateSuccess",
@@ -695,6 +712,17 @@
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,error"
     },
     {
+      "id": "seoSubmitReviewErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,error;all:var,remoteStatus.contentHub.content_hub_submit_review_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_submit_review_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
       "id": "seoSubmitReviewSuccess",
       "type": "text",
       "config": {
@@ -725,6 +753,17 @@
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,error"
     },
     {
+      "id": "seoApproveErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,error;all:var,remoteStatus.contentHub.content_hub_approve_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_approve_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
       "id": "seoApproveSuccess",
       "type": "text",
       "config": {
@@ -753,6 +792,17 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error"
+    },
+    {
+      "id": "seoPublishErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error;all:var,remoteStatus.contentHub.content_hub_publish_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_publish_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "seoPublishSuccess",
@@ -807,6 +857,17 @@
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,error"
     },
     {
+      "id": "seoUnpublishErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,error;all:var,remoteStatus.contentHub.content_hub_unpublish_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_unpublish_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
       "id": "seoUnpublishSuccess",
       "type": "text",
       "config": {
@@ -835,6 +896,17 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,error"
+    },
+    {
+      "id": "seoArchiveErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,error;all:var,remoteStatus.contentHub.content_hub_archive_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_archive_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "seoArchiveSuccess",
