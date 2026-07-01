@@ -291,6 +291,7 @@
         "components": [
           "moderationModerateLoading",
           "moderationModerateError",
+          "moderationModerateErrorSupportId",
           "moderationModerateSuccess",
           "moderationModerateArticleId",
           "moderationModerateRevisionId"
@@ -317,6 +318,17 @@
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_moderate_comment.state,error",
       "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.contentHub.content_hub_moderate_comment.state,error\",No pudimos guardar la decisión de moderación. Recarga la página y verifica tu sesión antes de intentarlo de nuevo.,No pudimos guardar la decisión de moderación. Recarga la página y verifica tu sesión antes de intentarlo de nuevo."
+    },
+    {
+      "id": "moderationModerateErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_moderate_comment.state,error;all:var,remoteStatus.contentHub.content_hub_moderate_comment.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_moderate_comment.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "moderationModerateSuccess",

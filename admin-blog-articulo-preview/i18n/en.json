@@ -6,5 +6,10 @@
     "title": "Vista previa",
     "hubId": "zoosite-main",
     "draftDomain": "zoositioweb.com.mx"
+  },
+  "dictionary": {
+    "adminBlog": {
+      "supportId": "Support ID: {{ id }}"
+    }
   }
 }

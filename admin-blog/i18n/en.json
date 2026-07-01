@@ -26,6 +26,9 @@
       "seo": "SEO",
       "versions": "Versions",
       "schedule": "Schedule"
+    },
+    "adminBlog": {
+      "supportId": "Support ID: {{ id }}"
     }
   }
 }

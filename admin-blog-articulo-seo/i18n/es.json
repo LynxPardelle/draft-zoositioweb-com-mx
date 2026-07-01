@@ -6,5 +6,10 @@
     "title": "SEO del artículo",
     "hubId": "zoosite-main",
     "draftDomain": "zoositioweb.com.mx"
+  },
+  "dictionary": {
+    "adminBlog": {
+      "supportId": "ID de soporte: {{ id }}"
+    }
   }
 }

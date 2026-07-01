@@ -751,6 +751,7 @@
           "editorSaveIdle",
           "editorSaveLoading",
           "editorSaveError",
+          "editorSaveErrorSupportId",
           "editorSaveSuccess",
           "editorSaveArticleId",
           "editorSaveRevisionId"
@@ -785,6 +786,17 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_update_package.state,error"
+    },
+    {
+      "id": "editorSaveErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_update_package.state,error;all:var,remoteStatus.contentHub.content_hub_update_package.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_update_package.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "editorSaveSuccess",
@@ -913,6 +925,7 @@
         "components": [
           "editorUploadLoading",
           "editorUploadError",
+          "editorUploadErrorSupportId",
           "editorUploadSuccess",
           "editorUploadAssetId",
           "editorUploadFileName"
@@ -938,6 +951,17 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error"
+    },
+    {
+      "id": "editorUploadErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error;all:var,remoteStatus.contentHub.content_hub_upload_asset.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_upload_asset.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "editorUploadSuccess",
