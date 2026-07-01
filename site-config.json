@@ -95,6 +95,18 @@
       }
     },
     {
+      "path": "/admin/combos",
+      "pageId": "admin-combos",
+      "label": "Combos",
+      "auth": {
+        "required": true,
+        "redirectTo": "/acceso",
+        "allowedGroups": [
+          "zoosite-admin"
+        ]
+      }
+    },
+    {
       "path": "/admin/blog/articulos",
       "pageId": "admin-blog-articulos",
       "label": "Artículos del blog",
@@ -404,6 +416,7 @@
       "/auth/callback",
       "/mi-cuenta",
       "/admin/usuarios",
+      "/admin/combos",
       "/admin/blog",
       "/admin/blog/articulos",
       "/admin/blog/articulos/nuevo",
@@ -732,6 +745,12 @@
       "enabled": true,
       "authProfileId": "staff",
       "endpoint": "/auth/runtime-config"
+    },
+    "comboCatalog": {
+      "enabled": false,
+      "endpoint": "/features/combo-catalog/read",
+      "authProfileId": "staff",
+      "draftDomain": "zoositioweb.com.mx"
     },
     "contentHubs": [
       {

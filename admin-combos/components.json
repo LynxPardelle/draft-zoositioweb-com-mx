@@ -1,0 +1,379 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "admin-combos",
+  "components": [
+    {
+      "id": "adminCombosRoot",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-18px",
+        "styles": {
+          "padding": "clamp(16px, 2vw, 32px)"
+        },
+        "components": [
+          "adminCombosShell"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosShell",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "adminCombosHeader",
+          "adminCombosStatus",
+          "adminCombosGrid"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "components": [
+          "adminCombosEyebrow",
+          "adminCombosTitle",
+          "adminCombosIntro"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "ZOOSITIOWEB / ADMIN",
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-fontSize-13px"
+      }
+    },
+    {
+      "id": "adminCombosTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Catálogo de combos",
+        "classes": "ank-m-0 ank-fontSize-34px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Administra presets visuales reutilizables para blog, builders y futuras herramientas de drafts. Esta superficie vive fuera del blog para que otros productos puedan consumirla.",
+        "classes": "ank-m-0 ank-maxWidth-900px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosStatus",
+      "type": "container",
+      "config": {
+        "tag": "aside",
+        "classes": "ank-width-100per ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "components": [
+          "adminCombosStatusTitle",
+          "adminCombosStatusCopy"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosStatusTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Estado de integración",
+        "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosStatusCopy",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "La Lambda genérica ya tiene contrato serverless. El runtime del draft está declarado como opcional y queda apagado hasta desplegar el endpoint y conectar las acciones protegidas.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "adminCombosGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-18px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(280px, 1fr))",
+          "alignItems": "start"
+        },
+        "components": [
+          "adminCombosCatalogCard",
+          "adminCombosEditorCard",
+          "adminCombosPolicyCard",
+          "adminCombosPreviewCard"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosCatalogCard",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "adminCombosCatalogTitle",
+          "adminCombosCatalogCopy",
+          "adminCombosCatalogSearch",
+          "adminCombosCatalogEmpty"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosCatalogTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Catálogo",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosCatalogCopy",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Aquí se listarán combos globales y específicos del draft con filtros por feature, componente, categoría, grupo y texto.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosCatalogSearch",
+      "type": "input",
+      "config": {
+        "fieldId": "comboSearch",
+        "label": "Buscar combos",
+        "controlType": "text",
+        "placeholder": "card, button, blog, corporativo",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosCatalogEmpty",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Aún no hay datos conectados desde combo-catalog. Cuando el endpoint esté desplegado, esta tarjeta debe consumir comboList.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-fontSize-13px"
+      }
+    },
+    {
+      "id": "adminCombosEditorCard",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "adminCombosEditorTitle",
+          "adminCombosComboId",
+          "adminCombosClasses",
+          "adminCombosCategories",
+          "adminCombosBatchJson"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosEditorTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Crear o editar",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosComboId",
+      "type": "input",
+      "config": {
+        "fieldId": "comboId",
+        "label": "Combo",
+        "controlType": "text",
+        "placeholder": "corp-card",
+        "helperText": "Nombre del combo y clase que usará Angora.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosClasses",
+      "type": "input",
+      "config": {
+        "fieldId": "classes",
+        "label": "Clases",
+        "controlType": "textarea",
+        "rows": 4,
+        "placeholder": "ank-bg-bgColor ank-borderRadius-8px ank-p-16px",
+        "helperText": "Lista de clases Angora. La Lambda guarda tokens seguros sin espacios dentro de cada clase.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-120px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosCategories",
+      "type": "input",
+      "config": {
+        "fieldId": "categories",
+        "label": "Categorías",
+        "controlType": "text",
+        "placeholder": "card, blog, corporativo",
+        "helperText": "Separadas por coma para filtrar el catálogo.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosBatchJson",
+      "type": "input",
+      "config": {
+        "fieldId": "batchJson",
+        "label": "Batch JSON",
+        "controlType": "textarea",
+        "rows": 6,
+        "placeholder": "[{\"combo\":\"corp-card\",\"classes\":[\"ank-bg-bgColor\"]}]",
+        "helperText": "Para altas o ediciones múltiples con validación antes de enviar.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-150px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-14px ank-fontWeight-700 ank-fontFamily-monospace"
+      }
+    },
+    {
+      "id": "adminCombosPolicyCard",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "adminCombosPolicyTitle",
+          "adminCombosPolicyCopy",
+          "adminCombosPolicyDefault",
+          "adminCombosPolicyFeature"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosPolicyTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Políticas por draft",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosPolicyCopy",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cada draft puede permitir o bloquear combos, grupos, features o componentes sin duplicar el catálogo global.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosPolicyDefault",
+      "type": "input",
+      "config": {
+        "fieldId": "defaultAccess",
+        "label": "Acceso por defecto",
+        "controlType": "select",
+        "value": "allow",
+        "options": [
+          { "value": "allow", "label": "Permitir salvo bloqueos" },
+          { "value": "deny", "label": "Bloquear salvo permisos" }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "adminCombosPolicyFeature",
+      "type": "input",
+      "config": {
+        "fieldId": "allowedFeatures",
+        "label": "Features",
+        "controlType": "text",
+        "placeholder": "blog, draft-builder",
+        "helperText": "Lista de features donde se pueden usar estos combos.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosPreviewCard",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "adminCombosPreviewTitle",
+          "adminCombosPreviewCopy",
+          "adminCombosPreviewBox"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosPreviewTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Preview",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosPreviewCopy",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "El preview visual usará los combos temporales del editor antes de guardarlos, con el mismo mecanismo de combos auxiliares que usará el runtime.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosPreviewBox",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minHeight-120px ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "components": [
+          "adminCombosPreviewText"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosPreviewText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Preview pendiente de conectar al catálogo.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontWeight-900 ank-textAlign-center"
+      }
+    }
+  ]
+}

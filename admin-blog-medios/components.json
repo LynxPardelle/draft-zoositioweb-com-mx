@@ -383,7 +383,7 @@
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.fileName,El archivo se registró; revisa la lista para confirmar el nombre."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.fileName,\"El archivo se registró; revisa la lista para confirmar el nombre.\""
     },
     {
       "id": "mediaAssetsTable",
