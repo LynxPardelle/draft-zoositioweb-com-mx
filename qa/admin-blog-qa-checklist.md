@@ -57,7 +57,7 @@ $env:ZLP_CONTENT_HUB_SMOKE_COOKIE = "<cookie header temporal de testing>"
 npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --runtime-base-url=https://y84vk0v44l.execute-api.us-east-1.amazonaws.com/Prod --environment=test --domain=zoositioweb.com.mx
 ```
 
-- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `upsertCategory`, `upsertTag`, `taxonomyCategoryList`, `taxonomyTagList`, `updatePackage`, `revisionList`, `publicBundlePreview`, `restoreRevision`, `assetList`, `moderationQueue`, `validate`, `submitReview`, `approveArticle`, `publish`, `recordInteractionCta`, `recordInteractionReaction`, `recordInteractionShare`, `queueComment`, `publicInteractionAnalytics`, `runtimeBundle`, `publicSearch`, `publicArticleHtml`, `publicArticleBody`, `sitemap`, `feed`, `scheduleList`, `cancelSchedule`, `unpublishArticle` y `articleDetailAfterUnpublish`.
+- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `upsertCategory`, `upsertTag`, `taxonomyCategoryList`, `taxonomyTagList`, `uploadAsset`, `updatePackage`, `revisionList`, `publicBundlePreview`, `restoreRevision`, `assetList`, `moderationQueue`, `validate`, `submitReview`, `approveArticle`, `publish`, `recordInteractionCta`, `recordInteractionReaction`, `recordInteractionShare`, `queueComment`, `publicInteractionAnalytics`, `runtimeBundle`, `publicSearch`, `publicArticleHtml`, `publicArticleBody`, `sitemap`, `feed`, `scheduleList`, `cancelSchedule`, `unpublishArticle` y `articleDetailAfterUnpublish`.
 - [ ] No pegar cookies, CSRF, passwords, tokens ni headers completos en chats, notas, commits o PRs.
 
 ## Editorial lifecycle
@@ -97,6 +97,9 @@ npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --run
 
 ## Taxonomy product UX
 
+Current evidence:
+- Product-readiness smoke now creates and lists a category/tag pair before article creation.
+
 - [ ] `/admin/blog/categorias` permite crear y listar categorias con labels traducidos, slug, descripcion SEO, visibilidad y advertencias de redirects.
 - [ ] `/admin/blog/tags` permite crear y listar tags con labels traducidos, slug, descripcion SEO, visibilidad y advertencias de redirects.
 - [ ] Los labels y ayudas explican cada campo en espanol e ingles.
@@ -105,6 +108,9 @@ npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --run
 - [ ] Las paginas publicas pueden filtrar por categoria o tags sin perder `draftDomain`, `debugWorkspace` ni `lang`.
 
 ## Media lifecycle
+
+Current evidence:
+- Product-readiness smoke now registers a small public-safe asset through `uploadAsset`, verifies `assetList`, and fails if asset responses expose internal storage metadata.
 
 - [ ] `/admin/blog/medios` permite seleccionar archivos y muestra progreso o estado mientras se registra metadata.
 - [ ] Cada asset permite revisar alt text, caption, licencia, focal point, tipo, tamano, uso y publicabilidad.
