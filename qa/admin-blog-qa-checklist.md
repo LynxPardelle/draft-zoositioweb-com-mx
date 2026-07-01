@@ -57,7 +57,7 @@ $env:ZLP_CONTENT_HUB_SMOKE_COOKIE = "<cookie header temporal de testing>"
 npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --runtime-base-url=https://y84vk0v44l.execute-api.us-east-1.amazonaws.com/Prod --environment=test --domain=zoositioweb.com.mx
 ```
 
-- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `upsertCategory`, `upsertTag`, `taxonomyCategoryList`, `taxonomyTagList`, `uploadAsset`, `updatePackage`, `revisionList`, `publicBundlePreview`, `restoreRevision`, `assetList`, `moderationQueue`, `validate`, `submitReview`, `approveArticle`, `publish`, `recordInteractionCta`, `recordInteractionReaction`, `recordInteractionShare`, `queueComment`, `moderationQueueAfterComment`, `moderateComment`, `moderationQueueAfterModeration`, `publicInteractionAnalytics`, `runtimeBundle`, `publicSearch`, `publicArticleHtml`, `publicArticleBody`, `sitemap`, `feed`, `scheduleList`, `cancelSchedule`, `unpublishArticle` y `articleDetailAfterUnpublish`.
+- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `upsertCategory`, `upsertTag`, `taxonomyCategoryList`, `taxonomyTagList`, `uploadAsset`, `updatePackage`, `revisionList`, `publicBundlePreview`, `restoreRevision`, `assetList`, `moderationQueue`, `validate`, `submitReview`, `approveArticle`, `publish`, `recordInteractionReadProgress`, `recordInteractionCta`, `recordInteractionReaction`, `recordInteractionShare`, `recordInteractionAssetDownload`, `recordInteractionForm`, `queueComment`, `moderationQueueAfterComment`, `moderateComment`, `moderationQueueAfterModeration`, `publicInteractionAnalytics`, `runtimeBundle`, `publicSearch`, `publicArticleHtml`, `publicArticleBody`, `sitemap`, `feed`, `scheduleList`, `cancelSchedule`, `unpublishArticle` y `articleDetailAfterUnpublish`.
 - [ ] No pegar cookies, CSRF, passwords, tokens ni headers completos en chats, notas, commits o PRs.
 
 ## Editorial lifecycle
@@ -157,6 +157,7 @@ Current evidence:
 
 - [ ] Public blog emits `blog_view` only for articulos publicados reales.
 - [ ] Read depth, taxonomy filter, CTA click, reaction, share, asset download, comment intent y form outcome usan payloads sin PII.
+- [ ] El smoke autenticado prueba aceptacion y agregacion de read depth, CTA, reaction, share, asset download, form outcome y comentario moderado; aun se debe validar que los componentes publicos del draft emitan esos eventos desde UI real donde aplique.
 - [ ] `/admin/blog/analiticas` muestra metricas agregadas, estados vacios y filtros entendibles.
 - [ ] El panel no muestra eventos crudos con comentarios, correos, nombres o telefonos.
 - [ ] Los filtros no rompen query strings ni el draft actual.
