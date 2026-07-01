@@ -6,10 +6,32 @@ Usa esta matriz para revisar el blog administrativo, blog publico y autenticacio
 
 ## Estado local mas reciente
 
+- 2026-06-30 17:08 CT: se agrego el plan operativo de cierre product-complete en 12 bloques. El ultimo corte local subido dejo `generic-file-dropzone.required`, guards de media/editor, `assetList` y `scheduleList` con `articleId` requerido. App commit `bdb406b`; draft commit `835ff21`.
+- 2026-06-30 15:43 CT: se agrego cobertura directa de CLI para que el smoke de producto distinga errores locales de setup: falta `--runtime-base-url`, falta cookie autenticada o falta CSRF. Esto prepara la prueba manual sin imprimir cookies, tokens ni payloads sensibles.
+- Verificacion local: `node --test tools/tests/content-hub-product-readiness-smoke.spec.mjs` retorno 21 pass; gates combinados de content-hub/admin/SSR retornaron 71 pass; `npm audit --omit=dev` retorno `found 0 vulnerabilities`; health de testing retorno PASS con bundle `main-XG4UPJHH.js` y content-hub sin sesion en `401`.
 - 2026-06-29 18:45 CT: se reforzaron los guards de preview/SEO para que `articleId` y `revisionId` sean requeridos antes de ejecutar acciones de ciclo editorial. App commit `4bb03e8`; draft commit `00c065e`.
 - Verificacion local: content-hub admin/schema/contract Node tests pasaron 54; focused `proxy-action.handlers.spec.ts` paso `TOTAL: 9 SUCCESS`; `npm run build` paso con el warning existente de `quill-delta`; `npm audit --omit=dev` retorno `found 0 vulnerabilities`; SSR rerun paso 23/23; public-safety audit retorno `ok:true`.
 - Backend BFF: `origin/dev` de `zoolanding-content-hub` en `f9523ed` ya incluye `scheduleList`, `cancelSchedule` y auditoria persistida segura; validacion en worktree temporal paso 57 unittests, `sam validate` y `pip-audit`.
 - Pendiente para cerrar producto: smoke autenticado real en testing y QA de navegador con usuario de blog.
+
+## Product-complete closure plan - 12 blocks
+
+El blog deja de ser MVP solo cuando estos 12 bloques tengan evidencia local, testing y produccion segun aplique. No basta que exista la configuracion; debe verse el comportamiento real.
+
+| # | Bloque | Estado actual | Siguiente corte verificable |
+|---|---|---|---|
+| 1 | Smoke autenticado real | CLI listo; falta sesion real por ambiente. | Ejecutar create/edit/publish/runtime/search/feed/schedule/cancel en testing sin imprimir cookies. |
+| 2 | Ciclo editorial | Crear, editar, preview, SEO, versiones y programacion existen. | Probar que crear paquete, editar rich text, guardar, validar y publicar no pierden datos. |
+| 3 | Roles y permisos | Rutas admin tienen grupos por rol. | Verificar usuario admin/blog-role y usuario cliente sin permisos contra UI y BFF. |
+| 4 | Rich text estable | `generic-rich-text` ya fue estabilizado para no resetear. | Browser QA con negrita, listas, encabezado, enlace, limpiar formato y recarga. |
+| 5 | Modo avanzado/catalogo | Existe gating basico; catalogo visual completo sigue pendiente. | Definir corte minimo: catalogo solo visible con modo avanzado y mensaje claro si aun no esta disponible. |
+| 6 | Taxonomia UX | Categorias/tags tienen pantallas y dropdowns. | Crear/listar categoria y tag reales; editor debe consumirlos sin texto tecnico. |
+| 7 | Media lifecycle | Upload requiere articulo y archivo; no expone grants. | Probar upload real con fixture pequeno, alt/caption/licencia, asset list y estados vacios. |
+| 8 | Programacion y versiones | Links y guards existen; `scheduleList` requiere articulo. | Programar, listar y cancelar publicacion futura; restaurar una revision con confirmacion. |
+| 9 | Interacciones y moderacion | CTA/reaccion/share/comentario estan configurados. | Probar queue de comentario autenticado, moderacion y anti-spam/rate-limit sin PII. |
+| 10 | SEO publico | SSR cubre sitemap/feed/search/articulo base. | Verificar SEO dinamico por articulo/categoria, canonical, JSON-LD, robots, hreflang real y 404. |
+| 11 | Analytics producto | `blog_view` y panel agregado existen parcialmente. | Agregar/probar read depth, share, CTA, reaction, comment intent y asset download sin PII. |
+| 12 | Operacion, release y regresion | Tests locales y public-safety estan definidos. | Ejecutar contratos, build, audit, desktop/mobile, auth regression, prod smoke y checklist final. |
 
 ## E2E route order for testing
 
@@ -101,6 +123,11 @@ npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --run
 - [ ] Una publicacion programada apunta a una revision inmutable validada.
 
 ## Public interactions and moderation
+
+Current evidence:
+- Public article page has draft-configured CTA, reaction, share, and comment-intent wiring to content-hub actions.
+- Comment UI includes a sign-in link and moderation copy.
+- Still requires live authenticated/API proof for queueing comments, moderation decisions, and backend spam/rate-limit behavior.
 
 - [ ] Comentarios requieren login cuando el articulo lo configura.
 - [ ] Comentarios nuevos entran a cola de moderacion por defecto cuando el draft lo define.

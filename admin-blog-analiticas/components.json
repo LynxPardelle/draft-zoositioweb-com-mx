@@ -378,6 +378,31 @@
             "id": "ctaClicks",
             "header": "Clics en CTA",
             "valuePath": "ctaClicks"
+          },
+          {
+            "id": "readProgress",
+            "header": "Avance",
+            "valuePath": "readProgress"
+          },
+          {
+            "id": "reactions",
+            "header": "Reacciones",
+            "valuePath": "reactions"
+          },
+          {
+            "id": "comments",
+            "header": "Comentarios",
+            "valuePath": "comments"
+          },
+          {
+            "id": "shares",
+            "header": "Compartidos",
+            "valuePath": "shares"
+          },
+          {
+            "id": "assetDownloads",
+            "header": "Descargas",
+            "valuePath": "assetDownloads"
           }
         ],
         "rowActions": [],
