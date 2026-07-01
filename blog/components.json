@@ -346,7 +346,15 @@
         "classes": "ank-width-100per ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-p-22px",
         "featureTitleClasses": "ank-m-0 ank-fontSize-24px ank-lineHeight-1_2 ank-fontWeight-900 ank-color-titleColor",
         "featureDescriptionClasses": "ank-mt-10px ank-mb-16px ank-fontSize-15px ank-lineHeight-1_6 ank-color-secondaryTextColor",
-        "linkClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none"
+        "linkClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "linkStyles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -365,7 +373,15 @@
       "config": {
         "href": "/contacto",
         "text": "Hablar sobre mi blog",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     }
   ]

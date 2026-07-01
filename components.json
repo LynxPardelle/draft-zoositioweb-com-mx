@@ -645,7 +645,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/,href,/,location,footer"
@@ -660,7 +660,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/servicios,href,/servicios,location,footer"
@@ -675,7 +675,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/planes,href,/planes,location,footer"
@@ -690,7 +690,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/plataforma,href,/plataforma,location,footer"
@@ -705,7 +705,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/nosotros,href,/nosotros,location,footer"
@@ -720,7 +720,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/preguntas-frecuentes,href,/preguntas-frecuentes,location,footer"
@@ -803,7 +803,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/sectores/consultorios,href,/sectores/consultorios,location,footer"
@@ -818,7 +818,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/sectores/despachos,href,/sectores/despachos,location,footer"
@@ -833,7 +833,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/sectores/inmobiliarias,href,/sectores/inmobiliarias,location,footer"
@@ -848,7 +848,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/sectores/servicios-locales,href,/sectores/servicios-locales,location,footer"
@@ -863,7 +863,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/sectores/constructoras,href,/sectores/constructoras,location,footer"
@@ -878,7 +878,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/sectores/agencias,href,/sectores/agencias,location,footer"
@@ -1186,7 +1186,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/privacidad,href,/privacidad,location,footer"
@@ -1201,7 +1201,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/terminos,href,/terminos,location,footer"
@@ -1369,7 +1369,15 @@
         "href": "/",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1381,7 +1389,15 @@
         "href": "/servicios",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1393,7 +1409,15 @@
         "href": "/planes",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1405,7 +1429,15 @@
         "href": "/plataforma",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1417,7 +1449,15 @@
         "href": "/nosotros",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1429,7 +1469,15 @@
         "href": "/preguntas-frecuentes",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1441,7 +1489,15 @@
         "href": "/blog",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1453,7 +1509,15 @@
         "href": "/contacto",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1498,7 +1562,15 @@
         "href": "/acceso",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       },
       "condition": "not:varEq,remoteStatus.authAccount.state,success"
     },
@@ -1511,7 +1583,15 @@
         "href": "/registro",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       },
       "condition": "not:varEq,remoteStatus.authAccount.state,success"
     },
@@ -1525,7 +1605,15 @@
         "href": "/mi-cuenta",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1574,7 +1662,15 @@
         "href": "/admin/usuarios",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1586,7 +1682,15 @@
         "href": "/admin/blog",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1598,7 +1702,15 @@
         "href": "/admin/blog/articulos",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1610,7 +1722,15 @@
         "href": "/admin/blog/medios",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1622,7 +1742,15 @@
         "href": "/admin/blog/configuracion",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1666,7 +1794,15 @@
         "href": "/privacidad",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1678,7 +1814,15 @@
         "href": "/terminos",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor"
+        "classes": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-width-100per ank-minHeight-46px ank-px-14px ank-py-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-0_95rem ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_14 ank-bgHover-secondaryBgColor",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -1691,7 +1835,7 @@
         "ariaLabel": "",
         "classes": "ank-d-block ank-alignItems-center ank-color-linkColor ank-fontWeight-800 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "30px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/blog,href,/blog,location,footer"
