@@ -251,6 +251,11 @@
           {
             "type": "required",
             "message": "Abre Programar desde la lista de artículos para conservar el artículo correcto."
+          },
+          {
+            "type": "pattern",
+            "value": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$",
+            "message": "El identificador del artículo no es válido. Vuelve a abrir Programar desde la fila del artículo."
           }
         ]
       },
@@ -304,6 +309,11 @@
           {
             "type": "required",
             "message": "Abre Programar desde la lista para conservar la versión del artículo."
+          },
+          {
+            "type": "pattern",
+            "value": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$",
+            "message": "El identificador de versión no es válido. Vuelve a abrir Programar desde la fila del artículo."
           }
         ]
       },
