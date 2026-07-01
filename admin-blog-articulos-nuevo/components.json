@@ -998,7 +998,7 @@
         "text": "Abrir editor",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success;all:var,remoteStatus.contentHub.content_hub_create_article.articleId",
       "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/editor"
     },
     {
@@ -1009,7 +1009,7 @@
         "text": "Abrir preview",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success;all:var,remoteStatus.contentHub.content_hub_create_article.articleId",
       "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/preview"
     },
     {
@@ -1020,7 +1020,7 @@
         "text": "Abrir SEO",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success;all:var,remoteStatus.contentHub.content_hub_create_article.articleId",
       "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/seo"
     },
     {
@@ -1031,7 +1031,7 @@
         "text": "Ver versiones",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success;all:var,remoteStatus.contentHub.content_hub_create_article.articleId",
       "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/versiones"
     },
     {
@@ -1042,7 +1042,7 @@
         "text": "Programar",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       },
-      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success;all:var,remoteStatus.contentHub.content_hub_create_article.articleId;all:var,remoteStatus.contentHub.content_hub_create_article.revisionId",
       "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.revisionId,varOr,remoteStatus.contentHub.content_hub_create_article.revisionId,;set:config.href,concat,/admin/blog/programados?articleId=,eval:config.articleId,&revisionId=,eval:config.revisionId"
     },
     {
