@@ -57,7 +57,7 @@ $env:ZLP_CONTENT_HUB_SMOKE_COOKIE = "<cookie header temporal de testing>"
 npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --runtime-base-url=https://y84vk0v44l.execute-api.us-east-1.amazonaws.com/Prod --environment=test --domain=zoositioweb.com.mx
 ```
 
-- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `updatePackage`, `revisionList`, `publicBundlePreview`, `restoreRevision`, `assetList`, `moderationQueue`, `validate`, `submitReview`, `approveArticle`, `publish`, `recordInteractionCta`, `recordInteractionReaction`, `recordInteractionShare`, `queueComment`, `publicInteractionAnalytics`, `runtimeBundle`, `publicSearch`, `publicArticleHtml`, `publicArticleBody`, `sitemap`, `feed`, `scheduleList` y `cancelSchedule`.
+- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `updatePackage`, `revisionList`, `publicBundlePreview`, `restoreRevision`, `assetList`, `moderationQueue`, `validate`, `submitReview`, `approveArticle`, `publish`, `recordInteractionCta`, `recordInteractionReaction`, `recordInteractionShare`, `queueComment`, `publicInteractionAnalytics`, `runtimeBundle`, `publicSearch`, `publicArticleHtml`, `publicArticleBody`, `sitemap`, `feed`, `scheduleList`, `cancelSchedule`, `unpublishArticle` y `articleDetailAfterUnpublish`.
 - [ ] No pegar cookies, CSRF, passwords, tokens ni headers completos en chats, notas, commits o PRs.
 
 ## Editorial lifecycle
