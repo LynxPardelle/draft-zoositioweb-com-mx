@@ -59,7 +59,12 @@
         "href": "/",
         "text": "zoositioweb",
         "ariaLabel": "zoositioweb",
-        "classes": "ank-d-block ank-color-titleColor ank-fontSize-1_15rem ank-fontWeight-900 ank-textDecoration-none"
+        "classes": "ank-d-block ank-color-titleColor ank-fontSize-1_15rem ank-fontWeight-900 ank-textDecoration-none",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px"
+        }
       }
     },
     {
@@ -1252,7 +1257,17 @@
         "icon": "menu",
         "iconPosition": "before",
         "iconClasses": "ank-width-18px ank-height-18px ank-fontSize-18px",
-        "classes": "ank-display-inlineFlex ank-alignItems-center ank-justifyContent-center ank-width-42px ank-minWidth-42px ank-height-42px ank-minHeight-42px ank-px-0 ank-py-0 ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED"
+        "classes": "ank-display-inlineFlex ank-alignItems-center ank-justifyContent-center ank-width-42px ank-minWidth-42px ank-height-42px ank-minHeight-42px ank-px-0 ank-py-0 ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-900 ank-cursor-pointer ank-textAlign-center ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "width": "44px",
+          "minWidth": "44px",
+          "height": "44px",
+          "minHeight": "44px",
+          "padding": "0"
+        }
       }
     },
     {

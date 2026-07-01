@@ -128,7 +128,15 @@
       "config": {
         "href": "/blog",
         "text": "Todos",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -137,7 +145,15 @@
       "config": {
         "href": "/blog/web",
         "text": "Web",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -198,7 +214,15 @@
       "config": {
         "href": "/blog",
         "text": "Categoría",
-        "classes": "ank-minHeight-48px ank-px-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_18"
+        "classes": "ank-minHeight-48px ank-px-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_18",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
@@ -241,7 +265,15 @@
       "config": {
         "href": "/blog",
         "text": "Etiqueta",
-        "classes": "ank-minHeight-48px ank-px-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_18"
+        "classes": "ank-minHeight-48px ank-px-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_18",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     },
     {
