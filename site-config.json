@@ -1217,6 +1217,10 @@
             "assetDownloads": {
               "path": "assetDownloads",
               "fallback": 0
+            },
+            "forms": {
+              "path": "forms",
+              "fallback": 0
             }
           }
         }

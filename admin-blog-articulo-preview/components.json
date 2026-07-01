@@ -481,11 +481,13 @@
         "components": [
           "previewValidateLoading",
           "previewValidateError",
+          "previewValidateErrorSupportId",
           "previewValidateSuccess",
           "previewValidateArticleId",
           "previewValidateRevisionId",
           "previewPublishLoading",
           "previewPublishError",
+          "previewPublishErrorSupportId",
           "previewPublishSuccess",
           "previewPublishArticleId",
           "previewPublishRevisionId"
@@ -512,6 +514,17 @@
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error",
       "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error\",No pudimos validar el artículo. Recarga la página desde la lista y verifica tu sesión antes de intentarlo de nuevo.,No pudimos validar el artículo. Recarga la página desde la lista y verifica tu sesión antes de intentarlo de nuevo."
+    },
+    {
+      "id": "previewValidateErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error;all:var,remoteStatus.contentHub.content_hub_validate_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_validate_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "previewValidateSuccess",
@@ -565,6 +578,17 @@
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error",
       "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error\",No pudimos publicar el artículo. Recarga la página desde la lista y verifica tu sesión antes de intentarlo de nuevo.,No pudimos publicar el artículo. Recarga la página desde la lista y verifica tu sesión antes de intentarlo de nuevo."
+    },
+    {
+      "id": "previewPublishErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error;all:var,remoteStatus.contentHub.content_hub_publish_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_publish_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "previewPublishSuccess",

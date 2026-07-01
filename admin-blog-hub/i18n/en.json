@@ -3,8 +3,13 @@
   "pageId": "admin-blog-hub",
   "lang": "en",
   "messages": {
-      "title": "Content center",
+    "title": "Content center",
     "hubId": "zoosite-main",
     "draftDomain": "zoositioweb.com.mx"
+  },
+  "dictionary": {
+    "adminBlog": {
+      "supportId": "Support ID: {{ id }}"
+    }
   }
 }

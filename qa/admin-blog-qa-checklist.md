@@ -57,7 +57,7 @@ $env:ZLP_CONTENT_HUB_SMOKE_COOKIE = "<cookie header temporal de testing>"
 npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --runtime-base-url=https://y84vk0v44l.execute-api.us-east-1.amazonaws.com/Prod --environment=test --domain=zoositioweb.com.mx
 ```
 
-- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `updatePackage`, `revisionList`, `publicBundlePreview`, `restoreRevision`, `assetList`, `moderationQueue`, `publish`, `runtimeBundle`, `publicSearch`, `sitemap`, `feed`, `scheduleList` y `cancelSchedule`.
+- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `upsertCategory`, `upsertTag`, `taxonomyCategoryList`, `taxonomyTagList`, `uploadAsset`, `updatePackage`, `revisionList`, `publicBundlePreview`, `restoreRevision`, `assetList`, `moderationQueue`, `validate`, `submitReview`, `approveArticle`, `publish`, `recordInteractionReadProgress`, `recordInteractionCta`, `recordInteractionReaction`, `recordInteractionShare`, `recordInteractionAssetDownload`, `recordInteractionForm`, `queueComment`, `moderationQueueAfterComment`, `moderateComment`, `moderationQueueAfterModeration`, `publicInteractionAnalytics`, `runtimeBundle`, `publicSearch`, `publicArticleHtml`, `publicArticleBody`, `sitemap`, `feed`, `scheduleList`, `cancelSchedule`, `unpublishArticle`, `articleDetailAfterUnpublish`, `publicSearchAfterUnpublish`, `publicArticleAfterUnpublish`, `sitemapAfterUnpublish` y `feedAfterUnpublish`.
 - [ ] No pegar cookies, CSRF, passwords, tokens ni headers completos en chats, notas, commits o PRs.
 
 ## Editorial lifecycle
@@ -97,6 +97,9 @@ npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --run
 
 ## Taxonomy product UX
 
+Current evidence:
+- Product-readiness smoke now creates and lists a category/tag pair before article creation.
+
 - [ ] `/admin/blog/categorias` permite crear y listar categorias con labels traducidos, slug, descripcion SEO, visibilidad y advertencias de redirects.
 - [ ] `/admin/blog/tags` permite crear y listar tags con labels traducidos, slug, descripcion SEO, visibilidad y advertencias de redirects.
 - [ ] Los labels y ayudas explican cada campo en espanol e ingles.
@@ -105,6 +108,9 @@ npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --run
 - [ ] Las paginas publicas pueden filtrar por categoria o tags sin perder `draftDomain`, `debugWorkspace` ni `lang`.
 
 ## Media lifecycle
+
+Current evidence:
+- Product-readiness smoke now registers a small public-safe asset through `uploadAsset`, verifies `assetList`, and fails if asset responses expose internal storage metadata.
 
 - [ ] `/admin/blog/medios` permite seleccionar archivos y muestra progreso o estado mientras se registra metadata.
 - [ ] Cada asset permite revisar alt text, caption, licencia, focal point, tipo, tamano, uso y publicabilidad.
@@ -127,7 +133,8 @@ npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --run
 Current evidence:
 - Public article page has draft-configured CTA, reaction, share, and comment-intent wiring to content-hub actions.
 - Comment UI includes a sign-in link and moderation copy.
-- Still requires live authenticated/API proof for queueing comments, moderation decisions, and backend spam/rate-limit behavior.
+- Product-readiness smoke now queues a moderated comment, verifies it in `moderationQueue`, approves it with `moderateComment`, verifies the moderated row, and fails if moderation responses expose internal hashes or moderator identity.
+- Still requires live authenticated/API proof for backend spam/rate-limit behavior.
 
 - [ ] Comentarios requieren login cuando el articulo lo configura.
 - [ ] Comentarios nuevos entran a cola de moderacion por defecto cuando el draft lo define.
@@ -142,6 +149,7 @@ Current evidence:
 - [ ] `/blog/:categorySlug/:articleSlug` muestra el articulo correcto y devuelve 404 para slugs no publicados.
 - [ ] Canonical, `BlogPosting` JSON-LD, robots, titulo, descripcion y social metadata corresponden al articulo actual.
 - [ ] `/sitemap.xml`, `/feed.xml` y `/content-hub-search.json` incluyen articulos publicados y excluyen borradores, previews, admin y no-publicos.
+- [ ] Despues de retirar o despublicar un articulo, `/content-hub-search.json`, la ruta publica del articulo, `/sitemap.xml` y `/feed.xml` dejan de mostrarlo.
 - [ ] Categorias/tags tienen rutas y reglas de indexacion claras; combinaciones multi-tag no indexables por defecto salvo configuracion del draft.
 - [ ] Cambios de slug generan o requieren redirects en lugar de romper URLs publicadas.
 - [ ] Hreflang solo se genera para idiomas publicados reales.
@@ -150,6 +158,7 @@ Current evidence:
 
 - [ ] Public blog emits `blog_view` only for articulos publicados reales.
 - [ ] Read depth, taxonomy filter, CTA click, reaction, share, asset download, comment intent y form outcome usan payloads sin PII.
+- [ ] El smoke autenticado prueba aceptacion y agregacion de read depth, CTA, reaction, share, asset download, form outcome y comentario moderado; aun se debe validar que los componentes publicos del draft emitan esos eventos desde UI real donde aplique.
 - [ ] `/admin/blog/analiticas` muestra metricas agregadas, estados vacios y filtros entendibles.
 - [ ] El panel no muestra eventos crudos con comentarios, correos, nombres o telefonos.
 - [ ] Los filtros no rompen query strings ni el draft actual.
@@ -169,6 +178,7 @@ Current evidence:
 - [ ] Ejecutar build: `npm run build`.
 - [ ] Ejecutar auditoria de dependencias: `npm audit --omit=dev`.
 - [ ] Ejecutar public-safety audit: `npm run drafts:public-safety-audit -- --repo=drafts\zoositioweb.com.mx --history=true`.
+- [ ] Ejecutar smoke autenticado de producto y verificar que incluya `publicSearchAfterUnpublish`, `publicArticleAfterUnpublish`, `sitemapAfterUnpublish` y `feedAfterUnpublish`.
 - [ ] Testing desktop y mobile: `/blog`, articulo publico, `/admin/blog`, articulos, nuevo, editor, preview, SEO, versiones, programados, categorias, tags, medios, moderacion, analiticas, hub y configuracion.
 - [ ] Produccion desktop y mobile despues de deploy con usuario admin real y usuario cliente sin permisos.
 - [ ] Confirmar que no quedan listeners locales, logs crudos, temporales, reportes sin revisar ni secretos en cambios.

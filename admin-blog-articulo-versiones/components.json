@@ -484,6 +484,7 @@
           "versionsRestoreIdle",
           "versionsRestoreLoading",
           "versionsRestoreError",
+          "versionsRestoreErrorSupportId",
           "versionsRestoreSuccess",
           "versionsRestoreArticleId",
           "versionsRestoreRevisionId"
@@ -518,6 +519,17 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,error"
+    },
+    {
+      "id": "versionsRestoreErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,error;all:var,remoteStatus.contentHub.content_hub_restore_revision.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_restore_revision.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "versionsRestoreSuccess",

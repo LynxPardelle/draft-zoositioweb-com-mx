@@ -16,6 +16,9 @@
       "seo": "SEO",
       "versions": "Versiones",
       "schedule": "Programar"
+    },
+    "adminBlog": {
+      "supportId": "ID de soporte: {{ id }}"
     }
   }
 }

@@ -314,6 +314,7 @@
         "components": [
           "mediaUploadLoading",
           "mediaUploadError",
+          "mediaUploadErrorSupportId",
           "mediaUploadSuccess",
           "mediaUploadAssetId",
           "mediaUploadFileName"
@@ -340,6 +341,17 @@
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error",
       "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error\",No pudimos cargar el archivo. Recarga la página desde la lista y verifica tu sesión antes de intentarlo de nuevo.,No pudimos cargar el archivo. Recarga la página desde la lista y verifica tu sesión antes de intentarlo de nuevo."
+    },
+    {
+      "id": "mediaUploadErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error;all:var,remoteStatus.contentHub.content_hub_upload_asset.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_upload_asset.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "mediaUploadSuccess",

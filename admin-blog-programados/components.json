@@ -251,6 +251,11 @@
           {
             "type": "required",
             "message": "Abre Programar desde la lista de artículos para conservar el artículo correcto."
+          },
+          {
+            "type": "pattern",
+            "value": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$",
+            "message": "El identificador del artículo no es válido. Vuelve a abrir Programar desde la fila del artículo."
           }
         ]
       },
@@ -304,6 +309,11 @@
           {
             "type": "required",
             "message": "Abre Programar desde la lista para conservar la versión del artículo."
+          },
+          {
+            "type": "pattern",
+            "value": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$",
+            "message": "El identificador de versión no es válido. Vuelve a abrir Programar desde la fila del artículo."
           }
         ]
       },
@@ -490,16 +500,19 @@
           "scheduledActionIdle",
           "scheduledScheduleLoading",
           "scheduledScheduleError",
+          "scheduledScheduleErrorSupportId",
           "scheduledScheduleSuccess",
           "scheduledScheduleArticleId",
           "scheduledScheduleRevisionId",
           "scheduledPublishLoading",
           "scheduledPublishError",
+          "scheduledPublishErrorSupportId",
           "scheduledPublishSuccess",
           "scheduledPublishArticleId",
           "scheduledPublishRevisionId",
           "scheduledCancelLoading",
           "scheduledCancelError",
+          "scheduledCancelErrorSupportId",
           "scheduledCancelSuccess"
         ]
       }
@@ -532,6 +545,17 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,error"
+    },
+    {
+      "id": "scheduledScheduleErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,error;all:var,remoteStatus.contentHub.content_hub_schedule_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_schedule_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "scheduledScheduleSuccess",
@@ -586,6 +610,17 @@
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error"
     },
     {
+      "id": "scheduledPublishErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error;all:var,remoteStatus.contentHub.content_hub_publish_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_publish_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
       "id": "scheduledPublishSuccess",
       "type": "text",
       "config": {
@@ -636,6 +671,17 @@
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_cancel_schedule.state,error"
+    },
+    {
+      "id": "scheduledCancelErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_cancel_schedule.state,error;all:var,remoteStatus.contentHub.content_hub_cancel_schedule.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_cancel_schedule.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "scheduledCancelSuccess",
