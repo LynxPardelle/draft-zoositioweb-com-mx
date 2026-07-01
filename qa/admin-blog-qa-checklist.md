@@ -57,7 +57,7 @@ $env:ZLP_CONTENT_HUB_SMOKE_COOKIE = "<cookie header temporal de testing>"
 npm run content-hub:smoke -- --base-url=https://test.zoolandingpage.com.mx --runtime-base-url=https://y84vk0v44l.execute-api.us-east-1.amazonaws.com/Prod --environment=test --domain=zoositioweb.com.mx
 ```
 
-- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `upsertCategory`, `upsertTag`, `taxonomyCategoryList`, `taxonomyTagList`, `uploadAsset`, `updatePackage`, `revisionList`, `publicBundlePreview`, `restoreRevision`, `assetList`, `moderationQueue`, `validate`, `submitReview`, `approveArticle`, `publish`, `recordInteractionCta`, `recordInteractionReaction`, `recordInteractionShare`, `queueComment`, `publicInteractionAnalytics`, `runtimeBundle`, `publicSearch`, `publicArticleHtml`, `publicArticleBody`, `sitemap`, `feed`, `scheduleList`, `cancelSchedule`, `unpublishArticle` y `articleDetailAfterUnpublish`.
+- [ ] El smoke debe devolver `ok: true` y checks `createArticle`, `upsertCategory`, `upsertTag`, `taxonomyCategoryList`, `taxonomyTagList`, `uploadAsset`, `updatePackage`, `revisionList`, `publicBundlePreview`, `restoreRevision`, `assetList`, `moderationQueue`, `validate`, `submitReview`, `approveArticle`, `publish`, `recordInteractionCta`, `recordInteractionReaction`, `recordInteractionShare`, `queueComment`, `moderationQueueAfterComment`, `moderateComment`, `moderationQueueAfterModeration`, `publicInteractionAnalytics`, `runtimeBundle`, `publicSearch`, `publicArticleHtml`, `publicArticleBody`, `sitemap`, `feed`, `scheduleList`, `cancelSchedule`, `unpublishArticle` y `articleDetailAfterUnpublish`.
 - [ ] No pegar cookies, CSRF, passwords, tokens ni headers completos en chats, notas, commits o PRs.
 
 ## Editorial lifecycle
@@ -133,7 +133,8 @@ Current evidence:
 Current evidence:
 - Public article page has draft-configured CTA, reaction, share, and comment-intent wiring to content-hub actions.
 - Comment UI includes a sign-in link and moderation copy.
-- Still requires live authenticated/API proof for queueing comments, moderation decisions, and backend spam/rate-limit behavior.
+- Product-readiness smoke now queues a moderated comment, verifies it in `moderationQueue`, approves it with `moderateComment`, verifies the moderated row, and fails if moderation responses expose internal hashes or moderator identity.
+- Still requires live authenticated/API proof for backend spam/rate-limit behavior.
 
 - [ ] Comentarios requieren login cuando el articulo lo configura.
 - [ ] Comentarios nuevos entran a cola de moderacion por defecto cuando el draft lo define.
