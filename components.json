@@ -125,7 +125,12 @@
         "href": "/contacto",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor"
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "minHeight": "44px"
+        }
       }
     },
     {
@@ -197,7 +202,12 @@
         "href": "/",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor"
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "minHeight": "44px"
+        }
       }
     },
     {
@@ -1227,7 +1237,12 @@
         "href": "/blog",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor"
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "minHeight": "44px"
+        }
       }
     },
     {
@@ -1240,7 +1255,12 @@
         "href": "/mi-cuenta",
         "text": "",
         "ariaLabel": "",
-        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor"
+        "classes": "ank-d-block ank-color-textColor ank-textDecoration-none ank-fontWeight-800 ank-fontSize-0_94rem ank-px-10px ank-py-8px ank-borderRadius-8px ank-bgHover-secondaryBgColor",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "minHeight": "44px"
+        }
       }
     },
     {
