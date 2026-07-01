@@ -293,7 +293,6 @@
         "components": [
           "previewSourceLoading",
           "previewSourceError",
-          "previewSourceErrorSupportId",
           "previewSourceEmpty",
           "previewSourceSuccess"
         ]
@@ -319,17 +318,6 @@
       },
       "condition": "all:varEq,remoteStatus.contentHub.preview.state,error",
       "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.contentHub.preview.state,error\",No se pudo cargar la vista previa. Recarga la página desde la lista de artículos.,No se pudo cargar la vista previa. Recarga la página desde la lista de artículos."
-    },
-    {
-      "id": "previewSourceErrorSupportId",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
-      },
-      "condition": "all:varEq,remoteStatus.contentHub.preview.state,error;all:var,remoteStatus.contentHub.preview.requestId",
-      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.preview.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
     },
     {
       "id": "previewSourceEmpty",
