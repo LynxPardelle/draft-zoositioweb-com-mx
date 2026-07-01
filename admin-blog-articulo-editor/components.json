@@ -1047,7 +1047,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Edita clases del diseño del sitio, variantes, bindings seguros y metadatos visuales permitidos por el preset del draft.",
+        "text": "Catálogo visual pendiente: por ahora el modo avanzado sólo conserva el preset permitido en el guardado. La edición de componentes y JSON seguro se activará cuando exista el catálogo validado para este draft.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
     },
