@@ -251,7 +251,13 @@
       "config": {
         "label": "",
         "ariaLabel": "",
-        "classes": "ank-d-block ank-paddingInline-12px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer ank-textAlign-center"
+        "classes": "ank-d-block ank-paddingInline-12px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer ank-textAlign-center",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "44px"
+        }
       }
     },
     {
@@ -262,7 +268,13 @@
       "config": {
         "label": "",
         "ariaLabel": "",
-        "classes": "ank-d-block ank-paddingInline-12px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer ank-textAlign-center"
+        "classes": "ank-d-block ank-paddingInline-12px ank-paddingBlock-10px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-border-1px__solid__secondaryBgColor ank-fontWeight-800 ank-cursor-pointer ank-textAlign-center",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "44px"
+        }
       }
     },
     {
@@ -1850,7 +1862,7 @@
         "ariaLabel": "",
         "classes": "ank-display-flex ank-alignItems-center ank-color-linkColor ank-fontWeight-900 ank-lineHeight-1_35 ank-textDecoration-none",
         "styles": {
-          "minHeight": "40px"
+          "minHeight": "44px"
         }
       },
       "eventInstructions": "trackEvent:nav_click,navigation,/blog,href,/blog,location,footer_mobile"

@@ -99,7 +99,15 @@
       "config": {
         "href": "/blog/web",
         "text": "Categoría: Web",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "48px",
+          "paddingLeft": "18px",
+          "paddingRight": "18px"
+        }
       },
       "valueInstructions": "set:config.categorySlug,varOr,contentHub.currentArticle.categorySlug,web;set:config.href,concat,/blog/,eval:config.categorySlug;set:config.text,joinText,Categoría:,eval:config.categorySlug"
     },
@@ -109,7 +117,15 @@
       "config": {
         "href": "/blog/tag/seo",
         "text": "SEO",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "48px",
+          "paddingLeft": "18px",
+          "paddingRight": "18px"
+        }
       }
     },
     {
@@ -118,7 +134,15 @@
       "config": {
         "href": "/blog/tag/builder",
         "text": "Editor visual",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "48px",
+          "paddingLeft": "18px",
+          "paddingRight": "18px"
+        }
       }
     },
     {
@@ -189,7 +213,15 @@
       "config": {
         "href": "/blog",
         "text": "Ver más artículos",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "48px",
+          "paddingLeft": "18px",
+          "paddingRight": "18px"
+        }
       }
     },
     {
@@ -198,7 +230,15 @@
       "config": {
         "href": "/contacto",
         "text": "Planear mi blog",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "48px",
+          "paddingLeft": "18px",
+          "paddingRight": "18px"
+        }
       },
       "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"trackEvent:blog_cta_click,blog,zoosite-blog-article-cta,hubId,zoosite-main,articleId,\",eval:config.articleId,\",path,\",eval:config.articlePath,\",ctaId,primary-consultation;setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,cta_click;setScopeValue:targetId,primary-consultation;setScopeValue:value,1;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
     },
@@ -267,7 +307,15 @@
         "label": "Me sirvió",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
         "loadingLabel": "Guardando...",
-        "disabledWhenInvalidScope": false
+        "disabledWhenInvalidScope": false,
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "48px",
+          "paddingLeft": "18px",
+          "paddingRight": "18px"
+        }
       },
       "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,reaction;setScopeValue:targetId,useful;setScopeValue:value,useful;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
     },
@@ -278,7 +326,15 @@
         "label": "Compartir",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
         "loadingLabel": "Guardando...",
-        "disabledWhenInvalidScope": false
+        "disabledWhenInvalidScope": false,
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "48px",
+          "paddingLeft": "18px",
+          "paddingRight": "18px"
+        }
       },
       "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"shareCurrentPage;setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,share;setScopeValue:targetId,native-share;setScopeValue:value,share;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
     },
@@ -365,7 +421,15 @@
       "config": {
         "href": "/acceso",
         "text": "Iniciar sesión para comentar",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "48px",
+          "paddingLeft": "18px",
+          "paddingRight": "18px"
+        }
       }
     },
     {
@@ -405,7 +469,15 @@
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
         "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
         "loadingLabel": "Enviando...",
-        "disabledWhenInvalidScope": true
+        "disabledWhenInvalidScope": true,
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "48px",
+          "paddingLeft": "18px",
+          "paddingRight": "18px"
+        }
       },
       "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:eventInstructions,concat,\"setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:commentPolicy,authenticated-moderation;proxyAction:content_hub_queue_comment\""
     },
