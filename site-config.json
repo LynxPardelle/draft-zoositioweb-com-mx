@@ -1364,6 +1364,61 @@
         ]
       },
       {
+        "id": "content_hub_schedule_article_detail",
+        "kind": "content-hub",
+        "proxySourceId": "content_hub_article_detail",
+        "contentHub": {
+          "read": "articleDetail",
+          "hubId": "zoosite-main"
+        },
+        "target": "remote.contentHub.articleDetail",
+        "statusTarget": "remoteStatus.contentHub.articleDetail",
+        "clearTargetOnLoad": true,
+        "pageIds": [
+          "admin-blog-programados"
+        ],
+        "mapper": {
+          "itemsPath": "item",
+          "singleItem": true,
+          "fields": {
+            "id": {
+              "path": "articleId"
+            },
+            "articleId": {
+              "path": "articleId"
+            },
+            "title": {
+              "path": "title",
+              "fallback": ""
+            },
+            "status": {
+              "path": "status",
+              "fallback": "draft"
+            },
+            "latestRevisionId": {
+              "path": "latestRevisionId",
+              "fallback": ""
+            },
+            "updatedAt": {
+              "path": "updatedAt",
+              "fallback": ""
+            }
+          }
+        },
+        "input": {
+          "articleId": {
+            "source": "queryParam",
+            "key": "articleId",
+            "transforms": [
+              "trim"
+            ]
+          }
+        },
+        "requiredInputKeys": [
+          "articleId"
+        ]
+      },
+      {
         "id": "content_hub_schedules",
         "kind": "content-hub",
         "proxySourceId": "content_hub_schedule_list",

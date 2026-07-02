@@ -473,7 +473,7 @@
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_schedule_article",
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,loading\",true,false"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,loading\",true,false;set:config.disabled,when,\"any:varEq,remote.contentHub.articleDetail.items.0.status,approved;any:varEq,remote.contentHub.articleDetail.items.0.status,published\",false,true"
     },
     {
       "id": "scheduledPublishButton",
@@ -488,7 +488,7 @@
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_publish_article",
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading\",true,false"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading\",true,false;set:config.disabled,when,\"all:varEq,remote.contentHub.articleDetail.items.0.status,approved\",false,true"
     },
     {
       "id": "scheduledStatus",
