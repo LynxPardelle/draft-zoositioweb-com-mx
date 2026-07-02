@@ -129,7 +129,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "El endpoint serverless está activo. Las lecturas son públicas desde dominios autorizados; crear, editar, borrar y cambiar políticas requiere sesión de administrador y validación segura del servidor.",
+        "text": "El catálogo está disponible para los sitios autorizados. Crear, editar, borrar y cambiar políticas requiere sesión de administrador y una validación segura en cada operación.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       }
     },
@@ -648,6 +648,10 @@
         "controlType": "textarea",
         "rows": 8,
         "placeholder": "[{\"comboId\":\"corp-card\",\"classes\":[\"ank-bg-bgColor\"],\"categories\":[\"card\"]}]",
+        "required": true,
+        "validation": [
+          { "type": "json", "message": "Escribe un arreglo JSON válido antes de guardar." }
+        ],
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "inputClasses": "ank-width-100per ank-minHeight-160px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-14px ank-fontWeight-700 ank-fontFamily-monospace"
@@ -658,9 +662,10 @@
       "type": "button",
       "config": {
         "type": "button",
-        "label": "Guardar batch",
+        "label": "Guardar lote",
         "icon": "upload",
         "iconPosition": "before",
+        "disabledWhenInvalidScope": true,
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__accentColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
       },
       "eventInstructions": "proxyAction:combo_catalog_batch_upsert_combos",
@@ -671,7 +676,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Batch procesado.",
+        "text": "Lote procesado.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_batch_upsert_combos.state,success"
@@ -681,7 +686,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "No se pudo procesar el batch. Revisa que sea un arreglo JSON válido.",
+        "text": "No se pudo procesar el lote. Revisa que sea un arreglo JSON válido.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
       "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_batch_upsert_combos.state,error"
@@ -754,6 +759,10 @@
         "label": "Grupo ID",
         "controlType": "text",
         "placeholder": "corporativo",
+        "required": true,
+        "validation": [
+          { "type": "pattern", "value": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$", "message": "Usa letras, números, guiones, guion bajo o punto." }
+        ],
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
@@ -820,6 +829,7 @@
         "label": "Crear grupo",
         "icon": "add",
         "iconPosition": "before",
+        "disabledWhenInvalidScope": true,
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__accentColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
       },
       "eventInstructions": "proxyAction:combo_catalog_create_group"
@@ -832,6 +842,7 @@
         "label": "Actualizar grupo",
         "icon": "save",
         "iconPosition": "before",
+        "disabledWhenInvalidScope": true,
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
       },
       "eventInstructions": "proxyAction:combo_catalog_update_group"
@@ -909,7 +920,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Define qué combos puede consumir este draft por defecto. CORS limita origen; estas políticas controlan runtime visible.",
+        "text": "Define qué combos puede usar este sitio por defecto. Las políticas controlan qué estilos aparecen en el editor y en la vista previa.",
         "classes": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700 ank-lineHeight-1_45"
       }
     },
@@ -1056,6 +1067,7 @@
         "label": "Guardar política",
         "icon": "policy",
         "iconPosition": "before",
+        "disabledWhenInvalidScope": true,
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__accentColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
       },
       "eventInstructions": "proxyAction:combo_catalog_set_draft_policy"
