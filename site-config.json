@@ -791,7 +791,26 @@
             "updatedAt": "2026-06-21T15:00:00.000Z",
             "authorLabel": "Equipo zoositioweb",
             "canonicalPath": "/blog/web/blog-builder-seo",
-            "robots": "index,follow"
+            "robots": "index,follow",
+            "commentPolicy": "authenticated",
+            "contentSafety": {
+              "rating": "general",
+              "warnings": []
+            },
+            "interactions": {
+              "reactions": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "ctas": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "forms": {
+                "enabled": true,
+                "moderation": "queue"
+              }
+            }
           }
         ],
         "publicTaxonomy": [
@@ -1172,6 +1191,45 @@
         "pageIds": [
           "admin-blog-analiticas"
         ],
+        "input": {
+          "articleId": {
+            "source": "queryParam",
+            "key": "articleId",
+            "transforms": [
+              "trim"
+            ]
+          },
+          "category": {
+            "source": "queryParam",
+            "key": "category",
+            "transforms": [
+              "trim",
+              "lowercase"
+            ]
+          },
+          "tag": {
+            "source": "queryParam",
+            "key": "tag",
+            "transforms": [
+              "trim",
+              "lowercase"
+            ]
+          },
+          "from": {
+            "source": "queryParam",
+            "key": "from",
+            "transforms": [
+              "trim"
+            ]
+          },
+          "to": {
+            "source": "queryParam",
+            "key": "to",
+            "transforms": [
+              "trim"
+            ]
+          }
+        },
         "mapper": {
           "itemsPath": "items",
           "fields": {
