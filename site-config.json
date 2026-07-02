@@ -2236,7 +2236,7 @@
           "categories",
           "features",
           "components",
-          "groups",
+          "comboGroups",
           "label",
           "description"
         ],
@@ -2258,7 +2258,7 @@
           "categories",
           "features",
           "components",
-          "groups",
+          "comboGroups",
           "label",
           "description",
           "updatedAt"
