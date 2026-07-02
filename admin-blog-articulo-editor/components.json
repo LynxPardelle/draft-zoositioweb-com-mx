@@ -683,18 +683,13 @@
     },
     {
       "id": "componentInspectorButton",
-      "type": "button",
+      "type": "link",
       "config": {
+        "href": "/admin/combos",
+        "text": "Abrir catálogo de combos",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
-        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_55 ank-bg-secondaryTextColor ank-color-bgColor",
-        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
-        "label": "Catálogo de componentes",
-        "loadingLabel": "Guardando...",
-        "disabledWhenInvalidScope": false,
-        "iconPosition": "before",
-        "disabled": true
-      },
-      "valueInstructions": ""
+        "ariaLabel": "Abrir catálogo de combos reutilizables"
+      }
     },
     {
       "id": "editorSaveButton",
@@ -1062,7 +1057,8 @@
         "tag": "div",
         "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
-          "componentInspectorCopy"
+          "componentInspectorCopy",
+          "componentInspectorJsonScope"
         ]
       }
     },
@@ -1071,8 +1067,53 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Catálogo visual pendiente: por ahora el modo avanzado sólo conserva el preset permitido en el guardado. La edición de componentes y JSON seguro se activará cuando exista el catálogo validado para este draft.",
+        "text": "Catálogo conectado: abre el administrador de combos para revisar y preparar estilos reutilizables. La caja de abajo valida JSON localmente para preparar árboles TGeneric, pero todavía no se envía al guardado del artículo hasta cerrar el contrato del editor avanzado.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
+      }
+    },
+    {
+      "id": "componentInspectorJsonScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "componentInspectorJson",
+        "components": [
+          "componentTreeJsonInput"
+        ]
+      }
+    },
+    {
+      "id": "componentTreeJsonInput",
+      "type": "input",
+      "config": {
+        "fieldId": "componentTreeJson",
+        "label": "Borrador JSON de componente",
+        "description": "Úsalo para probar si el árbol TGeneric que quieres preparar tiene JSON válido antes de llevarlo al editor avanzado completo.",
+        "helperText": "Validación local únicamente. No guarda ni publica cambios todavía.",
+        "controlType": "textarea",
+        "rows": 8,
+        "value": "{\n  \"type\": \"container\",\n  \"config\": {}\n}",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "showValidationChecklist": true,
+        "validationChecklistClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "validationChecklistItemClasses": "ank-display-flex ank-alignItems-center ank-gap-8px ank-fontSize-13px ank-fontWeight-800",
+        "validationChecklistValidItemClasses": "ank-color-successColor",
+        "validationChecklistInvalidItemClasses": "ank-color-errorColor",
+        "validationChecklistValidIcon": "OK",
+        "validationChecklistInvalidIcon": "!",
+        "validation": [
+          {
+            "type": "json",
+            "message": "JSON válido para previsualización."
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "descriptionClasses": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-180px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-13px ank-fontWeight-700 ank-fontFamily-monospace ank-lineHeight-1_5"
       }
     },
     {
@@ -1080,7 +1121,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Modo avanzado: habilita edición de componentes, presets y JSON cuando el catálogo visual esté disponible. Por ahora se conserva el valor en el formulario y el botón de catálogo queda deshabilitado para evitar cambios inválidos.",
+        "text": "Modo avanzado: conserva el preset visual elegido al guardar. Usa el catálogo de combos para preparar estilos; la edición directa de componentes queda bloqueada hasta contar con preview visual y validación continua del árbol TGeneric contra el allowlist del draft.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontSize-13px ank-lineHeight-1_55 ank-fontWeight-800"
       }
     }
