@@ -1789,6 +1789,41 @@
         }
       },
       {
+        "id": "combo_catalog_combo_options",
+        "kind": "combo-catalog",
+        "proxySourceId": "combo_catalog_combo_options",
+        "comboCatalog": {
+          "read": "comboList"
+        },
+        "target": "remote.comboCatalog.comboOptions",
+        "statusTarget": "remoteStatus.comboCatalog.comboOptions",
+        "pageIds": [
+          "admin-blog-articulo-editor"
+        ],
+        "mapper": {
+          "itemsPath": "items",
+          "fields": {
+            "value": {
+              "path": "comboId"
+            },
+            "label": {
+              "path": "comboId",
+              "transform": "titleCase"
+            }
+          }
+        },
+        "input": {
+          "feature": {
+            "source": "literal",
+            "value": "blog"
+          },
+          "component": {
+            "source": "literal",
+            "value": "article"
+          }
+        }
+      },
+      {
         "id": "combo_catalog_combo_detail",
         "kind": "combo-catalog",
         "proxySourceId": "combo_catalog_combo_detail",

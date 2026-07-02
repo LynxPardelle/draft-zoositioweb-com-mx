@@ -396,12 +396,13 @@
           "path": "remote.contentHub.assets.items"
         },
         "rows": [],
-        "rowIdPath": "id",
+        "rowIdPath": "assetId",
         "eventPayloadFields": [
-          "articleId",
-          "status",
-          "latestRevisionId",
-          "path"
+          "assetId",
+          "name",
+          "kind",
+          "usageRefs",
+          "publicability"
         ],
         "emptyText": "Aún no hay archivos registrados para este filtro. Registra un archivo y sus metadatos para verlo aquí.",
         "loadingText": "Cargando datos del blog...",
