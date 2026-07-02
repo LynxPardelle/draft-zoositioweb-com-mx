@@ -518,7 +518,7 @@
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_submit_review_article",
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,loading\",true,false"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,loading\",true,false;set:config.disabled,when,\"any:varEq,remote.contentHub.articleDetail.items.0.status,draft;any:varEq,remote.contentHub.articleDetail.items.0.status,unpublished\",false,true"
     },
     {
       "id": "seoApproveButton",
@@ -533,7 +533,7 @@
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_approve_article",
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,loading\",true,false"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,loading\",true,false;set:config.disabled,when,\"all:varEq,remote.contentHub.articleDetail.items.0.status,review\",false,true"
     },
     {
       "id": "seoPublishButton",
@@ -548,7 +548,7 @@
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_publish_article",
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading\",true,false"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading\",true,false;set:config.disabled,when,\"all:varEq,remote.contentHub.articleDetail.items.0.status,approved\",false,true"
     },
     {
       "id": "seoUnpublishButton",
@@ -563,7 +563,7 @@
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_unpublish_article",
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,loading\",true,false"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,loading\",true,false;set:config.disabled,when,\"all:varEq,remote.contentHub.articleDetail.items.0.status,published\",false,true"
     },
     {
       "id": "seoArchiveButton",
@@ -578,7 +578,7 @@
         "iconPosition": "before"
       },
       "eventInstructions": "proxyAction:content_hub_archive_article",
-      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,loading\",true,false"
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,loading\",true,false;set:config.disabled,when,\"any:varEq,remote.contentHub.articleDetail.items.0.status,draft;any:varEq,remote.contentHub.articleDetail.items.0.status,review;any:varEq,remote.contentHub.articleDetail.items.0.status,approved;any:varEq,remote.contentHub.articleDetail.items.0.status,published;any:varEq,remote.contentHub.articleDetail.items.0.status,unpublished\",false,true"
     },
     {
       "id": "seoStatus",

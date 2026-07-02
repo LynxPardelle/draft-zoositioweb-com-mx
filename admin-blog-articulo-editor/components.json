@@ -1328,7 +1328,7 @@
         "classes": "ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
           "componentPreviewTitle",
-          "componentPreviewCard",
+          "componentTreeLivePreview",
           "componentPreviewNote"
         ]
       }
@@ -1343,44 +1343,63 @@
       }
     },
     {
-      "id": "componentPreviewCard",
-      "type": "container",
+      "id": "componentTreeLivePreview",
+      "type": "generic-component-preview",
       "config": {
-        "tag": "article",
-        "classes": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-8px",
-        "components": [
-          "componentPreviewCardTitle",
-          "componentPreviewCardCopy",
-          "componentPreviewCardCta"
-        ]
-      }
-    },
-    {
-      "id": "componentPreviewCardTitle",
-      "type": "text",
-      "config": {
-        "tag": "h4",
-        "text": "Bloque de artículo",
-        "classes": "ank-m-0 ank-fontSize-17px ank-fontWeight-900 ank-color-titleColor"
-      }
-    },
-    {
-      "id": "componentPreviewCardCopy",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "Muestra de referencia para validar proporción, espaciado y legibilidad antes de guardar el árbol avanzado.",
-        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
-      }
-    },
-    {
-      "id": "componentPreviewCardCta",
-      "type": "button",
-      "config": {
-        "label": "CTA",
-        "disabled": true,
-        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-display-inline-flex ank-alignItems-center ank-justifyContent-center",
-        "disabledClasses": "ank-opacity-0_65 zlp-cursor-not-allowed"
+        "label": "Vista del árbol avanzado",
+        "description": "Renderiza el JSON actual con componentes genéricos permitidos. Los eventos quedan desactivados en la previsualización.",
+        "source": {
+          "type": "scope",
+          "path": "fields.componentTreeJson.value",
+          "fallback": [
+            {
+              "id": "previewFallbackBlock",
+              "type": "container",
+              "config": {
+                "tag": "article",
+                "classes": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-14px ank-display-flex ank-flexDirection-column ank-gap-8px",
+                "components": [
+                  "previewFallbackCopy"
+                ]
+              }
+            },
+            {
+              "id": "previewFallbackCopy",
+              "type": "text",
+              "config": {
+                "tag": "p",
+                "text": "Agrega JSON válido para ver aquí el bloque avanzado del artículo.",
+                "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+              }
+            }
+          ]
+        },
+        "allowedTypes": [
+          "container",
+          "text",
+          "button",
+          "link",
+          "media",
+          "generic-card",
+          "generic-rich-text",
+          "generic-table",
+          "generic-cell",
+          "input",
+          "icon",
+          "qr-code",
+          "loading-spinner",
+          "stats-counter",
+          "accordion",
+          "tab-group",
+          "embed-frame",
+          "tooltip"
+        ],
+        "maxComponents": 60,
+        "emptyText": "Agrega JSON válido para ver aquí el bloque avanzado del artículo.",
+        "invalidText": "No se puede previsualizar: corrige el JSON o usa componentes permitidos.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "previewClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-14px ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "stateClasses": "ank-p-14px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-border-1px__solid__textColorOPA__0_18"
       }
     },
     {
@@ -1388,7 +1407,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Esta vista es una previsualización controlada del primitive; el render dinámico del árbol TGeneric queda para el editor avanzado final.",
+        "text": "Esta vista usa el mismo árbol TGeneric que se guarda cuando activas modo avanzado. El servicio seguro vuelve a sanitizar antes de publicar.",
         "classes": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
