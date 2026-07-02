@@ -222,10 +222,20 @@
         "tag": "section",
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
+          "categoriesTable",
+          "categoriesCreateTitle",
           "categoriesGrid",
-          "categoriesSaveNotice",
-          "categoriesTable"
+          "categoriesSaveNotice"
         ]
+      }
+    },
+    {
+      "id": "categoriesCreateTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Nueva categoría",
+        "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
       }
     },
     {
@@ -441,10 +451,12 @@
         "rows": [],
         "rowIdPath": "taxonomyId",
         "eventPayloadFields": [
-          "articleId",
-          "status",
-          "latestRevisionId",
-          "path"
+          "taxonomyId",
+          "slug",
+          "label",
+          "seoDescription",
+          "visible",
+          "redirectWarning"
         ],
         "emptyText": "Aún no hay categorías disponibles para este filtro. Guarda una nueva entrada desde el formulario superior para que aparezca aquí.",
         "loadingText": "Cargando datos del blog...",
@@ -480,7 +492,15 @@
             "valuePath": "redirectWarning"
           }
         ],
-        "rowActions": [],
+        "rowActions": [
+          {
+            "id": "filterArticles",
+            "label": "Ver artículos",
+            "icon": "search",
+            "hrefTemplate": "/admin/blog/articulos?category={slug}"
+          }
+        ],
+        "actionColumnLabel": "Acciones",
         "pagination": {
           "enabled": true,
           "pageSize": 10,

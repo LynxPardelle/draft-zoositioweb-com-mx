@@ -685,16 +685,11 @@
       "id": "componentInspectorButton",
       "type": "button",
       "config": {
+        "label": "Configurar componente",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
-        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_55 ank-bg-secondaryTextColor ank-color-bgColor",
-        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
-        "label": "Catálogo de componentes",
-        "loadingLabel": "Guardando...",
-        "disabledWhenInvalidScope": false,
-        "iconPosition": "before",
-        "disabled": true
+        "ariaLabel": "Abrir inspector de componentes y combos"
       },
-      "valueInstructions": ""
+      "eventInstructions": "openModal:article-component-inspector,blog:editor,open_component_inspector,admin_blog"
     },
     {
       "id": "editorSaveButton",
@@ -993,7 +988,7 @@
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       },
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success",
-      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.fileName,El archivo se registró; revisa la lista para confirmar el nombre."
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.fileName,\"El archivo se registró; revisa la lista para confirmar el nombre.\""
     },
     {
       "id": "editorAssetsTable",
@@ -1006,12 +1001,13 @@
           "path": "remote.contentHub.assets.items"
         },
         "rows": [],
-        "rowIdPath": "id",
+        "rowIdPath": "assetId",
         "eventPayloadFields": [
-          "articleId",
-          "status",
-          "latestRevisionId",
-          "path"
+          "assetId",
+          "name",
+          "kind",
+          "usageRefs",
+          "publicability"
         ],
         "emptyText": "Aún no hay medios registrados para este artículo. Usa la carga de archivos para registrar metadatos públicos.",
         "loadingText": "Cargando datos del blog...",
@@ -1062,7 +1058,8 @@
         "tag": "div",
         "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
-          "componentInspectorCopy"
+          "componentInspectorCopy",
+          "componentInspectorCatalogLink"
         ]
       }
     },
@@ -1071,16 +1068,390 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Catálogo visual pendiente: por ahora el modo avanzado sólo conserva el preset permitido en el guardado. La edición de componentes y JSON seguro se activará cuando exista el catálogo validado para este draft.",
+        "text": "Modo avanzado: abre el inspector para elegir presets, revisar componentes permitidos y validar un borrador JSON de árbol TGeneric antes de llevarlo al guardado del artículo.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
       }
+    },
+    {
+      "id": "componentInspectorCatalogLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/combos",
+        "text": "Administrar catálogo de combos",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      }
+    },
+    {
+      "id": "articleComponentInspectorModalRoot",
+      "type": "container",
+      "condition": "all:modalRefId,article-component-inspector",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "componentInspectorModalHeader",
+          "componentInspectorModalTools",
+          "componentInspectorModalClose"
+        ]
+      }
+    },
+    {
+      "id": "componentInspectorModalHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-8px ank-pr-36px",
+        "components": [
+          "componentInspectorModalEyebrow",
+          "componentInspectorModalTitle",
+          "componentInspectorModalIntro"
+        ]
+      }
+    },
+    {
+      "id": "componentInspectorModalEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Editor avanzado",
+        "classes": "ank-m-0 ank-fontSize-12px ank-fontWeight-900 ank-letterSpacing-0 ank-textTransform-uppercase ank-color-accentColor"
+      }
+    },
+    {
+      "id": "componentInspectorModalTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Inspector de componentes",
+        "classes": "ank-m-0 ank-fontSize-28px ank-lineHeight-1_1 ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "componentInspectorModalIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Elige un preset de combos, revisa qué componentes genéricos se pueden usar en artículos y valida JSON antes de preparar el editor avanzado completo.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_5 ank-fontWeight-700 ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "componentInspectorModalTools",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gap-16px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 260px), 1fr))"
+        },
+        "components": [
+          "componentCatalogPanel",
+          "componentComboPanel",
+          "componentPreviewPanel",
+          "componentInspectorJsonScope"
+        ]
+      }
+    },
+    {
+      "id": "componentCatalogPanel",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "componentCatalogTitle",
+          "componentCatalogIntro",
+          "componentCatalogContainer",
+          "componentCatalogText",
+          "componentCatalogMedia",
+          "componentCatalogButton",
+          "componentCatalogRichText",
+          "componentCatalogTable",
+          "componentCatalogInput"
+        ]
+      }
+    },
+    {
+      "id": "componentCatalogTitle",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Catálogo de componentes",
+        "classes": "ank-m-0 ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "componentCatalogIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Primer allowlist visual para artículos: contenedores, textos, media, botones, rich text, tablas e inputs.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "componentCatalogContainer",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "generic-container: layout y secciones",
+        "classes": "ank-p-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "componentCatalogText",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "generic-text: títulos y copy",
+        "classes": "ank-p-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "componentCatalogMedia",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "media/image: recursos públicos con alt",
+        "classes": "ank-p-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "componentCatalogButton",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "generic-button/link: CTA y navegación",
+        "classes": "ank-p-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "componentCatalogRichText",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "generic-rich-text: contenido editorial",
+        "classes": "ank-p-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "componentCatalogTable",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "generic-table/cell: listados y comparativas",
+        "classes": "ank-p-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "componentCatalogInput",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "generic-input: campos y controles",
+        "classes": "ank-p-10px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "componentComboPanel",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "componentComboSelector",
+        "components": [
+          "componentComboSelect",
+          "componentComboCatalogStatus",
+          "componentComboCatalogLink"
+        ]
+      }
+    },
+    {
+      "id": "componentComboSelect",
+      "type": "input",
+      "config": {
+        "fieldId": "comboId",
+        "label": "Preset de combo",
+        "controlType": "select",
+        "value": "article-card-clean",
+        "options": {
+          "source": "var",
+          "path": "remote.comboCatalog.comboOptions.items",
+          "fallback": [
+            {
+              "value": "article-card-clean",
+              "label": "Article card clean"
+            },
+            {
+              "value": "article-body-editorial",
+              "label": "Article body editorial"
+            },
+            {
+              "value": "article-cta-primary",
+              "label": "Article CTA primary"
+            }
+          ]
+        },
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "helperText": "Se llena desde Combo Catalog cuando está disponible; usa fallback local para seguir editando sin bloquear."
+      }
+    },
+    {
+      "id": "componentComboCatalogStatus",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Los combos se consultan desde el catálogo genérico; si el servicio no responde, el selector conserva presets seguros del draft.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "componentComboCatalogLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/combos",
+        "text": "Abrir gestor de combos",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      }
+    },
+    {
+      "id": "componentPreviewPanel",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "componentPreviewTitle",
+          "componentPreviewCard",
+          "componentPreviewNote"
+        ]
+      }
+    },
+    {
+      "id": "componentPreviewTitle",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Preview visual",
+        "classes": "ank-m-0 ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "componentPreviewCard",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "components": [
+          "componentPreviewCardTitle",
+          "componentPreviewCardCopy",
+          "componentPreviewCardCta"
+        ]
+      }
+    },
+    {
+      "id": "componentPreviewCardTitle",
+      "type": "text",
+      "config": {
+        "tag": "h4",
+        "text": "Bloque de artículo",
+        "classes": "ank-m-0 ank-fontSize-17px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "componentPreviewCardCopy",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Muestra de referencia para validar proporción, espaciado y legibilidad antes de guardar el árbol avanzado.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "componentPreviewCardCta",
+      "type": "button",
+      "config": {
+        "label": "CTA",
+        "disabled": true,
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-display-inline-flex ank-alignItems-center ank-justifyContent-center",
+        "disabledClasses": "ank-opacity-0_65 zlp-cursor-not-allowed"
+      }
+    },
+    {
+      "id": "componentPreviewNote",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Esta vista es una previsualización controlada del primitive; el render dinámico del árbol TGeneric queda para el editor avanzado final.",
+        "classes": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "componentInspectorJsonScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "componentInspectorJson",
+        "components": [
+          "componentTreeJsonInput"
+        ]
+      }
+    },
+    {
+      "id": "componentTreeJsonInput",
+      "type": "input",
+      "config": {
+        "fieldId": "componentTreeJson",
+        "label": "Borrador JSON de componente",
+        "description": "Úsalo para probar si el árbol TGeneric que quieres preparar tiene JSON válido antes de llevarlo al editor avanzado completo.",
+        "helperText": "Validación local únicamente. No guarda ni publica cambios todavía.",
+        "controlType": "textarea",
+        "rows": 8,
+        "value": "{\n  \"type\": \"container\",\n  \"config\": {}\n}",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "showValidationChecklist": true,
+        "validationChecklistClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "validationChecklistItemClasses": "ank-display-flex ank-alignItems-center ank-gap-8px ank-fontSize-13px ank-fontWeight-800",
+        "validationChecklistValidItemClasses": "ank-color-successColor",
+        "validationChecklistInvalidItemClasses": "ank-color-errorColor",
+        "validationChecklistValidIcon": "OK",
+        "validationChecklistInvalidIcon": "!",
+        "validation": [
+          {
+            "type": "json",
+            "message": "JSON válido para previsualización."
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "descriptionClasses": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-180px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-13px ank-fontWeight-700 ank-fontFamily-monospace ank-lineHeight-1_5"
+      }
+    },
+    {
+      "id": "componentInspectorModalClose",
+      "type": "button",
+      "config": {
+        "label": "Cerrar inspector",
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center"
+      },
+      "eventInstructions": "closeModal"
     },
     {
       "id": "advancedModeHelp",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Modo avanzado: habilita edición de componentes, presets y JSON cuando el catálogo visual esté disponible. Por ahora se conserva el valor en el formulario y el botón de catálogo queda deshabilitado para evitar cambios inválidos.",
+        "text": "Modo avanzado: conserva el preset visual elegido al guardar. Usa el inspector para preparar componentes, combos y JSON válido contra el allowlist del draft; la edición directa del árbol TGeneric queda bloqueada hasta que el guardado avanzado use este contrato.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontSize-13px ank-lineHeight-1_55 ank-fontWeight-800"
       }
     }
