@@ -212,6 +212,7 @@
         "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
           "analyticsNotice",
+          "analyticsFiltersScope",
           "analyticsKpiGrid",
           "analyticsTable"
         ]
@@ -224,6 +225,169 @@
         "tag": "p",
         "text": "Esta vista muestra métricas agregadas sin PII. Los eventos crudos no deben incluir comentarios, correos, nombres ni formularios.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
+      }
+    },
+    {
+      "id": "analyticsFiltersScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "analyticsFilters",
+        "tag": "form",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "ariaLabel": "Filtros de analíticas",
+        "components": [
+          "analyticsFiltersTitle",
+          "analyticsFiltersGrid",
+          "analyticsFiltersActions"
+        ],
+        "submitEventInstructions": "navigateWithScopeQuery:/admin/blog/analiticas,,articleId=values.articleId,category=values.category,tag=values.tag,from=values.from,to=values.to"
+      }
+    },
+    {
+      "id": "analyticsFiltersTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Filtros",
+        "classes": "ank-m-0 ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "analyticsFiltersGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-12px ank-alignItems-start",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 180px), 1fr))"
+        },
+        "components": [
+          "analyticsFilterArticleId",
+          "analyticsFilterCategory",
+          "analyticsFilterTag",
+          "analyticsFilterFrom",
+          "analyticsFilterTo"
+        ]
+      }
+    },
+    {
+      "id": "analyticsFilterArticleId",
+      "type": "input",
+      "config": {
+        "fieldId": "articleId",
+        "label": "Artículo",
+        "controlType": "text",
+        "placeholder": "art_...",
+        "required": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-outline-none",
+        "helperText": "Opcional. Pega el código del artículo desde la tabla cuando quieras analizar uno específico.",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "validation": []
+      },
+      "valueInstructions": "set:config.value,queryParamOr,articleId,"
+    },
+    {
+      "id": "analyticsFilterCategory",
+      "type": "input",
+      "config": {
+        "fieldId": "category",
+        "label": "Categoría",
+        "controlType": "text",
+        "placeholder": "web",
+        "required": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-outline-none",
+        "helperText": "Slug de categoría.",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "validation": []
+      },
+      "valueInstructions": "set:config.value,queryParamOr,category,"
+    },
+    {
+      "id": "analyticsFilterTag",
+      "type": "input",
+      "config": {
+        "fieldId": "tag",
+        "label": "Etiqueta",
+        "controlType": "text",
+        "placeholder": "seo",
+        "required": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-outline-none",
+        "helperText": "Slug de etiqueta.",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "validation": []
+      },
+      "valueInstructions": "set:config.value,queryParamOr,tag,"
+    },
+    {
+      "id": "analyticsFilterFrom",
+      "type": "input",
+      "config": {
+        "fieldId": "from",
+        "label": "Desde",
+        "controlType": "text",
+        "placeholder": "2026-07-01T00:00:00Z",
+        "required": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-outline-none",
+        "helperText": "Fecha ISO opcional.",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "validation": []
+      },
+      "valueInstructions": "set:config.value,queryParamOr,from,"
+    },
+    {
+      "id": "analyticsFilterTo",
+      "type": "input",
+      "config": {
+        "fieldId": "to",
+        "label": "Hasta",
+        "controlType": "text",
+        "placeholder": "2026-07-31T23:59:59Z",
+        "required": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-outline-none",
+        "helperText": "Fecha ISO opcional.",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "validation": []
+      },
+      "valueInstructions": "set:config.value,queryParamOr,to,"
+    },
+    {
+      "id": "analyticsFiltersActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "components": [
+          "analyticsFilterSubmit",
+          "analyticsFilterClear"
+        ]
+      }
+    },
+    {
+      "id": "analyticsFilterSubmit",
+      "type": "button",
+      "config": {
+        "type": "submit",
+        "label": "Aplicar filtros",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      }
+    },
+    {
+      "id": "analyticsFilterClear",
+      "type": "link",
+      "config": {
+        "text": "Limpiar filtros",
+        "href": "/admin/blog/analiticas",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       }
     },
     {
