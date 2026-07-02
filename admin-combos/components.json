@@ -431,7 +431,7 @@
       "id": "adminCombosGroups",
       "type": "input",
       "config": {
-        "fieldId": "groups",
+        "fieldId": "comboGroups",
         "label": "Grupos/temas",
         "controlType": "text",
         "placeholder": "corporativo, editorial",
