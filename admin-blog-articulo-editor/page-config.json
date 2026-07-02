@@ -21,6 +21,7 @@
     "siteFooter"
   ],
   "modalRootIds": [
-    "siteNavMenuModalRoot"
+    "siteNavMenuModalRoot",
+    "articleComponentInspectorModalRoot"
   ]
 }
