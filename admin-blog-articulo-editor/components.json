@@ -209,7 +209,7 @@
       "type": "interaction-scope",
       "config": {
         "scopeId": "articleEditor",
-        "valueInstructions": "collectFields:articleId,articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSlug,articleContent,advancedMode,allowedComponentPreset,metadata,editorNotes,articleAssets,upload",
+        "valueInstructions": "collectFields:articleId,articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSlug,articleContent,componentTreeJson,advancedMode,allowedComponentPreset,metadata,editorNotes,articleAssets,upload",
         "components": [
           "editorWorkspace"
         ]
@@ -1408,8 +1408,8 @@
       "config": {
         "fieldId": "componentTreeJson",
         "label": "Borrador JSON de componente",
-        "description": "Úsalo para probar si el árbol TGeneric que quieres preparar tiene JSON válido antes de llevarlo al editor avanzado completo.",
-        "helperText": "Validación local únicamente. No guarda ni publica cambios todavía.",
+        "description": "Úsalo para editar la estructura visual del artículo. Al guardar cambios con modo avanzado activo, esta configuración queda en la revisión editable.",
+        "helperText": "Debe ser un bloque o una lista de bloques. La app valida sintaxis y el servicio vuelve a sanitizar antes de guardar.",
         "controlType": "textarea",
         "rows": 8,
         "value": "{\n  \"type\": \"container\",\n  \"config\": {}\n}",
@@ -1435,7 +1435,8 @@
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
         "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
         "inputClasses": "ank-width-100per ank-minHeight-180px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-13px ank-fontWeight-700 ank-fontFamily-monospace ank-lineHeight-1_5"
-      }
+      },
+      "valueInstructions": "set:config.value,jsonVarOr,remote.contentHub.articleDetail.items.0.components,\"[{\"\"type\"\":\"\"container\"\",\"\"config\"\":{}}]\",2"
     },
     {
       "id": "componentInspectorModalClose",
@@ -1451,7 +1452,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Modo avanzado: conserva el preset visual elegido al guardar. Usa el inspector para preparar componentes, combos y JSON válido contra el allowlist del draft; la edición directa del árbol TGeneric queda bloqueada hasta que el guardado avanzado use este contrato.",
+        "text": "Modo avanzado: guarda la estructura visual validada del artículo. Usa el inspector para preparar bloques permitidos, estilos y configuración válida; después valida, aprueba o programa la revisión desde las pestañas editoriales.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontSize-13px ank-lineHeight-1_55 ank-fontWeight-800"
       }
     }
