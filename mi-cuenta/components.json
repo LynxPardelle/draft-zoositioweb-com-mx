@@ -129,7 +129,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Verificando tu sesión...",
+        "text": "Validando tu sesión y permisos...",
         "classes": "ank-m-0 ank-fontSize-15px ank-fontWeight-900 ank-color-titleColor"
       }
     },
@@ -138,7 +138,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Después cargaremos los datos de tu cuenta y el estado de seguridad.",
+        "text": "Esto puede tardar unos segundos si el servicio seguro estaba en reposo. Cada acción protegida se vuelve a validar.",
         "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_5 ank-color-secondaryTextColor"
       }
     },
