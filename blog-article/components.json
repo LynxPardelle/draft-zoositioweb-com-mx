@@ -240,6 +240,7 @@
           "paddingRight": "18px"
         }
       },
+      "condition": "not:varEq,contentHub.currentArticle.interactions.ctas.enabled,false",
       "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"trackEvent:blog_cta_click,blog,zoosite-blog-article-cta,hubId,zoosite-main,articleId,\",eval:config.articleId,\",path,\",eval:config.articlePath,\",ctaId,primary-consultation;setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,cta_click;setScopeValue:targetId,primary-consultation;setScopeValue:value,1;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
     },
     {
@@ -251,7 +252,8 @@
         "classes": "ank-width-100per ank-maxWidth-760px ank-display-flex ank-flexDirection-column ank-gap-16px",
         "components": [
           "blogArticleCta",
-          "blogArticleReactionPanel"
+          "blogArticleReactionPanel",
+          "blogArticleFormPanel"
         ]
       }
     },
@@ -280,7 +282,8 @@
           "blogArticleShareButton",
           "blogArticleInteractionStatus"
         ]
-      }
+      },
+      "condition": "not:varEq,contentHub.currentArticle.interactions.reactions.enabled,false"
     },
     {
       "id": "blogArticleReactionTitle",
@@ -382,6 +385,57 @@
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_record_interaction.state,error"
     },
     {
+      "id": "blogArticleFormPanel",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-borderRadius-8px ank-p-18px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "blogArticleFormTitle",
+          "blogArticleFormCopy",
+          "blogArticleFormButton"
+        ]
+      },
+      "condition": "not:varEq,contentHub.currentArticle.interactions.forms.enabled,false"
+    },
+    {
+      "id": "blogArticleFormTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Pedir más contenido",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "blogArticleFormCopy",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Puedes pedir que preparemos más guías de este tema. Este botón no envía datos personales; sólo registra interés agregado para priorizar contenidos.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
+      }
+    },
+    {
+      "id": "blogArticleFormButton",
+      "type": "button",
+      "config": {
+        "label": "Quiero más guías de este tema",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "loadingLabel": "Guardando...",
+        "disabledWhenInvalidScope": false,
+        "styles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "justifyContent": "center",
+          "minHeight": "48px",
+          "paddingLeft": "18px",
+          "paddingRight": "18px"
+        }
+      },
+      "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,form;setScopeValue:targetId,content-interest;setScopeValue:value,more-guides;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
+    },
+    {
       "id": "blogArticleCommentPanel",
       "type": "container",
       "config": {
@@ -395,7 +449,8 @@
           "blogArticleCommentButton",
           "blogArticleCommentStatus"
         ]
-      }
+      },
+      "condition": "not:varEq,contentHub.currentArticle.commentPolicy,disabled"
     },
     {
       "id": "blogArticleCommentTitle",
