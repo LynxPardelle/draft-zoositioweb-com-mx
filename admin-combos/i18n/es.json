@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "pageId": "admin-combos",
+  "lang": "es",
+  "messages": {
+    "title": "Catálogo de combos"
+  },
+  "dictionary": {
+    "title": "Catálogo de combos"
+  }
+}

@@ -747,7 +747,7 @@
       "endpoint": "/auth/runtime-config"
     },
     "comboCatalog": {
-      "enabled": false,
+      "enabled": true,
       "endpoint": "/features/combo-catalog/read",
       "authProfileId": "staff",
       "draftDomain": "zoositioweb.com.mx"
@@ -1695,6 +1695,167 @@
         "requiredInputKeys": [
           "articleId"
         ]
+      },
+      {
+        "id": "combo_catalog_runtime_combos",
+        "kind": "combo-catalog",
+        "proxySourceId": "combo_catalog_runtime_combos",
+        "comboCatalog": {
+          "read": "runtimeCombos"
+        },
+        "target": "remote.comboCatalog.runtime",
+        "statusTarget": "remoteStatus.comboCatalog.runtime",
+        "pageIds": [
+          "admin-combos"
+        ],
+        "mapper": {
+          "itemsPath": "items"
+        },
+        "input": {
+          "query": {
+            "source": "queryParam",
+            "key": "q",
+            "transforms": [
+              "trim"
+            ]
+          },
+          "feature": {
+            "source": "queryParam",
+            "key": "feature",
+            "transforms": [
+              "trim"
+            ]
+          },
+          "component": {
+            "source": "queryParam",
+            "key": "component",
+            "transforms": [
+              "trim"
+            ]
+          },
+          "category": {
+            "source": "queryParam",
+            "key": "category",
+            "transforms": [
+              "trim"
+            ]
+          }
+        }
+      },
+      {
+        "id": "combo_catalog_combo_list",
+        "kind": "combo-catalog",
+        "proxySourceId": "combo_catalog_combo_list",
+        "comboCatalog": {
+          "read": "comboList"
+        },
+        "target": "remote.comboCatalog.combos",
+        "statusTarget": "remoteStatus.comboCatalog.combos",
+        "pageIds": [
+          "admin-combos"
+        ],
+        "mapper": {
+          "itemsPath": "items"
+        },
+        "input": {
+          "query": {
+            "source": "queryParam",
+            "key": "q",
+            "transforms": [
+              "trim"
+            ]
+          },
+          "feature": {
+            "source": "queryParam",
+            "key": "feature",
+            "transforms": [
+              "trim"
+            ]
+          },
+          "component": {
+            "source": "queryParam",
+            "key": "component",
+            "transforms": [
+              "trim"
+            ]
+          },
+          "category": {
+            "source": "queryParam",
+            "key": "category",
+            "transforms": [
+              "trim"
+            ]
+          }
+        }
+      },
+      {
+        "id": "combo_catalog_combo_detail",
+        "kind": "combo-catalog",
+        "proxySourceId": "combo_catalog_combo_detail",
+        "comboCatalog": {
+          "read": "comboDetail"
+        },
+        "target": "remote.comboCatalog.detail",
+        "statusTarget": "remoteStatus.comboCatalog.detail",
+        "pageIds": [
+          "admin-combos"
+        ],
+        "mapper": {
+          "itemsPath": "item",
+          "singleItem": true
+        },
+        "input": {
+          "comboId": {
+            "source": "queryParam",
+            "key": "comboId",
+            "transforms": [
+              "trim"
+            ]
+          },
+          "scope": {
+            "source": "queryParam",
+            "key": "scope",
+            "transforms": [
+              "trim"
+            ]
+          }
+        },
+        "requiredInputKeys": [
+          "comboId"
+        ]
+      },
+      {
+        "id": "combo_catalog_group_list",
+        "kind": "combo-catalog",
+        "proxySourceId": "combo_catalog_group_list",
+        "comboCatalog": {
+          "read": "groupList"
+        },
+        "target": "remote.comboCatalog.groups",
+        "statusTarget": "remoteStatus.comboCatalog.groups",
+        "pageIds": [
+          "admin-combos"
+        ],
+        "mapper": {
+          "itemsPath": "items"
+        }
+      },
+      {
+        "id": "combo_catalog_draft_policy",
+        "kind": "combo-catalog",
+        "proxySourceId": "combo_catalog_draft_policy",
+        "comboCatalog": {
+          "read": "draftPolicy"
+        },
+        "target": "remote.comboCatalog.policy",
+        "statusTarget": "remoteStatus.comboCatalog.policy",
+        "pageIds": [
+          "admin-combos"
+        ],
+        "mapper": {
+          "itemsPath": "policy",
+          "singleItem": true
+        }
       }
     ],
     "apiActions": [
@@ -2023,6 +2184,146 @@
           "snapshot"
         ],
         "statusTarget": "remoteStatus.contentHub.content_hub_restore_revision"
+      },
+      {
+        "id": "combo_catalog_create_combo",
+        "kind": "combo-catalog",
+        "proxyActionId": "combo_catalog_create_combo",
+        "comboCatalog": {
+          "action": "createCombo"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "scope",
+          "comboId",
+          "classes",
+          "categories",
+          "features",
+          "components",
+          "groups",
+          "label",
+          "description"
+        ],
+        "statusTarget": "remoteStatus.comboCatalog.combo_catalog_create_combo"
+      },
+      {
+        "id": "combo_catalog_update_combo",
+        "kind": "combo-catalog",
+        "proxyActionId": "combo_catalog_update_combo",
+        "comboCatalog": {
+          "action": "updateCombo"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "scope",
+          "comboId",
+          "classes",
+          "categories",
+          "features",
+          "components",
+          "groups",
+          "label",
+          "description",
+          "updatedAt"
+        ],
+        "statusTarget": "remoteStatus.comboCatalog.combo_catalog_update_combo"
+      },
+      {
+        "id": "combo_catalog_batch_upsert_combos",
+        "kind": "combo-catalog",
+        "proxyActionId": "combo_catalog_batch_upsert_combos",
+        "comboCatalog": {
+          "action": "batchUpsertCombos"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "scope",
+          "batchJson"
+        ],
+        "statusTarget": "remoteStatus.comboCatalog.combo_catalog_batch_upsert_combos"
+      },
+      {
+        "id": "combo_catalog_soft_delete_combo",
+        "kind": "combo-catalog",
+        "proxyActionId": "combo_catalog_soft_delete_combo",
+        "comboCatalog": {
+          "action": "softDeleteCombo"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "scope",
+          "comboId",
+          "updatedAt"
+        ],
+        "statusTarget": "remoteStatus.comboCatalog.combo_catalog_soft_delete_combo"
+      },
+      {
+        "id": "combo_catalog_create_group",
+        "kind": "combo-catalog",
+        "proxyActionId": "combo_catalog_create_group",
+        "comboCatalog": {
+          "action": "createGroup"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "scope",
+          "groupId",
+          "label",
+          "description",
+          "comboIds",
+          "features",
+          "components"
+        ],
+        "statusTarget": "remoteStatus.comboCatalog.combo_catalog_create_group"
+      },
+      {
+        "id": "combo_catalog_update_group",
+        "kind": "combo-catalog",
+        "proxyActionId": "combo_catalog_update_group",
+        "comboCatalog": {
+          "action": "updateGroup"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "scope",
+          "groupId",
+          "label",
+          "description",
+          "comboIds",
+          "features",
+          "components",
+          "updatedAt"
+        ],
+        "statusTarget": "remoteStatus.comboCatalog.combo_catalog_update_group"
+      },
+      {
+        "id": "combo_catalog_set_draft_policy",
+        "kind": "combo-catalog",
+        "proxyActionId": "combo_catalog_set_draft_policy",
+        "comboCatalog": {
+          "action": "setDraftPolicy"
+        },
+        "method": "POST",
+        "requiresUserGesture": true,
+        "inputFields": [
+          "defaultAccess",
+          "allowedCombos",
+          "deniedCombos",
+          "allowedGroups",
+          "deniedGroups",
+          "allowedFeatures",
+          "deniedFeatures",
+          "allowedComponents",
+          "deniedComponents",
+          "updatedAt"
+        ],
+        "statusTarget": "remoteStatus.comboCatalog.combo_catalog_set_draft_policy"
       }
     ]
   },

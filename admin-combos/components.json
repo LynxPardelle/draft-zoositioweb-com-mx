@@ -26,7 +26,9 @@
         "components": [
           "adminCombosHeader",
           "adminCombosStatus",
-          "adminCombosGrid"
+          "adminCombosFiltersScope",
+          "adminCombosFormsGrid",
+          "adminCombosTablesGrid"
         ]
       }
     },
@@ -39,7 +41,8 @@
         "components": [
           "adminCombosEyebrow",
           "adminCombosTitle",
-          "adminCombosIntro"
+          "adminCombosIntro",
+          "adminCombosNav"
         ]
       }
     },
@@ -66,8 +69,38 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Administra presets visuales reutilizables para blog, builders y futuras herramientas de drafts. Esta superficie vive fuera del blog para que otros productos puedan consumirla.",
-        "classes": "ank-m-0 ank-maxWidth-900px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+        "text": "Administra combos globales, combos por draft, grupos visuales y políticas de uso. Esta sección vive fuera del blog para que otros drafts y herramientas puedan reutilizarla.",
+        "classes": "ank-m-0 ank-maxWidth-960px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosNav",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "components": [
+          "adminCombosBackAccountLink",
+          "adminCombosBlogLink"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosBackAccountLink",
+      "type": "link",
+      "config": {
+        "href": "/mi-cuenta",
+        "text": "Mi cuenta",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      }
+    },
+    {
+      "id": "adminCombosBlogLink",
+      "type": "link",
+      "config": {
+        "href": "/blog",
+        "text": "Ver blog",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
       }
     },
     {
@@ -96,80 +129,136 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "La Lambda genérica ya tiene contrato serverless. El runtime del draft está declarado como opcional y queda apagado hasta desplegar el endpoint y conectar las acciones protegidas.",
+        "text": "El endpoint serverless está activo. Las lecturas son públicas desde dominios autorizados; crear, editar, borrar y cambiar políticas requiere sesión de administrador y validación segura del servidor.",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       }
     },
     {
-      "id": "adminCombosGrid",
+      "id": "adminCombosFiltersScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "comboCatalogFilters",
+        "tag": "form",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-12px ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14",
+        "ariaLabel": "Filtros de combos",
+        "components": [
+          "adminCombosFiltersGrid",
+          "adminCombosFilterButton"
+        ],
+        "submitEventInstructions": "navigateWithScopeQuery:/admin/combos,,q=values.query,feature=values.feature,component=values.component,category=values.category"
+      }
+    },
+    {
+      "id": "adminCombosFiltersGrid",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-display-grid ank-gap-18px",
+        "classes": "ank-display-grid ank-gap-12px ank-width-100per",
         "styles": {
-          "gridTemplateColumns": "repeat(auto-fit, minmax(280px, 1fr))",
-          "alignItems": "start"
+          "gridTemplateColumns": "repeat(auto-fit, minmax(180px, 1fr))"
         },
         "components": [
-          "adminCombosCatalogCard",
-          "adminCombosEditorCard",
-          "adminCombosPolicyCard",
-          "adminCombosPreviewCard"
+          "adminCombosFilterQuery",
+          "adminCombosFilterFeature",
+          "adminCombosFilterComponent",
+          "adminCombosFilterCategory"
         ]
       }
     },
     {
-      "id": "adminCombosCatalogCard",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
-        "components": [
-          "adminCombosCatalogTitle",
-          "adminCombosCatalogCopy",
-          "adminCombosCatalogSearch",
-          "adminCombosCatalogEmpty"
-        ]
-      }
-    },
-    {
-      "id": "adminCombosCatalogTitle",
-      "type": "text",
-      "config": {
-        "tag": "h2",
-        "text": "Catálogo",
-        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
-      }
-    },
-    {
-      "id": "adminCombosCatalogCopy",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "Aquí se listarán combos globales y específicos del draft con filtros por feature, componente, categoría, grupo y texto.",
-        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
-      }
-    },
-    {
-      "id": "adminCombosCatalogSearch",
+      "id": "adminCombosFilterQuery",
       "type": "input",
       "config": {
-        "fieldId": "comboSearch",
-        "label": "Buscar combos",
+        "fieldId": "query",
+        "label": "Buscar",
         "controlType": "text",
-        "placeholder": "card, button, blog, corporativo",
+        "placeholder": "corp, card, blog",
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
       }
     },
     {
-      "id": "adminCombosCatalogEmpty",
-      "type": "text",
+      "id": "adminCombosFilterFeature",
+      "type": "input",
       "config": {
-        "tag": "p",
-        "text": "Aún no hay datos conectados desde combo-catalog. Cuando el endpoint esté desplegado, esta tarjeta debe consumir comboList.",
-        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-fontSize-13px"
+        "fieldId": "feature",
+        "label": "Feature",
+        "controlType": "text",
+        "placeholder": "blog, quiz",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosFilterComponent",
+      "type": "input",
+      "config": {
+        "fieldId": "component",
+        "label": "Componente",
+        "controlType": "text",
+        "placeholder": "container, button, input",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosFilterCategory",
+      "type": "input",
+      "config": {
+        "fieldId": "category",
+        "label": "Categoría",
+        "controlType": "text",
+        "placeholder": "corporativo, card",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosFilterButton",
+      "type": "button",
+      "config": {
+        "type": "submit",
+        "label": "Aplicar filtros",
+        "icon": "search",
+        "iconPosition": "before",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__accentColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
+      }
+    },
+    {
+      "id": "adminCombosFormsGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-18px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(320px, 1fr))",
+          "alignItems": "start"
+        },
+        "components": [
+          "adminCombosComboScope",
+          "adminCombosBatchScope",
+          "adminCombosGroupScope",
+          "adminCombosPolicyScope",
+          "adminCombosPreviewCard"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosComboScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "comboEditor",
+        "tag": "form",
+        "initialValues": {
+          "scope": "draft"
+        },
+        "components": [
+          "adminCombosEditorCard"
+        ]
       }
     },
     {
@@ -180,10 +269,19 @@
         "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
         "components": [
           "adminCombosEditorTitle",
+          "adminCombosEditorHelp",
+          "adminCombosComboScopeField",
           "adminCombosComboId",
+          "adminCombosComboUpdatedAt",
+          "adminCombosComboLabel",
           "adminCombosClasses",
           "adminCombosCategories",
-          "adminCombosBatchJson"
+          "adminCombosFeatures",
+          "adminCombosComponents",
+          "adminCombosGroups",
+          "adminCombosDescription",
+          "adminCombosComboActions",
+          "adminCombosComboStatus"
         ]
       }
     },
@@ -192,8 +290,35 @@
       "type": "text",
       "config": {
         "tag": "h2",
-        "text": "Crear o editar",
+        "text": "Crear o editar combo",
         "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosEditorHelp",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Para crear usa Combo y Clases. Para editar pega también el updatedAt de la fila; esto protege contra sobrescribir cambios nuevos.",
+        "classes": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700 ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "adminCombosComboScopeField",
+      "type": "input",
+      "config": {
+        "fieldId": "scope",
+        "label": "Alcance",
+        "controlType": "select",
+        "value": "draft",
+        "options": [
+          { "value": "draft", "label": "Draft" },
+          { "value": "global", "label": "Global" }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "dropdownIndicatorText": "▼"
       }
     },
     {
@@ -201,13 +326,43 @@
       "type": "input",
       "config": {
         "fieldId": "comboId",
-        "label": "Combo",
+        "label": "Combo ID",
         "controlType": "text",
         "placeholder": "corp-card",
-        "helperText": "Nombre del combo y clase que usará Angora.",
+        "required": true,
+        "validation": [
+          { "type": "pattern", "value": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$", "message": "Usa letras, números, guiones, guion bajo o punto." }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosComboUpdatedAt",
+      "type": "input",
+      "config": {
+        "fieldId": "updatedAt",
+        "label": "updatedAt",
+        "controlType": "text",
+        "placeholder": "Sólo para editar o borrar",
+        "helperText": "Copia este valor desde la tabla cuando edites.",
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosComboLabel",
+      "type": "input",
+      "config": {
+        "fieldId": "label",
+        "label": "Nombre visible",
+        "controlType": "text",
+        "placeholder": "Card corporativa",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
       }
     },
@@ -216,15 +371,15 @@
       "type": "input",
       "config": {
         "fieldId": "classes",
-        "label": "Clases",
+        "label": "Clases Angora",
         "controlType": "textarea",
         "rows": 4,
         "placeholder": "ank-bg-bgColor ank-borderRadius-8px ank-p-16px",
-        "helperText": "Lista de clases Angora. La Lambda guarda tokens seguros sin espacios dentro de cada clase.",
+        "helperText": "Separadas por espacios. Cada token debe ser una clase válida.",
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
-        "inputClasses": "ank-width-100per ank-minHeight-120px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+        "inputClasses": "ank-width-100per ank-minHeight-120px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-14px ank-fontWeight-700"
       }
     },
     {
@@ -234,8 +389,8 @@
         "fieldId": "categories",
         "label": "Categorías",
         "controlType": "text",
-        "placeholder": "card, blog, corporativo",
-        "helperText": "Separadas por coma para filtrar el catálogo.",
+        "placeholder": "card, corporativo",
+        "helperText": "Separadas por coma.",
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
@@ -243,19 +398,476 @@
       }
     },
     {
+      "id": "adminCombosFeatures",
+      "type": "input",
+      "config": {
+        "fieldId": "features",
+        "label": "Features",
+        "controlType": "text",
+        "placeholder": "blog, draft-builder",
+        "helperText": "Separadas por coma.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosComponents",
+      "type": "input",
+      "config": {
+        "fieldId": "components",
+        "label": "Componentes",
+        "controlType": "text",
+        "placeholder": "container, button, input",
+        "helperText": "Separados por coma.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosGroups",
+      "type": "input",
+      "config": {
+        "fieldId": "groups",
+        "label": "Grupos/temas",
+        "controlType": "text",
+        "placeholder": "corporativo, editorial",
+        "helperText": "Separados por coma.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosDescription",
+      "type": "input",
+      "config": {
+        "fieldId": "description",
+        "label": "Descripción",
+        "controlType": "textarea",
+        "rows": 3,
+        "placeholder": "Dónde conviene usar este combo.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-120px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-14px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosComboActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-10px",
+        "components": [
+          "adminCombosCreateComboButton",
+          "adminCombosUpdateComboButton"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosCreateComboButton",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "Crear combo",
+        "icon": "add",
+        "iconPosition": "before",
+        "disabledWhenInvalidScope": true,
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__accentColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
+      },
+      "eventInstructions": "proxyAction:combo_catalog_create_combo",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.comboCatalog.combo_catalog_create_combo.state,loading\",true,false"
+    },
+    {
+      "id": "adminCombosUpdateComboButton",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "Actualizar combo",
+        "icon": "save",
+        "iconPosition": "before",
+        "disabledWhenInvalidScope": true,
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
+      },
+      "eventInstructions": "proxyAction:combo_catalog_update_combo",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.comboCatalog.combo_catalog_update_combo.state,loading\",true,false"
+    },
+    {
+      "id": "adminCombosComboStatus",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "components": [
+          "adminCombosCreateComboSuccess",
+          "adminCombosCreateComboError",
+          "adminCombosUpdateComboSuccess",
+          "adminCombosUpdateComboError",
+          "adminCombosDeleteComboSuccess",
+          "adminCombosDeleteComboError"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosCreateComboSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Combo creado. Recarga o cambia filtros para verlo en la tabla.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_create_combo.state,success"
+    },
+    {
+      "id": "adminCombosCreateComboError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No se pudo crear el combo. Revisa el ID, clases y tus permisos.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_create_combo.state,error"
+    },
+    {
+      "id": "adminCombosUpdateComboSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Combo actualizado.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_update_combo.state,success"
+    },
+    {
+      "id": "adminCombosUpdateComboError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No se pudo actualizar. Verifica que updatedAt sea el último de la tabla.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_update_combo.state,error"
+    },
+    {
+      "id": "adminCombosDeleteComboSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Combo marcado como eliminado.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_soft_delete_combo.state,success"
+    },
+    {
+      "id": "adminCombosDeleteComboError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No se pudo eliminar el combo. Recarga y vuelve a intentar.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_soft_delete_combo.state,error"
+    },
+    {
+      "id": "adminCombosBatchScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "comboBatch",
+        "tag": "form",
+        "initialValues": {
+          "scope": "draft"
+        },
+        "components": [
+          "adminCombosBatchCard"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosBatchCard",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "adminCombosBatchTitle",
+          "adminCombosBatchCopy",
+          "adminCombosBatchScopeField",
+          "adminCombosBatchJson",
+          "adminCombosBatchButton",
+          "adminCombosBatchSuccess",
+          "adminCombosBatchError"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosBatchTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Batch",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosBatchCopy",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Crea o edita varios combos desde un arreglo JSON.",
+        "classes": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700 ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "adminCombosBatchScopeField",
+      "type": "input",
+      "config": {
+        "fieldId": "scope",
+        "label": "Alcance",
+        "controlType": "select",
+        "value": "draft",
+        "options": [
+          { "value": "draft", "label": "Draft" },
+          { "value": "global", "label": "Global" }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "dropdownIndicatorText": "▼"
+      }
+    },
+    {
       "id": "adminCombosBatchJson",
       "type": "input",
       "config": {
         "fieldId": "batchJson",
-        "label": "Batch JSON",
+        "label": "Combos JSON",
         "controlType": "textarea",
-        "rows": 6,
-        "placeholder": "[{\"combo\":\"corp-card\",\"classes\":[\"ank-bg-bgColor\"]}]",
-        "helperText": "Para altas o ediciones múltiples con validación antes de enviar.",
+        "rows": 8,
+        "placeholder": "[{\"comboId\":\"corp-card\",\"classes\":[\"ank-bg-bgColor\"],\"categories\":[\"card\"]}]",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-160px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-14px ank-fontWeight-700 ank-fontFamily-monospace"
+      }
+    },
+    {
+      "id": "adminCombosBatchButton",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "Guardar batch",
+        "icon": "upload",
+        "iconPosition": "before",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__accentColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
+      },
+      "eventInstructions": "proxyAction:combo_catalog_batch_upsert_combos",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.comboCatalog.combo_catalog_batch_upsert_combos.state,loading\",true,false"
+    },
+    {
+      "id": "adminCombosBatchSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Batch procesado.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_batch_upsert_combos.state,success"
+    },
+    {
+      "id": "adminCombosBatchError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No se pudo procesar el batch. Revisa que sea un arreglo JSON válido.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_batch_upsert_combos.state,error"
+    },
+    {
+      "id": "adminCombosGroupScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "comboGroup",
+        "tag": "form",
+        "initialValues": {
+          "scope": "draft"
+        },
+        "components": [
+          "adminCombosGroupCard"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosGroupCard",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "adminCombosGroupTitle",
+          "adminCombosGroupScopeField",
+          "adminCombosGroupId",
+          "adminCombosGroupUpdatedAt",
+          "adminCombosGroupLabel",
+          "adminCombosGroupComboIds",
+          "adminCombosGroupActions",
+          "adminCombosGroupSuccess",
+          "adminCombosGroupError"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosGroupTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Grupos y temas",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosGroupScopeField",
+      "type": "input",
+      "config": {
+        "fieldId": "scope",
+        "label": "Alcance",
+        "controlType": "select",
+        "value": "draft",
+        "options": [
+          { "value": "draft", "label": "Draft" },
+          { "value": "global", "label": "Global" }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "dropdownIndicatorText": "▼"
+      }
+    },
+    {
+      "id": "adminCombosGroupId",
+      "type": "input",
+      "config": {
+        "fieldId": "groupId",
+        "label": "Grupo ID",
+        "controlType": "text",
+        "placeholder": "corporativo",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosGroupUpdatedAt",
+      "type": "input",
+      "config": {
+        "fieldId": "updatedAt",
+        "label": "updatedAt",
+        "controlType": "text",
+        "placeholder": "Sólo para editar",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosGroupLabel",
+      "type": "input",
+      "config": {
+        "fieldId": "label",
+        "label": "Nombre visible",
+        "controlType": "text",
+        "placeholder": "Corporativo",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosGroupComboIds",
+      "type": "input",
+      "config": {
+        "fieldId": "comboIds",
+        "label": "Combos incluidos",
+        "controlType": "text",
+        "placeholder": "corp-card, corp-button",
+        "helperText": "Separados por coma.",
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
         "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
-        "inputClasses": "ank-width-100per ank-minHeight-150px ank-p-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-14px ank-fontWeight-700 ank-fontFamily-monospace"
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosGroupActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-10px",
+        "components": [
+          "adminCombosCreateGroupButton",
+          "adminCombosUpdateGroupButton"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosCreateGroupButton",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "Crear grupo",
+        "icon": "add",
+        "iconPosition": "before",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__accentColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
+      },
+      "eventInstructions": "proxyAction:combo_catalog_create_group"
+    },
+    {
+      "id": "adminCombosUpdateGroupButton",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "Actualizar grupo",
+        "icon": "save",
+        "iconPosition": "before",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
+      },
+      "eventInstructions": "proxyAction:combo_catalog_update_group"
+    },
+    {
+      "id": "adminCombosGroupSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Operación de grupo enviada.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "any:varEq,remoteStatus.comboCatalog.combo_catalog_create_group.state,success;any:varEq,remoteStatus.comboCatalog.combo_catalog_update_group.state,success"
+    },
+    {
+      "id": "adminCombosGroupError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No se pudo guardar el grupo.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "any:varEq,remoteStatus.comboCatalog.combo_catalog_create_group.state,error;any:varEq,remoteStatus.comboCatalog.combo_catalog_update_group.state,error"
+    },
+    {
+      "id": "adminCombosPolicyScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "comboPolicy",
+        "tag": "form",
+        "initialValues": {
+          "defaultAccess": "allow"
+        },
+        "components": [
+          "adminCombosPolicyCard"
+        ]
       }
     },
     {
@@ -267,8 +879,19 @@
         "components": [
           "adminCombosPolicyTitle",
           "adminCombosPolicyCopy",
-          "adminCombosPolicyDefault",
-          "adminCombosPolicyFeature"
+          "adminCombosPolicyDefaultAccess",
+          "adminCombosPolicyUpdatedAt",
+          "adminCombosAllowedFeatures",
+          "adminCombosDeniedFeatures",
+          "adminCombosAllowedComponents",
+          "adminCombosDeniedComponents",
+          "adminCombosAllowedGroups",
+          "adminCombosDeniedGroups",
+          "adminCombosAllowedCombos",
+          "adminCombosDeniedCombos",
+          "adminCombosPolicyButton",
+          "adminCombosPolicySuccess",
+          "adminCombosPolicyError"
         ]
       }
     },
@@ -277,7 +900,7 @@
       "type": "text",
       "config": {
         "tag": "h2",
-        "text": "Políticas por draft",
+        "text": "Políticas del draft",
         "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
       }
     },
@@ -286,12 +909,12 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Cada draft puede permitir o bloquear combos, grupos, features o componentes sin duplicar el catálogo global.",
-        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+        "text": "Define qué combos puede consumir este draft por defecto. CORS limita origen; estas políticas controlan runtime visible.",
+        "classes": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700 ank-lineHeight-1_45"
       }
     },
     {
-      "id": "adminCombosPolicyDefault",
+      "id": "adminCombosPolicyDefaultAccess",
       "type": "input",
       "config": {
         "fieldId": "defaultAccess",
@@ -299,30 +922,163 @@
         "controlType": "select",
         "value": "allow",
         "options": [
-          { "value": "allow", "label": "Permitir salvo bloqueos" },
-          { "value": "deny", "label": "Bloquear salvo permisos" }
+          { "value": "allow", "label": "Permitir salvo denegados" },
+          { "value": "deny", "label": "Bloquear salvo permitidos" }
         ],
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
-        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
-        "dropdownIndicatorText": "▼",
-        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0"
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween",
+        "dropdownIndicatorText": "▼"
       }
     },
     {
-      "id": "adminCombosPolicyFeature",
+      "id": "adminCombosPolicyUpdatedAt",
+      "type": "input",
+      "config": {
+        "fieldId": "updatedAt",
+        "label": "updatedAt",
+        "controlType": "text",
+        "placeholder": "Opcional; copia de la tabla si actualizas.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosAllowedFeatures",
       "type": "input",
       "config": {
         "fieldId": "allowedFeatures",
-        "label": "Features",
+        "label": "Features permitidas",
         "controlType": "text",
-        "placeholder": "blog, draft-builder",
-        "helperText": "Lista de features donde se pueden usar estos combos.",
+        "placeholder": "blog, quiz",
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
         "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
-        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700",
         "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
       }
+    },
+    {
+      "id": "adminCombosDeniedFeatures",
+      "type": "input",
+      "config": {
+        "fieldId": "deniedFeatures",
+        "label": "Features bloqueadas",
+        "controlType": "text",
+        "placeholder": "experimental",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosAllowedComponents",
+      "type": "input",
+      "config": {
+        "fieldId": "allowedComponents",
+        "label": "Componentes permitidos",
+        "controlType": "text",
+        "placeholder": "container, button",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosDeniedComponents",
+      "type": "input",
+      "config": {
+        "fieldId": "deniedComponents",
+        "label": "Componentes bloqueados",
+        "controlType": "text",
+        "placeholder": "html",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosAllowedGroups",
+      "type": "input",
+      "config": {
+        "fieldId": "allowedGroups",
+        "label": "Grupos permitidos",
+        "controlType": "text",
+        "placeholder": "corporativo",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosDeniedGroups",
+      "type": "input",
+      "config": {
+        "fieldId": "deniedGroups",
+        "label": "Grupos bloqueados",
+        "controlType": "text",
+        "placeholder": "legacy",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosAllowedCombos",
+      "type": "input",
+      "config": {
+        "fieldId": "allowedCombos",
+        "label": "Combos permitidos",
+        "controlType": "text",
+        "placeholder": "corp-card",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosDeniedCombos",
+      "type": "input",
+      "config": {
+        "fieldId": "deniedCombos",
+        "label": "Combos bloqueados",
+        "controlType": "text",
+        "placeholder": "danger-layout",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosPolicyButton",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "Guardar política",
+        "icon": "policy",
+        "iconPosition": "before",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__accentColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px"
+      },
+      "eventInstructions": "proxyAction:combo_catalog_set_draft_policy"
+    },
+    {
+      "id": "adminCombosPolicySuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Política guardada para el draft.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_set_draft_policy.state,success"
+    },
+    {
+      "id": "adminCombosPolicyError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No se pudo guardar la política. Verifica permisos y listas.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.comboCatalog.combo_catalog_set_draft_policy.state,error"
     },
     {
       "id": "adminCombosPreviewCard",
@@ -333,7 +1089,7 @@
         "components": [
           "adminCombosPreviewTitle",
           "adminCombosPreviewCopy",
-          "adminCombosPreviewBox"
+          "adminCombosPreviewFrame"
         ]
       }
     },
@@ -351,28 +1107,209 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "El preview visual usará los combos temporales del editor antes de guardarlos, con el mismo mecanismo de combos auxiliares que usará el runtime.",
-        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+        "text": "Vista de referencia para revisar proporción, texto y espaciado. El editor avanzado consumirá estos combos desde su inspector.",
+        "classes": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700 ank-lineHeight-1_45"
       }
     },
     {
-      "id": "adminCombosPreviewBox",
+      "id": "adminCombosPreviewFrame",
       "type": "container",
       "config": {
-        "tag": "div",
-        "classes": "ank-minHeight-120px ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "tag": "article",
+        "classes": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-display-flex ank-flexDirection-column ank-gap-8px",
         "components": [
-          "adminCombosPreviewText"
+          "adminCombosPreviewHeading",
+          "adminCombosPreviewBody"
         ]
       }
     },
     {
-      "id": "adminCombosPreviewText",
+      "id": "adminCombosPreviewHeading",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Muestra de componente",
+        "classes": "ank-m-0 ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosPreviewBody",
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Preview pendiente de conectar al catálogo.",
-        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontWeight-900 ank-textAlign-center"
+        "text": "El catálogo permite aplicar clases Angora coherentes a cards, botones, inputs, tablas y futuros builders.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "adminCombosTablesGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-18px",
+        "styles": {
+          "gridTemplateColumns": "minmax(0, 1fr)"
+        },
+        "components": [
+          "adminCombosCatalogCard",
+          "adminCombosGroupsCard",
+          "adminCombosPolicyTableCard"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosCatalogCard",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "adminCombosCatalogTitle",
+          "adminCombosCatalogCopy",
+          "adminCombosCatalogTable"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosCatalogTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Catálogo",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosCatalogCopy",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Lista real desde combo-catalog. Usa updatedAt para editar o borrar con control de concurrencia.",
+        "classes": "ank-m-0 ank-fontSize-12px ank-color-secondaryTextColor ank-fontWeight-700 ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "adminCombosCatalogTable",
+      "type": "generic-table",
+      "config": {
+        "id": "adminCombosCatalogTable",
+        "label": "Combos disponibles",
+        "description": "Globales y del draft actual que pasan filtros y política.",
+        "rowsSource": { "source": "var", "path": "remote.comboCatalog.combos.items", "fallback": [] },
+        "rowIdPath": "comboId",
+        "eventPayloadFields": ["scope", "comboId", "updatedAt"],
+        "emptyText": "No hay combos disponibles para este filtro.",
+        "loadingText": "Cargando combos del catálogo.",
+        "columns": [
+          { "id": "comboId", "header": "Combo", "valuePath": "comboId" },
+          { "id": "scope", "header": "Alcance", "valuePath": "scope" },
+          { "id": "classes", "header": "Clases", "valuePath": "classes", "format": "list", "separator": " " },
+          { "id": "categories", "header": "Categorías", "valuePath": "categories", "format": "list", "separator": ", " },
+          { "id": "features", "header": "Features", "valuePath": "features", "format": "list", "separator": ", " },
+          { "id": "updatedAt", "header": "updatedAt", "valuePath": "updatedAt" }
+        ],
+        "rowActions": [
+          { "id": "delete", "label": "Eliminar", "icon": "delete", "eventInstructions": "proxyAction:combo_catalog_soft_delete_combo" }
+        ],
+        "actionColumnLabel": "Acciones",
+        "pagination": { "enabled": true, "pageSize": 10, "pageSizeOptions": [5, 10, 20, 50], "showFirstLastButtons": true },
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-18px",
+        "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
+        "descriptionClasses": "ank-mt-4px ank-mb-10px ank-fontSize-13px ank-lineHeight-1_45 ank-color-secondaryTextColor ank-fontWeight-700",
+        "tableWrapperClasses": "ank-width-100per ank-overflow-auto ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_14",
+        "tableClasses": "ank-width-100per ank-bg-bgColor ank-color-textColor",
+        "headerCellClasses": "ank-fontWeight-900 ank-color-titleColor ank-bg-secondaryBgColor ank-whiteSpace-nowrap",
+        "rowClasses": "ank-bg-bgColor",
+        "stateClasses": "ank-p-18px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-lineHeight-1_55 ank-border-1px__solid__textColorOPA__0_14",
+        "actionCellClasses": "ank-whiteSpace-nowrap ank-minWidth-80px ank-textAlign-center",
+        "actionButtonClasses": "ank-width-48px ank-height-48px ank-minWidth-48px ank-minHeight-48px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-8px ank-mb-8px",
+        "actionLabelMode": "tooltip",
+        "actionIconClasses": "ank-width-16px ank-height-16px ank-display-inline-flex ank-flexShrink-0"
+      },
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.comboCatalog.combos.state,loading\",true,false;set:config.errorText,when,\"all:varEq,remoteStatus.comboCatalog.combos.state,error\",No se pudo cargar el catálogo de combos."
+    },
+    {
+      "id": "adminCombosGroupsCard",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "adminCombosGroupsTitle",
+          "adminCombosGroupsTable"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosGroupsTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Grupos y temas",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosGroupsTable",
+      "type": "generic-table",
+      "config": {
+        "id": "adminCombosGroupsTable",
+        "label": "Grupos disponibles",
+        "rowsSource": { "source": "var", "path": "remote.comboCatalog.groups.items", "fallback": [] },
+        "rowIdPath": "groupId",
+        "emptyText": "No hay grupos registrados todavía.",
+        "columns": [
+          { "id": "groupId", "header": "Grupo", "valuePath": "groupId" },
+          { "id": "scope", "header": "Alcance", "valuePath": "scope" },
+          { "id": "label", "header": "Nombre", "valuePath": "label" },
+          { "id": "comboIds", "header": "Combos", "valuePath": "comboIds", "format": "list", "separator": ", " },
+          { "id": "updatedAt", "header": "updatedAt", "valuePath": "updatedAt" }
+        ],
+        "pagination": { "enabled": true, "pageSize": 5, "pageSizeOptions": [5, 10, 20], "showFirstLastButtons": true },
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-18px",
+        "tableWrapperClasses": "ank-width-100per ank-overflow-auto ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_14",
+        "stateClasses": "ank-p-18px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-lineHeight-1_55 ank-border-1px__solid__textColorOPA__0_14"
+      }
+    },
+    {
+      "id": "adminCombosPolicyTableCard",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_14 ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "adminCombosPolicyTableTitle",
+          "adminCombosPolicyTable"
+        ]
+      }
+    },
+    {
+      "id": "adminCombosPolicyTableTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Política activa",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "adminCombosPolicyTable",
+      "type": "generic-table",
+      "config": {
+        "id": "adminCombosPolicyTable",
+        "label": "Política del draft",
+        "rowsSource": { "source": "var", "path": "remote.comboCatalog.policy.items", "fallback": [] },
+        "rowIdPath": "draftDomain",
+        "emptyText": "No hay política personalizada; se aplica allow por defecto.",
+        "columns": [
+          { "id": "draftDomain", "header": "Draft", "valuePath": "draftDomain" },
+          { "id": "defaultAccess", "header": "Default", "valuePath": "defaultAccess" },
+          { "id": "deniedCombos", "header": "Combos bloqueados", "valuePath": "deniedCombos", "format": "list", "separator": ", " },
+          { "id": "updatedAt", "header": "updatedAt", "valuePath": "updatedAt" }
+        ],
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-18px",
+        "tableWrapperClasses": "ank-width-100per ank-overflow-auto ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_14",
+        "stateClasses": "ank-p-18px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800 ank-lineHeight-1_55 ank-border-1px__solid__textColorOPA__0_14"
       }
     }
   ]
