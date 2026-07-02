@@ -2,7 +2,7 @@
   "version": 1,
   "domain": "zoositioweb.com.mx",
   "pageId": "admin-blog-articulo-preview",
-  "route": "/admin/blog/articulos/preview",
+  "route": "/admin/blog/articulos/:id/preview",
   "title": "Vista previa",
   "layout": "default",
   "seo": {
@@ -11,7 +11,7 @@
     "robots": {
       "default": "noindex,nofollow"
     },
-    "canonical": "https://zoositioweb.com.mx/admin/blog/articulos/preview"
+    "canonical": "https://zoositioweb.com.mx/admin/blog/articulos/:id/preview"
   },
   "updatedAt": "2026-06-20T12:00:00-06:00",
   "rootIds": [
