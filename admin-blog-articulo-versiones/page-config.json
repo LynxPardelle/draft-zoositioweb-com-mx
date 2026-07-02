@@ -2,7 +2,7 @@
   "version": 1,
   "domain": "zoositioweb.com.mx",
   "pageId": "admin-blog-articulo-versiones",
-  "route": "/admin/blog/articulos/versiones",
+  "route": "/admin/blog/articulos/:id/versiones",
   "title": "Versiones",
   "layout": "default",
   "seo": {
@@ -11,7 +11,7 @@
     "robots": {
       "default": "noindex,nofollow"
     },
-    "canonical": "https://zoositioweb.com.mx/admin/blog/articulos/versiones"
+    "canonical": "https://zoositioweb.com.mx/admin/blog/articulos/:id/versiones"
   },
   "updatedAt": "2026-06-20T12:00:00-06:00",
   "rootIds": [
