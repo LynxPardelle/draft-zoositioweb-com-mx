@@ -342,7 +342,6 @@
         "description": "",
         "href": "",
         "linkLabel": "Leer artículo",
-        "icon": "book-open",
         "classes": "ank-width-100per ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-p-22px",
         "featureTitleClasses": "ank-m-0 ank-fontSize-24px ank-lineHeight-1_2 ank-fontWeight-900 ank-color-titleColor",
         "featureDescriptionClasses": "ank-mt-10px ank-mb-16px ank-fontSize-15px ank-lineHeight-1_6 ank-color-secondaryTextColor",

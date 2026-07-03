@@ -775,6 +775,76 @@
         },
         "publicArticles": [
           {
+            "articleId": "art_1783073141_bienvenida-al-blog-zoositioweb",
+            "locale": "es",
+            "status": "published",
+            "title": "Bienvenido al blog de Zoosite",
+            "summary": "Estrenamos el blog de Zoosite con una guía de bienvenida que muestra cómo vamos a publicar contenido visual, medirlo y convertirlo en decisiones útiles para cada sitio.",
+            "path": "/blog/web/bienvenida-al-blog-zoositioweb",
+            "categorySlug": "web",
+            "tags": [
+              "zoosite",
+              "blog",
+              "contenido"
+            ],
+            "publishedAt": "2026-07-03T15:00:00.000Z",
+            "updatedAt": "2026-07-03T16:30:00.000-06:00",
+            "authorLabel": "Equipo zoositioweb",
+            "canonicalPath": "/blog/web/bienvenida-al-blog-zoositioweb",
+            "robots": "index,follow",
+            "articleContent": {
+              "html": "<h2>Bienvenido al blog de Zoosite</h2>\n<p>Este espacio reúne guías, aprendizajes y ejemplos para crear sitios web que se puedan publicar, medir y mejorar sin depender de páginas estáticas difíciles de mantener.</p>\n<section class=\"zoositeArticleCallout\"><h3>Qué vas a encontrar</h3><p>Publicaremos guías sobre contenido, SEO, componentes visuales, analítica, autenticación, formularios, automatizaciones y operación diaria de sitios creados con Zoosite.</p></section>\n<h2>Por qué existe este blog</h2>\n<p>Zoosite no sólo busca que un sitio se vea bien. También debe ayudar a tomar mejores decisiones: qué contenido funciona, qué rutas convierten, qué preguntas se repiten y qué se puede mejorar.</p>\n<div class=\"zoositeArticleGrid\">\n  <article><h3>Crear</h3><p>Ideas y estructuras para publicar contenido claro y útil.</p></article>\n  <article><h3>Medir</h3><p>Lecturas, clics, formularios, reacciones y señales de interés.</p></article>\n  <article><h3>Mejorar</h3><p>Iteraciones basadas en datos, no en suposiciones.</p></article>\n</div>\n<h2>Cómo leer estas guías</h2>\n<p>Cada artículo debe poder servir como referencia práctica: pasos concretos, recomendaciones de configuración y ejemplos visuales que puedas adaptar a tu sitio o al sitio de un cliente.</p>\n<h2>Lo que viene</h2>\n<p>Vamos a documentar el flujo editorial, el uso de componentes, las reglas de SEO, la administración de medios, comentarios moderados, analítica y buenas prácticas para publicar contenido multi-idioma.</p>"
+            },
+            "localizations": {
+              "en": {
+                "title": "Welcome to the Zoosite blog",
+                "summary": "We are launching the Zoosite blog with a welcome guide about visual content, measurement and practical publishing decisions.",
+                "path": "/blog/web/welcome-to-zoosite-blog",
+                "canonicalPath": "/blog/web/welcome-to-zoosite-blog",
+                "categorySlug": "web",
+                "tags": [
+                  "zoosite",
+                  "blog",
+                  "content"
+                ],
+                "articleContent": {
+                  "html": "<h2>Welcome to the Zoosite blog</h2>\n<p>This space collects guides, lessons and examples for building websites that can be published, measured and improved without relying on hard-to-maintain static pages.</p>\n<section class=\"zoositeArticleCallout\"><h3>What you will find</h3><p>We will publish guides about content, SEO, visual components, analytics, authentication, forms, automations and daily operation for Zoosite sites.</p></section>\n<h2>Why this blog exists</h2><p>Zoosite is not only about making pages look good. It should help teams make better decisions using content, routing, interactions and evidence.</p>\n<h2>How to use these guides</h2><p>Each article should work as a practical reference with concrete steps, configuration recommendations and visual examples that can be adapted to a client site.</p>"
+                }
+              }
+            },
+            "commentPolicy": "authenticated",
+            "contentSafety": {
+              "rating": "general",
+              "warnings": []
+            },
+            "interactions": {
+              "reactions": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "ctas": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "shares": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "readProgress": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "assetDownloads": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "forms": {
+                "enabled": true,
+                "moderation": "queue"
+              }
+            }
+          },
+          {
             "articleId": "art_20260620_blog_builder",
             "locale": "es",
             "status": "published",
@@ -789,10 +859,31 @@
               "componentes"
             ],
             "publishedAt": "2026-06-21T15:00:00.000Z",
-            "updatedAt": "2026-07-03T06:30:00.000-06:00",
+            "updatedAt": "2026-07-03T16:30:00.000-06:00",
             "authorLabel": "Equipo zoositioweb",
             "canonicalPath": "/blog/web/blog-builder-seo",
             "robots": "index,follow",
+            "articleContent": {
+              "html": "<h2>Guía práctica para publicar mejor</h2>\n<p>Este artículo explica cómo pasar de una idea suelta a una pieza publicable con estructura, SEO, componentes visuales, programación y medición. La meta no es llenar una página: es crear una guía útil que pueda posicionarse, leerse bien y guiar a la persona al siguiente paso.</p>\n<section class=\"zoositeArticleCallout\">\n  <h3>Resultado esperado</h3>\n  <p>Al terminar, el artículo debe tener una intención clara, un slug limpio, título SEO, descripción, categoría, tags, contenido visual, llamadas a la acción y medición lista para mejorar después de publicar.</p>\n</section>\n<h2>1. Define intención, audiencia y acción</h2>\n<p>Antes de abrir el editor, escribe una frase que responda tres cosas: qué problema resuelve, para quién lo resuelve y qué acción debería tomar la persona después de leer.</p>\n<ul>\n  <li><strong>Intención:</strong> educar, comparar, vender, responder una duda frecuente o acompañar una decisión.</li>\n  <li><strong>Audiencia:</strong> quien explora por primera vez, quien compara opciones o quien necesita instrucciones concretas.</li>\n  <li><strong>Acción:</strong> leer otra guía, solicitar un sitio, descargar un recurso o pedir seguimiento.</li>\n</ul>\n<h2>2. Configura la base editorial</h2>\n<p>Usa un título claro, elige una categoría principal y agrega tags separados por coma. Los tags ayudan a filtrar listados y agrupar contenido relacionado; la categoría ayuda a mantener URLs entendibles.</p>\n<div class=\"zoositeArticleGrid\">\n  <article><h3>Título</h3><p>Debe explicar el beneficio sin depender de frases genéricas.</p></article>\n  <article><h3>Slug</h3><p>Usa minúsculas, números y guiones. Evita fechas innecesarias.</p></article>\n  <article><h3>Resumen</h3><p>Resume qué aprenderá la persona y por qué debería leer.</p></article>\n</div>\n<h2>3. Trabaja SEO desde el inicio</h2>\n<p>No dejes SEO para el final. Define título SEO, descripción, canonical y robots antes de publicar. Un buen resumen ayuda a buscadores, tarjetas sociales y al usuario que decide si abre o no la guía.</p>\n<section class=\"zoositeArticleCallout\"><h3>Checklist SEO rápido</h3><ul><li>Título específico con la intención principal.</li><li>Descripción clara, no una lista de palabras clave.</li><li>Imagen representativa con texto alternativo.</li><li>Canonical correcto para evitar duplicados.</li><li>Ruta limpia en producción y contexto conservado en testing.</li></ul></section>\n<h2>4. Usa componentes visuales con intención</h2>\n<p>Los bloques visuales sirven para escanear: tarjetas, callouts, listas, comparativas, CTAs y módulos de descubrimiento. Si un bloque repite lo mismo que el texto, elimínalo o conviértelo en un resumen accionable.</p>\n<h2>5. Publica, mide y mejora</h2>\n<p>Después de publicar, revisa vistas, progreso de lectura, clics en llamadas a la acción, reacciones, comentarios y descargas. Usa esos datos para decidir si conviene mejorar el artículo, crear una guía relacionada o ajustar el CTA.</p>\n<section class=\"zoositeArticleCallout\"><h3>Cómo usar esta guía</h3><p>Úsala como referencia cuando crees artículos desde Zoosite: empieza por objetivo y SEO, luego construye contenido visual, finalmente valida publicación, comentarios, interacciones y analítica.</p></section>"
+            },
+            "localizations": {
+              "en": {
+                "title": "How to create visual articles with Zoosite",
+                "summary": "A practical guide to create a complete Zoosite article: structure, SEO, visual content, publishing, analytics and iteration from the editor.",
+                "path": "/blog/web/blog-builder-seo",
+                "canonicalPath": "/blog/web/blog-builder-seo",
+                "categorySlug": "web",
+                "tags": [
+                  "seo",
+                  "blog-builder",
+                  "guides",
+                  "components"
+                ],
+                "articleContent": {
+                  "html": "<h2>A practical guide to publish better articles</h2>\n<p>This article shows how to turn an idea into a publishable guide with structure, SEO, visual components, scheduling and measurement. The goal is not to fill a page; it is to create useful content that can rank, read well and guide readers to the next step.</p>\n<section class=\"zoositeArticleCallout\"><h3>Expected result</h3><p>By the end, the article should have a clear intent, clean slug, SEO title, description, category, tags, visual content, calls to action and measurement ready for iteration.</p></section>\n<h2>1. Define intent, audience and action</h2><p>Before opening the editor, write one sentence that explains the problem, who it helps and what the reader should do next.</p>\n<h2>2. Configure the editorial base</h2><p>Use a clear title, select a main category and add comma-separated tags. Tags power filters and related content; categories keep URLs understandable.</p>\n<h2>3. Work on SEO from the beginning</h2><p>Define SEO title, description, canonical and robots before publishing. A strong summary helps search engines, social cards and readers.</p>\n<h2>4. Use visual components with intent</h2><p>Cards, callouts, lists and CTAs should make the article easier to scan. Remove anything that repeats information without helping the reader decide.</p>\n<h2>5. Publish, measure and improve</h2><p>After publishing, review views, read progress, CTA clicks, reactions, comments and downloads so the article can improve with evidence.</p>"
+                }
+              }
+            },
             "commentPolicy": "authenticated",
             "contentSafety": {
               "rating": "general",

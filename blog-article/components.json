@@ -113,11 +113,18 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-920px ank-display-flex ank-flexWrap-wrap ank-gap-10px",
+        "classes": "ank-width-100per ank-maxWidth-920px ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center ank-justifyContent-center",
         "components": [
           "blogArticleCategoryLink",
           "blogArticlePublished"
-        ]
+        ],
+        "styles": {
+          "width": "100%",
+          "maxWidth": "min(920px, 100%)",
+          "boxSizing": "border-box",
+          "alignItems": "center",
+          "justifyContent": "center"
+        }
       }
     },
     {
@@ -178,7 +185,13 @@
       "config": {
         "tag": "p",
         "text": "Publicado recientemente",
-        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700 ank-display-flex ank-alignItems-center"
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700 ank-display-inline-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minHeight": "48px",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center"
+        }
       },
       "valueInstructions": "set:config.publishedAt,varOr,contentHub.currentArticle.publishedAt,\"\";set:config.publishedFallback,i18n,article.publishedFallback,Publicado recientemente;set:config.formattedDate,formatDate,eval:config.publishedAt,eval:config.publishedFallback,long;set:config.publishedLabel,i18n,article.publishedLabel,Publicado el;set:config.text,joinText,eval:config.publishedLabel,eval:config.formattedDate"
     },
@@ -204,11 +217,13 @@
         "tag": "div",
         "text": "La estructura mantiene el contenido pesado en archivos de publicación y usa metadatos para rutas, categorías, etiquetas, programación, revisión y moderación. El navegador sólo recibe el índice público y el artículo publicado.",
         "html": "",
-        "classes": "zoositeArticleRichText ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7",
+        "classes": "zoositeArticleRichText ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7 ank-alignSelf-center",
         "styles": {
           "width": "100%",
           "maxWidth": "min(760px, 100%)",
-          "boxSizing": "border-box"
+          "boxSizing": "border-box",
+          "alignSelf": "center",
+          "margin": "0 auto"
         }
       },
       "valueInstructions": "set:config.html,richTextHtmlOr,articleContent,El navegador recibe sólo el índice público seguro y el contenido publicado de este artículo."
@@ -510,7 +525,13 @@
           "blogArticleCommentTitle",
           "blogArticleCommentCopy",
           "blogArticleCommentLoginLink"
-        ]
+        ],
+        "styles": {
+          "width": "100%",
+          "maxWidth": "min(760px, 100%)",
+          "boxSizing": "border-box",
+          "alignSelf": "center"
+        }
       },
       "condition": "not:varEq,contentHub.currentArticle.commentPolicy,disabled"
     },
