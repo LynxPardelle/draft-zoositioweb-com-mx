@@ -4,6 +4,29 @@
   "pageId": "blog-article",
   "lang": "en",
   "dictionary": {
-    "article.title": "Visual blog builder with SEO from day one"
+    "article": {
+      "backToList": "See more articles",
+      "categoryPrefix": "Category:",
+      "commentsCopy": "Sign in to comment. Comments are reviewed before they appear publicly.",
+      "commentsTitle": "Comments",
+      "discoveryCopy": "The article is linked from the public blog index and updates when an approved version is published.",
+      "discoveryTitle": "SEO discovery",
+      "interactionError": "We could not record the interaction. Try again.",
+      "interactionLoading": "Saving interaction...",
+      "interactionSuccess": "Thanks, we recorded your interaction.",
+      "loginComment": "Sign in to comment",
+      "moreButton": "I want more guides on this topic",
+      "moreCopy": "You can ask us to prepare more guides on this topic. This button does not send personal data; it only records aggregate interest to prioritize content.",
+      "moreTitle": "Request more content",
+      "planBlog": "Plan my blog",
+      "publishedFallback": "Published recently",
+      "publishedLabel": "Published on",
+      "reactionCopy": "Your reaction helps us prioritize useful guides for websites and content.",
+      "reactionTitle": "Was this article useful?",
+      "saving": "Saving...",
+      "shareButton": "Share",
+      "title": "Visual blog builder with SEO from day one",
+      "usefulButton": "Useful"
+    }
   }
 }
