@@ -10,7 +10,9 @@
         "tag": "main",
         "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-24px",
         "styles": {
-          "padding": "clamp(18px, 3vw, 40px)"
+          "boxSizing": "border-box",
+          "padding": "clamp(18px, 3vw, 40px)",
+          "width": "100%"
         },
         "components": [
           "blogArticleHeader",
@@ -134,7 +136,7 @@
           "paddingRight": "18px"
         }
       },
-      "valueInstructions": "set:config.categorySlug,varOr,contentHub.currentArticle.categorySlug,web;set:config.href,concat,/blog/,eval:config.categorySlug;set:config.text,joinText,Categoría:,eval:config.categorySlug"
+      "valueInstructions": "set:config.categorySlug,varOr,contentHub.currentArticle.categorySlug,web;set:config.categoryPrefix,i18n,article.categoryPrefix,Categoría:;set:config.href,concat,/blog/,eval:config.categorySlug;set:config.text,joinText,eval:config.categoryPrefix,eval:config.categorySlug"
     },
     {
       "id": "blogArticleTagSeo",
@@ -175,10 +177,10 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Publicado por Equipo zoositioweb",
+        "text": "Publicado recientemente",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700 ank-display-flex ank-alignItems-center"
       },
-      "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.publishedAt,Publicado por Equipo zoositioweb"
+      "valueInstructions": "set:config.publishedAt,varOr,contentHub.currentArticle.publishedAt,\"\";set:config.publishedFallback,i18n,article.publishedFallback,Publicado recientemente;set:config.formattedDate,formatDate,eval:config.publishedAt,eval:config.publishedFallback,long;set:config.publishedLabel,i18n,article.publishedLabel,Publicado el;set:config.text,joinText,eval:config.publishedLabel,eval:config.formattedDate"
     },
     {
       "id": "blogArticleIntro",
@@ -236,7 +238,8 @@
         "tag": "h2",
         "text": "Descubrimiento SEO",
         "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
-      }
+      },
+      "valueInstructions": "set:config.text,i18n,article.discoveryTitle,Descubrimiento SEO"
     },
     {
       "id": "blogArticleDiscoveryCopy",
@@ -245,7 +248,8 @@
         "tag": "p",
         "text": "El artículo se enlaza desde el índice público del blog y se actualiza cuando se publica una versión aprobada.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
-      }
+      },
+      "valueInstructions": "set:config.text,i18n,article.discoveryCopy,El artículo se enlaza desde el índice público del blog y se actualiza cuando se publica una versión aprobada."
     },
     {
       "id": "blogArticleBackToList",
@@ -262,7 +266,8 @@
           "paddingLeft": "18px",
           "paddingRight": "18px"
         }
-      }
+      },
+      "valueInstructions": "set:config.text,i18n,article.backToList,Ver más artículos"
     },
     {
       "id": "blogArticleCta",
@@ -270,9 +275,10 @@
       "config": {
         "href": "/contacto",
         "text": "Planear mi blog",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__successColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "styles": {
           "alignItems": "center",
+          "color": "var(--ank-onSuccessColor)",
           "display": "inline-flex",
           "justifyContent": "center",
           "minHeight": "48px",
@@ -281,7 +287,7 @@
         }
       },
       "condition": "not:varEq,contentHub.currentArticle.interactions.ctas.enabled,false",
-      "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"trackEvent:blog_cta_click,blog,zoosite-blog-article-cta,hubId,zoosite-main,articleId,\",eval:config.articleId,\",path,\",eval:config.articlePath,\",ctaId,primary-consultation;setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,cta_click;setScopeValue:targetId,primary-consultation;setScopeValue:value,1;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
+      "valueInstructions": "set:config.text,i18n,article.planBlog,Planear mi blog;set:config.ariaLabel,i18n,article.planBlog,Planear mi blog;set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"trackEvent:blog_cta_click,blog,zoosite-blog-article-cta,hubId,zoosite-main,articleId,\",eval:config.articleId,\",path,\",eval:config.articlePath,\",ctaId,primary-consultation;setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,cta;setScopeValue:targetId,primary-consultation;setScopeValue:value,1;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
     },
     {
       "id": "blogArticleInteractionsScope",
@@ -290,6 +296,12 @@
         "scopeId": "blogArticleInteractions",
         "tag": "section",
         "classes": "ank-width-100per ank-maxWidth-760px ank-display-flex ank-flexDirection-column ank-gap-16px",
+        "styles": {
+          "alignSelf": "center",
+          "boxSizing": "border-box",
+          "maxWidth": "min(760px, 100%)",
+          "width": "100%"
+        },
         "components": [
           "blogArticleCta",
           "blogArticleReactionPanel",
@@ -304,6 +316,12 @@
         "scopeId": "blogArticleComment",
         "tag": "section",
         "classes": "ank-width-100per ank-maxWidth-760px ank-display-flex ank-flexDirection-column ank-gap-16px",
+        "styles": {
+          "alignSelf": "center",
+          "boxSizing": "border-box",
+          "maxWidth": "min(760px, 100%)",
+          "width": "100%"
+        },
         "components": [
           "blogArticleCommentPanel"
         ]
@@ -332,7 +350,8 @@
         "tag": "h2",
         "text": "¿Te sirvió este artículo?",
         "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
-      }
+      },
+      "valueInstructions": "set:config.text,i18n,article.reactionTitle,¿Te sirvió este artículo?"
     },
     {
       "id": "blogArticleReactionCopy",
@@ -341,7 +360,8 @@
         "tag": "p",
         "text": "Tu reacción nos ayuda a priorizar guías útiles para sitios web y contenido.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
-      }
+      },
+      "valueInstructions": "set:config.text,i18n,article.reactionCopy,Tu reacción nos ayuda a priorizar guías útiles para sitios web y contenido."
     },
     {
       "id": "blogArticleUsefulButton",
@@ -360,7 +380,7 @@
           "paddingRight": "18px"
         }
       },
-      "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,reaction;setScopeValue:targetId,useful;setScopeValue:value,useful;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
+      "valueInstructions": "set:config.label,i18n,article.usefulButton,Me sirvió;set:config.loadingLabel,i18n,article.saving,Guardando...;set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,reaction;setScopeValue:targetId,useful;setScopeValue:value,useful;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
     },
     {
       "id": "blogArticleShareButton",
@@ -379,7 +399,7 @@
           "paddingRight": "18px"
         }
       },
-      "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"shareCurrentPage;setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,share;setScopeValue:targetId,native-share;setScopeValue:value,share;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
+      "valueInstructions": "set:config.label,i18n,article.shareButton,Compartir;set:config.loadingLabel,i18n,article.saving,Guardando...;set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"shareCurrentPage;setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,share;setScopeValue:targetId,native-share;setScopeValue:value,share;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
     },
     {
       "id": "blogArticleInteractionStatus",
@@ -402,6 +422,7 @@
         "text": "Guardando interacción...",
         "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
       },
+      "valueInstructions": "set:config.text,i18n,article.interactionLoading,Guardando interacción...",
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_record_interaction.state,loading"
     },
     {
@@ -412,6 +433,7 @@
         "text": "Gracias, registramos tu interacción.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
       },
+      "valueInstructions": "set:config.text,i18n,article.interactionSuccess,Gracias registramos tu interacción.",
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_record_interaction.state,success"
     },
     {
@@ -422,6 +444,7 @@
         "text": "No pudimos registrar la interacción. Intenta de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
+      "valueInstructions": "set:config.text,i18n,article.interactionError,No pudimos registrar la interacción. Intenta de nuevo.",
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_record_interaction.state,error"
     },
     {
@@ -445,7 +468,8 @@
         "tag": "h2",
         "text": "Pedir más contenido",
         "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
-      }
+      },
+      "valueInstructions": "set:config.text,i18n,article.moreTitle,Pedir más contenido"
     },
     {
       "id": "blogArticleFormCopy",
@@ -454,7 +478,8 @@
         "tag": "p",
         "text": "Puedes pedir que preparemos más guías de este tema. Este botón no envía datos personales; sólo registra interés agregado para priorizar contenidos.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
-      }
+      },
+      "valueInstructions": "set:config.text,i18n,article.moreCopy,Puedes pedir que preparemos más guías de este tema."
     },
     {
       "id": "blogArticleFormButton",
@@ -473,7 +498,7 @@
           "paddingRight": "18px"
         }
       },
-      "valueInstructions": "set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,form;setScopeValue:targetId,content-interest;setScopeValue:value,more-guides;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
+      "valueInstructions": "set:config.label,i18n,article.moreButton,Quiero más guías de este tema;set:config.loadingLabel,i18n,article.saving,Guardando...;set:config.articleId,varOr,contentHub.currentArticle.articleId,unknown;set:config.articlePath,varOr,contentHub.currentArticle.path,/blog;set:eventInstructions,concat,\"setScopeValue:articleId,\",eval:config.articleId,\";setScopeValue:eventType,form;setScopeValue:targetId,content-interest;setScopeValue:value,more-guides;setScopeValue:path,\",eval:config.articlePath,\";proxyAction:content_hub_record_interaction\""
     },
     {
       "id": "blogArticleCommentPanel",
@@ -484,10 +509,7 @@
         "components": [
           "blogArticleCommentTitle",
           "blogArticleCommentCopy",
-          "blogArticleCommentLoginLink",
-          "blogArticleCommentBody",
-          "blogArticleCommentButton",
-          "blogArticleCommentStatus"
+          "blogArticleCommentLoginLink"
         ]
       },
       "condition": "not:varEq,contentHub.currentArticle.commentPolicy,disabled"
@@ -499,7 +521,8 @@
         "tag": "h2",
         "text": "Comentarios",
         "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
-      }
+      },
+      "valueInstructions": "set:config.text,i18n,article.commentsTitle,Comentarios"
     },
     {
       "id": "blogArticleCommentCopy",
@@ -508,7 +531,8 @@
         "tag": "p",
         "text": "Para comentar necesitas iniciar sesión. Los comentarios se revisan antes de aparecer publicados.",
         "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
-      }
+      },
+      "valueInstructions": "set:config.text,i18n,article.commentsCopy,Para comentar necesitas iniciar sesión. Los comentarios se revisan antes de aparecer publicados."
     },
     {
       "id": "blogArticleCommentLoginLink",
@@ -525,7 +549,8 @@
           "paddingLeft": "18px",
           "paddingRight": "18px"
         }
-      }
+      },
+      "valueInstructions": "set:config.text,i18n,article.loginComment,Iniciar sesión para comentar"
     },
     {
       "id": "blogArticleCommentBody",
