@@ -14,7 +14,7 @@
         },
         "components": [
           "blogArticleHeader",
-          "blogArticleCover",
+          "blogArticleCoverFrame",
           "blogArticleMeta",
           "blogArticleBody",
           "blogArticleDiscovery",
@@ -67,13 +67,30 @@
       "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.summary,La gestión editorial organiza artículos visuales con SEO y analítica."
     },
     {
+      "id": "blogArticleCoverFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zoositeArticleCoverFrame ank-width-100per ank-maxWidth-920px ank-overflow-hidden ank-borderRadius-8px",
+        "components": [
+          "blogArticleCover"
+        ],
+        "styles": {
+          "width": "100%",
+          "maxWidth": "920px",
+          "overflow": "hidden",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
       "id": "blogArticleCover",
       "type": "media",
       "config": {
         "tag": "image",
         "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=82",
         "alt": "Pantalla de trabajo con herramientas digitales para planear contenido web",
-        "classes": "zoositeArticleCover ank-width-100per ank-maxWidth-920px ank-borderRadius-8px ank-objectFit-cover",
+        "classes": "zoositeArticleCover ank-width-100per ank-display-block ank-objectFit-cover",
         "width": 1200,
         "height": 630,
         "loading": "eager",
