@@ -76,6 +76,10 @@
         "site-navigation": {
           "size": "md",
           "ariaLabelKey": "ui.accessibility.navigationDialog"
+        },
+        "article-component-inspector": {
+          "size": "lg",
+          "ariaLabel": "Configurar componente del artículo"
         }
       }
     }
