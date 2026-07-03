@@ -9,11 +9,17 @@
     "siteFooter"
   ],
   "seo": {
-    "title": "Editor visual de blog con SEO desde el inicio | zoositioweb",
-    "description": "Cómo Zoosite prepara un blog visual con rutas limpias, publicación programada, medición propia y diseño adaptable.",
+    "title": "Cómo crear artículos visuales con Zoosite | Blog",
+    "description": "Guía práctica para crear artículos con estructura, SEO, contenido visual, publicación, analítica y mejora continua desde Zoosite.",
     "canonical": "https://zoositioweb.com.mx/blog/web/blog-builder-seo",
     "robots": {
       "default": "index,follow,max-image-preview:large"
+    },
+    "openGraph": {
+      "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=80"
+    },
+    "twitter": {
+      "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=80"
     }
   },
   "modalRootIds": [
