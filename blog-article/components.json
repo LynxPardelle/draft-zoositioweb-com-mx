@@ -525,13 +525,7 @@
           "blogArticleCommentTitle",
           "blogArticleCommentCopy",
           "blogArticleCommentLoginLink"
-        ],
-        "styles": {
-          "width": "100%",
-          "maxWidth": "min(760px, 100%)",
-          "boxSizing": "border-box",
-          "alignSelf": "center"
-        }
+        ]
       },
       "condition": "not:varEq,contentHub.currentArticle.commentPolicy,disabled"
     },
