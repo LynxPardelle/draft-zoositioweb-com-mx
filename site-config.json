@@ -778,17 +778,18 @@
             "articleId": "art_20260620_blog_builder",
             "locale": "es",
             "status": "published",
-            "title": "Cómo crear blogs visuales con Zoolandingpage",
-            "summary": "Guía inicial de Zoosite para crear artículos visuales, listos para SEO y fáciles de adaptar al estilo de cada sitio.",
+            "title": "Cómo crear artículos visuales con Zoosite",
+            "summary": "Guía práctica para crear un artículo completo en Zoosite: estructura, SEO, contenido visual, publicación, analítica e iteración desde el editor.",
             "path": "/blog/web/blog-builder-seo",
             "categorySlug": "web",
             "tags": [
               "seo",
-              "builder",
-              "angora"
+              "blog-builder",
+              "guias",
+              "componentes"
             ],
             "publishedAt": "2026-06-21T15:00:00.000Z",
-            "updatedAt": "2026-06-21T15:00:00.000Z",
+            "updatedAt": "2026-07-03T06:30:00.000-06:00",
             "authorLabel": "Equipo zoositioweb",
             "canonicalPath": "/blog/web/blog-builder-seo",
             "robots": "index,follow",
@@ -832,18 +833,26 @@
             "visible": true
           },
           {
-            "taxonomyId": "builder",
+            "taxonomyId": "blog-builder",
             "kind": "tag",
-            "slug": "builder",
-            "label": "Editor visual",
+            "slug": "blog-builder",
+            "label": "Blog builder",
             "locale": "es",
             "visible": true
           },
           {
-            "taxonomyId": "angora",
+            "taxonomyId": "guias",
             "kind": "tag",
-            "slug": "angora",
-            "label": "Diseño del sitio",
+            "slug": "guias",
+            "label": "Guías",
+            "locale": "es",
+            "visible": true
+          },
+          {
+            "taxonomyId": "componentes",
+            "kind": "tag",
+            "slug": "componentes",
+            "label": "Componentes",
             "locale": "es",
             "visible": true
           }
