@@ -46,6 +46,7 @@
     {
       "id": "blogTitle",
       "type": "text",
+      "valueInstructions": "set:config.text,i18n,blog.title",
       "config": {
         "tag": "h1",
         "text": "Ideas para crear sitios web que se puedan publicar, medir y mejorar",
@@ -55,6 +56,7 @@
     {
       "id": "blogIntro",
       "type": "text",
+      "valueInstructions": "set:config.text,i18n,blog.intro",
       "config": {
         "tag": "p",
         "text": "Guías y recursos para crear sitios, contenido y herramientas digitales con mejor experiencia, medición y posicionamiento en buscadores.",
@@ -93,6 +95,7 @@
     {
       "id": "blogFilterTitle",
       "type": "text",
+      "valueInstructions": "set:config.text,i18n,blog.exploreContent",
       "config": {
         "tag": "h2",
         "text": "Explorar contenido",
@@ -102,6 +105,7 @@
     {
       "id": "blogSearch",
       "type": "search-box",
+      "valueInstructions": "set:config.placeholder,i18n,blog.searchPlaceholder",
       "config": {
         "placeholder": "Buscar por tema, posicionamiento o categoría",
         "classes": "ank-width-100per ank-display-flex ank-alignItems-center",
@@ -125,6 +129,7 @@
     {
       "id": "blogAllLink",
       "type": "link",
+      "valueInstructions": "set:config.text,i18n,blog.all",
       "config": {
         "href": "/blog",
         "text": "Todos",
@@ -172,6 +177,7 @@
     {
       "id": "blogTaxonomyTitle",
       "type": "text",
+      "valueInstructions": "set:config.text,i18n,blog.exploreByTopic",
       "config": {
         "tag": "h2",
         "text": "Explorar por tema",
@@ -336,6 +342,7 @@
     {
       "id": "blogArticleCardTemplate",
       "type": "generic-card",
+      "valueInstructions": "set:config.linkLabel,i18n,blog.readArticle",
       "config": {
         "variant": "feature",
         "title": "",
@@ -361,6 +368,7 @@
     {
       "id": "blogEmptyState",
       "type": "text",
+      "valueInstructions": "set:config.text,i18n,blog.emptyState",
       "config": {
         "tag": "p",
         "text": "Aún no hay artículos publicados para este filtro. Prueba otra búsqueda o vuelve más tarde para revisar nuevas guías.",
@@ -371,6 +379,7 @@
     {
       "id": "blogFooterCta",
       "type": "link",
+      "valueInstructions": "set:config.text,i18n,blog.footerCta",
       "config": {
         "href": "/contacto",
         "text": "Hablar sobre mi blog",
