@@ -444,7 +444,7 @@
         "text": "No pudimos registrar la interacción. Intenta de nuevo.",
         "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
       },
-      "valueInstructions": "set:config.text,i18n,article.interactionError,No pudimos registrar la interacción. Intenta de nuevo.",
+      "valueInstructions": "set:config.interactionErrorFallback,i18n,article.interactionError,No pudimos registrar la interacción. Intenta de nuevo.;set:config.text,varOr,remoteStatus.contentHub.content_hub_record_interaction.error,eval:config.interactionErrorFallback",
       "condition": "all:varEq,remoteStatus.contentHub.content_hub_record_interaction.state,error"
     },
     {
