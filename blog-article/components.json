@@ -14,9 +14,8 @@
         },
         "components": [
           "blogArticleHeader",
-          "blogArticleCover",
+          "blogArticleCoverFrame",
           "blogArticleMeta",
-          "blogArticleIntro",
           "blogArticleBody",
           "blogArticleDiscovery",
           "blogArticleInteractionsScope",
@@ -68,17 +67,41 @@
       "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.summary,La gestión editorial organiza artículos visuales con SEO y analítica."
     },
     {
+      "id": "blogArticleCoverFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zoositeArticleCoverFrame ank-width-100per ank-maxWidth-920px ank-overflow-hidden ank-borderRadius-8px",
+        "components": [
+          "blogArticleCover"
+        ],
+        "styles": {
+          "width": "100%",
+          "maxWidth": "920px",
+          "overflow": "hidden",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
       "id": "blogArticleCover",
       "type": "media",
       "config": {
         "tag": "image",
-        "src": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Escritorio con libreta y laptop para planear un artículo de blog",
-        "classes": "ank-width-100per ank-maxWidth-920px ank-borderRadius-8px ank-objectFit-cover",
+        "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=82",
+        "alt": "Pantalla de trabajo con herramientas digitales para planear contenido web",
+        "classes": "zoositeArticleCover ank-width-100per ank-display-block ank-objectFit-cover",
         "width": 1200,
         "height": 630,
         "loading": "eager",
-        "fetchPriority": "high"
+        "fetchPriority": "high",
+        "styles": {
+          "width": "100%",
+          "maxWidth": "920px",
+          "height": "auto",
+          "aspectRatio": "1200 / 630",
+          "objectFit": "cover"
+        }
       }
     },
     {
@@ -161,7 +184,12 @@
       "config": {
         "tag": "p",
         "text": "Este artículo muestra el flujo editorial: crear borrador, editar contenido, validar SEO, preparar medios, revisar versiones y publicar una versión legible por rutas SEO.",
-        "classes": "ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7"
+        "classes": "zoositeArticleIntro ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7",
+        "styles": {
+          "width": "100%",
+          "maxWidth": "min(760px, 100%)",
+          "boxSizing": "border-box"
+        }
       },
       "valueInstructions": "set:config.text,varOr,contentHub.currentArticle.summary,Este artículo muestra un flujo de publicación preparado para rutas SEO."
     },
@@ -169,10 +197,15 @@
       "id": "blogArticleBody",
       "type": "text",
       "config": {
-        "tag": "p",
+        "tag": "div",
         "text": "La estructura mantiene el contenido pesado en archivos de publicación y usa metadatos para rutas, categorías, etiquetas, programación, revisión y moderación. El navegador sólo recibe el índice público y el artículo publicado.",
         "html": "",
-        "classes": "ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7"
+        "classes": "zoositeArticleRichText ank-width-100per ank-maxWidth-760px ank-m-0 ank-fontSize-17px ank-lineHeight-1_7",
+        "styles": {
+          "width": "100%",
+          "maxWidth": "min(760px, 100%)",
+          "boxSizing": "border-box"
+        }
       },
       "valueInstructions": "set:config.html,richTextHtmlOr,articleContent,El navegador recibe sólo el índice público seguro y el contenido publicado de este artículo."
     },
@@ -181,12 +214,17 @@
       "type": "container",
       "config": {
         "tag": "aside",
-        "classes": "ank-width-100per ank-maxWidth-760px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-borderRadius-8px ank-p-18px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "classes": "zoositeArticlePanel ank-width-100per ank-maxWidth-760px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-borderRadius-8px ank-p-18px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
           "blogArticleDiscoveryTitle",
           "blogArticleDiscoveryCopy",
           "blogArticleBackToList"
-        ]
+        ],
+        "styles": {
+          "width": "100%",
+          "maxWidth": "min(760px, 100%)",
+          "boxSizing": "border-box"
+        }
       }
     },
     {

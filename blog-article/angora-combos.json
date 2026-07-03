@@ -2,5 +2,36 @@
   "version": 1,
   "domain": "zoositioweb.com.mx",
   "pageId": "blog-article",
-  "combos": {}
+  "combos": {
+    "zoositeArticleCover": [
+      "ank-display-block"
+    ],
+    "zoositeArticleCoverFrame": [
+      "ank-display-block ank-overflow-hidden"
+    ],
+    "zoositeArticleIntro": [
+      "ank-color-secondaryTextColor"
+    ],
+    "zoositeArticleRichText": [
+      "ank-display-flex ank-flexDirection-column ank-gap-18px ank-color-textColor"
+    ],
+    "zoositeArticlePanel": [
+      "ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-18px"
+    ],
+    "zoositeArticleCallout": [
+      "ank-bg-secondaryBgColor ank-border-1px__solid__accentColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-8px"
+    ],
+    "zoositeArticleCardGrid": [
+      "ank-display-flex ank-flexWrap-wrap ank-gap-14px ank-width-100per"
+    ],
+    "zoositeArticleCard": [
+      "ank-flex-1 ank-minWidth-0 ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px"
+    ],
+    "zoositeArticleChecklist": [
+      "ank-bg-bgColor ank-border-1px__solid__accentColor ank-borderRadius-8px ank-p-20px"
+    ],
+    "zoositeArticleCta": [
+      "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-width-100per ank-maxWidth-360px ank-minHeight-48px ank-px-20px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-textDecoration-none ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer"
+    ]
+  }
 }
