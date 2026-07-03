@@ -4,6 +4,16 @@
   "pageId": "blog",
   "lang": "en",
   "dictionary": {
-    "blog.title": "Ideas for building measurable websites"
+    "blog": {
+      "title": "Ideas for creating websites that can be published, measured, and improved",
+      "intro": "Guides and resources for creating websites, content, and digital tools with better experience, measurement, and search visibility.",
+      "exploreContent": "Explore content",
+      "searchPlaceholder": "Search by topic, positioning, or category",
+      "all": "All",
+      "exploreByTopic": "Explore by topic",
+      "readArticle": "Read article",
+      "emptyState": "There are no published articles for this filter yet. Try another search or check back later for new guides.",
+      "footerCta": "Talk about my blog"
+    }
   }
 }
