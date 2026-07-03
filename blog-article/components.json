@@ -20,8 +20,7 @@
           "blogArticleMeta",
           "blogArticleBody",
           "blogArticleDiscovery",
-          "blogArticleInteractionsScope",
-          "blogArticleCommentScope"
+          "blogArticleInteractionsScope"
         ]
       }
     },
@@ -320,24 +319,7 @@
         "components": [
           "blogArticleCta",
           "blogArticleReactionPanel",
-          "blogArticleFormPanel"
-        ]
-      }
-    },
-    {
-      "id": "blogArticleCommentScope",
-      "type": "interaction-scope",
-      "config": {
-        "scopeId": "blogArticleComment",
-        "tag": "section",
-        "classes": "ank-width-100per ank-maxWidth-760px ank-display-flex ank-flexDirection-column ank-gap-16px",
-        "styles": {
-          "alignSelf": "center",
-          "boxSizing": "border-box",
-          "maxWidth": "min(760px, 100%)",
-          "width": "100%"
-        },
-        "components": [
+          "blogArticleFormPanel",
           "blogArticleCommentPanel"
         ]
       }
