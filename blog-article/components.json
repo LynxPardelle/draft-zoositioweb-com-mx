@@ -72,8 +72,8 @@
       "type": "media",
       "config": {
         "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/zoolandingpage.com.mx/shared/seo-images/zoolandingpage-zoositioweb-default-logo-card.jpg",
-        "alt": "Editor visual de artículos de Zoosite",
+        "src": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Escritorio con libreta y laptop para planear un artículo de blog",
         "classes": "ank-width-100per ank-maxWidth-920px ank-borderRadius-8px ank-objectFit-cover",
         "width": 1200,
         "height": 630,
