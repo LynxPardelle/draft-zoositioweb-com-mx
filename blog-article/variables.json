@@ -3,14 +3,111 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "blog-article",
   "variables": {
-    "article": {
+    "contentHub": {
       "hubId": "zoosite-main",
-      "articleId": "art_20260620_blog_builder",
-      "categorySlug": "web",
-      "slug": "blog-builder-seo",
-      "locale": "es",
-      "contentGroup": "blog",
-      "publishedPath": "/blog/web/blog-builder-seo"
+      "routeBasePath": "/blog",
+      "publicArticles": {
+        "items": [
+          {
+            "articleId": "art_20260620_blog_builder",
+            "locale": "es",
+            "status": "published",
+            "title": "Cómo crear blogs visuales con Zoolandingpage",
+            "summary": "Guía inicial de Zoosite para crear artículos visuales, listos para SEO y fáciles de adaptar al estilo de cada sitio.",
+            "path": "/blog/web/blog-builder-seo",
+            "categorySlug": "web",
+            "tags": [
+              "seo",
+              "builder",
+              "angora"
+            ],
+            "publishedAt": "2026-06-21T15:00:00.000Z",
+            "updatedAt": "2026-06-21T15:00:00.000Z",
+            "authorLabel": "Equipo zoositioweb",
+            "canonicalPath": "/blog/web/blog-builder-seo",
+            "robots": "index,follow"
+          }
+        ]
+      },
+      "publicTaxonomy": {
+        "items": [
+          {
+            "taxonomyId": "web",
+            "kind": "category",
+            "slug": "web",
+            "label": "Web",
+            "locale": "es",
+            "visible": true,
+            "path": "/blog/web"
+          },
+          {
+            "taxonomyId": "seo",
+            "kind": "tag",
+            "slug": "seo",
+            "label": "SEO",
+            "locale": "es",
+            "visible": true
+          },
+          {
+            "taxonomyId": "builder",
+            "kind": "tag",
+            "slug": "builder",
+            "label": "Editor visual",
+            "locale": "es",
+            "visible": true
+          },
+          {
+            "taxonomyId": "angora",
+            "kind": "tag",
+            "slug": "angora",
+            "label": "Diseño del sitio",
+            "locale": "es",
+            "visible": true
+          }
+        ]
+      },
+      "categories": {
+        "items": [
+          {
+            "taxonomyId": "web",
+            "kind": "category",
+            "slug": "web",
+            "label": "Web",
+            "locale": "es",
+            "visible": true,
+            "path": "/blog/web"
+          }
+        ]
+      },
+      "tags": {
+        "items": [
+          {
+            "taxonomyId": "seo",
+            "kind": "tag",
+            "slug": "seo",
+            "label": "SEO",
+            "locale": "es",
+            "visible": true
+          },
+          {
+            "taxonomyId": "builder",
+            "kind": "tag",
+            "slug": "builder",
+            "label": "Editor visual",
+            "locale": "es",
+            "visible": true
+          },
+          {
+            "taxonomyId": "angora",
+            "kind": "tag",
+            "slug": "angora",
+            "label": "Diseño del sitio",
+            "locale": "es",
+            "visible": true
+          }
+        ]
+      },
+      "articleCount": 1
     }
   }
 }

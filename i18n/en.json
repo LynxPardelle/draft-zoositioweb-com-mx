@@ -11,7 +11,26 @@
       "platform": "Platform",
       "contact": "Contact",
       "faq": "FAQ",
-      "about": "About us"
+      "about": "About us",
+      "blog": "Blog",
+      "account": "My account",
+      "login": "Sign in",
+      "register": "Create account",
+      "adminUsers": "Users",
+      "adminBlog": "Blog admin",
+      "adminArticles": "Articles",
+      "adminMedia": "Media",
+      "adminSettings": "Settings",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "menuTitle": "Menu",
+      "menuDescription": "Site, account, and admin routes.",
+      "sections": {
+        "site": "Site",
+        "account": "Account",
+        "admin": "Administration",
+        "legal": "Legal"
+      }
     },
     "ui": {
       "controls": {
@@ -25,7 +44,9 @@
         "mobileMenuAriaLabel": "Navigation menu",
         "openMenu": "Open menu",
         "dialog": "Dialog",
-        "closeMenu": "Close menu"
+        "closeMenu": "Close menu",
+        "navigationDialog": "zoositioweb navigation menu",
+        "close": "Close"
       },
       "common": {
         "verified": "Verified"
@@ -52,7 +73,9 @@
       "registerLabel": "Create account",
       "legalLinksTitle": "Legal",
       "privacyLabel": "Privacy notice",
-      "termsLabel": "Terms and conditions"
+      "termsLabel": "Terms and conditions",
+      "blogLabel": "Blog",
+      "accountLabel": "My account"
     },
     "sectorLabels": {
       "clinics": "Website for medical clinics",

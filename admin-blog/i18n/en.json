@@ -5,6 +5,30 @@
   "messages": {
     "title": "Panel del blog",
     "hubId": "zoosite-main",
-    "draftDomain": "zoositioweb.com.mx"
+    "draftDomain": "zoositioweb.com.mx",
+    "adminBlogArticulos": {
+      "actionsColumn": "Actions",
+      "edit": "Edit",
+      "preview": "Preview",
+      "seo": "SEO",
+      "versions": "Versions",
+      "schedule": "Schedule"
+    }
+  },
+  "dictionary": {
+    "title": "Panel del blog",
+    "hubId": "zoosite-main",
+    "draftDomain": "zoositioweb.com.mx",
+    "adminBlogArticulos": {
+      "actionsColumn": "Actions",
+      "edit": "Edit",
+      "preview": "Preview",
+      "seo": "SEO",
+      "versions": "Versions",
+      "schedule": "Schedule"
+    },
+    "adminBlog": {
+      "supportId": "Support ID: {{ id }}"
+    }
   }
 }

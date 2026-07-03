@@ -7,7 +7,7 @@
   "layout": "default",
   "seo": {
     "title": "Configuración del blog",
-    "description": "Configuración del blog para el hub de contenido de Zoosite.",
+    "description": "Configuración del blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },
@@ -15,6 +15,12 @@
   },
   "updatedAt": "2026-06-20T12:00:00-06:00",
   "rootIds": [
-    "admin-blog-configuracionRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "admin-blog-configuracionRoot",
+    "siteFooter"
+  ],
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
   ]
 }

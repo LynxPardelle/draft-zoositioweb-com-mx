@@ -3,7 +3,10 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "registro",
   "rootIds": [
-    "registroRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "registroRoot",
+    "siteFooter"
   ],
   "seo": {
     "title": "Crear cuenta | zoositioweb",
@@ -12,5 +15,8 @@
     "robots": {
       "default": "noindex,nofollow"
     }
-  }
+  },
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ]
 }

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "pageId": "admin-combos",
+  "variables": {
+    "draftDomain": "zoositioweb.com.mx",
+    "comboCatalogStatus": "planned",
+    "comboCatalogEndpoint": "/features/combo-catalog/read"
+  }
+}

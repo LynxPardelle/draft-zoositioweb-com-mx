@@ -7,7 +7,7 @@
   "layout": "default",
   "seo": {
     "title": "Programación",
-    "description": "Programación para el hub de contenido de Zoosite.",
+    "description": "Programación para el blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },
@@ -15,6 +15,12 @@
   },
   "updatedAt": "2026-06-20T12:00:00-06:00",
   "rootIds": [
-    "admin-blog-programadosRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "admin-blog-programadosRoot",
+    "siteFooter"
+  ],
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
   ]
 }

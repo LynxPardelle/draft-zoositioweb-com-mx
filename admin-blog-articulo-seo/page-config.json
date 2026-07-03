@@ -2,19 +2,25 @@
   "version": 1,
   "domain": "zoositioweb.com.mx",
   "pageId": "admin-blog-articulo-seo",
-  "route": "/admin/blog/articulos/seo",
+  "route": "/admin/blog/articulos/:id/seo",
   "title": "SEO del artículo",
   "layout": "default",
   "seo": {
     "title": "SEO del artículo",
-    "description": "SEO del artículo para el hub de contenido de Zoosite.",
+    "description": "SEO del artículo para el blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },
-    "canonical": "https://zoositioweb.com.mx/admin/blog/articulos/seo"
+    "canonical": "https://zoositioweb.com.mx/admin/blog/articulos/:id/seo"
   },
   "updatedAt": "2026-06-20T12:00:00-06:00",
   "rootIds": [
-    "admin-blog-articulo-seoRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "admin-blog-articulo-seoRoot",
+    "siteFooter"
+  ],
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
   ]
 }

@@ -2,19 +2,25 @@
   "version": 1,
   "domain": "zoositioweb.com.mx",
   "pageId": "admin-blog-articulo-preview",
-  "route": "/admin/blog/articulos/preview",
+  "route": "/admin/blog/articulos/:id/preview",
   "title": "Vista previa",
   "layout": "default",
   "seo": {
     "title": "Vista previa",
-    "description": "Vista previa para el hub de contenido de Zoosite.",
+    "description": "Vista previa para el blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },
-    "canonical": "https://zoositioweb.com.mx/admin/blog/articulos/preview"
+    "canonical": "https://zoositioweb.com.mx/admin/blog/articulos/:id/preview"
   },
   "updatedAt": "2026-06-20T12:00:00-06:00",
   "rootIds": [
-    "admin-blog-articulo-previewRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "admin-blog-articulo-previewRoot",
+    "siteFooter"
+  ],
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
   ]
 }

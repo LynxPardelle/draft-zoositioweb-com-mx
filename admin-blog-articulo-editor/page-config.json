@@ -2,19 +2,26 @@
   "version": 1,
   "domain": "zoositioweb.com.mx",
   "pageId": "admin-blog-articulo-editor",
-  "route": "/admin/blog/articulos/editor",
+  "route": "/admin/blog/articulos/:id/editor",
   "title": "Editor de artículo",
   "layout": "default",
   "seo": {
     "title": "Editor de artículo",
-    "description": "Editor de artículo para el hub de contenido de Zoosite.",
+    "description": "Editor de artículo para el blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },
-    "canonical": "https://zoositioweb.com.mx/admin/blog/articulos/editor"
+    "canonical": "https://zoositioweb.com.mx/admin/blog/articulos/:id/editor"
   },
   "updatedAt": "2026-06-20T12:00:00-06:00",
   "rootIds": [
-    "admin-blog-articulo-editorRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "admin-blog-articulo-editorRoot",
+    "siteFooter"
+  ],
+  "modalRootIds": [
+    "siteNavMenuModalRoot",
+    "articleComponentInspectorModalRoot"
   ]
 }

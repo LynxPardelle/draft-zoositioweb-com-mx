@@ -7,23 +7,39 @@
       "id": "admin-blog-mediosRoot",
       "type": "container",
       "config": {
-        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-18px",
+        "styles": {
+          "padding": "clamp(16px, 2vw, 32px)"
+        },
         "components": [
           "admin-blog-mediosShell"
-        ],
-        "tag": "main"
+        ]
       }
     },
     {
       "id": "admin-blog-mediosShell",
       "type": "container",
       "config": {
+        "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-mediosHeader",
+          "admin-blog-mediosNav",
+          "mediaScope"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-mediosHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
         "components": [
           "admin-blog-mediosEyebrow",
           "admin-blog-mediosTitle",
-          "admin-blog-mediosNav",
-          "mediaCard"
+          "admin-blog-mediosIntro"
         ]
       }
     },
@@ -33,7 +49,7 @@
       "config": {
         "tag": "span",
         "text": "ZOOSITIOWEB / BLOG ADMIN",
-        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-fontSize-13px"
       }
     },
     {
@@ -46,10 +62,26 @@
       }
     },
     {
+      "id": "admin-blog-mediosIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Selecciona archivos, captura metadatos públicos y registra assets; la autorización de subida y almacenamiento se valida en el servidor.",
+        "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
       "id": "admin-blog-mediosNav",
       "type": "container",
       "config": {
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "tag": "nav",
+        "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "10px",
+          "alignItems": "center"
+        },
         "components": [
           "admin-blog-mediosNavArticles",
           "admin-blog-mediosNavNew",
@@ -69,7 +101,10 @@
       "config": {
         "text": "Artículos",
         "href": "/admin/blog/articulos",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -78,7 +113,10 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -87,7 +125,11 @@
       "config": {
         "text": "Medios",
         "href": "/admin/blog/medios",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        },
+        "ariaCurrent": "page"
       }
     },
     {
@@ -96,7 +138,10 @@
       "config": {
         "text": "Moderación",
         "href": "/admin/blog/moderacion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -105,7 +150,10 @@
       "config": {
         "text": "Analíticas",
         "href": "/admin/blog/analiticas",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -114,25 +162,34 @@
       "config": {
         "text": "Categorías",
         "href": "/admin/blog/categorias",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
       "id": "admin-blog-mediosNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
       "id": "admin-blog-mediosNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -141,101 +198,214 @@
       "config": {
         "text": "Configuración",
         "href": "/admin/blog/configuracion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
-      "id": "mediaCard",
-      "type": "container",
+      "id": "mediaScope",
+      "type": "interaction-scope",
       "config": {
-        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "scopeId": "mediaManager",
+        "valueInstructions": "collectFields:articleId,upload,metadata,usageRefs,publicability,altText,caption,license,focalPoint",
         "components": [
-          "mediaUpload",
-          "assetListText",
-          "metadataInput",
-          "usageRefsText",
-          "publicabilityText",
-          "archiveButtonMedia",
-          "mediaTable"
+          "mediaWorkspace"
         ]
       }
     },
     {
-      "id": "mediaUpload",
+      "id": "mediaWorkspace",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-18px",
+        "styles": {
+          "gridTemplateColumns": "minmax(0, 1fr) minmax(min(100%, 360px), 1fr)"
+        },
+        "components": [
+          "mediaUploadPanel",
+          "mediaMetaPanel"
+        ]
+      }
+    },
+    {
+      "id": "mediaUploadPanel",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "mediaArticleId",
+          "mediaDropzone",
+          "mediaUploadButton",
+          "mediaStatus",
+          "mediaAssetsTable"
+        ]
+      }
+    },
+    {
+      "id": "mediaArticleId",
+      "type": "input",
+      "config": {
+        "fieldId": "articleId",
+        "label": "Artículo seleccionado",
+        "controlType": "text",
+        "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
+        "required": true,
+        "readOnly": true,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-fontSize-13px ank-fontWeight-900 ank-fontFamily-monospace",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Abre Medios desde la fila del artículo para cargar archivos con contexto seguro."
+          }
+        ]
+      },
+      "valueInstructions": "set:config.value,queryParamOr,articleId,"
+    },
+    {
+      "id": "mediaDropzone",
       "type": "generic-file-dropzone",
       "config": {
         "fieldId": "upload",
-        "accept": "image/*,video/*,application/pdf,text/markdown,text/html,application/zip",
-        "label": "upload",
-        "disabled": true,
-        "multiple": true,
-        "dropzoneClasses": "ank-width-100per ank-minHeight-160px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-bgColor ank-color-textColor ank-p-18px",
-        "disabledDropzoneClasses": "ank-width-100per ank-minHeight-160px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-p-18px ank-opacity-0_65",
-        "browseButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "helperTextClasses": "ank-m-0 ank-fontSize-14px ank-color-textColor"
+        "label": "Biblioteca de medios",
+        "dropLabel": "Arrastra archivos para registrar metadata",
+        "browseLabel": "Elegir archivos",
+        "accept": "image/*,video/*,application/pdf",
+        "acceptLabel": "Imágenes, video o PDF",
+        "maxFileSizeBytes": 5242880,
+        "maxSizeLabel": "Máximo 5 MB por archivo",
+        "multiple": false,
+        "required": true,
+        "helperText": "Selecciona un archivo y completa los metadatos públicos antes de registrar el asset.",
+        "dropzoneClasses": "ank-width-100per ank-minHeight-190px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-12px ank-bg-bgColor ank-color-textColor ank-p-18px",
+        "browseButtonClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "helperTextClasses": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
     {
-      "id": "assetListText",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "assetList: activos públicos del artículo o del hub.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
-      }
-    },
-    {
-      "id": "metadataInput",
-      "type": "input",
-      "config": {
-        "fieldId": "metadata",
-        "label": "metadata",
-        "value": "alt,caption,license,credit",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
-      }
-    },
-    {
-      "id": "usageRefsText",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "usageRefs: páginas, artículos y componentes que usan el archivo.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
-      }
-    },
-    {
-      "id": "publicabilityText",
-      "type": "text",
-      "config": {
-        "tag": "p",
-        "text": "publicability: sólo publicar activos sanitizados y referenciados.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
-      }
-    },
-    {
-      "id": "archiveButtonMedia",
+      "id": "mediaUploadButton",
       "type": "button",
       "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
-        "disabled": true,
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
-        "label": "archive"
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Registrar asset",
+        "loadingLabel": "Registrando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
       },
-      "eventInstructions": "proxyAction:content_hub_update_package"
+      "eventInstructions": "proxyAction:content_hub_upload_asset",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,loading\",true,false"
     },
     {
-      "id": "mediaTable",
+      "id": "mediaStatus",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "mediaUploadLoading",
+          "mediaUploadError",
+          "mediaUploadErrorSupportId",
+          "mediaUploadSuccess",
+          "mediaUploadAssetId",
+          "mediaUploadFileName"
+        ]
+      }
+    },
+    {
+      "id": "mediaUploadLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cargando...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,loading"
+    },
+    {
+      "id": "mediaUploadError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No se pudo completar la operación.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error",
+      "valueInstructions": "set:config.text,when,\"all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error\",No pudimos cargar el archivo. Recarga la página desde la lista y verifica tu sesión antes de intentarlo de nuevo.,No pudimos cargar el archivo. Recarga la página desde la lista y verifica tu sesión antes de intentarlo de nuevo."
+    },
+    {
+      "id": "mediaUploadErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,error;all:var,remoteStatus.contentHub.content_hub_upload_asset.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_upload_asset.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "mediaUploadSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Archivo registrado.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success"
+    },
+    {
+      "id": "mediaUploadAssetId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Archivo no confirmado",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.assetId,El archivo se registró, pero falta confirmarlo en la lista."
+    },
+    {
+      "id": "mediaUploadFileName",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Nombre de archivo no confirmado",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_upload_asset.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_upload_asset.fileName,\"El archivo se registró; revisa la lista para confirmar el nombre.\""
+    },
+    {
+      "id": "mediaAssetsTable",
       "type": "generic-table",
       "config": {
-        "id": "mediaTable",
-        "label": "assetList",
-        "rowIdPath": "id",
+        "id": "mediaAssetsTable",
+        "label": "Biblioteca registrada",
         "rowsSource": {
           "source": "var",
           "path": "remote.contentHub.assets.items"
         },
         "rows": [],
+        "rowIdPath": "assetId",
+        "eventPayloadFields": [
+          "assetId",
+          "name",
+          "kind",
+          "usageRefs",
+          "publicability"
+        ],
+        "emptyText": "Aún no hay archivos registrados para este filtro. Registra un archivo y sus metadatos para verlo aquí.",
+        "loadingText": "Cargando datos del blog...",
         "columns": [
           {
             "id": "name",
@@ -243,23 +413,245 @@
             "valuePath": "name"
           },
           {
+            "id": "kind",
+            "header": "Tipo",
+            "valuePath": "kind"
+          },
+          {
             "id": "metadata",
-            "header": "metadata",
+            "header": "metadatos",
             "valuePath": "metadata"
           },
           {
             "id": "usageRefs",
-            "header": "usageRefs",
+            "header": "Usos",
             "valuePath": "usageRefs"
           },
           {
             "id": "publicability",
-            "header": "publicability",
+            "header": "Estado de publicación",
             "valuePath": "publicability"
           }
         ],
         "rowActions": [],
-        "classes": "ank-width-100per"
+        "pagination": {
+          "enabled": true,
+          "pageSize": 10,
+          "pageSizeOptions": [
+            10,
+            20,
+            50
+          ],
+          "showFirstLastButtons": true,
+          "hideWhenSinglePage": true
+        },
+        "classes": "ank-width-100per",
+        "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
+        "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
+        "actionButtonClasses": "ank-width-54px ank-height-54px ank-minWidth-54px ank-minHeight-54px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-8px ank-mb-8px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
+        "actionLabelMode": "tooltip",
+        "actionButtonStyles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "height": "54px",
+          "justifyContent": "center",
+          "marginBottom": "8px",
+          "marginRight": "8px",
+          "minHeight": "54px",
+          "minWidth": "54px",
+          "padding": "0",
+          "textDecoration": "none",
+          "width": "54px"
+        },
+        "actionIconClasses": "ank-width-16px ank-height-16px ank-display-inline-flex ank-flexShrink-0",
+        "actionCellClasses": "ank-whiteSpace-normal ank-minWidth-330px ank-textAlign-center",
+        "actionColumnLabel": "Acciones"
+      },
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.assets.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.assets.state,error\",No se pudo cargar la biblioteca de medios. Recarga la página o vuelve a iniciar sesión."
+    },
+    {
+      "id": "mediaMetaPanel",
+      "type": "container",
+      "config": {
+        "tag": "aside",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "mediaMetaTitle",
+          "mediaAltText",
+          "mediaCaption",
+          "mediaLicense",
+          "mediaFocalPoint",
+          "mediaUsageRefs",
+          "mediaPublicability",
+          "mediaArchiveNote"
+        ]
+      }
+    },
+    {
+      "id": "mediaMetaTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Metadatos del asset",
+        "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "mediaAltText",
+      "type": "input",
+      "config": {
+        "fieldId": "altText",
+        "label": "Texto alternativo",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": [],
+        "helperText": "Describe la imagen para accesibilidad y SEO."
+      }
+    },
+    {
+      "id": "mediaCaption",
+      "type": "input",
+      "config": {
+        "fieldId": "caption",
+        "label": "Pie de imagen",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": [],
+        "helperText": "Texto visible opcional bajo el medio."
+      }
+    },
+    {
+      "id": "mediaLicense",
+      "type": "input",
+      "config": {
+        "fieldId": "license",
+        "label": "Licencia",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": [],
+        "helperText": "Origen o licencia del archivo."
+      }
+    },
+    {
+      "id": "mediaFocalPoint",
+      "type": "input",
+      "config": {
+        "fieldId": "focalPoint",
+        "label": "Punto focal",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": [],
+        "helperText": "Punto visual importante, por ejemplo 50% 40%."
+      }
+    },
+    {
+      "id": "mediaUsageRefs",
+      "type": "input",
+      "config": {
+        "fieldId": "usageRefs",
+        "label": "Usos",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px",
+        "validation": [],
+        "helperText": "Dónde se usa este archivo dentro del artículo."
+      }
+    },
+    {
+      "id": "mediaPublicability",
+      "type": "input",
+      "config": {
+        "fieldId": "publicability",
+        "label": "Estado de publicación",
+        "controlType": "select",
+        "value": "public",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
+          {
+            "value": "public",
+            "label": "Público"
+          },
+          {
+            "value": "review",
+            "label": "Revisar"
+          },
+          {
+            "value": "archive",
+            "label": "Archivar"
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": [],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        },
+        "helperText": "Define si el asset puede publicarse."
+      }
+    },
+    {
+      "id": "mediaArchiveNote",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Archivar sólo marca intención en UI; eliminación y lifecycle son decisiones en el servidor.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     }
   ]

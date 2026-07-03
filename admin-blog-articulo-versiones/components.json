@@ -7,23 +7,39 @@
       "id": "admin-blog-articulo-versionesRoot",
       "type": "container",
       "config": {
-        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-18px",
+        "styles": {
+          "padding": "clamp(16px, 2vw, 32px)"
+        },
         "components": [
           "admin-blog-articulo-versionesShell"
-        ],
-        "tag": "main"
+        ]
       }
     },
     {
       "id": "admin-blog-articulo-versionesShell",
       "type": "container",
       "config": {
+        "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-articulo-versionesHeader",
+          "admin-blog-articulo-versionesNav",
+          "versionsScope"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
         "components": [
           "admin-blog-articulo-versionesEyebrow",
           "admin-blog-articulo-versionesTitle",
-          "admin-blog-articulo-versionesNav",
-          "versionsCard"
+          "admin-blog-articulo-versionesIntro"
         ]
       }
     },
@@ -33,7 +49,7 @@
       "config": {
         "tag": "span",
         "text": "ZOOSITIOWEB / BLOG ADMIN",
-        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-fontSize-13px"
       }
     },
     {
@@ -41,15 +57,31 @@
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Versiones",
+        "text": "Versiones del artículo",
         "classes": "ank-m-0 ank-fontSize-34px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "admin-blog-articulo-versionesIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Consulta el historial del artículo, revisa versiones guardadas y restaura una revisión cuando necesites volver a un punto anterior.",
+        "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
     {
       "id": "admin-blog-articulo-versionesNav",
       "type": "container",
       "config": {
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "tag": "nav",
+        "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "10px",
+          "alignItems": "center"
+        },
         "components": [
           "admin-blog-articulo-versionesNavArticles",
           "admin-blog-articulo-versionesNavNew",
@@ -69,7 +101,11 @@
       "config": {
         "text": "Artículos",
         "href": "/admin/blog/articulos",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        },
+        "ariaCurrent": "page"
       }
     },
     {
@@ -78,7 +114,10 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -87,7 +126,10 @@
       "config": {
         "text": "Medios",
         "href": "/admin/blog/medios",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -96,7 +138,10 @@
       "config": {
         "text": "Moderación",
         "href": "/admin/blog/moderacion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -105,7 +150,10 @@
       "config": {
         "text": "Analíticas",
         "href": "/admin/blog/analiticas",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -114,25 +162,34 @@
       "config": {
         "text": "Categorías",
         "href": "/admin/blog/categorias",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
       "id": "admin-blog-articulo-versionesNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
       "id": "admin-blog-articulo-versionesNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -141,107 +198,370 @@
       "config": {
         "text": "Configuración",
         "href": "/admin/blog/configuracion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
-      "id": "versionsCard",
-      "type": "container",
+      "id": "versionsScope",
+      "type": "interaction-scope",
       "config": {
-        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "scopeId": "articleVersions",
+        "valueInstructions": "collectFields:articleId,revisionId,delta,snapshot,restoreReason",
         "components": [
-          "revisionIdInput",
-          "deltaInput",
-          "snapshotInput",
-          "compareButton",
-          "restoreButton",
-          "versionsTable"
+          "versionsWorkspace"
         ]
       }
     },
     {
-      "id": "revisionIdInput",
+      "id": "versionsWorkspace",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "versionsArticleId",
+          "versionsControls",
+          "versionsTable",
+          "versionsActions",
+          "versionsStatus"
+        ]
+      }
+    },
+    {
+      "id": "versionsArticleId",
+      "type": "input",
+      "config": {
+        "fieldId": "articleId",
+        "label": "Artículo seleccionado",
+        "controlType": "text",
+        "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
+        "required": true,
+        "readOnly": true,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-fontSize-13px ank-fontWeight-900 ank-fontFamily-monospace",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Abre Versiones desde la lista de artículos para conservar el artículo correcto."
+          }
+        ]
+      },
+      "valueInstructions": "set:config.value,routeParamOr,id,"
+    },
+    {
+      "id": "versionsControls",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-14px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 240px), 1fr))"
+        },
+        "components": [
+          "versionsRevisionId",
+          "versionsDelta",
+          "versionsSnapshot",
+          "versionsRestoreReason"
+        ]
+      }
+    },
+    {
+      "id": "versionsRevisionId",
       "type": "input",
       "config": {
         "fieldId": "revisionId",
-        "label": "revisionId",
-        "value": "rev_20260620_001",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "label": "Versión",
+        "controlType": "text",
+        "helperText": "Versión que quieres comparar o restaurar.",
+        "required": true,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Selecciona o escribe la versión que quieres restaurar."
+          }
+        ]
       }
     },
     {
-      "id": "deltaInput",
+      "id": "versionsDelta",
       "type": "input",
       "config": {
         "fieldId": "delta",
-        "label": "delta",
-        "value": "json-patch",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "label": "Cambios guardados",
+        "controlType": "text",
+        "helperText": "Referencia segura de cambios devuelta por el servicio de contenido.",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": []
       }
     },
     {
-      "id": "snapshotInput",
+      "id": "versionsSnapshot",
       "type": "input",
       "config": {
         "fieldId": "snapshot",
-        "label": "snapshot",
-        "value": "s3-package-pointer",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "label": "Copia guardada",
+        "controlType": "text",
+        "helperText": "Referencia segura del contenido completo de esa versión.",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": []
       }
     },
     {
-      "id": "compareButton",
-      "type": "button",
+      "id": "versionsRestoreReason",
+      "type": "input",
       "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "label": "Comparar versiones"
-      },
-      "eventInstructions": "proxyAction:content_hub_validate_article"
-    },
-    {
-      "id": "restoreButton",
-      "type": "button",
-      "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "label": "Restaurar versión"
-      },
-      "eventInstructions": "proxyAction:content_hub_restore_revision"
+        "fieldId": "restoreReason",
+        "label": "Motivo de restauración",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": []
+      }
     },
     {
       "id": "versionsTable",
       "type": "generic-table",
       "config": {
         "id": "versionsTable",
-        "label": "Historial por deltas",
-        "rowIdPath": "id",
+        "label": "Historial de versiones",
         "rowsSource": {
           "source": "var",
           "path": "remote.contentHub.revisions.items"
         },
         "rows": [],
+        "rowIdPath": "id",
+        "eventPayloadFields": [
+          "articleId",
+          "revisionId",
+          "delta",
+          "snapshot",
+          "status"
+        ],
+        "emptyText": "Aún no hay versiones disponibles para este artículo. Cuando guardes cambios, las revisiones aparecerán aquí.",
+        "loadingText": "Cargando datos del blog...",
         "columns": [
           {
             "id": "revisionId",
-            "header": "revisionId",
+            "header": "Revisión",
             "valuePath": "revisionId"
           },
           {
-            "id": "delta",
-            "header": "delta",
-            "valuePath": "delta"
+            "id": "status",
+            "header": "Estado",
+            "valuePath": "status"
           },
           {
-            "id": "snapshot",
-            "header": "snapshot",
-            "valuePath": "snapshot"
+            "id": "updatedAt",
+            "header": "Fecha",
+            "valuePath": "updatedAt"
+          },
+          {
+            "id": "author",
+            "header": "Autor",
+            "valuePath": "authorLabel"
+          },
+          {
+            "id": "compare",
+            "header": "Comparar",
+            "valuePath": "compare"
+          },
+          {
+            "id": "restore",
+            "header": "Restaurar",
+            "valuePath": "restore"
           }
         ],
-        "rowActions": [],
-        "classes": "ank-width-100per"
+        "rowActions": [
+          {
+            "id": "restore",
+            "label": "Restaurar",
+            "icon": "rotate-ccw",
+            "eventInstructions": "proxyAction:content_hub_restore_revision"
+          }
+        ],
+        "pagination": {
+          "enabled": true,
+          "pageSize": 10,
+          "pageSizeOptions": [
+            10,
+            20,
+            50
+          ],
+          "showFirstLastButtons": true,
+          "hideWhenSinglePage": true
+        },
+        "classes": "ank-width-100per",
+        "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
+        "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
+        "actionButtonClasses": "ank-width-54px ank-height-54px ank-minWidth-54px ank-minHeight-54px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-8px ank-mb-8px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
+        "actionLabelMode": "tooltip",
+        "actionIconClasses": "ank-width-16px ank-height-16px ank-display-inline-flex ank-flexShrink-0",
+        "actionCellClasses": "ank-whiteSpace-normal ank-minWidth-330px ank-textAlign-center",
+        "actionColumnLabel": "Acciones",
+        "actionButtonStyles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "height": "54px",
+          "justifyContent": "center",
+          "marginBottom": "8px",
+          "marginRight": "8px",
+          "minHeight": "54px",
+          "minWidth": "54px",
+          "padding": "0",
+          "textDecoration": "none",
+          "width": "54px"
+        }
+      },
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.revisions.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.revisions.state,error\",No pudimos cargar el historial de versiones. Revisa tu sesión y permisos.,"
+    },
+    {
+      "id": "versionsActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "versionsRestoreButton"
+        ]
       }
+    },
+    {
+      "id": "versionsRestoreButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Restaurar revisión",
+        "loadingLabel": "Restaurando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_restore_revision",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,loading\",true,false"
+    },
+    {
+      "id": "versionsStatus",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "versionsRestoreIdle",
+          "versionsRestoreLoading",
+          "versionsRestoreError",
+          "versionsRestoreErrorSupportId",
+          "versionsRestoreSuccess",
+          "versionsRestoreArticleId",
+          "versionsRestoreRevisionId"
+        ]
+      }
+    },
+    {
+      "id": "versionsRestoreIdle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Elige una revisión de la tabla antes de restaurar. La restauración crea una nueva versión y conserva el historial.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "versionsRestoreLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Restaurando la versión seleccionada...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,loading"
+    },
+    {
+      "id": "versionsRestoreError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos restaurar la versión. Revisa que el artículo y la versión existan, que tu sesión siga activa y que tengas permisos editoriales.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,error"
+    },
+    {
+      "id": "versionsRestoreErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,error;all:var,remoteStatus.contentHub.content_hub_restore_revision.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_restore_revision.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "versionsRestoreSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Restauración solicitada.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,success"
+    },
+    {
+      "id": "versionsRestoreArticleId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo no confirmado",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_restore_revision.articleId,La respuesta no incluyó el artículo."
+    },
+    {
+      "id": "versionsRestoreRevisionId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Versión no confirmada",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_restore_revision.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_restore_revision.revisionId,La respuesta no incluyó la versión."
     }
   ]
 }

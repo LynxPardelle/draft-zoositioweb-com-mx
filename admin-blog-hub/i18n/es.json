@@ -3,8 +3,13 @@
   "pageId": "admin-blog-hub",
   "lang": "es",
   "messages": {
-    "title": "Hub de contenido",
+    "title": "Centro de contenido",
     "hubId": "zoosite-main",
     "draftDomain": "zoositioweb.com.mx"
+  },
+  "dictionary": {
+    "adminBlog": {
+      "supportId": "ID de soporte: {{ id }}"
+    }
   }
 }

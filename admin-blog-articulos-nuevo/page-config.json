@@ -7,7 +7,7 @@
   "layout": "default",
   "seo": {
     "title": "Crear artículo",
-    "description": "Crear artículo para el hub de contenido de Zoosite.",
+    "description": "Crear artículo para el blog de Zoosite.",
     "robots": {
       "default": "noindex,nofollow"
     },
@@ -15,6 +15,12 @@
   },
   "updatedAt": "2026-06-20T12:00:00-06:00",
   "rootIds": [
-    "admin-blog-articulos-nuevoRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "admin-blog-articulos-nuevoRoot",
+    "siteFooter"
+  ],
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
   ]
 }

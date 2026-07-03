@@ -3,14 +3,20 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "blog-article",
   "rootIds": [
-    "blogArticleRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "blogArticleRoot",
+    "siteFooter"
   ],
   "seo": {
-    "title": "Blog builder visual con SEO desde el inicio | zoositioweb",
-    "description": "Cómo Zoosite prepara un blog editable con componentes genéricos, rutas limpias, publicación programada y medición propia.",
+    "title": "Editor visual de blog con SEO desde el inicio | zoositioweb",
+    "description": "Cómo Zoosite prepara un blog visual con rutas limpias, publicación programada, medición propia y diseño adaptable.",
     "canonical": "https://zoositioweb.com.mx/blog/web/blog-builder-seo",
     "robots": {
       "default": "index,follow,max-image-preview:large"
     }
-  }
+  },
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ]
 }

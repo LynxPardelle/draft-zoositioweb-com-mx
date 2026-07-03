@@ -7,23 +7,39 @@
       "id": "admin-blog-articulos-nuevoRoot",
       "type": "container",
       "config": {
-        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-18px",
+        "styles": {
+          "padding": "clamp(16px, 2vw, 32px)"
+        },
         "components": [
           "admin-blog-articulos-nuevoShell"
-        ],
-        "tag": "main"
+        ]
       }
     },
     {
       "id": "admin-blog-articulos-nuevoShell",
       "type": "container",
       "config": {
+        "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-articulos-nuevoHeader",
+          "admin-blog-articulos-nuevoNav",
+          "newArticleScope"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-articulos-nuevoHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
         "components": [
           "admin-blog-articulos-nuevoEyebrow",
           "admin-blog-articulos-nuevoTitle",
-          "admin-blog-articulos-nuevoNav",
-          "newArticleScope"
+          "admin-blog-articulos-nuevoIntro"
         ]
       }
     },
@@ -33,7 +49,7 @@
       "config": {
         "tag": "span",
         "text": "ZOOSITIOWEB / BLOG ADMIN",
-        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-fontSize-13px"
       }
     },
     {
@@ -46,10 +62,26 @@
       }
     },
     {
+      "id": "admin-blog-articulos-nuevoIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Crea el borrador inicial con metadatos listos para SEO. Después vuelve a la lista para abrir el editor, vista previa, SEO, versiones o programación del artículo seleccionado.",
+        "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
       "id": "admin-blog-articulos-nuevoNav",
       "type": "container",
       "config": {
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "tag": "nav",
+        "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "10px",
+          "alignItems": "center"
+        },
         "components": [
           "admin-blog-articulos-nuevoNavArticles",
           "admin-blog-articulos-nuevoNavNew",
@@ -69,7 +101,10 @@
       "config": {
         "text": "Artículos",
         "href": "/admin/blog/articulos",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -78,7 +113,11 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        },
+        "ariaCurrent": "page"
       }
     },
     {
@@ -87,7 +126,10 @@
       "config": {
         "text": "Medios",
         "href": "/admin/blog/medios",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -96,7 +138,10 @@
       "config": {
         "text": "Moderación",
         "href": "/admin/blog/moderacion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -105,7 +150,10 @@
       "config": {
         "text": "Analíticas",
         "href": "/admin/blog/analiticas",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -114,25 +162,34 @@
       "config": {
         "text": "Categorías",
         "href": "/admin/blog/categorias",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
       "id": "admin-blog-articulos-nuevoNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
       "id": "admin-blog-articulos-nuevoNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -141,7 +198,10 @@
       "config": {
         "text": "Configuración",
         "href": "/admin/blog/configuracion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -149,51 +209,55 @@
       "type": "interaction-scope",
       "config": {
         "scopeId": "newArticle",
+        "valueInstructions": "collectFields:articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSeoTitle,articleSeoDescription,articleSlug,articleCanonicalPolicy,articleCommentPolicy,articleContentSafetyPolicy,articleVisibility,articlePublishIntent",
         "components": [
-          "newArticleCard"
-        ],
-        "valueInstructions": "collectFields:articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSeoTitle,articleSeoDescription,articleSlug,articleCanonicalPolicy,articleCommentPolicy,articleContentSafetyPolicy"
-      }
-    },
-    {
-      "id": "newArticleCard",
-      "type": "container",
-      "config": {
-        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
-        "components": [
-          "newArticleHelp",
-          "newArticleMutationNotice",
-          "newArticleTitle",
-          "newArticleLanguage",
-          "newArticleCategory",
-          "newArticleTags",
-          "newArticleSummary",
-          "newArticleSeoTitle",
-          "newArticleSeoDescription",
-          "newArticleSlug",
-          "newArticleCanonicalPolicy",
-          "newArticleCommentPolicy",
-          "newArticleContentSafetyPolicy",
-          "newArticleCreateButton"
+          "newArticleWorkspace"
         ]
       }
     },
     {
-      "id": "newArticleHelp",
-      "type": "text",
+      "id": "newArticleWorkspace",
+      "type": "container",
       "config": {
-        "tag": "p",
-        "text": "Crea el paquete inicial del artículo. El contenido visual se edita después con el editor avanzado.",
-        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_55 ank-color-textColor"
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-18px ank-alignItems-start",
+        "styles": {
+          "gridTemplateColumns": "minmax(0, 2fr) minmax(min(100%, 320px), 1fr)"
+        },
+        "components": [
+          "newArticleMainPanel",
+          "newArticleSidePanel"
+        ]
       }
     },
     {
-      "id": "newArticleMutationNotice",
+      "id": "newArticleMainPanel",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "newArticleBaseTitle",
+          "newArticleTitle",
+          "newArticleMetaGrid",
+          "newArticleSummary",
+          "newArticleSeoTitleText",
+          "newArticleSeoGrid",
+          "newArticleSeoDescription",
+          "newArticlePoliciesTitle",
+          "newArticlePoliciesGrid",
+          "newArticleCreateButton",
+          "newArticleCreateStatus"
+        ]
+      }
+    },
+    {
+      "id": "newArticleBaseTitle",
       "type": "text",
       "config": {
-        "tag": "p",
-        "text": "El formulario prepara el paquete inicial. La creación queda deshabilitada hasta validar el endpoint server-side con sesión, CSRF, tenant y ambiente.",
-        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_5 ank-fontWeight-800 ank-color-titleColor"
+        "tag": "h2",
+        "text": "Base editorial",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
       }
     },
     {
@@ -202,9 +266,39 @@
       "config": {
         "fieldId": "articleTitle",
         "label": "Título",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "controlType": "text",
+        "placeholder": "Guía para crear un blog SEO desde tu sitio",
+        "helperText": "Título visible y base del borrador.",
+        "required": true,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ]
+      }
+    },
+    {
+      "id": "newArticleMetaGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-14px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 220px), 1fr))"
+        },
+        "components": [
+          "newArticleLanguage",
+          "newArticleCategory",
+          "newArticleTags"
+        ]
       }
     },
     {
@@ -213,9 +307,52 @@
       "config": {
         "fieldId": "articleLanguage",
         "label": "Idioma",
-        "value": "es-MX",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "controlType": "select",
+        "value": "es",
+        "required": true,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
+          {
+            "value": "es",
+            "label": "Español"
+          },
+          {
+            "value": "en",
+            "label": "Inglés"
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        }
       }
     },
     {
@@ -224,9 +361,63 @@
       "config": {
         "fieldId": "articleCategory",
         "label": "Categoría",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "controlType": "select",
+        "helperText": "Selecciona una categoría existente. Puedes crear nuevas categorías desde la página Categorías.",
+        "required": true,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        },
+        "options": {
+          "source": "var",
+          "path": "remote.contentHub.categories.items",
+          "fallback": [
+            {
+              "value": "web",
+              "label": "Web"
+            },
+            {
+              "value": "seo",
+              "label": "SEO"
+            },
+            {
+              "value": "builder",
+              "label": "Editor visual"
+            },
+            {
+              "value": "angora",
+              "label": "Diseño del sitio CSS"
+            }
+          ]
+        },
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ]
       }
     },
     {
@@ -234,43 +425,97 @@
       "type": "input",
       "config": {
         "fieldId": "articleTags",
-        "label": "Tags",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "label": "Etiquetas",
+        "controlType": "text",
+        "placeholder": "seo, blog-builder, sitios-web",
+        "helperText": "Separados por coma.",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "autocompleteMinLength": 1,
+        "autocompleteMaxOptions": 10,
+        "autocompleteMatchMode": "contains",
+        "autocompleteOptions": {
+          "source": "var",
+          "path": "remote.contentHub.tags.items",
+          "fallback": [
+            {
+              "value": "seo",
+              "label": "seo"
+            },
+            {
+              "value": "blog-builder",
+              "label": "blog-builder"
+            },
+            {
+              "value": "sitios-web",
+              "label": "sitios-web"
+            },
+            {
+              "value": "content-hub",
+              "label": "herramientas del blog"
+            }
+          ]
+        },
+        "validation": []
       }
     },
     {
       "id": "newArticleSummary",
-      "type": "input",
+      "type": "generic-rich-text",
       "config": {
         "fieldId": "articleSummary",
-        "label": "Resumen",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "provider": "quill",
+        "format": "plain-text",
+        "label": "Resumen editorial",
+        "placeholder": "Describe qué resuelve el artículo y para quién.",
+        "required": true,
+        "rows": 4,
+        "toolbar": [
+          "bold",
+          "italic",
+          "heading",
+          "bulletList",
+          "orderedList",
+          "link",
+          "clean"
+        ],
+        "sanitizerPolicyId": "trusted-authors",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "editorClasses": "ank-minHeight-150px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-color-textColor ank-fontSize-15px",
+        "helperText": "Usa formato básico si el resumen necesita énfasis o enlaces internos.",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px"
       }
     },
     {
-      "id": "newArticleSeoTitle",
-      "type": "input",
+      "id": "newArticleSeoTitleText",
+      "type": "text",
       "config": {
-        "fieldId": "articleSeoTitle",
-        "label": "Título SEO",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "tag": "h2",
+        "text": "SEO y URL",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
       }
     },
     {
-      "id": "newArticleSeoDescription",
-      "type": "input",
+      "id": "newArticleSeoGrid",
+      "type": "container",
       "config": {
-        "fieldId": "articleSeoDescription",
-        "label": "Descripción SEO",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-14px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 260px), 1fr))"
+        },
+        "components": [
+          "newArticleSlug",
+          "newArticleSeoTitle"
+        ]
       }
     },
     {
@@ -279,9 +524,100 @@
       "config": {
         "fieldId": "articleSlug",
         "label": "Slug",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "controlType": "text",
+        "placeholder": "blog-builder-seo",
+        "helperText": "Minúsculas, números y guiones.",
+        "required": true,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ]
+      }
+    },
+    {
+      "id": "newArticleSeoTitle",
+      "type": "input",
+      "config": {
+        "fieldId": "articleSeoTitle",
+        "label": "Título SEO",
+        "controlType": "text",
+        "placeholder": "Editor visual de blog con SEO para sitios web",
+        "required": true,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ]
+      }
+    },
+    {
+      "id": "newArticleSeoDescription",
+      "type": "input",
+      "config": {
+        "fieldId": "articleSeoDescription",
+        "label": "Descripción SEO",
+        "controlType": "textarea",
+        "placeholder": "Aprende cómo crear artículos visuales...",
+        "rows": 3,
+        "required": true,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-py-12px",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ]
+      }
+    },
+    {
+      "id": "newArticlePoliciesTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Publicación y seguridad",
+        "classes": "ank-m-0 ank-fontSize-22px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "newArticlePoliciesGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-14px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 260px), 1fr))",
+          "alignItems": "start"
+        },
+        "components": [
+          "newArticleCanonicalPolicy",
+          "newArticleCommentPolicy",
+          "newArticleContentSafetyPolicy",
+          "newArticleVisibility",
+          "newArticlePublishIntent"
+        ]
       }
     },
     {
@@ -289,10 +625,53 @@
       "type": "input",
       "config": {
         "fieldId": "articleCanonicalPolicy",
-        "label": "Política canonical",
-        "value": "creator-domain",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "label": "URL canónica",
+        "controlType": "select",
+        "value": "self",
+        "required": true,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
+          {
+            "value": "self",
+            "label": "Adaptable al sitio actual"
+          },
+          {
+            "value": "none",
+            "label": "Sin canonical"
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        }
       }
     },
     {
@@ -300,10 +679,57 @@
       "type": "input",
       "config": {
         "fieldId": "articleCommentPolicy",
-        "label": "Política de comentarios",
-        "value": "authenticated-moderated",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "label": "Comentarios",
+        "controlType": "select",
+        "value": "authenticated",
+        "required": true,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
+          {
+            "value": "authenticated",
+            "label": "Autenticados + moderación"
+          },
+          {
+            "value": "disabled",
+            "label": "Desactivados"
+          },
+          {
+            "value": "moderated",
+            "label": "Públicos + moderación"
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        }
       }
     },
     {
@@ -311,22 +737,424 @@
       "type": "input",
       "config": {
         "fieldId": "articleContentSafetyPolicy",
-        "label": "Nivel de libertad HTML/Markdown",
-        "value": "trusted-authors",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "label": "Política de contenido",
+        "controlType": "select",
+        "value": "general",
+        "required": true,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
+          {
+            "value": "general",
+            "label": "Autores confiables"
+          },
+          {
+            "value": "restricted",
+            "label": "Estricto"
+          },
+          {
+            "value": "sensitive",
+            "label": "Avanzado libre"
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Este campo es obligatorio."
+          }
+        ],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        }
+      }
+    },
+    {
+      "id": "newArticleVisibility",
+      "type": "input",
+      "config": {
+        "fieldId": "articleVisibility",
+        "label": "Visibilidad inicial",
+        "controlType": "select",
+        "value": "private",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
+          {
+            "value": "private",
+            "label": "Borrador privado"
+          },
+          {
+            "value": "unlisted",
+            "label": "Listo para revisión"
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": [],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        }
+      }
+    },
+    {
+      "id": "newArticlePublishIntent",
+      "type": "input",
+      "config": {
+        "fieldId": "articlePublishIntent",
+        "label": "Intención",
+        "controlType": "select",
+        "value": "draft",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
+          {
+            "value": "draft",
+            "label": "Guardar borrador"
+          },
+          {
+            "value": "schedule-later",
+            "label": "Programar después"
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-56px ank-px-16px ank-py-10px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px ank-textAlign-left",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-normal ank-textAlign-left ank-lineHeight-1_25"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": [],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        }
       }
     },
     {
       "id": "newArticleCreateButton",
       "type": "button",
       "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "disabled": true,
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
-        "label": "Crear paquete"
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Crear artículo",
+        "loadingLabel": "Creando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
       },
-      "eventInstructions": "proxyAction:content_hub_create_article"
+      "eventInstructions": "proxyAction:content_hub_create_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_create_article.state,loading\",true,false"
+    },
+    {
+      "id": "newArticleCreateStatus",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "newArticleCreateIdle",
+          "newArticleCreateLoading",
+          "newArticleCreateError",
+          "newArticleCreateErrorSupportId",
+          "newArticleCreateSuccess",
+          "newArticleCreateArticleId",
+          "newArticleCreateRevisionId",
+          "newArticleCreateEditorLink",
+          "newArticleCreatePreviewLink",
+          "newArticleCreateSeoLink",
+          "newArticleCreateVersionsLink",
+          "newArticleCreateScheduleLink",
+          "newArticleCreateListLink",
+          "newArticleCreateEditorHint"
+        ]
+      }
+    },
+    {
+      "id": "newArticleCreateLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cargando...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,loading"
+    },
+    {
+      "id": "newArticleCreateError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos crear el artículo. Vuelve a cargar esta página e inténtalo de nuevo; si el problema continúa, el servicio de contenido puede estar temporalmente fuera de sincronía.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,error"
+    },
+    {
+      "id": "newArticleCreateErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,error;all:var,remoteStatus.contentHub.content_hub_create_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_create_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "newArticleCreateSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo creado. Usa estos accesos para continuar.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success"
+    },
+    {
+      "id": "newArticleCreateArticleId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo no confirmado",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,La respuesta no incluyó el artículo."
+    },
+    {
+      "id": "newArticleCreateRevisionId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Versión no confirmada",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_create_article.revisionId,La respuesta no incluyó la versión."
+    },
+    {
+      "id": "newArticleCreateEditorLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/articulos",
+        "text": "Abrir editor",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success;all:var,remoteStatus.contentHub.content_hub_create_article.articleId",
+      "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/editor"
+    },
+    {
+      "id": "newArticleCreatePreviewLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/articulos",
+        "text": "Abrir preview",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success;all:var,remoteStatus.contentHub.content_hub_create_article.articleId",
+      "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/preview"
+    },
+    {
+      "id": "newArticleCreateSeoLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/articulos",
+        "text": "Abrir SEO",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success;all:var,remoteStatus.contentHub.content_hub_create_article.articleId",
+      "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/seo"
+    },
+    {
+      "id": "newArticleCreateVersionsLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/articulos",
+        "text": "Ver versiones",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success;all:var,remoteStatus.contentHub.content_hub_create_article.articleId",
+      "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.href,concat,/admin/blog/articulos/,eval:config.articleId,/versiones"
+    },
+    {
+      "id": "newArticleCreateScheduleLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/programados",
+        "text": "Programar",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success;all:var,remoteStatus.contentHub.content_hub_create_article.articleId;all:var,remoteStatus.contentHub.content_hub_create_article.revisionId",
+      "valueInstructions": "set:config.articleId,varOr,remoteStatus.contentHub.content_hub_create_article.articleId,;set:config.revisionId,varOr,remoteStatus.contentHub.content_hub_create_article.revisionId,;set:config.href,concat,/admin/blog/programados?articleId=,eval:config.articleId,&revisionId=,eval:config.revisionId"
+    },
+    {
+      "id": "newArticleCreateListLink",
+      "type": "link",
+      "config": {
+        "href": "/admin/blog/articulos",
+        "text": "Ir a la lista de artículos",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success"
+    },
+    {
+      "id": "newArticleCreateEditorHint",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "También puedes volver a la lista para revisar el artículo dentro del flujo editorial completo.",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_create_article.state,success"
+    },
+    {
+      "id": "newArticleSidePanel",
+      "type": "container",
+      "config": {
+        "tag": "aside",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "newArticleChecklistTitle",
+          "newArticleChecklistIntro",
+          "newArticleChecklistList",
+          "newArticleColdNotice"
+        ]
+      }
+    },
+    {
+      "id": "newArticleChecklistTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Checklist inicial",
+        "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "newArticleChecklistIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Este paso no publica. Sólo crea el borrador editable.",
+        "classes": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-textColor"
+      }
+    },
+    {
+      "id": "newArticleChecklistList",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "newArticleChecklistOne",
+          "newArticleChecklistTwo",
+          "newArticleChecklistThree"
+        ]
+      }
+    },
+    {
+      "id": "newArticleChecklistOne",
+      "type": "text",
+      "config": {
+        "tag": "li",
+        "text": "Define categoría y etiquetas pensando en URLs indexables.",
+        "classes": "ank-fontSize-14px ank-lineHeight-1_45 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "newArticleChecklistTwo",
+      "type": "text",
+      "config": {
+        "tag": "li",
+        "text": "Escribe título SEO y descripción antes de crear.",
+        "classes": "ank-fontSize-14px ank-lineHeight-1_45 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "newArticleChecklistThree",
+      "type": "text",
+      "config": {
+        "tag": "li",
+        "text": "Mantén políticas conservadoras si más autores editarán.",
+        "classes": "ank-fontSize-14px ank-lineHeight-1_45 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "newArticleColdNotice",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "La primera carga puede tardar porque se valida tu sesión, tus permisos y se despierta el servicio seguro de contenido del sitio.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__warningColor ank-fontSize-13px ank-lineHeight-1_45 ank-fontWeight-800 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "newArticleCreateIdle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Estado de creación: sin operación reciente. Completa los campos obligatorios y usa Crear artículo cuando quieras guardar la nueva entrada.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "not:var,remoteStatus.contentHub.content_hub_create_article.state"
     }
   ]
 }

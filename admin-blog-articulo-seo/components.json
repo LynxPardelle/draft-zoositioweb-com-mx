@@ -7,23 +7,39 @@
       "id": "admin-blog-articulo-seoRoot",
       "type": "container",
       "config": {
-        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-18px",
+        "styles": {
+          "padding": "clamp(16px, 2vw, 32px)"
+        },
         "components": [
           "admin-blog-articulo-seoShell"
-        ],
-        "tag": "main"
+        ]
       }
     },
     {
       "id": "admin-blog-articulo-seoShell",
       "type": "container",
       "config": {
+        "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-articulo-seoHeader",
+          "admin-blog-articulo-seoNav",
+          "seoScope"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-articulo-seoHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
         "components": [
           "admin-blog-articulo-seoEyebrow",
           "admin-blog-articulo-seoTitle",
-          "admin-blog-articulo-seoNav",
-          "seoCard"
+          "admin-blog-articulo-seoIntro"
         ]
       }
     },
@@ -33,7 +49,7 @@
       "config": {
         "tag": "span",
         "text": "ZOOSITIOWEB / BLOG ADMIN",
-        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-fontSize-13px"
       }
     },
     {
@@ -46,10 +62,26 @@
       }
     },
     {
+      "id": "admin-blog-articulo-seoIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Configura canonical, hreflang, social preview, Datos estructurados, robots y sitemap con validación visible antes de publicar.",
+        "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      }
+    },
+    {
       "id": "admin-blog-articulo-seoNav",
       "type": "container",
       "config": {
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "tag": "nav",
+        "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "10px",
+          "alignItems": "center"
+        },
         "components": [
           "admin-blog-articulo-seoNavArticles",
           "admin-blog-articulo-seoNavNew",
@@ -69,7 +101,11 @@
       "config": {
         "text": "Artículos",
         "href": "/admin/blog/articulos",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        },
+        "ariaCurrent": "page"
       }
     },
     {
@@ -78,7 +114,10 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -87,7 +126,10 @@
       "config": {
         "text": "Medios",
         "href": "/admin/blog/medios",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -96,7 +138,10 @@
       "config": {
         "text": "Moderación",
         "href": "/admin/blog/moderacion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -105,7 +150,10 @@
       "config": {
         "text": "Analíticas",
         "href": "/admin/blog/analiticas",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -114,25 +162,34 @@
       "config": {
         "text": "Categorías",
         "href": "/admin/blog/categorias",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
       "id": "admin-blog-articulo-seoNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
       "id": "admin-blog-articulo-seoNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -141,35 +198,124 @@
       "config": {
         "text": "Configuración",
         "href": "/admin/blog/configuracion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
-      "id": "seoCard",
+      "id": "seoScope",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "articleSeo",
+        "valueInstructions": "collectFields:articleId,revisionId,canonical,hreflang,socialPreview,structuredData,robots,sitemap,validationScope,validationNotes",
+        "components": [
+          "seoWorkspace"
+        ]
+      }
+    },
+    {
+      "id": "seoWorkspace",
       "type": "container",
       "config": {
-        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "tag": "section",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
         "components": [
+          "seoArticleId",
+          "seoArticleIdGuidance",
+          "seoGrid",
+          "seoStructuredData",
+          "seoValidationActions",
+          "seoStatus"
+        ]
+      }
+    },
+    {
+      "id": "seoArticleId",
+      "type": "input",
+      "config": {
+        "fieldId": "articleId",
+        "label": "Artículo seleccionado",
+        "controlType": "text",
+        "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
+        "required": true,
+        "readOnly": true,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-fontSize-13px ank-fontWeight-900 ank-fontFamily-monospace",
+        "validation": []
+      },
+      "valueInstructions": "set:config.value,routeParamOr,id,"
+    },
+    {
+      "id": "seoArticleIdGuidance",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "El SEO se aplica al artículo abierto desde la lista. Si los datos no cargan, vuelve a Artículos y usa la acción SEO de la fila correcta.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-secondaryTextColor ank-fontSize-13px ank-lineHeight-1_55 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "seoGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-14px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 240px), 1fr))"
+        },
+        "components": [
+          "seoRevisionId",
           "seoCanonical",
           "seoHreflang",
           "seoSocialPreview",
-          "seoStructuredData",
           "seoRobots",
-          "seoSitemap",
-          "seoValidateButton"
+          "seoSitemap"
         ]
       }
+    },
+    {
+      "id": "seoRevisionId",
+      "type": "input",
+      "config": {
+        "fieldId": "revisionId",
+        "label": "Versión actual",
+        "controlType": "text",
+        "helperText": "Se toma de la última versión guardada del artículo.",
+        "required": true,
+        "readOnly": true,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": []
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.latestRevisionId,"
     },
     {
       "id": "seoCanonical",
       "type": "input",
       "config": {
         "fieldId": "canonical",
-        "label": "canonical",
-        "value": "https://zoositioweb.com.mx/blog/blog-builder-visual",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "inputType": "url",
-        "controlType": "text"
+        "label": "URL canónica",
+        "controlType": "text",
+        "placeholder": "https://zoositioweb.com.mx/blog/web/slug",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": []
       }
     },
     {
@@ -178,9 +324,17 @@
       "config": {
         "fieldId": "hreflang",
         "label": "hreflang",
-        "value": "es-MX",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "controlType": "text",
+        "placeholder": "es-MX, en-US",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": []
       }
     },
     {
@@ -188,21 +342,18 @@
       "type": "input",
       "config": {
         "fieldId": "socialPreview",
-        "label": "socialPreview",
-        "value": "zoosite-blog-builder-preview.jpg",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
-      }
-    },
-    {
-      "id": "seoStructuredData",
-      "type": "input",
-      "config": {
-        "fieldId": "structuredData",
-        "label": "structuredData",
-        "value": "BlogPosting",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "label": "Vista previa para redes",
+        "controlType": "text",
+        "placeholder": "Título y descripción para redes",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": []
       }
     },
     {
@@ -210,10 +361,48 @@
       "type": "input",
       "config": {
         "fieldId": "robots",
-        "label": "robots",
+        "label": "Visibilidad en buscadores",
+        "controlType": "select",
         "value": "index,follow",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
+          {
+            "value": "index,follow",
+            "label": "index,follow"
+          },
+          {
+            "value": "noindex,follow",
+            "label": "sin indexación,follow"
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-py-8px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap ank-textAlign-left"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": [],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        }
       }
     },
     {
@@ -221,20 +410,513 @@
       "type": "input",
       "config": {
         "fieldId": "sitemap",
-        "label": "sitemap",
+        "label": "Mapa del sitio",
+        "controlType": "select",
         "value": "include",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
+          {
+            "value": "include",
+            "label": "Incluir"
+          },
+          {
+            "value": "exclude",
+            "label": "Excluir"
+          }
+        ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-py-8px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap ank-textAlign-left"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": [],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        }
+      }
+    },
+    {
+      "id": "seoStructuredData",
+      "type": "input",
+      "config": {
+        "fieldId": "structuredData",
+        "label": "Datos estructurados",
+        "controlType": "textarea",
+        "helperText": "JSON-LD seguro; el servicio de contenido lo valida antes de publicar.",
+        "rows": 8,
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-py-12px",
+        "validation": []
+      }
+    },
+    {
+      "id": "seoValidationActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "seoValidateButton",
+          "seoSubmitReviewButton",
+          "seoApproveButton",
+          "seoPublishButton",
+          "seoUnpublishButton",
+          "seoArchiveButton"
+        ]
       }
     },
     {
       "id": "seoValidateButton",
       "type": "button",
       "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "label": "Validar SEO"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Validar SEO",
+        "loadingLabel": "Validando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
       },
-      "eventInstructions": "proxyAction:content_hub_validate_article"
+      "eventInstructions": "proxyAction:content_hub_validate_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,loading\",true,false"
+    },
+    {
+      "id": "seoSubmitReviewButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Enviar a revisión",
+        "loadingLabel": "Enviando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_submit_review_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,loading\",true,false;set:config.disabled,when,\"any:varEq,remote.contentHub.articleDetail.items.0.status,draft;any:varEq,remote.contentHub.articleDetail.items.0.status,unpublished\",false,true"
+    },
+    {
+      "id": "seoApproveButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Aprobar",
+        "loadingLabel": "Aprobando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_approve_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,loading\",true,false;set:config.disabled,when,\"all:varEq,remote.contentHub.articleDetail.items.0.status,review\",false,true"
+    },
+    {
+      "id": "seoPublishButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Publicar con SEO actual",
+        "loadingLabel": "Publicando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_publish_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading\",true,false;set:config.disabled,when,\"all:varEq,remote.contentHub.articleDetail.items.0.status,approved\",false,true"
+    },
+    {
+      "id": "seoUnpublishButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__warningColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Despublicar",
+        "loadingLabel": "Despublicando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_unpublish_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,loading\",true,false;set:config.disabled,when,\"all:varEq,remote.contentHub.articleDetail.items.0.status,published\",false,true"
+    },
+    {
+      "id": "seoArchiveButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-bgColor ank-color-errorColor ank-fontWeight-900 ank-border-1px__solid__errorColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Archivar",
+        "loadingLabel": "Archivando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_archive_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,loading\",true,false;set:config.disabled,when,\"any:varEq,remote.contentHub.articleDetail.items.0.status,draft;any:varEq,remote.contentHub.articleDetail.items.0.status,review;any:varEq,remote.contentHub.articleDetail.items.0.status,approved;any:varEq,remote.contentHub.articleDetail.items.0.status,published;any:varEq,remote.contentHub.articleDetail.items.0.status,unpublished\",false,true"
+    },
+    {
+      "id": "seoStatus",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "seoActionIdle",
+          "seoValidateLoading",
+          "seoValidateError",
+          "seoValidateErrorSupportId",
+          "seoValidateSuccess",
+          "seoValidateArticleId",
+          "seoValidateRevisionId",
+          "seoSubmitReviewLoading",
+          "seoSubmitReviewError",
+          "seoSubmitReviewErrorSupportId",
+          "seoSubmitReviewSuccess",
+          "seoApproveLoading",
+          "seoApproveError",
+          "seoApproveErrorSupportId",
+          "seoApproveSuccess",
+          "seoPublishLoading",
+          "seoPublishError",
+          "seoPublishErrorSupportId",
+          "seoPublishSuccess",
+          "seoPublishArticleId",
+          "seoPublishRevisionId",
+          "seoUnpublishLoading",
+          "seoUnpublishError",
+          "seoUnpublishErrorSupportId",
+          "seoUnpublishSuccess",
+          "seoArchiveLoading",
+          "seoArchiveError",
+          "seoArchiveErrorSupportId",
+          "seoArchiveSuccess"
+        ]
+      }
+    },
+    {
+      "id": "seoActionIdle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Estado SEO: sin validación ni publicación reciente. Valida SEO antes de publicar el artículo.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "seoValidateLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cargando...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,loading"
+    },
+    {
+      "id": "seoValidateError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos validar el SEO del artículo. Recarga la página desde la lista y verifica tu sesión y permisos antes de intentarlo de nuevo.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error"
+    },
+    {
+      "id": "seoValidateErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,error;all:var,remoteStatus.contentHub.content_hub_validate_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_validate_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "seoValidateSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Validación SEO completada.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success"
+    },
+    {
+      "id": "seoValidateArticleId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo no confirmado",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.articleId,La respuesta no incluyó el artículo."
+    },
+    {
+      "id": "seoValidateRevisionId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Versión no confirmada",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_validate_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_validate_article.revisionId,La respuesta no incluyó la versión."
+    },
+    {
+      "id": "seoSubmitReviewLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Enviando el artículo a revisión...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,loading"
+    },
+    {
+      "id": "seoSubmitReviewError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos enviar el artículo a revisión. Revisa que el artículo exista, que tu sesión siga activa y que tengas permisos editoriales.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,error"
+    },
+    {
+      "id": "seoSubmitReviewErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,error;all:var,remoteStatus.contentHub.content_hub_submit_review_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_submit_review_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "seoSubmitReviewSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo enviado a revisión.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_submit_review_article.state,success"
+    },
+    {
+      "id": "seoApproveLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Aprobando el artículo...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,loading"
+    },
+    {
+      "id": "seoApproveError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos aprobar el artículo. Revisa que tengas permisos de publicación y que el artículo exista.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,error"
+    },
+    {
+      "id": "seoApproveErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,error;all:var,remoteStatus.contentHub.content_hub_approve_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_approve_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "seoApproveSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo aprobado para publicación.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_approve_article.state,success"
+    },
+    {
+      "id": "seoPublishLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cargando...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading"
+    },
+    {
+      "id": "seoPublishError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos publicar el artículo con este SEO. Recarga la página desde la lista y verifica tu sesión y permisos antes de intentarlo de nuevo.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error"
+    },
+    {
+      "id": "seoPublishErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error;all:var,remoteStatus.contentHub.content_hub_publish_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_publish_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "seoPublishSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Publicación con SEO solicitada.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success"
+    },
+    {
+      "id": "seoPublishArticleId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo no confirmado",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.articleId,La respuesta no incluyó el artículo."
+    },
+    {
+      "id": "seoPublishRevisionId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Versión no confirmada",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.revisionId,La respuesta no incluyó la versión."
+    },
+    {
+      "id": "seoUnpublishLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Retirando el artículo del blog público...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,loading"
+    },
+    {
+      "id": "seoUnpublishError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos despublicar el artículo. Revisa que tengas permisos de publicación y que el artículo exista.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,error"
+    },
+    {
+      "id": "seoUnpublishErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,error;all:var,remoteStatus.contentHub.content_hub_unpublish_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_unpublish_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "seoUnpublishSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo retirado del blog público. El historial editorial se conserva.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_unpublish_article.state,success"
+    },
+    {
+      "id": "seoArchiveLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Archivando el artículo...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,loading"
+    },
+    {
+      "id": "seoArchiveError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos archivar el artículo. Revisa permisos, sesión y que el artículo exista antes de intentarlo otra vez.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,error"
+    },
+    {
+      "id": "seoArchiveErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,error;all:var,remoteStatus.contentHub.content_hub_archive_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_archive_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "seoArchiveSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo archivado. Ya no debe mostrarse como contenido público.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_archive_article.state,success"
     }
   ]
 }

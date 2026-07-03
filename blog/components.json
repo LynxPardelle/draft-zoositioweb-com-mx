@@ -8,11 +8,16 @@
       "type": "container",
       "config": {
         "tag": "main",
-        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-26px",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-26px",
+        "styles": {
+          "padding": "clamp(18px, 3vw, 40px)"
+        },
         "components": [
           "blogHeader",
-          "blogFeaturedArticle",
-          "blogFooterLink"
+          "blogDiscovery",
+          "blogArticleList",
+          "blogEmptyState",
+          "blogFooterCta"
         ]
       }
     },
@@ -21,7 +26,7 @@
       "type": "container",
       "config": {
         "tag": "header",
-        "classes": "ank-width-100per ank-maxWidth-980px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "classes": "ank-width-100per ank-maxWidth-1040px ank-display-flex ank-flexDirection-column ank-gap-10px",
         "components": [
           "blogEyebrow",
           "blogTitle",
@@ -35,7 +40,7 @@
       "config": {
         "tag": "p",
         "text": "ZOOSITIOWEB BLOG",
-        "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-800 ank-letterSpacing-0 ank-color-accentColor"
+        "classes": "ank-m-0 ank-fontSize-13px ank-fontWeight-900 ank-letterSpacing-0 ank-color-accentColor"
       }
     },
     {
@@ -43,7 +48,7 @@
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Ideas para construir sitios que sí se puedan medir",
+        "text": "Ideas para crear sitios web que se puedan publicar, medir y mejorar",
         "classes": "ank-m-0 ank-fontSize-40px ank-lineHeight-1_1 ank-fontWeight-900 ank-color-titleColor"
       }
     },
@@ -52,33 +57,331 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Primer corte del content hub: artículos como paquetes visuales, categorías compartidas por hub y SEO adaptado al dominio que renderiza el contenido.",
-        "classes": "ank-m-0 ank-fontSize-17px ank-lineHeight-1_6 ank-color-secondaryTextColor ank-maxWidth-760px"
+        "text": "Guías y recursos para crear sitios, contenido y herramientas digitales con mejor experiencia, medición y posicionamiento en buscadores.",
+        "classes": "ank-m-0 ank-fontSize-17px ank-lineHeight-1_6 ank-color-secondaryTextColor ank-maxWidth-820px"
       }
     },
     {
-      "id": "blogFeaturedArticle",
-      "type": "generic-card",
-      "eventInstructions": "trackEvent:blog_cta_click,blog,blog-list-featured,hubId,zoosite-main,articleId,art_20260620_blog_builder,ctaId,featured-read",
+      "id": "blogDiscovery",
+      "type": "container",
       "config": {
-        "title": "Blog builder visual con SEO desde el inicio",
-        "description": "Cómo Zoosite prepara un blog editable con componentes genéricos, rutas limpias, publicación programada y medición propia.",
-        "linkHref": "/blog/web/blog-builder-seo",
-        "linkLabel": "Leer artículo",
-        "linkEventInstructions": "trackEvent:blog_cta_click,blog,blog-list-featured,hubId,zoosite-main,articleId,art_20260620_blog_builder,ctaId,featured-read",
-        "classes": "ank-width-100per ank-maxWidth-980px ank-p-24px ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-boxShadow-0__14px__44px__rgbaSD0COM0COM0COM0_08ED",
-        "titleClasses": "ank-m-0 ank-fontSize-26px ank-lineHeight-1_2 ank-fontWeight-900 ank-color-titleColor",
-        "descriptionClasses": "ank-mt-10px ank-mb-18px ank-fontSize-16px ank-lineHeight-1_6 ank-color-secondaryTextColor",
-        "linkClasses": "ank-display-inlineFlex ank-alignItems-center ank-minHeight-44px ank-px-16px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-textDecoration-none"
+        "tag": "section",
+        "classes": "ank-width-100per ank-maxWidth-1040px ank-display-grid ank-gap-16px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
+          "alignItems": "start"
+        },
+        "components": [
+          "blogFilterPanel",
+          "blogTaxonomyPanel"
+        ]
       }
     },
     {
-      "id": "blogFooterLink",
+      "id": "blogFilterPanel",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "blogFilterTitle",
+          "blogSearch",
+          "blogCategoryLinks"
+        ]
+      }
+    },
+    {
+      "id": "blogFilterTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Explorar contenido",
+        "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "blogSearch",
+      "type": "search-box",
+      "config": {
+        "placeholder": "Buscar por tema, posicionamiento o categoría",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700 ank-outline-none ank-boxSizing-borderBox",
+        "resultsClasses": "ank-listStyle-none ank-m-0 ank-p-6px ank-display-flex ank-flexDirection-column ank-gap-4px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_18ED",
+        "resultItemClasses": "ank-width-100per ank-bg-transparent ank-border-0 ank-cursor-pointer ank-color-titleColor ank-px-12px ank-py-10px ank-textAlign-left ank-borderRadius-8px ank-fontWeight-800 ank-bgHover-secondaryBgColor"
+      }
+    },
+    {
+      "id": "blogCategoryLinks",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-10px",
+        "components": [
+          "blogAllLink",
+          "blogCategoryWebLink"
+        ]
+      }
+    },
+    {
+      "id": "blogAllLink",
+      "type": "link",
+      "config": {
+        "href": "/blog",
+        "text": "Todos",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
+      }
+    },
+    {
+      "id": "blogCategoryWebLink",
+      "type": "link",
+      "config": {
+        "href": "/blog/web",
+        "text": "Web",
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
+      }
+    },
+    {
+      "id": "blogTaxonomyPanel",
+      "type": "container",
+      "config": {
+        "tag": "aside",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "blogTaxonomyTitle",
+          "blogTaxonomyGrid",
+          "blogTagGrid"
+        ]
+      }
+    },
+    {
+      "id": "blogTaxonomyTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Explorar por tema",
+        "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "blogTaxonomyGrid",
+      "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "contentHub.categories.items",
+        "templateId": "blogTaxonomyLinkTemplate",
+        "idPrefix": "blogCategory",
+        "bindings": [
+          {
+            "to": "config.href",
+            "sources": [
+              "path"
+            ]
+          },
+          {
+            "to": "config.text",
+            "sources": [
+              "label",
+              "slug"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-8px",
+        "components": []
+      }
+    },
+    {
+      "id": "blogTaxonomyLinkTemplate",
+      "type": "link",
+      "config": {
+        "href": "/blog",
+        "text": "Categoría",
+        "classes": "ank-minHeight-48px ank-px-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_18",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
+      }
+    },
+    {
+      "id": "blogTagGrid",
+      "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "contentHub.tags.items",
+        "templateId": "blogTagLinkTemplate",
+        "idPrefix": "blogTag",
+        "bindings": [
+          {
+            "to": "config.href",
+            "sources": [
+              "path",
+              {
+                "from": "slug",
+                "prefix": "/blog/tag/"
+              }
+            ]
+          },
+          {
+            "to": "config.text",
+            "sources": [
+              "label",
+              "slug"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-8px",
+        "components": []
+      }
+    },
+    {
+      "id": "blogTagLinkTemplate",
+      "type": "link",
+      "config": {
+        "href": "/blog",
+        "text": "Etiqueta",
+        "classes": "ank-minHeight-48px ank-px-12px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-border-1px__solid__textColorOPA__0_18",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
+      }
+    },
+    {
+      "id": "blogArticleList",
+      "type": "container",
+      "loopConfig": {
+        "source": "var",
+        "path": "contentHub.publicArticles.items",
+        "templateId": "blogArticleCardTemplate",
+        "idPrefix": "blogArticleCard",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "summary"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "path"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              {
+                "from": "readLabel",
+                "fallback": "Leer artículo"
+              }
+            ]
+          },
+          {
+            "to": "config.linkEventInstructions",
+            "sources": [
+              {
+                "from": "articleId",
+                "prefix": "trackEvent:blog_cta_click,blog,blog-list-card,hubId,zoosite-main,articleId,",
+                "suffix": ",ctaId,card-read"
+              }
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-maxWidth-1040px ank-display-grid ank-gap-16px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 300px), 1fr))"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "blogArticleCardTemplate",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "title": "",
+        "description": "",
+        "href": "",
+        "linkLabel": "Leer artículo",
+        "icon": "book-open",
+        "classes": "ank-width-100per ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-p-22px",
+        "featureTitleClasses": "ank-m-0 ank-fontSize-24px ank-lineHeight-1_2 ank-fontWeight-900 ank-color-titleColor",
+        "featureDescriptionClasses": "ank-mt-10px ank-mb-16px ank-fontSize-15px ank-lineHeight-1_6 ank-color-secondaryTextColor",
+        "linkClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "linkStyles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
+      }
+    },
+    {
+      "id": "blogEmptyState",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Aún no hay artículos publicados para este filtro. Prueba otra búsqueda o vuelve más tarde para revisar nuevas guías.",
+        "classes": "ank-width-100per ank-maxWidth-1040px ank-m-0 ank-p-16px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varLenEq,contentHub.publicArticles.items,0"
+    },
+    {
+      "id": "blogFooterCta",
       "type": "link",
       "config": {
         "href": "/contacto",
         "text": "Hablar sobre mi blog",
-        "classes": "ank-minHeight-44px ank-display-inlineFlex ank-alignItems-center ank-color-linkColor ank-fontWeight-800"
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "44px",
+          "padding": "10px 14px",
+          "boxSizing": "border-box"
+        }
       }
     }
   ]

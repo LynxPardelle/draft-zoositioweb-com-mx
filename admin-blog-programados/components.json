@@ -7,23 +7,39 @@
       "id": "admin-blog-programadosRoot",
       "type": "container",
       "config": {
-        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-p-24px ank-gap-18px",
+        "tag": "main",
+        "classes": "ank-minHeight-100vh ank-bg-bgColor ank-color-textColor ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-18px",
+        "styles": {
+          "padding": "clamp(16px, 2vw, 32px)"
+        },
         "components": [
           "admin-blog-programadosShell"
-        ],
-        "tag": "main"
+        ]
       }
     },
     {
       "id": "admin-blog-programadosShell",
       "type": "container",
       "config": {
+        "tag": "div",
         "classes": "ank-width-100per ank-maxWidth-1180px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "admin-blog-programadosHeader",
+          "admin-blog-programadosNav",
+          "scheduledScope"
+        ]
+      }
+    },
+    {
+      "id": "admin-blog-programadosHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-8px",
         "components": [
           "admin-blog-programadosEyebrow",
           "admin-blog-programadosTitle",
-          "admin-blog-programadosNav",
-          "scheduleCard"
+          "admin-blog-programadosIntro"
         ]
       }
     },
@@ -33,7 +49,7 @@
       "config": {
         "tag": "span",
         "text": "ZOOSITIOWEB / BLOG ADMIN",
-        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase"
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-fontSize-13px"
       }
     },
     {
@@ -41,15 +57,31 @@
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Programación",
+        "text": "Programados",
         "classes": "ank-m-0 ank-fontSize-34px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "admin-blog-programadosIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Programa, reprograma o cancela publicaciones indicando fecha de publicación, fecha opcional de retirada, zona horaria y versión del artículo.",
+        "classes": "ank-m-0 ank-maxWidth-840px ank-fontSize-16px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
       }
     },
     {
       "id": "admin-blog-programadosNav",
       "type": "container",
       "config": {
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-repeatSDauto-fitMINMAXSD180pxCOMMA1frED ank-gap-10px",
+        "tag": "nav",
+        "classes": "ank-width-100per ank-display-flex ank-flexWrap-wrap ank-gap-10px ank-alignItems-center",
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "gap": "10px",
+          "alignItems": "center"
+        },
         "components": [
           "admin-blog-programadosNavArticles",
           "admin-blog-programadosNavNew",
@@ -69,7 +101,11 @@
       "config": {
         "text": "Artículos",
         "href": "/admin/blog/articulos",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px-solid-accentColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        },
+        "ariaCurrent": "page"
       }
     },
     {
@@ -78,7 +114,10 @@
       "config": {
         "text": "Crear artículo",
         "href": "/admin/blog/articulos/nuevo",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -87,7 +126,10 @@
       "config": {
         "text": "Medios",
         "href": "/admin/blog/medios",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -96,7 +138,10 @@
       "config": {
         "text": "Moderación",
         "href": "/admin/blog/moderacion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -105,7 +150,10 @@
       "config": {
         "text": "Analíticas",
         "href": "/admin/blog/analiticas",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -114,25 +162,34 @@
       "config": {
         "text": "Categorías",
         "href": "/admin/blog/categorias",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
       "id": "admin-blog-programadosNavTags",
       "type": "link",
       "config": {
-        "text": "Tags",
+        "text": "Etiquetas",
         "href": "/admin/blog/tags",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
       "id": "admin-blog-programadosNavHub",
       "type": "link",
       "config": {
-        "text": "Hub",
+        "text": "Centro de contenido",
         "href": "/admin/blog/hub",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
@@ -141,169 +198,594 @@
       "config": {
         "text": "Configuración",
         "href": "/admin/blog/configuracion",
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        "classes": "ank-minHeight-48px ank-px-14px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
+        "styles": {
+          "minWidth": "max-content"
+        }
       }
     },
     {
-      "id": "scheduleCard",
-      "type": "container",
+      "id": "scheduledScope",
+      "type": "interaction-scope",
       "config": {
-        "classes": "ank-width-100per ank-bg-surfaceColor ank-border-1px-solid-borderColor ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "scopeId": "articleSchedule",
+        "valueInstructions": "collectFields:articleId,revisionId,publishAt,unpublishAt,timezone,scheduleAction,publishMessage",
         "components": [
-          "publishAtInput",
-          "unpublishAtInput",
-          "timezoneInput",
-          "rescheduleButton",
-          "cancelScheduleButton",
-          "scheduleTable"
+          "scheduledWorkspace"
         ]
       }
     },
     {
-      "id": "publishAtInput",
+      "id": "scheduledWorkspace",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-20px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "scheduledArticleId",
+          "scheduledArticleIdGuidance",
+          "scheduledGrid",
+          "scheduledActions",
+          "scheduledStatus",
+          "scheduledTable"
+        ]
+      }
+    },
+    {
+      "id": "scheduledArticleId",
+      "type": "input",
+      "config": {
+        "fieldId": "articleId",
+        "label": "Artículo seleccionado",
+        "controlType": "text",
+        "helperText": "Solo lectura. Se usa para cargar, guardar y auditar el artículo correcto.",
+        "required": true,
+        "readOnly": true,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-fontSize-13px ank-fontWeight-900 ank-fontFamily-monospace",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Abre Programar desde la lista de artículos para conservar el artículo correcto."
+          },
+          {
+            "type": "pattern",
+            "value": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$",
+            "message": "El identificador del artículo no es válido. Vuelve a abrir Programar desde la fila del artículo."
+          }
+        ]
+      },
+      "valueInstructions": "set:config.value,queryParamOr,articleId,"
+    },
+    {
+      "id": "scheduledArticleIdGuidance",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "La programación usa el artículo y la versión que vienen desde la fila seleccionada. Si alguno falta, vuelve a la lista de artículos y abre Programar desde la fila correcta.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-color-secondaryTextColor ank-fontSize-13px ank-lineHeight-1_55 ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "scheduledGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-14px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 220px), 1fr))"
+        },
+        "components": [
+          "scheduledRevisionId",
+          "scheduledPublishAt",
+          "scheduledUnpublishAt",
+          "scheduledTimezone",
+          "scheduledAction",
+          "scheduledMessage"
+        ]
+      }
+    },
+    {
+      "id": "scheduledRevisionId",
+      "type": "input",
+      "config": {
+        "fieldId": "revisionId",
+        "label": "Versión a programar",
+        "controlType": "text",
+        "helperText": "Solo lectura. Se toma de la fila del artículo para programar una versión concreta.",
+        "required": true,
+        "readOnly": true,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": [
+          {
+            "type": "required",
+            "message": "Abre Programar desde la lista para conservar la versión del artículo."
+          },
+          {
+            "type": "pattern",
+            "value": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$",
+            "message": "El identificador de versión no es válido. Vuelve a abrir Programar desde la fila del artículo."
+          }
+        ]
+      },
+      "valueInstructions": "set:config.value,queryParamOr,revisionId,"
+    },
+    {
+      "id": "scheduledPublishAt",
       "type": "input",
       "config": {
         "fieldId": "publishAt",
-        "label": "publishAt",
-        "value": "2026-07-01T09:00:00-06:00",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "label": "Fecha y hora de publicación",
+        "controlType": "text",
+        "placeholder": "2026-06-24T09:00:00-06:00",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": [],
+        "inputType": "datetime-local",
+        "helperText": "Elige cuándo se debe publicar el artículo."
       }
     },
     {
-      "id": "unpublishAtInput",
+      "id": "scheduledUnpublishAt",
       "type": "input",
       "config": {
         "fieldId": "unpublishAt",
-        "label": "unpublishAt",
-        "value": "",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "label": "Fecha y hora para retirar publicación",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": [],
+        "inputType": "datetime-local",
+        "helperText": "Opcional. Elige cuándo dejará de estar publicado."
       }
     },
     {
-      "id": "timezoneInput",
+      "id": "scheduledTimezone",
       "type": "input",
       "config": {
         "fieldId": "timezone",
-        "label": "timezone",
+        "label": "Zona horaria",
+        "controlType": "text",
         "value": "America/Mexico_City",
-        "classes": "ank-width-100per ank-minHeight-46px ank-borderRadius-8px ank-border-1px-solid-borderColor ank-bg-inputBgColor ank-color-textColor ank-px-14px",
-        "controlType": "text"
+        "helperText": "Usa una zona horaria IANA, por ejemplo America/Mexico_City.",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": []
       }
     },
     {
-      "id": "rescheduleButton",
-      "type": "button",
+      "id": "scheduledAction",
+      "type": "input",
       "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer",
-        "label": "reschedule"
-      },
-      "eventInstructions": "proxyAction:content_hub_schedule_article"
-    },
-    {
-      "id": "cancelScheduleButton",
-      "type": "button",
-      "config": {
-        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-border-1px-solid-borderColor ank-cursor-pointer ank-textDecoration-none ank-display-flex ank-alignItems-center ank-justifyContent-center",
-        "label": "cancelSchedule"
-      },
-      "eventInstructions": "proxyAction:content_hub_schedule_article"
-    },
-    {
-      "id": "scheduleTable",
-      "type": "generic-table",
-      "config": {
-        "id": "scheduleTable",
-        "label": "Artículos programados",
-        "rowIdPath": "id",
-        "rowsSource": {
-          "source": "var",
-          "path": "remote.contentHub.articles.items"
-        },
-        "rows": [
+        "fieldId": "scheduleAction",
+        "label": "Acción de programación",
+        "controlType": "select",
+        "value": "publish",
+        "helperText": "Elige si vas a programar una publicación o una retirada del blog público.",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "options": [
           {
-            "id": "art_20260620_blog_builder",
-            "title": "Blog builder visual con SEO desde el inicio",
-            "status": "Programado",
-            "language": "es-MX",
-            "category": "web",
-            "tags": "seo, builder, angora",
-            "schedule": "2026-07-01 09:00 America/Mexico_City",
-            "updatedAt": "2026-06-20"
+            "value": "publish",
+            "label": "Publicar en fecha"
+          },
+          {
+            "value": "unpublish",
+            "label": "Retirar en fecha"
           }
         ],
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-16px ank-py-8px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_22 ank-bg-bgColor ank-color-titleColor ank-fontSize-15px ank-fontWeight-900 ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-boxShadow-0_8px_20px_rgbaSD0C0C0C__0_08ED",
+        "dropdownTriggerClasses": "ank-width-100per ank-minHeight-52px ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-gap-12px",
+        "dropdownTriggerTextConfig": {
+          "classes": "ank-display-block ank-overflow-hidden ank-textOverflow-ellipsis ank-whiteSpace-nowrap ank-textAlign-left"
+        },
+        "dropdownIndicatorText": "▼",
+        "dropdownIndicatorClasses": "zlp-dropdown-caret ank-fontSize-12px ank-fontWeight-900 ank-lineHeight-1 ank-color-accentColor ank-marginLeft-auto ank-flexShrink-0",
+        "optionContainerClasses": "ank-display-flex ank-flexDirection-column ank-gap-8px",
+        "optionClasses": "ank-width-100per ank-p-12px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-titleColor ank-textAlign-left ank-cursor-pointer",
+        "activeOptionClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+        "validation": [],
+        "fieldClasses": "ank-width-100per",
+        "dropdownConfig": {
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 8,
+          "menuContainerClasses": "ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_22 ank-borderRadius-8px ank-boxShadow-0_18px_45px_rgbaSD0C0C0C__0_20ED ank-p-6px ank-zIndex-1400",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-flex ank-flexDirection-column ank-gap-4px",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
+          "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
+          "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
+        }
+      }
+    },
+    {
+      "id": "scheduledMessage",
+      "type": "input",
+      "config": {
+        "fieldId": "publishMessage",
+        "label": "Mensaje interno",
+        "controlType": "text",
+        "required": false,
+        "readOnly": false,
+        "disabled": false,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "helperTextClasses": "ank-m-0 ank-fontSize-12px ank-lineHeight-1_45 ank-color-secondaryTextColor",
+        "errorClasses": "ank-mt-4px ank-color-errorColor ank-fontWeight-800 ank-fontSize-12px",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor ank-fontSize-15px ank-fontWeight-700",
+        "validation": []
+      }
+    },
+    {
+      "id": "scheduledActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "scheduledScheduleButton",
+          "scheduledPublishButton"
+        ]
+      }
+    },
+    {
+      "id": "scheduledScheduleButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Guardar programación",
+        "loadingLabel": "Guardando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_schedule_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,loading\",true,false;set:config.disabled,when,\"any:varEq,remote.contentHub.articleDetail.items.0.status,approved;any:varEq,remote.contentHub.articleDetail.items.0.status,published\",false,true"
+    },
+    {
+      "id": "scheduledPublishButton",
+      "type": "button",
+      "config": {
+        "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
+        "disabledClasses": "zlp-cursor-not-allowed ank-opacity-0_45 ank-bg-secondaryTextColor ank-color-bgColor",
+        "loadingClasses": "zlp-cursor-wait ank-opacity-0_85",
+        "label": "Publicar ahora",
+        "loadingLabel": "Publicando...",
+        "disabledWhenInvalidScope": true,
+        "iconPosition": "before"
+      },
+      "eventInstructions": "proxyAction:content_hub_publish_article",
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading\",true,false;set:config.disabled,when,\"all:varEq,remote.contentHub.articleDetail.items.0.status,approved\",false,true"
+    },
+    {
+      "id": "scheduledStatus",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-bg-bgColor ank-border-1px__solid__textColorOPA__0_18 ank-borderRadius-8px ank-p-16px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "components": [
+          "scheduledActionIdle",
+          "scheduledScheduleLoading",
+          "scheduledScheduleError",
+          "scheduledScheduleErrorSupportId",
+          "scheduledScheduleSuccess",
+          "scheduledScheduleArticleId",
+          "scheduledScheduleRevisionId",
+          "scheduledPublishLoading",
+          "scheduledPublishError",
+          "scheduledPublishErrorSupportId",
+          "scheduledPublishSuccess",
+          "scheduledPublishArticleId",
+          "scheduledPublishRevisionId",
+          "scheduledCancelLoading",
+          "scheduledCancelError",
+          "scheduledCancelErrorSupportId",
+          "scheduledCancelSuccess"
+        ]
+      }
+    },
+    {
+      "id": "scheduledActionIdle",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Estado de programación: sin acción reciente. Confirma el artículo seleccionado, fecha, zona horaria y acción antes de guardar.",
+        "classes": "ank-m-0 ank-fontSize-13px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "scheduledScheduleLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Guardando programación del artículo...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,loading"
+    },
+    {
+      "id": "scheduledScheduleError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos guardar la programación del artículo. Recarga la página desde la lista y verifica que el artículo siga presente antes de intentarlo de nuevo.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,error"
+    },
+    {
+      "id": "scheduledScheduleErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,error;all:var,remoteStatus.contentHub.content_hub_schedule_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_schedule_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "scheduledScheduleSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Programación actualizada.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,success"
+    },
+    {
+      "id": "scheduledScheduleArticleId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo no confirmado",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_schedule_article.articleId,La respuesta no incluyó el artículo."
+    },
+    {
+      "id": "scheduledScheduleRevisionId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Versión no confirmada",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_schedule_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_schedule_article.revisionId,La respuesta no incluyó la versión."
+    },
+    {
+      "id": "scheduledPublishLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Publicando el artículo ahora...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,loading"
+    },
+    {
+      "id": "scheduledPublishError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos publicar el artículo ahora. Recarga la página desde la lista y verifica tu sesión y permisos antes de intentarlo de nuevo.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error"
+    },
+    {
+      "id": "scheduledPublishErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,error;all:var,remoteStatus.contentHub.content_hub_publish_article.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_publish_article.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "scheduledPublishSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Publicación inmediata solicitada.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success"
+    },
+    {
+      "id": "scheduledPublishArticleId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Artículo no confirmado",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.articleId,La respuesta no incluyó el artículo."
+    },
+    {
+      "id": "scheduledPublishRevisionId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Versión no confirmada",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-700"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_publish_article.state,success",
+      "valueInstructions": "set:config.text,varOr,remoteStatus.contentHub.content_hub_publish_article.revisionId,La respuesta no incluyó la versión."
+    },
+    {
+      "id": "scheduledCancelLoading",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cancelando programación...",
+        "classes": "ank-m-0 ank-fontSize-14px ank-lineHeight-1_55 ank-color-secondaryTextColor ank-fontWeight-800"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_cancel_schedule.state,loading"
+    },
+    {
+      "id": "scheduledCancelError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No pudimos cancelar la programación. Recarga las programaciones del artículo y verifica tu sesión y permisos antes de intentarlo de nuevo.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__errorColor ank-color-errorColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_cancel_schedule.state,error"
+    },
+    {
+      "id": "scheduledCancelErrorSupportId",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-mt-6px ank-m-0 ank-px-12px ank-pb-10px ank-color-mutedTextColor ank-fontWeight-800 ank-fontSize-12px ank-letterSpacing-0"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_cancel_schedule.state,error;all:var,remoteStatus.contentHub.content_hub_cancel_schedule.requestId",
+      "valueInstructions": "set:config.text,supportIdOr,remoteStatus.contentHub.content_hub_cancel_schedule.requestId,adminBlog.supportId,ID de soporte: {{ id }}"
+    },
+    {
+      "id": "scheduledCancelSuccess",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Programación cancelada.",
+        "classes": "ank-m-0 ank-p-12px ank-borderRadius-8px ank-bg-bgColor ank-border-1px__solid__successColor ank-color-titleColor ank-fontWeight-900 ank-fontSize-13px"
+      },
+      "condition": "all:varEq,remoteStatus.contentHub.content_hub_cancel_schedule.state,success"
+    },
+    {
+      "id": "scheduledTable",
+      "type": "generic-table",
+      "config": {
+        "id": "scheduledTable",
+        "label": "Programaciones activas",
+        "description": "Publicaciones y retiros pendientes del blog.",
+        "rowsSource": {
+          "source": "var",
+          "path": "remote.contentHub.schedules.items"
+        },
+        "rows": [],
+        "rowIdPath": "scheduleId",
+        "eventPayloadFields": [
+          "scheduleId",
+          "articleId",
+          "revisionId",
+          "action",
+          "scheduledAt"
+        ],
+        "emptyText": "No hay programaciones pendientes para este artículo.",
+        "loadingText": "Cargando programaciones pendientes...",
         "columns": [
           {
-            "id": "title",
-            "header": "Título",
-            "valuePath": "title"
+            "id": "action",
+            "header": "Acción",
+            "valuePath": "action"
           },
           {
-            "id": "status",
-            "header": "Estado",
-            "valuePath": "status"
+            "id": "scheduledAt",
+            "header": "Fecha programada",
+            "valuePath": "scheduledAt"
           },
           {
-            "id": "language",
-            "header": "Idioma",
-            "valuePath": "language"
+            "id": "timezone",
+            "header": "Zona horaria",
+            "valuePath": "timezone"
           },
           {
-            "id": "category",
-            "header": "Categoría",
-            "valuePath": "category"
+            "id": "articleId",
+            "header": "Artículo",
+            "valuePath": "articleId"
           },
           {
-            "id": "tags",
-            "header": "Tags",
-            "valuePath": "tags"
-          },
-          {
-            "id": "schedule",
-            "header": "Programación",
-            "valuePath": "schedule"
-          },
-          {
-            "id": "updatedAt",
-            "header": "Actualizado",
-            "valuePath": "updatedAt"
+            "id": "revisionId",
+            "header": "Versión",
+            "valuePath": "revisionId",
+            "emptyText": "Sin versión"
           }
         ],
         "rowActions": [
           {
-            "id": "edit",
-            "label": "Editar",
-            "icon": "edit",
-            "eventInstructions": "navigate:/admin/blog/articulos/editor"
-          },
-          {
-            "id": "preview",
-            "label": "Preview",
-            "icon": "eye",
-            "eventInstructions": "navigate:/admin/blog/articulos/preview"
-          },
-          {
-            "id": "seo",
-            "label": "SEO",
-            "icon": "search",
-            "eventInstructions": "navigate:/admin/blog/articulos/seo"
-          },
-          {
-            "id": "versions",
-            "label": "Versiones",
-            "icon": "history",
-            "eventInstructions": "navigate:/admin/blog/articulos/versiones"
-          },
-          {
-            "id": "schedule",
-            "label": "Programar",
-            "icon": "calendar",
-            "eventInstructions": "navigate:/admin/blog/programados"
+            "id": "cancelSchedule",
+            "label": "Cancelar",
+            "ariaLabel": "Cancelar programación",
+            "icon": "x",
+            "eventInstructions": "proxyAction:content_hub_cancel_schedule"
           }
         ],
-        "classes": "ank-width-100per"
-      }
+        "pagination": {
+          "enabled": true,
+          "pageSize": 10,
+          "pageSizeOptions": [
+            10,
+            20,
+            50
+          ],
+          "showFirstLastButtons": true,
+          "hideWhenSinglePage": true
+        },
+        "classes": "ank-width-100per",
+        "labelClasses": "ank-fontSize-18px ank-fontWeight-900 ank-color-titleColor",
+        "stateClasses": "ank-p-16px ank-borderRadius-8px ank-bg-bgColor ank-color-secondaryTextColor ank-fontWeight-800",
+        "actionButtonClasses": "ank-width-54px ank-height-54px ank-minWidth-54px ank-minHeight-54px ank-p-0 ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-border-1px__solid__textColorOPA__0_18 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-textDecoration-none ank-mr-8px ank-mb-8px ank-boxShadow-0_8px_18px_rgbaSD0C0C0C__0_08ED ank-bgHover-secondaryBgColor",
+        "actionLabelMode": "tooltip",
+        "actionIconClasses": "ank-width-16px ank-height-16px ank-display-inline-flex ank-flexShrink-0",
+        "actionCellClasses": "ank-whiteSpace-normal ank-minWidth-330px ank-textAlign-center",
+        "actionColumnLabel": "Acciones",
+        "actionButtonStyles": {
+          "alignItems": "center",
+          "display": "inline-flex",
+          "height": "54px",
+          "justifyContent": "center",
+          "marginBottom": "8px",
+          "marginRight": "8px",
+          "minHeight": "54px",
+          "minWidth": "54px",
+          "padding": "0",
+          "textDecoration": "none",
+          "width": "54px"
+        }
+      },
+      "valueInstructions": "set:config.loading,when,\"all:varEq,remoteStatus.contentHub.schedules.state,loading\",true,false; set:config.errorText,when,\"all:varEq,remoteStatus.contentHub.schedules.state,error\",No se pudo cargar la programación. Recarga la página o vuelve a iniciar sesión."
     }
   ]
 }

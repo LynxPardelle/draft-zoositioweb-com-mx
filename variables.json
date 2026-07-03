@@ -58,6 +58,29 @@
         "accent": "#128c7e",
         "minVisibleMs": 0,
         "exitDurationMs": 420
+      },
+      "modals": {
+        "_default": {
+          "size": "md",
+          "variant": "dialog",
+          "closeOnBackdrop": true,
+          "showCloseButton": true,
+          "showAccentBar": true,
+          "accentColor": "accentColor",
+          "containerClasses": "ank-position-fixed ank-inset-0 ank-display-flex ank-alignItems-center ank-justifyContent-center ank-pointerEvents-none ank-zIndex-1400 ank-p-16px",
+          "panelClasses": "modal-panel ank-pointerEvents-auto ank-position-relative ank-width-minSD94vwCOM560pxED ank-maxHeight-88vh ank-overflow-auto ank-display-flex ank-flexDirection-column ank-gap-16px ank-p-24px ank-bg-secondaryBgColor ank-color-textColor ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-boxShadow-0_24px_80px_rgbaSD0C0C0C__0_28ED",
+          "panelMotionClasses": "modal-anim-scaleIn",
+          "accentBarClasses": "ank-position-absolute ank-top-0 ank-left-0 ank-right-0 ank-height-4px ank-borderTopLeftRadius-8px ank-borderTopRightRadius-8px",
+          "closeButtonClasses": "ank-position-absolute ank-top-10px ank-right-10px ank-width-36px ank-height-36px ank-borderRadius-8px ank-bg-bgColor ank-color-titleColor ank-border-1px__solid__textColorOPA__0_16 ank-fontSize-24px ank-lineHeight-1 ank-cursor-pointer ank-display-flex ank-alignItems-center ank-justifyContent-center"
+        },
+        "site-navigation": {
+          "size": "md",
+          "ariaLabelKey": "ui.accessibility.navigationDialog"
+        },
+        "article-component-inspector": {
+          "size": "lg",
+          "ariaLabel": "Configurar componente del artículo"
+        }
       }
     }
   }

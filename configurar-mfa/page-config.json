@@ -3,7 +3,10 @@
   "domain": "zoositioweb.com.mx",
   "pageId": "configurar-mfa",
   "rootIds": [
-    "configurarMfaRoot"
+    "skipToMainLink",
+    "siteHeader",
+    "configurarMfaRoot",
+    "siteFooter"
   ],
   "seo": {
     "title": "Configurar MFA | zoositioweb",
@@ -12,5 +15,8 @@
     "robots": {
       "default": "noindex,nofollow"
     }
-  }
+  },
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ]
 }
