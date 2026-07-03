@@ -12,20 +12,40 @@
             "articleId": "art_20260620_blog_builder",
             "locale": "es",
             "status": "published",
-            "title": "Cómo crear blogs visuales con Zoolandingpage",
-            "summary": "Guía inicial de Zoosite para crear artículos visuales, listos para SEO y fáciles de adaptar al estilo de cada sitio.",
+            "title": "Cómo crear artículos visuales con Zoosite",
+            "summary": "Guía práctica para crear un artículo completo en Zoosite: estructura, SEO, contenido visual, publicación, analítica e iteración desde el editor.",
             "path": "/blog/web/blog-builder-seo",
             "categorySlug": "web",
             "tags": [
               "seo",
-              "builder",
-              "angora"
+              "blog-builder",
+              "guias",
+              "componentes"
             ],
             "publishedAt": "2026-06-21T15:00:00.000Z",
-            "updatedAt": "2026-06-21T15:00:00.000Z",
+            "updatedAt": "2026-07-03T06:30:00.000-06:00",
             "authorLabel": "Equipo zoositioweb",
             "canonicalPath": "/blog/web/blog-builder-seo",
-            "robots": "index,follow"
+            "robots": "index,follow",
+            "commentPolicy": "authenticated",
+            "contentSafety": {
+              "rating": "general",
+              "warnings": []
+            },
+            "interactions": {
+              "reactions": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "ctas": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "forms": {
+                "enabled": true,
+                "moderation": "queue"
+              }
+            }
           }
         ]
       },
@@ -49,18 +69,26 @@
             "visible": true
           },
           {
-            "taxonomyId": "builder",
+            "taxonomyId": "blog-builder",
             "kind": "tag",
-            "slug": "builder",
-            "label": "Editor visual",
+            "slug": "blog-builder",
+            "label": "Blog builder",
             "locale": "es",
             "visible": true
           },
           {
-            "taxonomyId": "angora",
+            "taxonomyId": "guias",
             "kind": "tag",
-            "slug": "angora",
-            "label": "Diseño del sitio",
+            "slug": "guias",
+            "label": "Guías",
+            "locale": "es",
+            "visible": true
+          },
+          {
+            "taxonomyId": "componentes",
+            "kind": "tag",
+            "slug": "componentes",
+            "label": "Componentes",
             "locale": "es",
             "visible": true
           }
@@ -90,24 +118,36 @@
             "visible": true
           },
           {
-            "taxonomyId": "builder",
+            "taxonomyId": "blog-builder",
             "kind": "tag",
-            "slug": "builder",
-            "label": "Editor visual",
+            "slug": "blog-builder",
+            "label": "Blog builder",
             "locale": "es",
             "visible": true
           },
           {
-            "taxonomyId": "angora",
+            "taxonomyId": "guias",
             "kind": "tag",
-            "slug": "angora",
-            "label": "Diseño del sitio",
+            "slug": "guias",
+            "label": "Guías",
+            "locale": "es",
+            "visible": true
+          },
+          {
+            "taxonomyId": "componentes",
+            "kind": "tag",
+            "slug": "componentes",
+            "label": "Componentes",
             "locale": "es",
             "visible": true
           }
         ]
       },
       "articleCount": 1
-    }
+    },
+    "articleContent": {
+      "html": "<figure>\n  <img src=\"https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=80\" alt=\"Escritorio con libreta y laptop para planear un artículo de blog\" width=\"1600\" height=\"900\">\n  <figcaption>Un buen artículo empieza con una intención clara, una estructura fácil de leer y señales SEO bien configuradas.</figcaption>\n</figure>\n<h2>Qué puedes crear con el editor de artículos</h2>\n<p>El blog de Zoosite está pensado para construir contenido útil sin quedarse en una caja de texto. Cada artículo puede combinar texto enriquecido, secciones visuales, llamadas a la acción, taxonomía, SEO, programación, comentarios moderados e interacciones medibles.</p>\n<p>La meta no es publicar por publicar: la meta es que cada guía ayude a una persona a entender un tema, tomar una decisión y encontrar el siguiente paso dentro del sitio.</p>\n<h2>Flujo recomendado para crear un artículo</h2>\n<ol>\n  <li><strong>Define la intención.</strong> Decide si el artículo educa, compara, vende, responde dudas frecuentes o acompaña una decisión.</li>\n  <li><strong>Escribe un título claro.</strong> Usa palabras que la persona buscaría y evita títulos internos que sólo entienda el equipo.</li>\n  <li><strong>Configura categoría y tags.</strong> La categoría organiza el tema principal; los tags ayudan a conectar artículos relacionados.</li>\n  <li><strong>Prepara el resumen editorial.</strong> Explica qué resuelve el artículo y para quién está escrito.</li>\n  <li><strong>Cuida SEO y URL.</strong> Revisa slug, título SEO, descripción, canonical y visibilidad antes de publicar.</li>\n  <li><strong>Agrega contenido visual.</strong> Usa imágenes, bloques, listas, destacados y CTAs para que el artículo se pueda escanear rápido.</li>\n  <li><strong>Valida y publica.</strong> Revisa la vista previa, manda a revisión, aprueba y publica cuando la versión esté lista.</li>\n</ol>\n<h2>Checklist antes de publicar</h2>\n<ul>\n  <li>El título explica el valor del artículo.</li>\n  <li>La descripción SEO resume el beneficio sin rellenar palabras clave.</li>\n  <li>La imagen tiene texto alternativo útil.</li>\n  <li>La categoría y los tags ayudan a descubrir el contenido.</li>\n  <li>El CTA final lleva a una acción natural: contacto, guía relacionada o solicitud de sitio.</li>\n  <li>El artículo puede medirse con vistas, progreso de lectura, clics e interacciones.</li>\n</ul>\n<h2>Cómo usar bloques visuales sin perder claridad</h2>\n<p>Usa los bloques para ordenar el contenido, no para decorarlo de más. Una buena estructura suele tener una introducción breve, pasos concretos, un bloque de recomendaciones, ejemplos y un CTA final.</p>\n<blockquote>Regla práctica: si una sección no ayuda a entender, decidir o avanzar, se puede quitar.</blockquote>\n<h2>Qué revisar después de publicar</h2>\n<p>Una vez publicado, revisa si las personas encuentran el artículo, cuánto avanzan en la lectura y qué CTAs usan. Con esos datos puedes ajustar títulos, ordenar secciones, agregar ejemplos o crear nuevos artículos que respondan preguntas relacionadas.</p>\n<p>Zoosite busca que el blog sea una herramienta de crecimiento: contenido claro, publicable, medible y fácil de mejorar.</p>"
+    },
+    "articleHeroImage": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=80"
   }
 }
