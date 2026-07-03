@@ -78,6 +78,8 @@
         "styles": {
           "width": "100%",
           "maxWidth": "920px",
+          "height": "min(483px, 52vw)",
+          "aspectRatio": "1200 / 630",
           "overflow": "hidden",
           "borderRadius": "8px"
         }
@@ -90,7 +92,7 @@
         "tag": "image",
         "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=82",
         "alt": "Pantalla de trabajo con herramientas digitales para planear contenido web",
-        "classes": "zoositeArticleCover ank-width-100per ank-display-block ank-objectFit-cover",
+        "classes": "zoositeArticleCover ank-width-100per ank-height-100per ank-display-block ank-objectFit-cover",
         "width": 1200,
         "height": 630,
         "loading": "eager",
