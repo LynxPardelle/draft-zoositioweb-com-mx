@@ -1,0 +1,401 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "blogs",
+  "components": [
+    {
+      "id": "blogsPage",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1,
+        "classes": "ank-display-flex ank-flexDirection-column ank-bg-bgColor ank-color-textColor ank-outline-none",
+        "components": [
+          "blogsHero",
+          "blogsProofSection",
+          "blogsFeaturesSection",
+          "blogsFlowSection",
+          "blogsFinalCta"
+        ]
+      }
+    },
+    {
+      "id": "blogsHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-72px ank-bg-bgColor",
+        "components": [
+          "blogsHeroInner"
+        ]
+      }
+    },
+    {
+      "id": "blogsHeroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-display-grid ank-gap-28px ank-alignItems-center",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 340px), 1fr))"
+        },
+        "components": [
+          "blogsHeroCopy",
+          "blogsHeroImage"
+        ]
+      }
+    },
+    {
+      "id": "blogsHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-alignItems-start ank-gap-18px",
+        "components": [
+          "blogsEyebrow",
+          "blogsTitle",
+          "blogsLead",
+          "blogsHeroActions"
+        ]
+      }
+    },
+    {
+      "id": "blogsEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.eyebrow",
+      "config": {
+        "tag": "span",
+        "text": "Blogs medibles",
+        "classes": "ank-color-accentColor ank-fontWeight-900 ank-textTransform-uppercase ank-letterSpacing-0 ank-fontSize-14px"
+      }
+    },
+    {
+      "id": "blogsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.title",
+      "config": {
+        "tag": "h1",
+        "text": "Convierte preguntas frecuentes en artículos que atraen clientes",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-48px ank-lineHeight-1_05 ank-fontWeight-900",
+        "styles": {
+          "fontSize": "clamp(2.2rem, 7vw, 4rem)"
+        }
+      }
+    },
+    {
+      "id": "blogsLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.lead",
+      "config": {
+        "tag": "p",
+        "text": "Creamos una estructura de blog para que tu sitio no sólo se vea bien: también pueda explicar, posicionarse, medir interés y alimentar nuevas decisiones de contenido.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-18px ank-lineHeight-1_65 ank-maxWidth-720px"
+      }
+    },
+    {
+      "id": "blogsHeroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "blogsPrimaryCta",
+          "blogsSecondaryCta"
+        ]
+      }
+    },
+    {
+      "id": "blogsPrimaryCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,blogs.primaryCta;set:config.ariaLabel,i18n,blogs.primaryCta",
+      "config": {
+        "href": "/contacto",
+        "text": "Planear mi blog",
+        "classes": "ank-minHeight-48px ank-px-20px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-900 ank-textDecoration-none ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-border-1px__solid__successColor"
+      }
+    },
+    {
+      "id": "blogsSecondaryCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,blogs.secondaryCta;set:config.ariaLabel,i18n,blogs.secondaryCta",
+      "config": {
+        "href": "/blog",
+        "text": "Ver artículos",
+        "classes": "ank-minHeight-48px ank-px-20px ank-borderRadius-8px ank-bg-transparent ank-color-titleColor ank-fontWeight-900 ank-textDecoration-none ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-border-1px__solid__textColorOPA__0_22"
+      }
+    },
+    {
+      "id": "blogsHeroImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=82",
+        "alt": "Equipo planeando contenido para un sitio web",
+        "classes": "ank-width-100per ank-height-100per ank-display-block ank-objectFit-cover ank-borderRadius-8px ank-boxShadow-0_24px_70px_rgbaSD0C0C0C__0_18ED",
+        "styles": {
+          "aspectRatio": "16 / 10",
+          "maxHeight": "520px"
+        }
+      }
+    },
+    {
+      "id": "blogsProofSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-32px",
+        "components": [
+          "blogsProofCard"
+        ]
+      }
+    },
+    {
+      "id": "blogsProofCard",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1040px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_12 ank-borderRadius-8px ank-p-28px ank-display-flex ank-flexDirection-column ank-gap-12px",
+        "components": [
+          "blogsProofTitle",
+          "blogsProofCopy"
+        ]
+      }
+    },
+    {
+      "id": "blogsProofTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.proofTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Un blog útil trabaja antes de que te escriban",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-26px ank-lineHeight-1_2 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "blogsProofCopy",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.proofCopy",
+      "config": {
+        "tag": "p",
+        "text": "Cada artículo puede responder dudas, ordenar servicios, guiar a la siguiente acción y dejar señales de lectura, clics y temas que conviene profundizar.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-17px ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "blogsFeaturesSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-48px",
+        "components": [
+          "blogsFeaturesInner"
+        ]
+      }
+    },
+    {
+      "id": "blogsFeaturesInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1040px ank-display-flex ank-flexDirection-column ank-gap-20px",
+        "components": [
+          "blogsFeaturesTitle",
+          "blogsFeatureGrid"
+        ]
+      }
+    },
+    {
+      "id": "blogsFeaturesTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.featuresTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Qué incluye",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-30px ank-lineHeight-1_2 ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "blogsFeatureGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gap-16px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 260px), 1fr))",
+          "alignItems": "stretch"
+        },
+        "components": [
+          "blogsSeoCard",
+          "blogsVisualCard",
+          "blogsMeasureCard"
+        ]
+      }
+    },
+    {
+      "id": "blogsSeoCard",
+      "type": "generic-card",
+      "valueInstructions": "set:config.title,i18n,blogs.featureSeoTitle;set:config.description,i18n,blogs.featureSeoCopy",
+      "config": {
+        "icon": "search",
+        "title": "SEO desde el inicio",
+        "description": "Título, slug, descripción, canonical, categorías y etiquetas pensadas para ser encontradas y entendidas.",
+        "classes": "ank-height-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-borderRadius-8px ank-p-22px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "featureIconContainerClasses": "ank-width-44px ank-height-44px ank-borderRadius-8px ank-bg-bgColor ank-display-flex ank-alignItems-center ank-justifyContent-center ank-color-accentColor",
+        "featureIconClasses": "ank-fontSize-24px",
+        "featureTitleClasses": "ank-m-0 ank-color-titleColor ank-fontSize-21px ank-fontWeight-900",
+        "featureDescriptionClasses": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-15px ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "blogsVisualCard",
+      "type": "generic-card",
+      "valueInstructions": "set:config.title,i18n,blogs.featureVisualTitle;set:config.description,i18n,blogs.featureVisualCopy",
+      "config": {
+        "icon": "dashboard_customize",
+        "title": "Artículos visuales",
+        "description": "Bloques, tarjetas, llamadas a la acción y medios para que el contenido sea fácil de escanear.",
+        "classes": "ank-height-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-borderRadius-8px ank-p-22px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "featureIconContainerClasses": "ank-width-44px ank-height-44px ank-borderRadius-8px ank-bg-bgColor ank-display-flex ank-alignItems-center ank-justifyContent-center ank-color-accentColor",
+        "featureIconClasses": "ank-fontSize-24px",
+        "featureTitleClasses": "ank-m-0 ank-color-titleColor ank-fontSize-21px ank-fontWeight-900",
+        "featureDescriptionClasses": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-15px ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "blogsMeasureCard",
+      "type": "generic-card",
+      "valueInstructions": "set:config.title,i18n,blogs.featureMeasureTitle;set:config.description,i18n,blogs.featureMeasureCopy",
+      "config": {
+        "icon": "analytics",
+        "title": "Medición accionable",
+        "description": "Lecturas, clics, reacciones, formularios, descargas y temas ayudan a mejorar después de publicar.",
+        "classes": "ank-height-100per ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-borderRadius-8px ank-p-22px ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "featureIconContainerClasses": "ank-width-44px ank-height-44px ank-borderRadius-8px ank-bg-bgColor ank-display-flex ank-alignItems-center ank-justifyContent-center ank-color-accentColor",
+        "featureIconClasses": "ank-fontSize-24px",
+        "featureTitleClasses": "ank-m-0 ank-color-titleColor ank-fontSize-21px ank-fontWeight-900",
+        "featureDescriptionClasses": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-15px ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "blogsFlowSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-40px",
+        "components": [
+          "blogsFlowInner"
+        ]
+      }
+    },
+    {
+      "id": "blogsFlowInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1040px ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "blogsFlowTitle",
+          "blogsStepPlan",
+          "blogsStepBuild",
+          "blogsStepImprove"
+        ]
+      }
+    },
+    {
+      "id": "blogsFlowTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.flowTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Cómo lo trabajamos",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-30px ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "blogsStepPlan",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.stepPlan",
+      "config": {
+        "tag": "p",
+        "text": "Definimos temas, intención de búsqueda, categorías y llamadas a la acción.",
+        "classes": "ank-m-0 ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-textColor ank-fontWeight-800 ank-lineHeight-1_55"
+      }
+    },
+    {
+      "id": "blogsStepBuild",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.stepBuild",
+      "config": {
+        "tag": "p",
+        "text": "Creamos artículos con estructura visual, medios y reglas editoriales.",
+        "classes": "ank-m-0 ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-textColor ank-fontWeight-800 ank-lineHeight-1_55"
+      }
+    },
+    {
+      "id": "blogsStepImprove",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.stepImprove",
+      "config": {
+        "tag": "p",
+        "text": "Revisamos señales de uso para decidir qué actualizar, conectar o crear después.",
+        "classes": "ank-m-0 ank-p-18px ank-borderRadius-8px ank-bg-secondaryBgColor ank-color-textColor ank-fontWeight-800 ank-lineHeight-1_55"
+      }
+    },
+    {
+      "id": "blogsFinalCta",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-16px ank-paddingBlock-56px",
+        "components": [
+          "blogsFinalCard"
+        ]
+      }
+    },
+    {
+      "id": "blogsFinalCard",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1040px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_12 ank-borderRadius-8px ank-p-28px ank-display-flex ank-flexDirection-column ank-gap-14px ank-alignItems-start",
+        "components": [
+          "blogsFinalTitle",
+          "blogsFinalCopy",
+          "blogsFinalLink"
+        ]
+      }
+    },
+    {
+      "id": "blogsFinalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.finalTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Empecemos con un blog que pueda crecer",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-28px ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "blogsFinalCopy",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,blogs.finalCopy",
+      "config": {
+        "tag": "p",
+        "text": "Cuéntanos qué vendes, a quién ayudas y qué dudas se repiten. Con eso podemos proponer una primera arquitectura de contenido.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-17px ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "blogsFinalLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,blogs.primaryCta;set:config.ariaLabel,i18n,blogs.primaryCta",
+      "config": {
+        "href": "/contacto",
+        "text": "Planear mi blog",
+        "classes": "ank-minHeight-48px ank-px-20px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-900 ank-textDecoration-none ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-border-1px__solid__successColor"
+      }
+    }
+  ]
+}

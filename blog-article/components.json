@@ -287,7 +287,7 @@
       "id": "blogArticleCta",
       "type": "link",
       "config": {
-        "href": "/contacto",
+        "href": "/blogs",
         "text": "Planear mi blog",
         "classes": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-successColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-1px__solid__successColor ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "styles": {
