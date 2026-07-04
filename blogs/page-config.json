@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "pageId": "blogs",
+  "domain": "zoositioweb.com.mx",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "blogsPage",
+    "floatingWhatsAppCta",
+    "siteFooter"
+  ],
+  "modalRootIds": [
+    "siteNavMenuModalRoot"
+  ],
+  "metadata": {
+    "status": "phase-1-local-draft",
+    "routePurpose": "blog-service-sales"
+  },
+  "seo": {
+    "title": {
+      "es": "Blogs para atraer clientes con contenido medible | zoositioweb",
+      "en": "Blogs for attracting customers with measurable content | zoositioweb"
+    },
+    "description": {
+      "es": "Planea un blog para tu sitio web con artículos visuales, SEO, medición, comentarios moderados y contenido preparado para crecer.",
+      "en": "Plan a website blog with visual articles, SEO, measurement, moderated comments, and content prepared to grow."
+    },
+    "openGraph": {
+      "title": {
+        "es": "Blogs para atraer clientes con contenido medible | zoositioweb",
+        "en": "Blogs for attracting customers with measurable content | zoositioweb"
+      },
+      "description": {
+        "es": "Artículos visuales, SEO, medición y una estructura editorial que ayuda a que tu sitio responda dudas antes de que te contacten.",
+        "en": "Visual articles, SEO, measurement, and an editorial structure that helps your site answer questions before visitors contact you."
+      },
+      "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=82",
+      "url": "https://zoositioweb.com.mx/blogs",
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Blogs para atraer clientes con contenido medible | zoositioweb",
+        "en": "Blogs for attracting customers with measurable content | zoositioweb"
+      },
+      "description": {
+        "es": "Artículos visuales, SEO, medición y una estructura editorial para crecer con contenido útil.",
+        "en": "Visual articles, SEO, measurement, and an editorial structure for growing with useful content."
+      },
+      "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=82",
+      "card": "summary_large_image"
+    },
+    "canonical": "https://zoositioweb.com.mx/blogs",
+    "keywords": {
+      "es": [
+        "blog para negocio",
+        "blog seo",
+        "crear blog para sitio web",
+        "contenido medible",
+        "articulos para atraer clientes",
+        "blog con analitica"
+      ],
+      "en": [
+        "business blog",
+        "seo blog",
+        "website blog",
+        "measurable content",
+        "articles for customer acquisition",
+        "blog analytics"
+      ]
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Blogs para sitios web",
+        "description": "Planeación y publicación de blogs con SEO, contenido visual y medición para sitios web.",
+        "provider": {
+          "@type": "Organization",
+          "name": "zoositioweb"
+        },
+        "url": "https://zoositioweb.com.mx/blogs",
+        "inLanguage": "es"
+      }
+    ]
+  }
+}
