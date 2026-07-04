@@ -303,6 +303,11 @@
       "label": "Blog"
     },
     {
+      "path": "/blogs",
+      "pageId": "blogs",
+      "label": "Blogs"
+    },
+    {
       "path": "/blog/web/blog-builder-seo",
       "pageId": "blog-article",
       "label": "Editor visual de blog con SEO"
@@ -787,6 +792,8 @@
               "blog",
               "contenido"
             ],
+            "imageSrc": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80",
+            "imageAlt": "Persona escribiendo una guia editorial para un sitio web",
             "publishedAt": "2026-07-03T15:00:00.000Z",
             "updatedAt": "2026-07-03T16:30:00.000-06:00",
             "authorLabel": "Equipo zoositioweb",
@@ -807,6 +814,7 @@
                   "blog",
                   "content"
                 ],
+                "imageAlt": "Person writing an editorial guide for a website",
                 "articleContent": {
                   "html": "<h2>Welcome to the Zoosite blog</h2>\n<p>This space collects guides, lessons and examples for building websites that can be published, measured and improved without relying on hard-to-maintain static pages.</p>\n<section class=\"zoositeArticleCallout\"><h3>What you will find</h3><p>We will publish guides about content, SEO, visual components, analytics, authentication, forms, automations and daily operation for Zoosite sites.</p></section>\n<h2>Why this blog exists</h2><p>Zoosite is not only about making pages look good. It should help teams make better decisions using content, routing, interactions and evidence.</p>\n<h2>How to use these guides</h2><p>Each article should work as a practical reference with concrete steps, configuration recommendations and visual examples that can be adapted to a client site.</p>"
                 }
@@ -858,6 +866,8 @@
               "guias",
               "componentes"
             ],
+            "imageSrc": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+            "imageAlt": "Equipo revisando contenido visual en una laptop",
             "publishedAt": "2026-06-21T15:00:00.000Z",
             "updatedAt": "2026-07-03T16:30:00.000-06:00",
             "authorLabel": "Equipo zoositioweb",
@@ -879,6 +889,7 @@
                   "guides",
                   "components"
                 ],
+                "imageAlt": "Team reviewing visual content on a laptop",
                 "articleContent": {
                   "html": "<h2>A practical guide to publish better articles</h2>\n<p>This article shows how to turn an idea into a publishable guide with structure, SEO, visual components, scheduling and measurement. The goal is not to fill a page; it is to create useful content that can rank, read well and guide readers to the next step.</p>\n<section class=\"zoositeArticleCallout\"><h3>Expected result</h3><p>By the end, the article should have a clear intent, clean slug, SEO title, description, category, tags, visual content, calls to action and measurement ready for iteration.</p></section>\n<h2>1. Define intent, audience and action</h2><p>Before opening the editor, write one sentence that explains the problem, who it helps and what the reader should do next.</p>\n<h2>2. Configure the editorial base</h2><p>Use a clear title, select a main category and add comma-separated tags. Tags power filters and related content; categories keep URLs understandable.</p>\n<h2>3. Work on SEO from the beginning</h2><p>Define SEO title, description, canonical and robots before publishing. A strong summary helps search engines, social cards and readers.</p>\n<h2>4. Use visual components with intent</h2><p>Cards, callouts, lists and CTAs should make the article easier to scan. Remove anything that repeats information without helping the reader decide.</p>\n<h2>5. Publish, measure and improve</h2><p>After publishing, review views, read progress, CTA clicks, reactions, comments and downloads so the article can improve with evidence.</p>"
                 }

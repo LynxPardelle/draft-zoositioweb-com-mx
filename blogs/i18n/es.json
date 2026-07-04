@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "blogs",
+  "lang": "es",
+  "dictionary": {
+    "blogs": {
+      "eyebrow": "Blogs medibles",
+      "title": "Convierte preguntas frecuentes en artículos que atraen clientes",
+      "lead": "Creamos una estructura de blog para que tu sitio no sólo se vea bien: también pueda explicar, posicionarse, medir interés y alimentar nuevas decisiones de contenido.",
+      "primaryCta": "Planear mi blog",
+      "secondaryCta": "Ver artículos",
+      "proofTitle": "Un blog útil trabaja antes de que te escriban",
+      "proofCopy": "Cada artículo puede responder dudas, ordenar servicios, guiar a la siguiente acción y dejar señales de lectura, clics y temas que conviene profundizar.",
+      "featuresTitle": "Qué incluye",
+      "featureSeoTitle": "SEO desde el inicio",
+      "featureSeoCopy": "Título, slug, descripción, canonical, categorías y etiquetas pensadas para ser encontradas y entendidas.",
+      "featureVisualTitle": "Artículos visuales",
+      "featureVisualCopy": "Bloques, tarjetas, llamadas a la acción y medios para que el contenido sea fácil de escanear.",
+      "featureMeasureTitle": "Medición accionable",
+      "featureMeasureCopy": "Lecturas, clics, reacciones, formularios, descargas y temas ayudan a mejorar después de publicar.",
+      "flowTitle": "Cómo lo trabajamos",
+      "stepPlan": "Definimos temas, intención de búsqueda, categorías y llamadas a la acción.",
+      "stepBuild": "Creamos artículos con estructura visual, medios y reglas editoriales.",
+      "stepImprove": "Revisamos señales de uso para decidir qué actualizar, conectar o crear después.",
+      "finalTitle": "Empecemos con un blog que pueda crecer",
+      "finalCopy": "Cuéntanos qué vendes, a quién ayudas y qué dudas se repiten. Con eso podemos proponer una primera arquitectura de contenido."
+    }
+  }
+}

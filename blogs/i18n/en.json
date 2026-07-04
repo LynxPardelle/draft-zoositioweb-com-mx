@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "domain": "zoositioweb.com.mx",
+  "pageId": "blogs",
+  "lang": "en",
+  "dictionary": {
+    "blogs": {
+      "eyebrow": "Measurable blogs",
+      "title": "Turn common questions into articles that attract customers",
+      "lead": "We create a blog structure so your site does more than look good: it can explain, rank, measure interest, and inform future content decisions.",
+      "primaryCta": "Plan my blog",
+      "secondaryCta": "Read articles",
+      "proofTitle": "A useful blog works before visitors message you",
+      "proofCopy": "Each article can answer questions, organize services, guide the next action, and leave reading, click, and topic signals worth improving.",
+      "featuresTitle": "What it includes",
+      "featureSeoTitle": "SEO from the start",
+      "featureSeoCopy": "Title, slug, description, canonical, categories, and tags designed to be found and understood.",
+      "featureVisualTitle": "Visual articles",
+      "featureVisualCopy": "Blocks, cards, calls to action, and media that make content easier to scan.",
+      "featureMeasureTitle": "Actionable measurement",
+      "featureMeasureCopy": "Reads, clicks, reactions, forms, downloads, and topics help improve after publishing.",
+      "flowTitle": "How we work",
+      "stepPlan": "We define topics, search intent, categories, and calls to action.",
+      "stepBuild": "We create articles with visual structure, media, and editorial rules.",
+      "stepImprove": "We review usage signals to decide what to update, connect, or create next.",
+      "finalTitle": "Start with a blog that can grow",
+      "finalCopy": "Tell us what you sell, who you help, and which questions repeat. From there we can propose a first content architecture."
+    }
+  }
+}
