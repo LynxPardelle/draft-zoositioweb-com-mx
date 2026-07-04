@@ -15,6 +15,8 @@
             "title": "Cómo crear artículos visuales con Zoosite",
             "summary": "Guía práctica para crear un artículo completo en Zoosite: estructura, SEO, contenido visual, publicación, analítica e iteración desde el editor.",
             "path": "/blog/web/blog-builder-seo",
+            "imageSrc": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+            "imageAlt": "Equipo revisando contenido visual en una laptop",
             "categorySlug": "web",
             "tags": [
               "seo",
@@ -50,6 +52,46 @@
                 "moderation": "spam-check"
               },
               "assetDownloads": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "forms": {
+                "enabled": true,
+                "moderation": "queue"
+              }
+            }
+          },
+          {
+            "articleId": "art_1783073141_bienvenida-al-blog-zoositioweb",
+            "locale": "es",
+            "status": "published",
+            "title": "Bienvenido al blog de Zoosite",
+            "summary": "Estrenamos el blog de Zoosite con una guía de bienvenida que muestra cómo vamos a publicar contenido visual, medirlo y convertirlo en decisiones útiles para cada sitio.",
+            "path": "/blog/web/bienvenida-al-blog-zoositioweb",
+            "imageSrc": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80",
+            "imageAlt": "Persona escribiendo una guía editorial para un sitio web",
+            "categorySlug": "web",
+            "tags": [
+              "blog",
+              "contenido",
+              "zoosite"
+            ],
+            "publishedAt": "2026-07-03T15:00:00.000Z",
+            "updatedAt": "2026-07-03T15:20:00.000-06:00",
+            "authorLabel": "Equipo zoositioweb",
+            "canonicalPath": "/blog/web/bienvenida-al-blog-zoositioweb",
+            "robots": "index,follow",
+            "commentPolicy": "authenticated",
+            "contentSafety": {
+              "rating": "general",
+              "warnings": []
+            },
+            "interactions": {
+              "reactions": {
+                "enabled": true,
+                "moderation": "spam-check"
+              },
+              "ctas": {
                 "enabled": true,
                 "moderation": "spam-check"
               },
@@ -155,7 +197,7 @@
           }
         ]
       },
-      "articleCount": 1
+      "articleCount": 2
     },
     "articleContent": {
       "html": "<p>Este artículo no está disponible por el momento. Vuelve al blog para elegir otro contenido publicado.</p>"
