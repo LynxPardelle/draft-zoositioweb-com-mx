@@ -178,12 +178,34 @@
                 "fallback": "Leer artículo"
               }
             ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "imageSrc",
+              "coverImage",
+              "heroImage"
+            ],
+            "fallback": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt",
+              "title"
+            ],
+            "fallback": "Portada del artículo"
           }
         ]
       },
       "config": {
         "tag": "section",
         "classes": "ank-width-100per ank-maxWidth-980px ank-display-grid ank-gap-16px",
+        "styles": {
+          "alignItems": "stretch",
+          "gridAutoRows": "1fr",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 300px), 1fr))"
+        },
         "components": []
       }
     },
@@ -196,10 +218,13 @@
         "description": "",
         "href": "",
         "linkLabel": "Leer artículo",
-        "icon": "file-text",
-        "classes": "ank-width-100per ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-p-22px",
+        "imageSrc": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+        "imageAlt": "Portada del artículo",
+        "classes": "ank-width-100per ank-height-100per ank-borderRadius-8px ank-bg-secondaryBgColor ank-border-1px__solid__textColorOPA__0_10 ank-p-22px ank-display-flex ank-flexDirection-column ank-gap-12px ank-overflow-hidden",
+        "imageContainerClasses": "ank-width-100per ank-height-180px ank-overflow-hidden ank-borderRadius-8px ank-bg-bgColor",
+        "imageClasses": "ank-width-100per ank-height-100per ank-display-block ank-objectFit-cover",
         "featureTitleClasses": "ank-m-0 ank-fontSize-24px ank-lineHeight-1_2 ank-fontWeight-900 ank-color-titleColor",
-        "featureDescriptionClasses": "ank-mt-10px ank-mb-16px ank-fontSize-15px ank-lineHeight-1_6 ank-color-secondaryTextColor",
+        "featureDescriptionClasses": "ank-m-0 ank-fontSize-15px ank-lineHeight-1_6 ank-color-secondaryTextColor",
         "linkClasses": "ank-minHeight-48px ank-px-18px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer ank-display-inline-flex ank-alignItems-center ank-justifyContent-center ank-gap-8px ank-textDecoration-none",
         "linkStyles": {
           "display": "inline-flex",
@@ -207,6 +232,7 @@
           "justifyContent": "center",
           "minHeight": "48px",
           "padding": "10px 18px",
+          "marginTop": "auto",
           "boxSizing": "border-box"
         }
       }
