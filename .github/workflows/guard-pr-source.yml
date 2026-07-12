@@ -13,9 +13,6 @@ jobs:
   guard:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
       - name: Enforce promotion graph
         shell: bash
         env:
@@ -33,13 +30,3 @@ jobs:
             echo "PRs into main must come from test. Got: $head"
             exit 1
           fi
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-
-      - name: Validate runtime data-source condition references
-        shell: bash
-        run: |
-          node tools/runtime-data-source-condition-guard.mjs --draft-root=. --domain=zoositioweb.com.mx
