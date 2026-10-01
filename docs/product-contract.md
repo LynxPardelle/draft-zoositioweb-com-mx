@@ -41,7 +41,7 @@ Prefer draft configuration before app code. Record a platform gap when the draft
 - Dark theme uses #25d366 as live-data accent and #128c7e as the darker WhatsApp action color.
 - WhatsApp actions use the success palette with its paired readable foreground color.
 - The provisional square Z brand asset and social image are served from the public Zoolanding assets host; never use private source photos or local paths in runtime config.
-- Team positioning: Alec Montaño and Hector Coronado cover software, cloud architecture, data engineering, and AI; Oswaldo García covers web development and Google Ads; Pamela Betancourt is the marketing specialist.
+- Team positioning: Alec Montaño and Hector Coronado cover software, cloud architecture, data engineering, and AI; Oswaldo García covers web development and Google Ads.
 
 ## SEO, analytics, and legal
 

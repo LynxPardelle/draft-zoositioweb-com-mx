@@ -311,30 +311,6 @@
             "label": "Google Ads"
           }
         ]
-      },
-      {
-        "name": "Pamela Betancourt",
-        "role": "Diseño, marketing y análisis de mercado",
-        "proof": [
-          "Criterio visual y comunicación digital.",
-          "Marketing, datos y análisis de mercado."
-        ],
-        "imageSrc": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/team-photos/pamela-betancourt.webp",
-        "imageAlt": "Foto de Pamela Betancourt",
-        "badges": [
-          {
-            "icon": "preview",
-            "label": "Diseño"
-          },
-          {
-            "icon": "trending_up",
-            "label": "Marketing"
-          },
-          {
-            "icon": "analytics",
-            "label": "Análisis"
-          }
-        ]
       }
     ]
   }
