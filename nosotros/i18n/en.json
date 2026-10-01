@@ -127,31 +127,6 @@
             "label": "Google Ads"
           }
         ]
-      },
-      {
-        "name": "Pamela Betancourt",
-        "role": "Design, marketing, and market analysis",
-        "proof": [
-          "Visual judgment and digital communication.",
-          "Marketing and market data analysis.",
-          "Focus on clarity for the end customer."
-        ],
-        "imageSrc": "https://assets.zoolandingpage.com.mx/zoositioweb.com.mx/shared/team-photos/pamela-betancourt.webp",
-        "imageAlt": "Photo of Pamela Betancourt",
-        "badges": [
-          {
-            "icon": "preview",
-            "label": "Design"
-          },
-          {
-            "icon": "trending_up",
-            "label": "Marketing"
-          },
-          {
-            "icon": "analytics",
-            "label": "Analysis"
-          }
-        ]
       }
     ],
     "sections": [
@@ -233,14 +208,6 @@
       "primaryLabel": "Talk to the team",
       "primaryUrl": "https://wa.me/525522699563?text=Hi%2C%20I%20want%20to%20talk%20with%20the%20zoositioweb%20team%20about%20my%20website.",
       "secondaryLabel": "Go to contact"
-    },
-    "pamelaReferral": {
-      "eyebrow": "Recommended collaborator",
-      "title": "Pamela Betancourt for marketing, social media, and web communication.",
-      "lead": "When a project needs marketing strategy, social media, or messaging for web presence, we recommend working with Pamela Betancourt.",
-      "proof": "She is a close project collaborator and a useful reference for businesses that want to connect their message with real customers.",
-      "primaryLabel": "Visit Pamela Betancourt",
-      "primaryUrl": "https://pamelabetancourt.zoolandingpage.com.mx/"
     }
   }
 }
