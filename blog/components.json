@@ -241,13 +241,8 @@
         "bindings": [
           {
             "to": "config.href",
-            "sources": [
-              "path",
-              {
-                "from": "slug",
-                "prefix": "/blog/tag/"
-              }
-            ]
+            "sources": ["slug"],
+            "prefix": "/blog/tag/"
           },
           {
             "to": "config.text",
