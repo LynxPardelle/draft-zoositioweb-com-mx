@@ -1271,10 +1271,22 @@
         "classes": "ank-display-flex ank-alignItems-center ank-gap-10px",
         "components": [
           "siteNavMenuButton",
+          "siteNavMenuLayoutCss",
           "siteNavMenuTooltip",
           "toggleThemeDesktop",
           "toggleLanguageDesktop"
         ]
+      }
+    },
+    {
+      "id": "siteNavMenuLayoutCss",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-pointerEvents-auto ank-width-minSD94vwCOM560pxED ank-maxHeight-88vh ank-overflow-auto",
+        "styles": {
+          "display": "none"
+        }
       }
     },
     {
