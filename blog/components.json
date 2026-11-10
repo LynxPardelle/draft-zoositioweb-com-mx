@@ -242,7 +242,6 @@
           {
             "to": "config.href",
             "sources": [
-              "path",
               {
                 "from": "slug",
                 "prefix": "/blog/tag/"
