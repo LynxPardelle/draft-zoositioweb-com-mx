@@ -780,6 +780,28 @@
         },
         "publicArticles": [
           {
+            "articleId": "art_20261110_zooberiah_systems_datos",
+            "locale": "es",
+            "status": "published",
+            "title": "Del sitio web a los datos: cómo trabaja ZooBeriah Systems",
+            "summary": "Descubre cómo ZooBeriah Systems conecta sitios web, contenido y consultoría de datos para resolver necesidades concretas de los negocios locales.",
+            "path": "/blog/web/zooberiah-systems-del-sitio-web-a-los-datos",
+            "categorySlug": "web",
+            "tags": [
+              "zoosite",
+              "contenido",
+              "guias"
+            ],
+            "publishedAt": "2026-11-11T05:34:53.657Z",
+            "updatedAt": "2026-11-11T05:34:53.657Z",
+            "authorLabel": "Equipo zoositioweb",
+            "canonicalPath": "/blog/web/zooberiah-systems-del-sitio-web-a-los-datos",
+            "robots": "index,follow",
+            "articleContent": {
+              "html": "<p>Un negocio local puede necesitar un sitio para explicar sus servicios, un blog para responder preguntas frecuentes o ayuda para entender qué está pasando con sus ventas. Son necesidades distintas, pero comparten un punto de partida: definir qué quiere lograr el negocio y qué información tiene para tomar la siguiente decisión.</p>\n<p>Ese es el enfoque de <a href=\"https://zooberiahsystems.com/\">ZooBeriah Systems</a>: ofrecer consultoría tecnológica, de datos y de inteligencia artificial, además de desarrollar soluciones web y aplicaciones propias. Veamos cómo se traduce en un ejemplo sencillo.</p>\n<h2>Una web que responde las preguntas de tus clientes</h2>\n<p>Imagina un despacho que recibe la misma pregunta todas las semanas: «¿Qué documentos tengo que preparar para la primera consulta?». Una página de servicios puede explicar qué ofrece el despacho y cómo contactarlo. Un artículo puede resolver esa pregunta con más espacio: una lista breve, una aclaración sobre casos especiales y un enlace a la página de contacto.</p>\n<p>En la oferta de ZooBeriah Systems, Zoolandingpage está orientado a una primera presencia digital. Zoositioweb ofrece un sitio más completo para presentar la marca y sus servicios. Zooblog está pensado para organizar y compartir publicaciones. El alcance depende de lo que necesita cada negocio.</p>\n<h2>Una pregunta útil antes de elegir qué medir</h2>\n<p>Supongamos que el despacho ya publicó el artículo. Ahora puede preguntarse si la gente encuentra la guía y luego visita la página de contacto. Para empezar, basta con contar las visitas a la guía y los clics hacia contacto por separado. El clic indica interés. Para saber cuántas consultas se realizaron, el despacho puede registrar los contactos recibidos.</p>\n<p>Esa distinción evita decisiones apresuradas. Si pocas personas encuentran el artículo, conviene revisar dónde se enlaza. Si la guía recibe muchas visitas y casi nadie continúa a contacto, vale la pena revisar si el siguiente paso se explica con claridad. La consultoría de datos ayuda a convertir preguntas como estas en indicadores y acciones que el negocio pueda revisar.</p>\n<h2>Dónde puede entrar la inteligencia artificial</h2>\n<p>Si el despacho acumula muchas preguntas repetidas, podría probar un uso acotado: ordenar por tema una lista revisada de preguntas que no contenga datos de clientes. Una persona valida los grupos y decide cuáles merece la pena responder en el blog. Así se puede evaluar si la herramienta ahorra tiempo y deja resultados útiles antes de ampliar su uso.</p>\n<p>Si quieres empezar, elige una pregunta que tus clientes te hagan con frecuencia. Decide dónde responderla, qué paso debería poder dar el lector y cómo sabrás si la respuesta le ayudó. Puedes <a href=\"https://zooberiahsystems.com/\">conocer el trabajo de ZooBeriah Systems</a> o ver cómo organizamos nuestras publicaciones en el <a href=\"/blog\">blog de Zoositioweb</a>.</p>"
+            }
+          },
+          {
             "articleId": "art_1783073141_bienvenida-al-blog-zoositioweb",
             "locale": "es",
             "status": "published",
