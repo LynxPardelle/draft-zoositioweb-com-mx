@@ -9,6 +9,11 @@ Use this document for public blog and protected content-hub work. The detailed r
 - Article body rendering uses the published articleContent value; summary remains metadata and introduction.
 - Never expose package keys, signed URLs, grants, storage policy, credentials, or server-only fields in draft config.
 
+## Article covers
+
+- Prepare a different cover for each new article. Choose an image that illustrates its subject, write descriptive alternative text, and check the crop in the blog card and article page before publishing.
+- Upload the cover as a public Zoositioweb asset. The blog and article templates read `imageSrc` and `imageAlt` from the article's public metadata. Keep each article's image data with its Content Hub record.
+
 ## Editor and navigation
 
 - Open editor, preview, SEO, and versions from a selected article row or an explicit article route ID.
