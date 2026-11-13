@@ -209,7 +209,7 @@
       "type": "interaction-scope",
       "config": {
         "scopeId": "newArticle",
-        "valueInstructions": "collectFields:articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSeoTitle,articleSeoDescription,articleSlug,articleCanonicalPolicy,articleCommentPolicy,articleContentSafetyPolicy,articleVisibility,articlePublishIntent",
+        "valueInstructions": "collectFields:articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSeoTitle,articleSeoDescription,articleSlug,articleCanonicalPolicy,articleCommentPolicy,articleContentSafetyPolicy,articleVisibility,articlePublishIntent,coverUpload,imageAlt",
         "components": [
           "newArticleWorkspace"
         ]
@@ -241,6 +241,9 @@
           "newArticleTitle",
           "newArticleMetaGrid",
           "newArticleSummary",
+          "newArticleCoverTitle",
+          "newArticleCoverUpload",
+          "newArticleCoverAlt",
           "newArticleSeoTitleText",
           "newArticleSeoGrid",
           "newArticleSeoDescription",
@@ -249,6 +252,45 @@
           "newArticleCreateButton",
           "newArticleCreateStatus"
         ]
+      }
+    },
+    {
+      "id": "newArticleCoverTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Portada del artículo",
+        "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "newArticleCoverUpload",
+      "type": "generic-file-dropzone",
+      "config": {
+        "fieldId": "coverUpload",
+        "label": "Imagen de portada",
+        "dropLabel": "Arrastra la portada del artículo",
+        "browseLabel": "Elegir portada",
+        "accept": "image/jpeg,image/png,image/webp",
+        "acceptLabel": "JPEG, PNG o WebP",
+        "maxFileSizeBytes": 2097152,
+        "maxSizeLabel": "Máximo 2 MB",
+        "multiple": false,
+        "dropzoneClasses": "ank-width-100per ank-minHeight-136px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-10px ank-bg-bgColor ank-color-textColor ank-p-16px",
+        "browseButtonClasses": "ank-minHeight-48px ank-px-16px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "newArticleCoverAlt",
+      "type": "input",
+      "config": {
+        "fieldId": "imageAlt",
+        "label": "Texto alternativo de la portada",
+        "controlType": "text",
+        "helperText": "Describe la imagen en hasta 180 caracteres. Es obligatorio al elegir una portada.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor"
       }
     },
     {

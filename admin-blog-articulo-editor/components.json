@@ -209,7 +209,7 @@
       "type": "interaction-scope",
       "config": {
         "scopeId": "articleEditor",
-        "valueInstructions": "collectFields:articleId,articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSlug,articleContent,componentTreeJson,advancedMode,allowedComponentPreset,metadata,editorNotes,articleAssets,upload",
+        "valueInstructions": "collectFields:articleId,articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSlug,articleContent,componentTreeJson,advancedMode,allowedComponentPreset,metadata,editorNotes,articleAssets,upload,coverUpload,imageAlt,expectedRevisionId",
         "components": [
           "editorWorkspace"
         ]
@@ -250,9 +250,14 @@
         "components": [
           "editorArticleIdReadout",
           "editorArticleId",
+          "editorExpectedRevision",
           "editorTitleInput",
           "editorMetaGrid",
           "editorSummaryInput",
+          "editorCoverTitle",
+          "editorCurrentCover",
+          "editorCoverUpload",
+          "editorCoverAlt",
           "articleRichText",
           "advancedModeHelp",
           "editorActionRow",
@@ -328,6 +333,73 @@
         ]
       },
       "valueInstructions": "set:config.value,routeParamOr,id,"
+    },
+    {
+      "id": "editorExpectedRevision",
+      "type": "input",
+      "config": {
+        "fieldId": "expectedRevisionId",
+        "label": "Revisión del artículo",
+        "controlType": "text",
+        "readOnly": true,
+        "required": true,
+        "classes": "ank-display-none",
+        "styles": { "display": "none" }
+      },
+      "valueInstructions": "set:config.originalRevision,varOr,remote.contentHub.articleDetail.items.0.latestRevisionId,;set:config.value,varOr,remoteStatus.contentHub.content_hub_update_package.revisionId,eval:config.originalRevision"
+    },
+    {
+      "id": "editorCoverTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Portada del artículo",
+        "classes": "ank-m-0 ank-fontSize-20px ank-fontWeight-900 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "editorCurrentCover",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "width": 1200,
+        "height": 630,
+        "styles": { "display": "block", "width": "100%", "height": "auto", "maxWidth": "380px", "borderRadius": "8px" }
+      },
+      "condition": "any:var,remote.contentHub.articleDetail.items.0.imageSrc;any:var,remoteStatus.contentHub.content_hub_update_package.data.imageSrc",
+      "valueInstructions": "set:config.currentSrc,varOr,remote.contentHub.articleDetail.items.0.imageSrc,;set:config.currentAlt,varOr,remote.contentHub.articleDetail.items.0.imageAlt,Portada actual;set:config.src,varOr,remoteStatus.contentHub.content_hub_update_package.data.imageSrc,eval:config.currentSrc;set:config.alt,varOr,remoteStatus.contentHub.content_hub_update_package.data.imageAlt,eval:config.currentAlt"
+    },
+    {
+      "id": "editorCoverUpload",
+      "type": "generic-file-dropzone",
+      "config": {
+        "fieldId": "coverUpload",
+        "label": "Imagen de portada",
+        "dropLabel": "Arrastra la nueva portada",
+        "browseLabel": "Elegir portada",
+        "accept": "image/jpeg,image/png,image/webp",
+        "acceptLabel": "JPEG, PNG o WebP",
+        "maxFileSizeBytes": 2097152,
+        "maxSizeLabel": "Máximo 2 MB",
+        "multiple": false,
+        "helperText": "Deja este campo vacío para conservar la imagen. Los cambios se aplican al publicar la revisión.",
+        "dropzoneClasses": "ank-width-100per ank-minHeight-136px ank-border-1px-dashed-borderColor ank-borderRadius-8px ank-display-flex ank-flexDirection-column ank-alignItems-center ank-justifyContent-center ank-gap-10px ank-bg-bgColor ank-color-textColor ank-p-16px",
+        "browseButtonClasses": "ank-minHeight-48px ank-px-16px ank-borderRadius-8px ank-bg-accentColor ank-color-onSuccessColor ank-fontWeight-900 ank-border-0 ank-cursor-pointer"
+      }
+    },
+    {
+      "id": "editorCoverAlt",
+      "type": "input",
+      "config": {
+        "fieldId": "imageAlt",
+        "label": "Texto alternativo de la portada",
+        "controlType": "text",
+        "helperText": "Describe la imagen en hasta 180 caracteres. Es obligatorio al elegir una portada nueva.",
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
+        "labelClasses": "ank-fontSize-14px ank-fontWeight-900 ank-color-titleColor",
+        "inputClasses": "ank-width-100per ank-minHeight-52px ank-px-14px ank-borderRadius-8px ank-border-1px__solid__textColorOPA__0_18 ank-bg-bgColor ank-color-textColor"
+      },
+      "valueInstructions": "set:config.value,varOr,remote.contentHub.articleDetail.items.0.imageAlt,"
     },
     {
       "id": "editorTitleInput",
