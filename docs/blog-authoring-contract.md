@@ -12,7 +12,8 @@ Use this document for public blog and protected content-hub work. The detailed r
 ## Article covers
 
 - Prepare a different cover for each new article. Choose an image that illustrates its subject, write descriptive alternative text, and check the crop in the blog card and article page before publishing.
-- Upload the cover as a public Zoositioweb asset. The blog and article templates read `imageSrc` and `imageAlt` from the article's public metadata. Keep each article's image data with its Content Hub record.
+- Use the cover fields in the create form or article editor. Select a JPEG, PNG, or WebP up to 2 MiB and supply descriptive alternative text of up to 180 characters. Leave the file field empty to keep the current image while editing its alternative text.
+- ZooBlog accepts `--cover FILE --cover-alt TEXT` on create and edit. On edit, `--cover-alt TEXT` alone keeps the current image. Both entry points use the same Content Hub record and editorial publication flow.
 
 ## Editor and navigation
 

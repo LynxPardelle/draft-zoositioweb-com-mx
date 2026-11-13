@@ -1501,6 +1501,14 @@
               "path": "articleContent",
               "fallback": null
             },
+            "imageSrc": {
+              "path": "imageSrc",
+              "fallback": ""
+            },
+            "imageAlt": {
+              "path": "imageAlt",
+              "fallback": ""
+            },
             "commentPolicy": {
               "path": "commentPolicy",
               "fallback": "authenticated"
@@ -1582,6 +1590,10 @@
             },
             "updatedAt": {
               "path": "updatedAt",
+              "fallback": ""
+            },
+            "imageSrc": {
+              "path": "imageSrc",
               "fallback": ""
             }
           }
@@ -2148,6 +2160,8 @@
           "articleSummary",
           "articleSeoTitle",
           "articleSeoDescription",
+          "coverUpload",
+          "imageAlt",
           "articleSlug",
           "articleCanonicalPolicy",
           "articleCommentPolicy",
@@ -2181,7 +2195,10 @@
           "articleSummary",
           "articleSlug",
           "articleAssets",
-          "editorNotes"
+          "editorNotes",
+          "coverUpload",
+          "imageAlt",
+          "expectedRevisionId"
         ],
         "statusTarget": "remoteStatus.contentHub.content_hub_update_package"
       },
