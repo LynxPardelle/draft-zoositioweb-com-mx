@@ -1536,6 +1536,10 @@
             "updatedAt": {
               "path": "updatedAt",
               "fallback": ""
+            },
+            "primarySite": {
+              "path": "primarySite",
+              "fallback": "zooberiahsystems.com"
             }
           }
         },
@@ -2163,7 +2167,7 @@
           "coverUpload",
           "imageAlt",
           "articleSlug",
-          "articleCanonicalPolicy",
+          "primarySite",
           "articleCommentPolicy",
           "articleContentSafetyPolicy",
           "articleVisibility",
@@ -2198,7 +2202,8 @@
           "editorNotes",
           "coverUpload",
           "imageAlt",
-          "expectedRevisionId"
+          "expectedRevisionId",
+          "primarySite"
         ],
         "statusTarget": "remoteStatus.contentHub.content_hub_update_package"
       },
