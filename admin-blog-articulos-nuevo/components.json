@@ -209,7 +209,7 @@
       "type": "interaction-scope",
       "config": {
         "scopeId": "newArticle",
-        "valueInstructions": "collectFields:articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSeoTitle,articleSeoDescription,articleSlug,articleCanonicalPolicy,articleCommentPolicy,articleContentSafetyPolicy,articleVisibility,articlePublishIntent,coverUpload,imageAlt",
+        "valueInstructions": "collectFields:articleTitle,articleLanguage,articleCategory,articleTags,articleSummary,articleSeoTitle,articleSeoDescription,articleSlug,primarySite,articleCommentPolicy,articleContentSafetyPolicy,articleVisibility,articlePublishIntent,coverUpload,imageAlt",
         "components": [
           "newArticleWorkspace"
         ]
@@ -666,21 +666,21 @@
       "id": "newArticleCanonicalPolicy",
       "type": "input",
       "config": {
-        "fieldId": "articleCanonicalPolicy",
-        "label": "URL canónica",
+        "fieldId": "primarySite",
+        "label": "Sitio principal",
         "controlType": "select",
-        "value": "self",
+        "value": "zooberiahsystems.com",
         "required": true,
         "readOnly": false,
         "disabled": false,
         "options": [
           {
-            "value": "self",
-            "label": "Adaptable al sitio actual"
+            "value": "zooberiahsystems.com",
+            "label": "ZooBeriah Systems"
           },
           {
-            "value": "none",
-            "label": "Sin canonical"
+            "value": "zoositioweb.com.mx",
+            "label": "Zoositioweb"
           }
         ],
         "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-gap-6px",
@@ -700,7 +700,7 @@
         "validation": [
           {
             "type": "required",
-            "message": "Este campo es obligatorio."
+            "message": "Elige el sitio principal."
           }
         ],
         "fieldClasses": "ank-width-100per",
@@ -713,7 +713,8 @@
           "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-spaceBetween ank-minHeight-46px ank-px-14px ank-borderRadius-8px ank-color-titleColor ank-textDecoration-none ank-fontWeight-900 ank-bg-transparent",
           "selectedItemClasses": "ank-bg-accentColor ank-color-onSuccessColor",
           "disabledItemClasses": "ank-opacity-0_45 ank-cursor-notAllowed"
-        }
+        },
+        "helperText": "Google recibirá la URL de este sitio como la principal al publicar."
       }
     },
     {
