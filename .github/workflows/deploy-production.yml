@@ -359,6 +359,8 @@ jobs:
             local session_token_header
             session_token_header="$(printf '%s: %s' 'x-amz-security-token' "$AWS_SESSION_TOKEN")"
             if ! http_code="$(curl --silent \
+              --connect-timeout 5 \
+              --max-time 45 \
               --output "$response_file" \
               --write-out '%{http_code}' \
               --aws-sigv4 "aws:amz:${AWS_REGION}:${signing_service}" \
@@ -378,3 +380,20 @@ jobs:
           }
           post_action "$upsert_file"
           post_action "$publish_file"
+          if jq -e '.catalogSync.status == "pending"' "$response_file" >/dev/null 2>&1; then
+            reconcile_file="$temp_dir/reconcile.json"
+            jq -c '{action: "reconcileCatalog", domain, environment}' "$PLAN_PATH" > "$reconcile_file"
+            catalog_sync_complete=false
+            for delay in 2 4 8; do
+              if post_action "$reconcile_file" \
+                && jq -e '.catalogSync.status | . == "applied" or . == "noop" or . == "legacy"' \
+                  "$response_file" >/dev/null 2>&1; then
+                catalog_sync_complete=true
+                break
+              fi
+              sleep "$delay"
+            done
+            if [[ "$catalog_sync_complete" == false ]]; then
+              echo "::warning::The site is published. Catalog reconciliation is still pending."
+            fi
+          fi

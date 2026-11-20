@@ -4,6 +4,22 @@
   "aliases": [
     "zoositioweb.com"
   ],
+  "catalog": {
+    "entries": [
+      {
+        "entryId": "zoositioweb-com-mx",
+        "kind": "website",
+        "path": "/",
+        "title": "ZooSitioWeb",
+        "description": "Explora ejemplos por sector y consulta los planes de ZooSitioWeb para crear el sitio de tu negocio.",
+        "imageUrl": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/zoositioweb.webp",
+        "imageAlt": "Página comercial de ZooSitioWeb con ejemplos para negocios y contacto por WhatsApp.",
+        "enabled": true,
+        "category": "plataformas",
+        "builtWith": "zoositioweb"
+      }
+    ]
+  },
   "defaultPageId": "default",
   "notFoundPageId": "not-found",
   "routes": [
